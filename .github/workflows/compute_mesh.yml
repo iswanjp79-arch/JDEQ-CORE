@@ -1,0 +1,14 @@
+name: JDEQ Compute Mesh
+on:
+  workflow_dispatch:
+    inputs:
+      task:
+        description: 'Perintah yang akan dijalankan'
+        required: true
+        default: 'date && echo "✅ Compute Mesh Aktif" && uname -a'
+jobs:
+  compute:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Jalankan tugas
+        run: ${{ github.event.inputs.task }}
