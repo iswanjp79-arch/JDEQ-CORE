@@ -3,12 +3,18 @@ on:
   workflow_dispatch:
     inputs:
       task:
-        description: 'Perintah yang akan dijalankan'
+        description: 'Perintah'
         required: true
-        default: 'date && echo "✅ Compute Mesh Aktif" && uname -a'
+        default: 'date && echo "✅ Compute Mesh" && uname -a'
 jobs:
   compute:
     runs-on: ubuntu-latest
     steps:
       - name: Jalankan tugas
-        run: ${{ github.event.inputs.task }}
+        run: |
+          ${{ github.event.inputs.task }} > output.txt 2>&1
+          cat output.txt
+      - name: Kirim hasil ke MICO via MQTT
+        run: |
+          sudo apt-get install -y mosquitto-clients
+          mosquitto_pub -h 100.78.119.102 -t jdeq/ghost/result -u jdeq_mico -P "jdeq_3TUK1EkSahw" -f output.txt
