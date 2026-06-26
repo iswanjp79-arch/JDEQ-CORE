@@ -14,7 +14,8 @@ jobs:
         run: |
           ${{ github.event.inputs.task }} > output.txt 2>&1
           cat output.txt
-      - name: Kirim hasil ke MICO via MQTT
-        run: |
-          sudo apt-get install -y mosquitto-clients
-          mosquitto_pub -h 100.78.119.102 -t jdeq/ghost/result -u jdeq_mico -P "jdeq_3TUK1EkSahw" -f output.txt
+      - name: Upload hasil
+        uses: actions/upload-artifact@v4
+        with:
+          name: compute-result
+          path: output.txt
