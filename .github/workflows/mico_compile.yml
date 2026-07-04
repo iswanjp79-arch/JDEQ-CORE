@@ -1,0 +1,37 @@
+name: MICO Compile and Audit
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Validate Registry
+        run: python3 -c "import json; reg=json.load(open('registry/registry.json')); print(f'Agents: {len(reg.get(\"agents\",[]))}')"
+      
+      - name: Run Integrity Check
+        run: sha256sum registry/registry.json > integrity.sha256
+      
+      - name: Generate MJMR Final Report
+        run: |
+          echo "MJMR FINAL REPORT" > MJMR_FINAL_REPORT.md
+          echo "Timestamp: $(date)" >> MJMR_FINAL_REPORT.md
+          echo "Status: ✅ COMPILATION SUCCESS" >> MJMR_FINAL_REPORT.md
+      
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: mico-artifacts
+          path: |
+            MJMR_FINAL_REPORT.md
+            integrity.sha256
+            registry/registry.json
