@@ -1,9 +1,14 @@
 {
-  "tahap6_dependency": "VERIFIED",
+  "tahap1_requirement": "UNVERIFIED - README.md ada tapi terlalu kosong (1 baris)",
+  "tahap2_environment": "VERIFIED - arch=aarch64 android=16",
   "tahap3_filesystem": "VERIFIED",
+  "tahap4_namespace": "UNVERIFIED - 182 nama folder duplikat ditemukan: .devcontainer,.git,.github,.vscode,__pycache__,ab_testing,actions,active,agent,agent_zero,agents,ai,aider,ananda_madina,android_runtime,api,app,architecture,archive,arsip,arsip_arsitektur,arsip_resmi,audit,audit_logger,automation,backup,bin,blueprints,boot,bootstrap,bridge,cache,chatgpt_diag,ci,circuit_breaker,cloud_sync,cmake,cmd,cognitive,command_center,compile,compiler,config,constitution,context_engine,core,core_orchestration,cortex,daemon,dal,dashboard,data,debug,decision_registry,decisions,dependency_scanner,detector,device_registry,digitaldna,dimensi1,dimensi2,dimensi3,dimensi4,dispatcher,dna,docker,docs,docs-site,doctrine,engine,engineering,entity_extractor,event_bus,evidence,examples,executor,feature_store,final_four,final_report,global_health,goal_engine,governance,hash_seal,hooks,identitas,identity,incoming,index,info,integration,internal,jdeq_vault,karantina,kernel,keys,knowledge,knowledge_engine,log,logs,macrodroid,madina,media,memory,memory_store,mhos_report,migration_toolkit,model,model_evaluation,model_registry,models,modules,monitor,mqtt,n8n,node_registry,nodes,objects,patch,pep,performance,planner,plugin_marketplace,predictive_maintenance,processed,project,project_scaffolder,prompts,python,queue,recovery,recovery_manager,references,reflection_engine,refs,registry,release_manager,report,reports,requirements,retrieval_engine,review,roadmap,router,rules,runtime,safe,scheduler,scripts,security,sensor,server,service,services,sessions,snapshots,src,ssh_old,ssot,state,supervise,svd,symlink,symthink,sync,system,system_snapshot,tasks,tata_kelola,tests,tmp,tools,traces,training_pipeline,triggers,validation,vault,version,workflow,workflow_engine,workflows,zero_gap,zero_lite",
   "tahap5_symlink": "VERIFIED - tidak ada symlink rusak",
+  "tahap6_dependency": "VERIFIED",
   "tahap7_discovery": "VERIFIED - registry.json valid",
   "tahap8_architecture": "VERIFIED - 3 ADR ditemukan",
-  "tahap11_production": "VERIFIED - workflow CI ada",
+  "tahap9_risk": "UNVERIFIED - belum ada dokumen risk matrix",
+  "tahap10_failure_sim": "VERIFIED - sistem berhasil mendeteksi file JSON rusak (exit code non-zero)",
+  "tahap11_production": "VERIFIED - workflow CI ada (belum tentu run sukses, cek tab Actions manual)",
   "tahap12_owner_approval": "MANUAL - hanya Anda yang bisa setujui, tidak bisa diotomasi"
 }
