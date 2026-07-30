@@ -1,0 +1,19 @@
+{
+  "hugging_face": {"role": "model_hub", "plane": "data", "status": "active"},
+  "github_copilot": {"role": "code_assistant", "plane": "compute", "status": "active"},
+  "gemini_3": {"role": "multimodal", "plane": "intelligence", "status": "active"},
+  "groq": {"role": "planner", "plane": "intelligence", "status": "active_contracted"}
+}
+{
+  "deepseek_agent": {
+    "role": "planner_reviewer_auditor_optimizer",
+    "operating_mode": "state-driven",
+    "status": "active_contracted",
+    "limitations": [
+      "bukan_root_executor",
+      "bukan_state_store",
+      "bukan_source_of_truth",
+      "bukan_pengambil_keputusan_akhir"
+    ]
+  }
+}
