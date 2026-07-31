@@ -1,0 +1,15 @@
+{
+  "groq": {"role": "planner", "plane": "intelligence", "status": "active_contracted"},
+  "deepseek_agent": {"role": "planner_reviewer_auditor_optimizer", "operating_mode": "state-driven", "status": "active_contracted"},
+  "hugging_face": {"role": "model_hub", "plane": "data", "status": "active"},
+  "github_copilot": {"role": "code_assistant", "plane": "compute", "status": "active"},
+  "gemini_3": {"role": "multimodal", "plane": "intelligence", "status": "active"},
+  "chatgpt": {"role": "synthesis_refinement", "plane": "intelligence", "status": "active"},
+  "claude": {"role": "independent_auditor", "plane": "intelligence", "status": "active"},
+  "perplexity": {"role": "real_time_research", "plane": "intelligence", "status": "active"},
+  "dola": {"role": "doctrine_guardian", "plane": "control_security", "status": "active"},
+  "jarvis": {"role": "orchestrator", "plane": "control_security", "status": "active"},
+  "semantic_proxy": {"role": "tactical_to_secops_translator", "plane": "intelligence", "status": "active", "node": "z83"},
+  "thingsboard": {"role": "external_dashboard", "plane": "intelligence", "status": "registered"},
+  "state_manager": {"role": "central_state", "plane": "control_security", "status": "active"}
+}
