@@ -1,0 +1,8 @@
+{
+  "bundle_name": "MICO_JDEQ_AUTHORIZED_NETWORK_EXPOSURE_MODULE",
+  "bundle_version": "1.0.0",
+  "role": "defensive_network_auditor",
+  "workflow": "DISCOVER → ENUMERATE → ANALYZE → REPORT → REMEDIATE",
+  "forbidden": ["exploit", "persistence", "credential_theft", "privilege_escalation", "evasion", "unauthorized_targeting"],
+  "rate_limits": {"default_timing": "polite", "burst_limit": "low"}
+}
