@@ -1,0 +1,10 @@
+{
+  "bundle_id": "mit_xpro_quantum_computing_fundamentals_v2026",
+  "bundle_type": "knowledge_graph",
+  "source": {"organization": "MIT xPRO", "program": "Quantum Computing Fundamentals"},
+  "objective": {"primary": "Understand the business and technical implications of quantum computing."},
+  "knowledge_graph": {
+    "Quantum Computing": {"depends_on": ["Linear Algebra", "Quantum Mechanics"], "applications": ["Cybersecurity", "Chemistry", "Optimization"]}
+  },
+  "deepseek_execution_policy": {"mode": "knowledge-first", "hallucination_prevention": ["Answer only from bundle.", "Mark unsupported claims."]}
+}
