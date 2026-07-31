@@ -1,0 +1,10 @@
+#!/data/data/com.termux/files/usr/bin/bash
+echo "=========================================="
+echo " MICO-JDEQ STEALTH BEACON STATUS"
+echo "=========================================="
+echo "Z83 Beacon:"
+ssh iswan@z83-server.tail2a1291.ts.net "tail -5 ~/mico_jdeq/journal/beacon.log 2>/dev/null || echo '  Belum ada log.'"
+echo ""
+echo "Kill-Switch:"
+echo "  Ketik: bash ~/mico_jdeq/scripts/killswitch.sh"
+echo "=========================================="
