@@ -50,3 +50,16 @@ if [ -f ~/mico_jdeq/security/block_patterns.json ] && [ -f ~/mico_jdeq/scripts/x
 else
     echo "  ❌ FAIL  | XSS Defense"
 fi
+
+# [22] Decision Engine
+echo "[22] Decision Engine"
+python3 ~/mico_jdeq/modules/decision_engine.py code 2>/dev/null | grep -q "agent" && echo "  ✅ PASS  | Decision Engine" || echo "  ❌ FAIL  | Decision Engine"
+
+# [23] Auto-Router
+echo "[23] Auto-Router"
+python3 ~/mico_jdeq/modules/auto_router.py code "test" 2>/dev/null | grep -q "Merutekan" && echo "  ✅ PASS  | Auto-Router" || echo "  ❌ FAIL  | Auto-Router"
+
+# [24] Agent Awareness
+echo "[24] Agent Awareness"
+AGENT_COUNT=$(python3 -c "import json; print(len(json.load(open('$HOME/mico_jdeq/registry/ai_workers.json'))))" 2>/dev/null)
+echo "  ✅ INFO  | $AGENT_COUNT agen terdaftar"
