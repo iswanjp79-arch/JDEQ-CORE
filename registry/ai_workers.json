@@ -18,3 +18,4 @@
   }
 }
 {"kanban_worker": {"role": "kanban_driven_automation", "plane": "control_security", "status": "active", "note": "Membaca GitHub Projects via API"}}
+{"thingsboard": {"role": "external_dashboard", "plane": "intelligence", "status": "registered", "url": "thingsboard.io/cloud"}}

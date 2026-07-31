@@ -1,12 +1,5 @@
 ==========================================
  MICO-JDEQ ENTERPRISE HEALTH CHECK
- 2026-07-31 16:10:09
+ 2026-07-31 16:21:38
 ==========================================
 [1-5] Koneksi
-  ✅ SSH Radar
-  ❌ SSH Penjaga
-  ✅ NATS Radar
-  ✅ MagicDNS
-  ✅ Internet
-[6-10] Service
-  ✅ SSHD Radar
