@@ -5,7 +5,7 @@ echo "=========================================="
 
 # 1. Pasang Caddy sebagai Reverse Proxy
 echo "[1/3] Memasang Caddy Reverse Proxy..."
-ssh iswan@z83-server.tail2a1291.ts.net "echo 'reticulatus' | sudo -S apt install -y caddy && echo 'reticulatus' | sudo -S tee /etc/caddy/Caddyfile > /dev/null << 'CADDY'
+ssh iswan@z83-server.tail2a1291.ts.net "sudo apt install -y caddy && sudo tee /etc/caddy/Caddyfile > /dev/null << 'CADDY'
 :80 {
     reverse_proxy localhost:8222
     log {
@@ -13,16 +13,16 @@ ssh iswan@z83-server.tail2a1291.ts.net "echo 'reticulatus' | sudo -S apt install
     }
 }
 CADDY
-echo 'reticulatus' | sudo -S systemctl enable caddy --now && echo '✅ Caddy aktif di port 80.'"
+sudo systemctl enable caddy --now && echo '✅ Caddy aktif di port 80.'"
 
 # 2. Pasang MQTT Bridge (penghubung ke cloud)
 echo "[2/3] Memasang MQTT Bridge..."
-ssh iswan@z83-server.tail2a1291.ts.net "echo 'reticulatus' | sudo -S apt install -y mosquitto mosquitto-clients && echo 'reticulatus' | sudo -S tee /etc/mosquitto/conf.d/jdeq_bridge.conf > /dev/null << 'MQTT'
+ssh iswan@z83-server.tail2a1291.ts.net "sudo apt install -y mosquitto mosquitto-clients && sudo tee /etc/mosquitto/conf.d/jdeq_bridge.conf > /dev/null << 'MQTT'
 connection jdeq_cloud
 address cloud_mqtt:1883
 topic # both 0
 MQTT
-echo 'reticulatus' | sudo -S systemctl enable mosquitto --now && echo '✅ MQTT Bridge aktif.'"
+sudo systemctl enable mosquitto --now && echo '✅ MQTT Bridge aktif.'"
 
 # 3. Commit & Checkpoint
 echo "[3/3] Menyegel ke SSOT..."

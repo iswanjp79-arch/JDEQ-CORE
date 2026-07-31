@@ -9,14 +9,14 @@ printf '%s\n' 'reticulatus' | ssh iswan@z83-server.tail2a1291.ts.net "sudo -S te
 ACTION==\"add\", SUBSYSTEM==\"usb\", RUN+=\"/usr/local/bin/jdeq_usb_alert.sh\"
 UDEV
 
-printf '%s\n' 'reticulatus' | sudo -S tee /usr/local/bin/jdeq_usb_alert.sh > /dev/null << 'ALERTSCRIPT'
+sudo tee /usr/local/bin/jdeq_usb_alert.sh > /dev/null << 'ALERTSCRIPT'
 #!/bin/bash
 logger \"[JDEQ-USB-GUARDIAN] Perangkat USB baru ditancapkan.\"
 echo \"\$(date): USB DEVICE PLUGGED\" >> /var/log/jdeq_usb.log
 ALERTSCRIPT
 
-printf '%s\n' 'reticulatus' | sudo -S chmod +x /usr/local/bin/jdeq_usb_alert.sh
-printf '%s\n' 'reticulatus' | sudo -S udevadm control --reload-rules
+sudo chmod +x /usr/local/bin/jdeq_usb_alert.sh
+sudo udevadm control --reload-rules
 echo '✅ USB Guardian Z83 AKTIF.'
 "
 

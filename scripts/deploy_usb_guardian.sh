@@ -5,20 +5,20 @@ echo "=========================================="
 
 # 1. Pasang aturan udev di Z83 untuk deteksi USB
 echo "[1/3] Memasang USB Guardian di Radar (Z83)..."
-ssh iswan@z83-server.tail2a1291.ts.net "echo 'reticulatus' | sudo -S tee /etc/udev/rules.d/99-jdeq-usb-guardian.rules > /dev/null << 'UDEV'
+ssh iswan@z83-server.tail2a1291.ts.net "sudo tee /etc/udev/rules.d/99-jdeq-usb-guardian.rules > /dev/null << 'UDEV'
 # Deteksi setiap perangkat USB yang ditancapkan
 ACTION==\"add\", SUBSYSTEM==\"usb\", RUN+=\"/usr/local/bin/jdeq_usb_alert.sh\"
 UDEV
 
-echo 'reticulatus' | sudo -S tee /usr/local/bin/jdeq_usb_alert.sh > /dev/null << 'ALERTSCRIPT'
+sudo tee /usr/local/bin/jdeq_usb_alert.sh > /dev/null << 'ALERTSCRIPT'
 #!/bin/bash
 logger \"[JDEQ-USB-GUARDIAN] Perangkat USB baru ditancapkan: \$devname\"
 # Kirim notifikasi ke log sistem
 echo \"\$(date): USB DEVICE PLUGGED - \$devname\" >> /var/log/jdeq_usb.log
 ALERTSCRIPT
 
-echo 'reticulatus' | sudo -S chmod +x /usr/local/bin/jdeq_usb_alert.sh
-echo 'reticulatus' | sudo -S udevadm control --reload-rules
+sudo chmod +x /usr/local/bin/jdeq_usb_alert.sh
+sudo udevadm control --reload-rules
 echo '✅ USB Guardian aktif di Z83.'"
 
 # 2. Nonaktifkan auto‑mount di Termux (Vivo) jika memungkinkan
