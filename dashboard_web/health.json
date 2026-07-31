@@ -4,6 +4,6 @@
     "radar": "ONLINE",
     "penjaga": "ONLINE"
   },
-  "timestamp": "Sat Aug  1 00:00:09 WIB 2026",
-  "commit": "fce0c17 ADR-0070: Perbaiki Seragam Akses Z83 + Kalibrasi IDS"
+  "timestamp": "Sat Aug  1 00:10:02 WIB 2026",
+  "commit": "888c2eb ADR-0072: Milestone Fabric v2 — Self-Poisoning Eliminated"
 }
