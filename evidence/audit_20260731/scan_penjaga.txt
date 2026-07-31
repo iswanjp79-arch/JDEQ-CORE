@@ -1,0 +1,9 @@
+# Nmap 7.99 scan initiated Fri Jul 31 19:09:56 2026 as: nmap -sT -p 22,8022 -T4 -oN /data/data/com.termux/files/usr/tmp/mico_audit_23356/scan_penjaga.txt 100.103.39.81
+Nmap scan report for 100.103.39.81
+Host is up (0.70s latency).
+
+PORT     STATE  SERVICE
+22/tcp   closed ssh
+8022/tcp open   oa-system
+
+# Nmap done at Fri Jul 31 19:09:58 2026 -- 1 IP address (1 host up) scanned in 1.96 seconds
