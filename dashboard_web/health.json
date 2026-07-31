@@ -1,0 +1,9 @@
+{
+  "nodes": {
+    "scout": "ONLINE",
+    "radar": "ONLINE",
+    "penjaga": "ONLINE"
+  },
+  "timestamp": "Fri Jul 31 22:45:08 WIB 2026",
+  "commit": "35b2468 ADR-0068: MANIFES KESADARAN DIGITAL FINAL — Neuromorphic + Entitas + AI Lokal"
+}

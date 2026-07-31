@@ -41,3 +41,5 @@ Traceback (most recent call last):
                 (agent_id, status))
                 ^^^^^^^^^^^^^^^^^^^
 sqlite3.OperationalError: database is locked
+✅ 13 agen diperiksa.
+✅ 13 agen diperiksa.
