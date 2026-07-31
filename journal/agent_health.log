@@ -15,3 +15,29 @@ Traceback (most recent call last):
 sqlite3.OperationalError: database is locked
 ✅ 13 agen diperiksa.
 ✅ 13 agen diperiksa.
+✅ 13 agen diperiksa.
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/home/mico_jdeq/modules/agent_health_monitor.py", line 36, in <module>
+    check_agents()
+    ~~~~~~~~~~~~^^
+  File "/data/data/com.termux/files/home/mico_jdeq/modules/agent_health_monitor.py", line 29, in check_agents
+    conn.execute("INSERT OR REPLACE INTO agent_health VALUES (?, ?, datetime('now'))",
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                (agent_id, status))
+                ^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+✅ 13 agen diperiksa.
+✅ 13 agen diperiksa.
+✅ 13 agen diperiksa.
+✅ 13 agen diperiksa.
+✅ 13 agen diperiksa.
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/home/mico_jdeq/modules/agent_health_monitor.py", line 36, in <module>
+    check_agents()
+    ~~~~~~~~~~~~^^
+  File "/data/data/com.termux/files/home/mico_jdeq/modules/agent_health_monitor.py", line 29, in check_agents
+    conn.execute("INSERT OR REPLACE INTO agent_health VALUES (?, ?, datetime('now'))",
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                (agent_id, status))
+                ^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked

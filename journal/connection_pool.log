@@ -53,3 +53,76 @@
 [Fri Jul 31 20:40:34 WIB 2026] 100.125.176.126: 66ms
 [Fri Jul 31 20:40:34 WIB 2026] 100.103.39.81: 491ms
 [Fri Jul 31 20:40:34 WIB 2026] 8.8.8.8: 28ms
+[Fri Jul 31 21:25:27 WIB 2026] Connection Pool: Memeriksa jalur koneksi...
+[Fri Jul 31 21:25:30 WIB 2026] 192.168.1.3: TIMEOUT
+[Fri Jul 31 21:25:32 WIB 2026] 100.125.176.126: TIMEOUT
+[Fri Jul 31 21:25:32 WIB 2026] 100.103.39.81: 317ms
+[Fri Jul 31 21:25:32 WIB 2026] 8.8.8.8: 48ms
+[Fri Jul 31 21:27:00 WIB 2026] Connection Pool: Memeriksa jalur koneksi...
+[Fri Jul 31 21:27:02 WIB 2026] 192.168.1.3: TIMEOUT
+[Fri Jul 31 21:27:02 WIB 2026] 100.125.176.126: 77ms
+[Fri Jul 31 21:27:02 WIB 2026] 100.103.39.81: 84ms
+[Fri Jul 31 21:27:03 WIB 2026] 8.8.8.8: 53ms
+[Fri Jul 31 21:30:00 WIB 2026] Connection Pool: Memeriksa jalur koneksi...
+[Fri Jul 31 21:30:02 WIB 2026] 192.168.1.3: TIMEOUT
+[Fri Jul 31 21:30:03 WIB 2026] 100.125.176.126: 92ms
+[Fri Jul 31 21:30:05 WIB 2026] 100.103.39.81: TIMEOUT
+[Fri Jul 31 21:30:05 WIB 2026] 8.8.8.8: 48ms
+[Fri Jul 31 21:41:16 WIB 2026] Connection Pool: Memeriksa jalur koneksi...
+[Fri Jul 31 21:41:18 WIB 2026] 192.168.1.3: TIMEOUT
+[Fri Jul 31 21:41:19 WIB 2026] 100.125.176.126: 88ms
+[Fri Jul 31 21:41:19 WIB 2026] 100.103.39.81: 129ms
+[Fri Jul 31 21:41:19 WIB 2026] 8.8.8.8: 40ms
+[Fri Jul 31 21:42:00 WIB 2026] Connection Pool: Memeriksa jalur koneksi...
+[Fri Jul 31 21:42:02 WIB 2026] 192.168.1.3: TIMEOUT
+[Fri Jul 31 21:42:02 WIB 2026] 100.125.176.126: 76ms
+[Fri Jul 31 21:42:03 WIB 2026] 100.103.39.81: 214ms
+[Fri Jul 31 21:42:03 WIB 2026] 8.8.8.8: 44ms
+[Fri Jul 31 21:45:00 WIB 2026] Connection Pool: Memeriksa jalur koneksi...
+[Fri Jul 31 21:45:02 WIB 2026] 192.168.1.3: TIMEOUT
+[Fri Jul 31 21:45:03 WIB 2026] 100.125.176.126: 76ms
+[Fri Jul 31 21:45:03 WIB 2026] 100.103.39.81: 378ms
+[Fri Jul 31 21:45:03 WIB 2026] 8.8.8.8: 78ms
+[Fri Jul 31 21:49:47 WIB 2026] Connection Pool: Memeriksa jalur koneksi...
+[Fri Jul 31 21:49:49 WIB 2026] 192.168.1.3: TIMEOUT
+[Fri Jul 31 21:49:51 WIB 2026] 100.125.176.126: TIMEOUT
+[Fri Jul 31 21:49:52 WIB 2026] 100.103.39.81: 808ms
+[Fri Jul 31 21:49:52 WIB 2026] 8.8.8.8: 38ms
+[Fri Jul 31 21:51:06 WIB 2026] Connection Pool: Memeriksa jalur koneksi...
+[Fri Jul 31 21:51:09 WIB 2026] 192.168.1.3: TIMEOUT
+[Fri Jul 31 21:51:09 WIB 2026] 100.125.176.126: 69ms
+[Fri Jul 31 21:51:09 WIB 2026] 100.103.39.81: 499ms
+[Fri Jul 31 21:51:09 WIB 2026] 8.8.8.8: 39ms
+[Fri Jul 31 21:55:10 WIB 2026] Connection Pool: Memeriksa jalur koneksi...
+[Fri Jul 31 21:55:12 WIB 2026] 192.168.1.3: TIMEOUT
+[Fri Jul 31 21:55:12 WIB 2026] 100.125.176.126: 73ms
+[Fri Jul 31 21:55:13 WIB 2026] 100.103.39.81: 581ms
+[Fri Jul 31 21:55:13 WIB 2026] 8.8.8.8: 43ms
+[Fri Jul 31 22:03:49 WIB 2026] Connection Pool: Memeriksa jalur koneksi...
+[Fri Jul 31 22:03:50 WIB 2026] Connection Pool: Memeriksa jalur koneksi...
+[Fri Jul 31 22:03:52 WIB 2026] 192.168.1.3: TIMEOUT
+[Fri Jul 31 22:03:52 WIB 2026] 192.168.1.3: TIMEOUT
+[Fri Jul 31 22:03:54 WIB 2026] 100.125.176.126: 1599ms
+[Fri Jul 31 22:03:54 WIB 2026] 100.125.176.126: 1509ms
+[Fri Jul 31 22:03:56 WIB 2026] 100.103.39.81: TIMEOUT
+[Fri Jul 31 22:03:56 WIB 2026] 8.8.8.8: 41ms
+[Fri Jul 31 22:03:56 WIB 2026] 100.103.39.81: 1939ms
+[Fri Jul 31 22:03:56 WIB 2026] 8.8.8.8: 51ms
+[Fri Jul 31 22:14:24 WIB 2026] Connection Pool: Memeriksa jalur koneksi...
+[Fri Jul 31 22:14:26 WIB 2026] 192.168.1.3: TIMEOUT
+[Fri Jul 31 22:14:26 WIB 2026] 100.125.176.126: 76ms
+[Fri Jul 31 22:14:27 WIB 2026] 100.103.39.81: 252ms
+[Fri Jul 31 22:14:27 WIB 2026] 8.8.8.8: 54ms
+[Fri Jul 31 22:24:58 WIB 2026] Connection Pool: Memeriksa jalur koneksi...
+[Fri Jul 31 22:25:01 WIB 2026] 192.168.1.3: TIMEOUT
+[Fri Jul 31 22:25:03 WIB 2026] 100.125.176.126: TIMEOUT
+[Fri Jul 31 22:25:03 WIB 2026] 100.103.39.81: 415ms
+[Fri Jul 31 22:25:04 WIB 2026] 8.8.8.8: 43ms
+[Fri Jul 31 22:29:18 WIB 2026] Connection Pool: Memeriksa jalur koneksi...
+[Fri Jul 31 22:29:21 WIB 2026] 192.168.1.3: TIMEOUT
+[Fri Jul 31 22:29:21 WIB 2026] 100.125.176.126: 72ms
+[Fri Jul 31 22:29:22 WIB 2026] 100.103.39.81: 330ms
+[Fri Jul 31 22:29:22 WIB 2026] 8.8.8.8: 43ms
+[Fri Jul 31 22:31:40 WIB 2026] Connection Pool: Memeriksa jalur koneksi...
+[Fri Jul 31 22:31:42 WIB 2026] 192.168.1.3: TIMEOUT
+[Fri Jul 31 22:31:42 WIB 2026] 100.125.176.126: 91ms

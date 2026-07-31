@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="30">
+    <title>MICO-JDEQ Dashboard</title>
+    <style>
+        body { background: #0a0a0a; color: #00ff00; font-family: monospace; padding: 1rem; }
+        .card { background: #111; border: 1px solid #00ff00; padding: 10px; margin: 5px 0; border-radius: 5px; }
+        .online { color: #00ff00; } .offline { color: #ff4444; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
+    </style>
+</head>
+<body>
+    <h1>🌐 MICO-JDEQ</h1>
+    <p>Digital Awareness OS — <span id="time"></span></p>
+    <div class="grid" id="nodes"></div>
+    <div class="card" id="health"></div>
+    <script>
+        document.getElementById('time').textContent = new Date().toLocaleString('id-ID');
+        // Auto-refresh data setiap 30 detik
+        fetch('/health.json').then(r => r.json()).then(data => {
+            let html = '';
+            for (let [node, status] of Object.entries(data.nodes)) {
+                html += `<div class="card"><b>${node.toUpperCase()}</b><br><span class="${status}">${status}</span></div>`;
+            }
+            document.getElementById('nodes').innerHTML = html;
+            document.getElementById('health').textContent = JSON.stringify(data, null, 2);
+        });
+    </script>
+</body>
+</html>
