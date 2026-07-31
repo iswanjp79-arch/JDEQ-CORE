@@ -42,3 +42,11 @@ SCORE=$((PASS * 100 / TOTAL))
 echo " SKOR: $SCORE/100"
 [ $FAIL -eq 0 ] && echo " STATUS: SEHAT ✅" || echo " STATUS: PERLU PERBAIKAN ($FAIL gagal)"
 echo "=============================================="
+
+# XSS Defense Check
+echo "[21] XSS Defense"
+if [ -f ~/mico_jdeq/security/block_patterns.json ] && [ -f ~/mico_jdeq/scripts/xss_sanitizer.py ]; then
+    echo "  ✅ PASS  | XSS Defense"
+else
+    echo "  ❌ FAIL  | XSS Defense"
+fi
