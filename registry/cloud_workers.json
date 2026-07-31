@@ -1,0 +1,10 @@
+{
+  "gcloud_shell": {"type": "compute", "url": "gcloud cloud-shell ssh --command", "status": "active"},
+  "groq_api": {"type": "ai_inference", "url": "https://api.groq.com/openai/v1/chat/completions", "status": "active"},
+  "colab": {"type": "compute", "url": "webhook", "status": "standby"},
+  "github": {"type": "storage", "url": "git@github.com:iswanjp79-arch/JDEQ-CORE.git", "status": "active"},
+  "huggingface": {"type": "model_storage", "url": "https://huggingface.co/iswanjp79", "status": "active"},
+  "google_drive": {"type": "backup_storage", "url": "rclone gdrive:", "status": "active"},
+  "telegram_bot": {"type": "notification", "url": "https://api.telegram.org/bot.../sendMessage", "status": "active"},
+  "thingsboard": {"type": "dashboard", "url": "https://thingsboard.cloud", "status": "registered"}
+}
