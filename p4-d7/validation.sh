@@ -1,6 +1,8 @@
 #!/bin/bash
+LATEST=$(ls -1t /var/log/mico-jdeq/VERIFIKASI_INDEPENDEN_*.log 2>/dev/null | head -1)
 echo "P4-D7 VALIDATION"
-if tail -n 5 /var/log/mico-jdeq/VERIFIKASI_INDEPENDEN_20260818.log 2>/dev/null | grep -q SAH; then
+echo "LATEST_VERIFIER_LOG: $LATEST"
+if [ -n "$LATEST" ] && tail -n 5 "$LATEST" | grep -q "SAH"; then
   echo "VERIFIER: SAH"
 else
   echo "VERIFIER: NOT_SAH"
