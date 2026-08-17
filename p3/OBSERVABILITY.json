@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-08-17T16:05:39+0700",
+  "node": "markas-utama",
+  "cpu_load": "0.41",
+  "mem_free_gb": "2",
+  "disk_free_gb": "36",
+  "verifier_status": "SAH",
+  "task_contract_count": "7",
+  "evidence_chain_length": "7",
+  "alerts": "",
+  "status": "OBSERVABILITY_V1"
+}
