@@ -1,0 +1,7 @@
+[Unit]
+Description=MICO JDEQ Heartbeat Service
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/mico_heartbeat.sh
