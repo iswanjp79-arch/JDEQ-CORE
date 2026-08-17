@@ -1,5 +1,30 @@
 {
   "schema_version": "1.0",
-  "version": "P4-D0-INITIAL",
-  "bindings": []
+  "version": "P4-D0-BOOTSTRAP",
+  "bindings": [
+    {
+      "binding_id": "BIND-Z83-001",
+      "capability_id": "ssh_gateway",
+      "node_id": "Z83-001",
+      "state": "BOUND"
+    },
+    {
+      "binding_id": "BIND-Z83-002",
+      "capability_id": "local_http_8080",
+      "node_id": "Z83-001",
+      "state": "BOUND"
+    },
+    {
+      "binding_id": "BIND-Z83-003",
+      "capability_id": "verifier_runner",
+      "node_id": "Z83-001",
+      "state": "BOUND"
+    },
+    {
+      "binding_id": "BIND-Z83-004",
+      "capability_id": "tailscale_member",
+      "node_id": "Z83-001",
+      "state": "BOUND"
+    }
+  ]
 }

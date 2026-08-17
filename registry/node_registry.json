@@ -1,5 +1,15 @@
 {
   "schema_version": "1.0",
-  "version": "P4-D0-INITIAL",
-  "nodes": []
+  "version": "P4-D0-BOOTSTRAP",
+  "nodes": [
+    {
+      "node_id": "Z83-001",
+      "registration_state": "REGISTERED",
+      "operational_state": "ACTIVE",
+      "identity_verified": true,
+      "host": "Z83",
+      "platform": "linux",
+      "health": "healthy"
+    }
+  ]
 }
