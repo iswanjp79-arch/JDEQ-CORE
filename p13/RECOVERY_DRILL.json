@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-08-17T23:42:25+0700",
+  "backup_dir": "/var/mico-backup/20260817",
+  "backup_integrity": "OK",
+  "services": " ssh:ok; tailscaled:ok; systemd-networkd:ok;",
+  "verifier_status": "SAH",
+  "evidence_chain_last_hash": "534bf2b56de53a5cebc4e71fdb0d923eca1d106f78b041038d8e4cea09337d3c",
+  "drill_result": "PASS",
+  "status": "RECOVERY_DRILL_V1"
+}
