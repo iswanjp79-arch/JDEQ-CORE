@@ -1,0 +1,8 @@
+{
+  "task": "P11-001",
+  "engine": "STRESS_TEST_ENGINE_V1",
+  "stress_size_mb": 25,
+  "hash_iterations": 3,
+  "max_load_after": 3.0,
+  "timeout_seconds": 120
+}
