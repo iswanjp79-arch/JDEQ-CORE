@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-08-17T14:51:48+0700",
+  "hostname": "markas-utama",
+  "tailscale_ip": "100.67.36.31",
+  "funnel_url": "https://markas-utama.tail2a1291.ts.net",
+  "services": "ssh:active=active,enabled=enabled;tailscaled:active=active,enabled=enabled;systemd-networkd:active=active,enabled=enabled;",
+  "load": "0.41 0.25 0.20",
+  "memory": "1.1Gi/3.2Gi",
+  "disk": "36G free of 56G",
+  "ssh_password_authentication": "no
+no",
+  "status": "DIGITAL_MIRROR_V1"
+}
