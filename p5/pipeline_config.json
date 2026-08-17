@@ -1,0 +1,7 @@
+{
+  "task": "P5-001",
+  "pipeline": "AUTOMATION_ADVANCED_PIPELINE_V1",
+  "stages": ["verify", "heartbeat", "alert", "observability", "evidence", "push"],
+  "modes": ["check", "run", "push"],
+  "auto_push": false
+}
