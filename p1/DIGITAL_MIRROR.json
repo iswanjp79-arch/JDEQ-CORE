@@ -7,7 +7,6 @@
   "load": "0.41 0.25 0.20",
   "memory": "1.1Gi/3.2Gi",
   "disk": "36G free of 56G",
-  "ssh_password_authentication": "no
-no",
+  "ssh_password_authentication": "no",
   "status": "DIGITAL_MIRROR_V1"
 }
