@@ -1,0 +1,17 @@
+{
+  "task": "P9-001",
+  "engine": "PREDICTIVE_ANALYTICS_V1",
+  "inputs": [
+    "cpu_load",
+    "mem_free_gb",
+    "disk_free_gb",
+    "task_contract_count",
+    "evidence_chain_length"
+  ],
+  "thresholds": {
+    "cpu_warning": 1.5,
+    "disk_warning_gb": 10,
+    "task_contract_growth_per_day": 20
+  },
+  "forecast_horizon_hours": 24
+}
