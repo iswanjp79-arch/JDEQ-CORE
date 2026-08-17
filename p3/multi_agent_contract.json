@@ -1,0 +1,30 @@
+{
+  "task": "P3-001",
+  "engine": "MULTI_AGENT_CONTRACT_ENGINE_V1",
+  "agents": [
+    {"name": "jarvis_gemini", "role": "monitoring", "permission": "read"},
+    {"name": "chatgpt", "role": "planner", "permission": "propose"},
+    {"name": "dola", "role": "governance", "permission": "approve"},
+    {"name": "perplexity", "role": "research", "permission": "read"},
+    {"name": "copilot", "role": "documentation", "permission": "write_docs"},
+    {"name": "claude", "role": "auditor", "permission": "audit"},
+    {"name": "deepseek", "role": "executor", "permission": "execute"}
+  ],
+  "observability": {
+    "metrics": [
+      "cpu_load",
+      "memory_free_gb",
+      "disk_free_gb",
+      "verifier_status",
+      "task_contract_count",
+      "evidence_chain_length"
+    ],
+    "heartbeat_interval_minutes": 10,
+    "alert_on": [
+      "verifier_fail",
+      "service_down",
+      "disk_low",
+      "hash_mismatch"
+    ]
+  }
+}
