@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-08-17T15:48:53+0700",
+  "node": "Z83",
+  "cpu_load": "0.25",
+  "mem_free_gb": "2",
+  "disk_free_gb": "36",
+  "route_decision": "LOCAL",
+  "destination_node": "Z83",
+  "status": "COMPUTE_GATEWAY_V1"
+}
