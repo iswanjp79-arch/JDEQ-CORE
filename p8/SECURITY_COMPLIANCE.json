@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-08-17T23:18:43+0700",
+  "ufw": "active",
+  "ssh_password_auth": "ok",
+  "ssh_permit_root": "ok",
+  "listener_8080": "local_only",
+  "failed_ssh_login_24h": "0",
+  "verifier": "SAH",
+  "evidence_chain_last_hash": "1a867fccd1d91e60ef618067df8028fc5b21994d6b274ef4287c16892f97ccac",
+  "failures": "",
+  "status": "COMPLIANT"
+}
