@@ -1,5 +1,13 @@
 {
   "schema_version": "1.0",
-  "version": "P4-D0-INITIAL",
-  "contracts": []
+  "version": "P4-D0-BOOTSTRAP",
+  "contracts": [
+    {
+      "contract_id": "contract-001",
+      "name": "z83-p4-d0-bootstrap",
+      "operator": "ISWANJP",
+      "bound_scope": "P4-D0-BOOTSTRAP",
+      "status": "ACTIVE"
+    }
+  ]
 }

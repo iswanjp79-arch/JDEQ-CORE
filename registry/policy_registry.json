@@ -1,5 +1,14 @@
 {
   "schema_version": "1.0",
-  "version": "P4-D0-INITIAL",
-  "policies": []
+  "version": "P4-D0-BOOTSTRAP",
+  "policies": [
+    {
+      "policy_id": "policy-001",
+      "name": "allow-ssh-gateway-z83",
+      "effect": "ALLOW",
+      "capability_id": "ssh_gateway",
+      "node_id": "Z83-001",
+      "status": "ACTIVE"
+    }
+  ]
 }
