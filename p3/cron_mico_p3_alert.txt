@@ -1,0 +1,1 @@
+*/5 * * * * root /home/iswanjp/mico/p3/mico_alerting.sh
