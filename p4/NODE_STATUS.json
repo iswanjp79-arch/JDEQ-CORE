@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-08-17T16:22:45+0700",
+  "orchestrator": "Z83",
+  "cpu_load": "0.28",
+  "mem_free_gb": "2",
+  "disk_free_gb": "36",
+  "pc_i5_status": "UNREACHABLE",
+  "route_decision": "LOCAL",
+  "destination_node": "Z83",
+  "status": "NODE_ORCHESTRATOR_V1"
+}
