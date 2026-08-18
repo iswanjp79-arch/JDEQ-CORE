@@ -39,5 +39,14 @@
     "type": "dashboard",
     "url": "https://thingsboard.cloud",
     "status": "registered"
+  },
+  "gcp_service_account": {
+    "type": "service_account",
+    "project_id": "heroic-mechanic-476300-v2",
+    "client_email": "iswanjp79@heroic-mechanic-476300-v2.iam.gserviceaccount.com",
+    "private_key_file": "/home/iswanjp/mico/gcp-sa.json",
+    "status": "active",
+    "permission": "least_privilege",
+    "note": "Digunakan untuk GCP logging/KMS/storage. Jangan tampilkan private key."
   }
 }
