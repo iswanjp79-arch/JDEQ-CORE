@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "contract_id": "contract-002",
+  "name": "heavy-compute-pci5",
+  "node_id": "PCI5",
+  "role": "HEAVY_COMPUTE_WORKER",
+  "capabilities": [
+    "PYTHON_EXECUTION",
+    "DOCKER_CONTAINER",
+    "DEEPSEEK_RUNNER"
+  ],
+  "transport": "MQTT_P21_AUTH_CONFIGURED",
+  "endpoint": "100.67.36.31:1883",
+  "auth_user": "mico_worker",
+  "auth_password_ref": "/home/iswanjp/mico/.env.secret",
+  "status": "AUTH_CONFIGURED",
+  "evidence": {
+    "anonymous_test": "NOT_AUTHORISED",
+    "authenticated_test": "PENDING",
+    "hardening_commit": "22fbf66"
+  }
+}
