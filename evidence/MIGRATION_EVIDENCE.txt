@@ -1,0 +1,9 @@
+MICO-JDEQ RELOKASI STORAGEWATCHDOG
+Waktu       : 2026-08-18T14:54:31+07:00
+File baru   : C:\JDEQ_Core\Telemetry\StorageWatchdog.ps1
+File arsip  : C:\JDEQ_Core\Archive_System32_Conflicts\StorageWatchdog.ps1.bak
+Hash baru   : D73080486D5BC6FAD0CA9799C337CAE51C6C5A3B3E292B498E48D20B8F12302D
+Hash arsip  : D73080486D5BC6FAD0CA9799C337CAE51C6C5A3B3E292B498E48D20B8F12302D
+Hash sama   : True
+Task Action : -ExecutionPolicy Bypass -NoProfile -WindowStyle Hidden -File C:\JDEQ_Core\Telemetry\StorageWatchdog.ps1
+Status      : RELOKASI_SUKSES
