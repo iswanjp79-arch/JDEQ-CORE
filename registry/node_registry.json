@@ -10,6 +10,18 @@
       "host": "Z83",
       "platform": "linux",
       "health": "healthy"
+    },
+    {
+      "node_id": "ASPIR-ONE-001",
+      "host": "Acer Aspire One D255",
+      "platform": "linux",
+      "registration_state": "REGISTERED",
+      "operational_state": "ACTIVE",
+      "identity_verified": true,
+      "health": "healthy",
+      "tailscale_name": "antix1",
+      "tailscale_ip": "100.73.150.89",
+      "role": "lightweight_edge_node"
     }
   ]
 }
