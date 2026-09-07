@@ -1,0 +1,13 @@
+﻿{
+  "device": "PC-i5 KAPAL-INDUK",
+  "role": "HEAVY_LOCAL_WORKER",
+  "os": "Windows Enterprise",
+  "cpu": "Intel Core i5",
+  "ram_gb": 16,
+  "gpu": "none",
+  "storage": {
+    "c_drive": "SSD 128 GB OS",
+    "d_drive": "HDD 1 TB Data",
+    "e_drive": "HDD 500 GB Impuls"
+  }
+}
