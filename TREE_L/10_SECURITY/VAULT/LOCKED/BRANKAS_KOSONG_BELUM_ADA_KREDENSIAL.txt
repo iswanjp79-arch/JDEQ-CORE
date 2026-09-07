@@ -1,0 +1,2 @@
+﻿BRANKAS_KOSONG_BELUM_ADA_KREDENSIAL
+Fase 5B hanya persiapan struktur. Belum ada kredensial nyata.
