@@ -1,0 +1,14 @@
+﻿# STATE MACHINE DRAFT — 03_LOGIKA
+
+## Status Umum
+- INIT
+- READY
+- RUNNING
+- PAUSED
+- ERROR
+- DONE
+
+## Transisi Dasar
+INIT -> READY -> RUNNING -> DONE
+RUNNING -> ERROR -> READY (setelah perbaikan)
+RUNNING -> PAUSED -> RUNNING
