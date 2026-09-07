@@ -1,0 +1,10 @@
+﻿{
+  "application_manifest": "v1",
+  "name": "",
+  "version": "",
+  "type": "cli|worker|service",
+  "entrypoint": "",
+  "dependencies": [],
+  "author": "DeepSeek AG-003",
+  "status": "DRAFT"
+}
