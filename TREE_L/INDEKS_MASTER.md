@@ -30,3 +30,12 @@
 - ssot_hash.txt (VIVO_SSOT)
 - MICO_Jurnal_Tumbuh_Kembang.md
 - CHANGELOG.md
+# PEMETAAN KONSEP 6 LAYER JARVIS KE STRUKTUR TERKUNCI
+# Kunci aktif: 4 Layer fungsional + 8 Folder TREE-L
+
+# 1. Pondasi (OS/Kernel)          -> 01_FISIK + 02_DATA
+# 2. Sloof (Memory & Log Routing) -> 06_RUNTIME + 07_INDEX
+# 3. Rangka (NATS/Message Broker) -> 05_PIPELINE
+# 4. Mesin AI (Ollama/LLM)        -> 03_LOGIKA + 04_APLIKASI
+# 5. Gudang (Vector DB/Knowledge) -> 02_DATA + 07_INDEX
+# 6. Gerbang (Tailscale/ACL)      -> 01_FISIK + 05_PIPELINE
