@@ -1,0 +1,31 @@
+﻿{
+  "bridge_id": "VIVO_9L_TO_PC5_8F_TELEMETRY",
+  "created_by": "DeepSeek AG-003",
+  "authority": "L0 / Iswan Juman Pancoro, ST",
+  "timestamp": "2026-09-07T18:30:00+07:00",
+  "rule": "Mapping logika Vivo 9 Layer ke PC-i5 8 Folder. Dilarang salin folder mentah.",
+  "mapping": [
+    {
+      "vivo_layers": [1, 2, 3],
+      "pc_folder": ["01_FISIK", "05_PIPELINE"],
+      "function": "Aturan Koneksi & Jaringan",
+      "note": "PC-i5 harus paham cara menerima sinyal dari HP tanpa menyalin file HP"
+    },
+    {
+      "vivo_layers": [4, 5, 6],
+      "pc_folder": ["02_DATA", "07_INDEX"],
+      "function": "Pola Indeks & Memori",
+      "note": "Struktur database PC-i5 disamakan dengan pola memori HP"
+    },
+    {
+      "vivo_layers": [7, 8, 9],
+      "pc_folder": ["03_LOGIKA", "08_EVIDENCE"],
+      "function": "Inti Doktrin & Aturan Agen",
+      "note": "Sari pati otak Vivo masuk ke logika PC-i5"
+    }
+  ],
+  "thin_client_role": "Vivo Y28 hanya kirim perintah, tidak boleh beban berat",
+  "heavy_worker_role": "PC-i5 mengerjakan semua komputasi berat",
+  "ssot_path": "D:\\MICO_SSOT\\TREE_L",
+  "noise_policy": "Semua folder di luar D:\\MICO_SSOT\\TREE_L diabaikan"
+}

@@ -1,0 +1,6 @@
+﻿*.csv
+*.log
+*.tmp
+mico_embed.py
+DATA_INDEX_PLAN.csv
+KNOWLEDGE_BASE/
