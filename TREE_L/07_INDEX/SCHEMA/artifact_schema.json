@@ -1,0 +1,5 @@
+﻿{
+  "artifact_schema": "v1",
+  "fields": ["path","type","hash","classification","created_at"],
+  "note": "Gunakan SQLite/JSON/CSV dulu. Naik kelas hanya jika query > 1 detik."
+}
