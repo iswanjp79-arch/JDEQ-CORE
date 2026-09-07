@@ -1,0 +1,7 @@
+﻿{
+  "pipeline_dag": "v1",
+  "stages": [],
+  "input": "",
+  "output": "",
+  "description": "Template DAG untuk pipeline. Isi hanya saat ada Task Card."
+}
