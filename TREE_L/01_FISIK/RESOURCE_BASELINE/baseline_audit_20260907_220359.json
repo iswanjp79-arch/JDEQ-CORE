@@ -1,0 +1,16 @@
+﻿{
+    "timestamp":  "2026-09-07 22:03:58",
+    "node":  "KAPAL-INDUK",
+    "os":  "Microsoft Windows 10 Enterprise 10.0.19045",
+    "os_arch":  "64-bit",
+    "cpu":  "Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz",
+    "cpu_cores":  4,
+    "cpu_threads":  4,
+    "ram_total_gb":  15.96,
+    "ram_free_gb":  8.5,
+    "c_total_gb":  118.62,
+    "c_free_gb":  31.76,
+    "c_free_percent":  26.78,
+    "d_total_gb":  921.51,
+    "d_free_gb":  359.66
+}
