@@ -18,8 +18,8 @@ Root folder `D:\MICO_SSOT` telah dirapikan.
 
 | Pemeriksaan | Hasil |
 |-------------|-------|
-| File untracked di root | ✅ Tidak ada (setelah commit `3173485`) |
-| File script & laporan | ✅ Dipindahkan ke `TREE_L\04_APLIKASI\SCRIPTS`, `08_EVIDENCE\DISCOVERY`, `09_GOVERNANCE\ROADMAP` |
+| File untracked di root | ✅ Tidak ada |
+| File script & laporan | ✅ Dipindahkan ke folder 14 pilar |
 | Git working tree | ✅ Bersih |
 
 ## 3. STRUKTUR 14 PILAR
