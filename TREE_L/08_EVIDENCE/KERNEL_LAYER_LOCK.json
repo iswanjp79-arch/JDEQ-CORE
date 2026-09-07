@@ -1,0 +1,21 @@
+﻿{
+  "kernel_lock": {
+    "target_node": "PC-i5 (KAPAL-INDUK)",
+    "layer_count": 4,
+    "layer_names": ["FISIK", "DATA", "LOGIKA", "APLIKASI"],
+    "folder_count": 8,
+    "folder_names": [
+      "01_FISIK",
+      "02_DATA",
+      "03_LOGIKA",
+      "04_APLIKASI",
+      "05_PIPELINE",
+      "06_RUNTIME",
+      "07_INDEX",
+      "08_EVIDENCE"
+    ],
+    "rule": "Berlaku HANYA untuk PC-i5. Perangkat lain dilarang melebihi.",
+    "locked_by": "L0_Iswan_Juman_Pancoro_ST",
+    "timestamp": "2026-09-07T17:00:00+07:00"
+  }
+}

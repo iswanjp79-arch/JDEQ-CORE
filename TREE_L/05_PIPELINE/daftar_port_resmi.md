@@ -1,0 +1,4 @@
+﻿PORT 8022 = SSH
+PORT 4222 = NATS
+PORT 443  = Web/Dashboard
+PORT 8080 = API Gateway

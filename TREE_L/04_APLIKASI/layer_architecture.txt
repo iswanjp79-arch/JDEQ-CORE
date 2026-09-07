@@ -1,0 +1,4 @@
+LAYER 1: FISIK (C: OS, D: Data, E: Impuls)
+LAYER 2: DATA (SQLite, JSON, CSV)
+LAYER 3: LOGIKA (Python, RAG, Query)
+LAYER 4: APLIKASI (Agent, Dashboard)

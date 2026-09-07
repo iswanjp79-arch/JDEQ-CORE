@@ -1,0 +1,7 @@
+{
+    "node_id":  "KAPAL-INDUK",
+    "tailscale_ip":  "100.124.50.70",
+    "os":  "Windows",
+    "nat_server":  "Z83",
+    "role":  "HEAVY_LOCAL_WORKER"
+}
