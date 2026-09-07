@@ -1,0 +1,11 @@
+﻿{
+  "access_control_matrix": "draft",
+  "roles": ["L0","JARVIS","DOLA","DEEPSEEK","AUDITOR"],
+  "permissions": {
+    "L0": "full_control",
+    "JARVIS": "advisor_only",
+    "DOLA": "governance_review",
+    "DEEPSEEK": "execute_approved_task",
+    "AUDITOR": "read_only_audit"
+  }
+}
