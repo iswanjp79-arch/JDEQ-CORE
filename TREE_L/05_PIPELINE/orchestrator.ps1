@@ -1,0 +1,128 @@
+﻿# orchestrator.ps1 — Mandor lokal MICO-JDEQ PC-i5
+# Mode: once / loop
+
+param(
+    [string]$Mode = "once"
+)
+
+$base = "D:\MICO_SSOT\TREE_L"
+$inbox = "$base\05_PIPELINE\INBOX"
+$outbox = "$base\05_PIPELINE\OUTBOX"
+$errorDir = "$base\05_PIPELINE\ERROR"
+$archive = "$base\05_PIPELINE\ARCHIVE"
+$evidence = "$base\08_EVIDENCE\RUNTIME"
+$failedCounter = "$base\05_PIPELINE\failure_count.json"
+
+function Ensure-Dirs {
+    @($inbox,$outbox,$errorDir,$archive,$evidence) | ForEach-Object {
+        New-Item -ItemType Directory -Path $_ -Force | Out-Null
+    }
+}
+
+function Write-Evidence($TaskId,$Status,$OutputFile) {
+    $ts = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+    $ev = [PSCustomObject]@{
+        task_id = $TaskId
+        status = $Status
+        timestamp = $ts
+        output_file = $OutputFile
+        node = "KAPAL-INDUK"
+    } | ConvertTo-Json -Compress
+    $ev | Out-File "$evidence\orchestrator_$(Get-Date -Format 'yyyyMMdd_HHmmss').json" -Encoding UTF8
+}
+
+function Process-SPK($file) {
+    $name = [IO.Path]::GetFileNameWithoutExtension($file.Name)
+    $content = Get-Content $file.FullName -Raw -Encoding UTF8
+
+    $taskType = $null
+    if ($content -match '"task_type"\s*:\s*"([^"]+)"') {
+        $taskType = $matches[1].ToLower()
+    } elseif ($name -match '(ping|health|echo|status)') {
+        $taskType = $matches[1].ToLower()
+    }
+
+    try {
+        switch ($taskType) {
+            "ping" {
+                $ping = Test-Connection -ComputerName 127.0.0.1 -Count 1 -Quiet
+                $result = [PSCustomObject]@{
+                    task = $name
+                    type = "ping"
+                    output = $ping
+                    timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+                }
+            }
+            "health" {
+                $health = & "$base\06_RUNTIME\healthcheck.ps1"
+                $result = [PSCustomObject]@{
+                    task = $name
+                    type = "health"
+                    output = $health
+                    timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+                }
+            }
+            "echo" {
+                $result = [PSCustomObject]@{
+                    task = $name
+                    type = "echo"
+                    output = $content.Trim()
+                    timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+                }
+            }
+            default {
+                throw "Task type tidak dikenal"
+            }
+        }
+    } catch {
+        $fail = 0
+        if (Test-Path $failedCounter) {
+            $fail = (Get-Content $failedCounter -Raw | ConvertFrom-Json).count
+        }
+        $fail++
+        [PSCustomObject]@{
+            count = $fail
+            last_file = $file.Name
+            last_time = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+        } | ConvertTo-Json | Out-File $failedCounter -Encoding UTF8
+
+        if ($fail -ge 3) {
+            Move-Item $file.FullName "$errorDir\$($file.Name)" -Force
+            Write-Evidence $name "ERROR_PERMANENT" "$errorDir\$($file.Name)"
+        } else {
+            Write-Evidence $name "GAGAL_SEMENTARA_$fail" $null
+        }
+        return
+    }
+
+    $outFile = "$outbox\$name.json"
+    $result | ConvertTo-Json | Out-File $outFile -Encoding UTF8
+    Move-Item $file.FullName "$archive\$($file.Name)" -Force
+    Write-Evidence $name "SUKSES" $outFile
+
+    [PSCustomObject]@{
+        count = 0
+        last_file = $null
+        last_time = $null
+    } | ConvertTo-Json | Out-File $failedCounter -Encoding UTF8
+}
+
+function Run-Once {
+    Ensure-Dirs
+    $files = Get-ChildItem $inbox -File -Filter *.txt -ErrorAction SilentlyContinue
+    if (-not $files) { Write-Output "INBOX kosong."; return }
+    foreach ($f in $files) { Process-SPK $f }
+}
+
+function Run-Loop {
+    Ensure-Dirs
+    while ($true) {
+        $files = Get-ChildItem $inbox -File -Filter *.txt -ErrorAction SilentlyContinue
+        if ($files) {
+            foreach ($f in $files) { Process-SPK $f }
+        }
+        Start-Sleep -Seconds 10
+    }
+}
+
+if ($Mode -eq "loop") { Run-Loop } else { Run-Once }
