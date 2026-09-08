@@ -1,0 +1,102 @@
+﻿{
+    "node_id":  "KAPAL-INDUK",
+    "timestamp":  "2026-09-08 14:27:50",
+    "application_root":  "D:\\MICO_SSOT\\TREE_L\\04_APLIKASI",
+    "subfolder_status":  [
+                             {
+                                 "folder":  "CLI",
+                                 "exists":  true,
+                                 "file_count":  0
+                             },
+                             {
+                                 "folder":  "SCRIPTS",
+                                 "exists":  true,
+                                 "file_count":  6
+                             },
+                             {
+                                 "folder":  "SERVICE",
+                                 "exists":  true,
+                                 "file_count":  0
+                             },
+                             {
+                                 "folder":  "WORKER",
+                                 "exists":  true,
+                                 "file_count":  0
+                             },
+                             {
+                                 "folder":  "EXP",
+                                 "exists":  true,
+                                 "file_count":  0
+                             },
+                             {
+                                 "folder":  "PROD",
+                                 "exists":  true,
+                                 "file_count":  0
+                             }
+                         ],
+    "important_file_hashes":  [
+                                  {
+                                      "file":  "D:\\MICO_SSOT\\TREE_L\\04_APLIKASI\\language_registry.json",
+                                      "sha256":  "974EC5A61707CA8608804E9BB5B10FA2DCE430D72659A9328C17F7BBAEF41085",
+                                      "size_kb":  0.68
+                                  },
+                                  {
+                                      "file":  "D:\\MICO_SSOT\\TREE_L\\04_APLIKASI\\application_manifest_template.json",
+                                      "sha256":  "DEF5C7EA70A526F81558808CEDD2CC50EEAA2F8BADB2C9A3B6B03AC331F29CC2",
+                                      "size_kb":  0.19
+                                  },
+                                  {
+                                      "file":  "D:\\MICO_SSOT\\TREE_L\\04_APLIKASI\\DEPENDENCY_LIST_TEMPLATE.md",
+                                      "sha256":  "41D24ADBA0FFB78F60E83EE63697940051310B43CF1DF55C8C12C2404E6B1EF4",
+                                      "size_kb":  0.15
+                                  },
+                                  {
+                                      "file":  "D:\\MICO_SSOT\\TREE_L\\04_APLIKASI\\layer_architecture.txt",
+                                      "sha256":  "823A8F134A6063892D3893EFF4387782451BE63245E6923F4F8E292A8CEA27D4",
+                                      "size_kb":  0.15
+                                  },
+                                  {
+                                      "file":  "D:\\MICO_SSOT\\TREE_L\\04_APLIKASI\\SCRIPTS\\local_agent.py",
+                                      "sha256":  "MISSING",
+                                      "size_kb":  0
+                                  },
+                                  {
+                                      "file":  "D:\\MICO_SSOT\\TREE_L\\04_APLIKASI\\SCRIPTS\\prompt_generator.py",
+                                      "sha256":  "0FDDB5A8A8D8ECF51DDB1B18F33F1C5E5658275E8947AB8A6A933E020F92F191",
+                                      "size_kb":  0.82
+                                  }
+                              ],
+    "language_registry":  [
+                              {
+                                  "ext":  ".py",
+                                  "command":  "python",
+                                  "status":  "ADA"
+                              },
+                              {
+                                  "ext":  ".ps1",
+                                  "command":  "powershell -File",
+                                  "status":  "ADA"
+                              },
+                              {
+                                  "ext":  ".js",
+                                  "command":  "node",
+                                  "status":  "ADA"
+                              },
+                              {
+                                  "ext":  ".go",
+                                  "command":  "go run",
+                                  "status":  "ADA"
+                              },
+                              {
+                                  "ext":  ".sh",
+                                  "command":  "bash",
+                                  "status":  "ADA"
+                              },
+                              {
+                                  "ext":  ".bat",
+                                  "command":  "cmd /c",
+                                  "status":  "ADA"
+                              }
+                          ],
+    "note":  "Layer 6 Application Layer Audit — read only"
+}
