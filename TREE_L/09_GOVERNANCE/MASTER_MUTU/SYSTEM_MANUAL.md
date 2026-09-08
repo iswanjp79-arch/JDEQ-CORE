@@ -1,4 +1,5 @@
 ﻿# MICO-JDEQ SYSTEM MANUAL
-Status: ACTIVE
-Owner: L0
-Node: PC-i5 (KAPAL-INDUK)
+- Status: ACTIVE & PROTECTED
+- Governance Gate: DOLA
+- Pillar Enforcement: 14 Immutable Pillars (TREE-L)
+- Timestamp: 20260909-044004
