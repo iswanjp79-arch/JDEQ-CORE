@@ -1,0 +1,92 @@
+﻿{
+    "node_id":  "KAPAL-INDUK",
+    "timestamp":  "2026-09-08 14:22:11",
+    "edge_processes":  [
+                           {
+                               "ProcessName":  "mosquitto",
+                               "Id":  4396,
+                               "CPU":  1.71875,
+                               "WorkingSet64":  6594560
+                           },
+                           {
+                               "ProcessName":  "powershell",
+                               "Id":  4884,
+                               "CPU":  15.5625,
+                               "WorkingSet64":  203395072
+                           },
+                           {
+                               "ProcessName":  "powershell",
+                               "Id":  12552,
+                               "CPU":  0.890625,
+                               "WorkingSet64":  11931648
+                           },
+                           {
+                               "ProcessName":  "powershell",
+                               "Id":  13164,
+                               "CPU":  0.828125,
+                               "WorkingSet64":  11509760
+                           },
+                           {
+                               "ProcessName":  "winlogon",
+                               "Id":  620,
+                               "CPU":  0.296875,
+                               "WorkingSet64":  12455936
+                           },
+                           {
+                               "ProcessName":  "wslservice",
+                               "Id":  4704,
+                               "CPU":  0.25,
+                               "WorkingSet64":  24481792
+                           }
+                       ],
+    "edge_services":  [
+                          {
+                              "Name":  "mosquitto",
+                              "DisplayName":  "Mosquitto Broker",
+                              "Status":  4,
+                              "StartType":  2
+                          },
+                          {
+                              "Name":  "sshd",
+                              "DisplayName":  "OpenSSH SSH Server",
+                              "Status":  4,
+                              "StartType":  2
+                          },
+                          {
+                              "Name":  "SshdBroker",
+                              "DisplayName":  "SshdBroker",
+                              "Status":  1,
+                              "StartType":  3
+                          },
+                          {
+                              "Name":  "Tailscale",
+                              "DisplayName":  "Tailscale",
+                              "Status":  4,
+                              "StartType":  2
+                          },
+                          {
+                              "Name":  "usbipd",
+                              "DisplayName":  "USBIP Device Host",
+                              "Status":  4,
+                              "StartType":  2
+                          },
+                          {
+                              "Name":  "WSLService",
+                              "DisplayName":  "WSL Service",
+                              "Status":  4,
+                              "StartType":  2
+                          }
+                      ],
+    "tailscale_ip_self":  "100.124.50.70",
+    "edge_peers_status":  [
+                              {
+                                  "ip":  "100.127.153.2",
+                                  "reachable":  true
+                              },
+                              {
+                                  "ip":  "100.92.105.35",
+                                  "reachable":  false
+                              }
+                          ],
+    "note":  "Layer 3 Edge Computing Audit — read only"
+}
