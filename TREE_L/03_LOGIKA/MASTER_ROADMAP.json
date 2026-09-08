@@ -1,69 +1,112 @@
 ﻿{
-  "project": "MICO-JDEQ",
-  "node": "KAPAL-INDUK (PC-i5)",
-  "timestamp": "2026-09-08T16:35:00+07:00",
-  "architecture": "7-Layer MICO-JDEQ",
-  "status_umum": "FOUNDATION_LOCKED",
-  "layers": [
-    {
-      "layer": "L1",
-      "nama": "Physical Devices",
-      "pilar": ["01_FISIK"],
-      "status": "LOCKED",
-      "keterangan": "Baseline fisik, identitas node, audit selesai"
-    },
-    {
-      "layer": "L2",
-      "nama": "Connectivity & Protocol",
-      "pilar": ["05_PIPELINE"],
-      "status": "LOCKED",
-      "keterangan": "Port/socket, tailscale, firewall check valve"
-    },
-    {
-      "layer": "L3",
-      "nama": "Edge Computing",
-      "pilar": ["05_PIPELINE", "02_DATA"],
-      "status": "LOCKED",
-      "keterangan": "Preprocessing lokal, spooler, filter saluran"
-    },
-    {
-      "layer": "L4",
-      "nama": "Data Accommodation",
-      "pilar": ["02_DATA"],
-      "status": "LOCKED",
-      "keterangan": "RAW, STAGING, CURATED, TANDON_UPDATE, sanitasi"
-    },
-    {
-      "layer": "L5",
-      "nama": "Data Abstraction & Logic",
-      "pilar": ["03_LOGIKA"],
-      "status": "LOCKED",
-      "keterangan": "Kernel rules, state machine, guardrails"
-    },
-    {
-      "layer": "L6",
-      "nama": "Application Layer",
-      "pilar": ["04_APLIKASI"],
-      "status": "PARTIAL",
-      "keterangan": "Language registry, kalkulator tiang, local agent draft"
-    },
-    {
-      "layer": "L7",
-      "nama": "Collaboration, Governance & Processing",
-      "pilar": [
-        "06_RUNTIME",
-        "07_INDEX",
-        "08_EVIDENCE",
-        "09_GOVERNANCE",
-        "10_SECURITY",
-        "11_OBSERVABILITY",
-        "12_BACKUP",
-        "13_TEST",
-        "99_ARCHIVE"
-      ],
-      "status": "FOUNDATION_LOCKED",
-      "keterangan": "Governance, evidence, backup, observability, vault terkunci"
-    }
-  ],
-  "catatan": "Roadmap ini hidup dan hanya boleh diubah melalui Task Card + ACC L0. Setiap perubahan wajib evidence SHA256."
+    "project":  "MICO-JDEQ",
+    "node":  "KAPAL-INDUK (PC-i5)",
+    "timestamp":  "2026-09-08T16:35:00+07:00",
+    "architecture":  "7-Layer MICO-JDEQ",
+    "status_umum":  "FOUNDATION_LOCKED",
+    "layers":  [
+                   {
+                       "layer":  "L1",
+                       "nama":  "Physical Devices",
+                       "pilar":  [
+                                     "01_FISIK"
+                                 ],
+                       "status":  "LOCKED",
+                       "keterangan":  "Baseline fisik, identitas node, audit selesai"
+                   },
+                   {
+                       "layer":  "L2",
+                       "nama":  "Connectivity \u0026 Protocol",
+                       "pilar":  [
+                                     "05_PIPELINE"
+                                 ],
+                       "status":  "LOCKED",
+                       "keterangan":  "Port/socket, tailscale, firewall check valve"
+                   },
+                   {
+                       "layer":  "L3",
+                       "nama":  "Edge Computing",
+                       "pilar":  [
+                                     "05_PIPELINE",
+                                     "02_DATA"
+                                 ],
+                       "status":  "LOCKED",
+                       "keterangan":  "Preprocessing lokal, spooler, filter saluran"
+                   },
+                   {
+                       "layer":  "L4",
+                       "nama":  "Data Accommodation",
+                       "pilar":  [
+                                     "02_DATA"
+                                 ],
+                       "status":  "LOCKED",
+                       "keterangan":  "RAW, STAGING, CURATED, TANDON_UPDATE, sanitasi"
+                   },
+                   {
+                       "layer":  "L5",
+                       "nama":  "Data Abstraction \u0026 Logic",
+                       "pilar":  [
+                                     "03_LOGIKA"
+                                 ],
+                       "status":  "LOCKED",
+                       "keterangan":  "Kernel rules, state machine, guardrails"
+                   },
+                   {
+                       "layer":  "L6",
+                       "nama":  "Application Layer",
+                       "pilar":  [
+                                     "04_APLIKASI"
+                                 ],
+                       "status":  "PARTIAL",
+                       "keterangan":  "Language registry, kalkulator tiang, local agent draft"
+                   },
+                   {
+                       "layer":  "L7",
+                       "nama":  "Collaboration, Governance \u0026 Processing",
+                       "pilar":  [
+                                     "06_RUNTIME",
+                                     "07_INDEX",
+                                     "08_EVIDENCE",
+                                     "09_GOVERNANCE",
+                                     "10_SECURITY",
+                                     "11_OBSERVABILITY",
+                                     "12_BACKUP",
+                                     "13_TEST",
+                                     "99_ARCHIVE"
+                                 ],
+                       "status":  "FOUNDATION_LOCKED",
+                       "keterangan":  "Governance, evidence, backup, observability, vault terkunci"
+                   }
+               ],
+    "catatan":  "Roadmap ini hidup dan hanya boleh diubah melalui Task Card + ACC L0. Setiap perubahan wajib evidence SHA256.",
+    "kolom":  [
+                  {
+                      "kode":  "K1",
+                      "nama":  "Pos Jaga / API Gateway",
+                      "letak":  "05_PIPELINE\\GATEWAY_DAEMON",
+                      "beban_max_ram_mb":  150,
+                      "status":  "PENDING_SLUMP_TEST"
+                  },
+                  {
+                      "kode":  "K2",
+                      "nama":  "Tandon Server",
+                      "letak":  "04_APLIKASI\\LOCAL_SERVER",
+                      "beban_max_ram_mb":  100,
+                      "status":  "PENDING_SLUMP_TEST"
+                  },
+                  {
+                      "kode":  "KP1",
+                      "nama":  "Sanitation Daemon",
+                      "letak":  "06_RUNTIME\\SANITATION_DAEMON",
+                      "beban_max_ram_mb":  20,
+                      "status":  "PENDING_SLUMP_TEST"
+                  },
+                  {
+                      "kode":  "KP2",
+                      "nama":  "Rclone Sync",
+                      "letak":  "05_PIPELINE\\SYNC_RCLONE",
+                      "beban_max_ram_mb":  50,
+                      "status":  "PENDING_SLUMP_TEST"
+                  }
+              ]
 }
