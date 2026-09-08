@@ -1,0 +1,69 @@
+﻿{
+  "versi": "1.0",
+  "nama": "MICO_ESTETIKA.json",
+  "tujuan": "Kamus Terjemahan Rasa menjadi Angka CSS untuk Fasad MICO-JDEQ",
+  "penyusun": "DeepSeek AG-003 (atas arahan L0)",
+  "catatan": "File ini dibutuhkan oleh skrip injeksi fasad agar dapat memilih profil gaya tanpa perlu melihat visual. Semua nilai adalah angka/kode CSS presisi.",
+  "profil": {
+    "organik": {
+      "deskripsi": "Warna alam, border-radius asimetris, tanpa garis kaku.",
+      "css": {
+        "background_body": "#f2e8d5",
+        "background_fasad": "rgba(255,248,235,0.6)",
+        "warna_utama": "#2b1b12",
+        "warna_sekunder": "#6b5a49",
+        "warna_aksen": "#4f7a4a",
+        "warna_kartu_daun": "linear-gradient(145deg, #88b06a, #4f7a4a)",
+        "warna_kartu_batu": "linear-gradient(145deg, #7e6b58, #6b5a49)",
+        "warna_kartu_akar": "linear-gradient(145deg, #b3d5d0, #9fc5c0)",
+        "border_radius_fasad": "3rem 2rem 4rem 2rem",
+        "border_radius_kartu": "38% 62% 55% 45% / 48% 40% 60% 52%",
+        "padding_fasad": "2rem",
+        "padding_kartu": "1.25rem 1rem",
+        "shadow": "0 25px 50px rgba(43,27,18,0.18), 0 2px 8px rgba(43,27,18,0.08)",
+        "font_size_angka": "2.2rem",
+        "font_family": "'Segoe UI', system-ui, sans-serif"
+      }
+    },
+    "industrial": {
+      "deskripsi": "Warna beton/baja, sudut siku 90 derajat, garis tegas.",
+      "css": {
+        "background_body": "#d6d3cf",
+        "background_fasad": "rgba(88,91,96,0.8)",
+        "warna_utama": "#111111",
+        "warna_sekunder": "#3a3d42",
+        "warna_aksen": "#a86f3c",
+        "warna_kartu_daun": "#4b4e53",
+        "warna_kartu_batu": "#2e3033",
+        "warna_kartu_akar": "#73777e",
+        "border_radius_fasad": "0px",
+        "border_radius_kartu": "0px",
+        "padding_fasad": "2rem",
+        "padding_kartu": "1rem",
+        "shadow": "4px 4px 0 rgba(0,0,0,0.25)",
+        "font_size_angka": "2rem",
+        "font_family": "'Consolas', 'Courier New', monospace"
+      }
+    },
+    "minimalis": {
+      "deskripsi": "Monokrom, ruang kosong/padding gedhe, sudut tipis.",
+      "css": {
+        "background_body": "#fafafa",
+        "background_fasad": "rgba(255,255,255,0.9)",
+        "warna_utama": "#1a1a1a",
+        "warna_sekunder": "#8a8a8a",
+        "warna_aksen": "#1a1a1a",
+        "warna_kartu_daun": "#f5f5f5",
+        "warna_kartu_batu": "#eeeeee",
+        "warna_kartu_akar": "#e0e0e0",
+        "border_radius_fasad": "1.5rem",
+        "border_radius_kartu": "0.75rem",
+        "padding_fasad": "2.5rem",
+        "padding_kartu": "1.75rem",
+        "shadow": "0 4px 12px rgba(0,0,0,0.04)",
+        "font_size_angka": "1.8rem",
+        "font_family": "'Inter', 'Segoe UI', system-ui, sans-serif"
+      }
+    }
+  }
+}
