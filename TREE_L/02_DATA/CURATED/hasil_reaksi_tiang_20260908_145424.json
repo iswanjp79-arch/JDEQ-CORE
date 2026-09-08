@@ -1,0 +1,68 @@
+{
+  "jumlah_tiang": 7,
+  "P_total": 1000,
+  "Mx": 50,
+  "My": -30,
+  "titik_berat": [
+    0.0,
+    0.0
+  ],
+  "reaksi_tiang": [
+    {
+      "tiang_ke": 1,
+      "koordinat": [
+        -1.5,
+        1.5
+      ],
+      "reaksi_aksial": 131.19
+    },
+    {
+      "tiang_ke": 2,
+      "koordinat": [
+        1.5,
+        1.5
+      ],
+      "reaksi_aksial": 137.857
+    },
+    {
+      "tiang_ke": 3,
+      "koordinat": [
+        -1.5,
+        -1.5
+      ],
+      "reaksi_aksial": 147.857
+    },
+    {
+      "tiang_ke": 4,
+      "koordinat": [
+        1.5,
+        -1.5
+      ],
+      "reaksi_aksial": 154.524
+    },
+    {
+      "tiang_ke": 5,
+      "koordinat": [
+        0.0,
+        0.0
+      ],
+      "reaksi_aksial": 142.857
+    },
+    {
+      "tiang_ke": 6,
+      "koordinat": [
+        -1.5,
+        0.0
+      ],
+      "reaksi_aksial": 139.524
+    },
+    {
+      "tiang_ke": 7,
+      "koordinat": [
+        1.5,
+        0.0
+      ],
+      "reaksi_aksial": 146.19
+    }
+  ]
+}
