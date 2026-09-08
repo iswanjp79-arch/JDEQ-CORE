@@ -1,0 +1,11 @@
+﻿=== ISOLASI ISP ===
+Waktu: 2026-09-08 21:25:28
+Node: KAPAL-INDUK
+
+Default Outbound Action:
+Domain: Block
+Private: Block
+Public: Block
+
+Allow Rules:
+: 

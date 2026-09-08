@@ -1,0 +1,7 @@
+﻿{
+  "provider": "gemini",
+  "model": "gemini-2.0-flash",
+  "status": "404",
+  "answer": "(HTTP 404) {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}\n\n",
+  "timestamp": "2026-09-08T19:22:24Z"
+}
