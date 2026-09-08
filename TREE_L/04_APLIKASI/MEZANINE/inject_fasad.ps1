@@ -1,7 +1,14 @@
-﻿# inject_fasad.ps1 — Static Injection + Stale Data Fail-Safe
+﻿# inject_fasad.ps1 — Static Injection + Profil Override
 $base = "D:\MICO_SSOT\TREE_L"
 $mezDir = "$base\04_APLIKASI\MEZANINE"
 $evDir = "$base\08_EVIDENCE\RUNTIME"
+$overrideFile = "$mezDir\profil_override.txt"
+
+# Cek override manual
+$manualProfil = $null
+if (Test-Path $overrideFile) {
+    $manualProfil = (Get-Content $overrideFile -Raw -Encoding UTF8).Trim()
+}
 
 $reportCore = Get-ChildItem "$base\08_EVIDENCE\RUNTIME\RINGBALK_CORE_*.txt" -File -ErrorAction SilentlyContinue |
     Sort-Object LastWriteTime -Descending | Select-Object -First 1
@@ -29,60 +36,19 @@ if ($reportCore) {
 
 $estetika = Get-Content "$mezDir\MICO_ESTETIKA.json" -Raw -Encoding UTF8 | ConvertFrom-Json
 
+# Tentukan profil
 if ($stale) {
     $profilNama = "lost"
-    $html = @"
-<!DOCTYPE html>
-<html lang="id">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MICO-JDEQ — LOST CONNECTION</title>
-<style>
-  body {
-    font-family: 'Segoe UI', system-ui, sans-serif;
-    background: #1a1a1a;
-    color: #8a8a8a;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-  }
-  .lost {
-    max-width: 600px;
-    width: 100%;
-    background: #2a2a2a;
-    border-radius: 1rem;
-    padding: 2rem;
-    text-align: center;
-    border: 1px solid #444;
-    box-shadow: 0 0 20px rgba(0,0,0,0.5);
-  }
-  .lost h1 {
-    font-size: 1.8rem;
-    color: #d9534f;
-    margin-bottom: 0.5rem;
-  }
-  .lost p {
-    font-size: 1rem;
-    opacity: 0.8;
-  }
-</style>
-</head>
-<body>
-  <main class="lost">
-    <h1>LOST CONNECTION</h1>
-    <p>SENSOR MATI — data terakhir lebih dari 5 menit</p>
-    <p>Periksa orchestrator_core.ps1 atau restart Ringbalk.</p>
-  </main>
-</body>
-</html>
-"@
+} elseif ($manualProfil -and ($estetika.profil.PSObject.Properties.Name -contains $manualProfil)) {
+    $profilNama = $manualProfil
+} elseif ($cpu -gt 75) {
+    $profilNama = "industrial"
 } else {
-    $profilNama = if ($cpu -gt 75) { "industrial" } else { "organik" }
-    $css = $estetika.profil.$profilNama.css
+    $profilNama = "organik"
+}
 
+if ($profilNama -ne "lost") {
+    $css = $estetika.profil.$profilNama.css
     $html = @"
 <!DOCTYPE html>
 <html lang="id">
@@ -91,16 +57,11 @@ if ($stale) {
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MICO-JDEQ — Fasad $profilNama</title>
 <style>
-  :root {
-    --tanah: $($css.warna_utama);
-    --sekunder: $($css.warna_sekunder);
-    --aksen: $($css.warna_aksen);
-  }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
     font-family: $($css.font_family);
     background: $($css.background_body);
-    color: var(--tanah);
+    color: $($css.warna_utama);
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -114,14 +75,13 @@ if ($stale) {
     border-radius: $($css.border_radius_fasad);
     box-shadow: $($css.shadow);
     padding: $($css.padding_fasad);
-    border: 1px solid rgba(107,90,73,0.2);
   }
   .fasad::before {
-    content: "〰️ MICO-JDEQ — $profilNama";
+    content: "MICO-JDEQ — $profilNama";
     display: block;
     font-weight: 600;
     letter-spacing: 3px;
-    color: var(--sekunder);
+    color: $($css.warna_sekunder);
     margin-bottom: 1.75rem;
     font-size: 1.1rem;
     text-align: center;
@@ -132,27 +92,26 @@ if ($stale) {
     gap: 1.25rem;
   }
   .kartu {
-    position: relative;
     padding: $($css.padding_kartu);
-    color: #fff;
     border-radius: $($css.border_radius_kartu);
-    background: $($css.warna_kartu_batu);
-    box-shadow: $($css.shadow);
     text-align: center;
     min-height: 140px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background: $($css.warna_kartu_batu);
+    color: #fff;
+    box-shadow: $($css.shadow);
   }
-  .kartu.daun { background: $($css.warna_kartu_daun); color: #1a2e16; }
-  .kartu.batu { background: $($css.warna_kartu_batu); color: #fff7e8; }
-  .kartu.akar { background: $($css.warna_kartu_akar); color: #17313a; }
+  .kartu.daun { background: $($css.warna_kartu_daun); color: $($css.warna_utama); }
+  .kartu.batu { background: $($css.warna_kartu_batu); color: $($css.warna_utama); }
+  .kartu.akar { background: $($css.warna_kartu_akar); color: $($css.warna_utama); }
   .label {
     font-size: 0.85rem;
     letter-spacing: 1px;
     text-transform: uppercase;
-    opacity: 0.85;
+    opacity: 0.9;
   }
   .angka {
     display: block;
@@ -163,9 +122,8 @@ if ($stale) {
   .catatan-kecil {
     margin-top: 1.5rem;
     font-size: 0.78rem;
-    color: var(--sekunder);
+    color: $($css.warna_sekunder);
     text-align: center;
-    letter-spacing: 0.3px;
   }
 </style>
 </head>
@@ -173,22 +131,33 @@ if ($stale) {
   <main class="fasad">
     <section class="organik-grid">
       <div class="kartu daun">
-        <span class="label">🌿 RAM Bebas</span>
+        <span class="label">RAM Bebas</span>
         <span class="angka">$ram</span>
       </div>
       <div class="kartu batu">
-        <span class="label">🪨 CPU Load</span>
+        <span class="label">CPU Load</span>
         <span class="angka">$cpu%</span>
       </div>
       <div class="kartu akar">
-        <span class="label">💧 Air Node</span>
+        <span class="label">Air Node</span>
         <span class="angka">$kolom</span>
       </div>
     </section>
-    <p class="catatan-kecil">
-      Fasad statis · injeksi tanpa fetch · profil $profilNama · tanpa server · tanpa CORS
-    </p>
+    <p class="catatan-kecil">Profil $profilNama · tanpa server · tanpa CORS</p>
   </main>
+</body>
+</html>
+"@
+} else {
+    $html = @"
+<!DOCTYPE html>
+<html lang="id">
+<head><meta charset="UTF-8"><title>MICO-JDEQ — LOST</title></head>
+<body style="background:#1a1a1a;color:#888;display:flex;align-items:center;justify-content:center;height:100vh;font-family:sans-serif;">
+<div style="text-align:center;">
+<h1 style="color:#d9534f;">LOST CONNECTION</h1>
+<p>SENSOR MATI — data terakhir lebih dari 5 menit</p>
+</div>
 </body>
 </html>
 "@
