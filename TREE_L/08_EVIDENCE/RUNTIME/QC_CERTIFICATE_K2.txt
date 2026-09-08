@@ -1,0 +1,22 @@
+﻿========================================================
+ SERTIFIKAT MUTU — SLUMP TEST KOLOM K2 (Tandon Server)
+========================================================
+Node: KAPAL-INDUK (PC-i5)
+Tanggal Uji: 2026-09-08
+Durasi Uji: 300 detik (5 menit)
+Beban Uji: 100 MB RAM
+Metode: Alokasi array byte + monitoring tiap 10 detik
+
+HASIL QC:
+- Process RAM stabil: ± 145–148 MB (overhead PowerShell, tidak ada lonjakan)
+- Free RAM stabil: ± 11,3 GB
+- Memory leak: TIDAK ADA
+- Status: LULUS 100%
+
+KEPUTUSAN:
+Kolom K2 resmi LULUS QC dan SIAP COR.
+Folder: 04_APLIKASI\LOCAL_SERVER telah dibentuk permanen.
+
+TTD L0:
+Iswan Juman Pancoro, ST
+========================================================

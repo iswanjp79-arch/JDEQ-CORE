@@ -92,7 +92,7 @@
                       "nama":  "Tandon Server",
                       "letak":  "04_APLIKASI\\LOCAL_SERVER",
                       "beban_max_ram_mb":  100,
-                      "status":  "PENDING_SLUMP_TEST"
+                      "status":  "LULUS_QC_SIAP_COR"
                   },
                   {
                       "kode":  "KP1",
