@@ -1,4 +1,4 @@
-﻿# inject_fasad.ps1 — Static Injection dengan profil otomatis
+﻿# inject_fasad.ps1 — Static Injection + Stale Data Fail-Safe
 $base = "D:\MICO_SSOT\TREE_L"
 $mezDir = "$base\04_APLIKASI\MEZANINE"
 $evDir = "$base\08_EVIDENCE\RUNTIME"
@@ -9,20 +9,81 @@ $reportCore = Get-ChildItem "$base\08_EVIDENCE\RUNTIME\RINGBALK_CORE_*.txt" -Fil
 $ram = "—"
 $cpu = 0
 $kolom = "—"
+$stale = $false
+
 if ($reportCore) {
-    $lines = Get-Content $reportCore.FullName -Encoding UTF8
-    foreach ($line in $lines) {
-        if ($line -match 'Free RAM:\s*([\d\.]+)\s*MB') { $ram = $matches[1] + " MB" }
-        if ($line -match 'CPU Load:\s*([\d]+)%') { $cpu = [int]$matches[1] }
-        if ($line -match 'TERIKAT') { $kolom = "Terikat" }
+    $age = (Get-Date) - $reportCore.LastWriteTime
+    if ($age.TotalMinutes -gt 5) {
+        $stale = $true
+    } else {
+        $lines = Get-Content $reportCore.FullName -Encoding UTF8
+        foreach ($line in $lines) {
+            if ($line -match 'Free RAM:\s*([\d\.]+)\s*MB') { $ram = $matches[1] + " MB" }
+            if ($line -match 'CPU Load:\s*([\d]+)%') { $cpu = [int]$matches[1] }
+            if ($line -match 'TERIKAT') { $kolom = "Terikat" }
+        }
     }
+} else {
+    $stale = $true
 }
 
 $estetika = Get-Content "$mezDir\MICO_ESTETIKA.json" -Raw -Encoding UTF8 | ConvertFrom-Json
-$profilNama = if ($cpu -gt 75) { "industrial" } else { "organik" }
-$css = $estetika.profil.$profilNama.css
 
-$html = @"
+if ($stale) {
+    $profilNama = "lost"
+    $html = @"
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MICO-JDEQ — LOST CONNECTION</title>
+<style>
+  body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: #1a1a1a;
+    color: #8a8a8a;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+  .lost {
+    max-width: 600px;
+    width: 100%;
+    background: #2a2a2a;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    border: 1px solid #444;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  }
+  .lost h1 {
+    font-size: 1.8rem;
+    color: #d9534f;
+    margin-bottom: 0.5rem;
+  }
+  .lost p {
+    font-size: 1rem;
+    opacity: 0.8;
+  }
+</style>
+</head>
+<body>
+  <main class="lost">
+    <h1>LOST CONNECTION</h1>
+    <p>SENSOR MATI — data terakhir lebih dari 5 menit</p>
+    <p>Periksa orchestrator_core.ps1 atau restart Ringbalk.</p>
+  </main>
+</body>
+</html>
+"@
+} else {
+    $profilNama = if ($cpu -gt 75) { "industrial" } else { "organik" }
+    $css = $estetika.profil.$profilNama.css
+
+    $html = @"
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -131,6 +192,7 @@ $html = @"
 </body>
 </html>
 "@
+}
 
 $outHtml = "$mezDir\fasad_organik_terbaru.html"
 Set-Content -Path $outHtml -Value $html -Encoding UTF8
