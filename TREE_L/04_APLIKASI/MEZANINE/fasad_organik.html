@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MICO-JDEQ — Fasad Organik</title>
+<style>
+  :root {
+    --tanah: #2b1b12;
+    --daun: #4f7a4a;
+    --daun-muda: #88b06a;
+    --krem: #f2e8d5;
+    --batu: #6b5a49;
+    --air: #9fc5c0;
+    --terakota: #b56b45;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: linear-gradient(145deg, var(--krem) 0%, #fff7e8 100%);
+    color: var(--tanah);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+  .fasad {
+    max-width: 800px;
+    width: 100%;
+    background: rgba(255,248,235,0.7);
+    border-radius: 2rem 2rem 3rem 3rem;
+    box-shadow: 0 20px 40px rgba(43,27,18,0.2);
+    padding: 1.5rem;
+    border: 1px solid rgba(107,90,73,0.25);
+  }
+  .fasad::before {
+    content: "〰️ MICO-JDEQ";
+    display: block;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--batu);
+    margin-bottom: 1.25rem;
+    font-size: 1.1rem;
+  }
+  .organik-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+  }
+  .daun, .batu, .akar {
+    border-radius: 40% 60% 55% 45% / 50% 40% 60% 50%;
+    padding: 1rem;
+    background: var(--krem);
+    box-shadow: inset 0 -6px 12px rgba(0,0,0,0.06);
+    transition: all 0.25s ease;
+  }
+  .daun { background: var(--daun-muda); color: #1a2e16; }
+  .batu { background: var(--batu); color: #fff7e8; }
+  .akar { background: var(--air); color: #17313a; }
+  .angka {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 0.25rem;
+  }
+  .catatan-kecil {
+    margin-top: 1.25rem;
+    font-size: 0.8rem;
+    color: var(--batu);
+  }
+</style>
+</head>
+<body>
+  <main class="fasad">
+    <section class="organik-grid">
+      <div class="daun">
+        🌿 RAM Bebas
+        <span class="angka" id="ram">__RAM__</span>
+      </div>
+      <div class="batu">
+        🪨 CPU Load
+        <span class="angka" id="cpu">__CPU__</span>
+      </div>
+      <div class="akar">
+        💧 Air Node
+        <span class="angka" id="kolom">__KOLOM__</span>
+      </div>
+    </section>
+    <p class="catatan-kecil">
+      Fasad statis · diinjeksi tanpa fetch · tanpa server · tanpa CORS
+    </p>
+  </main>
+</body>
+</html>

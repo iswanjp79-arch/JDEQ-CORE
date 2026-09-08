@@ -1,0 +1,21 @@
+﻿=== RINGBALK CORE REPORT ===
+Waktu: 2026-09-08 19:40:21
+Node: KAPAL-INDUK
+
+=== STATUS KOLOM ===
+[K1 Gateway] TERIKAT — folder ada
+[K2 Tandon] TERIKAT — folder ada
+[KP1 Sanitasi] TERIKAT — folder ada
+[KP2 Rclone] TERIKAT — folder ada
+
+=== STATUS PORT ===
+Port 8022 : LISTEN
+Port 22 : TIDAK LISTEN
+Port 1883 : TIDAK LISTEN
+Port 8080 : TIDAK LISTEN
+Port 11434 : TIDAK LISTEN
+Port 5037 : TIDAK LISTEN
+Port 3240 : LISTEN
+
+Free RAM: 10396.79 MB
+CPU Load: 1%
