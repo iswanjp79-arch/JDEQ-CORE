@@ -1,0 +1,78 @@
+﻿{
+    "node_id":  "KAPAL-INDUK",
+    "timestamp":  "2026-09-08 14:19:26",
+    "cpu":  {
+                "Name":  "Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz",
+                "NumberOfCores":  4,
+                "NumberOfLogicalProcessors":  4,
+                "MaxClockSpeed":  3201,
+                "LoadPercentage":  1
+            },
+    "ram":  [
+                {
+                    "DeviceLocator":  "ChannelA-DIMM0",
+                    "Capacity":  8589934592,
+                    "Speed":  null,
+                    "Manufacturer":  "Kingston"
+                },
+                {
+                    "DeviceLocator":  "ChannelB-DIMM0",
+                    "Capacity":  8589934592,
+                    "Speed":  null,
+                    "Manufacturer":  "Hynix/Hyundai"
+                }
+            ],
+    "os":  {
+               "Caption":  "Microsoft Windows 10 Enterprise",
+               "Version":  "10.0.19045",
+               "OSArchitecture":  "64-bit",
+               "TotalVisibleMemorySize":  16732672,
+               "FreePhysicalMemory":  9686396
+           },
+    "disk":  [
+                 {
+                     "Name":  "C",
+                     "UsedGB":  88.23,
+                     "FreeGB":  30.38
+                 },
+                 {
+                     "Name":  "D",
+                     "UsedGB":  561.86,
+                     "FreeGB":  359.66
+                 }
+             ],
+    "network_adapters":  [
+                             {
+                                 "Name":  "Ethernet 2",
+                                 "InterfaceDescription":  "Realtek PCIe GbE Family Controller #3",
+                                 "MacAddress":  "00-F1-F3-A5-09-A2",
+                                 "LinkSpeed":  "100 Mbps"
+                             },
+                             {
+                                 "Name":  "vEthernet (WSL)",
+                                 "InterfaceDescription":  "Hyper-V Virtual Ethernet Adapter",
+                                 "MacAddress":  "00-15-5D-0A-BE-5B",
+                                 "LinkSpeed":  "10 Gbps"
+                             },
+                             {
+                                 "Name":  "Tailscale",
+                                 "InterfaceDescription":  "Tailscale Tunnel",
+                                 "MacAddress":  "",
+                                 "LinkSpeed":  "100 Gbps"
+                             },
+                             {
+                                 "Name":  "Npcap Loopback Adapter",
+                                 "InterfaceDescription":  "Npcap Loopback Adapter",
+                                 "MacAddress":  "02-00-4C-4F-4F-50",
+                                 "LinkSpeed":  "1.2 Gbps"
+                             }
+                         ],
+    "tailscale_status":  {
+                             "Name":  "Tailscale",
+                             "Status":  4,
+                             "StartType":  2
+                         },
+    "role":  "HEAVY_LOCAL_WORKER",
+    "tailscale_ip":  "100.124.50.70",
+    "nat_server":  "Z83"
+}
