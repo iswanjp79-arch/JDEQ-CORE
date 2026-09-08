@@ -1,0 +1,22 @@
+﻿========================================================
+   SERTIFIKAT MUTU - SLUMP TEST KOLOM PRAKTIS KP1
+========================================================
+Node: KAPAL-INDUK (PC-i5)
+Tanggal Uji: 2026-09-08
+Durasi Uji: 300 detik (30 Iterasi)
+Beban Alokasi: 20 MB RAM
+Metode: Alokasi array byte + Garbage Collection
+
+HASIL QC:
+- Process RAM stabil: ± 148-150 MB (Overhead PowerShell normal)
+- Free RAM stabil: ± 11.0 - 11.2 GB
+- Memory leak: TIDAK ADA (Zero Leak)
+- Status: LULUS 100%
+
+KEPUTUSAN:
+Kolom Praktis KP1 resmi LULUS QC dan SIAP COR.
+Folder: 06_RUNTIME\SANITATION_DAEMON telah dibentuk permanen.
+
+TTD L0:
+Iswan Juman Pancoro, ST
+========================================================

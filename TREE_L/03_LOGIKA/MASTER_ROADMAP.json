@@ -99,7 +99,7 @@
                       "nama":  "Sanitation Daemon",
                       "letak":  "06_RUNTIME\\SANITATION_DAEMON",
                       "beban_max_ram_mb":  20,
-                      "status":  "PENDING_SLUMP_TEST"
+                      "status":  "LULUS_QC_SIAP_COR"
                   },
                   {
                       "kode":  "KP2",
