@@ -1,0 +1,79 @@
+﻿{
+    "node_id":  "KAPAL-INDUK",
+    "timestamp":  "2026-09-08 14:29:19",
+    "audit_scope":  "Layer 7A — Runtime, Observability, Backup",
+    "modules":  [
+                    {
+                        "folder":  "D:\\MICO_SSOT\\TREE_L\\06_RUNTIME",
+                        "file_count":  12,
+                        "total_size_kb":  2.79,
+                        "key_files":  [
+                                          {
+                                              "FullName":  "D:\\MICO_SSOT\\TREE_L\\06_RUNTIME\\check_capacity.ps1"
+                                          },
+                                          {
+                                              "FullName":  "D:\\MICO_SSOT\\TREE_L\\06_RUNTIME\\healthcheck.ps1"
+                                          },
+                                          {
+                                              "FullName":  "D:\\MICO_SSOT\\TREE_L\\06_RUNTIME\\LOGS\\log_rotation_policy.md"
+                                          },
+                                          {
+                                              "FullName":  "D:\\MICO_SSOT\\TREE_L\\06_RUNTIME\\PROCESS\\snapshot_process.ps1"
+                                          }
+                                      ]
+                    },
+                    {
+                        "folder":  "D:\\MICO_SSOT\\TREE_L\\11_OBSERVABILITY",
+                        "file_count":  3,
+                        "total_size_kb":  2.9,
+                        "key_files":  [
+                                          {
+                                              "FullName":  "D:\\MICO_SSOT\\TREE_L\\11_OBSERVABILITY\\ALERT\\log_cleanup.ps1"
+                                          },
+                                          {
+                                              "FullName":  "D:\\MICO_SSOT\\TREE_L\\11_OBSERVABILITY\\METRICS\\metric_baseline.md"
+                                          },
+                                          {
+                                              "FullName":  "D:\\MICO_SSOT\\TREE_L\\11_OBSERVABILITY\\TELEMETRY\\snapshot_telemetry.ps1"
+                                          }
+                                      ]
+                    },
+                    {
+                        "folder":  "D:\\MICO_SSOT\\TREE_L\\12_BACKUP",
+                        "file_count":  29,
+                        "total_size_kb":  30.17,
+                        "key_files":  [
+                                          {
+                                              "FullName":  "D:\\MICO_SSOT\\TREE_L\\12_BACKUP\\LOCAL\\backup_otomatis.ps1"
+                                          },
+                                          {
+                                              "FullName":  "D:\\MICO_SSOT\\TREE_L\\12_BACKUP\\LOCAL\\backup_20260908_124809\\ADR-0001-arsitektur-dasar-mico-jdeq-pc5.md"
+                                          },
+                                          {
+                                              "FullName":  "D:\\MICO_SSOT\\TREE_L\\12_BACKUP\\LOCAL\\backup_20260908_124809\\ADR-0002-credential-vault-zero-trust.md"
+                                          },
+                                          {
+                                              "FullName":  "D:\\MICO_SSOT\\TREE_L\\12_BACKUP\\LOCAL\\backup_20260908_124809\\CHANGELOG.md"
+                                          },
+                                          {
+                                              "FullName":  "D:\\MICO_SSOT\\TREE_L\\12_BACKUP\\LOCAL\\backup_20260908_124809\\EVIDENCE_TEMPLATE.json"
+                                          },
+                                          {
+                                              "FullName":  "D:\\MICO_SSOT\\TREE_L\\12_BACKUP\\LOCAL\\backup_20260908_124809\\healthcheck.ps1"
+                                          },
+                                          {
+                                              "FullName":  "D:\\MICO_SSOT\\TREE_L\\12_BACKUP\\LOCAL\\backup_20260908_124809\\INDEKS_MASTER.md"
+                                          },
+                                          {
+                                              "FullName":  "D:\\MICO_SSOT\\TREE_L\\12_BACKUP\\LOCAL\\backup_20260908_124809\\KERNEL_RULES.md"
+                                          },
+                                          {
+                                              "FullName":  "D:\\MICO_SSOT\\TREE_L\\12_BACKUP\\LOCAL\\backup_20260908_124809\\PIPELINE_FLOW.md"
+                                          },
+                                          {
+                                              "FullName":  "D:\\MICO_SSOT\\TREE_L\\12_BACKUP\\LOCAL\\backup_20260908_124809\\PROMPT_GENERATOR_TEMPLATE.md"
+                                          }
+                                      ]
+                    }
+                ]
+}
