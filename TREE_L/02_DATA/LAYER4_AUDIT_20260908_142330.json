@@ -1,0 +1,66 @@
+﻿{
+    "node_id":  "KAPAL-INDUK",
+    "timestamp":  "2026-09-08 14:23:30",
+    "data_root":  "D:\\MICO_SSOT\\TREE_L\\02_DATA",
+    "subfolder_status":  [
+                             {
+                                 "folder":  "RAW",
+                                 "exists":  true,
+                                 "file_count":  1,
+                                 "total_size_kb":  3780.86
+                             },
+                             {
+                                 "folder":  "STAGING",
+                                 "exists":  true,
+                                 "file_count":  0,
+                                 "total_size_kb":  0
+                             },
+                             {
+                                 "folder":  "CURATED",
+                                 "exists":  true,
+                                 "file_count":  0,
+                                 "total_size_kb":  0
+                             },
+                             {
+                                 "folder":  "KNOWLEDGE",
+                                 "exists":  true,
+                                 "file_count":  0,
+                                 "total_size_kb":  0
+                             },
+                             {
+                                 "folder":  "SCHEMA",
+                                 "exists":  true,
+                                 "file_count":  1,
+                                 "total_size_kb":  0.13
+                             },
+                             {
+                                 "folder":  "MANIFEST",
+                                 "exists":  true,
+                                 "file_count":  0,
+                                 "total_size_kb":  0
+                             }
+                         ],
+    "important_file_hashes":  [
+                                  {
+                                      "file":  "D:\\MICO_SSOT\\TREE_L\\02_DATA\\KERNEL_LOCK.md",
+                                      "sha256":  "5ABCA5D71104D33705D072FE5CEC4D314DA8486A425AAFD7305BBE9CDE783C12",
+                                      "size_kb":  0.67
+                                  },
+                                  {
+                                      "file":  "D:\\MICO_SSOT\\TREE_L\\02_DATA\\DATA_CLASSIFICATION_POLICY.md",
+                                      "sha256":  "2B703A0B862BADB85921E2B99E0FC77B1FFA699A364B13719D81069219B8B04F",
+                                      "size_kb":  0.48
+                                  },
+                                  {
+                                      "file":  "D:\\MICO_SSOT\\TREE_L\\02_DATA\\PUBLIK_PRIVAT_RULES.md",
+                                      "sha256":  "BD0DDB7C2FCE5AF8457BA05A4C177F625CFCE3EDE6901C99B72A6E2476A75963",
+                                      "size_kb":  0.11
+                                  },
+                                  {
+                                      "file":  "D:\\MICO_SSOT\\TREE_L\\02_DATA\\SCHEMA\\schema_manifest.json",
+                                      "sha256":  "B6B4486C668B16F9DF7B020086E57F608B037B2524FBAB6C1DD825A291EAF275",
+                                      "size_kb":  0.13
+                                  }
+                              ],
+    "note":  "Layer 4 Data Accommodation Audit — read only"
+}
