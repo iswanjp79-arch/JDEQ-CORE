@@ -85,7 +85,7 @@
                       "nama":  "Pos Jaga / API Gateway",
                       "letak":  "05_PIPELINE\\GATEWAY_DAEMON",
                       "beban_max_ram_mb":  150,
-                      "status":  "PENDING_SLUMP_TEST"
+                      "status":  "LULUS_QC_SIAP_COR"
                   },
                   {
                       "kode":  "K2",

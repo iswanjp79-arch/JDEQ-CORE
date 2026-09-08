@@ -1,0 +1,22 @@
+﻿========================================================
+ SERTIFIKAT MUTU — SLUMP TEST KOLOM K1 (API Gateway)
+========================================================
+Node: KAPAL-INDUK (PC-i5)
+Tanggal Uji: 2026-09-08
+Durasi Uji: 300 detik (5 menit)
+Beban Uji: 150 MB RAM
+Metode: Alokasi array byte + monitoring tiap 10 detik
+
+HASIL QC:
+- Process RAM rata-rata: 143.8 MB (di bawah limit 150 MB)
+- Free RAM stabil: ± 11.3 GB
+- Memory leak: TIDAK ADA
+- Status: LULUS 100%
+
+KEPUTUSAN:
+Kolom K1 resmi LULUS QC dan SIAP COR.
+Folder: 05_PIPELINE\GATEWAY_DAEMON telah dibentuk permanen.
+
+TTD L0:
+Iswan Juman Pancoro, ST
+========================================================
