@@ -121,10 +121,9 @@ function Run-Loop {
         if ($files) {
             foreach ($f in $files) { Process-SPK $f }
         }
-        Start-Sleep -Seconds 30
+        Start-Sleep -Seconds 20
     }
 }
 
 if ($Mode -eq "loop") { Run-Loop } else { Run-Once }
-
 

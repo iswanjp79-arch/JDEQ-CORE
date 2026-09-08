@@ -1,0 +1,8 @@
+{
+  "source": "NORMAL_001.json",
+  "forwarded_at": "2026-09-08 15:41:55",
+  "sha256": "99d1ad991524f7b8a65d672679b65db9b08393f0214b5d1488cc9439d036804d",
+  "payload": {
+    "task_type": "ping"
+  }
+}

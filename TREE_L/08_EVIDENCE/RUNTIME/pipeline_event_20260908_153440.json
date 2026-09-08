@@ -1,0 +1,7 @@
+{
+  "type": "PIPELINE_ERROR",
+  "file": "TEST_PIPELINE_001.json",
+  "status": "ERROR",
+  "reason": "Unexpected UTF-8 BOM (decode using utf-8-sig): line 1 column 1 (char 0)",
+  "time": "2026-09-08 15:34:40"
+}

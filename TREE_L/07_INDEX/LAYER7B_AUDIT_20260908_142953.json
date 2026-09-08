@@ -1,0 +1,70 @@
+﻿{
+    "node_id":  "KAPAL-INDUK",
+    "timestamp":  "2026-09-08 14:29:53",
+    "audit_scope":  "Layer 7B — Evidence, Test, Archive",
+    "modules":  [
+                    {
+                        "folder":  "D:\\MICO_SSOT\\TREE_L\\08_EVIDENCE",
+                        "file_count":  38,
+                        "total_size_kb":  88.85,
+                        "key_files":  [
+                                          {
+                                              "FullName":  "D:\\MICO_SSOT\\TREE_L\\08_EVIDENCE\\BACKUP_RESTORE_TEST_PLAN.md"
+                                          },
+                                          {
+                                              "FullName":  "D:\\MICO_SSOT\\TREE_L\\08_EVIDENCE\\EVIDENCE_MANIFEST_TEMPLATE.json"
+                                          },
+                                          {
+                                              "FullName":  "D:\\MICO_SSOT\\TREE_L\\08_EVIDENCE\\EVIDENCE_TEMPLATE.json"
+                                          },
+                                          {
+                                              "FullName":  "D:\\MICO_SSOT\\TREE_L\\08_EVIDENCE\\KERNEL_LAYER_LOCK.json"
+                                          },
+                                          {
+                                              "FullName":  "D:\\MICO_SSOT\\TREE_L\\08_EVIDENCE\\MICO_Jurnal_Tumbuh_Kembang.md"
+                                          },
+                                          {
+                                              "FullName":  "D:\\MICO_SSOT\\TREE_L\\08_EVIDENCE\\node_identity.json"
+                                          },
+                                          {
+                                              "FullName":  "D:\\MICO_SSOT\\TREE_L\\08_EVIDENCE\\AUDIT\\hash_manifest_fase0_fase1.json"
+                                          },
+                                          {
+                                              "FullName":  "D:\\MICO_SSOT\\TREE_L\\08_EVIDENCE\\AUDIT\\MICO-BAST-PHASE1-2-001.md"
+                                          },
+                                          {
+                                              "FullName":  "D:\\MICO_SSOT\\TREE_L\\08_EVIDENCE\\CHANGE\\celah_ditutup_20260908.md"
+                                          },
+                                          {
+                                              "FullName":  "D:\\MICO_SSOT\\TREE_L\\08_EVIDENCE\\DISCOVERY\\EVIDENCE_CORE_DEPENDENCY_MATRIX.txt"
+                                          }
+                                      ]
+                    },
+                    {
+                        "folder":  "D:\\MICO_SSOT\\TREE_L\\13_TEST",
+                        "file_count":  2,
+                        "total_size_kb":  0.33,
+                        "key_files":  [
+                                          {
+                                              "FullName":  "D:\\MICO_SSOT\\TREE_L\\13_TEST\\COVERAGE\\coverage_report_template.md"
+                                          },
+                                          {
+                                              "FullName":  "D:\\MICO_SSOT\\TREE_L\\13_TEST\\UNIT\\test_case_template.json"
+                                          }
+                                      ]
+                    },
+                    {
+                        "folder":  "D:\\MICO_SSOT\\TREE_L\\99_ARCHIVE",
+                        "file_count":  2,
+                        "total_size_kb":  0.23,
+                        "key_files":  [
+                                          {
+                                              "FullName":  "D:\\MICO_SSOT\\TREE_L\\99_ARCHIVE\\archive_manifest_template.json"
+                                          },
+                                          {
+                                              "FullName":  "D:\\MICO_SSOT\\TREE_L\\99_ARCHIVE\\deprecation_log_template.md"
+                                          }
+                                      ]
+                    }
+                ]
+}

@@ -1,0 +1,7 @@
+{
+  "source": "TEST_CLEAN_001.json",
+  "forwarded_at": "2026-09-08 15:39:32",
+  "payload": {
+    "task_type": "ping"
+  }
+}

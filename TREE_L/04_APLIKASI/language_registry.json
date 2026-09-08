@@ -1,0 +1,16 @@
+﻿{
+  "version": "1.1",
+  "prinsip": "Hanya bahasa yang terbukti tersedia di PC-i5 yang terdaftar.",
+  "languages": [
+    { "ext": ".py", "command": "python", "status": "ADA" },
+    { "ext": ".ps1", "command": "powershell -File", "status": "ADA" },
+    { "ext": ".js", "command": "node", "status": "ADA" },
+    { "ext": ".go", "command": "go run", "status": "ADA" },
+    { "ext": ".sh", "command": "bash", "status": "ADA" },
+    { "ext": ".bat", "command": "cmd /c", "status": "ADA" }
+  ],
+  "default": {
+    "unknown_action": "move_to_error"
+  },
+  "catatan": "Ruby, Rust, PHP belum tersedia dan tidak diinstal. Visi 1000 bahasa tetap dicatat, tetapi eksekusi hanya untuk kemampuan nyata."
+}

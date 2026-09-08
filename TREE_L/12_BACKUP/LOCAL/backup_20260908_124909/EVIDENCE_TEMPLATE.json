@@ -1,0 +1,14 @@
+﻿{
+  "evidence_id": "",
+  "task_id": "",
+  "node_id": "KAPAL-INDUK",
+  "timestamp": "YYYY-MM-DD HH:mm:ss",
+  "source": "",
+  "classification": "RUNTIME",
+  "status": "BERHASIL / SEBAGIAN / GAGAL",
+  "file_path": "",
+  "sha256": "",
+  "author": "",
+  "approval": "L0 / DOLA / AG-003",
+  "note": ""
+}

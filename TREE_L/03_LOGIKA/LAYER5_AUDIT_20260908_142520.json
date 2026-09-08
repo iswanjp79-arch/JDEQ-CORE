@@ -1,0 +1,75 @@
+﻿{
+    "node_id":  "KAPAL-INDUK",
+    "timestamp":  "2026-09-08 14:25:21",
+    "logic_root":  "D:\\MICO_SSOT\\TREE_L\\03_LOGIKA",
+    "subfolder_status":  [
+                             {
+                                 "folder":  "RULES",
+                                 "exists":  true,
+                                 "file_count":  0
+                             },
+                             {
+                                 "folder":  "STATE_MACHINE",
+                                 "exists":  true,
+                                 "file_count":  1
+                             },
+                             {
+                                 "folder":  "GUARDRAILS",
+                                 "exists":  true,
+                                 "file_count":  1
+                             },
+                             {
+                                 "folder":  "ROUTING",
+                                 "exists":  true,
+                                 "file_count":  1
+                             },
+                             {
+                                 "folder":  "DECISION",
+                                 "exists":  true,
+                                 "file_count":  0
+                             },
+                             {
+                                 "folder":  "VALIDATION",
+                                 "exists":  true,
+                                 "file_count":  0
+                             }
+                         ],
+    "important_file_hashes":  [
+                                  {
+                                      "file":  "D:\\MICO_SSOT\\TREE_L\\03_LOGIKA\\KERNEL_RULES.md",
+                                      "sha256":  "7EEE50C52F9A95C6E441275121FE2902895CB6C8966E7004A33417B7430A38F2",
+                                      "size_kb":  1.76
+                                  },
+                                  {
+                                      "file":  "D:\\MICO_SSOT\\TREE_L\\03_LOGIKA\\ATURAN_3_BAHASA.md",
+                                      "sha256":  "A26765F631563E4891FC7F2842B4486BF663CCDE28A297D952FA79E850EECA74",
+                                      "size_kb":  0.38
+                                  },
+                                  {
+                                      "file":  "D:\\MICO_SSOT\\TREE_L\\03_LOGIKA\\TRANSFORMER_RULES.md",
+                                      "sha256":  "5D4261E25D1202D2320E6C871C35B94A9CDA978251418F276D91CA49DEF2DE5C",
+                                      "size_kb":  0.12
+                                  },
+                                  {
+                                      "file":  "D:\\MICO_SSOT\\TREE_L\\03_LOGIKA\\STATE_MACHINE\\state_machine_draft.md",
+                                      "sha256":  "FC407C7F9E685B71C40B415CD3615C5D215306500677A31EBD94759A9131F05A",
+                                      "size_kb":  0.23
+                                  },
+                                  {
+                                      "file":  "D:\\MICO_SSOT\\TREE_L\\03_LOGIKA\\GUARDRAILS\\guardrail_manifest.md",
+                                      "sha256":  "C89DF084067C6DA8A8FE88D0BDB27DB3D8938B5FF8BB9B7041E359B79CAF6106",
+                                      "size_kb":  0.34
+                                  },
+                                  {
+                                      "file":  "D:\\MICO_SSOT\\TREE_L\\03_LOGIKA\\ROUTING\\routing_table_draft.md",
+                                      "sha256":  "F02B8ADD480872ACA700C614D4000B3AACC80F714919E6099692BA54AC66F356",
+                                      "size_kb":  0.35
+                                  },
+                                  {
+                                      "file":  "D:\\MICO_SSOT\\TREE_L\\03_LOGIKA\\vivo_9L_telemetry.json",
+                                      "sha256":  "5A7E6B0F0F3F86BD70E2B390883AD43D80E4C903A9D9DA5E3BDEDEF589BE4E6F",
+                                      "size_kb":  1.15
+                                  }
+                              ],
+    "note":  "Layer 5 Data Abstraction \u0026 Logic Audit — read only"
+}
