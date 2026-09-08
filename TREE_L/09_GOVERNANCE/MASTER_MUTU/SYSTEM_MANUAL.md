@@ -1,0 +1,4 @@
+﻿# MICO-JDEQ SYSTEM MANUAL
+Status: ACTIVE
+Owner: L0
+Node: PC-i5 (KAPAL-INDUK)
