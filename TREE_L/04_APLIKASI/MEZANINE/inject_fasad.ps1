@@ -3,7 +3,6 @@ $base = "D:\MICO_SSOT\TREE_L"
 $mezDir = "$base\04_APLIKASI\MEZANINE"
 $evDir = "$base\08_EVIDENCE\RUNTIME"
 
-# Ambil laporan core terbaru
 $reportCore = Get-ChildItem "$base\08_EVIDENCE\RUNTIME\RINGBALK_CORE_*.txt" -File -ErrorAction SilentlyContinue |
     Sort-Object LastWriteTime -Descending | Select-Object -First 1
 
@@ -19,14 +18,10 @@ if ($reportCore) {
     }
 }
 
-# Baca kamus estetika
 $estetika = Get-Content "$mezDir\MICO_ESTETIKA.json" -Raw -Encoding UTF8 | ConvertFrom-Json
-
-# Pilih profil
 $profilNama = if ($cpu -gt 75) { "industrial" } else { "organik" }
 $css = $estetika.profil.$profilNama.css
 
-# Bangun HTML dari template
 $html = @"
 <!DOCTYPE html>
 <html lang="id">
@@ -140,7 +135,6 @@ $html = @"
 $outHtml = "$mezDir\fasad_organik_terbaru.html"
 Set-Content -Path $outHtml -Value $html -Encoding UTF8
 
-# Evidence
 $hash = (Get-FileHash $outHtml -Algorithm SHA256).Hash
 $evPath = "$evDir\FASAD_INJECT_$(Get-Date -Format 'yyyyMMdd_HHmmss').txt"
 @"
