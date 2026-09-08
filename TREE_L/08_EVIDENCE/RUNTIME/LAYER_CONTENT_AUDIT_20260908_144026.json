@@ -1,0 +1,165 @@
+﻿{
+    "node_id":  "KAPAL-INDUK",
+    "timestamp":  "2026-09-08 14:40:26",
+    "total_pilar":  14,
+    "pilar_berisi":  14,
+    "pilar_kosong":  0,
+    "rincian":  [
+                    {
+                        "pilar":  "01_FISIK",
+                        "jumlah_file":  10,
+                        "total_size_kb":  221.13,
+                        "folder_kosong":  1,
+                        "daftar_folder_kosong":  [
+                                                     "D:\\MICO_SSOT\\TREE_L\\01_FISIK\\RUANG_MOCKUP_QC"
+                                                 ]
+                    },
+                    {
+                        "pilar":  "02_DATA",
+                        "jumlah_file":  8,
+                        "total_size_kb":  3788.17,
+                        "folder_kosong":  4,
+                        "daftar_folder_kosong":  [
+                                                     "D:\\MICO_SSOT\\TREE_L\\02_DATA\\CURATED",
+                                                     "D:\\MICO_SSOT\\TREE_L\\02_DATA\\KNOWLEDGE",
+                                                     "D:\\MICO_SSOT\\TREE_L\\02_DATA\\MANIFEST",
+                                                     "D:\\MICO_SSOT\\TREE_L\\02_DATA\\STAGING"
+                                                 ]
+                    },
+                    {
+                        "pilar":  "03_LOGIKA",
+                        "jumlah_file":  14,
+                        "total_size_kb":  17.44,
+                        "folder_kosong":  5,
+                        "daftar_folder_kosong":  [
+                                                     "D:\\MICO_SSOT\\TREE_L\\03_LOGIKA\\DECISION",
+                                                     "D:\\MICO_SSOT\\TREE_L\\03_LOGIKA\\PRIORITY",
+                                                     "D:\\MICO_SSOT\\TREE_L\\03_LOGIKA\\RULES",
+                                                     "D:\\MICO_SSOT\\TREE_L\\03_LOGIKA\\SCHEMA_RULES",
+                                                     "D:\\MICO_SSOT\\TREE_L\\03_LOGIKA\\VALIDATION"
+                                                 ]
+                    },
+                    {
+                        "pilar":  "04_APLIKASI",
+                        "jumlah_file":  11,
+                        "total_size_kb":  15.69,
+                        "folder_kosong":  5,
+                        "daftar_folder_kosong":  [
+                                                     "D:\\MICO_SSOT\\TREE_L\\04_APLIKASI\\CLI",
+                                                     "D:\\MICO_SSOT\\TREE_L\\04_APLIKASI\\EXP",
+                                                     "D:\\MICO_SSOT\\TREE_L\\04_APLIKASI\\PROD",
+                                                     "D:\\MICO_SSOT\\TREE_L\\04_APLIKASI\\SERVICE",
+                                                     "D:\\MICO_SSOT\\TREE_L\\04_APLIKASI\\WORKER"
+                                                 ]
+                    },
+                    {
+                        "pilar":  "05_PIPELINE",
+                        "jumlah_file":  13,
+                        "total_size_kb":  22.03,
+                        "folder_kosong":  6,
+                        "daftar_folder_kosong":  [
+                                                     "D:\\MICO_SSOT\\TREE_L\\05_PIPELINE\\ERROR",
+                                                     "D:\\MICO_SSOT\\TREE_L\\05_PIPELINE\\ETL",
+                                                     "D:\\MICO_SSOT\\TREE_L\\05_PIPELINE\\FLOW",
+                                                     "D:\\MICO_SSOT\\TREE_L\\05_PIPELINE\\INBOX",
+                                                     "D:\\MICO_SSOT\\TREE_L\\05_PIPELINE\\OCR",
+                                                     "D:\\MICO_SSOT\\TREE_L\\05_PIPELINE\\RAG"
+                                                 ]
+                    },
+                    {
+                        "pilar":  "06_RUNTIME",
+                        "jumlah_file":  12,
+                        "total_size_kb":  2.79,
+                        "folder_kosong":  6,
+                        "daftar_folder_kosong":  [
+                                                     "D:\\MICO_SSOT\\TREE_L\\06_RUNTIME\\CONTAINER",
+                                                     "D:\\MICO_SSOT\\TREE_L\\06_RUNTIME\\HEALTH",
+                                                     "D:\\MICO_SSOT\\TREE_L\\06_RUNTIME\\METRICS",
+                                                     "D:\\MICO_SSOT\\TREE_L\\06_RUNTIME\\PORT",
+                                                     "D:\\MICO_SSOT\\TREE_L\\06_RUNTIME\\SERVICE",
+                                                     "D:\\MICO_SSOT\\TREE_L\\06_RUNTIME\\LOGS\\ARCHIVE"
+                                                 ]
+                    },
+                    {
+                        "pilar":  "07_INDEX",
+                        "jumlah_file":  7,
+                        "total_size_kb":  150.72,
+                        "folder_kosong":  1,
+                        "daftar_folder_kosong":  [
+                                                     "D:\\MICO_SSOT\\TREE_L\\07_INDEX\\ARTIFACT"
+                                                 ]
+                    },
+                    {
+                        "pilar":  "08_EVIDENCE",
+                        "jumlah_file":  41,
+                        "total_size_kb":  89.4,
+                        "folder_kosong":  4,
+                        "daftar_folder_kosong":  [
+                                                     "D:\\MICO_SSOT\\TREE_L\\08_EVIDENCE\\BACKUP",
+                                                     "D:\\MICO_SSOT\\TREE_L\\08_EVIDENCE\\INCIDENT",
+                                                     "D:\\MICO_SSOT\\TREE_L\\08_EVIDENCE\\RESTORE",
+                                                     "D:\\MICO_SSOT\\TREE_L\\08_EVIDENCE\\TEST"
+                                                 ]
+                    },
+                    {
+                        "pilar":  "09_GOVERNANCE",
+                        "jumlah_file":  19,
+                        "total_size_kb":  13.29,
+                        "folder_kosong":  2,
+                        "daftar_folder_kosong":  [
+                                                     "D:\\MICO_SSOT\\TREE_L\\09_GOVERNANCE\\APPROVAL",
+                                                     "D:\\MICO_SSOT\\TREE_L\\09_GOVERNANCE\\WORKFLOW"
+                                                 ]
+                    },
+                    {
+                        "pilar":  "10_SECURITY",
+                        "jumlah_file":  9,
+                        "total_size_kb":  6.18,
+                        "folder_kosong":  2,
+                        "daftar_folder_kosong":  [
+                                                     "D:\\MICO_SSOT\\TREE_L\\10_SECURITY\\INCIDENT",
+                                                     "D:\\MICO_SSOT\\TREE_L\\10_SECURITY\\NETWORK"
+                                                 ]
+                    },
+                    {
+                        "pilar":  "11_OBSERVABILITY",
+                        "jumlah_file":  3,
+                        "total_size_kb":  2.9,
+                        "folder_kosong":  1,
+                        "daftar_folder_kosong":  [
+                                                     "D:\\MICO_SSOT\\TREE_L\\11_OBSERVABILITY\\DASHBOARD"
+                                                 ]
+                    },
+                    {
+                        "pilar":  "12_BACKUP",
+                        "jumlah_file":  29,
+                        "total_size_kb":  30.17,
+                        "folder_kosong":  1,
+                        "daftar_folder_kosong":  [
+                                                     "D:\\MICO_SSOT\\TREE_L\\12_BACKUP\\CLOUD"
+                                                 ]
+                    },
+                    {
+                        "pilar":  "13_TEST",
+                        "jumlah_file":  2,
+                        "total_size_kb":  0.33,
+                        "folder_kosong":  2,
+                        "daftar_folder_kosong":  [
+                                                     "D:\\MICO_SSOT\\TREE_L\\13_TEST\\INTEGRATION",
+                                                     "D:\\MICO_SSOT\\TREE_L\\13_TEST\\REPORT"
+                                                 ]
+                    },
+                    {
+                        "pilar":  "99_ARCHIVE",
+                        "jumlah_file":  2,
+                        "total_size_kb":  0.23,
+                        "folder_kosong":  4,
+                        "daftar_folder_kosong":  [
+                                                     "D:\\MICO_SSOT\\TREE_L\\99_ARCHIVE\\CODE",
+                                                     "D:\\MICO_SSOT\\TREE_L\\99_ARCHIVE\\CONFIG",
+                                                     "D:\\MICO_SSOT\\TREE_L\\99_ARCHIVE\\DATA",
+                                                     "D:\\MICO_SSOT\\TREE_L\\99_ARCHIVE\\EVIDENCE"
+                                                 ]
+                    }
+                ]
+}
