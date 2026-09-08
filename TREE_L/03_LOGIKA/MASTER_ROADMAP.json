@@ -1,0 +1,69 @@
+﻿{
+  "project": "MICO-JDEQ",
+  "node": "KAPAL-INDUK (PC-i5)",
+  "timestamp": "2026-09-08T16:35:00+07:00",
+  "architecture": "7-Layer MICO-JDEQ",
+  "status_umum": "FOUNDATION_LOCKED",
+  "layers": [
+    {
+      "layer": "L1",
+      "nama": "Physical Devices",
+      "pilar": ["01_FISIK"],
+      "status": "LOCKED",
+      "keterangan": "Baseline fisik, identitas node, audit selesai"
+    },
+    {
+      "layer": "L2",
+      "nama": "Connectivity & Protocol",
+      "pilar": ["05_PIPELINE"],
+      "status": "LOCKED",
+      "keterangan": "Port/socket, tailscale, firewall check valve"
+    },
+    {
+      "layer": "L3",
+      "nama": "Edge Computing",
+      "pilar": ["05_PIPELINE", "02_DATA"],
+      "status": "LOCKED",
+      "keterangan": "Preprocessing lokal, spooler, filter saluran"
+    },
+    {
+      "layer": "L4",
+      "nama": "Data Accommodation",
+      "pilar": ["02_DATA"],
+      "status": "LOCKED",
+      "keterangan": "RAW, STAGING, CURATED, TANDON_UPDATE, sanitasi"
+    },
+    {
+      "layer": "L5",
+      "nama": "Data Abstraction & Logic",
+      "pilar": ["03_LOGIKA"],
+      "status": "LOCKED",
+      "keterangan": "Kernel rules, state machine, guardrails"
+    },
+    {
+      "layer": "L6",
+      "nama": "Application Layer",
+      "pilar": ["04_APLIKASI"],
+      "status": "PARTIAL",
+      "keterangan": "Language registry, kalkulator tiang, local agent draft"
+    },
+    {
+      "layer": "L7",
+      "nama": "Collaboration, Governance & Processing",
+      "pilar": [
+        "06_RUNTIME",
+        "07_INDEX",
+        "08_EVIDENCE",
+        "09_GOVERNANCE",
+        "10_SECURITY",
+        "11_OBSERVABILITY",
+        "12_BACKUP",
+        "13_TEST",
+        "99_ARCHIVE"
+      ],
+      "status": "FOUNDATION_LOCKED",
+      "keterangan": "Governance, evidence, backup, observability, vault terkunci"
+    }
+  ],
+  "catatan": "Roadmap ini hidup dan hanya boleh diubah melalui Task Card + ACC L0. Setiap perubahan wajib evidence SHA256."
+}
