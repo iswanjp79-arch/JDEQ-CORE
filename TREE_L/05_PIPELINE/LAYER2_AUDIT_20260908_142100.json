@@ -1,0 +1,259 @@
+﻿{
+    "node_id":  "KAPAL-INDUK",
+    "timestamp":  "2026-09-08 14:21:02",
+    "adapters":  [
+                     {
+                         "Name":  "Ethernet 2",
+                         "InterfaceDescription":  "Realtek PCIe GbE Family Controller #3",
+                         "MacAddress":  "00-F1-F3-A5-09-A2",
+                         "LinkSpeed":  "100 Mbps",
+                         "Status":  "Up"
+                     },
+                     {
+                         "Name":  "vEthernet (WSL)",
+                         "InterfaceDescription":  "Hyper-V Virtual Ethernet Adapter",
+                         "MacAddress":  "00-15-5D-0A-BE-5B",
+                         "LinkSpeed":  "10 Gbps",
+                         "Status":  "Up"
+                     },
+                     {
+                         "Name":  "Tailscale",
+                         "InterfaceDescription":  "Tailscale Tunnel",
+                         "MacAddress":  "",
+                         "LinkSpeed":  "100 Gbps",
+                         "Status":  "Up"
+                     },
+                     {
+                         "Name":  "Npcap Loopback Adapter",
+                         "InterfaceDescription":  "Npcap Loopback Adapter",
+                         "MacAddress":  "02-00-4C-4F-4F-50",
+                         "LinkSpeed":  "1.2 Gbps",
+                         "Status":  "Up"
+                     }
+                 ],
+    "default_gateways":  {
+                             "InterfaceAlias":  "Ethernet 2",
+                             "NextHop":  "192.168.1.1",
+                             "RouteMetric":  0
+                         },
+    "ping_gateway":  true,
+    "tailscale_status":  {
+                             "Name":  "Tailscale",
+                             "Status":  4,
+                             "StartType":  2
+                         },
+    "tailscale_ip":  "100.124.50.70",
+    "listening_ports":  [
+                            {
+                                "LocalAddress":  "::",
+                                "LocalPort":  56938,
+                                "OwningProcess":  4084,
+                                "ProcessName":  "spoolsv"
+                            },
+                            {
+                                "LocalAddress":  "fd7a:115c:a1e0::9138:3246",
+                                "LocalPort":  56814,
+                                "OwningProcess":  5380,
+                                "ProcessName":  "tailscaled"
+                            },
+                            {
+                                "LocalAddress":  "::",
+                                "LocalPort":  49667,
+                                "OwningProcess":  1500,
+                                "ProcessName":  "svchost"
+                            },
+                            {
+                                "LocalAddress":  "::",
+                                "LocalPort":  49666,
+                                "OwningProcess":  1448,
+                                "ProcessName":  "svchost"
+                            },
+                            {
+                                "LocalAddress":  "::",
+                                "LocalPort":  49665,
+                                "OwningProcess":  896,
+                                "ProcessName":  "wininit"
+                            },
+                            {
+                                "LocalAddress":  "::",
+                                "LocalPort":  49664,
+                                "OwningProcess":  1004,
+                                "ProcessName":  "lsass"
+                            },
+                            {
+                                "LocalAddress":  "::",
+                                "LocalPort":  20609,
+                                "OwningProcess":  976,
+                                "ProcessName":  "services"
+                            },
+                            {
+                                "LocalAddress":  "::",
+                                "LocalPort":  8022,
+                                "OwningProcess":  4456,
+                                "ProcessName":  "sshd"
+                            },
+                            {
+                                "LocalAddress":  "::",
+                                "LocalPort":  7680,
+                                "OwningProcess":  12864,
+                                "ProcessName":  "svchost"
+                            },
+                            {
+                                "LocalAddress":  "::",
+                                "LocalPort":  5357,
+                                "OwningProcess":  4,
+                                "ProcessName":  "System"
+                            },
+                            {
+                                "LocalAddress":  "::",
+                                "LocalPort":  3240,
+                                "OwningProcess":  4692,
+                                "ProcessName":  "usbipd"
+                            },
+                            {
+                                "LocalAddress":  "::1",
+                                "LocalPort":  1883,
+                                "OwningProcess":  4396,
+                                "ProcessName":  "mosquitto"
+                            },
+                            {
+                                "LocalAddress":  "::",
+                                "LocalPort":  445,
+                                "OwningProcess":  4,
+                                "ProcessName":  "System"
+                            },
+                            {
+                                "LocalAddress":  "::",
+                                "LocalPort":  135,
+                                "OwningProcess":  1036,
+                                "ProcessName":  "svchost"
+                            },
+                            {
+                                "LocalAddress":  "100.124.50.70",
+                                "LocalPort":  63730,
+                                "OwningProcess":  5380,
+                                "ProcessName":  "tailscaled"
+                            },
+                            {
+                                "LocalAddress":  "0.0.0.0",
+                                "LocalPort":  56938,
+                                "OwningProcess":  4084,
+                                "ProcessName":  "spoolsv"
+                            },
+                            {
+                                "LocalAddress":  "0.0.0.0",
+                                "LocalPort":  49667,
+                                "OwningProcess":  1500,
+                                "ProcessName":  "svchost"
+                            },
+                            {
+                                "LocalAddress":  "0.0.0.0",
+                                "LocalPort":  49666,
+                                "OwningProcess":  1448,
+                                "ProcessName":  "svchost"
+                            },
+                            {
+                                "LocalAddress":  "0.0.0.0",
+                                "LocalPort":  49665,
+                                "OwningProcess":  896,
+                                "ProcessName":  "wininit"
+                            },
+                            {
+                                "LocalAddress":  "0.0.0.0",
+                                "LocalPort":  49664,
+                                "OwningProcess":  1004,
+                                "ProcessName":  "lsass"
+                            },
+                            {
+                                "LocalAddress":  "127.0.0.1",
+                                "LocalPort":  20617,
+                                "OwningProcess":  6832,
+                                "ProcessName":  "explorer"
+                            },
+                            {
+                                "LocalAddress":  "0.0.0.0",
+                                "LocalPort":  20609,
+                                "OwningProcess":  976,
+                                "ProcessName":  "services"
+                            },
+                            {
+                                "LocalAddress":  "127.0.0.1",
+                                "LocalPort":  9883,
+                                "OwningProcess":  4396,
+                                "ProcessName":  "mosquitto"
+                            },
+                            {
+                                "LocalAddress":  "127.0.0.1",
+                                "LocalPort":  8597,
+                                "OwningProcess":  6040,
+                                "ProcessName":  "xdm-app"
+                            },
+                            {
+                                "LocalAddress":  "0.0.0.0",
+                                "LocalPort":  8022,
+                                "OwningProcess":  1980,
+                                "ProcessName":  "sshd"
+                            },
+                            {
+                                "LocalAddress":  "0.0.0.0",
+                                "LocalPort":  5040,
+                                "OwningProcess":  5624,
+                                "ProcessName":  "svchost"
+                            },
+                            {
+                                "LocalAddress":  "127.0.0.1",
+                                "LocalPort":  4709,
+                                "OwningProcess":  11084,
+                                "ProcessName":  "wpscloudsvr"
+                            },
+                            {
+                                "LocalAddress":  "0.0.0.0",
+                                "LocalPort":  2222,
+                                "OwningProcess":  4328,
+                                "ProcessName":  "svchost"
+                            },
+                            {
+                                "LocalAddress":  "127.0.0.1",
+                                "LocalPort":  1883,
+                                "OwningProcess":  4396,
+                                "ProcessName":  "mosquitto"
+                            },
+                            {
+                                "LocalAddress":  "127.0.0.1",
+                                "LocalPort":  1001,
+                                "OwningProcess":  4,
+                                "ProcessName":  "System"
+                            },
+                            {
+                                "LocalAddress":  "192.168.1.4",
+                                "LocalPort":  139,
+                                "OwningProcess":  4,
+                                "ProcessName":  "System"
+                            },
+                            {
+                                "LocalAddress":  "172.28.80.1",
+                                "LocalPort":  139,
+                                "OwningProcess":  4,
+                                "ProcessName":  "System"
+                            },
+                            {
+                                "LocalAddress":  "169.254.100.213",
+                                "LocalPort":  139,
+                                "OwningProcess":  4,
+                                "ProcessName":  "System"
+                            },
+                            {
+                                "LocalAddress":  "100.124.50.70",
+                                "LocalPort":  139,
+                                "OwningProcess":  4,
+                                "ProcessName":  "System"
+                            },
+                            {
+                                "LocalAddress":  "0.0.0.0",
+                                "LocalPort":  135,
+                                "OwningProcess":  1036,
+                                "ProcessName":  "svchost"
+                            }
+                        ],
+    "nat_server":  "Z83"
+}
