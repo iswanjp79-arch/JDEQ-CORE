@@ -1,0 +1,22 @@
+﻿========================================================
+   SERTIFIKAT MUTU - SLUMP TEST KOLOM PRAKTIS KP2
+========================================================
+Node: KAPAL-INDUK (PC-i5)
+Tanggal Uji: 2026-09-08
+Durasi Uji: 300 detik (30 Iterasi)
+Beban Alokasi: 50 MB RAM
+Metode: Alokasi array byte + Garbage Collection
+
+HASIL QC:
+- Process RAM stabil: ± 150 MB (Overhead PowerShell normal)
+- Free RAM stabil: ± 11,1 GB
+- Memory leak: TIDAK ADA
+- Status: LULUS 100%
+
+KEPUTUSAN:
+Kolom Praktis KP2 resmi LULUS QC dan SIAP COR.
+Folder: 05_PIPELINE\SYNC_RCLONE telah dibentuk permanen.
+
+TTD L0:
+Iswan Juman Pancoro, ST
+========================================================
