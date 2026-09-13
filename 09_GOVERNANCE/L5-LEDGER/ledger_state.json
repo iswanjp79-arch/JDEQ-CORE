@@ -1,8 +1,8 @@
 {
   "ledger_path": "D:\\MICO_SSOT\\09_GOVERNANCE\\L5-LEDGER\\ledger.json",
-  "sha256": "36acd60bb47110bbfe0db5cf0e1b0aae2391b53c30fc704c0ef1fec2ec4b96c9",
-  "count": 1,
-  "generated_at": "2026-09-14T03:08:13",
+  "sha256": "98ab989161d6d1bf1e6a2d1fbe965fbff1949047954c10b5f414adcf4dd546b8",
+  "count": 0,
+  "generated_at": "2026-09-14T03:50:46",
   "derived": true,
   "rebuildable": true
 }

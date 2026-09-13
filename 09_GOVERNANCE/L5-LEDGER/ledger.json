@@ -3,23 +3,10 @@
   "authoritative": false,
   "rebuildable": true,
   "contains_full_payload": false,
-  "generated_at": "2026-09-14T03:08:13",
+  "generated_at": "2026-09-14T03:50:46",
   "host": "USER",
   "root": "D:\\MICO_SSOT\\08_EVIDENCE",
-  "count": 1,
-  "zone_counts": {
-    "LIVE": 1
-  },
-  "entries": [
-    {
-      "artifact_id": "0fb79b39dcdcb170",
-      "source_node": "HP_Mini",
-      "file_path": "LIVE/HP_Mini/led_test.json",
-      "sha256_hash": "4be281edc378f1c5e5eb9c15f9dbf5a80da2977981850f93553d5d70b75f1626",
-      "last_write_time": "2026-09-14T03:08:13",
-      "retention_class": "LIVE",
-      "correlation_hash": "2ab02ff8576f2aab9502f0ff563ba87dc11dd07b5005b806c03002ac09726417",
-      "zone": "LIVE"
-    }
-  ]
+  "count": 0,
+  "zone_counts": {},
+  "entries": []
 }
