@@ -1,0 +1,16 @@
+﻿{
+    "test_cases":  10,
+    "test_sha256":  "F405BF58D3DA446F3EBF9B513C721EDD065FD0B4409D911C3C27EA24F6EE1A8B",
+    "test_result":  "PASS",
+    "test_file":  "D:\\MICO_SSOT\\L5-modules\\tests\\test_l5_m1_reader.py",
+    "timestamp":  "2026-09-14T02:38:14.3078324+07:00",
+    "module":  "L5-M1-Logical-Reader",
+    "host":  "KAPAL-INDUK",
+    "code_sha256":  "27D0A334BDAD9263B0A0814D721461CF8701FF0F4CDAACC3C795E06DA941FE91",
+    "code_file":  "D:\\MICO_SSOT\\L5-modules\\core\\l5_m1_reader.py",
+    "boundary":  {
+                     "tmp_rejected":  true,
+                     "BUFFER_rejected":  true,
+                     "L4_mutation":  0
+                 }
+}

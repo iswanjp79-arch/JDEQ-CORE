@@ -1,0 +1,11 @@
+﻿{
+    "test_cases":  10,
+    "test_sha256":  "ABA686FE8C08FF24319163828DC75AC5E293ECBD7EFB0BEFAA938070430207A9",
+    "test_result":  "PASS",
+    "test_file":  "D:\\MICO_SSOT\\L5-modules\\tests\\test_safe_path_resolver.py",
+    "timestamp":  "2026-09-14T02:30:57.1775879+07:00",
+    "module":  "SafePathResolver",
+    "host":  "KAPAL-INDUK",
+    "code_sha256":  "1B828644B6B720492113AF32274AE71D4169EF3B0EBBA8CA96E9B6196ED3A35D",
+    "code_file":  "D:\\MICO_SSOT\\L5-modules\\security\\safe_path_resolver.py"
+}

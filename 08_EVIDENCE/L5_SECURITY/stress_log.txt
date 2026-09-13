@@ -1,0 +1,25 @@
+=== L5 Memory Stress Test ===
+timestamp : 2026-09-14T02:36:07
+host      : KAPAL-INDUK
+python    : 3.14.7
+input     : D:\MICO_SSOT\08_EVIDENCE\L5_SECURITY\stress_input
+files     : 10000
+baseline RSS: 69.21 MB
+  [ 1000/10000] rss=  69.80 MB (peak=69.80)
+  [ 2000/10000] rss=  69.81 MB (peak=69.81)
+  [ 3000/10000] rss=  69.82 MB (peak=69.82)
+  [ 4000/10000] rss=  69.88 MB (peak=69.88)
+  [ 5000/10000] rss=  69.88 MB (peak=69.88)
+  [ 6000/10000] rss=  69.88 MB (peak=69.88)
+  [ 7000/10000] rss=  69.88 MB (peak=69.88)
+  [ 8000/10000] rss=  69.88 MB (peak=69.88)
+  [ 9000/10000] rss=  69.88 MB (peak=69.88)
+  [10000/10000] rss=  69.88 MB (peak=69.88)
+
+baseline : 69.21 MB
+peak     : 69.88 MB
+final    : 69.88 MB
+delta    : +0.97% (threshold +10.00%)
+errors   : 0
+duration : 2.02 s
+RESULT   : PASS

@@ -1,0 +1,25 @@
+﻿{
+    "host":  "KAPAL-INDUK",
+    "verdict":  "L5_FINAL_PASS",
+    "timestamp":  "2026-09-14T02:41:48.1007276+07:00",
+    "boundary":  {
+                     "buffer_write":  0,
+                     "broker":  0,
+                     "L4_mutation":  0,
+                     "tmp_processed":  0,
+                     "database":  0,
+                     "cloud":  0
+                 },
+    "record":  "MICO-L5-FULL-EXECUTION-001",
+    "modules":  [
+                    "security/M1 SafePathResolver",
+                    "security/M2 LockedSchemaValidator",
+                    "security/M3 MetadataSanitizer",
+                    "security/M4 MemoryStress",
+                    "core/L5-M1 Reader",
+                    "core/L5-M2 Mapper",
+                    "core/L5-M3 Ledger",
+                    "core/BUF-004 Guard",
+                    "integration/Full chain"
+                ]
+}

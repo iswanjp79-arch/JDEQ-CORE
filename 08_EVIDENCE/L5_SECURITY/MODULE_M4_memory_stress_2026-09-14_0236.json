@@ -1,0 +1,12 @@
+﻿{
+    "results_json":  "D:\\MICO_SSOT\\08_EVIDENCE\\L5_SECURITY\\stress_results.json",
+    "threshold_pct":  10,
+    "runner_file":  "D:\\MICO_SSOT\\L5-modules\\security\\stress_runner.py",
+    "timestamp":  "2026-09-14T02:36:16.8944805+07:00",
+    "module":  "MemoryStressTestProtocol",
+    "host":  "KAPAL-INDUK",
+    "input_dir":  "D:\\MICO_SSOT\\08_EVIDENCE\\L5_SECURITY\\stress_input",
+    "test_result":  "PASS",
+    "file_count":  10000,
+    "runner_sha256":  "EDA374A3614E249FB4477CE98D84138D003B597F1CE9D80B2115C7D7FC105538"
+}

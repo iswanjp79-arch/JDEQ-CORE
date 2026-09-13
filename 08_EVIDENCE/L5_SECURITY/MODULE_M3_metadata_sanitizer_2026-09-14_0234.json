@@ -1,0 +1,11 @@
+﻿{
+    "test_cases":  13,
+    "test_sha256":  "75A8E97F87C453E06E6F926B5C8B5156110B5F42A9E331FFBBF82A8D06D6A57F",
+    "test_result":  "PASS",
+    "test_file":  "D:\\MICO_SSOT\\L5-modules\\tests\\test_metadata_sanitizer.py",
+    "timestamp":  "2026-09-14T02:34:49.8757930+07:00",
+    "module":  "MetadataSanitizer",
+    "host":  "KAPAL-INDUK",
+    "code_sha256":  "A98AEE9574B7945B5B21D4508F8A3385177C0171C0548AC4D1BDB843ED30E692",
+    "code_file":  "D:\\MICO_SSOT\\L5-modules\\security\\metadata_sanitizer.py"
+}

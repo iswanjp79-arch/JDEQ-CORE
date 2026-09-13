@@ -7,3 +7,21 @@ KNOWLEDGE_BASE/
 TREE_L/10_SECURITY/CONFIG/
 TREE_L/10_SECURITY/VAULT/
 capture_sheet_email_config.json
+
+# === MICO-JDEQ Security Ignore Rules ===
+# Kredensial & secret tidak boleh masuk git
+*.env
+*.secret
+gcp-sa.json
+rclone.conf
+.secrets/
+.gnupg/
+.gcloud/
+# Backup lama yang berisi kredensial (sudah dievakuasi)
+99_ARCHIVE/TREE_L_LEGACY/99_ARCHIVE/Z83_3YEARS_BACKUP/iswanjp/.bash_history
+99_ARCHIVE/TREE_L_LEGACY/99_ARCHIVE/Z83_3YEARS_BACKUP/iswanjp/mico/.env.secret
+99_ARCHIVE/TREE_L_LEGACY/99_ARCHIVE/Z83_3YEARS_BACKUP/iswanjp/mico/quarantine/.env.secret
+
+# L5 stress test inputs (10k files, generated)
+08_EVIDENCE/L5_SECURITY/stress_input/
+*.json.tmp

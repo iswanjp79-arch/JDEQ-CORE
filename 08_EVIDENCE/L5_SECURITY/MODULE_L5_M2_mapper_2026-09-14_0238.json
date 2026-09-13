@@ -1,0 +1,15 @@
+﻿{
+    "test_cases":  12,
+    "test_sha256":  "2B37471ABB6AC22902BB2CB14CDD961A88D4F53A42C396A4220FBFEFE45FEBA8",
+    "test_result":  "PASS",
+    "test_file":  "D:\\MICO_SSOT\\L5-modules\\tests\\test_l5_m2_mapper.py",
+    "timestamp":  "2026-09-14T02:38:41.9471401+07:00",
+    "module":  "L5-M2-Mapper-Normalizer-Envelope",
+    "host":  "KAPAL-INDUK",
+    "code_sha256":  "CD144D472A357E2FD1E7D0CFD96258DFB8D782819DDC06E43705577DE2314D48",
+    "code_file":  "D:\\MICO_SSOT\\L5-modules\\core\\l5_m2_mapper.py",
+    "boundary":  {
+                     "virtual_only":  true,
+                     "L4_mutation":  0
+                 }
+}

@@ -1,0 +1,20 @@
+﻿{
+    "module_m3":  "L5-M3-Ledger-Integrity",
+    "test_file":  "D:\\MICO_SSOT\\L5-modules\\tests\\test_l5_m3_and_buf.py",
+    "timestamp":  "2026-09-14T02:39:54.6444400+07:00",
+    "test_result":  "PASS",
+    "code_buf_sha256":  "D7DFA2FC6A485EA1D53816EE55BD034DD88335A827B25CAC864531A413B464D2",
+    "host":  "KAPAL-INDUK",
+    "test_cases":  21,
+    "module_buf":  "BUF-004-Admission-Guard",
+    "code_m3":  "D:\\MICO_SSOT\\L5-modules\\core\\l5_m3_ledger.py",
+    "boundary":  {
+                     "ledger_rebuildable":  true,
+                     "sqlite":  0,
+                     "buffer_write":  false,
+                     "ledger_derived":  true
+                 },
+    "code_m3_sha256":  "A19EE6C73A30765E980A6810067DB198EC2DFDFDD83B8EFFCADE5368661CF35D",
+    "code_buf":  "D:\\MICO_SSOT\\L5-modules\\core\\buf_004_admission_guard.py",
+    "test_sha256":  "B7209A98EC3C53CE15AB0C4DEBFBB0D4F2CBE9881B183C46B24F3D04059CDA23"
+}

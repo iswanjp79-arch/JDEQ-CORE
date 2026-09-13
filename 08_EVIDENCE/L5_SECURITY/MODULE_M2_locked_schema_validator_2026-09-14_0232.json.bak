@@ -1,0 +1,27 @@
+﻿{
+    "forbidden_decorators":  [
+                                 "field_validator",
+                                 "model_validator",
+                                 "root_validator",
+                                 "validator"
+                             ],
+    "test_cases":  8,
+    "test_sha256":  "861812B2B95C376A35F3B34B73C438096180C4BE118B2F563A72F7296EFD05A9",
+    "test_result":  "PASS",
+    "test_file":  "D:\\MICO_SSOT\\L5-modules\\tests\\test_locked_schema_validator.py",
+    "timestamp":  "2026-09-14T02:32:55.6311436+07:00",
+    "module":  "LockedSchemaValidator",
+    "host":  "KAPAL-INDUK",
+    "code_sha256":  "810AEE89119F5A859954786278DB4010677EBC4BD83508A6C95595BE82A4E0DD",
+    "code_file":  "D:\\MICO_SSOT\\L5-modules\\security\\locked_schema_validator.py",
+    "forbidden_calls":  [
+                            "eval",
+                            "exec",
+                            "compile",
+                            "subprocess.*",
+                            "os.system",
+                            "__import__",
+                            "importlib.*",
+                            "pickle.*"
+                        ]
+}
