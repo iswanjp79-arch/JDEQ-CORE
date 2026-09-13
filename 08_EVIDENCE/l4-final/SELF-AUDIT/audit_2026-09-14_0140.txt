@@ -1,0 +1,418 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260914014003
+Username: KAPAL-INDUK\USER
+RunAs User: KAPAL-INDUK\USER
+Configuration Name: 
+Machine: KAPAL-INDUK (Microsoft Windows NT 10.0.19045.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 5356
+PSVersion: 5.1.19041.7663
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.7663
+BuildVersion: 10.0.19041.7663
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+D:\MICO_SSOT
+$
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output "=========================================="
+==========================================
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output "L4 SELF-AUDIT"
+L4 SELF-AUDIT
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output "Tanggal : $ts"
+Tanggal : 2026-09-14_0140
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output "Auditor : AG-003 (DeepSeek)"
+Auditor : AG-003 (DeepSeek)
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output "Host    : $env:COMPUTERNAME"
+Host    : KAPAL-INDUK
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output "=========================================="
+==========================================
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output ""
+
+D:\MICO_SSOT
+$
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] # === A. HOST VERIFICATION ===
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output "=== A. HOST ==="
+=== A. HOST ===
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output "COMPUTERNAME : $env:COMPUTERNAME"
+COMPUTERNAME : KAPAL-INDUK
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output ("gate_pass    : " + ($env:COMPUTERNAME -eq 'KAPAL-INDUK'))
+gate_pass    : True
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output ""
+
+D:\MICO_SSOT
+$
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] # === B. L4 ARTIFACT EXISTENCE + HASH ===
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output "=== B. L4 ARTIFACTS (existence + sha256) ==="
+=== B. L4 ARTIFACTS (existence + sha256) ===
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] $l4files = @(
+    "09_GOVERNANCE\L4-DESIGN\L4-DESIGN-LOCKED.md",
+    "09_GOVERNANCE\L4-DESIGN\CANONICAL-L4-BASELINE.md",
+    "09_GOVERNANCE\scripts\lib\atomic_write.ps1",
+    "09_GOVERNANCE\scripts\lib\host_gate.ps1",
+    "09_GOVERNANCE\scripts\build_index.ps1",
+    "09_GOVERNANCE\scripts\storage_cleanup.ps1",
+    "09_GOVERNANCE\scripts\pull_edge.ps1",
+    "09_INDEX\index.json",
+    "08_EVIDENCE\l4-final\L4-FINAL-RECORD.md",
+    "09_GOVERNANCE\HANDOFF_ESTAFET.md"
+)
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] foreach ($rel in $l4files) {
+    $p = "D:\MICO_SSOT\$rel"
+    if (Test-Path $p) {
+        $h = (Get-FileHash $p -Algorithm SHA256).Hash.Substring(0,16)
+        $sz = (Get-Item $p).Length
+        Write-Output ("[OK ] {0} | {1}... | {2} B" -f $rel, $h, $sz)
+    } else {
+        Write-Output ("[MISSING] $rel")
+    }
+}
+[OK ] 09_GOVERNANCE\L4-DESIGN\L4-DESIGN-LOCKED.md | F37DA2962A4D2B9D... | 1157 B
+[OK ] 09_GOVERNANCE\L4-DESIGN\CANONICAL-L4-BASELINE.md | 8738DF9A91DC2A9D... | 2068 B
+[OK ] 09_GOVERNANCE\scripts\lib\atomic_write.ps1 | 5230A876698745E2... | 2876 B
+[OK ] 09_GOVERNANCE\scripts\lib\host_gate.ps1 | 91B43A920C4F72A2... | 2106 B
+[OK ] 09_GOVERNANCE\scripts\build_index.ps1 | 896B172DF0890081... | 4000 B
+[OK ] 09_GOVERNANCE\scripts\storage_cleanup.ps1 | 6A5B2D2100F922E6... | 2802 B
+[OK ] 09_GOVERNANCE\scripts\pull_edge.ps1 | 3A2D9396B5371892... | 3761 B
+[OK ] 09_INDEX\index.json | 9159C74F7A75C248... | 199 B
+[OK ] 08_EVIDENCE\l4-final\L4-FINAL-RECORD.md | 901DE4409A7EC612... | 1449 B
+[OK ] 09_GOVERNANCE\HANDOFF_ESTAFET.md | 1FB3C7FCCB926E3D... | 4859 B
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output ""
+
+D:\MICO_SSOT
+$
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] # === C. L4 EVIDENCE LOGS ===
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output "=== C. L4 EVIDENCE LOGS ==="
+=== C. L4 EVIDENCE LOGS ===
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] $logs = @(
+    "08_EVIDENCE\l4-m1\atomic_write.log",
+    "08_EVIDENCE\l4-m2\path_guard.log",
+    "08_EVIDENCE\l4-m3\build_index.log",
+    "08_EVIDENCE\l4-m4\cleanup.log",
+    "08_EVIDENCE\l4-m5\pull.log"
+)
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] foreach ($rel in $logs) {
+    $p = "D:\MICO_SSOT\$rel"
+    if (Test-Path $p) {
+        $lines = (Get-Content $p | Measure-Object).Count
+        Write-Output ("[OK ] {0} | {1} baris" -f $rel, $lines)
+    } else {
+        Write-Output ("[MISSING] $rel")
+    }
+}
+[OK ] 08_EVIDENCE\l4-m1\atomic_write.log | 3 baris
+[OK ] 08_EVIDENCE\l4-m2\path_guard.log | 5 baris
+[OK ] 08_EVIDENCE\l4-m3\build_index.log | 2 baris
+[OK ] 08_EVIDENCE\l4-m4\cleanup.log | 2 baris
+[OK ] 08_EVIDENCE\l4-m5\pull.log | 1 baris
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output ""
+
+D:\MICO_SSOT
+$
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] # === D. ZONE INTEGRITY ===
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output "=== D. ZONE INTEGRITY ==="
+=== D. ZONE INTEGRITY ===
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] $zones = @("GLOBAL","BUFFER","STAGING","LIVE","RETAIN","QUARANTINE","DISPOSABLE","incomplete")
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] foreach ($z in $zones) {
+    $p = "D:\MICO_SSOT\08_EVIDENCE\$z"
+    $exists = Test-Path $p
+    $count = if ($exists) { (Get-ChildItem $p -Recurse -File -ErrorAction SilentlyContinue | Measure-Object).Count } else { "-" }
+    Write-Output ("{0,-12} exists={1} files={2}" -f $z, $exists, $count)
+}
+GLOBAL       exists=True files=0
+BUFFER       exists=True files=0
+STAGING      exists=True files=0
+LIVE         exists=True files=0
+RETAIN       exists=True files=0
+QUARANTINE   exists=True files=0
+DISPOSABLE   exists=True files=0
+incomplete   exists=True files=0
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output ""
+
+D:\MICO_SSOT
+$
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] # === E. NO L4-SCOPE DB ===
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output "=== E. L4-SCOPE DATABASE CHECK ==="
+=== E. L4-SCOPE DATABASE CHECK ===
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] $l4zones = @(
+    "D:\MICO_SSOT\08_EVIDENCE\GLOBAL",
+    "D:\MICO_SSOT\08_EVIDENCE\BUFFER",
+    "D:\MICO_SSOT\08_EVIDENCE\STAGING",
+    "D:\MICO_SSOT\08_EVIDENCE\LIVE",
+    "D:\MICO_SSOT\08_EVIDENCE\RETAIN",
+    "D:\MICO_SSOT\08_EVIDENCE\QUARANTINE",
+    "D:\MICO_SSOT\08_EVIDENCE\DISPOSABLE",
+    "D:\MICO_SSOT\08_EVIDENCE\incomplete",
+    "D:\MICO_SSOT\09_GOVERNANCE\scripts",
+    "D:\MICO_SSOT\09_INDEX",
+    "D:\MICO_SSOT\L3-modules"
+)
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] $dbTotal = 0
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] foreach ($z in $l4zones) {
+    if (Test-Path $z) {
+        $hits = Get-ChildItem $z -Recurse -Include "*.db","*.sqlite","*.sqlite3" -ErrorAction SilentlyContinue
+        $dbTotal += $hits.Count
+    }
+}
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output ("L4-scope DB files: $dbTotal")
+L4-scope DB files: 0
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output ("db_free_pass   : " + ($dbTotal -eq 0))
+db_free_pass   : True
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output ""
+
+D:\MICO_SSOT
+$
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] # === F. GIT COMMIT (L4 SCOPE) ===
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output "=== F. L4 COMMIT HISTORY ==="
+=== F. L4 COMMIT HISTORY ===
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] cd "D:\MICO_SSOT"
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output "Last 5 commits:"
+Last 5 commits:
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] git log -5 --format="  %h | %ci | %s"
+  7df7231 | 2026-09-14 01:38:35 +0700 | L4: add canonical baseline (closure artifact)
+  1adb825 | 2026-09-14 01:32:51 +0700 | L4 execution complete + handoff update
+  2fea55f | 2026-09-14 01:32:22 +0700 | L4: reconciliation resolved - L4 scope clean
+  fb2825c | 2026-09-14 01:30:57 +0700 | L4: M1-M5 PASS - execution record
+  152b8e0 | 2026-09-13 21:13:44 +0700 | L4: design locked, execution pending + handoff update
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output ""
+
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output "L4-DESIGN status:"
+L4-DESIGN status:
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] $d1 = git status --porcelain -- "09_GOVERNANCE/L4-DESIGN/"
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] if ([string]::IsNullOrWhiteSpace($d1)) { Write-Output "  [CLEAN]" } else { Write-Output "  [DIRTY]: $d1" }
+  [CLEAN]
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output "scripts status:"
+scripts status:
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] $d2 = git status --porcelain -- "09_GOVERNANCE/scripts/"
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] if ([string]::IsNullOrWhiteSpace($d2)) { Write-Output "  [CLEAN]" } else { Write-Output "  [DIRTY]: $d2" }
+  [CLEAN]
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output "l4-final status:"
+l4-final status:
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] $d3 = git status --porcelain -- "08_EVIDENCE/l4-final/"
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] if ([string]::IsNullOrWhiteSpace($d3)) { Write-Output "  [CLEAN]" } else { Write-Output "  [DIRTY]: $d3" }
+  [DIRTY]: ?? 08_EVIDENCE/l4-final/SELF-AUDIT/
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output "09_INDEX status:"
+09_INDEX status:
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] $d4 = git status --porcelain -- "09_INDEX/"
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] if ([string]::IsNullOrWhiteSpace($d4)) { Write-Output "  [CLEAN]" } else { Write-Output "  [DIRTY]: $d4" }
+  [CLEAN]
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output ""
+
+D:\MICO_SSOT
+$
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] # === G. AUTO-RUN EVIDENCE (M1-M4 schedulled) ===
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output "=== G. AUTO-RUN ACTIVITY (Observer snapshots) ==="
+=== G. AUTO-RUN ACTIVITY (Observer snapshots) ===
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] $snaps = Get-ChildItem "D:\MICO_SSOT\08_EVIDENCE\observer\snapshots" -File -ErrorAction SilentlyContinue |
+         Sort-Object LastWriteTime -Descending | Select-Object -First 5
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] foreach ($s in $snaps) {
+    Write-Output ("  {0} | {1} B" -f $s.Name, $s.Length)
+}
+  snap_20260914_013202.json | 226 B
+  snap_20260913_210201.json | 226 B
+  snap_20260913_203201.json | 227 B
+  snap_20260913_200201.json | 227 B
+  snap_20260913_193201.json | 227 B
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output ""
+
+D:\MICO_SSOT
+$
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] # === H. HANDOFF INTEGRITY ===
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output "=== H. HANDOFF FILE ==="
+=== H. HANDOFF FILE ===
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] $ho = "D:\MICO_SSOT\09_GOVERNANCE\HANDOFF_ESTAFET.md"
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] $hoSize = (Get-Item $ho -ErrorAction SilentlyContinue).Length
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output ("size : $hoSize B")
+size : 4859 B
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] $hoContent = Get-Content $ho -Raw -ErrorAction SilentlyContinue
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output ("contains 'L4 BASELINE' : " + ($hoContent -match 'L4 BASELINE'))
+contains 'L4 BASELINE' : False
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output ("contains 'CLOSED'      : " + ($hoContent -match 'CLOSED'))
+contains 'CLOSED'      : True
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output ("contains 'M5-REAL'     : " + ($hoContent -match 'M5-REAL'))
+contains 'M5-REAL'     : True
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output ""
+
+D:\MICO_SSOT
+$
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] # === I. SUMMARY ===
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output "=========================================="
+==========================================
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output "SUMMARY"
+SUMMARY
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output "=========================================="
+==========================================
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output "Audit selesai. Output tersimpan di:"
+Audit selesai. Output tersimpan di:
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output "  $out"
+  D:\MICO_SSOT\08_EVIDENCE\l4-final\SELF-AUDIT\audit_2026-09-14_0140.txt
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output ""
+
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output "Silakan kirim isi file ini ke auditor (chat)."
+Silakan kirim isi file ini ke auditor (chat).
+D:\MICO_SSOT
+$
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Stop-Transcript | Out-Null
+**********************
+Windows PowerShell transcript end
+End time: 20260914014007
+**********************
