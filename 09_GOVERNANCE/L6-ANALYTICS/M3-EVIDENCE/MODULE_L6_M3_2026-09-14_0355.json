@@ -1,0 +1,21 @@
+﻿{
+    "mode_separation":  {
+                            "TEST_FIXTURE":  "pure in-memory; never reads ledger",
+                            "PRODUCTION":  "reads L5 ledger; empty -\u003e PENDING_REAL_DATA"
+                        },
+    "test_sha256":  "A4A1197BAB497E15D888F058FA1CE665C7C1CBECA23C0186D979DAF65F78FE7F",
+    "boundary":  {
+                     "db":  0,
+                     "L5_mutation":  0,
+                     "broker":  0,
+                     "L4_mutation":  0,
+                     "cloud":  0
+                 },
+    "test_cases":  10,
+    "production_status":  "PENDING_REAL_DATA (ledger.count=0)",
+    "timestamp":  "2026-09-14T03:55:23.3363771+07:00",
+    "module":  "L6-M3-Cognitive-Analyzer",
+    "host":  "KAPAL-INDUK",
+    "code_sha256":  "86C8DF4CDAA7566702B15A899447A3944B0B84F82AD6F61B0E2BAAF27101D299",
+    "test_result":  "PASS"
+}
