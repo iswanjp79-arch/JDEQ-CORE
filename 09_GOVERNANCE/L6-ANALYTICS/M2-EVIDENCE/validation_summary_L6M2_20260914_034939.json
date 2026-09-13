@@ -1,0 +1,22 @@
+{
+  "run_id": "L6M2_20260914_034939",
+  "timestamp": "2026-09-14T03:49:39",
+  "total": 1,
+  "ok": 0,
+  "mismatch": 0,
+  "missing": 1,
+  "path_unsafe": 0,
+  "unreadable": 0,
+  "overall": "BLOCKED",
+  "entries": [
+    {
+      "artifact_id": "0fb79b39dcdcb170",
+      "file_path": "LIVE/HP_Mini/led_test.json",
+      "status": "MISSING",
+      "reason": "file_not_found",
+      "ledger_sha256": "4be281edc378f1c5e5eb9c15f9dbf5a80da2977981850f93553d5d70b75f1626",
+      "actual_sha256": null,
+      "size_bytes": null
+    }
+  ]
+}

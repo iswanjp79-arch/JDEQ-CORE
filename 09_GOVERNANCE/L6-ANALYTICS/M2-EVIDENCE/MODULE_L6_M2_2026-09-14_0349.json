@@ -1,0 +1,16 @@
+﻿{
+    "test_cases":  8,
+    "test_sha256":  "7ACDC973AAE62797192B179EE31A1AE1896E8B091CB02B5887BFDA17679E59E4",
+    "test_result":  "PASS",
+    "test_file":  "D:\\MICO_SSOT\\L6-modules\\tests\\test_m2_path_hash_validator.py",
+    "timestamp":  "2026-09-14T03:49:48.5550628+07:00",
+    "module":  "L6-M2-Path-Hash-Validator",
+    "host":  "KAPAL-INDUK",
+    "code_sha256":  "E56CBF9A26FCCBDF060B96E93BCF85EC5263B36B1E138BB7804733FD4C734156",
+    "code_file":  "D:\\MICO_SSOT\\L6-modules\\m2_path_hash_validator.py",
+    "boundary":  {
+                     "db":  0,
+                     "L5_mutation":  0,
+                     "L4_mutation":  0
+                 }
+}
