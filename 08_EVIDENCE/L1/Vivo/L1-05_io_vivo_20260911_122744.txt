@@ -1,0 +1,28 @@
+﻿# L1-05 I/O — VIVO Y28 (V2352)
+# Waktu: 2026-09-11 12:27:44
+
+## NETWORK (verified via ping from PC-i5)
+- Tailscale: 100.127.153.2  [PASS]
+- LAN: 192.168.1.15        [PASS]
+- Hostname: localhost
+- Path to Z83: 100.67.36.31 [PASS, SSH Vivo->Z83 tested]
+
+## CONSTRAINT
+- ip addr show         : BLOCKED (netlink permission denied)
+- /sys/class/net/      : BLOCKED (Android 16 sandbox)
+- getprop dhcp/ip.*    : no direct IP exposed
+- termux-wifi-connectioninfo: empty response
+- Cause: Android 10+ restricts network interface visibility to apps without root
+- Not a failure — platform limitation
+
+## STORAGE
+- /data: 222 GB total, 97 used, 125 free (44%)
+- Storage path: /storage/emulated/999/Android/obb (via /dev/block/dm-49)
+
+## KERNEL
+- uname -r: 5.10.246-android12-9-00010-g8ca7f39b1d84-ab14517425
+- Arch: aarch64
+
+## NOTE
+Untuk keperluan audit, network state diambil dari observasi eksternal
+(ping dari PC-i5) — bukan dari Vivo sendiri, karena keterbatasan sandbox.

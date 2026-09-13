@@ -1,0 +1,56 @@
+﻿audit_verdict:
+  audit_id: MICO-L1-AUDIT-KIMI-001
+  auditor: KIMI
+  timestamp_utc: 2026-09-12T15:34:00Z
+  bundle_sha256: C0262D1BB6BB9FC9D059C65AF48E8A64D70C343E8587B2DA94F60392767ACBC3
+
+per_node:
+  PC5:
+    status: PARTIAL
+    findings:
+      - "Isi L1-00..05 tidak termuat; hanya daftar evidence list + L1-06/07/08"
+      - "Closure declaration usang: status 'belum diverifikasi KIMI' padahal rev.2 sudah terbit"
+      - "F-003 (JobObject) masih OPEN"
+  Z83:
+    status: PARTIAL
+    findings:
+      - "Angka gdrive_token 644->600 salah (bukti mentah 664)"
+      - "total_file 11 vs 12 hash - selisih 1"
+  HP_Mini:
+    status: PARTIAL
+    findings:
+      - "ACC L0 sah, CLOSED_WITH_UNKNOWNS jujur"
+      - "Waktu ACC placeholder 21:0X"
+  Aspire:
+    status: BELUM
+  Vivo:
+    status: BELUM
+  Infinix:
+    status: BELUM
+
+findings:
+  minor:
+    - {id: MIN-001, node: HP_Mini, desc: "Waktu ACC placeholder 21:0X"}
+    - {id: MIN-002, node: PC5, desc: "3 file evidence_list 0 byte"}
+    - {id: MIN-003, node: Z83, desc: "total_file 11 vs 12"}
+    - {id: MIN-004, node: ALL, desc: "Spec bundle tidak terpenuhi penuh"}
+    - {id: MIN-005, node: PC5, desc: "L1-08 v1 belum ditandai SUPERSEDED"}
+  mayor:
+    - {id: MAJ-001, node: PC5, desc: "Closure usang - status tidak sinkron dengan KIMI rev.2"}
+    - {id: MAJ-002, node: PC5, desc: "F-003 OPEN - closure tidak boleh selesai"}
+    - {id: MAJ-003, node: Z83, desc: "Angka 644->600 salah, harus 664"}
+
+contradictions:
+  - {id: CONTRA-001, nodes: [PC5], desc: "Tiga status berbeda dalam satu folder"}
+  - {id: CONTRA-002, nodes: [PC5], desc: "L1-08 v1 klaim APPROVED vs v2 PENDING"}
+
+closure_validity:
+  HP_Mini: "VALID"
+  Z83: "VALID_DENGAN_CATATAN"
+  PC5: "TIDAK_VALID"
+
+verdict: PASS_WITH_MINOR
+gate_l2: TERKUNCI
+
+signature:
+  text: "KIMI - 2026-09-12T15:34:00Z - bundle_sha256: C0262D1BB6BB9FC9D059C65AF48E8A64D70C343E8587B2DA94F60392767ACBC3"

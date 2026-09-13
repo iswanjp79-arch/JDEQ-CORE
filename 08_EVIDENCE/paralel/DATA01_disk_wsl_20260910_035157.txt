@@ -1,0 +1,2 @@
+Filesystem      Size  Used Avail Use% Mounted on
+D:\             922G  563G  360G  62% /mnt/d

@@ -1,0 +1,51 @@
+﻿# L1 INFINIX X653C - 2026-09-11
+# Serial: 051221106K011111
+# Transport: ADB
+
+## L1-00 IDENTITAS
+- Model: Infinix X653C
+- Manufacturer: INFINIX MOBILITY LIMITED
+- Device: Infinix-X653C
+- Android: 9 (SDK 28)
+- Build fingerprint: Infinix/H6114/Infinix-X653C:9/PPR1.180610.011/GH-210831V271:user/release-keys
+- Build date: 2021-08-31
+
+## L1-01 CPU
+- Chipset: MediaTek MT6761 (Helio A22)
+- Arch: ARMv7 (armeabi-v7a, 32-bit)
+- Cores: 4
+- Model: ARMv7 Processor rev 4 (v7l)
+
+## L1-02 MEMORY
+- MemTotal: 1.9 GB
+- MemFree: 101 MB
+- MemAvailable: 767 MB
+- Cached: 728 MB
+
+## L1-03 STORAGE
+- /data (dm-2): 25 GB total, 17 used, 8.2 free (68%)
+- /storage/emulated: 25 GB, 17 used, 8.2 free
+
+## L1-04 THERMAL & BATTERY
+- Battery level: 100%
+- Temperature: 38.0 C
+- Voltage: 4303 mV
+- Health: 2 (GOOD)
+- Status: 2 (CHARGING)
+
+## L1-05 NETWORK
+- wlan0: 192.168.1.2/24 (UP)
+- tun0: 100.79.91.60/32 (Tailscale)
+- eth interfaces (ccmni0-20, p2p0, ifb0, dll): DOWN
+
+## CATATAN FISIK
+- Chipset 32-bit ARMv7 (bukan aarch64 seperti Vivo)
+- Storage 68% used - harus dijaga
+- Build date 2021 - Android 9 sudah EOL security patch
+- Belum cek Termux terinstall/tidak
+
+## STATUS
+L1-00 s/d L1-05: COMPLETE
+L1-06 (peran): BELUM DITETAPKAN
+L1-07 (paspor): BELUM
+L1-08 (penutupan): BELUM

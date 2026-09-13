@@ -1,0 +1,30 @@
+﻿updated_evidence_index:
+  task_id: MICO-L1-PC5-RECON-004
+  tanggal: 2026-09-10
+  total_file_kanonik: 23
+  file_kanonik:
+    - CPU_THERMAL_ALTERNATIVE_RESEARCH.yml
+    - DRIVE_E_HEALTH_EVIDENCE.txt
+    - L1_RECONCILIATION_REPORT.yml
+    - L1-00_identity_20260910_141410.txt
+    - L1-00_timestamp_20260910_141410.txt
+    - L1-01_cpu_20260910_141410.txt
+    - L1-01_cpu_load_20260910_141410.txt
+    - L1-02_mem_20260910_141410.txt
+    - L1-02_swap_20260910_141410.txt
+    - L1-03_disks_20260910_141410.txt
+    - L1-03_partitions_20260910_141410.txt
+    - L1-03_volumes_20260910_141410.txt
+    - L1-04_battery_STATUS.txt
+    - L1-04_powercfg_20260910_141410.txt
+    - L1-04_thermal_20260910_141410.txt
+    - L1-04_thermal_reconciled.txt
+    - L1-05_peripherals_20260910_141410.txt
+    - L1-06_role_20260910_141410.txt
+    - L1-07_PASSPORT_PC5.yml
+    - L1-08_ACCEPTANCE_PC5.yml
+    - L1-08_evidence_list_20260910_141649.txt
+    - L1-STATUS_CORRECTION.yml
+    - UPDATED_EVIDENCE_INDEX.yml
+  arsip_superseded: _superseded/
+  catatan: Regenerated otomatis dari folder aktual, bukan diketik manual.

@@ -1,0 +1,30 @@
+﻿hostname: markas-utama
+uptime: 1 day, 20:48, 4 users, load average 0.03 / 0.09 / 0.08
+
+SERVICES RUNNING (top 19):
+  cron.service                     Regular background program processing daemon
+  dbus.service                     D-Bus System Message Bus
+  fail2ban.service                 Fail2Ban Service
+  fwupd.service                    Firmware update daemon
+  getty@tty1.service               Getty on tty1
+  ModemManager.service             Modem Manager
+  networkd-dispatcher.service      Dispatcher daemon for systemd-networkd
+  NetworkManager.service           Network Manager
+  polkit.service                   Authorization Manager
+  postfix.service                  Postfix Mail Transport Agent
+  prometheus-node-exporter.service Prometheus exporter for machine metrics
+  rsyslog.service                  System Logging Service
+  snapd.service                    Snap Daemon
+  ssh.service                      OpenBSD Secure Shell server
+  systemd-journald.service         Journal Service
+  systemd-logind.service           User Login Management
+  systemd-networkd.service         Network Management
+  systemd-oomd.service             Userspace OOM Killer
+  systemd-resolved.service         Network Name Resolution
+
+CATATAN:
+  - Load sangat rendah (0.03/0.09/0.08)
+  - Fail2ban aktif (keamanan SSH)
+  - Prometheus node-exporter aktif (monitoring)
+  - Postfix aktif (mail)
+  - systemd-oomd aktif (pelindung OOM untuk RAM kecil)

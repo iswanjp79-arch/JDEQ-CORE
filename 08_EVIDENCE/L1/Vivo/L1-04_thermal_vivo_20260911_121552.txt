@@ -1,0 +1,25 @@
+﻿# L1-04 THERMAL & BATTERY — VIVO Y28 (V2352)
+# Waktu: 2026-09-11 12:15:52
+# Metode: termux-battery-status (termux-api)
+# Catatan: /sys/class/thermal/* DIBLOKIR Android 16 tanpa root
+
+present: true
+technology: Li-ion
+health: GOOD
+plugged: PLUGGED_USB
+status: CHARGING
+temperature: 37.3
+voltage: 3893
+current: 100600
+current_average: 53400
+percentage: 47
+level: 47
+scale: 100
+charge_counter: 2771000
+cycle: 871
+
+# INTERPRETASI
+- Health GOOD (Android report)
+- Suhu 37.3C saat charging = normal
+- Cycle count 871 = tinggi (HP sudah 3 tahun, banyak charge)
+- Rekomendasi: hindari charging sampai 100% setiap hari; jaga 20-80%

@@ -1,0 +1,44 @@
+﻿# L1 HP Mini (hp-mini) - 2026-09-11
+# Sumber: SSH via LAN 192.168.1.6
+
+## L1-00 Identitas
+- OS: Debian GNU/Linux 13 (trixie)
+- Kernel: 6.6.119-antix.1-amd64-smp
+- Arch: x86_64
+- Hostname: hp-mini
+- User: iswanjp
+
+## L1-01 CPU
+- Model: Intel Atom N475 @ 1.83 GHz
+- Cores/Threads: 2 / 2
+- Max: 1833 MHz, Min: 1000 MHz
+- Scaling: 100%
+
+## L1-02 Memory
+- Total: 1,9 GiB
+- Used: 1,0 GiB
+- Free: 139 MiB
+- Available: 887 MiB
+- Swap: 1,0 GiB (0 used)
+
+## L1-03 Storage
+- /dev/sda1 (ext4): 146 GB, 8,5 used, 130 free (7%)
+
+## L1-04 Thermal
+- Core 0: +53,0 C (crit +100 C)
+- BAT0: 12,27 V (ACPI)
+
+## L1-05 Network
+- wlan1: 192.168.1.6/24 (UP)
+- tailscale0: 100.92.105.35/32
+- eth0: DOWN
+- wlan0: DOWN
+- lo: 127.0.0.1
+
+## Akses
+- SSH: port 22, key-only (ed25519 dari PC-i5)
+- Passwordless: aktif setelah key install
+
+## Catatan
+- Perangkat era Atom N475 (netbook), bukan workstation
+- Peran realistis: sensor/relay pasif, bukan otak lokal

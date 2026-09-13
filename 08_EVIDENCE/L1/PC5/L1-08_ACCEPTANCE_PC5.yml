@@ -1,0 +1,33 @@
+﻿acceptance_report:
+  task_id: MICO-L1-PC5-ACCEPT-004
+  tanggal: 2026-09-10
+  node: PC-i5 (KAPAL-INDUK)
+  mode: READ_ONLY
+  versi: 2
+  status: DRAFT_VERIFIKASI_PENDING
+
+  ringkasan_saat_ini:
+    L1-00: TERKUMPUL_BELUM_DIVERIFIKASI
+    L1-01: TERKUMPUL_BELUM_DIVERIFIKASI
+    L1-02: TERKUMPUL_BELUM_DIVERIFIKASI
+    L1-03: TERKUMPUL_BELUM_DIVERIFIKASI
+    L1-04: TERKUMPUL_BELUM_DIVERIFIKASI
+    L1-05: TERKUMPUL_BELUM_DIVERIFIKASI
+    L1-06: TERKUMPUL_BELUM_DIVERIFIKASI
+    L1-07: DRAFT_DISUSUN_BELUM_DIVERIFIKASI
+    L1-08: THIS_FILE
+
+  gate:
+    l0_acceptance: PENDING
+    ag001_verdict: SIMULASI_BELUM_SAH
+    audit_independen: BELUM
+
+  referensi:
+    - L1-STATUS_CORRECTION.yml
+    - L1_RECONCILIATION_REPORT.yml
+    - UPDATED_EVIDENCE_INDEX.yml
+
+  catatan:
+    - File ini menggantikan versi sebelumnya yang mengklaim APPROVED terlalu dini.
+    - Verdict AG-001 yang tertulis sebelumnya bukan verdict sah, melainkan simulasi.
+    - Status resmi: STRUKTUR_SELESAI_VERIFIKASI_PENDING.

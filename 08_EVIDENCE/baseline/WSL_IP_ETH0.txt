@@ -1,0 +1,6 @@
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1360 qdisc mq state UP group default qlen 1000
+    link/ether 00:15:5d:84:7f:16 brd ff:ff:ff:ff:ff:ff
+    inet 172.28.85.134/20 brd 172.28.95.255 scope global eth0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::215:5dff:fe84:7f16/64 scope link 
+       valid_lft forever preferred_lft forever

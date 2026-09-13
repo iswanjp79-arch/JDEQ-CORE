@@ -1,0 +1,33 @@
+﻿{
+    "d02_verifier_premature":  "BAST awal mencantumkan KIMI sebelum verdict. Kini sah setelah tanda tangan KIMI 2026-09-11T01:51+07:00.",
+    "verifier":  [
+                     "Claude",
+                     "KIMI"
+                 ],
+    "kimi_verdict":  "ACC_BERSYARAT",
+    "note":  "Manusia putuskan akhir, mesin hanya alat.",
+    "node":  "Z83",
+    "authority":  "L0 - Iswan Juman Pancoro, ST",
+    "punch_list":  {
+                       "PL_Z83_04_pid":  "CLOSED (ss -tulnp)",
+                       "PL_Z83_03_L1_06":  "CLOSED (file ada)",
+                       "PL_Z83_01_funnel":  "CLOSED (off, target kosong)",
+                       "PL_Z83_02_v2352":  "CLOSED (v2352 = Vivo Y28, milik L0)",
+                       "PL_Z83_05_hash":  "CLOSED (12 file ter-hash)",
+                       "KIMI_T04_ssh":  "CLOSED (T05_resolution.md di L2)"
+                   },
+    "audit_pack_sha256":  "74653F4FA5174C6F832AB57A13FCC1C0D1127C461EC9B3E7E21573E74ECC195D",
+    "status":  "CLOSED",
+    "closed_at":  "2026-09-11",
+    "evidence_l1":  "D:\\MICO_SSOT\\08_EVIDENCE\\L1\\Z83\\ (12 file)",
+    "kimi_signature_sha256":  "3AEA24D9425D12D4F386FD8EC804558AD832D4A26FFBAAEAE0EBBBF8585F4B7C",
+    "d01_funnel_window":  "Funnel pernah ON mem-proxy localhost:8080. Verifikasi 2026-09-11: tidak ada listener di :8080. Zero exposure nyata. Funnel off, no serve config.",
+    "evidence_l2":  "D:\\MICO_SSOT\\08_EVIDENCE\\L2\\Z83\\ (4 file)",
+    "seal_type":  "FULL",
+    "conditions":  [
+                       "Funnel D-01 tercatat, target kosong, zero exposure",
+                       "T04 resolution dirujuk di L2",
+                       "v2352 = Vivo Y28 (confirmed)"
+                   ],
+    "v2352_resolution":  "v2352 (Tailscale 100.127.153.2) dikonfirmasi L0 = Vivo Y28, perangkat fisik sah milik L0. Bukan anomali."
+}

@@ -1,0 +1,35 @@
+{
+  "version": "L1-GOLD-1.0.0",
+  "created_at": "2026-09-11T22:26:22",
+  "db_path": "02_DATA\\INDEX\\mico.duckdb",
+  "total_rows": 9482,
+  "by_status": {
+    "OK": 9060,
+    "QUARANTINED": 195,
+    "PURGED": 14,
+    "LEGACY": 213
+  },
+  "state_hash": "bb670fd48a5b4fc7f218a9cbfb0c0f2ac9d886c011015cd116019810b609e785",
+  "kernel_scripts": {
+    "06_APLIKASI/kernel/k1_schema.py": {
+      "sha256": "e1939454f71f9c45fc2f2a88b0ac850a49412c26bfc8cc89f051cc9e12aa017a",
+      "size": 2615
+    },
+    "06_APLIKASI/kernel/k2_contract.py": {
+      "sha256": "c9c675aa7d3364f95e75712b767e269ec58479deb3574ed98016f5741bf65627",
+      "size": 4230
+    },
+    "06_APLIKASI/kernel/k3_api.py": {
+      "sha256": "49b05dc519e881baa284c22d71d60022ad90fdb4e420a7ddd9a3e2fe2789c351",
+      "size": 3717
+    },
+    "06_APLIKASI/kernel/k4_integrity.py": {
+      "sha256": "1595f407ab9d3a0c49a19598c4e854da4f3bd069d793125065361b31d1b40e84",
+      "size": 3614
+    },
+    "06_APLIKASI/kernel/rebuild.py": {
+      "sha256": "cf1b77023e96b8dee65af223038f98333cce318e42904afe7ca620fb78f410a7",
+      "size": 9500
+    }
+  }
+}

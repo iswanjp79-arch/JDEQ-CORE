@@ -1,0 +1,43 @@
+﻿evidence_reconciliation_report:
+  task_id: MICO-L1-PC5-RECON-004
+  tanggal: 2026-09-10
+  node: PC-i5 (KAPAL-INDUK)
+  mode: READ_ONLY
+
+  temuan_dan_tindakan:
+    T1:
+      deskripsi: L1-08 versi lama mengklaim COMPLETE + APPROVED terlalu dini
+      tindakan: Dipindah ke _superseded/L1-08_ACCEPTANCE_PC5_v1_20260910_1448.yml
+      pengganti: L1-08_ACCEPTANCE_PC5.yml versi 2 (DRAFT_VERIFIKASI_PENDING)
+      status: SELESAI
+
+    T2:
+      deskripsi: UPDATED_EVIDENCE_INDEX.yml menyebut 17 file, aktual 23
+      tindakan: Regenerated otomatis dari folder aktual
+      status: SELESAI
+
+    T3:
+      deskripsi: L1-08_evidence_list_20260910_141649.txt snapshot lama, 0 byte
+      tindakan: Dipindah ke _superseded/, digantikan versi baru 150742
+      status: SELESAI
+
+    T4:
+      deskripsi: Dua file yang seharusnya diarsipkan masih di kanonik
+      file:
+        - L1-04_battery_20260910_141410.txt
+        - L1-08_evidence_list_20260910_141410.txt
+      tindakan: Sudah di _superseded/ sebelum RECON-004 dimulai
+      status: SELESAI
+
+  status_folder_kanonik:
+    total_file: 23
+    semua_terverifikasi_ada: true
+    file_kontradiksi: 0
+    file_0_byte: 0
+
+  catatan:
+    - Tidak ada mutasi sistem.
+    - Tidak ada instalasi.
+    - Tidak ada penghapusan permanen (semua move ke _superseded).
+
+  status_keseluruhan: REKONSILIASI_SELESAI_VERIFIKASI_PENDING

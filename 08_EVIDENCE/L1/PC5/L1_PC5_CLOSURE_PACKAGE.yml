@@ -1,0 +1,28 @@
+﻿closure_package:
+  task_id: MICO-L1-PC5-CLOSURE-001
+  tanggal: 2026-09-10
+  node: PC-i5 (KAPAL-INDUK)
+  mode: READ_ONLY
+  status_resmi: AUDIT_READY
+
+  status_per_item:
+    L1-00_identitas: TERKUMPUL
+    L1-01_cpu: TERKUMPUL
+    L1-02_memori: TERKUMPUL
+    L1-03_storage: TERKUMPUL
+    L1-04_daya_suhu: TERKUMPUL
+    L1-05_antarmuka: TERKUMPUL
+    L1-06_peran: TERKUMPUL
+    L1-07_paspor: DRAFT_DISUSUN
+    L1-08_acceptance: DRAFT_VERIFIKASI_PENDING
+
+  status_keseluruhan: STRUKTUR_SELESAI_VERIFIKASI_PENDING
+  l0_acceptance: PENDING
+  ag001_verdict: BELUM_DIMINTA
+  independent_audit: BELUM_DIJALANKAN
+
+  yang_tidak_boleh_diklaim:
+    - L1_PC5_CLOSED
+    - L1_PC5_FULL_LOCKED
+    - BASELINE_FROZEN
+    - L0_ACCEPTED

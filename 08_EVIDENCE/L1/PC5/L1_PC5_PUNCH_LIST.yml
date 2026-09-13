@@ -1,0 +1,25 @@
+﻿punch_list:
+  task_id: MICO-L1-PC5-CLOSURE-001
+  tanggal: 2026-09-10
+  node: PC-i5 (KAPAL-INDUK)
+
+  permanent_limitation:
+    - id: THERMAL_ACPI_ONLY
+      deskripsi: Sensor CPU die tidak diekspos Windows
+      bukti: L1-04_thermal_reconciled.txt
+      kondisi: 27.9C / 29.9C via ACPI zone
+      dampak: tidak bisa deteksi throttle beban tinggi via ACPI
+      tindakan_lanjutan: pertimbangkan alat portable (belum diinstall)
+
+  deferred_repair:
+    - id: DRIVE_E_HEAVY_IO
+      deskripsi: ST500DM002 bad block berulang
+      bukti: DRIVE_E_HEALTH_EVIDENCE.txt
+      event: 2026-09-06 23:10 bad block \Device\Harddisk1\DR1
+      keputusan: HOLD_HEAVY_IO
+      tindakan_lanjutan: chkdsk E: /scan (read-only, butuh ACC L0)
+
+  tidak_ada_dalam_punch_list:
+    - data loss
+    - system mutation
+    - software installation

@@ -1,0 +1,31 @@
+﻿Z83 PERMISSION & CLEANUP EXECUTION
+Tanggal: 2026-09-10 23:19:17
+Executor: L0 (Iswan Juman Pancoro, ST)
+Mode: mutasi terkendali (bukan read-only)
+
+CHMOD (sukses):
+  700  .secrets
+  700  jdeq-vault
+  700  vault
+  600  gdrive_token.json
+  600  TEMPEL_CLIENT_SECRET_SING_BENER
+  600  TEMPEL_KODE_RAHASIA_SING_BENER
+
+CLEANUP JUNK (sukses):
+  rm -f ~/1 ~/24 ~/G01 ~/283104369023-...apps.googleusercontent.com
+
+VERIFIKASI:
+  stat: 700/700/700/600/600/600 sesuai target
+  ls ~/1 ~/24 ~/G01: No such file or directory (terhapus)
+
+STATUS PUNCH LIST Z83:
+  T-01 .secrets 775->700 : CLOSED
+  T-02 gdrive_token 644->600 : CLOSED
+  T-03 TEMPEL 664->600 : CLOSED
+  T-04 junk files : CLOSED
+  T-05 6 koneksi UNKNOWN : OPEN (register L2)
+
+CATATAN:
+  - Mutasi dijalankan atas keputusan L0 langsung
+  - Tidak ada instalasi software
+  - Z83 zero-retention tetap dijaga (tidak ada file baru menetap)

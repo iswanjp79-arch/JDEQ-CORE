@@ -1,0 +1,30 @@
+﻿# ADR-003 — Layer 3 Execution
+# MICO-JDEQ Adaptive Control System
+Status: Efektif 2026-09-13
+Otoritas: L0 — Iswan Juman Pancoro, ST
+Diverifikasi: DOLA (Governance Gate) · AG-003 DeepSeek (Executor) · KIMI (Auditor)
+
+## 1. Keputusan
+Fase Layer 3 dimulai. PC-i5 menjalankan modul M1-M5 dengan Dead-Path Circuit Breaker.
+
+## 2. Modul
+- M1 Local Observer: snapshot CPU/RAM/disk/net → read-only
+- M2 Path Safety Controller: cek path → VALID/BLOCKED
+- M3 PC5 Collector: pull-only dari worker
+- M4 Evidence & Alert Engine: status diskrit
+- M5 External Sync: git commit dari PC-i5 saja
+
+## 3. Invariant
+- Dead-Path Circuit Breaker: error → 1 log → BLOCKED → berhenti
+- Inner Zone: no direct internet
+- PC-i5: collector tunggal
+- Semua perubahan: butuh ACC L0
+
+## 4. Evidence
+Tersimpan di D:\MICO_SSOT\08_EVIDENCE\
+
+## 5. Rollback
+Restore dari evidence snapshot.
+
+## 6. ACC L0
+Disetujui — 2026-09-13

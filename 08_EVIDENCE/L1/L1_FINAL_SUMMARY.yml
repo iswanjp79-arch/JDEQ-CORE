@@ -1,0 +1,30 @@
+# L1 FINAL SUMMARY
+batch_id: L1-PC5-CLOSURE-001
+node: PC-i5 (KAPAL-INDUK)
+generated: 2026-09-10 14:52:01
+evidence_root: D:\MICO_SSOT\08_EVIDENCE\L1\PC5
+files_count: 22
+evidence_index: UPDATED_EVIDENCE_INDEX.yml
+
+status:
+  L1-00_to_L1-06: COMPLETE
+  L1-07: COMPLETE
+  L1-08: L1_PC5_ACCEPTED
+  L0_acceptance: APPROVED
+  L0_accepted_at: 2026-09-10
+
+anomalies:
+  - Drive E: HOLD_HEAVY_IO (bad block 2026-09-06)
+  - Thermal CPU: PLATFORM_LIMITATION (ACPI only)
+
+claims:
+  - No data loss found in inspected evidence.
+  - No system mutation.
+  - No software installation.
+
+gate:
+  L0_acceptance: APPROVED
+  AG001_verdict: APPROVED_WITH_CONDITIONS
+  L2: DIBLOKIR
+
+next_state: READY_FOR_NEXT_NODE

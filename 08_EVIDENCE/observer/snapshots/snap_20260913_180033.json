@@ -1,0 +1,10 @@
+{
+  "ts": "2026-09-13T18:00:33.373364",
+  "host": "KAPAL-INDUK",
+  "cpu_percent": 4.5,
+  "ram_used_mb": 7991,
+  "ram_total_mb": 16340,
+  "disk_used_mb": 590694,
+  "disk_total_mb": 943627,
+  "note": "psutil_tersedia"
+}

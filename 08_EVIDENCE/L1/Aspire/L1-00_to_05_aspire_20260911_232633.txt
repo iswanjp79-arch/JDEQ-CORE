@@ -1,0 +1,64 @@
+﻿# L1 ASPIRE ONE (antix1) - 2026-09-11
+# Serial boot: Ventoy flashdisk
+# Akses: SSH via LAN 192.168.1.7 (Dropbear port 22)
+
+## L1-00 IDENTITAS
+- Hostname: antix1
+- OS: Debian GNU/Linux 13 (trixie) - antiX Core
+- Kernel: 6.6.119-antix.1-amd64-smp
+- Arch: x86_64
+- Init: runit
+- Mode: Live (tanpa persistence)
+
+## L1-01 CPU
+- Model: Intel Atom N550 @ 1.50 GHz
+- Cores/Threads: 2 / 2 (4 CPU di Linux)
+- Freq max/min: 1500 / 1000 MHz
+- Scaling: 100%
+
+## L1-02 MEMORY
+- Total: 953 MiB
+- Used: 554 MiB
+- Free: 251 MiB
+- Available: 399 MiB
+- Swap: 0 B (tidak ada)
+
+## L1-03 STORAGE
+- Internal disk: TIDAK TERDETEKSI (tidak ada sdb / nvme)
+- Boot media: /dev/sda 7.5 GB (Ventoy USB flashdisk)
+  - sda1: 7.5 GB exfat (Ventoy)
+    - loop ventoy: 645 MB mounted /live/boot-dev
+  - sda2: 32 MB vfat
+- Root filesystem: overlay 673 MB (308 used, 366 free, 46%)
+- Live system: loop0 585 MB squashfs /live/linux
+
+## L1-04 THERMAL & POWER
+- Thermal zone: acpitz (1 zona)
+- Suhu CPU: 67.0 C (idle)
+- Cooling devices: 6 (fan speed control)
+- Power supply: AC + BAT0
+- Battery capacity: 0 (kemungkinan mati / tidak terdeteksi)
+- Power source: AC only
+
+## L1-05 INTERFACE
+- eth0: 192.168.1.7/24 (UP, kabel LAN)
+- wlan0: DOWN
+- lo: 127.0.0.1
+- USB: lsusb kosong (command tidak tersedia atau tidak ada device)
+- PCI: Intel Atom SoC + NM10/ICH7 chipset
+- SATA: controller ada (AHCI), tapi disk tidak terdeteksi
+- Display: tidak dicek (headless mode)
+
+## CATATAN KRITIS
+- CMOS battery mati (tanggal reset tiap reboot)
+- TIDAK ada persistence - semua install hilang saat shutdown
+- Flashdisk total 7.5 GB - tidak cukup untuk install penuh
+- Battery mati atau tidak terdeteksi
+- Suhu 67 C idle - hangat, wajar untuk Atom N550
+
+## STATUS
+L1-00 s/d L1-05: COMPLETE (tersimpan di PC-i5)
+L1-06 peran: BELUM
+L1-07 paspor: BELUM
+L1-08 penutupan: BELUM
+Blocker: persistence belum ada

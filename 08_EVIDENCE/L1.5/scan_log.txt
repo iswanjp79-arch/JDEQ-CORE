@@ -1,0 +1,11 @@
+scan_start: 2026-09-11T00:42:59
+root: D:\MICO_SSOT
+scanned: 2768
+total_rows: 2768
+OK: 2560
+JUNK: 14
+DUP: 194
+ERROR: 0
+total_bytes: 268401903
+duration_sec: 3.20
+manifest: D:\MICO_SSOT\02_DATA\INDEX\manifest.csv

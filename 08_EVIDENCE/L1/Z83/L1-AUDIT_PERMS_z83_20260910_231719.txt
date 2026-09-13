@@ -1,0 +1,29 @@
+﻿Z83 FILE PERMISSIONS AUDIT (mode oktal)
+Sumber: stat -c '%a %n' (read-only, Z83)
+Tanggal: 2026-09-10 23:17:19
+
+HASIL:
+  775  /home/iswanjp/.secrets
+  775  /home/iswanjp/jdeq-vault
+  775  /home/iswanjp/vault
+  644  /home/iswanjp/gdrive_token.json
+  600  /home/iswanjp/kunci-mico.json
+  664  /home/iswanjp/TEMPEL_CLIENT_SECRET_SING_BENER
+  664  /home/iswanjp/TEMPEL_KODE_RAHASIA_SING_BENER
+
+KLASIFIKASI:
+  OK (600):
+    - kunci-mico.json
+  PERLU CHMOD KE 700:
+    - .secrets/
+    - jdeq-vault/
+    - vault/
+  PERLU CHMOD KE 600:
+    - gdrive_token.json (aktual 644)
+    - TEMPEL_CLIENT_SECRET_SING_BENER (664)
+    - TEMPEL_KODE_RAHASIA_SING_BENER (664)
+
+CATATAN:
+  - gdrive_token.json = 644 (KIMI tulis 664, tidak akurat)
+  - Tidak ada isi file dibaca (read-only stat saja)
+  - Butuh ACC L0 terpisah untuk chmod

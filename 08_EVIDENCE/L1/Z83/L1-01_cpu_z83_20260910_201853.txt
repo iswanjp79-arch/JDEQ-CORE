@@ -1,0 +1,9 @@
+﻿Model: Intel(R) Atom(TM) x5-Z8350 CPU @ 1.44GHz
+Cores: 4
+Threads per core: 1
+CPU max MHz: 1920
+CPU min MHz: 480
+Scaling: 67%
+Architecture: x86_64
+Virtualization: VT-x
+L2 cache: 2 MiB

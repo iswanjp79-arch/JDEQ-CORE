@@ -1,0 +1,112 @@
+﻿baseline_candidate_manifest:
+  task_id: MICO-L1-PC5-CLOSURE-001
+  tanggal: 2026-09-10
+  node: PC-i5 (KAPAL-INDUK)
+  status: CANDIDATE_NOT_FROZEN
+
+  canonical_files:
+    total: 27
+    - name: CPU_THERMAL_ALTERNATIVE_RESEARCH.yml
+      size: 3740
+    - name: DRIVE_E_HEALTH_EVIDENCE.txt
+      size: 1590
+    - name: EVIDENCE_RECONCILIATION_REPORT.yml
+      size: 1359
+    - name: L1_CANONICAL_AUDIT_PACKAGE.yml
+      size: 1404
+    - name: L1_PC5_CLOSURE_PACKAGE.yml
+      size: 720
+    - name: L1_PC5_PUNCH_LIST.yml
+      size: 821
+    - name: L1_RECONCILIATION_REPORT.yml
+      size: 2558
+    - name: L1-00_identity_20260910_141410.txt
+      size: 898
+    - name: L1-00_timestamp_20260910_141410.txt
+      size: 42
+    - name: L1-01_cpu_20260910_141410.txt
+      size: 544
+    - name: L1-01_cpu_load_20260910_141410.txt
+      size: 210
+    - name: L1-02_mem_20260910_141410.txt
+      size: 272
+    - name: L1-02_swap_20260910_141410.txt
+      size: 302
+    - name: L1-03_disks_20260910_141410.txt
+      size: 1110
+    - name: L1-03_partitions_20260910_141410.txt
+      size: 2222
+    - name: L1-03_volumes_20260910_141410.txt
+      size: 1134
+    - name: L1-04_battery_STATUS.txt
+      size: 234
+    - name: L1-04_powercfg_20260910_141410.txt
+      size: 164
+    - name: L1-04_thermal_20260910_141410.txt
+      size: 262
+    - name: L1-04_thermal_reconciled.txt
+      size: 496
+    - name: L1-05_peripherals_20260910_141410.txt
+      size: 6566
+    - name: L1-06_role_20260910_141410.txt
+      size: 310
+    - name: L1-07_PASSPORT_PC5.yml
+      size: 9054
+    - name: L1-08_ACCEPTANCE_PC5.yml
+      size: 991
+    - name: L1-08_evidence_list_20260910_150742.txt
+      size: 3602
+    - name: L1-STATUS_CORRECTION.yml
+      size: 1113
+    - name: UPDATED_EVIDENCE_INDEX.yml
+      size: 1095
+
+  superseded_files:
+    total: 21
+    - name: L1-00_identity.txt
+      size: 898
+    - name: L1-00_timestamp.txt
+      size: 42
+    - name: L1-01_cpu.txt
+      size: 544
+    - name: L1-01_cpu_load.txt
+      size: 210
+    - name: L1-02_mem.txt
+      size: 272
+    - name: L1-02_swap.txt
+      size: 302
+    - name: L1-03_disks.txt
+      size: 1110
+    - name: L1-03_partitions.txt
+      size: 2222
+    - name: L1-03_volumes.txt
+      size: 1134
+    - name: L1-04_battery.txt
+      size: 0
+    - name: L1-04_battery_20260910_141410.txt
+      size: 0
+    - name: L1-04_powercfg.txt
+      size: 164
+    - name: L1-04_thermal.txt
+      size: 262
+    - name: L1-05_peripherals.txt
+      size: 3472
+    - name: L1-06_location.txt
+      size: 60
+    - name: L1-06_node.txt
+      size: 56
+    - name: L1-06_role.txt
+      size: 88
+    - name: L1-08_ACCEPTANCE_PC5_v1_20260910_1448.yml
+      size: 2778
+    - name: L1-08_evidence_list.txt
+      size: 2028
+    - name: L1-08_evidence_list_20260910_141410.txt
+      size: 4706
+    - name: L1-08_evidence_list_20260910_141649.txt
+      size: 2636
+
+  catatan:
+    - Hash manifest belum dibuat. Butuh Task Card terpisah.
+    - Folder belum di-lock. Bukan kewenangan DeepSeek.
+    - Freeze hanya setelah independent audit + AG-001 verdict + ACC L0.

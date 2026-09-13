@@ -1,0 +1,3 @@
+vm.swappiness = 60
+fs.file-max = 9223372036854775807
+net.core.somaxconn = 4096

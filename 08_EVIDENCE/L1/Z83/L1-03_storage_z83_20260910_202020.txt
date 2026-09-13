@@ -1,0 +1,19 @@
+﻿FILESYSTEM (df -h):
+  tmpfs 665M /run (2.7M used)
+  /dev/mmcblk0p2 56G / (24G used, 30G free, 45%)
+  tmpfs 1.7G /dev/shm (0)
+  /dev/mmcblk0p1 1.1G /boot/efi (6.4M used)
+  tmpfs 333M /run/user/1000
+  G01: 400G /mnt/gdrive (11G used, 390G free)
+  tmpfs 10M /var/log/mico-jdeq (zero-retention)
+
+DISK (lsblk):
+  mmcblk0 57.7G disk
+    mmcblk0p1 1G /boot/efi
+    mmcblk0p2 56.6G /
+  mmcblk0boot0 4M
+  mmcblk0boot1 4M
+  20 loop snap packages: core24, firefox, gtk-common-themes, mesa-2404, snapd, gnome-46
+
+MOUNT (ext4):
+  /dev/mmcblk0p2 / ext4 rw,relatime

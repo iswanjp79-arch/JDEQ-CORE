@@ -1,0 +1,74 @@
+﻿=== TAILSCALE STATUS ===
+100.124.50.70   kapal-induk   rinawatimadina@  windows  -                      
+100.123.139.63  antix1-1      rinawatimadina@  linux    -                      
+100.92.105.35   hp-mini       rinawatimadina@  linux    -                      
+100.79.91.60    madina        rinawatimadina@  android  -                      
+100.67.36.31    markas-utama  tagged-devices   linux    idle, tx 4060 rx 5708  
+100.127.153.2   v2352         rinawatimadina@  android  -                      
+
+=== TAILSCALE NETCHECK (DERP) ===
+
+Report:
+	* Time: 2026-09-13 02:10:34.6738266+07:00
+	* UDP: true
+	* IPv4: yes, 103.105.55.147:58619
+	* IPv6: no, but OS has support
+	* MappingVariesByDestIP: false
+	* PortMapping: 
+	* Nearest DERP: Singapore
+	* DERP latency:
+		- sin: 21ms    (Singapore)
+		- hkg: 60ms    (Hong Kong)
+		- blr: 65.1ms  (Bengaluru)
+		- tok: 94.9ms  (Tokyo)
+		- dbi: 104.4ms (Dubai)
+		- nai: 153.9ms (Nairobi)
+		- par: 171.9ms (Paris)
+		- mad: 176.9ms (Madrid)
+		- lhr: 179.3ms (London)
+		- ams: 179.9ms (Amsterdam)
+		- fra: 181.1ms (Frankfurt)
+		- sea: 182.4ms (Seattle)
+		- nue: 185.7ms (Nuremberg)
+		- jnb: 195.3ms (Johannesburg)
+		- waw: 197.3ms (Warsaw)
+		- lax: 197.3ms (Los Angeles)
+		- sfo: 200.8ms (San Francisco)
+		- hel: 211.6ms (Helsinki)
+		- dfw: 220.4ms (Dallas)
+		- den: 230.1ms (Denver)
+		- ord: 230.8ms (Chicago)
+		- hnl: 235.4ms (Honolulu)
+		- tor: 243ms   (Toronto)
+		- iad: 243.4ms (Ashburn)
+		- nyc: 248ms   (New York City)
+		- mia: 252.7ms (Miami)
+		- syd:         (Sydney)
+		- sao:         (S├úo Paulo)
+
+=== DEFAULT GATEWAY & DNS ===
+
+NextHop     InterfaceAlias
+-------     --------------
+192.168.1.1 Ethernet 2    
+
+
+
+InterfaceAlias ServerAddresses               
+-------------- ---------------               
+Ethernet 2     {192.168.1.1, 114.114.114.114}
+
+
+
+=== PING TEST 6 NODE ===
+Z83 (100.67.36.31): True
+Aspire (100.123.139.63): False
+HP_Mini (100.92.105.35): False
+Vivo (100.127.153.2): True
+Infinix (100.79.91.60): False
+
+=== SSH PORT TEST ===
+Z83 (100.67.36.31:22): True
+Aspire (100.123.139.63:22): False
+HP_Mini (100.92.105.35:22): False
+Vivo (100.127.153.2:8022): True

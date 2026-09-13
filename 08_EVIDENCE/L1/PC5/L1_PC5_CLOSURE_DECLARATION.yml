@@ -1,0 +1,53 @@
+﻿deklarasi_penutupan:
+  node: PC-i5 (KAPAL-INDUK)
+  tanggal: 2026-09-10 17:03
+  diputuskan_oleh: L0 — Iswan Juman Pancoro, S.T.
+  status: L1_PC5_CLOSED_WITH_PUNCH_LIST
+  dasar: Keputusan langsung L0 sebagai otoritas mutlak
+
+  cakupan_penutupan:
+    - L1-00 s/d L1-06: TERKUMPUL, DITUTUP
+    - L1-07 paspor: DITUTUP sebagai draft
+    - L1-08 acceptance: DITUTUP dengan catatan
+
+  punch_list_terbuka:
+    - id: KIMI_F001
+      isi: Rekonsiliasi angka RAM sudah diperbaiki (13.70 GB resmi)
+      status: koreksi terkirim, belum diverifikasi KIMI
+    - id: KIMI_F002
+      isi: Thermal threshold diganti berbasis beban CPU
+      status: koreksi terkirim, belum diverifikasi KIMI
+    - id: KIMI_F003
+      isi: Cmdlet Get-JobObject dihapus dari checklist
+      status: koreksi terkirim, belum diverifikasi KIMI
+    - id: KIMI_F004
+      isi: Port RDP/WinRM ditunda ke L2
+      status: tercatat
+    - id: KIMI_F005
+      isi: Bukti sudah dikirim ke KIMI
+      status: menunggu verdict ulang
+    - id: DRIVE_E
+      isi: HOLD_HEAVY_IO
+      status: permanen sampai chkdsk /scan (butuh ACC L0)
+    - id: THERMAL_CPU
+      isi: PLATFORM_LIMITATION
+      status: permanen, tercatat
+    - id: HASH_MANIFEST
+      isi: Belum dibuat
+      status: butuh Task Card terpisah
+
+  larangan_setelah_penutupan:
+    - Tidak ada perubahan file di L1/PC5/ tanpa Task Card baru
+    - Tidak ada klaim L1 verified sampai KIMI verdict ulang
+    - Tidak naik ke L2 tanpa ACC L0 baru
+
+  klaim_sah:
+    - "L1 PC-i5 ditutup atas keputusan L0."
+    - "Tidak ada klaim data hilang pada evidence yang diperiksa."
+    - "Tidak ada mutasi sistem di luar D:\MICO_SSOT\08_EVIDENCE."
+    - "Tidak ada instalasi software."
+
+  catatan:
+    - Penutupan ini tidak membatalkan temuan KIMI.
+    - Temuan KIMI tetap punch list.
+    - Bila KIMI beri verdict ulang, punch list diperbarui.

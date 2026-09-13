@@ -1,0 +1,33 @@
+﻿status_correction:
+  task_ref: MICO-L1-PC5-VERIFY-005
+  tanggal: 2026-09-10
+  node: PC-i5 (KAPAL-INDUK)
+  alasan: Klaim ACCEPTED sebelumnya terlalu dini. Belum ada verifikasi lokal
+          menyeluruh, belum ada audit independen, verdict AG-001 masih simulasi.
+
+status_aktual:
+  L1-00_to_L1-06: TERKUMPUL_BELUM_DIVERIFIKASI
+  L1-07: DRAFT_DISUSUN_BELUM_DIVERIFIKASI
+  L1-08: DITAHAN
+  keseluruhan: STRUKTUR_SELESAI_VERIFIKASI_PENDING
+
+yang_belum_diverifikasi:
+  - isi setiap file bukti (nama vs konten)
+  - label epistemik tiap temuan
+  - referensi bukti ke path asli
+  - Drive E: korelasi event log vs status final
+  - thermal CPU: korelasi sensor vs klaim
+  - peripheral: mana versi kanonik (3472 vs 6566 byte)
+  - klaim COMPLETE yang hardcode di bundler
+
+yang_tidak_boleh_diklaim_sebelum_verifikasi:
+  - L1_PC5_ACCEPTED
+  - L0_acceptance APPROVED sebagai hasil verifikasi
+  - COMPLETE tanpa bukti per item
+
+langkah_berikutnya:
+  - verifikasi isi lokal (Langkah 2)
+  - audit independen (Langkah 3)
+  - verdict AG-001 sah (Langkah 4)
+
+catatan: File ini menggantikan klaim status ACCEPTED yang terlalu dini.

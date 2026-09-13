@@ -1,0 +1,53 @@
+﻿deklarasi_penutupan:
+  node: Z83 (markas-utama)
+  tanggal: 2026-09-10 23:20
+  diputuskan_oleh: L0 — Iswan Juman Pancoro, S.T.
+  status: L1_Z83_CLOSED_WITH_PUNCH_LIST
+  dasar: Keputusan langsung L0 sebagai otoritas mutlak
+
+  cakupan_penutupan:
+    - L1-00 s/d L1-06: TERKUMPUL, DITUTUP
+    - L1-07 paspor: DITUTUP sebagai draft
+    - L1-08 acceptance: DITUTUP
+    - L1-AUDIT_PERMS: DITUTUP
+    - L1-PERMS_CLEANUP: DITUTUP
+
+  punch_list_terbuka:
+    - id: Z83-T05
+      isi: 6 koneksi UNKNOWN (laporan 09 Sep)
+      status: register L2/keamanan
+      butuh: review L2
+
+  punch_list_closed:
+    - id: Z83-T01
+      isi: .secrets 775->700
+      status: SELESAI (executed by L0)
+    - id: Z83-T02
+      isi: gdrive_token.json 644->600
+      status: SELESAI (executed by L0)
+    - id: Z83-T03
+      isi: TEMPEL_* 664->600
+      status: SELESAI (executed by L0)
+    - id: Z83-T04
+      isi: File junk 0-byte dihapus
+      status: SELESAI (executed by L0)
+
+  verdict_auditor:
+    kimi: PASS_WITH_NOTES
+    dola: LULUS_DENGAN_CATATAN
+
+  larangan_setelah_penutupan:
+    - Tidak ada perubahan file di L1/Z83/ tanpa Task Card baru
+    - Tidak ada klaim L1 verified sampai KIMI verdict ulang (jika diminta)
+    - Tidak naik ke L2 tanpa ACC L0 baru
+
+  klaim_sah:
+    - "L1 Z83 ditutup atas keputusan L0."
+    - "Tidak ditemukan bukti kehilangan data pada evidence yang diperiksa."
+    - "Mutasi terbatas: chmod 6 path + rm 4 file junk (executed by L0)."
+    - "Tidak ada instalasi software."
+
+  bukti_root: D:\MICO_SSOT\08_EVIDENCE\L1\Z83\
+  total_file: 11
+
+  next_node: Vivo Y28

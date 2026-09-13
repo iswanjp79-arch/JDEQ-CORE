@@ -1,0 +1,119 @@
+﻿passport:
+  node: Z83
+  hostname: markas-utama
+  role: physical-role
+  collected_at: 2026-09-10T20:29+07:00
+  mode: read-only
+  retention: zero
+
+identity:
+  os: Ubuntu 26.04 LTS (resolute)
+  kernel: 7.0.0-31-generic
+  arch: x86_64
+  uptime: 1d 20h 42m
+  load: [0.13, 0.15, 0.11]
+
+compute:
+  cpu: Intel Atom x5-Z8350
+  cores: 4
+  threads: 4
+  freq_max_mhz: 1920
+  freq_min_mhz: 480
+  governor: schedutil
+  vt_x: true
+  l2_cache_mib: 2
+
+memory:
+  ram_total_kb: 3399724
+  ram_available_kb: 2676740
+  ram_used_mib: 706
+  swap_total_kb: 8118264
+
+storage:
+  emmc_total_gb: 57.7
+  root:
+    device: /dev/mmcblk0p2
+    fs: ext4
+    size_gb: 56
+    used_gb: 24
+    free_gb: 30
+    use_pct: 45
+  boot_efi:
+    device: /dev/mmcblk0p1
+    fs: vfat
+    size_gb: 1.1
+  external:
+    mount: /mnt/gdrive
+    type: rclone
+    size_gb: 400
+    used_gb: 11
+  zeroretention:
+    mount: /var/log/mico-jdeq
+    type: tmpfs
+    size_mb: 10
+
+thermal:
+  zones: 6
+  readings_c:
+    acpitz: 46.6
+    str0: 46.65
+    int3400: 20
+    pnit: 49
+    soc_dts0: 48
+    soc_dts1: 46
+  power: axp288_charger_usb
+
+io:
+  usb:
+    - primax_keyboard
+    - root_hub_x2
+  network:
+    enp1s0: 192.168.1.11
+    wlan0: 192.168.1.15
+    tailscale0: 100.67.36.31
+    docker0: down
+  pci:
+    - atom_soc
+    - intel_integrated_graphics
+    - realtek_gbe
+  video:
+    - /dev/dri/card1
+    - renderD128
+
+services_running:
+  - cron
+  - dbus
+  - fail2ban
+  - fwupd
+  - getty@tty1
+  - ModemManager
+  - networkd-dispatcher
+  - NetworkManager
+  - polkit
+  - postfix
+  - prometheus-node-exporter
+  - rsyslog
+  - snapd
+  - ssh
+  - systemd-journald
+  - systemd-logind
+  - systemd-networkd
+  - systemd-oomd
+  - systemd-resolved
+
+capabilities:
+  - headless_compute
+  - ssh_remote
+  - tailscale_mesh
+  - prometheus_metrics_export
+  - fail2ban_protection
+  - rclone_external_storage
+  - zeroretention_logging
+
+constraints:
+  - no_install
+  - no_config_change
+  - no_file_write_on_z83
+  - read_only
+
+status: PASSPORT_READY

@@ -1,0 +1,42 @@
+﻿canonical_audit_package:
+  task_id: MICO-L1-PC5-AUDIT-001
+  tanggal: 2026-09-10
+  node: PC-i5 (KAPAL-INDUK)
+  evidence_root: D:\MICO_SSOT\08_EVIDENCE\L1\PC5\
+
+  status_klaim_sah:
+    L1-00_to_L1-06: TERKUMPUL_BELUM_DIVERIFIKASI
+    L1-07: DRAFT_DISUSUN_BELUM_DIVERIFIKASI
+    L1-08: DRAFT_VERIFIKASI_PENDING
+    keseluruhan: STRUKTUR_SELESAI_VERIFIKASI_PENDING
+
+  yang_belum_terverifikasi:
+    - audit independen (Claude/KIMI)
+    - verdict sah AG-001
+    - benchmark capability (jika diperlukan)
+    - chkdsk E: /scan read-only (butuh ACC L0)
+
+  anomali_resmi:
+    drive_e:
+      status: HOLD_HEAVY_IO
+      bukti: event log bad block 2026-09-06
+      cukup_untuk_keputusan: true (based on event log)
+    thermal_cpu:
+      status: PLATFORM_LIMITATION
+      catatan: ACPI hanya baca zona papan induk, bukan CPU die
+      cukup_untuk_idle: true
+
+  permintaan_audit:
+    1: Apakah bukti cukup untuk menyatakan STRUKTUR_SELESAI?
+    2: Apakah keputusan HOLD Drive E sah berdasarkan event log saja?
+    3: Apakah thermal ACPI cukup untuk baseline idle?
+    4: Adakah temuan tambahan?
+
+  kontak_bukti:
+    bundler_output: D:\MICO_SSOT\08_EVIDENCE\L1\L1_FINAL_SUMMARY.yml
+    audit_trail: UPDATED_EVIDENCE_INDEX.yml
+    status_correction: L1-STATUS_CORRECTION.yml
+
+  catatan:
+    - Paket ini untuk audit independen. Bukan untuk pengesahan.
+    - Tidak ada log mentah yang dikirim; bukti tersedia by path.

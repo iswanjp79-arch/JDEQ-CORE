@@ -1,0 +1,216 @@
+﻿# L1 AUDIT SUMMARY FOR KIMI
+generated: 2026-09-10 23:50:41
+compiler: compile_l1_audit_summary.ps1
+mode: READ_ONLY
+note: Status/verdict fields are PENDING. Facts only.
+
+summary:
+  nodes_present: 2
+  nodes_pending: 4 (Vivo Y28, HP Mini, Infinix, Aspire One)
+
+node_pc5:
+  name: PC-i5 (KAPAL-INDUK)
+  path: D:\MICO_SSOT\08_EVIDENCE\L1\PC5
+  files_count: 29
+  files:
+    - name: CPU_THERMAL_ALTERNATIVE_RESEARCH.yml
+      size: 3740
+      sha256_16: C80925CD4B516D16
+      mtime: 2026-09-10 14:35:04
+    - name: DRIVE_E_HEALTH_EVIDENCE.txt
+      size: 1590
+      sha256_16: 525221CF5F187C72
+      mtime: 2026-09-10 14:24:20
+    - name: EVIDENCE_RECONCILIATION_REPORT.yml
+      size: 1359
+      sha256_16: AC2466B5981EEC99
+      mtime: 2026-09-10 15:08:20
+    - name: L1_CANONICAL_AUDIT_PACKAGE.yml
+      size: 1404
+      sha256_16: 78E0651DBA5CDE40
+      mtime: 2026-09-10 15:08:21
+    - name: L1_PC5_BASELINE_CANDIDATE_MANIFEST.yml
+      size: 3076
+      sha256_16: 8DF63DE42B986A7B
+      mtime: 2026-09-10 15:38:52
+    - name: L1_PC5_CLOSURE_DECLARATION.yml
+      size: 1845
+      sha256_16: 084AA0291D42CE75
+      mtime: 2026-09-10 17:03:09
+    - name: L1_PC5_CLOSURE_PACKAGE.yml
+      size: 720
+      sha256_16: 8F76EE2FFB42A31C
+      mtime: 2026-09-10 15:38:48
+    - name: L1_PC5_PUNCH_LIST.yml
+      size: 821
+      sha256_16: D2CEAFC95F7785C2
+      mtime: 2026-09-10 15:38:51
+    - name: L1_RECONCILIATION_REPORT.yml
+      size: 2558
+      sha256_16: C2E5AE52D10EEDDD
+      mtime: 2026-09-10 14:26:18
+    - name: L1-00_identity_20260910_141410.txt
+      size: 898
+      sha256_16: 83AE8C999C7A5B7F
+      mtime: 2026-09-10 14:14:15
+    - name: L1-00_timestamp_20260910_141410.txt
+      size: 42
+      sha256_16: 83E425296A5FBFC8
+      mtime: 2026-09-10 14:14:12
+    - name: L1-01_cpu_20260910_141410.txt
+      size: 544
+      sha256_16: 5B5F69E71D1A32EE
+      mtime: 2026-09-10 14:14:16
+    - name: L1-01_cpu_load_20260910_141410.txt
+      size: 210
+      sha256_16: 578E4E7AD02E36A4
+      mtime: 2026-09-10 14:14:17
+    - name: L1-02_mem_20260910_141410.txt
+      size: 272
+      sha256_16: 182962CD6CE9E4E5
+      mtime: 2026-09-10 14:14:17
+    - name: L1-02_swap_20260910_141410.txt
+      size: 302
+      sha256_16: 046C0D43EEF98ED6
+      mtime: 2026-09-10 14:14:17
+    - name: L1-03_disks_20260910_141410.txt
+      size: 1110
+      sha256_16: 3366880EB12254E1
+      mtime: 2026-09-10 14:14:17
+    - name: L1-03_partitions_20260910_141410.txt
+      size: 2222
+      sha256_16: 8F2738AF50CFCF83
+      mtime: 2026-09-10 14:14:17
+    - name: L1-03_volumes_20260910_141410.txt
+      size: 1134
+      sha256_16: AC519A97D56C0A3B
+      mtime: 2026-09-10 14:14:17
+    - name: L1-04_battery_STATUS.txt
+      size: 234
+      sha256_16: EF5A2F088310774B
+      mtime: 2026-09-10 14:16:49
+    - name: L1-04_powercfg_20260910_141410.txt
+      size: 164
+      sha256_16: 56ABC1916B2B6934
+      mtime: 2026-09-10 14:14:17
+    - name: L1-04_thermal_20260910_141410.txt
+      size: 262
+      sha256_16: F79EBAC30995FA18
+      mtime: 2026-09-10 14:14:17
+    - name: L1-04_thermal_reconciled.txt
+      size: 496
+      sha256_16: 97F55854BD1F858A
+      mtime: 2026-09-10 14:24:19
+    - name: L1-05_peripherals_20260910_141410.txt
+      size: 6566
+      sha256_16: CF7476C02D024CEF
+      mtime: 2026-09-10 14:14:18
+    - name: L1-06_role_20260910_141410.txt
+      size: 310
+      sha256_16: 73B409752862DCDF
+      mtime: 2026-09-10 14:14:18
+    - name: L1-07_PASSPORT_PC5.yml
+      size: 9054
+      sha256_16: CB9FAF5941FAFD13
+      mtime: 2026-09-10 14:35:02
+    - name: L1-08_ACCEPTANCE_PC5.yml
+      size: 991
+      sha256_16: 777A3D3B300C6B78
+      mtime: 2026-09-10 15:07:42
+    - name: L1-08_evidence_list_20260910_150742.txt
+      size: 3602
+      sha256_16: DB91A2AAE9538C0B
+      mtime: 2026-09-10 15:07:42
+    - name: L1-STATUS_CORRECTION.yml
+      size: 1113
+      sha256_16: C03FF667AA858BA7
+      mtime: 2026-09-10 14:55:21
+    - name: UPDATED_EVIDENCE_INDEX.yml
+      size: 1095
+      sha256_16: 41EAD9914DA0238E
+      mtime: 2026-09-10 15:07:42
+  status: PENDING
+  verdict_kimi: HOLD_MINOR (L1_KIMI_AUDIT_REPORT.yml rev.2, F-003 OPEN)
+  l0_acceptance: PENDING
+  punch_list_open:
+    - DRIVE_E: HOLD_HEAVY_IO
+    - THERMAL_CPU: PLATFORM_LIMITATION
+    - F-001..F-005: lihat L1_KIMI_AUDIT_REPORT.yml
+
+node_z83:
+  name: Z83 (markas-utama)
+  path: D:\MICO_SSOT\08_EVIDENCE\L1\Z83
+  files_count: 12
+  files:
+    - name: L1_Z83_CLOSURE_DECLARATION.yml
+      size: 1572
+      sha256_16: 51CEB2AC3BE2D02F
+      mtime: 2026-09-10 23:20:17
+    - name: L1-00_identity_z83_20260910_201853.txt
+      size: 241
+      sha256_16: 606616D872421DD5
+      mtime: 2026-09-10 20:18:53
+    - name: L1-01_cpu_z83_20260910_201853.txt
+      size: 187
+      sha256_16: 582DAC44ABB177C7
+      mtime: 2026-09-10 20:18:53
+    - name: L1-02_mem_z83_20260910_201853.txt
+      size: 147
+      sha256_16: C3115970CE8C9042
+      mtime: 2026-09-10 20:18:53
+    - name: L1-03_storage_z83_20260910_202020.txt
+      size: 555
+      sha256_16: 21331C2D3276D9C3
+      mtime: 2026-09-10 20:20:20
+    - name: L1-04_thermal_z83_20260910_202321.txt
+      size: 447
+      sha256_16: 8D1A5AEBF11ECF82
+      mtime: 2026-09-10 20:23:23
+    - name: L1-05_io_z83_20260910_202421.txt
+      size: 817
+      sha256_16: C80405BC9E955D12
+      mtime: 2026-09-10 20:24:21
+    - name: L1-06_role_z83_20260910_203615.txt
+      size: 1444
+      sha256_16: 6B75F6DA576F9920
+      mtime: 2026-09-10 20:36:15
+    - name: L1-07_capability_passport.yaml
+      size: 1965
+      sha256_16: E2B2563D03EC2268
+      mtime: 2026-09-10 20:32:55
+    - name: L1-08_acceptance.md
+      size: 1407
+      sha256_16: F22A7169E88C6187
+      mtime: 2026-09-10 20:33:22
+    - name: L1-AUDIT_PERMS_z83_20260910_231719.txt
+      size: 814
+      sha256_16: 599D20D1B2E2EF2E
+      mtime: 2026-09-10 23:17:19
+    - name: L1-PERMS_CLEANUP_z83_20260910_231916.txt
+      size: 883
+      sha256_16: EA2393B703A5E92D
+      mtime: 2026-09-10 23:19:17
+  status: PENDING
+  verdict_kimi: PASS_WITH_NOTES (L1_KIMI_AUDIT_Z83_REPORT.yml rev.1)
+  l0_acceptance: PENDING
+  punch_list_open:
+    - T-01: gdrive_token.json 664 (usul 600)
+    - T-02: junk files 0-byte (usul hapus)
+    - T-03: TEMPEL_* 664 (usul 600)
+    - T-04: 6 koneksi UNKNOWN (inventarisasi L2)
+    - T-05: observasi RAM (non-materiel)
+
+pending_nodes:
+  - Vivo Y28: NOT_STARTED
+  - HP Mini: NOT_STARTED
+  - Infinix: NOT_STARTED
+  - Aspire One: NOT_STARTED
+
+claims:
+  - No data loss found in inspected evidence.
+  - No software installation.
+  - Z83 zero-retention preserved.
+
+gate:
+  l0_acceptance: PENDING
+  l2_gate: BLOCKED_UNTIL_6_NODES

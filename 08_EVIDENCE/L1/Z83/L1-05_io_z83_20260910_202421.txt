@@ -1,0 +1,32 @@
+﻿USB DEVICES:
+  Bus 001 Device 001: Linux Foundation 2.0 root hub
+  Bus 001 Device 003: Primax USB Multimedia Keyboard
+  Bus 002 Device 001: Linux Foundation 3.0 root hub
+
+NETWORK INTERFACES (ip -4 addr):
+  lo        : 127.0.0.1/8
+  enp1s0    : 192.168.1.11/24 (LAN, DHCP)
+  wlan0     : 192.168.1.15/24 (WiFi, DHCP)
+  tailscale0: 100.67.36.31/32
+  docker0   : 172.17.0.1/16 (DOWN)
+
+ROUTES:
+  default via 192.168.1.1 dev enp1s0 (metric 100)
+  default via 192.168.1.1 dev wlan0  (metric 600)
+
+RFKILL:
+  hci0 (Bluetooth): soft=0 (aktif)
+  phy0 (WiFi)     : soft=0 (aktif)
+
+PCI (ringkas):
+  00:00.0 Atom SoC
+  00:02.0 Integrated Graphics
+  00:03.0 Imaging Unit
+  00:14.0 USB xHCI
+  00:1a.0 Trusted Execution Engine
+  00:1c.0 PCI bridge
+  01:00.0 Realtek GbE RTL8111/8168
+
+VIDEO:
+  /dev/dri/card1
+  /dev/dri/renderD128

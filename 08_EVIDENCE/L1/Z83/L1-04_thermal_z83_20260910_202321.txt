@@ -1,0 +1,18 @@
+﻿THERMAL ZONES (6 sensors):
+  thermal_zone0 (acpitz)   : 46.60 C
+  thermal_zone1 (STR0)     : 46.65 C
+  thermal_zone2 (INT3400)  : 20.00 C
+  thermal_zone3 (PNIT)     : 49.00 C
+  thermal_zone4 (soc_dts0) : 48.00 C
+  thermal_zone5 (soc_dts1) : 46.00 C
+
+POWER SUPPLY:
+  axp288_charger : USB
+
+CPU FREQUENCY:
+  scaling_cur_freq : 999359 kHz (~999 MHz)
+  scaling_governor : schedutil
+
+UPTIME & LOAD:
+  up 1 day 20:34
+  load average: 0.06, 0.12, 0.11
