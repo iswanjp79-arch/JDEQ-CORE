@@ -1,0 +1,71 @@
+﻿task_card:
+  task_id: MICO-EXTRACT-FILE-001
+  judul: Ekstraksi Teks dari File Non-Teks (PDF/Word/Excel/Gambar)
+  tanggal: 2026-09-10
+  dibuat_oleh: L0 (Iswan Juman Pancoro, ST)
+  mode: READ_ONLY
+  kelas_risiko: B — Rendah
+
+  tujuan:
+    - Ambil teks/isi dari file non-teks untuk indexing/RAG
+    - Tanpa mengubah file asli
+    - Tanpa instalasi software (kecuali di-ACC)
+
+  cakupan_file:
+    pdf_text_based:
+      status: BISA
+      tool_built_in: pdftotext (Linux), Get-Content (jika plain)
+      alternatif: python pdfplumber (jika Python terpasang)
+      catatan: PDF scan/gambar TIDAK bisa
+    docx:
+      status: BISA
+      tool_built_in: Expand-Archive (zip -> word/document.xml -> strip tag)
+      alternatif: python-docx
+    xlsx:
+      status: BISA
+      tool_built_in: Expand-Archive (zip -> xl/sharedStrings.xml)
+      alternatif: PowerShell ImportExcel module (butuh install)
+    jpg_png:
+      status: TERBATAS
+      tool_built_in: metadata saja (EXIF)
+      ocr: butuh Tesseract (install eksternal, BUTUH ACC)
+    doc_lama:
+      status: BUTUH_KONVERSI
+      tool: LibreOffice headless atau Word COM
+      catatan: butuh install, BUTUH ACC
+
+  larangan:
+    - Tidak mengubah file asli
+    - Tidak menghapus file
+    - Tidak memindahkan file
+    - Tidak install software tanpa ACC terpisah
+    - Tidak proses > 50MB per file (atur KERNEL_RULES)
+
+  output:
+    format: teks bersih (txt) atau JSON
+    lokasi: D:\MICO_SSOT\02_DATA\CURATED\<nama>
+    hash: SHA256 per file
+    timestamp: ya
+
+  bukti:
+    - input path + ukuran + hash
+    - output path + ukuran + hash
+    - log proses (berhasil/gagal per file)
+
+  kriteria_berhasil:
+    - Semua file target terbaca
+    - Teks terekstrak bersih
+    - File asli tidak berubah
+    - Hash tercatat
+
+  yang_belum_ditentukan:
+    - jenis file prioritas (pdf/docx/xlsx/jpg)
+    - lokasi sumber file
+    - volume (berapa file)
+    - tujuan akhir (indexing? RAG? arsip?)
+
+  langkah_lanjut:
+    - L0 sebut jenis file + lokasi + tujuan
+    - Susun Task Card spesifik
+    - ACC L0
+    - Eksekusi read-only

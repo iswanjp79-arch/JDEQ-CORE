@@ -1,0 +1,33 @@
+### ADR-003 — Canonical TREE-L Baseline Freeze
+
+**Status:** Ditetapkan (berlaku segera)
+**Tanggal:** 2026-09-10
+**Lokasi:** D:\MICO_SSOT\09_GOVERNANCE\ADR-003.txt
+
+---
+
+#### 1. Konteks
+- Hasil audit Claude menyatakan struktur TREE-L PC-i5 layak dibekukan.
+- Task Card MICO-PC5-TREE-L-FREEZE-001 selesai dan baseline manifest tersimpan.
+- Root D:\MICO_SSOT berisi 13 folder aktif + 99_ARCHIVE, plus .git, .gitignore, STATUS.md.
+
+#### 2. Keputusan
+1. Struktur root saat ini ditetapkan sebagai canonical baseline TREE-L PC-i5.
+2. Path kanonik artefak:
+   - Payload L0: 09_GOVERNANCE/PAYLOAD/PAYLOAD_L0.txt & PAYLOAD_L0_LITE.txt
+   - prompt_generator.py: 06_APLIKASI/prompt_generator.py
+3. .batu_susun dan README per folder adalah expected artifacts, bukan anomaly.
+4. LOGIKA_PROBABILITAS.md multi-copy ditunda canonicalization, dicatat sebagai REVIEW_ITEM.
+5. 99_ARCHIVE adalah historical containment, tidak boleh dibersihkan tanpa ACC L0.
+6. Setiap perubahan struktur, path, atau artefak wajib melalui Task Card dan ACC L0.
+7. Baseline manifest tersimpan di 08_EVIDENCE/baseline/TREE_L_BASELINE_MANIFEST_*.txt.
+
+#### 3. Larangan Mutlak
+- Dilarang memindahkan, menghapus, mengganti nama, atau menimpa artefak baseline tanpa Task Card.
+- Dilarang menambah folder/domain baru tanpa ADR berikutnya.
+- Dilarang membersihkan 99_ARCHIVE tanpa ACC L0 dan rencana cadangan.
+
+#### 4. Tanda Tangan
+- Ditetapkan oleh: L0 — Iswan Juman Pancoro, S.T.
+- Diverifikasi oleh: AG-003 DeepSeek & DOLA
+- Tanggal efektif: 2026-09-10

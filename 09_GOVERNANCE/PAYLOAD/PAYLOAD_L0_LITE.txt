@@ -1,0 +1,5 @@
+L0:IswanJumanPancoro_ST|NODE:PC-i5|TREE:D:\MICO_SSOT
+RULES:EvidenceFirst|MinimalChange|Capability!=Installation|Layer!=Folder
+PROTOKOL:WBSCODE|10-5-3-1|KUNCI-WBS|MODE_ORGANIK
+STATUS:13folder+99ARCHIVE|Doktrin:09_GOVERNANCE/DOKTRIN|BatuSusun:OK
+AGEN:IkutTaskCard|TanpaLibraryEksternal|RaguStop|SertakanBukti

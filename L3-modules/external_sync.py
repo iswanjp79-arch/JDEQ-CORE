@@ -24,7 +24,7 @@ def _state(state, detail=""):
 
 def _git(args):
     r = subprocess.run(["git"] + args, cwd=str(REPO),
-                       capture_output=True, text=True, timeout=30)
+                       capture_output=True, text=True, timeout=180)
     return r.returncode, r.stdout.strip(), r.stderr.strip()
 
 def check_repo():

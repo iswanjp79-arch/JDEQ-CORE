@@ -1,0 +1,35 @@
+=============================================================================
+LOG PERSETUJUAN OTORITAS MUTLAK (L0) - TREE-L PC-i5
+=============================================================================
+Dokumen ini adalah segel persetujuan. Tidak ada mutasi sistem atau 
+implementasi arsitektur yang sah tanpa tercatat di sini.
+
+TANGGAL      | TASK ID                 | DESKRIPSI SINGKAT            | PARAF L0
+-----------------------------------------------------------------------------
+2026-09-09   | PEP-01                  | Baseline PC-i5 (RAM/Tailscale)| [ACC]
+             |                         |                              |
+             |                         |                              |
+             |                         |                              |
+
+─── KOREKSI METODE PENGUNCIAN (ditambahkan, entri lama TIDAK dihapus) ───
+Tanggal koreksi: 2026-09-10 04:01:02 WIB
+Entri sebelumnya menyebut metode "chattr +i" — TIDAK AKURAT.
+chattr +i tidak berlaku di NTFS/DrvFs (WSL mount ke drive Windows).
+
+Metode sebenarnya: Windows ACL (icacls)
+Berlaku untuk: BUILTIN\Users -> TOLAK TULIS & HAPUS
+
+[KUNCI OK] ADR-002.txt - DILINDUNGI ACL (dari user non-admin)
+[KUNCI OK] STATUS.md - DILINDUNGI ACL (dari user non-admin)
+[KUNCI OK] BUKU_PANDUAN_TROUBLESHOOTING.md - DILINDUNGI ACL (dari user non-admin)
+[KUNCI OK] ACC_LOG.txt - DILINDUNGI ACL (dari user non-admin)
+[BELUM OK] ADR-001.txt - belum terdaftar, belum dikunci
+
+CATATAN PENTING (K7):
+- BUILTIN\Administrators tetap Full Control (inherited) - termasuk akun
+  operasional harian (kapal-induk\user), yang tercatat sebagai anggota
+  Administrators. ACL ini melindungi dari proses/user NON-ADMIN,
+  bukan dari akun yang menjalankan Task Card sehari-hari.
+- Authenticated Users masih berhak Modify - penguatan terpisah menunggu ACC L0.
+- Hanya L0 yang boleh membuka akses atau mengubah ACL.
+─────────────────────────────────────────────────────────

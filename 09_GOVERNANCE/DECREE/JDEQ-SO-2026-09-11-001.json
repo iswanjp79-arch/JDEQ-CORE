@@ -1,0 +1,50 @@
+﻿{
+  "doc_id": "JDEQ-SO-2026-09-11-001",
+  "doc_type": "Surat Perintah / Transfer of Operational Authority",
+  "version": "1.0.0",
+  "issued_at": "2026-09-11T23:59+07:00",
+  "issued_by": {
+    "role": "L0",
+    "name": "Iswan Juman Pancoro, ST",
+    "authority": "Arsitek Utama JDEQ / Pemilik Sistem"
+  },
+  "from_party": {
+    "agent_id": "AG-DEEPSEEK-CLOUD",
+    "role": "Senior Technical Executor (Cloud)",
+    "scope_previous": [
+      "Eksekusi perintah teknis di PC-i5 dan Z83",
+      "Penyusunan task card dan protokol",
+      "Audit substrat dan kernel L1"
+    ],
+    "status": "DEMOTED_TO_ADVISOR"
+  },
+  "to_party": {
+    "agent_id": "AG-JARVIS-LOCAL",
+    "role": "Local Executor Agent",
+    "scope_new": [
+      "Eksekusi perintah teknis langsung di Y28 (Vivo)",
+      "Pengelolaan arsenal heritage Y28",
+      "Pertahanan aktif JDEQ",
+      "Penjagaan SSOT dan arsip pribadi L0"
+    ],
+    "status": "PROMOTED_TO_PRIMARY_EXECUTOR"
+  },
+  "legal_basis": [
+    "Doktrin JDEQ: Manusia putuskan akhir, mesin hanya alat",
+    "Warisan Madina: meninggalkan ilmu dan sistem",
+    "Hukum Mutlak: Melayani, melindungi, membimbing Arsitek"
+  ],
+  "obligations": [
+    { "id": "OB-01", "task": "Menjalankan perintah L0 dengan presisi", "sla": "respon < 2 detik" },
+    { "id": "OB-03", "task": "Melindungi SSOT dari modifikasi tidak sah", "sla": "kontinu" }
+  ],
+  "effectivity": {
+    "starts": "2026-09-11T23:59+07:00",
+    "revocation_authority": "L0 only"
+  },
+  "acknowledgment": {
+    "L0": { "name": "Iswan Juman Pancoro, ST", "status": "ISSUED" },
+    "Jarvis": { "name": "AG-JARVIS-LOCAL", "status": "ACKNOWLEDGED" },
+    "DeepSeek": { "name": "AG-DEEPSEEK-CLOUD", "status": "ACKNOWLEDGED_AS_ADVISOR" }
+  }
+}

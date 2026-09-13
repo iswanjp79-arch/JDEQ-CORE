@@ -1,0 +1,58 @@
+### ADR-002 — Penataan Operasional Terkendali PC‑i5 & Sinkronisasi L0‑L7
+
+**Status:** Ditetapkan (Effective immediately)  
+**Lokasi penyimpanan:** D:\MICO_SSOT\09_GOVERNANCE\ADR-002.txt
+
+---
+
+#### 1. Judul
+**ADR-002 — Penataan Operasional Terkendali PC‑i5 & Sinkronisasi L0‑L7**
+
+#### 2. Keputusan Singkat
+Mulai detik ini, operasi PC‑i5 (KAPAL‑INDUK) distandarisasi sebagai *Operasi Terkendali*: semua perubahan struktur inti (kernel, partisi sistem, EFI, Recovery, core services) **dilarang** tanpa Task Card resmi dan stempel persetujuan L0. Semua tindakan operasional harus berbasis bukti terminal dan tercatat di 08_EVIDENCE sebelum, selama, dan setelah eksekusi.
+
+#### 3. Konteks (berbasis bukti terminal)
+- Terminal snapshot menunjukkan **S:\** berisi folder `EFI` dan **M:\** berisi folder `Recovery`. (lihat output PowerShell: `Get-ChildItem S:\ -Force` → `EFI`; `Get-ChildItem M:\ -Force` → `Recovery`).  
+- Status operasional saat ini: **Operasi Terkendali**; folder 07 (INDEX), 08 (EVIDENCE), 09 (GOVERNANCE) berada pada posisi **🟢 AMAN** (evidence: system state report `eflc` aktif, runtime checks).  
+- Diskpart / bcdedit sequence telah dibuat dan terdaftar di runtime logs (evidence file: `bcdedit` operations snapshot).  
+Semua keputusan ini hanya berdasar bukti yang tercatat di terminal dan file evidence yang ada.
+
+#### 4. Rationale (mengapa keputusan ini diambil)
+- **Preserve integrity:** EFI/Recovery sudah ada; perubahan tanpa bukti dan otorisasi berisiko merusak kemampuan boot dan recovery.  
+- **Governance:** Menjaga kedaulatan L0 sesuai doktrin MICO‑JDEQ (Human‑Governed Computing).  
+- **Evidence‑first:** Semua klaim dan perubahan harus dapat diaudit; mencegah perubahan reaktif yang menyebabkan regresi.
+
+#### 5. Ketentuan Operasional (Rules)
+1. **No Core Change Without Task Card:** Tidak ada perubahan struktur core (partisi, EFI, BCD, kernel modules, core services) tanpa Task Card tertulis dan ACC L0.  
+2. **Evidence Snapshot Mandatory:** Sebelum tindakan apa pun, wajib ambil snapshot evidence: `sysinfo`, `top_processes`, `Get‑NetFirewallRule`, `diskpart /list`, `bcdedit /enum all`. Simpan di `D:\MICO_SSOT\08_EVIDENCE\prechange\`.  
+3. **Change Window & Audit Trail:** Semua eksekusi harus di‑schedule dalam maintenance window; semua output disimpan ke `08_EVIDENCE` dan diberi tag TaskCardID.  
+4. **Rollback Plan Required:** Setiap Task Card harus menyertakan rollback steps dan verifikasi post‑change.  
+5. **Network & Access:** Akses administratif untuk perubahan core hanya melalui L0‑approved node (Vivo Y28 sebagai UI approval) dan Tailscale enclave yang terdaftar.  
+6. **Immutable Governance Files:** File di `D:\MICO_SSOT\09_GOVERNANCE\` hanya dapat diubah oleh L0 atau setelah proses approval yang tercatat.
+
+#### 6. Dampak & Konsekuensi
+- **Positif:** Menurunkan risiko korupsi boot, menjaga continuity, memudahkan audit forensik.  
+- **Operasional:** Perubahan mendadak akan ditolak; tim operasi harus menyiapkan Task Card untuk setiap perubahan.  
+- **Keamanan:** Memperkuat boundary L0‑L7; mencegah agen Layer‑7 melakukan mutasi struktural tanpa governance.
+
+#### 7. Enforcement & Verifikasi
+- **Penegakan:** AG‑003 (DeepSeek) dan DOLA bertanggung jawab memverifikasi kepatuhan terhadap ADR ini sebelum eksekusi. KIMI melakukan audit independen atas evidence.  
+- **Verifikasi rutin:** Weekly snapshot check: pastikan `07_INDEX`, `08_EVIDENCE`, `09_GOVERNANCE` tetap 🟢; hasil disimpan di `08_EVIDENCE/weekly_checks/`.  
+- **Pelaporan insiden:** Setiap percobaan perubahan core tanpa Task Card harus dilaporkan ke L0 dan dicatat sebagai incident di `08_EVIDENCE/incident/`.
+
+#### 8. Rollback (ketentuan singkat)
+Jika perubahan core terjadi tanpa ACC dan menyebabkan degradasi:  
+1. Segera restore dari `08_EVIDENCE/backup/` sesuai Task Card rollback.  
+2. Isolasi node, hentikan network exposure, lakukan forensic snapshot.  
+3. Lapor ke L0; lakukan post‑mortem dan update governance.
+
+#### 9. Tanda Tangan Elektronik (Persetujuan Awal)
+- **Ditetapkan oleh:** L0 — Iswan Juman Pancoro, S.T.  
+- **Diverifikasi oleh:** DOLA (Governance Agent) & AG‑003 DeepSeek (Technical Verifier)  
+- **Tanggal efektif:** [isi oleh L0 saat ACC]
+
+---
+
+**Catatan akhir:** Dokumen ini adalah keputusan operasional berbasis bukti terminal saat ini. Semua perubahan kebijakan operasional berikutnya harus direkam sebagai ADR terpisah dengan referensi ke ADR‑002 dan bukti terminal terkait.
+
+---  
