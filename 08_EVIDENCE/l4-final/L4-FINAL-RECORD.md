@@ -34,3 +34,16 @@ Host      : KAPAL-INDUK
 
 ## STATUS
 PASS (dry-run phase) - siap L0 review
+
+## 17b. RECONCILIATION DETAIL
+- 3 file .db ditemukan di 99_ARCHIVE\TREE_L_LEGACY\Z83_3YEARS_BACKUP\
+- Asal: backup Z83 lama (3 tahun), bukan artifact L4
+- Zona L4 aktif (08/09/L3-modules): 0 file db
+- Corrected status: PASS (L4 scope clean)
+
+## 18. FINAL STATUS
+PASS - dry-run phase selesai
+- M1-M5 verified
+- No L4-created database
+- No edge modification
+- Legacy archive = out of scope
