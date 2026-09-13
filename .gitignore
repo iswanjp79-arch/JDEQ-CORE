@@ -25,3 +25,11 @@ rclone.conf
 # L5 stress test inputs (10k files, generated)
 08_EVIDENCE/L5_SECURITY/stress_input/
 *.json.tmp
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Backup files (local only)
+*.bak
