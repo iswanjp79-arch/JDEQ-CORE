@@ -1,49 +1,62 @@
 ﻿# L4 ATTRIBUTION
 
-- Timestamp : 2026-09-14_0530
+- Timestamp : 2026-09-14_0543
+- Revision  : 2 (sharpen with scheduler evidence)
 
 ## Methodology
 
-Setiap perubahan L4 dikelompokkan berdasarkan timestamp vs jadwal scheduler.
+Cross-reference: mtime L4 file vs scheduler LastRun + Result.
+Causal linkage = CORRELATION, bukan DIRECT PROOF.
 
-## Raw L4 changes (with mtime)
+## Scheduler Evidence (aktual)
 
-|  M | 08_EVIDENCE/alert_engine/state.json | 09/14/2026 04:32:00 |
-|  M | 08_EVIDENCE/external_sync/state.json | 09/14/2026 01:32:52 |
-|  M | 08_EVIDENCE/path_safety/state.json | 09/14/2026 04:32:00 |
-|  M | 08_EVIDENCE/pc5_collector/state.json | 09/14/2026 04:32:00 |
-| ?? | 08_EVIDENCE/observer/snapshots/snap_20260913_182541.json | 09/13/2026 18:25:41 |
-| ?? | 08_EVIDENCE/observer/snapshots/snap_20260913_190202.json | 09/13/2026 19:02:02 |
-| ?? | 08_EVIDENCE/observer/snapshots/snap_20260913_193201.json | 09/13/2026 19:32:01 |
-| ?? | 08_EVIDENCE/observer/snapshots/snap_20260913_200201.json | 09/13/2026 20:02:02 |
-| ?? | 08_EVIDENCE/observer/snapshots/snap_20260913_203201.json | 09/13/2026 20:32:01 |
-| ?? | 08_EVIDENCE/observer/snapshots/snap_20260913_210201.json | 09/13/2026 21:02:01 |
-| ?? | 08_EVIDENCE/observer/snapshots/snap_20260914_013202.json | 09/14/2026 01:32:02 |
-| ?? | 08_EVIDENCE/observer/snapshots/snap_20260914_020201.json | 09/14/2026 02:02:01 |
-| ?? | 08_EVIDENCE/observer/snapshots/snap_20260914_023201.json | 09/14/2026 02:32:03 |
-| ?? | 08_EVIDENCE/observer/snapshots/snap_20260914_030201.json | 09/14/2026 03:02:01 |
-| ?? | 08_EVIDENCE/observer/snapshots/snap_20260914_033201.json | 09/14/2026 03:32:01 |
-| ?? | 08_EVIDENCE/observer/snapshots/snap_20260914_040201.json | 09/14/2026 04:02:01 |
-| ?? | 08_EVIDENCE/observer/snapshots/snap_20260914_043201.json | 09/14/2026 04:32:01 |
-| ?? | 08_EVIDENCE/observer/snapshots/snap_20260914_050201.json | 09/14/2026 05:02:01 |
-| ?? | 08_EVIDENCE/pc5_collector/pull_20260913_182542.json | 09/13/2026 18:25:42 |
-| ?? | 08_EVIDENCE/pc5_collector/pull_20260913_193202.json | 09/13/2026 19:32:01 |
-| ?? | 08_EVIDENCE/pc5_collector/pull_20260913_203201.json | 09/13/2026 20:32:01 |
-| ?? | 08_EVIDENCE/pc5_collector/pull_20260914_013201.json | 09/14/2026 01:32:01 |
-| ?? | 08_EVIDENCE/pc5_collector/pull_20260914_023200.json | 09/14/2026 02:32:03 |
-| ?? | 08_EVIDENCE/pc5_collector/pull_20260914_033200.json | 09/14/2026 03:32:00 |
-| ?? | 08_EVIDENCE/pc5_collector/pull_20260914_043200.json | 09/14/2026 04:32:00 |
+| Task | LastRun | Result |
+|---|---|---|
+| MICO-L3-M1 | 2026-09-14 05:02:02 | 0 |
+| MICO-L3-M2 | 2026-09-14 04:32:32 | 0 |
+| MICO-L3-M3 | 2026-09-14 04:32:32 | 0 |
+| MICO-L3-M4 | 2026-09-14 04:32:32 | 0 |
+
+## L4 Modified (4 files)
+
+| File | mtime | Nearest scheduler run | Delta |
+|---|---|---|---|
+| alert_engine/state.json | 2026-09-14 04:32:00 | M2/M3/M4 @ 04:32:32 | -32s |
+| path_safety/state.json | 2026-09-14 04:32:00 | M2/M3/M4 @ 04:32:32 | -32s |
+| pc5_collector/state.json | 2026-09-14 04:32:00 | M2/M3/M4 @ 04:32:32 | -32s |
+| external_sync/state.json | 2026-09-14 01:32:52 | run 01:32 | ~same |
+
+## L4 Untracked (21 files)
+
+Cadence : setiap :02 dan :32 (30 menit).
+Match dengan hasil scheduler M1-M4 pada interval sama.
 
 ## Classification
 
-| Category | Count | Basis |
-|---|---|---|
-| scheduler-caused | pending | state.json mtime sesuai cadence M1-M5 |
-| fixture-caused | 0 (tidak ada bukti) | fixture summary tidak menyentuh 08_EVIDENCE |
-| handoff-caused | 0 | handoff commit hanya menyentuh 09_GOVERNANCE/AUDIT |
-| other | pending | butuh operator confirmation |
-| unknown | pending | file without clear provenance |
+| Category | Count | Attribution | Confidence | Causal Proof |
+|---|---|---|---|---|
+| 4_modified_L4 | 4 | SUPPORTED | HIGH | NOT_DIRECT |
+| 21_untracked_L4 | 21 | SUPPORTED | HIGH | NOT_DIRECT |
+| fixture-caused | 0 | NONE | - | - |
+| handoff-caused | 0 | NONE | - | - |
+| other / unknown | 0 | NONE | - | - |
+
+## Basis
+
+- mtime file L4
+- scheduler LastRun timestamp
+- scheduler LastTaskResult = 0
+- cadence konsisten dengan interval 30 menit
+
+## Inference Boundary
+
+- Mtime + scheduler activity = KORELASI kuat, bukan bukti kausal langsung.
+- Tidak ada per-file exit code capture.
+- Tidak ada per-task stdout capture yang menghubungkan scheduler → file tertentu.
+- Karena itu: causal_proof = NOT_DIRECT.
 
 ## Verdict
 
-Status : ATTRIBUTION_PARTIAL. Full attribution memerlukan scheduler log cross-reference.
+Status : SUPPORTED_WITH_HIGH_CONFIDENCE.
+Bukan VERIFIED. Bukan CONTRADICTED. Bukan UNKNOWN.
+Attribution formal tetap memerlukan per-file execution trace (future work).
