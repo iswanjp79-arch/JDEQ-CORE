@@ -1,0 +1,16 @@
+﻿{
+    "test_cases":  8,
+    "test_sha256":  "85D7B54F8EAE6AB8C5B7AA1416304E9F7DD4A1B353255125DB7C35437ABBBF7D",
+    "test_result":  "PASS",
+    "test_file":  "D:\\MICO_SSOT\\L6-modules\\tests\\test_m1_ledger_reader.py",
+    "timestamp":  "2026-09-14T03:45:50.6787331+07:00",
+    "module":  "L6-M1-Ledger-Reader",
+    "host":  "KAPAL-INDUK",
+    "code_sha256":  "ED2DAE1F12405F7EF12F701C8B4AF1011FDC114E81AD33D30A2CE6C8048A2C48",
+    "code_file":  "D:\\MICO_SSOT\\L6-modules\\m1_ledger_reader.py",
+    "boundary":  {
+                     "db":  0,
+                     "L5_mutation":  0,
+                     "L4_mutation":  0
+                 }
+}

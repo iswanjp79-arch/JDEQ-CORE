@@ -33,3 +33,6 @@ __pycache__/
 
 # Backup files (local only)
 *.bak
+
+# L6 modules pycache
+L6-modules/**/__pycache__/
