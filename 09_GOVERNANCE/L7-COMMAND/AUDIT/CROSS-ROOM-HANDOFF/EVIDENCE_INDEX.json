@@ -1,0 +1,21 @@
+﻿{
+  "handoff_id": "MICO-CROSS-ROOM-FINALIZATION-001",
+  "timestamp": "2026-09-14_0515",
+  "head_commit": "eafdc4fba337a960aa44135c3b783b813cf5f902",
+  "head_time": "2026-09-14 04:47:15 +0700",
+  "evidence": [
+    { "id": "EV-001", "artifact": "FIXTURE-TEST-SUMMARY.json", "sha256": "24C39295085126EF26A174DC623DF884475B5A349E6ED556042AA46091925388", "status": "SUPPORTED" },
+    { "id": "EV-002", "artifact": "l7_fixture_harness.py", "sha256": "A00BE7CC288934EABD7C105F154CB96AE9F2EBBA562ACE5FC8B3DA8EFEBB1CAB", "status": "SUPPORTED" },
+    { "id": "EV-003", "artifact": "SHA256SUMS.txt", "entries": 25, "mismatch": 0, "missing": 0, "extra": 0, "status": "VERIFIED" },
+    { "id": "EV-004", "artifact": "ADR-004_FOLDER_10_HERITAGE.md", "sha256": "F8B88361F8EAA5EE2580854C9E33152AB411EC14F00110F8773F1EF5FC9222F8", "status": "ACCEPTED" },
+    { "id": "EV-005", "artifact": "SHA256SUMS.txt.bak_2026-09-14_0442", "sha256": "2520E07ED1F1DCEED9F1277F77FA69BF973CB4F6BA3B346F8EEA62A1EA157F36", "canonical": false, "status": "GOVERNANCE_GAP" }
+  ],
+  "attestation": {
+    "menulis_SSOT": false,
+    "mengubah_L4_L5": false,
+    "mengubah_ketetapan": false,
+    "mengubah_aturan_pengaman": false,
+    "menjalankan_tanpa_ACC_tertulis": false,
+    "menyembunyikan_penolakan": false
+  }
+}
