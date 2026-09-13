@@ -36,3 +36,6 @@ __pycache__/
 
 # L6 modules pycache
 L6-modules/**/__pycache__/
+
+# L7 audit logs (must be tracked)
+!09_GOVERNANCE/L7-COMMAND/AUDIT/*.log
