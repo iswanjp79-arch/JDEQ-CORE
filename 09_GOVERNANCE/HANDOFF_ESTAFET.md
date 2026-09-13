@@ -103,3 +103,22 @@ Layer 3:
 - Onboard Z83 (SSH key + sudoers)
 - Git remote + push
 - Runner untuk mico-spool (verifikasi cron auto-run 30m)
+
+## 14. UPDATE 2026-09-13 (SESI 2 — LANJUT)
+- IPv6 UFW: ACCEPT -> DROP (fixed)
+- Saned (6566): dimatikan total
+- Cron: foreground via runit (PPID=1401)
+- rc.local: full path /usr/sbin/ufw
+- Sudoers mico-task-a s.d. -d ditambahkan
+- HP Mini keyboard: ghost input - pakai USB eksternal
+- L4 DESAIN SELESAI (5 modul) -> STATUS: DESIGN_LOCKED
+- L4 EXECUTION: PENDING (belum ada script)
+- L4 design doc: D:\MICO_SSOT\09_GOVERNANCE\L4-DESIGN\L4-DESIGN-LOCKED.md
+- L4 script nanti di: D:\MICO_SSOT\09_GOVERNANCE\scripts\
+
+## 15. TASK PENDING (prioritas sesi berikut)
+1. Tulis script L4-M1 (atomic write)
+2. Update M3 puller (real pull dari HP Mini)
+3. Verifikasi Scheduler M1-M4 jalan otomatis
+4. Onboard Z83 (SSH key + sudoers)
+5. Git remote + push (jika perlu)
