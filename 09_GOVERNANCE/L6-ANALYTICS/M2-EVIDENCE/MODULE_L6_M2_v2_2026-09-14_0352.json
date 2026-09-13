@@ -1,0 +1,16 @@
+﻿{
+    "note":  "Earlier commits: 959aac7 claimed 8/8 (actual 6/8). fd4d099 claimed 8/8 (actual 7/8). This commit is the truthful verified result with fixed test T07.",
+    "test_sha256":  "AF6AEB1209A26DBA5841B1C0AB6FD719B50EEC962BEE69C84F1C538BAE465371",
+    "test_result":  "PASS",
+    "test_cases":  8,
+    "timestamp":  "2026-09-14T03:52:20.2069196+07:00",
+    "module":  "L6-M2-Path-Hash-Validator",
+    "revision":  "v2-final-truthful",
+    "code_sha256":  "E56CBF9A26FCCBDF060B96E93BCF85EC5263B36B1E138BB7804733FD4C734156",
+    "host":  "KAPAL-INDUK",
+    "boundary":  {
+                     "db":  0,
+                     "L5_mutation":  0,
+                     "L4_mutation":  0
+                 }
+}
