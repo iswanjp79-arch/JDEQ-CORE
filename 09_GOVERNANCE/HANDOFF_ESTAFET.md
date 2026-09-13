@@ -87,3 +87,19 @@ Layer 3:
 # END OF HANDOFF
 # ============================================
 
+
+## 12. UPDATE 2026-09-13 19:45
+- L3-TC-03 CLOSED: Perimeter HP Mini terkunci
+- UFW aktif IPv4+IPv6 (policy DROP)
+- Saned dimatikan (port 6566 tutup)
+- Cron service fixed via runit foreground
+- rc.local rewrite (full path ufw)
+- Spool HP Mini refresh normal
+- Sudoers mico-task-c, -d ditambahkan
+
+## 13. TASK PENDING (lanjut sesi berikut)
+- M3 real pull: update puller di PC-i5 (masih dummy_source)
+- Scheduler untuk M1-M4 (Windows Task Scheduler terpasang?)
+- Onboard Z83 (SSH key + sudoers)
+- Git remote + push
+- Runner untuk mico-spool (verifikasi cron auto-run 30m)
