@@ -1,0 +1,23 @@
+﻿{
+    "mode_separation":  {
+                            "TEST_FIXTURE":  "pure in-memory; never reads ledger",
+                            "PRODUCTION":  "reads M3 production; empty -\u003e PENDING_REAL_DATA"
+                        },
+    "evidence_note":  "8/8 PASS verified from user output before commit",
+    "boundary":  {
+                     "db":  0,
+                     "L5_mutation":  0,
+                     "broker":  0,
+                     "L4_mutation":  0,
+                     "cloud":  0
+                 },
+    "test_sha256":  "090BB99070169AEE4106023AFD582163237B1C804E9D0747908CEC0846F67964",
+    "test_result":  "PASS",
+    "test_cases":  8,
+    "production_status":  "PENDING_REAL_DATA (ledger.count=0)",
+    "timestamp":  "2026-09-14T04:01:01.8129625+07:00",
+    "module":  "L6-M4-Recommendation-Engine",
+    "revision":  "v1-truthful",
+    "code_sha256":  "1CE32EA2623E58211A850ABD7054508441BE6B577117B9B5EF361D1BDE7E029B",
+    "host":  "KAPAL-INDUK"
+}
