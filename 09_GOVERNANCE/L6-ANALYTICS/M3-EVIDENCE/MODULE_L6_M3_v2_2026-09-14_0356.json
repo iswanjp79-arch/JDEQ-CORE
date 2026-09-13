@@ -1,0 +1,27 @@
+﻿{
+    "mode_separation":  {
+                            "TEST_FIXTURE":  "pure in-memory; never reads ledger",
+                            "PRODUCTION":  "reads L5 ledger; empty -\u003e PENDING_REAL_DATA"
+                        },
+    "boundary":  {
+                     "db":  0,
+                     "L5_mutation":  0,
+                     "broker":  0,
+                     "L4_mutation":  0,
+                     "cloud":  0
+                 },
+    "test_sha256":  "6B17728445E9D0880F819D7EA9D1DBDC5D376E9992A0159FA4081A768D6CB3FB",
+    "test_result":  "PASS",
+    "test_cases":  10,
+    "production_status":  "PENDING_REAL_DATA (ledger.count=0)",
+    "timestamp":  "2026-09-14T03:56:58.8325656+07:00",
+    "module":  "L6-M3-Cognitive-Analyzer",
+    "revision":  "v2-truthful",
+    "code_sha256":  "86C8DF4CDAA7566702B15A899447A3944B0B84F82AD6F61B0E2BAAF27101D299",
+    "host":  "KAPAL-INDUK",
+    "disclosure":  [
+                       "Commit fe6ba7d claimed \u0027PASS\u0027 but test file had SyntaxError (never ran)",
+                       "Commit 3ece41f claimed \u002710/10\u0027 without evidence",
+                       "This commit: test fixed, 10/10 PASS verified from user output"
+                   ]
+}

@@ -1,0 +1,68 @@
+{
+  "run_id": "L6M3_FIX_20260914_035618",
+  "timestamp": "2026-09-14T03:56:18",
+  "mode": "TEST_FIXTURE",
+  "ledger_count": 3,
+  "status": "OK",
+  "zones": {
+    "total": 3,
+    "distribution": {
+      "LIVE": {
+        "count": 2,
+        "pct": 66.67
+      },
+      "RETAIN": {
+        "count": 1,
+        "pct": 33.33
+      }
+    }
+  },
+  "nodes": {
+    "total": 3,
+    "distribution": {
+      "HP_Mini": {
+        "count": 2,
+        "pct": 66.67
+      },
+      "Z83": {
+        "count": 1,
+        "pct": 33.33
+      }
+    },
+    "unexpected_nodes": []
+  },
+  "temporal": {
+    "parsed_timestamps": 3,
+    "unparseable": 0,
+    "first": "2026-09-14T03:56:18",
+    "last": "2026-09-14T03:56:18",
+    "gaps": [],
+    "gap_threshold_hours": 24
+  },
+  "correlation": {
+    "group_count": 1,
+    "groups": {
+      "h1": {
+        "count": 3,
+        "artifact_ids": [
+          "a1",
+          "a2",
+          "a3"
+        ]
+      }
+    }
+  },
+  "anomalies": [],
+  "insights": [
+    {
+      "finding": "Dominant zone",
+      "evidence_ref": "zones.distribution",
+      "fact": "zone=LIVE count=2 pct=66.67",
+      "interpretation": "Storage activity concentrated in one zone",
+      "recommendation": null,
+      "confidence": 0.5
+    }
+  ],
+  "input_ledger_sha256": null,
+  "reason": null
+}

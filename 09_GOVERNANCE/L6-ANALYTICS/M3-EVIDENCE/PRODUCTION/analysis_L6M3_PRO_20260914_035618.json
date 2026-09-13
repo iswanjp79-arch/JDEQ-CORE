@@ -1,0 +1,32 @@
+{
+  "run_id": "L6M3_PRO_20260914_035618",
+  "timestamp": "2026-09-14T03:56:18",
+  "mode": "PRODUCTION",
+  "ledger_count": 0,
+  "status": "PENDING_REAL_DATA",
+  "zones": {
+    "total": 0,
+    "distribution": {}
+  },
+  "nodes": {
+    "total": 0,
+    "distribution": {},
+    "unexpected_nodes": []
+  },
+  "temporal": {
+    "parsed_timestamps": 0,
+    "unparseable": 0,
+    "first": null,
+    "last": null,
+    "gaps": [],
+    "gap_threshold_hours": 24
+  },
+  "correlation": {
+    "group_count": 0,
+    "groups": {}
+  },
+  "anomalies": [],
+  "insights": [],
+  "input_ledger_sha256": "98ab989161d6d1bf1e6a2d1fbe965fbff1949047954c10b5f414adcf4dd546b8",
+  "reason": "empty_ledger"
+}
