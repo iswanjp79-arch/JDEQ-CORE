@@ -1,0 +1,219 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260914030801
+Username: KAPAL-INDUK\USER
+RunAs User: KAPAL-INDUK\USER
+Configuration Name: 
+Machine: KAPAL-INDUK (Microsoft Windows NT 10.0.19045.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 5356
+PSVersion: 5.1.19041.7663
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.7663
+BuildVersion: 10.0.19041.7663
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+D:\MICO_SSOT
+$
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output "=========================================="
+==========================================
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output "L5 INTERNAL AUDIT"
+L5 INTERNAL AUDIT
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output "Timestamp: $(Get-Date -Format 'o')"
+Timestamp: 2026-09-14T03:08:01.2066829+07:00
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output "Host: $env:COMPUTERNAME"
+Host: KAPAL-INDUK
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output "=========================================="
+==========================================
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output ""
+
+D:\MICO_SSOT
+$
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output "=== A. SOURCE FILES ==="
+=== A. SOURCE FILES ===
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Get-ChildItem "D:\MICO_SSOT\L5-modules" -Recurse -File -Include "*.py" |
+    Sort-Object FullName |
+    ForEach-Object {
+        $h = (Get-FileHash $_.FullName -Algorithm SHA256).Hash.Substring(0,16)
+        Write-Output ("  {0} | {1} B | {2}..." -f $_.FullName.Replace("D:\MICO_SSOT\",""), $_.Length, $h)
+    }
+  L5-modules\core\buf_004_admission_guard.py | 2800 B | D7DFA2FC6A485EA1...
+  L5-modules\core\l5_m1_reader.py | 5350 B | 27D0A334BDAD9263...
+  L5-modules\core\l5_m2_mapper.py | 6931 B | CD144D472A357E2F...
+  L5-modules\core\l5_m3_ledger.py | 5582 B | A19EE6C73A30765E...
+  L5-modules\security\generate_stress_input.py | 1113 B | 800FB92B988539AF...
+  L5-modules\security\locked_schema_validator.py | 8377 B | 21D66C250A90FE8A...
+  L5-modules\security\metadata_sanitizer.py | 4328 B | A98AEE9574B7945B...
+  L5-modules\security\safe_path_resolver.py | 5115 B | D14F99373914976C...
+  L5-modules\security\stress_runner.py | 3559 B | EDA374A3614E249F...
+  L5-modules\tests\test_l5_integration.py | 6031 B | 6A7E9D90AAF3ACFD...
+  L5-modules\tests\test_l5_m1_reader.py | 3209 B | F405BF58D3DA446F...
+  L5-modules\tests\test_l5_m2_mapper.py | 3617 B | 2B37471ABB6AC229...
+  L5-modules\tests\test_l5_m3_and_buf.py | 3910 B | B7209A98EC3C53CE...
+  L5-modules\tests\test_locked_schema_validator.py | 3736 B | 1E5F6459BB95F348...
+  L5-modules\tests\test_metadata_sanitizer.py | 3112 B | 75A8E97F87C453E0...
+  L5-modules\tests\test_safe_path_resolver.py | 1680 B | F73C9F355434CE65...
+D:\MICO_SSOT
+$
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output ""
+
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output "=== B. EVIDENCE FILES (L5) ==="
+=== B. EVIDENCE FILES (L5) ===
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Get-ChildItem "D:\MICO_SSOT\08_EVIDENCE\L5_SECURITY" -File |
+    Sort-Object Name |
+    ForEach-Object {
+        Write-Output ("  {0} | {1} B" -f $_.Name, $_.Length)
+    }
+  buf_004_audit.log | 927 B
+  buf_004_audit_2026-09-14_0239.log | 751 B
+  FINAL_L5_MANIFEST_2026-09-14_0241.json | 916 B
+  generate_stress_input_2026-09-14_0236.py | 1113 B
+  L5_FINAL_RECORD.md | 1272 B
+  l5_integration_audit.log | 1113 B
+  l5_m1_reader_audit.log | 3174 B
+  l5_m1_reader_audit_2026-09-14_0238.log | 921 B
+  l5_m2_mapper_audit.log | 2277 B
+  l5_m2_mapper_audit_2026-09-14_0238.log | 530 B
+  l5_m3_ledger_audit.log | 441 B
+  l5_m3_ledger_audit_2026-09-14_0239.log | 351 B
+  metadata_sanitizer_audit.log | 1289 B
+  metadata_sanitizer_audit_2026-09-14_0234.log | 1289 B
+  MODULE_L5_M1_reader_2026-09-14_0238.json | 686 B
+  MODULE_L5_M2_mapper_2026-09-14_0238.json | 650 B
+  MODULE_L5_M3_BUF_2026-09-14_0239.json | 960 B
+  MODULE_M1_safe_path_resolver_2026-09-14_0230.json | 524 B
+  MODULE_M2_locked_schema_validator_2026-09-14_0232.json.bak | 1190 B
+  MODULE_M2_locked_schema_validator_2026-09-14_0234.json | 1305 B
+  MODULE_M3_metadata_sanitizer_2026-09-14_0234.json | 525 B
+  MODULE_M4_memory_stress_2026-09-14_0236.json | 551 B
+  pydantic_lock_audit.log | 4002 B
+  pydantic_lock_audit_2026-09-14_0232.log | 1778 B
+  safe_path_audit.log | 6711 B
+  safe_path_audit_2026-09-14_0230.log | 1173 B
+  SECURITY_GATE_PASS.md | 1438 B
+  stress_log.txt | 819 B
+  stress_results.json | 1856 B
+  stress_runner_2026-09-14_0236.py | 3559 B
+  test_l5_m1_reader_2026-09-14_0238.py | 3209 B
+  test_l5_m2_mapper_2026-09-14_0238.py | 3617 B
+  test_l5_m3_and_buf_2026-09-14_0239.py | 3910 B
+  test_locked_schema_validator_2026-09-14_0232.py | 3739 B
+  test_metadata_sanitizer_2026-09-14_0234.py | 3112 B
+  test_safe_path_resolver_2026-09-14_0230.py | 1683 B
+D:\MICO_SSOT
+$
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output ""
+
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output "=== C. LEDGER ==="
+=== C. LEDGER ===
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Get-ChildItem "D:\MICO_SSOT\09_GOVERNANCE\L5-LEDGER" -File |
+    ForEach-Object {
+        Write-Output ("  {0} | {1} B" -f $_.Name, $_.Length)
+    }
+  ledger.json | 718 B
+  ledger_state.json | 259 B
+D:\MICO_SSOT
+$
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output ""
+
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output "=== D. GOVERNANCE REPORT ==="
+=== D. GOVERNANCE REPORT ===
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Get-ChildItem "D:\MICO_SSOT\09_GOVERNANCE\L5-DESIGN" -File |
+    ForEach-Object {
+        Write-Output ("  {0} | {1} B" -f $_.Name, $_.Length)
+    }
+  L5-CLOSURE-REPORT-DOLA.json | 2210 B
+  L5-CLOSURE-REPORT-DOLA.yaml | 2708 B
+D:\MICO_SSOT
+$
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output ""
+
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output "=== E. GIT HISTORY (L5-scope) ==="
+=== E. GIT HISTORY (L5-scope) ===
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] cd "D:\MICO_SSOT"
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] git log -10 --format="  %h | %ci | %s" -- "L5-modules/" "08_EVIDENCE/L5_SECURITY/" "09_GOVERNANCE/L5-LEDGER/" "09_GOVERNANCE/L5-DESIGN/"
+  056a009 | 2026-09-14 03:03:40 +0700 | L5: cleanup pycache + .bak from index, extend .gitignore
+  a02532a | 2026-09-14 03:02:41 +0700 | L5: security + core + BUF-004 + integration PASS (stress_input ignored)
+D:\MICO_SSOT
+$
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output ""
+
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output "=== F. GIT STATUS (L5-scope) ==="
+=== F. GIT STATUS (L5-scope) ===
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] $paths = @("L5-modules/", "08_EVIDENCE/L5_SECURITY/", "09_GOVERNANCE/L5-LEDGER/", "09_GOVERNANCE/L5-DESIGN/")
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] foreach ($p in $paths) {
+    $d = git status --porcelain -- $p
+    if ([string]::IsNullOrWhiteSpace($d)) {
+        Write-Output "  [CLEAN] $p"
+    } else {
+        Write-Output "  [DIRTY] $p"
+        Write-Output $d
+    }
+}
+  [CLEAN] L5-modules/
+  [DIRTY] 08_EVIDENCE/L5_SECURITY/
+?? 08_EVIDENCE/L5_SECURITY/AUDIT_2026-09-14_0308/
+  [CLEAN] 09_GOVERNANCE/L5-LEDGER/
+  [CLEAN] 09_GOVERNANCE/L5-DESIGN/
+D:\MICO_SSOT
+$
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Stop-Transcript | Out-Null
+**********************
+Windows PowerShell transcript end
+End time: 20260914030802
+**********************

@@ -1,0 +1,247 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260914030810
+Username: KAPAL-INDUK\USER
+RunAs User: KAPAL-INDUK\USER
+Configuration Name: 
+Machine: KAPAL-INDUK (Microsoft Windows NT 10.0.19045.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 5356
+PSVersion: 5.1.19041.7663
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.7663
+BuildVersion: 10.0.19041.7663
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+D:\MICO_SSOT
+$
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output "=========================================="
+==========================================
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output "L5 REGRESSION TEST — $(Get-Date -Format 'o')"
+L5 REGRESSION TEST — 2026-09-14T03:08:10.7767562+07:00
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output "=========================================="
+==========================================
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output ""
+
+D:\MICO_SSOT
+$
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] $tests = @(
+    "test_safe_path_resolver.py",
+    "test_locked_schema_validator.py",
+    "test_metadata_sanitizer.py",
+    "test_l5_m1_reader.py",
+    "test_l5_m2_mapper.py",
+    "test_l5_m3_and_buf.py",
+    "test_l5_integration.py"
+)
+D:\MICO_SSOT
+$
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] foreach ($t in $tests) {
+    Write-Output "--- RUN: $t ---"
+    python "D:\MICO_SSOT\L5-modules\tests\$t" 2>&1
+    Write-Output "--- EXIT: $LASTEXITCODE ---"
+    Write-Output ""
+}
+--- RUN: test_safe_path_resolver.py ---
+ROOT = D:\MICO_SSOT\08_EVIDENCE
+--------------------------------------------------------------------------------
+[PASS] T01 valid relative
+        input   = 'LIVE/HP_Mini/test.json'
+        safe    = True  label = OK  reason = None
+[PASS] T02 path traversal
+        input   = '../secret.txt'
+        safe    = False  label = INTEGRITY_CONFLICT  reason = ESCAPE_ATTEMPT
+[PASS] T03 deep traversal
+        input   = 'LIVE/../../../etc/passwd'
+        safe    = False  label = INTEGRITY_CONFLICT  reason = ESCAPE_ATTEMPT
+[PASS] T04 absolute drive
+        input   = 'C:\\Windows\\test.txt'
+        safe    = False  label = INTEGRITY_CONFLICT  reason = ABSOLUTE_PATH
+[PASS] T05 UNC path
+        input   = '\\\\server\\share\\file'
+        safe    = False  label = INTEGRITY_CONFLICT  reason = UNC_OR_URI
+[PASS] T06 URI scheme
+        input   = 'file:///etc/passwd'
+        safe    = False  label = INTEGRITY_CONFLICT  reason = UNC_OR_URI
+[PASS] T07 null byte
+        input   = 'test\x00.json'
+        safe    = False  label = INTEGRITY_CONFLICT  reason = CONTROL_CHARS
+[PASS] T08 control char
+        input   = 'test\x01.json'
+        safe    = False  label = INTEGRITY_CONFLICT  reason = CONTROL_CHARS
+[PASS] T09 empty string
+        input   = ''
+        safe    = False  label = INTEGRITY_CONFLICT  reason = NULL_OR_EMPTY
+[PASS] T10 buffer path
+        input   = 'BUFFER/HP_Mini/file.tmp'
+        safe    = True  label = OK  reason = None
+--------------------------------------------------------------------------------
+TOTAL: 10 PASS, 0 FAIL
+--- EXIT: 0 ---
+
+--- RUN: test_locked_schema_validator.py ---
+[PASS] T01 declarative model  parsed={'artifact_id': 'a1', 'source_node': 'HP_Mini', 'size_bytes': 42}
+[PASS] T02 reject callable field
+[PASS] T03 scan clean  status=OK
+[PASS] T04 detect field_validator  status=VIOLATION violations=['decorator:field_validator@line3']
+[PASS] T05 detect eval call  status=VIOLATION violations=['call:eval@line1']
+[PASS] T06 detect subprocess.run  status=VIOLATION violations=['call:subprocess.run@line2']
+[PASS] T07 scan security folder  scanned=5 violations=0
+[PASS] T08 scan tree with violation  scanned=2 violations=1
+--------------------------------------------------------------------------------
+TOTAL: 8 PASS, 0 FAIL
+--- EXIT: 0 ---
+
+--- RUN: test_metadata_sanitizer.py ---
+[PASS] T01 clean ASCII
+[PASS] T02 NFC normalize  got='é'
+[PASS] T03 strip control  value='abcdefghi' removed=2
+[PASS] T04 escape <?  value="%3C%3Fxml version='1.0'?>"
+[PASS] T05 escape {{ }}  value='template %7B%7B name %7D%7D here'
+[PASS] T06 escape backtick  value='cmd %60whoami%60'
+[PASS] T07 truncate  len=2048
+[PASS] T08 SANITIZATION_HIGH  removed=100 original=103 label=SANITIZATION_HIGH
+[PASS] T09 deterministic
+[PASS] T10 checksum match  got=47d1d8273710fd6f... expect=47d1d8273710fd6f...
+[PASS] T11 sanitize_metadata  name='test' path='%7B%7Bbad%7D%7D'
+[PASS] T12 non-string passthrough
+[PASS] T13 escape $(  value='echo %24%28whoami)'
+--------------------------------------------------------------------------------
+TOTAL: 13 PASS, 0 FAIL
+--- EXIT: 0 ---
+
+--- RUN: test_l5_m1_reader.py ---
+[PASS] T01 valid JSON  label=OK
+[PASS] T02 BUFFER rejected  label=REJECTED_ZONE
+[PASS] T03 .tmp rejected  label=REJECTED_TMP
+[PASS] T04 .exe rejected  label=FORMAT_ERROR
+[PASS] T05 malformed JSON  label=FORMAT_ERROR
+[PASS] T06 missing file  label=NOT_FOUND
+[PASS] T07 traversal rejected  label=INTEGRITY_CONFLICT
+[PASS] T08 sha256 match  got=3f07fe7b09c4577e...
+[PASS] T09 .md allowed  label=OK
+[PASS] T10 L4 unmodified
+--------------------------------------------------------------------------------
+TOTAL: 10 PASS, 0 FAIL
+--- EXIT: 0 ---
+
+--- RUN: test_l5_m2_mapper.py ---
+[PASS] T01 envelope basic  status=ABSTRACTION_READY node=HP_Mini
+[PASS] T02 fields present  keys=['artifact_id', 'source_node', 'physical_locator', 'classification', 'integrity', 'temporal', 'correlation', 'payload', 'status']
+[PASS] T03 sha256 match
+[PASS] T04 retention LIVE
+[PASS] T05 whitespace collapsed  got='hello world'
+[PASS] T06 physical unchanged
+[PASS] T07 correlation deterministic
+[PASS] T08 correlation bucket-sensitive
+[PASS] T09 envelope valid  issues=[]
+[PASS] T10 BUFFER rejected  status=REJECTED
+[PASS] T11 quarantine unknown node  status=QUARANTINE_VIRTUAL node=UNKNOWN
+[PASS] T12 artifact_id deterministic
+--------------------------------------------------------------------------------
+TOTAL: 12 PASS, 0 FAIL
+--- EXIT: 0 ---
+
+--- RUN: test_l5_m3_and_buf.py ---
+[PASS] T01 integrity MATCH  status=MATCH
+[PASS] T02 integrity MISMATCH  status=MISMATCH
+[PASS] T03 integrity UNAVAILABLE  status=UNAVAILABLE
+[PASS] T04 ledger derived  derived=True auth=False
+[PASS] T05 ledger rebuildable
+[PASS] T06 ledger no full payload
+[PASS] T07 ledger has entries  count=1
+[PASS] T08 ledger file saved
+[PASS] T09 ledger status OK  derived=True auth=False
+[PASS] T10 ledger rebuild same count
+[PASS] T11 no sqlite in ledger dir  hits=0
+[PASS] T12 admit LIVE  {'allow': True, 'label': 'ALLOW', 'reason': None, 'zone': 'LIVE'}
+[PASS] T13 admit RETAIN
+[PASS] T14 DENY BUFFER
+[PASS] T15 DENY .tmp
+[PASS] T16 DENY hidden
+[PASS] T17 admit STAGING
+[PASS] T18 DENY traversal
+[PASS] T19 DENY GLOBAL
+[PASS] T20 DENY DISPOSABLE
+[PASS] T21 no buffer write invariants
+--------------------------------------------------------------------------------
+TOTAL: 21 PASS, 0 FAIL
+--- EXIT: 0 ---
+
+--- RUN: test_l5_integration.py ---
+================================================================================
+L5 INTEGRATION TEST — START
+timestamp : 2026-09-14T03:08:13
+host      : KAPAL-INDUK
+================================================================================
+[PASS] I01 BUF admit LIVE  reason=None
+[PASS] I02 M1 read OK
+[PASS] I03 M2 envelope ready  status=ABSTRACTION_READY
+[PASS] I04 envelope valid  issues=[]
+[PASS] I05 M3 integrity MATCH
+[PASS] I06 physical L4 unchanged
+[PASS] I07 5-node envelopes ready
+[PASS] I08 5-node source match
+[PASS] I09 BUFFER rejected all layers
+[PASS] I10 ledger rebuild OK
+[PASS] I11 ledger zone_counts  zones={'LIVE': 6}
+[PASS] I12 correlation deterministic
+[PASS] I13 artifact_id deterministic
+[PASS] I14 no buffer write
+[PASS] I15 no sqlite  hits=0
+[PASS] I16 no broker refs  found=[]
+[PASS] I17 metadata/payload separated
+[PASS] I18 L6 contract ready
+================================================================================
+TOTAL: 18 PASS, 0 FAIL
+================================================================================
+--- EXIT: 0 ---
+
+D:\MICO_SSOT
+$
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Write-Output "=== STRESS TEST (10k files) ==="
+=== STRESS TEST (10k files) ===
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] python "D:\MICO_SSOT\L5-modules\security\stress_runner.py" 2>&1 | Select-Object -Last 15
+  [ 4000/10000] rss=  70.14 MB (peak=70.14)
+  [ 5000/10000] rss=  70.14 MB (peak=70.14)
+  [ 6000/10000] rss=  70.14 MB (peak=70.14)
+  [ 7000/10000] rss=  70.14 MB (peak=70.14)
+  [ 8000/10000] rss=  70.14 MB (peak=70.14)
+  [ 9000/10000] rss=  70.14 MB (peak=70.14)
+  [10000/10000] rss=  70.14 MB (peak=70.14)
+
+baseline : 69.25 MB
+peak     : 70.14 MB
+final    : 70.14 MB
+delta    : +1.29% (threshold +10.00%)
+errors   : 0
+duration : 2.16 s
+RESULT   : PASS
+D:\MICO_SSOT
+$
+D:\MICO_SSOT
+$
+[KAPAL-INDUK] Stop-Transcript | Out-Null
+**********************
+Windows PowerShell transcript end
+End time: 20260914030817
+**********************
