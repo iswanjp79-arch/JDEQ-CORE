@@ -1,0 +1,1 @@
+{"decision_id":"dec-20260914-0001","actor":"L0:Iswan","decision":"REGISTER_POLICY_ONLY","target":"MICO-L7-COMMAND-UNIFICATION","timestamp":"2026-09-14T04:28:00+07:00","notes":"Bypassed AG-004 verification per L0 instruction; runtime deployment deferred; OPEN items logged.","requires_later_review":"if anomalies occur"}
