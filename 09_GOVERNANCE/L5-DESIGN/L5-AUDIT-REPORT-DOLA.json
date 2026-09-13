@@ -1,0 +1,44 @@
+{
+  "report": {
+    "code": "MICO-DOLA-L5-AUDIT-002",
+    "type": "internal_audit",
+    "from": "AG-003",
+    "to": "DOLA",
+    "cc": "L0",
+    "date": "2026-09-14",
+    "layer": "L5"
+  },
+  "L5_AUDIT_STATUS": {
+    "inventory": "PASS",
+    "source_files": "PASS",
+    "evidence_present": "PASS",
+    "regression_tests": "PASS",
+    "ledger_present": "PASS",
+    "governance_report": "PASS",
+    "git_clean": "PASS",
+    "commit_verified": "PASS"
+  },
+  "REGRESSION": {
+    "test_suite": 7,
+    "all_pass": true,
+    "stress_test_10k_files": "PASS"
+  },
+  "BLACKBOX": {
+    "audit_transcript": "AUDIT_*/L5_INTERNAL_AUDIT.txt",
+    "regression_transcript": "AUDIT_*/L5_REGRESSION_TESTS.txt",
+    "hash_manifest": "AUDIT_*/SHA256SUMS.txt"
+  },
+  "BOUNDARY_COMPLIANCE": {
+    "l4_physical_mutation": 0,
+    "database_engine": 0,
+    "message_broker": 0,
+    "cloud_storage": 0,
+    "buffer_write_by_l5": 0
+  },
+  "VERDICT": {
+    "layer_5": "AUDIT_PASS",
+    "evidence_recorded": true,
+    "dola_review_ready": true,
+    "final_authority": "L0"
+  }
+}
