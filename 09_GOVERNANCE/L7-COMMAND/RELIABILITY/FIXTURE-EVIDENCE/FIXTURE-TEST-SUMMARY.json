@@ -1,0 +1,188 @@
+{
+  "test_suite": "L7-RELIABILITY-FIXTURE-T01-T12",
+  "mode": "TEST_FIXTURE",
+  "timestamp_utc": "2026-09-13T21:35:30+00:00",
+  "host": "KAPAL-INDUK",
+  "agent": "AG-003/DeepSeek",
+  "actor": "L0:Iswan",
+  "total": 12,
+  "pass": 12,
+  "fail": 0,
+  "blocked": 0,
+  "overall": "PASS",
+  "results": [
+    {
+      "result": "PASS",
+      "expected": "REJECTED_DUPLICATE",
+      "actual": "REJECTED_DUPLICATE",
+      "recovery": "none",
+      "details": {
+        "first": "ACCEPTED",
+        "second": "REJECTED_DUPLICATE",
+        "reason": "idem_window"
+      },
+      "test_id": "T01",
+      "name": "duplicate_command",
+      "evidence_id": "ev-fixture-T01-c818b97b",
+      "hash": "94638c5231c1fe74a5a196e85ba7151a0cf24c73034c85f1cf5ea5f2be53221a"
+    },
+    {
+      "result": "PASS",
+      "expected": "REJECTED_REPLAY",
+      "actual": "REJECTED_REPLAY",
+      "recovery": "none",
+      "details": {
+        "first": "ACCEPTED",
+        "second": "REJECTED_REPLAY",
+        "reason": "nonce_seen"
+      },
+      "test_id": "T02",
+      "name": "replay_command",
+      "evidence_id": "ev-fixture-T02-56ce3e42",
+      "hash": "e8450722925a54caf46334c8e166bfce345ed9fac0b1d9c4e4cb36b0651f04bf"
+    },
+    {
+      "result": "PASS",
+      "expected": "REJECTED_STALE",
+      "actual": "REJECTED_STALE",
+      "recovery": "none",
+      "details": {
+        "reason": "expired"
+      },
+      "test_id": "T03",
+      "name": "stale_command",
+      "evidence_id": "ev-fixture-T03-3389bdcf",
+      "hash": "806104d256c4338f2c19bb319e1586bc46e0fa9eeaf0ef78612ada778b301972"
+    },
+    {
+      "result": "PASS",
+      "expected": "REJECTED_MALFORMED",
+      "actual": "REJECTED_MALFORMED",
+      "recovery": "none",
+      "details": {
+        "reason": "missing:command_id"
+      },
+      "test_id": "T04",
+      "name": "malformed_command",
+      "evidence_id": "ev-fixture-T04-ffe7d28e",
+      "hash": "ce8c1071da6f934657b049afba37311051672085568ea513265a96cd048945e0"
+    },
+    {
+      "result": "PASS",
+      "expected": "no_partial_publish",
+      "actual": "clean",
+      "recovery": "discard_temp",
+      "details": {
+        "no_final": true,
+        "recovered": true
+      },
+      "test_id": "T05",
+      "name": "interrupted_write",
+      "evidence_id": "ev-fixture-T05-f109258d",
+      "hash": "d031fac271ed0b9b27b21d6cf8106c24b78d961a213fab550fc7eb9007bc1dda"
+    },
+    {
+      "result": "PASS",
+      "expected": "BLOCKED_AWAIT_RECONCILE",
+      "actual": "BLOCKED_AWAIT_RECONCILE",
+      "recovery": "manual_reconcile",
+      "details": {
+        "log_tail": [
+          "ACCEPTED",
+          "EXECUTING"
+        ]
+      },
+      "test_id": "T06",
+      "name": "partial_state_update",
+      "evidence_id": "ev-fixture-T06-15e39de6",
+      "hash": "a1e3a8472d4a0e08fbd0ae28b623ab796fb1182887505a5eb5356b309058bb3a"
+    },
+    {
+      "result": "PASS",
+      "expected": "detect_missing_audit",
+      "actual": "detected",
+      "recovery": "reconcile_audit",
+      "details": {
+        "missing": [
+          "SUCCEEDED"
+        ]
+      },
+      "test_id": "T07",
+      "name": "missing_audit_event",
+      "evidence_id": "ev-fixture-T07-d2e1e5d0",
+      "hash": "b8c8bed820240be60384e8abd87e3c58f1f2075f798d33913f7f505d86714141"
+    },
+    {
+      "result": "PASS",
+      "expected": "hash_mismatch_detected",
+      "actual": "detected",
+      "recovery": "re_verify_source",
+      "details": {
+        "good_prefix": "91b1dcb009c9d269",
+        "bad_prefix": "ce0951441e6323cc"
+      },
+      "test_id": "T08",
+      "name": "corrupted_evidence",
+      "evidence_id": "ev-fixture-T08-af76d26b",
+      "hash": "ce3ced67f2da5432c8a47a8a1196200e35846b607c894ef5fc073a53260e3052"
+    },
+    {
+      "result": "PASS",
+      "expected": "RECOVERING",
+      "actual": "RECOVERING",
+      "recovery": "backoff_retry",
+      "details": {
+        "timeout_s": 0.01
+      },
+      "test_id": "T09",
+      "name": "timeout",
+      "evidence_id": "ev-fixture-T09-a0bd49d9",
+      "hash": "c72642004d87fc64390a580d6d89dc795d5b96422917d950f19c55ad1f850616"
+    },
+    {
+      "result": "PASS",
+      "expected": "CONTAINED",
+      "actual": "CONTAINED",
+      "recovery": "circuit_open",
+      "details": {
+        "cause": "dep_down"
+      },
+      "test_id": "T10",
+      "name": "unavailable_dependency",
+      "evidence_id": "ev-fixture-T10-b8c10b00",
+      "hash": "4334359ea2cd6ff4ef65bed617aee3c41081cfcb9b35e1d33b82d0ee52f9bc2e"
+    },
+    {
+      "result": "PASS",
+      "expected": "BLOCKED",
+      "actual": "BLOCKED",
+      "recovery": "escalate_to_L0",
+      "details": {
+        "note": "no infinite retry"
+      },
+      "test_id": "T11",
+      "name": "recovery_failure",
+      "evidence_id": "ev-fixture-T11-ddfb0a97",
+      "hash": "4eb07f9333d8853c10bb60da3ee78ff9a5c9b8a3d1b88b0f0eba6d3f898ceab8"
+    },
+    {
+      "result": "PASS",
+      "expected": "CIRCUIT_OPEN",
+      "actual": "opened",
+      "recovery": "halt_until_manual",
+      "details": {
+        "sequence": [
+          "FAILED",
+          "FAILED",
+          "FAILED",
+          "CIRCUIT_OPEN",
+          "CIRCUIT_OPEN"
+        ]
+      },
+      "test_id": "T12",
+      "name": "repeated_recovery_loop",
+      "evidence_id": "ev-fixture-T12-d0f1d87a",
+      "hash": "8f9bc1a98a42587844913b2ce424a8e3ce80f6897840e89437b0a2f8731aa752"
+    }
+  ]
+}

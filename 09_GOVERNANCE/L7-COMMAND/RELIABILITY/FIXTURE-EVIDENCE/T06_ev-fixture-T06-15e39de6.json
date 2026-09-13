@@ -1,0 +1,28 @@
+{
+  "evidence_id": "ev-fixture-T06-15e39de6",
+  "command_id": "cmd-fixture-T06-8583934f",
+  "correlation_id": "corr-fixture-6067c516",
+  "actor": "L0:Iswan",
+  "agent": "AG-003/DeepSeek",
+  "timestamp_utc": "2026-09-13T21:35:30+00:00",
+  "timestamp_local": "2026-09-14T04:35:30+07:00",
+  "provenance": {
+    "host": "KAPAL-INDUK",
+    "mode": "TEST_FIXTURE",
+    "agent": "AG-003/DeepSeek",
+    "python": "stdlib"
+  },
+  "expected_state": "BLOCKED_AWAIT_RECONCILE",
+  "actual_state": "BLOCKED_AWAIT_RECONCILE",
+  "result": "PASS",
+  "recovery_result": "manual_reconcile",
+  "hash_sha256": "a1e3a8472d4a0e08fbd0ae28b623ab796fb1182887505a5eb5356b309058bb3a",
+  "retention_class": "90d",
+  "test_id": "T06",
+  "details": {
+    "log_tail": [
+      "ACCEPTED",
+      "EXECUTING"
+    ]
+  }
+}

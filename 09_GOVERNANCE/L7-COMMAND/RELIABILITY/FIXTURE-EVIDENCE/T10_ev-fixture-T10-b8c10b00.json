@@ -1,0 +1,25 @@
+{
+  "evidence_id": "ev-fixture-T10-b8c10b00",
+  "command_id": "cmd-fixture-T10-ff67837f",
+  "correlation_id": "corr-fixture-f298b294",
+  "actor": "L0:Iswan",
+  "agent": "AG-003/DeepSeek",
+  "timestamp_utc": "2026-09-13T21:35:30+00:00",
+  "timestamp_local": "2026-09-14T04:35:30+07:00",
+  "provenance": {
+    "host": "KAPAL-INDUK",
+    "mode": "TEST_FIXTURE",
+    "agent": "AG-003/DeepSeek",
+    "python": "stdlib"
+  },
+  "expected_state": "CONTAINED",
+  "actual_state": "CONTAINED",
+  "result": "PASS",
+  "recovery_result": "circuit_open",
+  "hash_sha256": "4334359ea2cd6ff4ef65bed617aee3c41081cfcb9b35e1d33b82d0ee52f9bc2e",
+  "retention_class": "90d",
+  "test_id": "T10",
+  "details": {
+    "cause": "dep_down"
+  }
+}
