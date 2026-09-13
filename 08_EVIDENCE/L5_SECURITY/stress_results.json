@@ -1,82 +1,82 @@
 {
   "test": "L5-M4-memory-stress",
-  "timestamp": "2026-09-14T02:36:09",
+  "timestamp": "2026-09-14T03:08:17",
   "host": "KAPAL-INDUK",
   "python": "3.14.7",
   "input_dir": "D:\\MICO_SSOT\\08_EVIDENCE\\L5_SECURITY\\stress_input",
   "file_count": 10000,
   "errors": 0,
-  "baseline_rss_mb": 69.211,
-  "peak_rss_mb": 69.879,
-  "final_rss_mb": 69.879,
-  "delta_pct": 0.965,
+  "baseline_rss_mb": 69.25,
+  "peak_rss_mb": 70.145,
+  "final_rss_mb": 70.145,
+  "delta_pct": 1.292,
   "threshold_pct": 10.0,
-  "duration_sec": 2.02,
+  "duration_sec": 2.16,
   "samples": [
     {
       "seq": 0,
       "files_processed": 0,
-      "rss_mb": 69.2109375,
+      "rss_mb": 69.25,
       "phase": "baseline"
     },
     {
       "seq": 1000,
       "files_processed": 1000,
-      "rss_mb": 69.801,
+      "rss_mb": 70.117,
       "phase": "checkpoint_after_gc"
     },
     {
       "seq": 2000,
       "files_processed": 2000,
-      "rss_mb": 69.812,
+      "rss_mb": 70.145,
       "phase": "checkpoint_after_gc"
     },
     {
       "seq": 3000,
       "files_processed": 3000,
-      "rss_mb": 69.816,
+      "rss_mb": 70.145,
       "phase": "checkpoint_after_gc"
     },
     {
       "seq": 4000,
       "files_processed": 4000,
-      "rss_mb": 69.879,
+      "rss_mb": 70.145,
       "phase": "checkpoint_after_gc"
     },
     {
       "seq": 5000,
       "files_processed": 5000,
-      "rss_mb": 69.879,
+      "rss_mb": 70.145,
       "phase": "checkpoint_after_gc"
     },
     {
       "seq": 6000,
       "files_processed": 6000,
-      "rss_mb": 69.879,
+      "rss_mb": 70.145,
       "phase": "checkpoint_after_gc"
     },
     {
       "seq": 7000,
       "files_processed": 7000,
-      "rss_mb": 69.879,
+      "rss_mb": 70.145,
       "phase": "checkpoint_after_gc"
     },
     {
       "seq": 8000,
       "files_processed": 8000,
-      "rss_mb": 69.879,
+      "rss_mb": 70.145,
       "phase": "checkpoint_after_gc"
     },
     {
       "seq": 9000,
       "files_processed": 9000,
-      "rss_mb": 69.879,
+      "rss_mb": 70.145,
       "phase": "checkpoint_after_gc"
     },
     {
       "seq": 10000,
       "files_processed": 10000,
-      "rss_mb": 69.879,
+      "rss_mb": 70.145,
       "phase": "checkpoint_after_gc"
     }
   ],
