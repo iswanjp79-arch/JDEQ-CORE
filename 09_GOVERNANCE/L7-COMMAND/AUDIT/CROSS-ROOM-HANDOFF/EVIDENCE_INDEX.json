@@ -1,8 +1,8 @@
 ﻿{
   "handoff_id": "MICO-CROSS-ROOM-FINALIZATION-001",
-  "timestamp": "2026-09-14_0515",
-  "head_commit": "eafdc4fba337a960aa44135c3b783b813cf5f902",
-  "head_time": "2026-09-14 04:47:15 +0700",
+  "timestamp": "2026-09-14_0523",
+  "head_commit": "5e3b52e3626260b6e54b09bb191e9d51a776f6f0",
+  "head_time": "2026-09-14 05:15:49 +0700",
   "evidence": [
     { "id": "EV-001", "artifact": "FIXTURE-TEST-SUMMARY.json", "sha256": "24C39295085126EF26A174DC623DF884475B5A349E6ED556042AA46091925388", "status": "SUPPORTED" },
     { "id": "EV-002", "artifact": "l7_fixture_harness.py", "sha256": "A00BE7CC288934EABD7C105F154CB96AE9F2EBBA562ACE5FC8B3DA8EFEBB1CAB", "status": "SUPPORTED" },
