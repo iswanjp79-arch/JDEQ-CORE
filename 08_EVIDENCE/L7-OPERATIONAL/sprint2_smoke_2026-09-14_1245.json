@@ -1,0 +1,6 @@
+﻿{
+  "sprint": "L7-RUNTIME-SPRINT-2",
+  "timestamp": "2026-09-14_1245",
+  "exit_code": 0,
+  "stdout": "{\"results\": {\"S1_valid\": 0, \"S2_nonce_reuse\": 4, \"S3_first\": 0, \"S3_duplicate\": 5, \"S4_stale\": 6, \"S5_first_seq10\": 0, \"S5_rollback\": 7}, \"expected\": {\"S1_valid\": 0, \"S2_nonce_reuse\": 4, \"S3_first\": 0, \"S3_duplicate\": 5, \"S4_stale\": 6, \"S5_first_seq10\": 0, \"S5_rollback\": 7}, \"pass\": true}\r\n"
+}

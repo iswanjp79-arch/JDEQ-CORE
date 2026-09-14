@@ -1,0 +1,5 @@
+{"event":"intake","hash":"9f7ec349e67bd5d547a03f74a4db1c703a10a76d39957e4c7c0560e6cc59f47a","source":"C:\\Users\\USER\\AppData\\Local\\Temp\\rt_26o501wu\\rt15a.json","state":"PROPOSED","ts":"2026-09-14T07:25:56.509456+00:00"}
+{"event":"authorized","hash":"97ffa47caaae980322a51bba1b69b468c39c74550036e227b45d866f41e7ca16","state":"AUTHORIZED","ts":"2026-09-14T07:25:56.518614+00:00"}
+{"event":"accepted","hash":"469e3fb035e000027931373ee8bef79a52ada12a6d8cfc1476aee04476211279","state":"ACCEPTED","ts":"2026-09-14T07:25:56.518973+00:00"}
+{"event":"executing","hash":"b76cc3fdb24377bbcde9424c26234ddb2afc4a561ebc34431b02dfde698087a5","state":"EXECUTING","ts":"2026-09-14T07:25:56.519282+00:00"}
+{"event":"verified","hash":"2acd12b0ce4889799a8994e3e81f45a1681a2a396e4134f38fd86302d517a499","state":"VERIFIED","ts":"2026-09-14T07:25:56.520421+00:00"}

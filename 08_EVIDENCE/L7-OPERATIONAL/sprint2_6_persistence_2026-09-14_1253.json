@@ -1,0 +1,8 @@
+﻿{
+  "sprint": "L7-RUNTIME-SPRINT-2.6",
+  "timestamp": "2026-09-14_1253",
+  "persistence_exit": 1,
+  "sprint2_regression_exit": 0,
+  "sprint2_5_regression_exit": 0,
+  "persistence_stdout": "{\"results\": {\"W5_sekring_ingat_antar_restart\": true, \"W6_sekring_auto_reset_setelah_waktu\": false}, \"pass\": false}\r\n"
+}

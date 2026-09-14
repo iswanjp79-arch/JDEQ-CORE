@@ -1,0 +1,14 @@
+{"event": "activation_start", "state": "LOCKED", "ts": "2026-09-14T06:05:42.058180+00:00"}
+{"checks": {"cb_closed": {"info": "cb_closed", "ok": true}, "l4_mutation_by_this_task": {"info": "audit path scoped to L7-OPERATIONAL", "ok": true}, "l5_mutation_by_this_task": {"info": "no L5 writes", "ok": true}, "rollback_artifact": {"info": "documented in L7-REPOSITORY-MIGRATION-BOUNDARY.md", "ok": true}, "rt_evidence": {"info": "parse error: Unexpected UTF-8 BOM (decode using utf-8-sig): line 1 column 1 (char 0)", "ok": false}}, "event": "preconditions_failed", "state": "LOCKED", "ts": "2026-09-14T06:05:42.059823+00:00"}
+{"event": "blocked", "state": "BLOCKED", "ts": "2026-09-14T06:05:42.060344+00:00"}
+{"event": "activation_start", "state": "LOCKED", "ts": "2026-09-14T06:06:57.613473+00:00"}
+{"event": "transition", "state": "READY_FOR_ACTIVATION", "ts": "2026-09-14T06:06:57.615244+00:00"}
+{"event": "transition", "state": "ACTIVATION_TEST", "ts": "2026-09-14T06:06:57.615618+00:00"}
+{"event": "activation_test", "passed": false, "results": [0, 0, 7], "state": "ACTIVATION_TEST", "ts": "2026-09-14T06:06:58.257496+00:00"}
+{"event": "blocked", "reason": "activation_test_failed", "state": "BLOCKED", "ts": "2026-09-14T06:06:58.257990+00:00"}
+{"event": "activation_start", "state": "LOCKED", "ts": "2026-09-14T06:07:42.486773+00:00"}
+{"event": "transition", "state": "READY_FOR_ACTIVATION", "ts": "2026-09-14T06:07:42.488334+00:00"}
+{"event": "transition", "state": "ACTIVATION_TEST", "ts": "2026-09-14T06:07:42.488681+00:00"}
+{"event": "activation_test", "passed": true, "results": [0, 0, 0], "state": "ACTIVATION_TEST", "ts": "2026-09-14T06:07:42.854480+00:00"}
+{"event": "transition", "state": "ACTIVE_CONTROLLED", "ts": "2026-09-14T06:07:42.854940+00:00"}
+{"event": "verified_operation", "state": "VERIFIED_OPERATION", "ts": "2026-09-14T06:07:42.855374+00:00"}

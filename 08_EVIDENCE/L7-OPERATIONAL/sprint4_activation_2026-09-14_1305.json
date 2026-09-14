@@ -1,0 +1,7 @@
+﻿{
+  "sprint": "L7-RUNTIME-SPRINT-4",
+  "timestamp": "2026-09-14_1305",
+  "exit": 1,
+  "rt_regression": 0, "s26_regression": 0,
+  "stdout": "{\"exit\": 1, \"stdout\": \"{\\\"state\\\": \\\"BLOCKED\\\", \\\"history\\\": [\\\"LOCKED\\\", \\\"BLOCKED\\\"], \\\"checks\\\": {\\\"rt_evidence\\\": {\\\"ok\\\": false, \\\"info\\\": \\\"parse error: Unexpected UTF-8 BOM (decode using utf-8-sig): line 1 column 1 (char 0)\\\"}, \\\"cb_closed\\\": {\\\"ok\\\": true, \\\"info\\\": \\\"cb_closed\\\"}, \\\"rollback_artifact\\\": {\\\"ok\\\": true, \\\"info\\\": \\\"documented in L7-REPOSITORY-MIGRATION-BOUNDARY.md\\\"}, \\\"l4_mutation_by_this_task\\\": {\\\"ok\\\": true, \\\"info\\\": \\\"audit path scoped to L7-OPERATIONAL\\\"}, \\\"l5_mutation_by_this_task\\\": {\\\"ok\\\": true, \\\"info\\\": \\\"no L5 writes\\\"}}}\", \"final_state\": \"BLOCKED\", \"history\": [\"LOCKED\", \"BLOCKED\"], \"history_ok\": false, \"state_ok\": false, \"pass\": false}\r\n"
+}

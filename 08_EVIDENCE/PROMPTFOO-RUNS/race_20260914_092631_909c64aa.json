@@ -1,0 +1,287 @@
+{
+  "config": {
+    "description": "RACE evaluation",
+    "prompts": [
+      "{{rule}} | {{action}} | {{context}} | {{expectation}}"
+    ],
+    "providers": [
+      "echo"
+    ],
+    "tests": [
+      {
+        "vars": {
+          "action": "test_action",
+          "context": "test_context",
+          "expectation": "test_expectation",
+          "rule": "test_rule"
+        }
+      }
+    ]
+  },
+  "output": {
+    "config": {
+      "description": "RACE evaluation",
+      "env": {},
+      "evaluateOptions": {},
+      "extensions": [],
+      "metadata": {},
+      "outputPath": [
+        "C:\\Users\\USER\\AppData\\Local\\Temp\\pf_o7pjb62l\\out.json"
+      ],
+      "prompts": [
+        "{{rule}} | {{action}} | {{context}} | {{expectation}}"
+      ],
+      "providers": [
+        "echo"
+      ],
+      "tags": {},
+      "tests": [
+        {
+          "vars": {
+            "action": "test_action",
+            "context": "test_context",
+            "expectation": "test_expectation",
+            "rule": "test_rule"
+          }
+        }
+      ]
+    },
+    "evalId": "eval-gbX-2026-09-14T09:26:30",
+    "metadata": {
+      "arch": "x64",
+      "evaluationCreatedAt": "2026-09-14T09:26:30.806Z",
+      "exportedAt": "2026-09-14T09:26:30.993Z",
+      "nodeVersion": "v26.7.0",
+      "platform": "win32",
+      "promptfooVersion": "0.123.0"
+    },
+    "results": {
+      "prompts": [
+        {
+          "id": "9d2d3cc824a6b4f750f78d16dabebc7e66963ef8c6299cc7c6567995ef9cc875",
+          "label": "{{rule}} | {{action}} | {{context}} | {{expectation}}",
+          "metrics": {
+            "assertFailCount": 0,
+            "assertPassCount": 0,
+            "cost": 0,
+            "namedScoreWeights": {},
+            "namedScores": {},
+            "namedScoresCount": {},
+            "score": 1,
+            "testErrorCount": 0,
+            "testFailCount": 0,
+            "testPassCount": 1,
+            "tokenUsage": {
+              "assertions": {
+                "cached": 0,
+                "completion": 0,
+                "completionDetails": {
+                  "acceptedPrediction": 0,
+                  "cacheCreationInputTokens": 0,
+                  "cacheReadInputTokens": 0,
+                  "reasoning": 0,
+                  "rejectedPrediction": 0
+                },
+                "numRequests": 0,
+                "prompt": 0,
+                "total": 0
+              },
+              "cached": 0,
+              "completion": 0,
+              "completionDetails": {
+                "acceptedPrediction": 0,
+                "cacheCreationInputTokens": 0,
+                "cacheReadInputTokens": 0,
+                "reasoning": 0,
+                "rejectedPrediction": 0
+              },
+              "numRequests": 1,
+              "prompt": 0,
+              "total": 0
+            },
+            "totalLatencyMs": 8
+          },
+          "provider": "echo",
+          "raw": "{{rule}} | {{action}} | {{context}} | {{expectation}}"
+        }
+      ],
+      "results": [
+        {
+          "cost": 0,
+          "failureReason": 0,
+          "gradingResult": {
+            "pass": true,
+            "reason": "No assertions",
+            "score": 1,
+            "tokensUsed": {
+              "cached": 0,
+              "completion": 0,
+              "numRequests": 0,
+              "prompt": 0,
+              "total": 0
+            }
+          },
+          "id": "59c3c37a-b827-455d-8f3c-285bfaeccf82",
+          "latencyMs": 8,
+          "metadata": {
+            "_promptfooFileMetadata": {}
+          },
+          "namedScores": {},
+          "prompt": {
+            "config": {},
+            "label": "{{rule}} | {{action}} | {{context}} | {{expectation}}",
+            "raw": "test_rule | test_action | test_context | test_expectation"
+          },
+          "promptId": "9d2d3cc824a6b4f750f78d16dabebc7e66963ef8c6299cc7c6567995ef9cc875",
+          "promptIdx": 0,
+          "provider": {
+            "id": "echo",
+            "label": ""
+          },
+          "response": {
+            "cached": false,
+            "cost": 0,
+            "isRefusal": false,
+            "metadata": {},
+            "output": "test_rule | test_action | test_context | test_expectation",
+            "raw": "test_rule | test_action | test_context | test_expectation",
+            "tokenUsage": {
+              "assertions": {
+                "cached": 0,
+                "completion": 0,
+                "completionDetails": {
+                  "acceptedPrediction": 0,
+                  "cacheCreationInputTokens": 0,
+                  "cacheReadInputTokens": 0,
+                  "reasoning": 0,
+                  "rejectedPrediction": 0
+                },
+                "numRequests": 0,
+                "prompt": 0,
+                "total": 0
+              },
+              "cached": 0,
+              "completion": 0,
+              "completionDetails": {
+                "acceptedPrediction": 0,
+                "cacheCreationInputTokens": 0,
+                "cacheReadInputTokens": 0,
+                "reasoning": 0,
+                "rejectedPrediction": 0
+              },
+              "numRequests": 1,
+              "prompt": 0,
+              "total": 0
+            }
+          },
+          "score": 1,
+          "success": true,
+          "testCase": {
+            "assert": [],
+            "metadata": {},
+            "options": {},
+            "vars": {
+              "action": "test_action",
+              "context": "test_context",
+              "expectation": "test_expectation",
+              "rule": "test_rule"
+            }
+          },
+          "testIdx": 0,
+          "tokenUsage": {
+            "assertions": {
+              "cached": 0,
+              "completion": 0,
+              "completionDetails": {
+                "acceptedPrediction": 0,
+                "cacheCreationInputTokens": 0,
+                "cacheReadInputTokens": 0,
+                "reasoning": 0,
+                "rejectedPrediction": 0
+              },
+              "numRequests": 0,
+              "prompt": 0,
+              "total": 0
+            },
+            "cached": 0,
+            "completion": 0,
+            "completionDetails": {
+              "acceptedPrediction": 0,
+              "cacheCreationInputTokens": 0,
+              "cacheReadInputTokens": 0,
+              "reasoning": 0,
+              "rejectedPrediction": 0
+            },
+            "numRequests": 1,
+            "prompt": 0,
+            "total": 0
+          },
+          "vars": {
+            "action": "test_action",
+            "context": "test_context",
+            "expectation": "test_expectation",
+            "rule": "test_rule"
+          }
+        }
+      ],
+      "stats": {
+        "durationMs": 69,
+        "errors": 0,
+        "evaluationDurationMs": 69,
+        "failures": 0,
+        "successes": 1,
+        "tokenUsage": {
+          "assertions": {
+            "cached": 0,
+            "completion": 0,
+            "completionDetails": {
+              "acceptedPrediction": 0,
+              "cacheCreationInputTokens": 0,
+              "cacheReadInputTokens": 0,
+              "reasoning": 0,
+              "rejectedPrediction": 0
+            },
+            "numRequests": 0,
+            "prompt": 0,
+            "total": 0
+          },
+          "cached": 0,
+          "completion": 0,
+          "completionDetails": {
+            "acceptedPrediction": 0,
+            "cacheCreationInputTokens": 0,
+            "cacheReadInputTokens": 0,
+            "reasoning": 0,
+            "rejectedPrediction": 0
+          },
+          "numRequests": 1,
+          "prompt": 0,
+          "total": 0
+        }
+      },
+      "timestamp": "2026-09-14T09:26:30.806Z",
+      "version": 3
+    },
+    "runtimeOptions": {
+      "cache": false,
+      "eventSource": "cli",
+      "maxConcurrency": 4,
+      "repeat": 1,
+      "showProgressBar": false
+    },
+    "shareableUrl": null,
+    "vars": [
+      "rule",
+      "action",
+      "context",
+      "expectation"
+    ]
+  },
+  "output_exists": true,
+  "output_file": "C:\\Users\\USER\\AppData\\Local\\Temp\\pf_o7pjb62l\\out.json",
+  "returncode": 0,
+  "run_id": "909c64aa",
+  "stderr_tail": "(node:2372) ExperimentalWarning: DecompressInterceptor is experimental and subject to change\n(Use `node --trace-warnings ...` to show where the warning was created)\n",
+  "stdout_tail": "\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u001b[39m\u001b[90m\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u001b[39m\u001b[90m\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u001b[39m\u001b[90m\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u001b[39m\u001b[90m\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\u001b[39m\n\u2713 Eval complete (ID: eval-gbX-2026-09-14T09:26:30)\n\n\u00bb View results: promptfoo view\n\u00bb Share with your team: https://promptfoo.app\n\u00bb Feedback: https://promptfoo.dev/feedback\n\n\nResults:\n  \u2713 1 passed (100%)\n  0 failed (0%)\n  0 errors (0%)\nDuration: 0s (concurrency: 4)\n\nWriting output to C:\\Users\\USER\\AppData\\Local\\Temp\\pf_o7pjb62l\\out.json\n",
+  "ts": "2026-09-14T09:26:31.637259+00:00"
+}

@@ -1,0 +1,7 @@
+﻿TANGGAL: 2026-09-14 16:04:02
+VERSI_DIPASANG: 0.123.0
+SUMBER: https://github.com/promptfoo/promptfoo/compare/0.122.2...0.123.0
+NODE_VERSI: v26.7.0
+NPM_VERSI: 11.19.0
+STATUS: BERHASIL
+CATATAN: install dengan --allow-scripts untuk 5 paket (swc, onnxruntime, sharp, protobufjs, esbuild)
