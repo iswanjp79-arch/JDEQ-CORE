@@ -1,0 +1,20 @@
+{
+  "mode": "DRY_RUN",
+  "status": "CANNOT_RUN",
+  "reason": "P2 modules not yet implemented",
+  "design_ref": "P2-DESIGN (bf634d2)",
+  "execution_ref": "P2-EXECUTION (2d62fc6)",
+  "runtime": "NOT_ACTIVE",
+  "deployment": "LOCKED",
+  "modules": [
+    {
+      "id": "P2-1",
+      "state": "STUB_PENDING"
+    },
+    {
+      "id": "P2-2",
+      "state": "STUB_PENDING"
+    }
+  ],
+  "note": "Prior file contained unverified SIMULATED_PASS labels. This version is the truthful record."
+}
