@@ -1,0 +1,26 @@
+﻿KOREKSI - INFINIX STATUS
+=====================
+
+Tanggal koreksi : 2026-09-15
+File asal       : 08_EVIDENCE/L7_Z83_INFINIX/INFINIX-BLOCKED.txt
+Alasan koreksi  : Isi lama salah tafsir
+
+FAKTA YANG BENAR:
+- Infinix (madina) SENGAJA diputus oleh L0
+- Alasan 1: WiFi dimatikan agar tidak membebani router Tenda RT/RW
+- Alasan 2: RAM terbatas (32-bit device)
+- Status: OFFLINE_BY_DESIGN (sengaja)
+- Bukan: lepas kendali, rusak, atau hilang
+
+TINDAK LANJUT:
+- Infinix tetap bagian dari daftar 6 perangkat MICO-JDEQ
+- Bisa dihidupkan kembali saat dibutuhkan
+- Onboarding menunggu keputusan L0
+
+CATATAN AG-003:
+- File lama "INFINIX-BLOCKED.txt" dibuat berdasarkan asumsi
+- Tanpa konfirmasi ke L0
+- Itu kesalahan, sudah dikoreksi di sini
+- Aturan PROMPT-STANDARD-IDEAL dilanggar: "kalau ragu, konfirmasi L0"
+
+STATUS AKHIR: OFFLINE_BY_DESIGN
