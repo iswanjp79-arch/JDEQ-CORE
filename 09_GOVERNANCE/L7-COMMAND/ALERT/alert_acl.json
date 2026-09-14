@@ -1,0 +1,15 @@
+﻿{
+  "description": "ACL for alert rule modifications",
+  "roles": {
+    "DOLA": ["read","approve","audit"],
+    "AG-003": ["create","update","test"],
+    "AG-004": ["independent_verify"],
+    "L0": ["approve","override"]
+  },
+  "change_process": {
+    "create_or_update": ["AG-003"],
+    "review": ["DOLA"],
+    "independent_verification": ["AG-004"],
+    "final_approval": ["L0"]
+  }
+}

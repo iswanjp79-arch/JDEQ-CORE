@@ -1,0 +1,46 @@
+﻿#!/usr/bin/env bash
+# test_alert_delivery.sh
+set -euo pipefail
+SEVERITY=${1:-CRITICAL}
+TRANSPORT=${2:-all}
+TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+PAYLOAD=$(cat <<EOF
+{
+  "timestamp":"$TIMESTAMP",
+  "source":"test-harness",
+  "event_id":"test-${SEVERITY,,}-$(date +%s)",
+  "severity":"$SEVERITY",
+  "message":"Test alert $SEVERITY from test harness",
+  "evidence_refs":["/08_EVIDENCE/alert/tests/test-${SEVERITY,,}.json"],
+  "runbook_url":"https://docs.internal.example/runbooks/${SEVERITY,,}.md"
+}
+EOF
+)
+mkdir -p ./08_EVIDENCE/alert/tests
+echo "$PAYLOAD" > ./08_EVIDENCE/alert/tests/payload.json
+
+send_via_webhook() {
+  WEBHOOK_URL=$(yq e '.recipients.incident_db.endpoint' 09_GOVERNANCE/L7-COMMAND/ALERT/alert_recipients.yaml)
+  curl -s -X POST -H "Content-Type: application/json" -d @./08_EVIDENCE/alert/tests/payload.json "$WEBHOOK_URL" -o ./08_EVIDENCE/alert/tests/webhook_response.txt || true
+}
+
+send_via_smtp() {
+  ONCALL=$(yq e '.recipients.oncall.email' 09_GOVERNANCE/L7-COMMAND/ALERT/alert_recipients.yaml)
+  echo "$PAYLOAD" | mail -s "Test Alert $SEVERITY" "$ONCALL" 2> ./08_EVIDENCE/alert/tests/smtp_send.err || true
+}
+
+send_via_syslog() {
+  SYSLOG_HOST=$(yq e '.recipients.observability.syslog_tls_host' 09_GOVERNANCE/L7-COMMAND/ALERT/alert_recipients.yaml)
+  SYSLOG_PORT=$(yq e '.recipients.observability.syslog_tls_port' 09_GOVERNANCE/L7-COMMAND/ALERT/alert_recipients.yaml)
+  logger -n "$SYSLOG_HOST" -P "$SYSLOG_PORT" -T -p user.notice "$PAYLOAD" 2> ./08_EVIDENCE/alert/tests/syslog_send.err || true
+}
+
+case "$TRANSPORT" in
+  webhook) send_via_webhook ;;
+  smtp) send_via_smtp ;;
+  syslog) send_via_syslog ;;
+  all) send_via_webhook; send_via_smtp; send_via_syslog ;;
+esac
+
+sha256sum ./08_EVIDENCE/alert/tests/payload.json > ./08_EVIDENCE/alert/tests/payload.json.sha256
+echo "TEST_COMPLETE $SEVERITY $TRANSPORT $(date -u)" > ./08_EVIDENCE/alert/tests/result.txt

@@ -1,0 +1,21 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "P2-2 Alert Payload",
+  "type": "object",
+  "required": ["timestamp","source","event_id","severity","message","evidence_refs"],
+  "properties": {
+    "timestamp": { "type": "string", "format": "date-time" },
+    "source": { "type": "string" },
+    "event_id": { "type": "string" },
+    "severity": { "type": "string", "enum": ["INFO","WARNING","CRITICAL"] },
+    "message": { "type": "string" },
+    "details": { "type": "object" },
+    "evidence_refs": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "runbook_url": { "type": "string", "format": "uri" },
+    "signature": { "type": "string" }
+  },
+  "additionalProperties": false
+}

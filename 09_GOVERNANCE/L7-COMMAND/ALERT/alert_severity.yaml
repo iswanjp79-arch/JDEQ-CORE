@@ -1,0 +1,10 @@
+﻿# alert_severity.yaml
+mappings:
+  auth_failure: CRITICAL
+  backup_failure: CRITICAL
+  rotation_error: WARNING
+  disk_space_low: WARNING
+  heartbeat_missed: CRITICAL
+  info_event: INFO
+  circuit_breaker_tripped: CRITICAL
+  degraded_performance: WARNING

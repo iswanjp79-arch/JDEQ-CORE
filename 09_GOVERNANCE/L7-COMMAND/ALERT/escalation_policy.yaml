@@ -1,0 +1,21 @@
+﻿# escalation_policy.yaml
+escalation:
+  CRITICAL:
+    - step: notify_oncall
+      timeout_minutes: 5
+    - step: notify_team_lead
+      timeout_minutes: 15
+    - step: notify_L0
+      timeout_minutes: 30
+  WARNING:
+    - step: notify_oncall
+      timeout_minutes: 30
+    - step: notify_team_lead
+      timeout_minutes: 120
+  INFO:
+    - step: log_only
+      timeout_minutes: 0
+owners:
+  oncall: "team-ops@example.com"
+  team_lead: "lead-ops@example.com"
+  L0: "iswan@example.com"
