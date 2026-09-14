@@ -1,4 +1,4 @@
-﻿# P2-2 — ALERT DELIVERY POLICY
+﻿# P2-2 - ALERT DELIVERY POLICY
 
 ## Model: Pull-Only
 - PC-i5 = satu-satunya penulis alert ke SSOT
@@ -6,12 +6,16 @@
 - Edge hanya menarik (pull) dari PC-i5
 - Tidak ada push dari edge
 
+## Transport
+- Baseline: GOVERNED_CHANNEL (tidak terikat satu teknologi)
+- Inner Zone: channel lokal/gateway sesuai boundary
+- Outer transport: OPTIONAL bila diotorisasi eksplisit
+
 ## Alur
 1. Peristiwa terjadi di PC-i5
 2. PC-i5 menulis alert ke SSOT (08_EVIDENCE/L7-OPERATIONAL/alerts/)
 3. Vivo Y28 menarik (pull) saat aktif
-4. Pull menggunakan Tailscale mesh
-5. Setelah diterima, Vivo menandai (ack) via file kecil
+4. Setelah diterima, Vivo menandai (ack) via file kecil
 
 ## Retry & Backoff
 | Parameter | Nilai |
@@ -28,4 +32,5 @@
 ## Batas
 - Tidak ada retry tanpa batas
 - Tidak ada alert yang dikirim via jalur publik
-- Tidak ada alert yang dibaca langsung dari edge tanpa otentikasi
+- Transport tidak sama dengan otorisasi
+- Tailscale bukan syarat baseline
