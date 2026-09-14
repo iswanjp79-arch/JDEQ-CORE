@@ -1,0 +1,26 @@
+{
+  "contract_version": "1.0",
+  "required_fields": ["command_id","correlation_id","issuer","action","issued_at","nonce","sequence"],
+  "issuer_allowlist": ["L0"],
+  "nonce_min_length": 4,
+  "sequence_monotonic": true,
+  "ttl_seconds_default": 900,
+  "duplicate_key": "command_id",
+  "exit_codes": {
+    "0": "SUCCESS",
+    "2": "PARSE_ERROR",
+    "3": "SCHEMA_REJECT",
+    "4": "NONCE_REUSE",
+    "5": "DUPLICATE_COMMAND_ID",
+    "6": "STALE_COMMAND",
+    "7": "SEQUENCE_ROLLBACK",
+    "8": "CIRCUIT_BREAKER_OPEN",
+    "9": "RECOVERY_ESCALATED",
+    "10": "UNAUTHORIZED_ISSUER",
+    "11": "EXEC_TIMEOUT",
+    "12": "DEPENDENCY_UNAVAILABLE",
+    "13": "VERIFICATION_FAILED",
+    "14": "AUDIT_EMIT_FAILED",
+    "15": "INTERRUPTED"
+  }
+}

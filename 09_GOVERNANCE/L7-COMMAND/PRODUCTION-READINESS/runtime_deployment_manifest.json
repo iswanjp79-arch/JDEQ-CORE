@@ -1,0 +1,21 @@
+{
+  "runtime_id": "MICO-L7-RUNTIME",
+  "runtime_version": "1.0.0",
+  "host": "PC-i5 (KAPAL-INDUK)",
+  "language": "python",
+  "entrypoint": "09_GOVERNANCE/L7-COMMAND/RUNTIME/l7_runtime.py",
+  "activation_gate": "09_GOVERNANCE/L7-COMMAND/RUNTIME/l7_activation.py",
+  "state_dir": "08_EVIDENCE/L7-OPERATIONAL/runtime_state",
+  "audit_log":  "08_EVIDENCE/L7-OPERATIONAL/runtime_audit.jsonl",
+  "test_harness": [
+    "test_sprint2_safety.py",
+    "test_sprint2_5_wiring.py",
+    "test_sprint2_6_persistence.py",
+    "test_rt_harness.py",
+    "test_sprint4_activation.py",
+    "test_e2e.py"
+  ],
+  "runtime_state": "NOT_ACTIVE",
+  "deployment_state": "LOCKED",
+  "authority": "L0"
+}

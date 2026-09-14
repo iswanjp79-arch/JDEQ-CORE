@@ -1,0 +1,5 @@
+{
+  "state_machine_version": "3",
+  "states": ["PROPOSED","AUTHORIZED","ACCEPTED","EXECUTING","SUCCEEDED","VERIFICATION_FAILED","VERIFIED","FAILED","RECOVERING","RECOVERED","ESCALATED","REJECTED","BLOCKED"],
+  "transitions_implicit": false
+}
