@@ -2,10 +2,10 @@
     "runbook_url":  "https://docs.internal.example/runbooks/info.md",
     "message":  "Test alert INFO from test harness",
     "source":  "test-harness",
-    "timestamp":  "2026-09-14T21:50:31Z",
+    "timestamp":  "2026-09-14T21:52:26Z",
     "evidence_refs":  [
                           "/08_EVIDENCE/alert/tests/test-info.json"
                       ],
-    "event_id":  "test-info-1789447831",
+    "event_id":  "test-info-1789447946",
     "severity":  "INFO"
 }

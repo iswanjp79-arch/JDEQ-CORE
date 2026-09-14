@@ -1,0 +1,7 @@
+﻿Invoke-RestMethod : The remote name could not be resolved: 'incident-db.internal.example'
+At line:24 char:5
++     Invoke-RestMethod -Uri $webhook -Method Post -Body $payloadJson - ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Invoke-RestMethod], WebException
+    + FullyQualifiedErrorId : System.Net.WebException,Microsoft.PowerShell.Commands.InvokeRestMethodCommand
+ 

@@ -1,0 +1,11 @@
+﻿{
+    "runbook_url":  "https://docs.internal.example/runbooks/critical.md",
+    "message":  "Test alert CRITICAL from test harness",
+    "source":  "test-harness",
+    "timestamp":  "2026-09-14T21:52:28Z",
+    "evidence_refs":  [
+                          "/08_EVIDENCE/alert/tests/test-critical.json"
+                      ],
+    "event_id":  "test-critical-1789447949",
+    "severity":  "CRITICAL"
+}

@@ -1,0 +1,11 @@
+﻿{
+    "runbook_url":  "https://docs.internal.example/runbooks/warning.md",
+    "message":  "Test alert WARNING from test harness",
+    "source":  "test-harness",
+    "timestamp":  "2026-09-14T21:52:27Z",
+    "evidence_refs":  [
+                          "/08_EVIDENCE/alert/tests/test-warning.json"
+                      ],
+    "event_id":  "test-warning-1789447947",
+    "severity":  "WARNING"
+}
