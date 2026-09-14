@@ -4,6 +4,9 @@
 
 TimeCreated                      Id LevelDisplayName Message                                                                                                                                  
 -----------                      -- ---------------- -------                                                                                                                                  
+9/15/2026 4:15:41 AM              4 Information      sshd: Disconnected from 192.168.1.7 port 59312                                                                                           
+9/15/2026 4:15:41 AM              4 Information      sshd: Received disconnect from 192.168.1.7 port 59312:11: disconnected by user                                                           
+9/15/2026 4:15:40 AM              4 Information      sshd: Accepted publickey for user from 192.168.1.7 port 59312 ssh2: ED25519 SHA256:F9V+/5sUGoBYIDPw4e2Awu+I95++EQ1BoEkCTO4MVwY           
 9/15/2026 4:14:04 AM              4 Information      sshd: Disconnected from 192.168.1.7 port 57330                                                                                           
 9/15/2026 4:14:04 AM              4 Information      sshd: Received disconnect from 192.168.1.7 port 57330:11: disconnected by user                                                           
 9/15/2026 4:14:03 AM              4 Information      sshd: Accepted publickey for user from 192.168.1.7 port 57330 ssh2: ED25519 SHA256:F9V+/5sUGoBYIDPw4e2Awu+I95++EQ1BoEkCTO4MVwY           
@@ -201,8 +204,5 @@ TimeCreated                      Id LevelDisplayName Message
 9/14/2026 9:04:09 PM              4 Information      sshd: Received disconnect from 100.127.153.2 port 46208:11: disconnected by user                                                         
 9/14/2026 9:04:09 PM              4 Information      sshd: Accepted publickey for user from 100.127.153.2 port 46208 ssh2: ED25519 SHA256:wm02lqMAp6B514REjfc1OxYF6vdrfT+c8EVJ6hENDiQ         
 9/14/2026 9:03:35 PM              4 Information      sshd: Disconnected from 100.127.153.2 port 33846                                                                                         
-9/14/2026 9:03:35 PM              4 Information      sshd: Received disconnect from 100.127.153.2 port 33846:11: disconnected by user                                                         
-9/14/2026 9:03:35 PM              4 Information      sshd: Accepted publickey for user from 100.127.153.2 port 33846 ssh2: ED25519 SHA256:wm02lqMAp6B514REjfc1OxYF6vdrfT+c8EVJ6hENDiQ         
-9/14/2026 9:03:24 PM              4 Information      sshd: Disconnected from 100.127.153.2 port 37758                                                                                         
 
 
