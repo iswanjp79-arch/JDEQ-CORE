@@ -15,7 +15,13 @@
     "test_sprint4_activation.py",
     "test_e2e.py"
   ],
-  "runtime_state": "NOT_ACTIVE",
-  "deployment_state": "LOCKED",
+  "runtime_deployment_state": "LOCKED",
+  "runtime_operational_state": "NOT_ACTIVE",
+  "activation_gate_result": "VERIFIED_OPERATION",
+  "state_clarification": {
+    "runtime_deployment_state": "Status operasional sistem secara aktual. LOCKED berarti runtime belum dinyalakan.",
+    "runtime_operational_state": "Status jalannya proses. NOT_ACTIVE berarti tidak ada eksekusi berjalan.",
+    "activation_gate_result": "Hasil uji gerbang aktivasi (Sprint 4). VERIFIED_OPERATION berarti jalur aktivasi sudah lolos uji end-to-end, TAPI saklar utama tetap belum dibuka oleh L0."
+  },
   "authority": "L0"
 }
