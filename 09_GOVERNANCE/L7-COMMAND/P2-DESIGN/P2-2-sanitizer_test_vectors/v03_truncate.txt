@@ -1,0 +1,10 @@
+﻿V03 - payload dengan detail melebihi batas
+
+INPUT:
+  alert_id=ALRT-003
+  severity=WARN
+  source=PC-i5
+  title="Long message"
+  detail=<3000 karakter>
+
+HARAPAN: ACCEPTED, detail dipotong ke 2000 karakter, catat TRUNCATED

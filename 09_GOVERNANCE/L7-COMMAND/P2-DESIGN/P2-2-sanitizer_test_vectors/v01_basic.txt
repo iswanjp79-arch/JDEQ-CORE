@@ -1,0 +1,10 @@
+﻿V01 - payload dasar (valid)
+
+INPUT:
+  alert_id=ALRT-001
+  severity=WARN
+  source=PC-i5
+  title="Disk usage 85%"
+  detail="Runtime state approaching threshold"
+
+HARAPAN: ACCEPTED, hash tercatat, tidak ada modifikasi

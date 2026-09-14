@@ -1,0 +1,22 @@
+﻿{
+  "manifest_id": "P2-1-ROTATION-MANIFEST",
+  "version": "1.0",
+  "timestamp": "2026-09-14T13:45:00+07:00",
+  "policy_file": "P2-1-log_rotation_policy.md",
+  "entries": [],
+  "schema": {
+    "entry": {
+      "rotated_file": "string (nama arsip)",
+      "original_size_bytes": "integer",
+      "sha256": "hex string",
+      "rotated_at": "ISO-8601",
+      "trigger": "SCHEDULED | SIZE_THRESHOLD | MANUAL"
+    }
+  },
+  "constraints": {
+    "no_recursion": true,
+    "atomic_rename_required": true,
+    "hash_after_rename": true,
+    "single_audit_entry_per_rotation": true
+  }
+}

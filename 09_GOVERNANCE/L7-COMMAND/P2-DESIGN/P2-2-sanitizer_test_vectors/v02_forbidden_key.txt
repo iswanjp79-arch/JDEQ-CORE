@@ -1,0 +1,11 @@
+﻿V02 - payload berisi kunci terlarang
+
+INPUT:
+  alert_id=ALRT-002
+  severity=ERROR
+  source=PC-i5
+  title="Login attempt"
+  detail="Failed login"
+  password="hunter2"
+
+HARAPAN: REJECTED, kunci password dihapus/di-strip, log sekali

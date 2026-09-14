@@ -1,0 +1,21 @@
+﻿{
+  "config_id": "P2-2-METADATA-SANITIZER",
+  "version": "1.0",
+  "rules": {
+    "strip_keys": ["password","token","secret","api_key","private_key"],
+    "truncate_long": { "detail": 2000, "title": 120 },
+    "forbid_char": ["\\u0000"],
+    "whitelist_keys": ["alert_id","severity","source","timestamp","title","detail","command_id","nonce","signature","correlation_id"],
+    "require_utf8": true,
+    "reject_nested_depth": 4
+  },
+  "checksum": {
+    "algorithm": "sha256",
+    "store_alongside": true,
+    "verify_before_ledger": true
+  },
+  "actions": {
+    "on_violation": "REJECT",
+    "log_once": true
+  }
+}

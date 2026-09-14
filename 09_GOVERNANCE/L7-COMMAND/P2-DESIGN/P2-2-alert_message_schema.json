@@ -1,0 +1,20 @@
+﻿{
+  "schema_id": "P2-2-ALERT-MESSAGE",
+  "version": "1.0",
+  "required": ["alert_id","severity","source","timestamp","title","detail","command_id","nonce","signature"],
+  "properties": {
+    "alert_id":     { "type": "string", "min_length": 8 },
+    "severity":     { "enum": ["INFO","WARN","ERROR","CRITICAL"] },
+    "source":       { "type": "string" },
+    "timestamp":    { "type": "string", "format": "ISO-8601" },
+    "title":        { "type": "string", "max_length": 120 },
+    "detail":       { "type": "string", "max_length": 2000 },
+    "command_id":   { "type": "string" },
+    "nonce":        { "type": "string", "min_length": 8 },
+    "signature":    { "type": "string" },
+    "correlation_id": { "type": "string" }
+  },
+  "max_size_bytes": 4096,
+  "dedup_window_seconds": 300,
+  "rate_limit_per_minute": 30
+}

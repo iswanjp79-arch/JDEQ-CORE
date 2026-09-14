@@ -1,0 +1,11 @@
+﻿P2-1 UNIT TEST VECTORS
+
+V01 | input: file kosong | harapan: NOOP_NOT_DUE
+V02 | input: file 1MB, age 1 jam | harapan: NOOP_NOT_DUE
+V03 | input: file 1MB, age 25 jam | harapan: OK (rotasi)
+V04 | input: file 60MB, age 1 jam | harapan: OK (SIZE_THRESHOLD)
+V05 | input: file 60MB, lock dipegang proses lain | harapan: BLOCKED_LOCKED
+V06 | input: rename target sudah ada | harapan: BLOCKED_RENAME_FAILED
+V07 | input: hash arsip mismatch | harapan: INTEGRITY_CONFLICT + residual risk
+V08 | input: panggilan kedua 1 detik setelah rotasi sukses | harapan: NOOP_NOT_DUE
+
