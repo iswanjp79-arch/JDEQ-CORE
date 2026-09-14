@@ -1,0 +1,9 @@
+{
+  "timestamp":"'"$TIMESTAMP"'",
+  "source":"test-harness",
+  "event_id":"test-'"${SEVERITY,,}"'-'"$(date +%s)"'",
+  "severity":"'"$SEVERITY"'",
+  "message":"Test alert '"$SEVERITY"' from test harness",
+  "evidence_refs":["/08_EVIDENCE/alert/tests/test-'"${SEVERITY,,}"'.json"],
+  "runbook_url":"https://docs.internal.example/runbooks/'"${SEVERITY,,}"'.md"
+}
