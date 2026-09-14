@@ -1,21 +1,36 @@
-import time
+import json, os, time
 
 class CircuitBreaker:
-    def __init__(self, max_failures=3, window_seconds=60):
+    def __init__(self, path, max_failures=3, window_seconds=60):
+        self.path = path
         self.max = max_failures
         self.window = window_seconds
-        self.events = []
 
-    def _prune(self, now):
-        self.events = [t for t in self.events if now - t < self.window]
+    def _load(self):
+        if not os.path.exists(self.path):
+            return []
+        try:
+            with open(self.path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+                return data.get("events", [])
+        except Exception:
+            return []
 
-    def record_failure(self):
-        now = time.time()
-        self._prune(now)
-        self.events.append(now)
-        return len(self.events) >= self.max
+    def _save(self, events):
+        os.makedirs(os.path.dirname(self.path), exist_ok=True)
+        with open(self.path, "w", encoding="utf-8") as f:
+            json.dump({"events": events}, f)
+
+    def _prune(self, events, now):
+        return [t for t in events if now - t < self.window]
 
     def is_open(self):
         now = time.time()
-        self._prune(now)
-        return len(self.events) >= self.max
+        return len(self._prune(self._load(), now)) >= self.max
+
+    def record_failure(self):
+        now = time.time()
+        events = self._prune(self._load(), now)
+        events.append(now)
+        self._save(events)
+        return len(events) >= self.max
