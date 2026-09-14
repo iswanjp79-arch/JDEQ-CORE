@@ -1,5 +1,27 @@
 {
   "state_machine_version": "3",
-  "states": ["PROPOSED","AUTHORIZED","ACCEPTED","EXECUTING","SUCCEEDED","VERIFICATION_FAILED","VERIFIED","FAILED","RECOVERING","RECOVERED","ESCALATED","REJECTED","BLOCKED"],
-  "transitions_implicit": false
+  "transitions_implicit": false,
+  "states": [
+    "PROPOSED","AUTHORIZED","ACCEPTED","EXECUTING",
+    "SUCCEEDED","VERIFICATION_FAILED","VERIFIED",
+    "FAILED","RECOVERING","RECOVERED","ESCALATED",
+    "REJECTED","BLOCKED"
+  ],
+  "transitions": {
+    "PROPOSED":            ["AUTHORIZED","REJECTED","BLOCKED"],
+    "AUTHORIZED":          ["ACCEPTED","REJECTED","BLOCKED"],
+    "ACCEPTED":            ["EXECUTING","REJECTED","BLOCKED"],
+    "EXECUTING":           ["SUCCEEDED","FAILED","BLOCKED"],
+    "SUCCEEDED":           ["VERIFIED","VERIFICATION_FAILED"],
+    "VERIFICATION_FAILED": ["ESCALATED"],
+    "VERIFIED":            [],
+    "FAILED":              ["RECOVERING","ESCALATED","BLOCKED"],
+    "RECOVERING":          ["RECOVERED","ESCALATED","BLOCKED"],
+    "RECOVERED":           [],
+    "ESCALATED":           [],
+    "REJECTED":            [],
+    "BLOCKED":             []
+  },
+  "terminal_states": ["VERIFIED","RECOVERED","ESCALATED","REJECTED","BLOCKED"],
+  "notes": "Peta transisi ini identik dengan TRansitions di l7_state_machine.py."
 }

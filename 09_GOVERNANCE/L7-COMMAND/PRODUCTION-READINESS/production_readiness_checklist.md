@@ -11,6 +11,11 @@
 - [x] Monitoring requirements defined
 - [x] Audit retention defined
 - [x] Incident escalation defined
+- [x] State machine transitions documented (P1)
+- [x] Rollback verified by test_rollback.py (P1)
+- [x] Concurrency policy documented (P1)
+- [x] Backup/restore procedure documented (P1)
+- [x] SLO / SLA defined (P1)
 - [ ] Independent external audit (AG-004) - PENDING
 - [ ] L0 production approval - PENDING
 
