@@ -1,0 +1,11 @@
+{
+  "l7_baseline": "35794f7",
+  "runtime_tests": "rt_harness_*",
+  "e2e": "sprint5_e2e_*",
+  "activation": "sprint4_activation_*",
+  "rollback": "rollback_evidence_20260914_1425.json",
+  "cb_persistence": "sprint2_6_persistence_*",
+  "safety": "sprint2_smoke_*",
+  "wiring": "sprint2_5_wiring_*",
+  "all_path": "08_EVIDENCE/L7-OPERATIONAL/"
+}
