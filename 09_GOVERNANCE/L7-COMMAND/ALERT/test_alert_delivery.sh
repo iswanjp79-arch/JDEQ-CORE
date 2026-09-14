@@ -1,10 +1,10 @@
-#!/usr/bin/env bash
+﻿#!/usr/bin/env bash
 # test_alert_delivery.sh
 set -euo pipefail
 SEVERITY=${1:-CRITICAL}
 TRANSPORT=${2:-all}
 TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
-PAYLOAD=$(cat <<'EOF'
+PAYLOAD=$(cat <<EOF
 {
   "timestamp":"'"$TIMESTAMP"'",
   "source":"test-harness",
