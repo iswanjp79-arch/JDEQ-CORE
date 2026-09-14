@@ -1,0 +1,9 @@
+{
+  "module": "P2-2",
+  "name": "alert_channel",
+  "design_ref": "P2-DESIGN/P2-2-alert_channel_spec.md",
+  "status": "REGISTERED",
+  "execution": "NOT_STARTED",
+  "transport": "GOVERNED_CHANNEL",
+  "tailscale": "OPTIONAL_AND_GOVERNED"
+}

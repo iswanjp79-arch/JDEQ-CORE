@@ -1,0 +1,7 @@
+{
+  "module": "P2-1",
+  "name": "log_rotation",
+  "design_ref": "P2-DESIGN/P2-1-log_rotation_policy.md",
+  "status": "REGISTERED",
+  "execution": "NOT_STARTED"
+}
