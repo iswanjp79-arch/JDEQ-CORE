@@ -1,0 +1,21 @@
+# MICO-JDEQ · Modul Master Mutu (A.a - A.e)
+modules:
+  - id: A.a
+    name: "Manajemen Operasional & Pengambilan Keputusan"
+    purpose: "Alur perintah, wewenang, jalur keputusan"
+
+  - id: A.b
+    name: "Sistem Manual"
+    purpose: "Panduan lengkap cara kerja sistem"
+
+  - id: A.c
+    name: "Standar Prosedur"
+    purpose: "Langkah baku berulang untuk setiap tugas rutin"
+
+  - id: A.d
+    name: "Instruksi Kerja"
+    purpose: "Petunjuk rinci langkah demi langkah"
+
+  - id: A.e
+    name: "Standar Format"
+    purpose: "Cara penulisan, penamaan, struktur berkas yang baku"

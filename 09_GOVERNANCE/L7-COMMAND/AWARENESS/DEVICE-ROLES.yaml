@@ -1,25 +1,56 @@
+# MICO-JDEQ · Device Roles (7 Devices)
+# Sumber: Task Card MICO-L7-IOT-AWARENESS-001
+# Setiap perangkat menjalankan L1-L7 lengkap dan mandiri.
+
 devices:
   - id: vivo-y28
     layer_focus: L7
-    role: "Pusat komando & pengarah tugas"
+    role: "Pusat komando & pengarah tugas (L0 Interaction & Task Dispatcher)"
     runs_all_layers: true
+
   - id: pc-i5
     layer_focus: L6
-    role: "Pengolah beban berat"
+    role: "Pengolah beban berat (Heavy Processing)"
     runs_all_layers: true
+    note: "Application Layer banyak aplikasi pengguna sesuai kebutuhan"
+
   - id: z83
     layer_focus: L3
-    role: "Penjaga brankas & jaga malam 24/7"
+    role: "Memory Vault & Daemon 24 Jam (Edge Computing)"
     runs_all_layers: true
+    edge_computing:
+      - "Pemrosesan dekat sumber data"
+      - "Pengurangan latensi"
+      - "Administrasi beban Cloud"
+      - "Peningkatan efisiensi"
+
   - id: infinix
     layer_focus: L4
-    role: "Penyangga & pengumpul data"
+    role: "Memory Vault & Daemon 24 Jam (Middleware/Buffer)"
     runs_all_layers: true
+
   - id: hp-mini
     layer_focus: [L4, storage]
-    role: "Gudang data & penampung"
+    role: "Data Akomodasi & Management Storage Inti"
     runs_all_layers: true
+    storage:
+      - "Data Lake & Buffer storage sebelum sistem analitik"
+      - "Blueprint: Beras Nawang Wulan"
+      - "Versi Local + Versi Cloud"
+
+  - id: apple-tablet
+    layer_focus: L2
+    role: "Connectivity (Pengatur komunikasi, Protokol, Gateway)"
+    runs_all_layers: true
+    status: "RUSAK"
+    note: "Fokus L2 (rusak)"
+
   - id: aspire-one
     layer_focus: L7
-    role: "Mitra kerja & lingkungan pengembangan"
+    role: "Kolaborasi & Sistem Pemrosesan (Dev Environment)"
     runs_all_layers: true
+    stack:
+      - "Model IoT, Bisp, NATS, Docker, Kubernetes, Peladen"
+      - "AI Model Local"
+      - "AI Model Local → Cloud (RAM/GPU/Automation)"
+      - "AI Model Platform"

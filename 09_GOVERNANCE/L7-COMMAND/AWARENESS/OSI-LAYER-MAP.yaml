@@ -1,0 +1,47 @@
+# MICO-JDEQ · OSI Layer Map (7 Layers)
+# Setiap perangkat menjalankan 7 lapisan lengkap.
+
+layers:
+  L1_physical:
+    name: "Physical"
+    function: "Hardware CPU/NPU, RAM, storage, baterai, interface fisik"
+
+  L2_network:
+    name: "Network"
+    function: "Socket IP, Wi-Fi Interface, protokol komunikasi"
+
+  L3_kernel_os:
+    name: "Kernel/OS"
+    function: "POSIX Android/Linux Kernel (Jiwa sistem)"
+
+  L4_middleware:
+    name: "Middleware/Daemon"
+    function: "Service mico-daemon berjalan di latar (background)"
+
+  L5_agent_role:
+    name: "Agent Role"
+    function: "Aturan/Protokol Master Orchestrator Agent"
+
+  L6_cognitive:
+    name: "Cognitive/Model"
+    function: "Model LLM Lokal (Qwen/Phi) di RAM"
+
+  L7_application:
+    name: "Application/CLI"
+    function: "Interface Terminal / Command & Control"
+
+# Contoh nyata: penerapan pada Vivo Y28
+example_vivo_y28:
+  L1: "CPU/NPU, RAM 8GB, Baterai Vivo Y28"
+  L2: "Socket IP 10.0.0.3, Wi-Fi Interface"
+  L3: "POSIX Android Linux Kernel"
+  L4: "Service mico-daemon di Termux (background)"
+  L5: "Protokol Master Orchestrator Agent"
+  L6: "Model LLM Lokal (Qwen/Phi) di RAM"
+  L7: "Interface Terminal (tempat L0 mengetik komando)"
+
+# Penyatuan
+integration:
+  principle: "Penyatuan hanya di L7"
+  below_L7: "Setiap perangkat mandiri (L1-L6 tetap lokal)"
+  at_L7: "4+ perangkat disambung menjadi satu entitas komando MICO-JDEQ CONSIGNES AWARENESS"
