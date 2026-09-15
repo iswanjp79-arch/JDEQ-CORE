@@ -1,0 +1,34 @@
+MICO-JDEQ — VIVO V2352 ADB PUSH EVIDENCE
+=========================================
+TASK_ID   : MICO-P2-VIVO-ADB-PUSH-001
+TIMESTAMP : 2026-09-16 01:36:00 +07:00
+HOST      : KAPAL-INDUK
+SHELL     : PowerShell 7.6.6
+DEVICE    : V2352 (vivo, Android 16, SDK 36)
+
+TRANSPORT : ADB USB (bukan kernel injection)
+CHANNEL   : /sdcard/MICO_SSOT/ (public storage)
+METHOD    : adb push + sha256sum verify
+
+DEVICE FILE LISTING:
+total 36 -rw-rw---- 1 u0_a0 media_rw 867 2026-09-15 22:59 README.md -rw-rw---- 1 u0_a0 media_rw 748 2026-09-15 22:59 mico-backup.ps1 -rw-rw---- 1 u0_a0 media_rw 566 2026-09-15 22:59 mico-backup.sh -rw-rw---- 1 u0_a0 media_rw 288 2026-09-15 22:59 mico-install-hooks.ps1 -rw-rw---- 1 u0_a0 media_rw 366 2026-09-15 22:59 mico-install-hooks.sh -rw-rw---- 1 u0_a0 media_rw 830 2026-09-15 22:59 mico-status.ps1 -rw-rw---- 1 u0_a0 media_rw 796 2026-09-15 22:59 mico-status.sh -rw-rw---- 1 u0_a0 media_rw 837 2026-09-15 22:59 mico-verify.ps1 -rw-rw---- 1 u0_a0 media_rw 906 2026-09-15 22:59 mico-verify.sh
+
+DEVICE HASH (sha256sum):
+8686b34261da2eadb6bf53574808df386b8903a5b1ab3804a939e636bce70208  mico-backup.sh 8943fe24d2db466f5d66f449bdac1816f7cd517e11b64d0a5e33778e85b2f885  mico-install-hooks.sh af0245e8704ab67c353bf5afe54ea1e11b807376b1d289d2efae709390cab7de  mico-status.sh d6b161acd478e09d1f2e4e3c3b8d734d32a8d0b7b27c8381bc024b4385d05d04  mico-verify.sh 2f0c01d12b2d89dcc1870802c8c05c438e5ae6ad614bc61466e23c19d42b8d4c  mico-backup.ps1 690e3d22ef952a6b5e54b345c2c3a432c5ea659e7cc90be993bb7bb6c2a901f5  mico-install-hooks.ps1 64f1c8debd20834e5d9e8e13261b2173ad96f79f4003a5cdca589e89a263b99e  mico-status.ps1 0c15327d468db5c2bb717c22e6a5283c7703da537e8f05c01841bc0ed96489fb  mico-verify.ps1 8a9804c08e023bcb4eb845e1ef26cb031f91535a272e84f6cf620cc6fc66dd36  README.md
+
+CATATAN:
+- ADB = user-space transport, bukan kernel access
+- run-as com.termux = TIDAK DIPAKAI (tidak debuggable)
+- Private app memory = TIDAK DISENTUH
+- Kernel/root/Xposed/Frida = TIDAK DIPASANG
+- Provider AI session = TIDAK DIPAKSA
+
+YANG TERBUKTI:
+- ADB aktif dan bisa tulis ke /sdcard
+- Artefak portable berhasil di-push
+- Hash di device dapat diverifikasi dari PC-i5
+
+YANG BELUM TERBUKTI:
+- Akses ke C:\Users\USER Termux (butuh aksi manual di HP)
+- Integrasi API resmi provider
+- Continuity state MICO-owned
