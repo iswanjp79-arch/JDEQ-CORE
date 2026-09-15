@@ -1,13 +1,22 @@
 #!/bin/sh
-# MICO-JDEQ DOLA Guard (commit-msg)
+# MICO-JDEQ Terminology Guard v2 (commit-msg)
+# Baca istilah deprecated dari file config, bukan hardcoded string search.
+# DOLA = canonical (2026-09-15). Lihat ADR-005-REV1 §5.
+
 COMMIT_MSG_FILE="$1"
 COMMIT_MSG=$(cat "$COMMIT_MSG_FILE" 2>/dev/null)
+DEPRECATED_FILE="09_GOVERNANCE/TOOLS/HOOKS/deprecated-terms.txt"
 
 # Whitelist file (skip check)
 WHITELIST="DECREE/|AGENT_ERRORS|AUDIT-ANCHOR|ANCHOR-MANIFEST|TOOLS/HOOKS|exception-log"
 
-# Jika commit message ada DOLA_LEGACY_OK → lolos
-if echo "$COMMIT_MSG" | grep -q "DOLA_LEGACY_OK"; then
+# Jika commit message ada LEGACY_OK → lolos
+if echo "$COMMIT_MSG" | grep -q "LEGACY_OK"; then
+    exit 0
+fi
+
+# Jika file config tidak ada → tidak ada istilah deprecated → lolos
+if [ ! -f "$DEPRECATED_FILE" ]; then
     exit 0
 fi
 
@@ -19,12 +28,16 @@ for f in $STAGED; do
         *) continue ;;
     esac
     echo "$f" | grep -qE "$WHITELIST" && continue
-    if git diff --cached -- "$f" 2>/dev/null | grep -q "^+.*\bDOLA\b"; then
-        echo "[DOLA-GUARD] File '$f' menyebut 'DOLA' (deprecated 2026-09-12)."
-        echo "  Pengganti resmi: MPG."
-        echo "  Tambahkan 'DOLA_LEGACY_OK' di commit message jika memang legacy."
-        exit 1
-    fi
+
+    # Loop istilah deprecated dari config
+    while IFS= read -r term; do
+        case "$term" in ""|\#*) continue ;; esac
+        if git diff --cached -- "$f" 2>/dev/null | grep -q "^+.*\b$term\b"; then
+            echo "[TERM-GUARD] File '$f' menyebut istilah deprecated: '$term'"
+            echo "  Tambahkan 'LEGACY_OK' di commit message jika memang disengaja."
+            exit 1
+        fi
+    done < "$DEPRECATED_FILE"
 done
 
 exit 0
