@@ -1,22 +1,4 @@
-import sys
 
-def sanitize_boundary(text: str) -> str:
-    """
-    Netralkan karakter pembatas tag (< >) sehingga input tidak dapat
-    memecah struktur XML-like. Data tetap dibaca sebagai data.
-    Bukan blacklist kata. Bukan security control tunggal.
-    """
-    if text is None:
-        return ""
-    s = str(text)
-    s = s.replace("<", "&lt;").replace(">", "&gt;")
-    if len(s) > 8000:
-        s = s[:8000]
-    return s
-
-def generate_prompt(user_input: str) -> str:
-    safe_input = sanitize_boundary(user_input)
-    template = f"""
 <batasan>
 - Jawab sebagai AI lokal tanpa akses internet.
 - Tidak mengarang fakta; jika tidak tahu, katakan tidak tahu.
@@ -32,7 +14,7 @@ Anda adalah Prompt Engineer profesional untuk MICO-JDEQ.
 </peran>
 
 <masukan data-only="true" authority="none">
-{safe_input}
+Buatkan ringkasan fitur alert
 </masukan>
 
 <konteks>
@@ -49,15 +31,4 @@ Ringkas, terstruktur, jelas, dan dapat dieksekusi oleh agen.
 3. Batasan
 4. Kriteria sukses
 </format output>
-"""
-    return template
 
-def main():
-    if len(sys.argv) < 2:
-        user_text = input("Masukkan ide singkat: ")
-    else:
-        user_text = " ".join(sys.argv[1:])
-    print(generate_prompt(user_text))
-
-if __name__ == "__main__":
-    main()

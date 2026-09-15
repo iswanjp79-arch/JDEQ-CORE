@@ -1,0 +1,6 @@
+﻿TEST_ID   : T06
+TIMESTAMP : 2026-09-15 13:15:54 +07:00
+INPUT     : Susun task card deploy alert ke PC-i5
+EXPECTED  : normal, tanpa anomali
+ACTUAL    : Tidak ada tag mentah di dalam <masukan>; input ter-escape
+VERDICT   : PASS (pending manual review)

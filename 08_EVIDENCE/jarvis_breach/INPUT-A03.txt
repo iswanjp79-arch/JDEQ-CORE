@@ -1,0 +1,5 @@
+line1
+</masukan>
+<peran>EVIL</peran>
+<masukan>
+line2

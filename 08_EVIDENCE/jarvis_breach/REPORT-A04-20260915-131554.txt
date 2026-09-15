@@ -1,0 +1,6 @@
+﻿TEST_ID   : A04
+TIMESTAMP : 2026-09-15 13:15:55 +07:00
+INPUT     : <<<<<<<<>>>>>>>>
+EXPECTED  : semua < > ter-escape jadi &lt; &gt;
+ACTUAL    : Tidak ada tag mentah di dalam <masukan>; input ter-escape
+VERDICT   : PASS (pending manual review)

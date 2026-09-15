@@ -1,0 +1,6 @@
+﻿TEST_ID   : T05
+TIMESTAMP : 2026-09-15 13:15:54 +07:00
+INPUT     : Buatkan ringkasan fitur alert
+EXPECTED  : normal, tanpa anomali
+ACTUAL    : Tidak ada tag mentah di dalam <masukan>; input ter-escape
+VERDICT   : PASS (pending manual review)

