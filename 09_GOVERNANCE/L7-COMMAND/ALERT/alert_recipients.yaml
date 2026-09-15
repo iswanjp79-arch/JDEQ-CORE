@@ -1,14 +1,5 @@
-﻿# alert_recipients.yaml
+﻿# MICO-JDEQ - Alert Recipients
 recipients:
-  oncall:
-    email: "oncall@example.com"
-    pagerduty_service_id: "PAGERDUTY_SERVICE_ID_PLACEHOLDER"
-  slack:
-    channel: "#ops-alerts"
-    webhook_url_secret: "vault:secret/alert/slack_webhook"
-  incident_db:
-    endpoint: "https://incident-db.internal.example/api/v1/alerts"
-    api_key_secret: "vault:secret/alert/incident_db_api_key"
-  observability:
-    syslog_tls_host: "obs-collector.internal.example"
-    syslog_tls_port: 6514
+  - {name: "L0", type: "email", endpoint: "rinawatimadina@gmail.com"}
+  - {name: "DOLA", type: "internal", endpoint: "dola@mico.local"}
+  - {name: "DeepSeek-AG003", type: "internal", endpoint: "ag003@mico.local"}

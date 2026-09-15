@@ -1,8 +1,4 @@
-﻿# alert_rate_limit.yaml
-rate_limits:
-  default:
-    max_per_minute: 10
-    burst: 20
-  per_source:
-    pipeline: { max_per_minute: 5, burst: 10 }
-    agent: { max_per_minute: 15, burst: 30 }
+﻿rate_limit:
+  window_seconds: 60
+  max_per_window: 10
+  burst: 3
