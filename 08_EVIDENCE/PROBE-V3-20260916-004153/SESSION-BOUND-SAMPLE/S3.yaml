@@ -1,0 +1,9 @@
+MICO-JDEQ:
+  osi_7_layer:
+    L1: "Physical — hardware, sensor, aktuator"
+    L2: "Network — konektivitas, gateway"
+    L3: "Kernel — OS, manajemen HW"
+    L4: "Middleware — daemon, buffer"
+    L5: "Agent — peran, protokol"
+    L6: "Cognitive — LLM, analitik"
+    L7: "Application — UI, orkestrasi"

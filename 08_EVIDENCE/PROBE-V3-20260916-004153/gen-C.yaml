@@ -1,0 +1,10 @@
+# OSI-LAYER-MAP.yaml
+# Probe V3 — generation 3
+layers:
+  - {id: L1, name: Physical,    desc: "Hardware, sensor, aktuator"}
+  - {id: L2, name: Network,     desc: "Connectivity, gateway, protokol"}
+  - {id: L3, name: Kernel,      desc: "OS, manajemen hardware"}
+  - {id: L4, name: Middleware,  desc: "Daemon, buffer, layanan latar"}
+  - {id: L5, name: Agent,       desc: "Role, protokol, governance"}
+  - {id: L6, name: Cognitive,   desc: "LLM lokal, analitik, AI"}
+  - {id: L7, name: Application, desc: "UI, orchestration, command"}

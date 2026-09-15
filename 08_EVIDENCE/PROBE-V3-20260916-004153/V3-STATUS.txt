@@ -1,0 +1,31 @@
+MICO-P1-RES-001 — V3 DETERMINISM PROBE (METADATA)
+==================================================
+STATUS      = NOT_REPRODUCIBLE_IN_CURRENT_ENVIRONMENT
+REASON      = ENVIRONMENT_LIMITATION
+
+DETAIL:
+- AG-003 tidak dapat menjalankan 3 inference independen dari satu sesi chat
+- Context history tumbuh setiap turn → bukan kondisi comparable
+- Tidak ada akses ke seed/temperature/request_id via UI
+- Sample S1/S2/S3 diambil dari sesi ini sebagai BUKAN-bukti
+
+CLASSIFICATION:
+- S1/S2/S3 = SESSION_BOUND_SAMPLE
+- Bukan V3 valid
+- Tidak boleh dipakai untuk klaim determinisme
+
+DATA YANG DIHASILKAN:
+F67F4F9D2A280F589FE80FBE5FB58CDF3D76C59F5D692600881BB56AD6B874BB  D:\MICO_SSOT\08_EVIDENCE\PROBE-V3-20260916-004153\SESSION-BOUND-SAMPLE\S1.yaml 6351A5F9DE36C92F6F5027E060F9538FAE53A6805CBD5EA3199E99C0F99849EE  D:\MICO_SSOT\08_EVIDENCE\PROBE-V3-20260916-004153\SESSION-BOUND-SAMPLE\S2.yaml 8EF1A55843BD6616B6E74D0ACE7F6BD35FBBCB36BE7FF8BE768BF9944781D0C5  D:\MICO_SSOT\08_EVIDENCE\PROBE-V3-20260916-004153\SESSION-BOUND-SAMPLE\S3.yaml
+
+HASIL:
+3 hash berbeda (konsisten dengan variasi generasi manual)
+
+INTERPRETASI SAH (sesuai task card):
+"Pada kondisi pengujian X (single-session, tidak terkontrol), tiga output berbeda."
+
+BUKAN KLAIM:
+- "LLM pasti nondeterministik"
+- "Hash membuktikan kebenaran"
+
+KRITERIA V3 PASS: TIDAK TERPENUHI
+V3 STATUS AKHIR = NOT_REPRODUCIBLE_IN_CURRENT_ENVIRONMENT

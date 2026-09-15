@@ -1,0 +1,16 @@
+# OSI Layer - MICO JDEQ framework
+layers:
+  L1:
+    name: Physical / Device
+  L2:
+    name: Network / Gateway
+  L3:
+    name: Kernel / OS
+  L4:
+    name: Middleware / Daemon
+  L5:
+    name: Agent Role
+  L6:
+    name: Cognitive / Model
+  L7:
+    name: Application / CLI

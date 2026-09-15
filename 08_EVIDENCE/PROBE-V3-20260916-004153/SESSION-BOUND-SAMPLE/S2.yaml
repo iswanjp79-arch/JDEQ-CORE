@@ -1,0 +1,22 @@
+layer_map:
+  L1:
+    name: Physical / Device
+    desc: Hardware, sensor, aktuator
+  L2:
+    name: Network / Gateway
+    desc: Connectivity, protokol, transport
+  L3:
+    name: Kernel / OS
+    desc: Manajemen perangkat keras
+  L4:
+    name: Middleware / Daemon
+    desc: Buffer, layanan latar
+  L5:
+    name: Agent Role
+    desc: Protokol, governance
+  L6:
+    name: Cognitive / Model
+    desc: LLM, analitik
+  L7:
+    name: Application / CLI
+    desc: Command, orchestration

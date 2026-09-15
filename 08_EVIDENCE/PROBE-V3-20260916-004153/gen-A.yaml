@@ -1,0 +1,9 @@
+# MICO-JDEQ OSI Layer Map
+layers:
+  L1: Physical
+  L2: Network
+  L3: Kernel
+  L4: Middleware
+  L5: Agent
+  L6: Cognitive
+  L7: Application

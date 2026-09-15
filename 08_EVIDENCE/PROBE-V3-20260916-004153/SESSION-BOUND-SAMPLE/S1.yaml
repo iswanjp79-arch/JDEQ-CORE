@@ -1,0 +1,22 @@
+layers:
+  - id: L1
+    name: Physical
+    scope: hardware, sensor, aktuator
+  - id: L2
+    name: Network
+    scope: konektivitas, gateway, protokol
+  - id: L3
+    name: Kernel
+    scope: OS, manajemen perangkat keras
+  - id: L4
+    name: Middleware
+    scope: daemon, buffer, layanan latar
+  - id: L5
+    name: Agent
+    scope: peran, protokol, tata kelola
+  - id: L6
+    name: Cognitive
+    scope: LLM lokal, analitik, AI
+  - id: L7
+    name: Application
+    scope: UI, orkestrasi, perintah
