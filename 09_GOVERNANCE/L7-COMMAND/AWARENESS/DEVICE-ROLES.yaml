@@ -1,0 +1,25 @@
+devices:
+  - id: vivo-y28
+    layer_focus: L7
+    role: "Pusat komando & pengarah tugas"
+    runs_all_layers: true
+  - id: pc-i5
+    layer_focus: L6
+    role: "Pengolah beban berat"
+    runs_all_layers: true
+  - id: z83
+    layer_focus: L3
+    role: "Penjaga brankas & jaga malam 24/7"
+    runs_all_layers: true
+  - id: infinix
+    layer_focus: L4
+    role: "Penyangga & pengumpul data"
+    runs_all_layers: true
+  - id: hp-mini
+    layer_focus: [L4, storage]
+    role: "Gudang data & penampung"
+    runs_all_layers: true
+  - id: aspire-one
+    layer_focus: L7
+    role: "Mitra kerja & lingkungan pengembangan"
+    runs_all_layers: true
