@@ -1,4 +1,4 @@
-﻿*.csv
+*.csv
 *.log
 *.tmp
 mico_embed.py
@@ -42,3 +42,4 @@ L6-modules/**/__pycache__/
 
 # Backup & archive lokal (jangan commit)
 12_BACKUP/
+99_ARCHIVE/
