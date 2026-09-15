@@ -1,0 +1,19 @@
+MICO-JDEQ EXCEPTION PRE-LOG (ISO/OHSAS Framework)
+=================================================
+Timestamp : 2026-09-15 23:32:12 +07:00
+Reference : MICO-P1-EXECUTE-MASTER-PLAN-001
+Reason    : Revisi 9 draft sesuai audit
+Expected  : Hook PASS (batch include ADR-*)
+Fallback  : Exception baku + --no-verify jika hook reject
+Frameworks: ISO 9001 §8.7 · ISO 45001 §8.2 · ISO 27001 A.12.1.4 · ISO 19011
+=================================================
+
+--- POST-COMMIT UPDATE ---
+Timestamp   : 2026-09-15 23:33:49 +07:00
+Hook result : REJECT — file ADR-005-REV1.md menyebut 'DOLA'
+Exit code   : 1
+Resolution  : Pakai jalur exception resmi hook: 'DOLA_LEGACY_OK' di commit message
+Justification: ADR-005-REV1 MENDOKUMENTASIKAN masalah DOLA vs MPG — 'DOLA' wajib disebut
+Framework   : ISO 9001 §8.7 (nonconforming output — boleh, harus tercatat + koreksi)
+Bukan       : --no-verify (bypass telanjang)
+Otorisasi   : L0 (a.n. perintah Task Card MICO-P1-EXECUTE-MASTER-PLAN-001)

@@ -1,0 +1,30 @@
+#!/bin/sh
+# MICO-JDEQ DOLA Guard (commit-msg)
+COMMIT_MSG_FILE="$1"
+COMMIT_MSG=$(cat "$COMMIT_MSG_FILE" 2>/dev/null)
+
+# Whitelist file (skip check)
+WHITELIST="DECREE/|AGENT_ERRORS|AUDIT-ANCHOR|ANCHOR-MANIFEST|TOOLS/HOOKS|exception-log"
+
+# Jika commit message ada DOLA_LEGACY_OK → lolos
+if echo "$COMMIT_MSG" | grep -q "DOLA_LEGACY_OK"; then
+    exit 0
+fi
+
+# Cek file yang ditambahkan
+STAGED=$(git diff --cached --name-only)
+for f in $STAGED; do
+    case "$f" in
+        *.md|*.yml|*.yaml|*.ps1|*.sh) ;;
+        *) continue ;;
+    esac
+    echo "$f" | grep -qE "$WHITELIST" && continue
+    if git diff --cached -- "$f" 2>/dev/null | grep -q "^+.*\bDOLA\b"; then
+        echo "[DOLA-GUARD] File '$f' menyebut 'DOLA' (deprecated 2026-09-12)."
+        echo "  Pengganti resmi: MPG."
+        echo "  Tambahkan 'DOLA_LEGACY_OK' di commit message jika memang legacy."
+        exit 1
+    fi
+done
+
+exit 0
