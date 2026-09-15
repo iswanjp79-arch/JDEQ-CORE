@@ -46,7 +46,7 @@ Mode   : READ_ONLY (dokumen ini tidak mengubah apapun)
 |---|---|---|
 | T1 Manifest referensi | MICO-JDEQ-SYSTEM-MANIFEST.md | EXECUTED |
 | T2 Core logic JSON | MICO-JDEQ-CORE-LOGIC.json | EXECUTED |
-| T3 Skrip Python/Termux | (belum dibuat) | NOT_STARTED |
+| T3 Skrip Portabel PC-i5+Termux | 09_GOVERNANCE/TOOLS/PORTABLE/ (9 file) | EXECUTED |
 | T4 SHA256 manifest | KEY-FILES-MANIFEST.sha256.txt | EXECUTED |
 | T5 Master Plan v1.0 | MASTER-PLAN-v1.0-DRAFT.md (belum lengkap) | BLOCKED_BY_CONFLICTS |
 | T6 Monument lock | (belum dibuat) | BLOCKED_BY_CONFLICTS |
