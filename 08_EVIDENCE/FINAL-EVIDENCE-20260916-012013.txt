@@ -1,0 +1,24 @@
+MICO-JDEQ · EVIDENCE FINAL
+==========================
+Timestamp : 2026-09-16 01:20:13 +07:00
+Host      : KAPAL-INDUK
+Shell     : PowerShell 7.6.6
+
+HEAD      : e97133ad80e9781a9b0ff51198357c37e56d2557
+Origin    : e97133ad80e9781a9b0ff51198357c37e56d2557
+Sinkron   : True
+Tree      : 2 perubahan
+
+COMMIT 5 TERAKHIR:
+e97133ad P1: Behavior Contract formal + anchor update + hook v9 (BEHAVIOR-CONTRACT whitelist) - ref ADR-005 ADR-006 - 20260916-011735 a1609b47 P1: ARCH-REFINE-001 fix v2 - rewrite Bagian 3 + Bagian 5 dengan ASCII-safe - ref ADR-006 - 20260916-011126 4547aa83 P1: ARCH-REFINE-001 module penjelasan final (6 bagian + 5 catatan kunci) - ref ADR-005 ADR-006 - 20260916-010922 ea25ee82 P1: DOLA reverse-logic closure + PLA closed + hook v8 (DECREE whitelist) - ref ADR-005 ADR-006 - 20260916-005109 7f8884e3 P1-RES-001: V3 probe evidence (INVALID_METHOD marked, status=NOT_REPRODUCIBLE) - ref ADR-006 - 20260916-004508
+
+MONUMENT ZIP:
+  MICO_JDEQ_MONUMENT_20260916-001407.zip
+
+VAULT:
+336A41331B6F195BCCB88FBCBBD7C8C0C70134FA12741B9795ECC83BA95C0611
+
+HOOKS:
+  commit-msg
+  post-commit
+  pre-commit
