@@ -39,3 +39,6 @@ L6-modules/**/__pycache__/
 
 # L7 audit logs (must be tracked)
 !09_GOVERNANCE/L7-COMMAND/AUDIT/*.log
+
+# Backup & archive lokal (jangan commit)
+12_BACKUP/

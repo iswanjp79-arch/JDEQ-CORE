@@ -1,0 +1,78 @@
+[KAPAL-INDUK] D:\MICO_SSOT $ Write-Host "=== HOSTNAME ==="
+=== HOSTNAME ===
+[KAPAL-INDUK] D:\MICO_SSOT $ hostname
+KAPAL-INDUK
+[KAPAL-INDUK] D:\MICO_SSOT $
+[KAPAL-INDUK] D:\MICO_SSOT $ Write-Host "=== OS ==="
+=== OS ===
+[KAPAL-INDUK] D:\MICO_SSOT $ Get-CimInstance Win32_OperatingSystem | Select-Object Caption, Version, BuildNumber, OSArchitecture | Format-List
+
+
+Caption        : Microsoft Windows 10 Enterprise
+Version        : 10.0.19045
+BuildNumber    : 19045
+OSArchitecture : 64-bit
+
+
+
+[KAPAL-INDUK] D:\MICO_SSOT $
+[KAPAL-INDUK] D:\MICO_SSOT $ Write-Host "=== BOOT/UPTIME ==="
+=== BOOT/UPTIME ===
+[KAPAL-INDUK] D:\MICO_SSOT $ $os = Get-CimInstance Win32_OperatingSystem
+[KAPAL-INDUK] D:\MICO_SSOT $ "LastBoot : $($os.LastBootUpTime)"
+LastBoot : 09/15/2026 09:17:50
+[KAPAL-INDUK] D:\MICO_SSOT $ "Uptime   : $((Get-Date) - $os.LastBootUpTime)"
+Uptime   : 04:53:05.1241852
+[KAPAL-INDUK] D:\MICO_SSOT $
+[KAPAL-INDUK] D:\MICO_SSOT $ Write-Host "=== STORAGE ==="
+=== STORAGE ===
+[KAPAL-INDUK] D:\MICO_SSOT $ Get-CimInstance Win32_LogicalDisk -Filter "DriveType=3" | Select-Object DeviceID, @{n='SizeGB';e={[math]::Round($_.Size/1GB,2)}}, @{n='FreeGB';e={[math]::Round($_.FreeSpace/1GB,2)}} | Format-Table -AutoSize
+
+DeviceID SizeGB FreeGB
+-------- ------ ------
+C:       118.62  26.66
+D:       921.51 348.78
+E:       465.75 465.64
+
+
+[KAPAL-INDUK] D:\MICO_SSOT $
+[KAPAL-INDUK] D:\MICO_SSOT $ Write-Host "=== TOP 10 PROSES (RAM) ==="
+=== TOP 10 PROSES (RAM) ===
+[KAPAL-INDUK] D:\MICO_SSOT $ Get-Process | Sort-Object WS -Descending | Select-Object -First 10 Name, Id, @{n='RAM_MB';e={[math]::Round($_.WS/1MB,1)}} | Format-Table -AutoSize
+
+Name                  Id RAM_MB
+----                  -- ------
+chrome             10508  599.2
+Memory Compression  1816  592.7
+chrome             15240  520.9
+chrome             15292  439.2
+chrome              3640  438.7
+MsMpEng             4188  356.4
+vmmem              13172  335.7
+chrome             12968  317.7
+DeepL               7380  313.1
+chrome              9004  250.8
+
+
+[KAPAL-INDUK] D:\MICO_SSOT $
+[KAPAL-INDUK] D:\MICO_SSOT $ Write-Host "=== TIMESTAMP ==="
+=== TIMESTAMP ===
+[KAPAL-INDUK] D:\MICO_SSOT $ Get-Date -Format "yyyy-MM-dd HH:mm:ss zzz"
+2026-09-15 14:10:57 +07:00
+[KAPAL-INDUK] D:\MICO_SSOT $ ssh iswanjp@192.168.1.7 "ssh -p 8022 user@192.168.1.5 'hostname'"
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+KAPAL-INDUK
+[KAPAL-INDUK] D:\MICO_SSOT $ Set-Location "D:\MICO_SSOT"
+[KAPAL-INDUK] D:\MICO_SSOT $ $ev = "08_EVIDENCE\jarvis_breach\device_verify"
+[KAPAL-INDUK] D:\MICO_SSOT $ New-Item -ItemType Directory -Force -Path $ev | Out-Null
+[KAPAL-INDUK] D:\MICO_SSOT $ $ts = Get-Date -Format "yyyyMMdd-HHmmss"
+[KAPAL-INDUK] D:\MICO_SSOT $ $out = "$ev\PC-i5-RUNTIME-$ts.txt"
+[KAPAL-INDUK] D:\MICO_SSOT $
+[KAPAL-INDUK] D:\MICO_SSOT $ # Tulis semua output di atas ke file (paste ke sini apa adanya dari Langkah 1 & 2)
+[KAPAL-INDUK] D:\MICO_SSOT $ notepad $out
+[KAPAL-INDUK] D:\MICO_SSOT $
+
+
+
