@@ -38,3 +38,18 @@ Mode   : READ_ONLY (dokumen ini tidak mengubah apapun)
 - Konflik    : 5 terbuka, menunggu L0
 - Instalasi  : NOT_STARTED
 - Runtime    : NOT_ACTIVE
+---
+
+## 6. TRANSITION STATUS (A1+B2+C2)
+
+| Tahap | File | Status |
+|---|---|---|
+| T1 Manifest referensi | MICO-JDEQ-SYSTEM-MANIFEST.md | EXECUTED |
+| T2 Core logic JSON | MICO-JDEQ-CORE-LOGIC.json | EXECUTED |
+| T3 Skrip Python/Termux | (belum dibuat) | NOT_STARTED |
+| T4 SHA256 manifest | KEY-FILES-MANIFEST.sha256.txt | EXECUTED |
+| T5 Master Plan v1.0 | MASTER-PLAN-v1.0-DRAFT.md (belum lengkap) | BLOCKED_BY_CONFLICTS |
+| T6 Monument lock | (belum dibuat) | BLOCKED_BY_CONFLICTS |
+
+**Alasan T5/T6 BLOCKED:** 5 konflik terbuka (section 2) belum diputuskan L0.
+Mengunci monument di atas fondasi belum stabil = freeze kesalahan.

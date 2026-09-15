@@ -1,0 +1,128 @@
+{
+  "mico_jdeq": {
+    "metadata": {
+      "system_name": "MICO-JDEQ DIGITAL MANAGEMENT & CONTROL SYSTEM",
+      "version": "1.0-draft",
+      "status": "P1_MASTER_PLANNING",
+      "foundation": "CLOSED",
+      "implementation": "NOT_STARTED",
+      "created": "2026-09-15",
+      "generated_by": "DeepSeek AG-003"
+    },
+
+    "identity": {
+      "definition": "Human-governed digital management system coordinating governance, quality, execution, evidence, audit, recovery.",
+      "is_not": [
+        "AI superintelligence",
+        "single AI model",
+        "single server",
+        "cloud platform",
+        "consciousness"
+      ],
+      "governing_principle": [
+        "Requirement",
+        "Engineering Design",
+        "Capability",
+        "Technology Selection"
+      ]
+    },
+
+    "governance_chain": {
+      "L0": "HUMAN AUTHORITY — final decision",
+      "policy_gate": "POLICY VALIDATION (legacy: DOLA; pending: MPG)",
+      "gateway": "TRANSLATOR — route governed intent",
+      "agents": "SPECIALIST CAPABILITY — bounded work",
+      "execution": "RUNTIME — authorized task contracts only",
+      "rule": "Agent capability != authority. Human remains superior."
+    },
+
+    "seven_layers": {
+      "L1": "Physical / Device",
+      "L2": "Connectivity / Gateway",
+      "L3": "Edge / Node",
+      "L4": "Raw Data / Evidence / Buffer",
+      "L5": "Logical Data / Processing",
+      "L6": "Application / Compute / AI",
+      "L7": "Collaboration / Workflow / Command",
+      "rule": "Governance is overlay, not eighth layer."
+    },
+
+    "management_cycle": [
+      "GOVERN", "PLAN", "CONTROL", "EXECUTE", "OBSERVE",
+      "MEASURE", "VERIFY", "AUDIT", "CORRECT", "REVIEW", "IMPROVE"
+    ],
+
+    "digital_awareness_consignes": [
+      "OBSERVE", "IDENTIFY", "UNDERSTAND_STATE", "ASSESS_EVIDENCE",
+      "RECOGNIZE_LIMITATION", "COMPARE_EXPECTED_VS_ACTUAL",
+      "APPLY_POLICY", "AUTHORIZE_ACTION", "EXECUTE", "VERIFY",
+      "RECORD", "RECOVER", "LEARN"
+    ],
+    "digital_awareness_note": "Operational behavior, NOT consciousness.",
+
+    "behavior_contract_model": {
+      "fields": [
+        "IDENTITY", "ROLE", "GOAL", "INPUT", "TRIGGER",
+        "UNDERSTANDING", "STATE", "CAPABILITY", "CONSTRAINT",
+        "ACTION", "EVIDENCE", "EVALUATION", "TROUBLESHOOTING",
+        "RECOVERY", "OUTPUT", "STOP_CONDITION"
+      ],
+      "status_in_ssot": "MISSING — belum ada file formal"
+    },
+
+    "subsystems": {
+      "01": "GOVERNANCE",
+      "02": "QUALITY CONTROL",
+      "03": "DOCUMENT / SSOT CONTROL",
+      "04": "RESOURCE & COST MANAGEMENT",
+      "05": "NETWORK & CONNECTIVITY",
+      "06": "WORKFLOW / TASK MANAGEMENT",
+      "07": "EXECUTION / COMPUTE",
+      "08": "MONITORING / OBSERVATION",
+      "09": "AUDIT & ASSURANCE",
+      "10": "RISK & RECOVERY",
+      "11": "DATA / EVIDENCE",
+      "12": "AI / AGENT CAPABILITY",
+      "13": "MANAGEMENT REVIEW / CONTINUAL IMPROVEMENT"
+    },
+
+    "lifecycle": {
+      "P0": { "name": "CONSTITUTION / FOUNDATION", "status": "CLOSED" },
+      "P1": { "name": "MASTER PLANNING", "status": "CURRENT" },
+      "P2": { "name": "IMPLEMENTATION", "status": "NOT_STARTED" },
+      "P3": { "name": "MONITORING & CONTROL", "status": "PLANNED" },
+      "P4": { "name": "AUDIT / ASSURANCE", "status": "PLANNED" },
+      "P5": { "name": "CORRECTIVE ACTION / RECOVERY", "status": "PLANNED" },
+      "P6": { "name": "MANAGEMENT REVIEW", "status": "PLANNED" },
+      "P7": { "name": "CONTINUAL IMPROVEMENT", "status": "PLANNED" }
+    },
+
+    "deployment": {
+      "strategies": ["LOCAL", "CLOUD", "HYBRID"],
+      "criteria": ["COST", "LATENCY", "AVAILABILITY", "PRIVACY", "RESOURCE", "CAPABILITY", "RISK"],
+      "principle": "Cloud is a resource, not sovereignty."
+    },
+
+    "open_conflicts": [
+      { "id": 1, "topic": "Istilah kanonik: DOLA (legacy) vs MPG", "status": "MENUNGGU_L0" },
+      { "id": 2, "topic": "Role Vivo Y28: server vs terminal", "status": "MENUNGGU_L0" },
+      { "id": 3, "topic": "4 model layer paralel (5L/6L/7L/4P)", "status": "MENUNGGU_ADR006" },
+      { "id": 4, "topic": "BLUEPRINT_AGENTIC model AI tidak terverifikasi", "status": "MENUNGGU_AUDIT" },
+      { "id": 5, "topic": "ADR-005 status inconsistency", "status": "HOUSEKEEPING" }
+    ],
+
+    "transition_status": {
+      "T1_manifest": "EXECUTED",
+      "T2_core_logic": "EXECUTED",
+      "T3_scripts": "NOT_STARTED",
+      "T4_hash_manifest": "EXECUTED",
+      "T5_master_plan": "BLOCKED_BY_CONFLICTS",
+      "T6_monument_lock": "BLOCKED_BY_CONFLICTS"
+    },
+
+    "architecture_guardrail": {
+      "question": "Bagian ini masuk kotak yang mana?",
+      "rule": "If cannot be mapped to approved architecture, clarify position before implementation."
+    }
+  }
+}
