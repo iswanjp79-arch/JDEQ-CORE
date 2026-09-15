@@ -1,14 +1,13 @@
 #!/bin/sh
-# MICO-JDEQ Governance Guard v5 (pre-commit)
-# Rule 1: perubahan file aturan/ADR wajib sertai ADR/V.21
-# Whitelist: tools, drafts, handover, evidence — tidak butuh ADR
+# MICO-JDEQ Governance Guard v6 (pre-commit)
+# Rule 1: perubahan file ATURAN wajib disertai ADR/V.21
+# Whitelist: tools, drafts, handover, manifest, evidence
 
 STAGED=$(git diff --cached --name-only)
 
-# Path yang TIDAK butuh referensi ADR (tools, drafts, handover)
-NO_ADR_NEEDED="TOOLS/|P1-PLANNING/.*DRAFT|P1-PLANNING/HANDOVER|HANDOFF_|README|exception-log|AUDIT-ANCHOR|ANCHOR-MANIFEST"
+# File yang TIDAK butuh referensi ADR (tools, drafts, manifest, dll)
+NO_ADR_NEEDED="TOOLS/|P1-PLANNING/.*DRAFT|P1-PLANNING/HANDOVER|HANDOFF_|README|exception-log|AUDIT-ANCHOR|ANCHOR-MANIFEST|KEY-FILES-MANIFEST|MONUMENT-LATEST|MONUMENT-BUILD|P1-PLANNING-INDEX|MASTER-PLAN-v1.0-MANIFEST"
 
-# Cek: apakah ada file 09_GOVERNANCE/ yang BUKAN whitelist?
 NEED_ADR=""
 for f in $STAGED; do
     echo "$f" | grep -q "^09_GOVERNANCE/" || continue
@@ -18,10 +17,11 @@ for f in $STAGED; do
 done
 
 if [ -n "$NEED_ADR" ]; then
-    # Ada perubahan governance non-whitelist → wajib ada ADR di staged
-    if ! echo "$STAGED" | grep -qE "ADR-|MICO-P1-DEL03|CETAK-BIRU-V21|AUDIT-ANCHOR|ANCHOR-MANIFEST"; then
-        echo "[GOVERNANCE-GUARD] Perubahan file aturan 09_GOVERNANCE tanpa ADR/V.21 di staged."
-        echo "  Sertakan file ADR-* atau V.21 dalam commit yang sama."
+    if ! echo "$STAGED" | grep -qE "ADR-|MICO-P1-DEL03|CETAK-BIRU-V21"; then
+        echo "[GOVERNANCE-GUARD] File aturan 09_GOVERNANCE tanpa ADR/V.21 di staged."
+        echo "  File di staged:"
+        echo "$STAGED" | sed 's/^/    /'
+        echo "  Solusi: sertakan file ADR-* atau V.21, atau whitelist file manifest."
         exit 1
     fi
 fi
