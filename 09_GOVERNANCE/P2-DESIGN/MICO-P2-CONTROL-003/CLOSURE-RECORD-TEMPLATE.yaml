@@ -1,0 +1,76 @@
+# MICO-JDEQ · CLOSURE RECORD TEMPLATE
+# Kode: MICO-P2-CONTROL-003
+
+closure_record:
+  closure_id              : ""
+  created_at              : ""
+
+  agent:
+    agent_id              : ""
+    agent_role            : "Zone C — External AI Consultant"
+    session_provider      : ""
+    provider_session_ref  : ""
+
+  session:
+    session_started       : ""
+    session_closed        : ""
+    status                : ""   # OPEN|CLOSURE_PENDING|CLOSED|ABORTED|REOPENED|BLOCKED
+
+  task:
+    task_ids              : []
+    primary_task_id       : ""
+    outcome               : ""   # COMPLETED|PARTIAL|ABORTED
+    outcome_reason        : ""
+
+  evidence:
+    relevant_artifacts    : []   # [{path, sha256, kind}]
+    decisions             : []   # [{ref, type}]
+    evidence_references   : []
+    provenance_notes      : ""
+    integrity_note        : "SHA-256 = integritas bita, bukan jaminan kebenaran isi"
+
+  unverified:
+    claims                : []
+    open_findings         : []
+
+  access_revocation:
+    checklist_ref         : ""
+    session_token         : ""   # true|false|N/A|NOT_VERIFIABLE
+    task_token            : ""
+    temp_workspace        : ""
+    other_access          : []
+
+  provider_session:
+    provider_session_close: ""   # closed|open|NOT_VERIFIABLE
+    verification_method   : ""
+    forced_close_claimed  : false
+
+  handover:
+    previous_session_id   : ""
+    closure_id            : ""
+    task_id               : ""
+    final_state           : ""
+    unverified_claims     : []
+    open_findings         : []
+    relevant_evidence_refs: []
+
+  fail_safe:
+    context_lost_detected : ""
+    execution_blocked     : ""
+    blocked_reason        : ""
+
+  l0_review:
+    reviewed_by           : ""
+    reviewed_at           : ""
+    decision              : ""   # ACC|REJECT|REOPEN
+    notes                 : ""
+
+  integrity:
+    record_sha256         : ""
+    record_location       : ""
+
+  meta:
+    document_version      : "1.0"
+    document_status       : "APPROVED_FOR_DOCUMENT_FINALIZATION"
+    runtime_activation    : "NONE"
+    architecture_change   : "NONE"
