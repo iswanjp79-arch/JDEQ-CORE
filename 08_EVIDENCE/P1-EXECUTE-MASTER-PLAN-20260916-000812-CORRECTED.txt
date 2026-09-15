@@ -1,0 +1,22 @@
+MICO-P1-EXECUTE-MASTER-PLAN-001 — EXECUTION EVIDENCE (CORRECTED)
+=================================================================
+SUPERSEDES  : 08_EVIDENCE\P1-EXECUTE-MASTER-PLAN-20260916-000213.txt
+REASON      : Evidence lama mencatat "Test 2 = Exit 1" padahal actual Exit 0.
+              Koreksi: test diulang dengan encoding benar, hasil Test 2 = Exit 1 (PASS).
+
+TASK_ID     : MICO-P1-EXECUTE-MASTER-PLAN-001
+TIMESTAMP   : 2026-09-16 00:08:12 +07:00
+HOST        : KAPAL-INDUK
+SHELL       : PowerShell 7.6.6
+
+REAL TEST RESULT:
+  Test 1 (DOLA canonical)     : Exit 0  PASS
+  Test 2 (dummy deprecated)   : Exit 1  PASS
+  Hook commit-msg (v2)        : Aktif di .git/hooks/commit-msg
+
+KNOWN DEFECT (dicatat jujur):
+  Evidence 20260916-000213 berisi klaim yang tidak sesuai output terminal.
+  Ini adalah defect pribadi pelaksana (DeepSeek AG-003), bukan cacat sistem.
+
+ARTIFACT_HASHES (current):
+  commit-msg  FD5291A64441D659E28E7A36A334D8FD8C4B3ECD0CB72D6B52931BB29A9129AA   deprecated-terms.txt  7902054E8B777DA74F7953D89A658429A3E3ABD7120E7390AD12061C9657BE15   install-hooks.ps1  E7CACE0C98C0749563F31AED645AD495A4F915771C57B3E14FAC8D8AFD678778   post-commit  38F71A76A4C79C9EFA6B39F670DF57E26F8AA532A08A6604B4924F258E138786   pre-commit  B073344B6F946FEB83212E57613C273BD3867991F3D2B0D5C1F1B5AAF67E0EDE

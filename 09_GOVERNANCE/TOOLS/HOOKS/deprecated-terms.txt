@@ -1,7 +1,5 @@
 # MICO-JDEQ — DAILY DEPRECATED TERMS
 # Satu istilah per baris. Baris diawali # adalah komentar.
-# Kosong = tidak ada istilah deprecated saat ini.
-#
 # DICABUT 2026-09-15: DOLA tidak lagi deprecated (keputusan L0).
-# Lihat: ADR-005-REV1 §5 (DOLA = Pengawas Aktif, MPG = Dokumen Kebijakan).
+# Lihat: ADR-005-REV1 §5.
 # ============================================================
