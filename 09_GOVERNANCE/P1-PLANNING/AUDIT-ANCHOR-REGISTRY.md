@@ -53,3 +53,14 @@ Mode   : READ_ONLY (dokumen ini tidak mengubah apapun)
 
 **Alasan T5/T6 BLOCKED:** 5 konflik terbuka (section 2) belum diputuskan L0.
 Mengunci monument di atas fondasi belum stabil = freeze kesalahan.
+
+---
+
+## 7. UPDATE 2026-09-16 (Sesi P1 Refinement)
+
+| Item | Status Lama | Status Baru | Ref |
+|---|---|---|---|
+| Behavior Contract | MISSING_IN_SSOT | ✅ SAH · MICO-P1-BEHAVIOR-CONTRACT.md | commit ini |
+| PLA | UNKNOWN | ✅ CLOSED | DECREE/PLA-CLOSED-20260916.md |
+| DOLA reverse-logic | - | ✅ EXECUTED | DECREE/DOLA-REVERSE-LOGIC-CLOSURE-20260916.md |
+| P1 ARCH-REFINE | - | ✅ CLOSED | P1-FINAL-REPORT-MODUL-PENJELASAN.md |
