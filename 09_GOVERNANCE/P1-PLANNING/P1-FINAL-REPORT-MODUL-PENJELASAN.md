@@ -67,16 +67,17 @@ Pergantian perangkat **tidak mengubah** arsitektur MICO-JDEQ.
 
 ---
 
-# BAGIAN 3 — DIGITAL AWARENESS
+# BAGIAN 3 - DIGITAL AWARENESS
 
-**BUKAN kesadaran hidup.** Murni perilaku operasional.
+BUKAN kesadaran hidup. Murni perilaku operasional.
 
 Siklus:
+AMATI -> KENALI -> PAHAMI -> NILAI BUKTI
+-> BANDINGKAN RENCANA vs KENYATAAN
+-> TERAPKAN ATURAN -> IZINKAN TINDAKAN
+-> LAKSANAKAN -> PERIKSA -> CATAT -> PULIHKAN -> BELAJAR
 
 Ini perilaku sistem yang dirancang, bukan consciousness.
-
----
-
 # BAGIAN 4 — INSTRUKSI KERJA DIGITAL & GAMBAR INDUK
 
 **Behavior Contract** = Instruksi Kerja setiap agen.
@@ -88,21 +89,24 @@ Satu rujukan · Tidak boleh melenceng · Semua agen merujuk ke sini.
 
 ---
 
-# BAGIAN 5 — TAHAPAN PROYEK, BUKTI, & VERIFIKASI
+# BAGIAN 5 - TAHAPAN PROYEK, BUKTI, & VERIFIKASI
 
-## P0–P7
+## P0-P7
+
+P0 (Fondasi) -> P1 (Perencanaan) -> P2 (Pelaksanaan)
+-> P3 (Pengawasan) -> P4 (Audit) -> P5 (Koreksi)
+-> P6 (Tinjauan) -> P7 (Penyempurnaan)
 
 ## Prinsip Siklus
 
+RENCANA vs KENYATAAN -> SELISIH -> ANALISIS -> PERBAIKI -> VERIFIKASI
+
 ## Bukti & Integritas
 
-- **Evidence** = bukti pekerjaan yang dapat diperiksa
-- **SHA-256** = kontrol integritas berkas (memastikan susunan bita tidak berubah)
-- **SHA-256 ≠ Jaminan Kebenaran / Kualitas / Keabsahan Isi**
-- Prinsip: **HASH ≠ TRUTH**
-
----
-
+- Evidence = bukti pekerjaan yang dapat diperiksa
+- SHA-256 = kontrol integritas berkas (memastikan susunan bita tidak berubah)
+- SHA-256 BUKAN Jaminan Kebenaran / Kualitas / Keabsahan Isi
+- Prinsip: HASH TIDAK SAMA DENGAN TRUTH
 # BAGIAN 6 — POSISI KITA SEKARANG
 
 | Item | Status |
