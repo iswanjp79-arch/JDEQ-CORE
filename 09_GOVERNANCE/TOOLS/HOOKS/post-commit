@@ -1,0 +1,9 @@
+#!/bin/sh
+# MICO-JDEQ Local Mirror
+BUNDLE_DIR="D:/MICO_SSOT/12_BACKUP/git-mirror"
+mkdir -p "$BUNDLE_DIR"
+TS=$(date +%Y%m%d-%H%M%S)
+BUNDLE="$BUNDLE_DIR/jdeq-mirror-$TS.bundle"
+git bundle create "$BUNDLE" --all > /dev/null 2>&1
+echo "[MIRROR] Local bundle: $BUNDLE"
+ls -1t "$BUNDLE_DIR"/jdeq-mirror-*.bundle 2>/dev/null | tail -n +6 | xargs -r rm -f

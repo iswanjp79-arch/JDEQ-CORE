@@ -1,0 +1,48 @@
+#!/bin/sh
+# MICO-JDEQ Governance Guard v2
+# - Tolak commit 09_GOVERNANCE/ tanpa ADR/V.21
+# - Tolak commit 99_ARCHIVE/12_BACKUP
+# - Tolak file baru menyebut "DOLA" (deprecated 2026-09-12) kecuali:
+#   * File di whitelist (DECREE, AGENT_ERRORS, AUDIT-ANCHOR-REGISTRY)
+#   * Commit message mengandung "DOLA_LEGACY_OK"
+
+STAGED=$(git diff --cached --name-only)
+COMMIT_MSG=$(git log --format=%B -1 2>/dev/null)
+[ -z "$COMMIT_MSG" ] && COMMIT_MSG=$(cat .git/COMMIT_EDITMSG 2>/dev/null)
+
+# --- Rule 1: governance tanpa ADR/V.21 ---
+if echo "$STAGED" | grep -q "^09_GOVERNANCE/"; then
+    if ! echo "$STAGED" | grep -qE "ADR-|MICO-P1-DEL03|CETAK-BIRU-V21|AUDIT-ANCHOR|ANCHOR-MANIFEST"; then
+        echo "[GOVERNANCE-GUARD] Perubahan 09_GOVERNANCE tanpa ADR/V.21."
+        echo "Override: --no-verify (hanya jika L0 perintahkan)"
+        exit 1
+    fi
+fi
+
+# --- Rule 2: blokir backup/archive ---
+if echo "$STAGED" | grep -qE "^(99_ARCHIVE|TREE_L/12_BACKUP)"; then
+    echo "[GOVERNANCE-GUARD] Commit menyentuh arsip/backup. Tolak."
+    exit 1
+fi
+
+# --- Rule 3: DOLA legacy guard ---
+WHITELIST="DECREE/|AGENT_ERRORS|AUDIT-ANCHOR|ANCHOR-MANIFEST|TOOLS/HOOKS"
+if echo "$COMMIT_MSG" | grep -q "DOLA_LEGACY_OK"; then
+    exit 0
+fi
+for f in $STAGED; do
+    case "$f" in
+        *.md|*.yml|*.yaml|*.ps1|*.sh) ;;
+        *) continue ;;
+    esac
+    echo "$f" | grep -qE "$WHITELIST" && continue
+    # Cek baris yang DITAMBAH (+ ... DOLA)
+    if git diff --cached -- "$f" 2>/dev/null | grep -q "^+.*\bDOLA\b"; then
+        echo "[DOLA-GUARD] File '$f' menyebut 'DOLA' (deprecated 2026-09-12)."
+        echo "  Pengganti resmi: MPG."
+        echo "  Jika legacy memang disengaja, tambahkan 'DOLA_LEGACY_OK' di commit message."
+        exit 1
+    fi
+done
+
+exit 0
