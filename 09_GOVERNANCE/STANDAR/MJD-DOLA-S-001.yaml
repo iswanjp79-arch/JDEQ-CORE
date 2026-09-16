@@ -1,0 +1,53 @@
+# ============================================================
+# MJD-DOLA-S-001
+# STANDAR PENOMORAN DOKUMEN & IDENTITAS DISTRIBUSI AGEN
+# Sistem: MICO-JDEQ
+# Bagian: Tata Kelola Dokumen
+# Berlaku: 16 September 2026
+# ============================================================
+
+---
+format:
+  dasar: MJD-{PERAN}-{JENIS}-{NOMOR}
+  kode_sistem: "MJD"
+  jenis_dokumen:
+    P:  "Prosedur"
+    IK: "Instruksi Kerja"
+    S:  "Standar"
+    F:  "Formulir / Bukti"
+
+peran:
+  PLN: "Planner — Perancang Sistem"
+  GTW: "Gateway — Pintu Masuk"
+  KOOR: "Koordinator — Lintas Agen"
+  EKS: "Eksekutor — Pelaksana Teknis"
+  AUD: "Auditor — Pemeriksa"
+  DOLA: "DOLA — Penjaga Doktrin"
+  RST: "Riset — Referensi Eksternal"
+  ARS: "Arsip — Pengelola Bukti"
+  KDK: "Kendali Kode — Repositori"
+  PGB: "Pengembang — Konsep Baru"
+
+distribusi:
+  DOLA-01: "Pengawas / Pusat Kendali"
+  GTW-02: "Gateway — Jarvis"
+  AUD-03: "Auditor — Claude/Kimi"
+  PLN-04: "Perencana — ChatGPT"
+  EKS-05: "Eksekutor — DeepSeek"
+  RST-06: "Riset — Perplexity"
+  KDK-07: "Kendali Kode — GitHub Copilot"
+  ARS-08: "Arsip — SSOT"
+  PGB-09: "Pengembang — Emergent"
+
+status:
+  TERKENDALI:     "Resmi · Dijaga · Terbaru"
+  TAK_TERKENDALI: "Salinan · Tidak Dijamin Mutakhir"
+  KADALUARSA:     "Digantikan · Harus Ditarik"
+  MASTER:         "Asli · Tunggal · Rujukan Sah"
+  EKSTERNAL:      "Sumber Luar · Disesuaikan"
+
+contoh:
+  - "MJD-DOLA-S-001   → Standar Penomoran"
+  - "MJD-GTW-IK-001   → Instruksi Kerja Gateway"
+  - "MJD-PLN-P-001    → Prosedur Perencanaan"
+  - "MJD-AUD-F-001    → Formulir Bukti Audit"

@@ -1,0 +1,23 @@
+# ADR-010 — PEMBENTUKAN DIREKTORI STANDAR & IDENTITAS DOKUMEN
+## Status
+DITERIMA · DIKUNCI · TIDAK DIUBAH
+## Tanggal
+16 September 2026
+## Konteks
+Task Card MICO-STD-IDENTITAS-AGEN-001 menetapkan standar penomoran dokumen.
+Diperlukan direktori resmi untuk menampung dokumen ber-kode MJD-*-S-*.
+Governance-guard memblokir commit ke 09_GOVERNANCE tanpa ADR pendamping.
+## Keputusan
+1. Direktori 09_GOVERNANCE/STANDAR/ diresmikan sebagai lokasi resmi dokumen standar.
+2. Dokumen MJD-DOLA-S-001.yaml (Standar Penomoran & Distribusi) menjadi isi pertama.
+3. Semua dokumen berkode MJD-*-S-* disimpan di direktori ini.
+4. Skema penomoran: MJD-{PERAN}-{JENIS}-{NOMOR}
+   - PERAN : PLN · GTW · KOOR · EKS · AUD · DOLA · RST · ARS · KDK · PGB
+   - JENIS : P (Prosedur) · IK (Instruksi Kerja) · S (Standar) · F (Formulir)
+## Konsekuensi
+- Referensi standar terpusat di satu direktori
+- Governance-guard terpenuhi
+- Task Card baru mengikuti skema MJD-*
+## Tanda Pengesahan
+L0 — Iswan Juman Pancoro, ST
+Semarang, 16 September 2026

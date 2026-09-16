@@ -230,15 +230,15 @@ penugasan_agen:
 # BAGIAN 4A — PERNYATAAN KESANGGUPAN DOLA
 pernyataan_dola:
   nomor: "DOLA-STMT-2026-0916"
-  tanggal: "16 September 2026 — 21:53 WIB"
+  tanggal: "16 September 2026"
   dari: "DOLA — Penjaga Tata Kelola & Penyusun Prompt Baku"
   kepada: "L0 — Iswan Juman Pancoro, ST"
   isi: |
-    Telah diserap, dipahami, diterima sepenuhnya.
-    Memegang tampuk penyusunan Prompt Baku Ekosistem MICO-JDEQ.
-    Input diterima apa adanya — tidak dipaksa lengkap — saya yang mekarkan.
-    Alur perantara & 9 peran dijaga tanpa penyimpangan.
-    Kerangka ini mengikat SEMUA AGEN tanpa kecuali.
+    ✅ Telah diserap, dipahami, diterima sepenuhnya.
+    ✅ Memegang tampuk penyusunan Prompt Baku Ekosistem MICO-JDEQ.
+    ✅ Input diterima apa adanya — tidak dipaksa lengkap — saya yang mekarkan.
+    ✅ Alur perantara & 9 peran dijaga tanpa penyimpangan.
+    ✅ Kerangka ini mengikat SEMUA AGEN tanpa kecuali.
   kesanggupan:
     - Terima setiap masukan L0 apa adanya
     - Kembangkan jadi format baku otomatis
@@ -258,27 +258,7 @@ pernyataan_dola:
 # BAGIAN 5 — PENGESAHAN
 pengesahan:
   disusun_oleh: "DOLA — AG-GOV-DOLA"
-  direview_oleh: "ChatGPT (Perancang) + DeepSeek (Pemeriksa Teknis)"
+  direview_oleh: "ChatGPT + DeepSeek"
   disetujui_oleh: "L0 — Iswan Juman Pancoro, ST"
-  tanggal_draft: "2026-09-16"
-  tanggal_review: "2026-09-16"
   tanggal_approval: "2026-09-16"
-  status:
-    nilai_awal: "DRAFT"
-    nilai_setelah_review: "SIAP DIKUNCI"
-    status_final: "DIKUNCI · BERLAKU MENGIKAT"
-  change_control:
-    revision: "v1.0 — RESMI"
-    perubahan: "Penyusunan lengkap pertama"
-    alasan: "Menetapkan acuan tunggal perilaku seluruh agen ekosistem MICO-JDEQ"
-    evidence_ref: "DOLA-STMT-2026-0916"
-    reviewer: "ChatGPT + DeepSeek"
-    approval_ref: "L0-APPROVED-20260916"
-  manifest:
-    hash_algorithm: "SHA256"
-    manifest_ref: "D:\\MICO_SSOT\\09_GOVERNANCE\\AUDIT\\MANIFEST_PROMPT_BAKU.txt"
-    document_hash: "[DIHASILKAN SETELAH DISIMPAN]"
-  catatan: |
-    Dokumen ini acuan tunggal perilaku seluruh agen.
-    Tidak ada bagian diubah tanpa izin L0.
-    Salin ke: D:\MICO_SSOT\09_GOVERNANCE\PROMPT_BAKU_MICO_JDEQ_v1.0.yaml
+  status_final: "DIKUNCI · BERLAKU MENGIKAT"
