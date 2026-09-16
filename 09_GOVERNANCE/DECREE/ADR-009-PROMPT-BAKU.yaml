@@ -1,0 +1,11 @@
+# ADR-009 — PENGESAHAN PROMPT BAKU MICO-JDEQ v1.0
+## Status
+DITERIMA · DIKUNCI · TIDAK DIUBAH
+## Tanggal
+16 September 2026
+## Keputusan
+Prompt Baku Ekosistem MICO-JDEQ v1.0 disahkan sebagai acuan perilaku tunggal seluruh agen.
+Dokumen: 09_GOVERNANCE/PROMPT_BAKU_MICO_JDEQ_v1.0.yaml
+Manifest: 09_GOVERNANCE/AUDIT/MANIFEST_PROMPT_BAKU.txt
+## Tanda Pengesahan
+L0 — Iswan Juman Pancoro, ST
