@@ -1,4 +1,0 @@
-08.06 19.03
-ssh -o StrictHostKeyChecking=no iswanjp@100.67.36.31
-ssh iswanjp@100.67.36.31
-

@@ -1,4 +1,0 @@
-03.11 23.33
-echo 'export GEMINI_API_KEY=  AIzaSyBGSyxES9rHBB6v-HSJz6m_uyYcsDc4qZk>> ~/.bashrc
-source ~/.bashrc
-

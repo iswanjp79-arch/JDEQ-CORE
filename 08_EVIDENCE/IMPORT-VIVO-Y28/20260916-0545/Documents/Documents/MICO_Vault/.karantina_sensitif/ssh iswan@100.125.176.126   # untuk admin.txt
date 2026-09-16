@@ -1,4 +1,0 @@
-07.24 19.40
-ssh iswan@100.125.176.126   # untuk admin
-ssh iswanjp79@100.125.176.126 # untuk user biasa
-

@@ -1,3 +1,0 @@
-07.23 20.36
-echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAID40CDhC2N8wpkiALDE1xq+lPoj2horD6tJ4kRMVkdGO iswan@z83-server" >> ~/.ssh/authorized_keys
-
