@@ -1,0 +1,66 @@
+# ============================================================
+# [STATUS: FOR EXECUTION / RFC]
+# Kode: MJD-DOLA-S-002
+# Revisi: R0
+# Tanggal: 16-09-2026
+# Pemilik: DOLA
+# Disahkan: L0 — Iswan Juman Pancoro, ST
+# SHA256: [dihitung setelah disimpan]
+# ============================================================
+metadata:
+  kode: MJD-DOLA-S-002
+  nama: STANDAR STATUS DOKUMEN & TAHAP PENERAPAN
+  sumber_acuan: PT Ciputra Development — Standar Dokumentasi Gambar Kerja
+  status: TERKENDALI · MASTER · BERLAKU MULAI SAAT INI
+
+tahapan_status:
+  1:
+    acuan_industri: Draft / Preliminary / For Information
+    padanan_mico: DRAFT — Usulan
+    stempel: "📝 DRAFT"
+    boleh_eksekusi: false
+    catatan: Hanya koordinasi internal, dilarang eksekusi
+  2:
+    acuan_industri: For Approval / For Tender
+    padanan_mico: PENDING — Menunggu Persetujuan
+    stempel: "⏳ KIRIM-SAH"
+    boleh_eksekusi: false
+    catatan: Disusun, belum ditandatangani L0
+  3:
+    acuan_industri: For Construction / RFC — Gambar Sah Final
+    padanan_mico: APPROVED — Siap Eksekusi
+    stempel: "✅ SAH-EKSEKUSI"
+    boleh_eksekusi: true
+    catatan: Boleh dijalankan & dicatat sebagai bukti
+  4:
+    acuan_industri: Revised / R0, R1, R2…
+    padanan_mico: REVISED — Koreksi Tercatat
+    stempel: "🔄 REVISI-R[N]"
+    boleh_eksekusi: true
+    catatan: Menggantikan versi sebelumnya, nomor revisi wajib tercantum
+  5:
+    acuan_industri: As-Built Drawing
+    padanan_mico: CLOSED — Terbukti Terpasang
+    stempel: "🏗️ TELAH-DITERAPKAN"
+    boleh_eksekusi: true
+    catatan: Siklus selesai, dicatat di arsip permanen
+
+definisi:
+  DRAFT: "Rancangan, belum final, dilarang dijadikan dasar eksekusi"
+  PENDING: "Dokumen lengkap diajukan ke L0, belum boleh dieksekusi"
+  APPROVED: "Disahkan L0, berlaku sebagai rujukan tunggal"
+  REVISED: "Koreksi tercatat, nomor revisi wajib, riwayat lama tersimpan"
+  CLOSED: "Selesai, bukti lengkap, tidak boleh diubah kecuali ada revisi baru"
+
+penerapan:
+  - Setiap Task Card / Dokumen wajib mencantumkan satu status di bagian atas
+  - Jika berubah status → perbarui tanda + nomor revisi jika perlu
+  - Manifest selalu ditambah (-Append), riwayat tidak dihapus
+  - Hanya status ✅ SAH-EKSEKUSI yang boleh dijalankan di terminal utama
+
+contoh:
+  - "MJD-DOLA-S-002"
+  - "STANDAR STATUS DOKUMEN & TAHAP PENERAPAN"
+  - "Status: ✅ SAH-EKSEKUSI · R0"
+  - "SHA256: [hash tercatat]"
+  - "Ditetapkan: 16-09-2026"

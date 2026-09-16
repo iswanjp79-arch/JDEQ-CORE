@@ -1,0 +1,22 @@
+# ADR-011 — PENGESAHAN INSTRUKSI KERJA & STATUS DOKUMEN
+## Status
+DITERIMA · DIKUNCI · TIDAK DIUBAH
+## Tanggal
+16 September 2026
+## Konteks
+Task Card MJD-DOLA-S-002, MJD-DOLA-S-003, dan MJD-DOLA-IK-002 menetapkan:
+- Standar 5 tahap status dokumen (DRAFT → PENDING → APPROVED → REVISED → CLOSED)
+- Templat metadata wajib di baris pertama setiap berkas baru
+- Sistem shortcode /MJD-* untuk komando cepat
+- Aturan manifest append-only (riwayat tidak boleh ditimpa)
+- Direktori 09_GOVERNANCE/INSTRUKSI_KERJA/ sebagai lokasi resmi dokumen IK
+## Keputusan
+1. 09_GOVERNANCE/INSTRUKSI_KERJA/ diresmikan sebagai direktori resmi dokumen MJD-*-IK-*
+2. Status 5 tahap berlaku mutlak untuk semua dokumen baru mulai 16 Sep 2026
+3. Hanya dokumen ber-status FOR_EXECUTION / APPROVED yang boleh dieksekusi
+4. Shortcode /MJD-RUN, /MJD-AUDIT, /MJD-DRAFT, /MJD-INIT, /MJD-HASH, /MJD-STATUS, /MJD-CLEAR aktif
+5. Manifest append-only wajib di semua jalur
+6. Dua standar penomoran (ISO/OHSAS + MJD-*) berlaku berdampingan
+## Tanda Pengesahan
+L0 — Iswan Juman Pancoro, ST
+Semarang, 16 September 2026

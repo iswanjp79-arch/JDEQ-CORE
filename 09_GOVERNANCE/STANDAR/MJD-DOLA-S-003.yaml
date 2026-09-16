@@ -1,0 +1,72 @@
+# ============================================================
+# [STATUS: FOR EXECUTION / RFC]
+# Kode: MJD-DOLA-S-003
+# Revisi: R0
+# Tanggal: 16-09-2026
+# Pemilik: DOLA
+# Disahkan: L0 — Iswan Juman Pancoro, ST
+# SHA256: [dihitung setelah disimpan]
+# ============================================================
+metadata:
+  kode: MJD-DOLA-S-003
+  nama: TEMPLAT METADATA STATUS DOKUMEN — STANDAR WAJIB
+  sumber: Adaptasi standar Ciputra Development + Modul 14 Validation & Gate
+  status: FOR EXECUTION / RFC — BERLAKU MULAI SAAT INI
+
+templat_blok_metadata: |
+  # ============================================================
+  # [STATUS: DRAFT / PRELIMINARY]
+  # Kode: MJD-DOLA-S-003
+  # Revisi: R0
+  # Tanggal: 16-09-2026
+  # Pemilik: DOLA
+  # Disahkan: L0 — Iswan Juman Pancoro, ST
+  # SHA256: [isi-hash-saat-disahkan]
+  # ============================================================
+
+status_baku:
+  DRAFT:
+    label: "[STATUS: DRAFT / PRELIMINARY]"
+    makna: "Masih dalam uji coba, eksplorasi, atau penyusunan awal."
+    aturan: "DILARANG dijadikan acuan eksekusi. Hanya untuk koordinasi internal."
+    izin_eksekusi: TIDAK
+  FOR_REVIEW:
+    label: "[STATUS: FOR REVIEW / APPROVAL]"
+    makna: "Dokumen lengkap, menunggu verifikasi DOLA + pengesahan L0."
+    aturan: "Belum sah secara operasional. Diedarkan untuk pemeriksaan saja."
+    izin_eksekusi: BELUM
+  FOR_EXECUTION:
+    label: "[STATUS: FOR EXECUTION / RFC]"
+    makna: "Sah & final. Disetujui L0. Lampu hijau pelaksanaan."
+    aturan: "Berlaku sebagai rujukan tunggal. Menggantikan versi sebelumnya."
+    izin_eksekusi: YA
+  REVISED:
+    label: "[STATUS: REVISED (R1)]"
+    makna: "Dikoreksi atau diperbarui. Nomor revisi wajib dinaikkan."
+    aturan: "Wajib cantumkan catatan perubahan. Versi lama dinyatakan tidak berlaku."
+    izin_eksekusi: "YA — versi baru saja"
+  AS_BUILT:
+    label: "[STATUS: AS-BUILT / ARCHIVED]"
+    makna: "Siklus selesai. Dipindahkan ke arsip kekal."
+    aturan: "Baca-saja. TIDAK BOLEH diubah. Menjadi rujukan permanen bukti selesai."
+    izin_eksekusi: "TIDAK — sudah selesai"
+
+aturan_penggantian_nilai:
+  - bagian: "[STATUS: ...]"
+    diisi_oleh: "Penyusun → DOLA verifikasi"
+    kapan_diubah: "Setiap perubahan tahap"
+  - bagian: "Revisi: R0"
+    diisi_oleh: "Penyusun"
+    kapan_diubah: "Naik jadi R1, R2 jika ada perubahan sah"
+  - bagian: "SHA256: ..."
+    diisi_oleh: "Skrip otomatis saat tulis"
+    kapan_diubah: "Setiap disahkan & dicatat di manifest"
+  - bagian: "Disahkan:"
+    diisi_oleh: L0
+    kapan_diubah: "Tetap setelah persetujuan"
+
+tindakan_teknis:
+  - "Templat ini menjadi baris pertama di setiap berkas baru mulai saat ini"
+  - "Skrip verifikasi akan membaca baris status — menolak eksekusi jika bukan FOR EXECUTION"
+  - "Dokumen lama secara bertahap disesuaikan mengikuti format ini"
+  - "AS-BUILT otomatis mengunci berkas menjadi baca-saja"
