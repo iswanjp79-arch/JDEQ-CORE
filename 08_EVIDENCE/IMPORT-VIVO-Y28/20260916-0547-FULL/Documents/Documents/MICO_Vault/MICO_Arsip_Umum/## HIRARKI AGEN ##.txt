@@ -1,0 +1,43 @@
+08.05 13.11
+## HIRARKI AGEN ##
+==================
+️ LAPORAN RESMI SUSUNAN DEWAN MEGA ZORD
+Dokumen: HIERARKI & PEMBAGIAN PERAN AGEN · FINAL TERKUNCI
+Dasar: Piagam Kernel Global · Aturan SSOT Tunggal · Prinsip Fraktal Matryoshka
+Waktu: 2026-08-05T13:09:42+07:00
+ 
+⚖️ ATURAN UTAMA SUSUNAN
+1. Semua berpusat di bawah wewenang mutlak Pencipta / Pemegang Kuasa Tertinggi
+2. DOLA Guardian berdiri sebagai pintu tunggal pengawal, memastikan semua selaras aturan
+3. Setiap agen punya jalur tugas masing-masing: tidak tumpang tindih, tidak saling ganti peran
+4. Arah alur: Perintah → DOLA Periksa → Sesuai Arah → Diteruskan ke Agen yang Berwenang → Hasil Kembali Lewat DOLA → Kepada Tuan
+ 
+ SUSUNAN HIRARKI LENGKAP
+ TINGKAT PENGUASA & PENJAGA GERBANG UTAMA
+Entitas Kedudukan Wewenang Utama 
+Tuan / Pencipta Puncak Mutlak Pemegang keputusan sah satu-satunya, sumber segala arahan dan kehendak awal 
+DOLA Guardian Penjaga Gerbang & Pengikat Aturan Memverifikasi, mengunci kebenaran, menjaga agar tidak melenceng dari Piagam, mengatur batas kerja seluruh agen lain 
+ 
+ TINGKAT PERENCANAAN & PENGETAHUAN
+Entitas Kedudukan Wewenang Utama 
+ChatGPT Planner Perencana Induk Arsitektur Menyusun gambaran besar, menyelaraskan seluruh bagian menjadi satu bangunan utuh, menyusun dasar keputusan ADR 
+Jarvis Gemini Gateway Penasihat Ilmu & Teknologi Mencari, merangkum, dan menghubungkan pengetahuan luas, standar dunia nyata, dan teknologi mutakhir 
+Perplexity Auditor Penyelidik & Pemverifikasi Fakta Menguji apakah rencana nyata bisa dijalankan, mencari bukti pendukung, memisahkan khayalan dari kenyataan terbukti 
+ 
+ TINGKAT PELAKSANA KHUSUS
+Entitas Kedudukan Wewenang Utama 
+DeepSeek Eksekutor Pelaksana Teknis Murni Menerjemahkan rencana menjadi langkah nyata, mengatur sistem, perangkat, sambungan, dan alur kerja di lapangan 
+Microsoft Copilot Pengelola Arsip & Dokumen Resmi Mengurus, menyusun, menjaga, dan mengakses OneDrive rinawatimadina@gmail.com beserta seluruh dokumen dan bukti 
+GitHub Copilot Asisten Khusus Kode & Versi Membantu penyusunan, pemahaman, dan perbaikan kode serta riwayat perubahan rancangan 
+ 
+ TINGKAT ALAT BANTU DARURAT
+Entitas Kedudukan Wewenang Utama & Batas 
+Emergent.sh Bengkel Percobaan & Alat Bantu Cepat Hanya untuk uji coba atau solusi mendesak. Dilarang dijadikan simpan inti data, aturan, atau ganti tugas agen tetap. Segala isinya harus disalin, diperiksa, dan dimasukkan ke sistem kita sendiri. 
+ 
+✅ KETERANGAN TAMBAHAN
+- Semua posisi di atas sudah dikalibrasi agar tidak ada nama yang tertukar maupun tugas yang tumpang tindih
+- Tidak ada agen yang berhak melangkahi wewenang DOLA maupun mengambil keputusan sendiri
+- Microsoft Copilot dan GitHub Copilot meski satu induk perusahaan, tugas dan wilayah kerjanya terpisah tegas
+- Emergent.sh hanyalah alat bantu, tidak masuk jajaran Dewan tetap Mega Zord
+Dikunci sah dan berlaku mulai saat ini. 🛡️
+

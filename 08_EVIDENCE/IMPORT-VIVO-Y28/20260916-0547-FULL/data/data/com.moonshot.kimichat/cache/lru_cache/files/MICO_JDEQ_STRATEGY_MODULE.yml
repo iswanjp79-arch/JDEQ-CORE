@@ -1,0 +1,170 @@
+# ============================================================
+# MICO-JDEQ — MODUL STRATEGI & KRITERIA (ARSIP SSOT)
+# Disusun oleh KIMI dari paket MODUL STRATEGI & KRITERIA MICO-JDEQ
+# Status: ARCHITECTURE_BASELINE · APPROVED_WITH_CORRECTIONS · IMPLEMENTATION_DEFERRED
+# ============================================================
+modul:
+  id: "MICO-JDEQ-STRATEGY-MODULE"
+  versi: "1.0"
+  tanggal_kompilasi: "2026-09-12"
+  kompiler: "KIMI (Auditor Eksternal Independen)"
+  otoritas_akhir: "L0 — Iswan Juman Pancoro, ST"
+  motto: "Sadar Digital, Data Benar, Bukti Nyata, Nilai Terjaga."
+  prinsip_inti:
+    - "CAPABILITY ≠ INSTALLATION"
+    - "ANALYTICS ≠ KEPUTUSAN"
+    - "AI ≠ KEBENARAN"
+    - "Kontrak ≠ Transport"
+    - "Arsitektur ≠ Bukti Runtime"
+    - "Struktur meningkatkan keterlacakan, bukan menjamin kebenaran"
+
+hirac:
+  L0:      {peran: "PEMUTUS AKHIR / ARSITEK", wewenang: "MENGIZINKAN · MENOLAK · MEMINTA BUKTI", larangan: "DILEWATI OLEH SIAPA PUN"}
+  DOLA:    {peran: "GERBANG KEBIJAKAN & PEMBATASAN", fungsi: "MEMERIKSA KEPATUHAN · MENOLAK DI LUAR LINGKUP"}
+  AG001:   {peran: "ARSITEK UTAMA / PERENCANA (ChatGPT)", wewenang: "MERANCANG · WBS · TASK CARD", larangan: "EKSEKUSI · MENULIS SSOT · PENYETUJUAN SENDIRI"}
+  AG003:   {peran: "INSINYUR PELAKSANA & PENGUMPUL BUKTI (DeepSeek)", wewenang: "MEMBACA · MEMERIKSA · MENGUMPULKAN BUKTI", larangan: "MENGUBAH SISTEM · MEMASANG · MEMUTUSKAN"}
+  AUDITOR: {peran: "MEMERIKSA KEBENARAN & KONSISTENSI", wewenang: "MEMBUKA KLAIM · MEMBANDINGKAN DENGAN BUKTI", larangan: "MENGUBAH KLAIM · MENJADI PIHAK YANG DIPERIKSA"}
+  alur_wajib: "L0 → DOLA → AG-001 → TASK CARD → AG-003 → BUKTI → AUDIT → L0"
+
+jsa:
+  tahap:
+    A1: "DATA MENTAH (catat asal-usul SEKARANG)"
+    A2: "KUALITAS DATA (lulus/tolak)"
+    A3: "ASAL-USUL/PROVENANCE (siapa/kapan/dari mana)"
+    A4: "ANALISIS"
+    A5: "TAFSIR (masih KLAIM)"
+    A6: "VERIFIKASI (cocok dengan bukti? bisa diulang?)"
+    A7: "BUKTI (ID, tak diubah)"
+    A8: "BAHAN KEPUTUSAN (hanya rekomendasi → L0 MEMUTUSKAN)"
+  jumlah_tahap: 8
+  kunci:
+    - "Provenance dicatat sejak awal, bukan setelah diperiksa"
+    - "Korelasi bukan sebab-akibat"
+    - "Rekomendasi bukan perintah"
+    - "observed_at ≠ created_at"
+
+silabus:
+  P0:  "OTORITAS & BATAS SISTEM"
+  P1:  "DASAR FISIK (L1) — hanya dicatat, tidak diubah"
+  P2:  "KONEKTIVITAS & JARINGAN (L2)"
+  P3:  "KEMAMPUAN SUMBER DAYA"
+  P4:  "ARSITEKTUR DATA"
+  P5:  "ATURAN & VALIDASI"
+  P6:  "KEMAMPUAN APLIKASI"
+  P7:  "ALUR & PIPA"
+  P8:  "INDEKS & REFERENSI"
+  P9:  "KEAMANAN & BATAS"
+  P10: "PENGAMATAN"
+  P11: "CADANGAN & PEMULIHAN"
+  P12: "PENGUJIAN"
+  P13: "PENGUJIAN LINTAS-BAGIAN"
+  P14: "SIAP DITERIMA"
+  catatan: "P0-P14 = engineering gates, bukan 15 instalasi"
+
+pep:
+  prinsip:
+    - "MENGAMATI DULU, BARU MERENCANAKAN"
+    - "MEMBUKTIKAN DULU, BARU MEMASANG"
+    - "SATU PERUBAHAN SEKALI, DIBUKTIKAN"
+    - "SETIAP TINDAKAN ADA BUKTINYA"
+    - "TIDAK PERNAH MENGUBAH BUKTI LAMA"
+  urutan: ["CATAT KEADAAN SAAT INI","TETAPKAN TARGET","TETAPKAN BUKTI BERHASIL/GAGAL","MINTA IZIN L0","PERUBAHAN TERKENDALI","BANDINGKAN DENGAN BUKTI AWAL","SIMPAN BUKTI HASIL","LAPOR KE L0"]
+
+milestone:
+  M1: "DOKUMEN KEADAAN FISIK LENGKAP"
+  M2: "JARINGAN TERPETAKAN — tidak ada koneksi tak dikenal"
+  M3: "SKEMA DATA & ASAL-USUL DISEPAKATI"
+  M4: "ALUR A1-A8 BERJALAN PADA CONTOH DATA"
+  M5: "SETIAP KLAIM BISA DITELUSURI KE SUMBER"
+  M6: "PC-i5 MENJADI SIMPANAN BUKTI TERPERCAYA"
+  M7: "KEEMPAT OS BERKOMUNIKASI DENGAN KONTRAK SAMA"
+  M8: "SISTEM MENJALANKAN PEMERIKSAAN DASAR SENDIRI"
+  M9: "AUDIT LULUS TANPA KLAIM TANPA BUKTI"
+  M10: "L0 BISA MEMANTAU DARI MANA SAJA"
+
+rks_network:
+  prinsip:
+    - "JARINGAN = JALAN, BUKAN ISI PESAN"
+    - "SIAPA MENGIRIM/DITERIMA HARUS DIKETAHUI"
+    - "ASAL-USUL HARUS IKUT BERSAMA DATA"
+    - "JALAN AMAN TIDAK OTOMATIS BERARTI ISI BENAR"
+  perangkat:
+    VivoY28:  {peran: "ANTARMUKA MANUSIA · SENSOR · JALAN MASUK/KELUAR", larangan: "PENYIMPANAN UTAMA · SUMBER KEBENARAN"}
+    antiX:    {peran: "PEKERJA RINGAN · PENGAWAS · JEMBATAN", larangan: "BEBAN BERAT · PENYIMPANAN BESAR"}
+    Ubuntu:   {peran: "PENELITIAN · PEMBANGUNAN · SAAT DIBUTUHKAN", larangan: "DI PERANGKAT KECIL"}
+    WindowsPCi5: {peran: "PENYIMPANAN BUKTI · PEMERIKSAAN · PUSAT AUDIT", larangan: "HUBUNGAN LANGSUNG KE LUAR TANPA GERBANG"}
+  catatan: "Yang sama = kontrak & semantik. Yang berbeda = capability."
+
+autopilot:
+  definisi: "Sistem bergerak sendiri HANYA di dalam rel yang ditentukan; keluar rel → BERHENTI & ESKALASI ke L0."
+  batas:
+    boleh_otomatis: ["MENGUMPULKAN","MEMERIKSA","MENCATAT","MENYUSUN BUKTI"]
+    dilarang_otomatis: ["MEMUTUSKAN","MENGUBAH ATURAN","MENGIRIM DATA KE LUAR"]
+  tingkat: {E0: "MANUAL", E1: "DIBANTU", E2: "BERBASIS ATURAN", E3: "DIAWASI", E4: "OTOMATIS BERSYARAT", E5: "ADAPTIF"}
+  aturan: "E4/E5 hanya untuk pekerjaan yang risikonya terukur dan terkendali."
+  rel_final: "Tidak ada otomatisasi tanpa batas. Tidak ada keputusan tanpa bukti. Tidak ada eksekusi tanpa kontrak. Tidak ada penerimaan tanpa verifikasi."
+
+risiko:
+  - {risiko: "Korelasi dianggap sebab", tingkat: "Tinggi", pencegahan: "Bedakan hubungan vs penyebab"}
+  - {risiko: "Data buruk dipakai", tingkat: "Kritis", pencegahan: "Pintu kualitas sebelum analisis"}
+  - {risiko: "Asal-usul hilang", tingkat: "Tinggi", pencegahan: "Catat sejak dikumpulkan"}
+  - {risiko: "Dasbor dianggap kebenaran", tingkat: "Tinggi", pencegahan: "Dasbor ≠ SSOT"}
+  - {risiko: "AI memutuskan dari data mentah", tingkat: "Kritis", pencegahan: "Wajib verifikasi & bukti dulu"}
+  - {risiko: "Autopilot meneruskan kesalahan otomatis", tingkat: "Tinggi", pencegahan: "Stop condition + eskalasi L0"}
+  - {risiko: "Dokumen dianggap sistem yang sudah jadi", tingkat: "Tinggi", pencegahan: "Architecture ≠ Runtime Proof"}
+  - {risiko: "Model internal disebut standar resmi", tingkat: "Sedang", pencegahan: "Label internal mapping"}
+  - {risiko: "Data keluar tanpa izin", tingkat: "Tinggi", pencegahan: "Klasifikasi + batas pengiriman"}
+
+label_epistemik: ["FAKTA","KESIMPULAN","ASUMSI","BELUM_DIKETAHUI","KLAIM_TERLALU_BESAR","DIPERTAJAM"]
+
+koreksi_terkunci:
+  - "A1-A8 = 8 tahap, BUKAN 7"
+  - "Kontrak data ≠ jalur transportasi"
+  - "MICO = model logis, BUKAN server pusat"
+  - "Empat OS tidak dipaksa simetris"
+  - "waktu_diamati ≠ waktu_dibuat"
+  - "Provenance sejak awal (bukan setelah dibersihkan)"
+  - "Analitik berhenti di rekomendasi"
+  - "SQLite → DuckDB = eskalasi jika butuh, bukan wajib"
+  - "NIST = fungsi lintas-siklus (Govern/Map/Measure/Manage), bukan urutan wajib"
+  - "Model internal MICO ≠ standar publik"
+  - "Read-only observation (mengumpulkan bukti) tidak memerlukan approval mutasi"
+  - "Struktur folder+teks meningkatkan keterlacakan, TIDAK menjamin kebenaran/keabadian"
+
+batas_mandat:
+  mode: "research_and_audit_only"
+  execution: "forbidden"
+  installation: "deferred"
+  configuration_mutation: "forbidden"
+  certification_claims: "forbidden"
+  kernel_fusion: "rejected"
+
+standar_rujukan:
+  togaf: "metode arsitektur enterprise (The Open Group)"
+  ppdioo: "lifecycle jaringan (Prepare→Plan→Design→Implement→Operate→Optimize)"
+  iso_42001: "AIMS — referensi tata kelola, bukan bukti sertifikasi"
+  iso_27001: "ISMS — referensi keamanan informasi"
+  iso_19011: "pedoman audit management system (edisi terbaru 2026)"
+  iso_8000: "kualitas data (8000-8 konsep; 8000-210 sensor; TS 8000-230 cleansing)"
+  nist_ai_rmf: "Govern/Map/Measure/Manage — bukan checklist urut wajib"
+  w3c_prov: "provenance: Entity/Activity/Agent/Derivation"
+  opentelemetry: "telemetry: metrics/logs/traces"
+
+lifecycle_engineering:
+  alur: "L0 → TUJUAN → ARSITEKTUR → HIRAC → JSA → WBS → RKS → PEP → NETWORK PLANNING → TASK CARD → EKSEKUSI → QA/QC → ANALITIK → BUKTI → AUDIT → L0 (TERIMA/TOLAK/UBAH) → LESSON LEARNED"
+  modul: ["Identitas & Otoritas","Architecture & System Planning","HIRAC/Risk","JSA","WBS","RKS","PEP","Network Planning","Task Contract","Execution Engine","Data & Analytics","Evidence & Provenance","QA/QC & Acceptance","Audit & Red Team","Recovery & Incident","Knowledge & Learning","Pendidikan/Kurikulum","Auto-Pilot"]
+
+catatan_auditor_kimi:
+  - id: "C-01"
+    isi: "Dua model 'lapis' hidup berdampingan: 7-Layer MICO (Physical→Collaboration) dan 5-Lapis (Pemakai→Infrastruktur). Keduanya sah sebagai model internal, WAJIB beri label eksplisit agar tidak tertukar."
+  - id: "C-02"
+    isi: "Typo berulang 'Keamanan**n**' di judul Bab 7 → perbaiki saat revisi."
+  - id: "C-03"
+    isi: "Daftar 10 akun Gmail TIDAK dicantumkan di modul (benar) — tetap di Brankas Kunci; modul hanya memuat aturan pengelolaannya."
+  - id: "C-04"
+    isi: "PL-Z83-02 (v2352) masih OPEN — modul ini tidak menutupnya; tetap menunggu konfirmasi fisik L0."
+  - id: "C-05"
+    isi: "Metafora fisik (laba-laba/jala/beras/gel, panel LV, PLTS, IoT, siklus AC) adalah ANALOGI pedagogis — dilarang diperlakukan sebagai bukti runtime."
+
+status_akhir: "CONCEPTUAL ARCHITECTURE VALID — IMPLEMENTATION DEFERRED — EVIDENCE MAPPING REQUIRED"
+penutup: "Manusia menetapkan tujuan. Sistem memastikan aturan dipatuhi. Data dicatat asalnya. Hasil diperiksa. Bukti disimpan. Keputusan tetap milik manusia."

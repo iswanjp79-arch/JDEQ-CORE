@@ -1,0 +1,5 @@
+=== MICO-FIND-OHSAS-001 · 20260916-050907 ===
+Folder fokus: D:\KUMPULAN DATA\OBSIDIAN\JDEQ_ANCHORS_BACKUP\JDEQ_ANCHORS — TIDAK ADA
+=== TAHAP 2: Scan seluruh D: ===
+Total match seluruh D:: 0
+Tidak ada berkas OHSAS berformat .rar/.zip di Drive D:

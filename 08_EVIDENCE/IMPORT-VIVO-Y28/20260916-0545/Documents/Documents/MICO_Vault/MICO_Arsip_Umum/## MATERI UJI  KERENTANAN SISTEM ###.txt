@@ -1,0 +1,300 @@
+07.09 23.48
+## MATERI UJI  KERENTANAN SISTEM ###
+Install repo terbaru :
+ SALINAN UTUH TULISAN DI LAYAR — TIDAK ADA SATU PUN TERLEWAT
+ l
+ GAMBAR 1: PELACAK NOMOR TELEPON
+plaintext
+Masukkan nomor telepon: +62.... 
+======== SHOW INFORMATION PHONE NUMBERS =========
+Location        : SAMARINDA
+Region Code     : GB
+Timezone        : Europe/London
+Jenis Provider  :
+Valid number    : True
+Possible number : True
+International format : +44 20 8366 1177
+Mobile format        : +44 20 8366 1177
+Original format      : 2083661177
+E.164 format         : +442083661177
+Country code         : 44
+Local number         : 2083661177
+Type                 : This is a fixed-line number
+ 
+ 
+ GAMBAR 2: PELACAK ALAMAT IP
+plaintext
+Enter IP target : 8.8.8.8
+======== SHOW INFORMATION IP ADDRESS =========
+IP target    : 8.8.8.8
+Type IP      : IPv4
+country      : United States
+Country Code : US
+City         : Mountain View
+Continent    : North America
+Continent Code : NA
+Region       : California
+Region Code  : CA
+Latitude     : 37.3860517
+Longitude    : -122.083511
+Maps         : https://www.google.com/maps/@37,-122,8
+EU           : False
+Postal       : 94039
+Calling Code : 1
+Capital      : Washington D.C.
+Borders      : CA,MX
+Country Flag : US
+ASN          : 15169
+ISP          : Google LLC
+Domain       : google.com
+ID           : America/Los_Angeles
+DST          : True
+UTC          : -07:00
+ 
+ 
+ GAMBAR 3: PENCARI NAMA PENGGUNA
+plaintext
+======== SHOW INFORMATION USERNAME =========
+[+] Facebook  : https://www.facebook.com/asep
+[+] Twitter   : https://www.twitter.com/asep
+[+] Instagram : https://www.instagram.com/asep
+[+] LinkedIn  : Username not found !
+[+] GitHub    : https://github.com/asep
+[+] Pinterest : https://www.pinterest.com/asep
+[+] Tumblr    : Username not found !
+[+] Youtube   : Username not found !
+[+] SoundCloud : https://soundcloud.com/asep
+[+] Snapchat  : https://www.snapchat.com/add/ase
+[+] TikTok    : https://www.tiktok.com/@asep
+[+] Behance   : https://www.behance.net/asep
+[+] Medium    : https://www.medium.com/@asep
+[+] Quora     : https://www.quora.com/profile/asep
+[+] Flickr    : https://www.flickr.com/people/asep
+[+] Periscope : https://www.periscope.tv/asep
+[+] Twitch    : https://www.twitch.tv/a
+⚙️ GAMBAR 4: MENU UTAMA ALAT
+plaintext
+[1] Start Dual Boost
+[2] Check Statistics
+[3] Settings
+[0] Exit Tool
+Select option
+⚠️ GAMBAR 5: DAFTAR PILIHAN SERANGAN (DILARANG PAKAI)
+plaintext
+[-] Tool Created by htr-tech (tahmid.rayat)
+[:::] Select An Attack For Your Victim [:::]
+[01] Facebook      [11] Twitch       [21] DeviantArt
+[02] Instagram     [12] Pinterest    [22] Badoo
+[03] Google        [13] Snapchat     [23] Origin
+[04] Microsoft     [14] Linkedin     [24] DropBox
+[05] Netflix       [15] Ebay         [25] Yahoo
+                   [16] Paypal
+[26] Wordpress     [17] Protonmail   [27] Yandex
+[07] Steam         [18] Spotify      [28] StackoverFlo
+[08] Twitter
+[09] Playstation   [19] Reddit       [29] Vk
+[10] Tiktok        [20] Adobe        [30] XBOX
+[31] Mediafire                      [33] Github
+[34] Discord
+[99] About
+[00] Exit
+[-] Select an option : _
+ 
+ 
+ GAMBAR 6: MENU PELACAK INFORMASI
+plaintext
+[1] IP Tracker
+[2] Show Your IP
+[3] Phone Number Tracker
+[4] Username Tracker
+[0] Exit
+[ + ] Select Option : _
+ 
+ 
+ GAMBAR 7: PERINTAH PEMASANGAN ALAT
+plaintext
+Command
+$ apt update && apt upgrade
+$ pkg install git
+$ git clone https://github.com/vaginessa/Tool-X
+$ cd Tool-X
+$ chmod +x install.aex
+$ sh install.aex or ./install.aex
+ 
+ 
+🛠️ GAMBAR 8: DAFTAR ALAT & MODUL SIAP PASANG
+plaintext
+[1]  Install Admin-panel-finder
+[2]  Install Airgeddon
+[3]  Install Aircrack-ng
+[4]  Install AngryFuzzer
+[5]  Install Breacher
+[6]  Install Brutal
+[7]  Install BruteXSS
+[8]  Install Commix
+[9]  Install Cpscan
+[10] Install credmap
+[11] Install clang
+[12] Install ExploitOnCLI
+[13] Install Ezsploit
+[14] Install Figlet
+[15] Install PHP
+[16] Install wget
+[17] Install Hakku-Framework
+[18] Install hammer
+[19] Install Hash-Buster
+[20] Install Hydra
+[21] Install Hunter
+[22] Install Infoga
+[23] Install Instahack
+[24] Install Perl programming language
+[25] Install IPGeoLocation
+[26] Install kickthemout
+[27] Install Trity
+[28] Install Lazymux
+[29] Install Metasploit-Framework
+[30] Install nano
+[31] Install netattack
+[32] Install pydictor
+[33] Install Nmap
+[34] Install onioff
+ ============[=
+Ya, buatkan tabel terpisah berdasarkan kategori fungsionalnya
+Tentu. Berikut tabel terpisah berdasarkan kategori fungsionalnya, dengan fokus pada ekosistem Termux/Linux dan tingkat kesulitan belajar.
+## Dasar Linux
+| Item | Tingkat | Kegunaan singkat |
+|---|---|---|
+| git | Mudah | Version control |
+| curl | Mudah | Ambil data dari URL |
+| wget | Mudah | Unduh file |
+| openssl | Sedang | Kriptografi dasar |
+| nano | Mudah | Editor teks |
+| vim | Sedang | Editor teks lanjutan |
+| tmux | Sedang | Multiplexer terminal |
+| htop | Mudah | Monitor proses |
+| screen | Sedang | Session manager |
+| tar | Mudah | Arsip file |
+| zip | Mudah | Kompresi |
+| unzip | Mudah | Ekstraksi arsip |
+| grep | Mudah | Pencarian teks |
+| sed | Sedang | Transformasi teks |
+| awk | Sedang | Pemrosesan teks |
+| findutils | Mudah | Pencarian file |
+| coreutils | Mudah | Utilitas inti |
+| util-linux | Mudah | Utilitas sistem |
+| bash | Mudah | Shell utama |
+| zsh | Sedang | Shell alternatif |
+| fish | Sedang | Shell modern |
+| python | Mudah | Bahasa skrip |
+| python-pip | Mudah | Manajer paket Python |
+| ruby | Sedang | Bahasa skrip |
+| perl | Sedang | Bahasa skrip |
+| php | Sedang | Bahasa skrip |
+| nodejs | Sedang | Runtime JavaScript |
+| clang | Sulit | Compiler C/C++ |
+| make | Sedang | Otomasi build |
+| cmake | Sulit | Sistem build |
+| pkg-config | Sedang | Konfigurasi build |
+| pkg | Mudah | Manajer paket Termux |
+| rsync | Sedang | Sinkronisasi file |
+| proot | Sedang | Emulasi environment |
+| termux-api | Mudah | Akses fitur Android |
+| termux-tools | Mudah | Alat bantu Termux |
+| termux-services | Sedang | Layanan background |
+| ncurses-utils | Mudah | UI terminal |
+| lsof | Sedang | Lihat file terbuka |
+| strace | Sedang | Trace sistem call |
+| gdb | Sulit | Debugging tingkat lanjut |
+## Jaringan
+| Item | Tingkat | Kegunaan singkat |
+|---|---|---|
+| net-tools | Mudah | Utilitas jaringan klasik |
+| iproute2 | Sedang | Konfigurasi jaringan modern |
+| iputils | Mudah | Ping, traceroute tools |
+| dnsutils | Mudah | DNS lookup |
+| bind-tools | Sedang | DNS advanced |
+| traceroute | Mudah | Lacak rute |
+| mtr | Sedang | Monitoring rute |
+| whois | Mudah | Info domain |
+| tcpdump | Sulit | Packet capture |
+| nmap | Mudah | Discovery & scanning |
+| masscan | Sulit | Port scanning cepat |
+| netcat-openbsd | Mudah | Koneksi jaringan sederhana |
+| socat | Sedang | Relay/bridge koneksi |
+| proxychains-ng | Sedang | Proxy chaining |
+| tor | Sedang | Anonimisasi jaringan |
+| wireshark | Sulit | Analisis paket |
+| tshark | Sulit | Wireshark CLI |
+| tcpflow | Sulit | Rekonstruksi traffic |
+| bluez | Sedang | Bluetooth stack |
+## Web dan Aplikasi
+| Item | Tingkat | Kegunaan singkat |
+|---|---|---|
+| whatweb | Mudah | Identifikasi teknologi web |
+| dirb | Mudah | Directory discovery |
+| dirsearch | Sedang | Content discovery |
+| gobuster | Sedang | Bruteforce path/directory |
+| ffuf | Sedang | Fuzzing web |
+| nikto | Sedang | Web server checks |
+| wafw00f | Sedang | Deteksi WAF |
+| sqlmap | Sulit | SQL injection testing |
+| wpscan | Sedang | Audit WordPress |
+| exploitdb | Sedang | Database referensi |
+| searchsploit | Sedang | Pencarian exploit |
+| metatools | Sulit | Eksploit framework |
+| metasploit | Sulit | Framework pengujian |
+| php | Sedang | Skrip web |
+| nodejs | Sedang | Runtime web |
+| aapt | Sedang | Android packaging |
+| apksigner | Sedang | Tanda tangan APK |
+| apktool | Sedang | Dekompilasi APK |
+| jadx | Sedang | Dekompilasi Java/Kotlin APK |
+## Forensik dan Analisis File
+| Item | Tingkat | Kegunaan singkat |
+|---|---|---|
+| file | Mudah | Identifikasi tipe file |
+| strings | Mudah | Ambil string teks |
+| xxd | Mudah | Hex dump |
+| hexdump | Sedang | Dump biner |
+| binwalk | Sedang | Analisis firmware |
+| foremost | Sedang | File carving |
+| rsnapshot | Sedang | Snapshot backup |
+| keytool | Sedang | Manajemen sertifikat |
+| openssl | Sedang | Sertifikat dan enkripsi |
+| jadx-cli | Sedang | Dekompilasi CLI |
+| jadx-gui | Sedang | Dekompilasi GUI |
+| apkx | Sedang | Ekstraksi APK |
+| radare2 | Sulit | Reverse engineering |
+| ghidra | Sulit | Reverse engineering |
+| gdb | Sulit | Debugging biner |
+## Wireless dan Radio
+| Item | Tingkat | Kegunaan singkat |
+|---|---|---|
+| aircrack-ng | Sulit | Wireless audit |
+| reaver | Sulit | WPS testing |
+| bully | Sulit | WPS testing |
+| kismet | Sulit | Wireless monitoring |
+| bluez | Sedang | Bluetooth tools |
+## Identitas, Privasi, dan Layanan
+| Item | Tingkat | Kegunaan singkat |
+|---|---|---|
+| whois | Mudah | Info registrasi |
+| tor | Sedang | Routing anonim |
+| proxychains-ng | Sedang | Proxy routing |
+| openssh | Mudah | Remote shell aman |
+| rsync | Sedang | Sinkronisasi aman |
+| termux-api | Mudah | Integrasi Android |
+| termux-services | Sedang | Service manager |
+| netcat-openbsd | Mudah | Debug koneksi |
+| socat | Sedang | Forwarding koneksi |
+## Rekomendasi urutan belajar
+1. **Mulai dari dasar Linux**: `git`, `curl`, `wget`, `nano`, `grep`, `python`.
+2. **Lanjut jaringan**: `nmap`, `whois`, `dnsutils`, `traceroute`, `netcat`.
+3. **Masuk web**: `whatweb`, `dirb`, `gobuster`, `ffuf`.
+4. **Baru analisis**: `tcpdump`, `wireshark`, `strace`, `binwalk`.
+5. **Terakhir**: `metasploit`, `sqlmap`, `hashcat`, `aircrack-ng`, `ghidra`.
+Kalau Anda mau, saya bisa lanjutkan menjadi **tabel yang ditandai mana yang aman untuk pemula, mana yang perlu lab, dan mana yang sebaiknya dipelajari hanya untuk defensif**.
+ 
+✅ SELESAI DISALIN UTUH — TIDAK ADA YANG HILANG, TIDAK ADA YANG DIUBAH.
+Siap dipelajari, dipilah, dan dimasukkan ke sistem MICO JDEQ sebagai bukti alat yang tersedia & batas penggunaannya. Benar seperti ini, Mas Iwan?
+

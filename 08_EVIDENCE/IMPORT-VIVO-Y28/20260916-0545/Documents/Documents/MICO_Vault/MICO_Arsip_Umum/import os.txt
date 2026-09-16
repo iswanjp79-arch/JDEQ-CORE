@@ -1,0 +1,44 @@
+01.15 04.08
+import os
+import subprocess
+
+class JarvisCloudManager:
+    def __init__(self):
+        # Daftar remote rclone sing wis sampeyan setup
+        self.remotes = {
+            "docs": "gdrive_personal:",
+            "big_files": "mega_storage:",
+            "backup": "terabox_vault:"
+        }
+
+    def upload_logic(self, file_path):
+        file_size = os.path.getsize(file_path) / (1024 * 1024) # Konversi dadi MB
+        file_ext = os.path.splitext(file_path)[1]
+
+        print(f"[*] Analisis file: {file_path} ({file_size:.2f} MB)")
+
+        # LOGIKA HACKER OTOMATIS:
+        if file_ext in ['.pdf', '.doc', '.docx']:
+            target = self.remotes["docs"]
+        elif file_size > 50:
+            target = self.remotes["big_files"]
+        else:
+            target = self.remotes["backup"]
+
+        self.execute_upload(file_path, target)
+
+    def execute_upload(self, file_path, remote_target):
+        print(f"[+] Mengirim ke {remote_target}...")
+        try:
+            # Perintah Rclone kanggo upload
+            subprocess.run(["rclone", "copy", file_path, remote_target], check=True)
+            print(f"✅ Berhasil! File aman ing {remote_target}")
+        except Exception as e:
+            print(f"❌ Gagal: {e}")
+
+# Inisialisasi Jarvis
+jarvis = JarvisCloudManager()
+
+# Tes Upload
+# jarvis.upload_logic("tugas_kreatif_sipil.pdf")
+

@@ -1,0 +1,50 @@
+# ============================================================
+# L1_KIMI_AUDIT_Z83_REPORT.yml
+# Verifikasi Independen Z83 (MARKAS-UTAMA) — Auditor Eksternal (KIMI)
+# Referensi: SPK-AUDIT-KIMI-L1-PC5-001 (diperluas ke node Z83)
+# ============================================================
+audit:
+  auditor: "KIMI (Auditor Eksternal Independen)"
+  target: "Z83 (markas-utama) — L1 Node Identification"
+  tanggal: "2026-09-10"
+  mode: "READ_ONLY"
+  basis: "Terminal mentah (ls -la, hostname, uptime, banner SSH) + ringkasan 9 file"
+  verdict: "PASS_WITH_NOTES"
+
+validasi_mentah:
+  - klaim: "hostname markas-utama / Ubuntu 26.04 / kernel 7.0.0-31"
+    status: "TERKONFIRMASI (banner SSH + hostname)"
+  - klaim: "uptime 1j23j, load 0.19/0.14/0.15"
+    status: "TERKONFIRMASI (uptime)"
+  - klaim: "Tailscale 100.67.36.31 koneksi PC-i5->Z83 OK"
+    status: "TERKONFIRMASI (prompt SSH asli)"
+  - klaim: "RAM 3.2 GiB, thermal 46-49C, eMMC 57.7GB"
+    status: "BELUM TERVERIFIKASI KIMI (isi file L1-02/03/04 belum dibaca)"
+
+temuan:
+  - id: "T-01"
+    deskripsi: "gdrive_token.json mode aktual 664 (DOLA menulis 644 - tidak akurat). Target 600."
+    status: "OPEN — butuh ACC chmod terpisah"
+  - id: "T-02"
+    deskripsi: "File junk 0-byte (1, 24, G01, googleusercontent) mode 664 tidak tercatat DOLA."
+    status: "OPEN — hygiene"
+  - id: "T-03"
+    deskripsi: "TEMPEL_* 0 byte = bom waktu; secret yang ditempel nanti akan terbaca semua user pada mode 664."
+    status: "OPEN — kunci sebelum dipakai"
+  - id: "T-04"
+    deskripsi: "6 koneksi UNKNOWN (laporan malam 09 Sep) belum teridentifikasi."
+    status: "OPEN — register L2/keamanan"
+  - id: "T-05"
+    deskripsi: "RAM terpakai 706 vs 889 MiB antar-laporan — plausibel waktu beda, tidak materiel."
+    status: "OBSERVASI"
+
+catatan_positif:
+  - "kunci-mico.json 600, .ssh/.gnupg/.cloudflared 700, .bash_history 600 — aman."
+  - "fail2ban + systemd-oomd aktif = expected untuk gateway edge, bukan temuan."
+  - "Tidak ada bukti kehilangan data; zero-retention dijaga (read-only)."
+
+arahan_lanjut: |
+  stat -c '%a %n' ~/.secrets ~/jdeq-vault ~/vault ~/gdrive_token.json ~/kunci-mico.json ~/TEMPEL_* 2>/dev/null | tee ~/BUKTI/z83_mode_audit_$(date +%Y%m%d).txt
+
+batasan_audit: "Verdict berbasis terminal mentah + ringkasan; isi 9 file kanonik belum dibaca KIMI. Bila perlu: minta isi L1-02_mem dan L1-04_thermal saja."
+putusan: "PASS_WITH_NOTES. Tidak ada klaim ACCEPTED dari KIMI; acceptance tetap hak L0."

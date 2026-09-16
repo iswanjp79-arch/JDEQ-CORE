@@ -1,0 +1,87 @@
+07.02 02.28
+# PROTOKOL AETERNA: PARTITUR 5 - BUS TOKEN STREAMING (V5.0)
+# Niat Strategis: Membangun API RESTful untuk Simulasi Skalabilitas 1 Miliar Token.
+# --- FASE A: DEPENDENSI & PRE-CHECK ---
+echo -e "\\033[33m\\n[SETUP] Memastikan Python terinstall dan Port 8080 bebas...\\033[0m"
+# Menginstal Python jika belum ada (Safe Check)
+pkg install python -y
+SERVER_PORT=8080
+# 1. FAIL-SAFE: Pre-Check Port Otomatis
+# Menggunakan netstat untuk cek apakah port 8080 sedang digunakan.
+if netstat -tuln | grep ":$SERVER_PORT " > /dev/null; then
+echo -e "\\033[31m\\u2717\\033[0m [PORT GAGAL] Port $SERVER_PORT sedang digunakan. Matikan service lain (misal: Nginx) dan coba lagi."
+exit 1
+fi
+echo -e "\\033[32m\\u2714\\033[0m [PORT LULUS] Port 8080 bebas. Lanjut Instalasi Bus Data."
+# --- FASE B: BUS DATA BERAROMA API (RESTful Python Server) ---
+echo -e "\\n\\033[33m[SERVICE ACTIVATE] Mengaktifkan Bus Data Beraroma API (RESTful)...\\033[0m"
+# Skrip Python Server (Mengimplementasikan Endpoint /data)
+cat > $HOME/aeterna_bus_api.py << 'EOF_PYTHON_SERVER'
+import http.server
+import socketserver
+import os
+import sys
+import json
+TARGET_DIR = os.path.join(os.path.expanduser('~'), "..", "usr", "share", "nginx", "html")
+DATA_FILE_PATH = os.path.join(os.path.expanduser('~'), "aeterna_workspace", "500_zero_data_profiles.json")
+PORT = 8080
+if not os.path.exists(TARGET_DIR):
+print(f"[ERROR] Direktori target {TARGET_DIR} tidak ditemukan.", file=sys.stderr)
+sys.exit(1)
+os.chdir(TARGET_DIR)
+# Muat data JSON hanya sekali saat server start
+try:
+with open(DATA_FILE_PATH, 'r') as f:
+FULL_DATA = json.load(f)
+except Exception:
+FULL_DATA = []
+class RESTfulBusHandler(http.server.SimpleHTTPRequestHandler):
+def end_headers(self):
+self.send_header('Access-Control-Allow-Origin', '*')
+http.server.SimpleHTTPRequestHandler.end_headers(self)
+def do_GET(self):
+# Endpoint 1: /data (Melayani JSON Langsung - Bus Token)
+if self.path == '/data':
+self.send_response(200)
+self.send_header('Content-type', 'application/json')
+self.end_headers()
+# Simulasi Data Streaming/Token Chunking
+# Melayani JSON penuh (karena data masih kecil). Untuk 1M token, ini akan diubah menjadi generator.
+response_data = json.dumps({"status": "SUCCESS", "token_count": len(FULL_DATA), "profiles": FULL_DATA[:5]})
+self.wfile.write(response_data.encode('utf-8'))
+return
+# Endpoint 2: Default (Melayani index.html untuk Validasi Browser)
+elif self.path == '/' or self.path == '/index.html':
+super().do_GET()
+return
+# 3. Endpoint Lain: 404
+else:
+self.send_response(404)
+self.end_headers()
+self.wfile.write(b"404 Not Found - Konduktor Sejati API")
+def log_message(self, format, *args):
+# Menonaktifkan logging request
+pass
+# Setup server
+try:
+with socketserver.TCPServer(("", PORT), RESTfulBusHandler) as httpd:
+print(f"\\n[BUS DATA LIVE] RESTful API Aktif di Port {PORT}")
+print("-> [VALIDASI BROWSER] Akses: http://127.0.0.1:8080")
+print("-> [VALIDASI API] Akses: http://127.0.0.1:8080/data")
+print("\\nTekan Ctrl+C untuk menghentikan server.")
+httpd.serve_forever()
+except OSError as e:
+if "Address already in use" in str(e):
+print(f"[ERROR] Port {PORT} sudah digunakan. Matikan service.")
+else:
+print(f"[ERROR] Gagal menjalankan server: {e}")
+except KeyboardInterrupt:
+print("\\n[SERVER STOP] Server dihentikan oleh pengguna.")
+except Exception as e:
+print(f"[FATAL ERROR] {e}")
+EOF_PYTHON_SERVER
+chmod +x $HOME/aeterna_bus_api.py
+# 2. EKSEKUSI (Jalankan di Foreground)
+echo -e "\\n\\033[36m-> [EKSEKUSI] Menjalankan Bus Data Beraroma API...\\033[0m"
+python $HOME/aeterna_bus_api.py
+

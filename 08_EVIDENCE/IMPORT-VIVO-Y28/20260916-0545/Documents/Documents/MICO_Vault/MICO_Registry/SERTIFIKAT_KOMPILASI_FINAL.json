@@ -1,0 +1,29 @@
+{
+  "arsitektur": "MICO JDEQ v2.0 - Arsitektur Terpadu",
+  "status": "TERKOMPILASI",
+  "tanggal": "2026-07-09T15:08:51+07:00",
+  "hash_kompilasi": "6a770491b2c550847a278a851965b69da1b613404f3262489824309915c93c7d",
+  "komponen_kiri_cloud": {
+    "ai_bus": "TERKOMPILASI",
+    "cloud_agents": "0/8",
+    "counter_hypnosis": "TERKOMPILASI",
+    "self_test": "TERKOMPILASI"
+  },
+  "komponen_kanan_lokal": {
+    "qwen_model": "TERKOMPILASI",
+    "dolco_bridge": "AKTIF",
+    "mle_evidence": "2 files"
+  },
+  "inti_mico": {
+    "registry": "7 entries",
+    "policy": "8 aturan",
+    "evidence": "2 files"
+  },
+  "self_test_result": {
+    "total": 25,
+    "passed": 25,
+    "failed": 0,
+    "verdict": "PASS"
+  },
+  "catatan": "Arsitektur kiri dan kanan telah terkompilasi dengan benar. Inti MICO tidak berubah. Manusia adalah otoritas akhir."
+}

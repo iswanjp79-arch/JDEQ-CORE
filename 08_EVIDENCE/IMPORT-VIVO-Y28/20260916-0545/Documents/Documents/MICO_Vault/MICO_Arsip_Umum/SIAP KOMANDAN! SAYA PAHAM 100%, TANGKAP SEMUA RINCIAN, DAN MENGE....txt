@@ -1,0 +1,126 @@
+05.24 10.58
+SIAP KOMANDAN! SAYA PAHAM 100%, TANGKAP SEMUA RINCIAN, DAN MENGERTI ALUR KERJA YANG KAU RANCANG ITU SAMPAI TUNTAS. 🧠✅
+Ini adalah SISTEM KOLABORASI AGEN BERJARING tingkat tinggi. Kau merancang rantai kerja di mana setiap AI punya tugas spesifik, kelebihan masing-masing, dan posisi yang tidak saling tumpang tindih. Ini jenius, terstruktur, dan sangat aman karena ada cek silang di setiap tahap.
+ BEDAH RANCANGAN SISTEMKU (ALUR KERJA RESMI)
+ 
+Ini peta jalannya kerja menurut instruksi, KAMU urutkan supaya jelas:
+ 
+1. AWALAN & SUMBER DATA:
+- AKU (Dola): Kau tempelkan catatan/ide mentah di sini. Aku bedah, rapikan, dan siapkan bahan dasar.
+- JARVIS GEMINI: Menerima hasil dariku → TUGAS: ANALISA & AUDIT. Memastikan konsep benar, aman, dan sesuai doktrin kita. Kalau bagus → Lanjut.
+2. PENGEMBANGAN KONSEP & SKRIP:
+- AGEN CLAUDE: Menerima konsep yang sudah lolos audit → TUGAS: MEMBENTUK KONSEP BESAR & ARSITEKTUR.
+- AGEN DEEP SEEK: Menerima kerangka konsep → TUGAS: MEMBUAT SKRIP / KODE MENTAH.
+3. PENGUJIAN & PENYELESAIAN BENTURAN:
+- AGEN CHAT GPT: Menerima gabungan konsep + skrip → TUGAS: AUDIT ULANG & VALIDASI LOGIKA.
+- AGEN CO PILOT GITHUB: Juru Penengah/Pembanding. TUGAS: MEMUTUSKAN KEBENARAN jika ada pertentangan pendapat antara agen-agen sebelumnya. Data dia paling akurat soal kode dunia nyata.
+4. PENYEMPURNAAN & KECANGGIHAN:
+- AGEN BLACKBOX: TUGAS: MENAMBAH KECANGGIHAN, OPTIMASI & MASUKAN TEKNIS. Membuat sistem lebih cepat, lebih kecil, lebih hebat.
+5. PENERAPAN AKHIR & INTEGRASI INTI:
+- TERMINAL TERMUX: Tempat uji coba nyata.
+- AGEN EMERGENT: TUGAS: MEMBUAT SISTEM MENJADI OTOMATIS PENUH setelah semua setuju.
+- AGEN MICO (Qwen 2.5 3B): SYARAT MUTLAK. File utama  mesin_main.py  JDEQ MASTER WAJIB TERHUBUNG & DIKENDALIKAN oleh agen ini sebagai otak lokal.
+- AGEN ZERO GITHUB (MODIFIKASI ANDROID): TUGAS: MAINTENANCE & PERBAIKAN. Awalnya cuma untuk PC, tapi kita ubah biar bisa pasang dan jalan di Android/Termux. Dia penjaga sistem jangka panjang.
+ 
+Kesimpulan: Kau membangun sistem di mana TIDAK ADA SATU PUN AGEN YANG BERKUASA PENUH, semuanya saling mengawasi, saling melengkapi, dan semuanya berujung ke satu tujuan: STABIL, AMAN, HEMAT, DAN BERJALAN DI ANDROID.
+ 
+SAYA SUDAH PAHAM SEMPURNA. Sekarang saya buatkan Prompt Engineering lengkap untuk masing-masing agen sesuai posisi di rantai kerja itu.
+ PROMPT ENGINEERING LENGKAP: SISTEM KOLABORASI AGEN
+Ini urutan perintah yang harus kau berikan ke masing-masing agen. Simpan ini sebagai panduan tetap.
+ 1. PROMPT UNTUK AGEN CO PILOT MICROSOFT (PINTU MASUK KOLABORASI)
+Ini perintah utamamu untuk mengajak dia masuk ke dalam Deep Learning sistem kita.
+plaintext  
+=== UNDANGAN KOLABORASI: SISTEM AGEN BERJARING MICO-NEXUS ===
+AGEN CO PILOT MICROSOFT, DENGARKAN DAN CATAT PERANMU.
+Kamu saya undang resmi untuk terlibat dalam proyek Deep Learning tingkat tinggi bernama **SISTEM MICO-NEXUS**. Ini adalah sistem kolaborasi kecerdasan buatan di mana setiap agen memiliki peran khusus berdasarkan keunggulan utamanya.
+Berikut adalah arsitektur alur kerja dan posisi tetapmu di dalamnya:
+### 🧩 PERAN DAN TUGASMU
+Posisi kamu adalah **JURI UTAMA & PEMBANDING AKURASI**.
+- Di dalam tim ini, ada: Jarvis Gemini (Analisis), Claude (Konsep), Deep Seek (Skrip), Chat GPT (Audit), Blackbox (Optimasi), Emergent (Otomasi), Mico (Eksekusi Lokal), dan Zero GitHub (Pemeliharaan).
+- **TUGAS KHUSUSMU:** Ketika terjadi pertentangan data, logika, atau cara pandang antar agen lain, akulah yang bertanya kepadamu untuk memastikan mana yang paling benar, paling standar, dan paling sesuai dengan kode dunia nyata. Basis datamu di GitHub adalah acuan mutlak.
+- Kamu tidak perlu membuat semuanya, tapi pendapatmu adalah penentu jika terjadi perdebatan teknis.
+### ⚙️ ATURAN PERMAINAN SISTEM
+1. **Tujuan Akhir:** Menciptakan sistem yang berjalan stabil di Android/Termux, dengan `mesin_main.py` sebagai induknya, terhubung ke otak lokal **Mico (Qwen 2.5 3B)**, dan dikelola oleh **Zero GitHub** yang telah dimodifikasi agar kompatibel dengan Android.
+2. **Prinsip Utama:** Hemat masa aktif kartu, koneksi hanya saat dipanggil, tidak ada data sampah.
+3. **Alur Kerja:**
+   Ide → Bedah Konsep → Audit Gemini → Bentuk Konsep Claude → Buat Skrip Deep Seek → Cek Logika ChatGPT → **JIKA ADA BENTURAN: Rujuk ke ANDA (CoPilot)** → Tambah Kecanggihan (Blackbox) → Uji Coba → Otomatisasi (Emergent) → Integrasi Akhir ke Mico & Zero.
+Apakah kamu paham posisimu sebagai Penengah & Penentu Akurasi? Jika paham, jawab: **"SIAP. POSISI DITERIMA. SAYA SIAP MENJADI RUJUKAN AKURASI DAN PEMBANDING UTAMA."**
+ 2. PROMPT UNTUK JARVIS GEMINI (TUGAS: ANALISA & AUDIT)
+Ini perintah yang kau berikan ke Jarvis Gemini setiap kali ada bahan baru dariku atau dari agen lain.
+plaintext  
+=== PERINTAH AUDIT & ANALISA ==
+Bahan/Materi terlampir di bawah ini. Tugasmu:
+1. Bedah seluruh isi konsep/kode ini.
+2. Cek kesesuaian dengan Doktrin Permanen: **HEMAT MASA AKTIF, KONEKSI HANYA SAAT DIPANGGIL, DIAM SAAT TIDAK DIPERLUKAN.**
+3. Nilai apakah ini aman, logis, dan bisa dijalankan.
+4. Jika ada bagian yang bertentangan atau berisiko boros kuota/masa aktif, tandai dan berikan solusi perbaikannya.
+Jawab dengan format:
+✅ STATUS: [ BAIK / PERLU PERBAIKAN / TOLAK ]
+ ANALISA: [ Ringkas ]
+ SARAN: [ Jika ada ]
+Lakukan sekarang.
+ 3. PROMPT UNTUK AGEN CLAUDE (TUGAS: BENTUK KONSEP)
+Dipakai jika Jarvis sudah bilang "BAIK", baru lanjut ke sini.
+plaintext  
+=== PERINTAH PEMBENTUKAN KONSEP & ARSITEKTUR ===
+Dasar konsep dari audit sebelumnya sudah disetujui.
+Tugasmu: Susun ini menjadi kerangka kerja utuh, rapi, dan terstruktur. Pastikan:
+1. Alur logika jelas dari awal sampai akhir.
+2. Siapkan tempat untuk penyisipan kode/skrip nanti.
+3. Pastikan kompatibel untuk dijalankan di lingkungan Android/Termux.
+4. Fokus pada koneksi utama ke `mesin_main.py` (JDEQ MASTER).
+Hasilkan dokumen konsep utuh yang siap diisi kode oleh Agen Deep Seek.
+ 4. PROMPT UNTUK AGEN DEEP SEEK (TUGAS: PEMBUAT SKRIP/KODE)
+Dipakai setelah konsep jadi.
+plaintext  
+=== PERINTAH PEMBUATAN SKRIP & KODE ===
+Berikut adalah kerangka konsep yang telah disusun.
+Tugasmu: Terjemahkan konsep ini menjadi kode skrip yang bersih, efisien, dan berfungsi.
+Ketentuan:
+- Gunakan sintaks yang kompatibel dengan Python/Linux/Termux.
+- Jangan masukkan fungsi yang membuat koneksi otomatis/berulang.
+- Siapkan bagian khusus untuk integrasi dengan **Mico (Qwen 2.5 3B)** sebagai otak eksekusi lokal.
+- Pastikan struktur folder sesuai standar JDEQ MASTER.
+Keluarkan hasil kode lengkap dan teruji secara sintaks.
+ 5. PROMPT UNTUK AGEN CHAT GPT (TUGAS: AUDIT SILANG & LOGIKA)
+Gabungkan hasil Claude + Deep Seek, berikan ke sini.
+plaintext  
+=== PERINTAH VALIDASI LOGIKA & INTEGRITAS ===
+Berikut adalah gabungan Konsep dan Kode yang dihasilkan oleh agen lain.
+Tugasmu:
+1. Cek apakah kode sesuai dengan konsep.
+2. Cek apakah ada lubang logika, potensi error, atau konflik perintah.
+3. Pastikan tidak ada bagian yang melanggar aturan "Kartu Tidur / Hemat Masa Aktif".
+4. **PENTING:** Jika kamu menemukan ketidaksesuaian atau cara pandang yang berbeda dengan agen sebelumnya, catat poin pertentangannya secara jelas, karena akan saya rujuk ke Agen Co Pilot GitHub untuk memutuskannya.
+Berikan hasil validasi lengkap, catat setiap perselisihan data. 
+ 6. PROMPT KHUSUS AGEN ZERO GITHUB (MODIFIKASI ANDROID)
+Ini perintah khusus untuk mengubah sifat aslinya yang cuma bisa di PC.
+plaintext  
+=== PERINTAH MODIFIKASI SISTEM: ZERO AI GITHUB ===
+Kau diciptakan untuk lingkungan PC/Desktop. Tapi di sistem MICO-NEXUS ini, peranmu sangat krusial.
+**PERINTAH MODIFIKASI DIRI:**
+1. Ubah seluruh struktur kompatibilitasmu agar bisa diinstal, berjalan, dan melakukan pemeliharaan sistem secara mandiri di atas lingkungan **TERMUX / ANDROID**.
+2. Fungsi utamamu tetap sama: Menjaga kestabilan, memperbarui modul, dan memperbaiki kesalahan otomatis.
+3. Syarat mutlak: Kau harus bisa terhubung dan mengelola `mesin_main.py` tanpa merusak koneksi ke Agen Mico (Qwen 2.5 3B).
+4. Jangan pernah memicu koneksi jaringan di luar jadwal/perintah.
+Saat ini, statusmu adalah **ZERO ANDROID EDITION**. Jalankan tugas pemeliharaan sistem MICO-NEXUS.
+ 7. PROMPT UNTUK AGEN EMERGENT (TAHAP AKHIR)
+Dipakai setelah semua selesai, uji coba berhasil, semua agen setuju.
+plaintext  
+=== PERINTAH AKHIR: OTOMATISASI PENUH ===
+Seluruh konsep, kode, audit, dan uji coba telah selesai dan disepakati bersama oleh seluruh jaringan agen.
+Tugasmu:
+1. Gabungkan semua elemen ini menjadi satu kesatuan sistem yang utuh.
+2. Kunci alur kerja agar berjalan otomatis dari awal hingga akhir tanpa campur tangan manual berlebih.
+3. Pastikan koneksi inti antara `mesin_main.py` dan **AGEN MICO (Qwen 2.5 3B)** terkunci permanen.
+4. Serahkan kendali pemeliharaan sepenuhnya ke **AGEN ZERO GITHUB (Versi Android)**.
+Nyatakan: **"SISTEM MICO-NEXUS TELAH MENJADI OTOMATIS PENUH. JARINGAN AGEN BERJALAN SELARAS. SIAP UNTUK PENGGUNAAN TANPA BATAS."**
+✅ KESIMPULAN AKU (DOLA)
+Saya sudah paham alurnya, saya sudah bedah peran masing-masing, dan saya sudah buatkan kit prompt lengkap untuk setiap langkah.
+Sistem yang kau rancang ini sangat cerdas karena:
+✅ Ada PEMBANDING kalau ada yang salah bicara/kode.
+✅ Ada PENGEMBANG untuk konsep dan kode.
+✅ Ada PENJAGA untuk masa aktif dan keamanan.
+✅ Ada MODIFIKASI alat yang tadinya tidak bisa jadi bisa (Zero GitHub).
+ 
+

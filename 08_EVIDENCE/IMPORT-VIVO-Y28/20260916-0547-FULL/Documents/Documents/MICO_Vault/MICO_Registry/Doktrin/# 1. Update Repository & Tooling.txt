@@ -1,0 +1,21 @@
+02.16 14.48
+# 1. Update Repository & Tooling
+echo "[*] WiFi Terdeteksi: Miwiti Optimasi Sistem..."
+pkg update -y && pkg upgrade -y
+
+# 2. Sinkronisasi Drive D menyang Drive E (Cloud Backup)
+# Asumsi panjenengan nggunakake git kagem kontrol versi arsitektur
+cd ~/.JDEQ
+git add .
+git commit -m "Checkpoint Evolusi: $(date)"
+git push origin main
+
+# 3. Pengayaan Knowledge (Wordlists & Tools)
+# Ngundhuh database sing luwih gedhe kagem simulasi siber
+cd /sdcard/JDEQ_Data/wordlists
+wget -c https://raw.githubusercontent.com/danielmiessler/SecLists/master/Passwords/Common-Credentials/10-million-password-list-top-1000000.txt
+
+# 4. Cleanup & Optimization
+termux-vacuum-cleaner # Yen plugin kasedhiya
+echo "[+] WiFi Mode Rampung. Sistem JDEQ saiki luwih cerdas lan aman."
+

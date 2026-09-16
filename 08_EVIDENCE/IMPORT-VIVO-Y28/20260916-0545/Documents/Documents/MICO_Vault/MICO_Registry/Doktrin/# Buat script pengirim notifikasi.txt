@@ -1,0 +1,12 @@
+06.25 09.38
+# Buat script pengirim notifikasi
+cat > ~/JDEQ/notifier/mico_wa.sh << 'EOF'
+#!/bin/bash
+# MICO WhatsApp Notifier via Termux API
+NOMOR_ANDA="+628812680716"
+# Kirim pesan
+termux-sms-send -n "$NOMOR_ANDA" "MICO Alert: $1" 2>/dev/null
+echo "Notifikasi terkirim ke $NOMOR_ANDA"
+EOF
+chmod +x ~/JDEQ/notifier/mico_wa.sh
+

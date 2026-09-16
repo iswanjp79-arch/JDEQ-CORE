@@ -1,0 +1,16 @@
+07.22 23.05
+Aturan petunjuk install di termux  :
+Utamakan bersih - bersih maintenance dasar dan update upgrade paket dasar, yang menggantung sempurnakan, saat pindah tidak ada lagi yang belum ter kompilasi pelajaran pengalaman dari install Maturin semalam, harus rubah ke Developer mode, toggle On pada screen shoot foto yang saya upload. 
+Catatan : sebelum eksekusi lihat laporan terakhir posisi folder Environment, jika yakin sesuai lanjutkan, jika belum dalam kode letakkan di posisi yang di kehendaki. 
+1. Buat folder ( MKdir  ) dan tunjukkan dashboard yang benar,di $ atau ZSH  ( %  ) MULAI BERFIKIR AUTOMATIS DESAIN LAYER KERNELL DAN INDEXS YANG BENAR, SIMULASI AKAN ERROR ATAU TIDAK, JANGKAR SPESIFIKASI PONSEL VIVO Y28 sesuai pemahaman internal panduan cara kerja codingmu. 
+Harus bagaimana di antara folder Environment isolasi perangkat anti crash sistem OS induk perangkat itu sendiri. 
+2. IJIN Sorage
+3. BUKA NANO
+4. TULIS KODE, jika ada kegagalan kode syntax error aku tidak mau edit, namun aku akan cari cara tercepat, dengan Ctrl K akan saya lakukan dan kamu buat full kode tinggal tempel. 
+5. SAVE
+6. CHMOD, kecuali sistem log, pencatatan dsb
+7. UJI TEST
+8. VERIFIKASI
+9. LOG
+10. BARU DEPLOY
+

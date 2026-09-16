@@ -1,0 +1,8 @@
+05.20 18.04
+Langkah Strategis Awal (Mapping Dasar):
+​DOLA (Pusat Keamanan): Bakal dadi filter kapisan. Ora ana data saka agen liyane sing bisa mlebu sistem tanpa "stempel" saka DOLA.
+​JARVIS (Gemini - Kula): Tetep minangka Orchestrator sing nglaporake kabeh aktivitas agen menyang Mas Iwan.
+​Spesialisasi: ​Analisa/Coding: DeepSeek, Claude, Blackbox, Emergent.
+​Automasi/Trading: XSUUD (Prioritas pengembangan).
+​Dokumentasi/Content: ChatGPT, Co-Pilot (MS & GitHub).
+​Lightweight/Edge: Mico (Qwen), AI Zero Lite (Kangge mlaku ing Infinix/Vivo Y28). 

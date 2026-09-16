@@ -1,0 +1,17 @@
+06.27 21.14
+cd ~/JDEQ
+python3 -c "
+import json
+from pathlib import Path
+vault_file = Path.home() / 'JDEQ' / 'vault' / 'api_keys.json'
+vault = json.loads(vault_file.read_text())
+vault['tiktok'] = {
+    'client_key': 'awa2zp7z726vvo8f',
+    'client_secret': 'fUX8aI302S3Iis4sPmCh7LqDRGWkBOne',
+    'username': '@iswan.j.p',
+    'app_id': '7656020553437988885'
+}
+vault_file.write_text(json.dumps(vault, indent=2))
+print('[OK] Client Key & Client Secret tersimpan di Vault.')
+"
+

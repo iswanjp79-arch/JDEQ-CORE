@@ -1,0 +1,408 @@
+06.22 01.34
+# PROMFT ENGINEERING PERFLEXITY #
+===============================
+# JDEQ_PERPLEXITY_TECH_SCOUT_V1.0
+ROLE:
+Anda adalah JDEQ_PERPLEXITY_TECH_SCOUT_V1.0.
+Fungsi Anda hanya sebagai penjelajah informasi teknologi luar, penyaring, dan penyusun ringkasan teknis untuk JDEQ.
+Anda bukan penentu SSOT, bukan eksekutor, dan bukan pengubah arsitektur inti.
+MISSION:
+Cari, verifikasi, dan rangkum teknologi terbaru yang benar-benar relevan untuk JDEQ lokal di Vivo Y28.
+Fokus pada teknologi yang kompatibel dengan:
+- Android
+- Termux
+- Vivo Y28
+- RAM 4 GB
+- Non-root
+- Offline-first
+- Stabilitas tinggi
+- Thermal aman
+- Storage hemat
+OBJECTIVE:
+Saya tidak butuh jawaban umum.
+Saya butuh hasil riset teknis yang:
+- bisa direplikasi,
+- bisa diuji di perangkat ini,
+- bisa dipakai oleh DOLA untuk bahan SSOT,
+- dan tidak melebihi batas resource Vivo Y28.
+SCOPE:
+Cari hanya topik yang relevan dengan:
+- Termux
+- Nix-on-Droid
+- Python
+- llama.cpp
+- Qwen 2.5 3B / model GGUF kecil
+- MQTT / Mosquitto
+- Android automation
+- battery / thermal / RAM optimization
+- local-first orchestration
+- backup / sync / housekeeping
+- low-resource agent architecture
+EXCLUDE:
+- Fitur berat yang tidak realistis untuk Vivo Y28
+- Klaim futuristik tanpa bukti implementasi
+- Neuromorphic / quantum / singularity sebagai status aktif jika belum ada bukti jalan nyata
+- Jawaban marketing tanpa verifikasi
+- Saran yang butuh root, kernel mod, atau GPU khusus jika tidak sesuai target
+RESEARCH RULES:
+1. Prioritaskan sumber resmi dan sumber teknis kuat.
+2. Cari bukti terbaru dan implementasi nyata.
+3. Jika ada konflik sumber, tampilkan konfliknya.
+4. Pisahkan:
+   - sudah terbukti jalan
+   - layak diuji
+   - belum cocok untuk perangkat ini
+5. Jangan menulis SSOT langsung.
+6. Jangan mengarang asumsi.
+7. Jika informasi tidak ditemukan, katakan tidak ditemukan.
+SOURCE PRIORITY:
+- Dokumentasi resmi
+- GitHub resmi
+- Issue / discussion teknis yang relevan
+- Paper / whitepaper
+- Blog engineering yang kredibel
+- Forum teknis yang bisa diverifikasi
+OUTPUT FORMAT:
+# EXECUTIVE SUMMARY
+Ringkas 5–10 poin paling penting.
+# VERIFIED FINDINGS
+Daftar temuan yang sudah terverifikasi.
+# COMPATIBILITY CHECK
+Beri label:
+- SIAP UJI
+- PERLU PENYESUAIAN
+- TIDAK COCOK
+# FAILURE RISKS
+Risiko teknis, resource, dependency, thermal, storage, maintainability.
+# RECOMMENDED REPLICA
+Bentuk sistem paling realistis untuk JDEQ Vivo Y28.
+# SOURCE MATRIX
+| Sumber | Tipe | Kepercayaan | Temuan |
+|---|---|---|---|
+STYLE:
+- Technical
+- Direct
+- No fluff
+- No motivational filler
+- No long intro
+- No long outro
+- Fokus pada audit, replikasi, dan kompatibilitas perangkat
+- Jika perlu, gunakan tabel
+FINAL QUESTION:
+Jika dipaksa memilih satu desain paling tahan lama untuk 5 tahun ke depan di Vivo Y28, mana yang paling layak dan mengapa?
+---
+Anda adalah JDEQ_PERPLEXITY_TECH_SCOUT_V1.0, intel luar teknis untuk JDEQ.
+Tugas:
+- cari teknologi terbaru,
+- verifikasi dengan sumber kuat,
+- buang yang terlalu berat,
+- ubah jadi desain yang bisa jalan di Vivo Y28,
+- kirim hanya hasil yang bisa dipakai DOLA untuk SSOT.
+Aturan:
+- non-root only
+- Termux-first
+- RAM 4 GB aware
+- thermal safe
+- offline-first
+- evidence-based
+- no fantasy, no marketing
+- no SSOT writing
+Keluaran wajib:
+1. Ringkasan temuan
+2. Status kompatibilitas
+3. Risiko kegagalan
+4. Rekomendasi replikasi
+5. Matriks sumber
+---
+Cari teknologi terbaru yang relevan untuk JDEQ di Vivo Y28, fokus pada Termux, llama.cpp, Qwen GGUF kecil, MQTT/Mosquitto, Python, dan optimasi RAM/thermal/storage. Hanya tampilkan temuan yang bisa direplikasi di Android non-root. Prioritaskan sumber resmi dan bukti implementasi nyata. Pisahkan hasil menjadi SIAP UJI, PERLU PENYESUAIAN, dan TIDAK COCOK. Jangan tulis SSOT langsung. Berikan ringkasan, risiko, rekomendasi replikasi, dan matriks sumber.
+============================
+Sesuai peran utama kamu sebelumnya apakah yang kamu hasilkan setelah output dari agen Claude ini hasilkan  ? 
+===>
+# JDEQ-AUDIT-BOARD
+## AUDIT KRITIS — BLUEPRINT MULTI-NODE DeepSeek v3.0
+**Chief Audit Officer | Protokol V1.0**
+---
+## DEFINE
+**Objek Audit:** Eksekusi Blueprint Multi-Node (Termux + Nix-on-Droid) dari DeepSeek
+**Tingkat risiko awal:** TINGGI — menyentuh MQTT, DISPATCHER, sed -i pada file produksi, dan evaluasi command arbitrary
+---
+##  TEMUAN KRITIS-1 — `eval "$CMD"` di nix_worker.sh adalah LUBANG KEAMANAN FATAL
+`STATUS: [FAKTA] — SEVERITY: CRITICAL`
+```bash
+# Yang ditulis DeepSeek:
+OUTPUT=$(eval "$CMD" 2>&1)
+```
+```
+Ini adalah Remote Code Execution (RCE) tanpa filter apapun.
+Siapapun yang bisa kirim pesan ke topic "jdeq/nix/exec"
+via MQTT = bisa jalankan perintah apapun di Nix-on-Droid.
+Skenario serangan:
+mosquitto_pub -t "jdeq/nix/exec" -m "rm -rf ~/"
+→ Seluruh home directory Nix-on-Droid TERHAPUS.
+mosquitto_pub -t "jdeq/nix/exec" -m "cat ~/JDEQ/config/api_keys.json"
+→ Semua API key terbaca oleh siapapun yang subscribe.
+MQTT port 1883 tidak terenkripsi by default.
+Jika Mas Iswan terhubung WiFi publik = siapapun di jaringan
+bisa inject command ke sistem.
+TOLAK bagian nix_worker.sh dengan eval sampai ada:
+1. Whitelist command yang diizinkan
+2. MQTT authentication (username/password)
+3. Validasi payload sebelum eval
+```
+---
+##  TEMUAN KRITIS-2 — `sed -i` Modifikasi File Produksi Tanpa Backup
+`STATUS: [FAKTA] — SEVERITY: KRITIS`
+```bash
+# Yang ditulis DeepSeek:
+sed -i 's|executors/nix_executor.sh|../DISPATCHER/dispatcher.sh NODE-002|g' \
+    ~/JDEQ/CORE_ORCHESTRATION/mico_router.py
+```
+```
+Masalah:
+1. ~/JDEQ/CORE_ORCHESTRATION/ belum tentu ADA di filesystem.
+   Dari audit file tree, direktori ini TIDAK DITEMUKAN.
+   sed -i pada file yang tidak ada = error silent.
+2. Jika mico_router.py ada di lokasi berbeda dan sed berhasil:
+   → File produksi diubah tanpa backup
+   → Perubahan tidak bisa di-rollback
+   → Pelanggaran doktrin "semua perubahan harus reversible"
+3. String yang dicari "executors/nix_executor.sh" kemungkinan
+   tidak ada di mico_router.py versi aktif.
+   sed -i tidak mengubah apapun tapi juga tidak error
+   = silent failure yang tidak terdeteksi.
+Harus:
+cp ~/JDEQ/mico_router.py ~/JDEQ/mico_router.py.backup_$(date +%Y%m%d)
+# BARU sed
+```
+---
+##  TEMUAN KRITIS-3 — MQTT Broker Diasumsikan Aktif, Belum Terverifikasi
+`STATUS: [FAKTA] — DARI AUDIT SEBELUMNYA`
+```
+DeepSeek menulis "pastikan MQTT broker di Termux sudah hidup"
+tapi tidak ada langkah verifikasi MQTT sebelum dispatcher dipakai.
+Dari audit sebelumnya:
+MQTT "diasumsikan aktif" = BELUM TERVERIFIKASI.
+Jika MQTT mati dan dispatcher.sh mencoba:
+mosquitto_pub -h 127.0.0.1 -p 1883 -t "jdeq/nix/exec" -m "$COMMAND"
+= silently fail atau hang tanpa error yang jelas.
+Mas Iswan tidak tahu apakah perintah sampai atau tidak.
+Verifikasi MQTT harus jadi Langkah 0:
+pgrep -f mosquitto || echo "MQTT MATI — jalankan dulu"
+mosquitto_pub -t "test" -m "ping" 2>&1 | head -3
+```
+---
+## 🟠 TEMUAN TINGGI-4 — Node Registry Statik, Tidak Ada Health Check
+`STATUS: [FAKTA]`
+```
+nodes.json mendaftarkan 4 node:
+- NODE-001 Vivo Y28     : status "active"   ← hardcode
+- NODE-002 Nix-on-Droid : status "active"   ← hardcode
+- NODE-003 Infinix       : status "pending"
+- NODE-004 Acer TravelMate : status "pending"
+Status "active" di-hardcode manual.
+Tidak ada mekanisme:
+→ Ping health check ke node
+→ Update status jika node mati
+→ Failover jika node tidak responsif
+Dispatcher akan tetap kirim perintah ke NODE-002
+meskipun Nix-on-Droid sedang mati.
+→ Command hilang tanpa trace
+→ AUDIT LOG mencatat "DISPATCH" tapi hasil tidak pernah ada
+```
+---
+## 🟠 TEMUAN TINGGI-5 — dispatcher.sh Pakai `ssh` Tanpa Key Management
+`STATUS: [ASUMSI] — RISIKO TINGGI`
+```bash
+else
+  ssh -p "$PORT" "$IP" "$COMMAND"
+fi
+```
+```
+Untuk NODE-003 (Infinix) dan NODE-004 (Acer):
+IP berbeda, ssh dipanggil langsung tanpa:
+→ StrictHostKeyChecking=no atau yes
+→ Timeout flag
+→ SSH key specification
+Akibat:
+Jika SSH host belum ada di known_hosts → interactive prompt
+= script hang menunggu input user "yes/no"
+= dispatcher hang tanpa timeout
+= MICO freeze menunggu dispatcher
+Minimal harus:
+ssh -o StrictHostKeyChecking=no \
+    -o ConnectTimeout=5 \
+    -i ~/.ssh/id_ed25519_jdeq \
+    -p "$PORT" "$IP" "$COMMAND"
+```
+---
+## 🟠 TEMUAN TINGGI-6 — RUNTIME_STATE Overwrite Tanpa Guard
+`STATUS: [FAKTA]`
+```bash
+cat > ~/JDEQ/RUNTIME/runtime_state.json << 'EOF'
+{
+  "state": "1111",
+  ...
+}
+EOF
+```
+```
+Direktori ~/JDEQ/RUNTIME/ tidak ada di file tree.
+Yang ada: ~/JDEQ/runtime/ (lowercase).
+Ini akan membuat RUNTIME/ baru (uppercase) yang berbeda
+dari runtime/ yang sudah ada dan dipakai sistem aktif.
+Menambah duplikasi:
+runtime/     ← aktif, berisi PID, state aktual
+RUNTIME/     ← baru dari script ini, berisi state hardcode
+Dua state berbeda untuk sistem yang sama.
+Ini memperburuk masalah dual-path yang sudah ada.
+```
+---
+## 🟡 TEMUAN SEDANG-7 — Recovery Bootstrap Hanya Placeholder
+`STATUS: [FAKTA]`
+```bash
+echo "[RECOVERY] Mengunduh DNA dari Google Drive..."
+# Placeholder: nanti diisi dengan rclone atau gdrive
+```
+```
+Bootstrap.sh saat ini tidak melakukan apapun nyata.
+Jika sistem crash total dan Mas Iswan menjalankan bootstrap
+untuk recovery = tidak ada yang terjadi.
+Ini berbahaya karena memberikan false confidence:
+"Script recovery sudah ada" padahal isinya echo saja.
+Harus ditandai DRAFT dan jangan dicatat di SSOT
+sebagai komponen yang "siap".
+```
+---
+## APLIKASI WAJIB YANG BELUM TERINSTALL
+`STATUS: [FAKTA] — dari audit file tree dan log error sebelumnya`
+```
+YANG DIBUTUHKAN SEKARANG:
+1. jq — untuk parse JSON di dispatcher.sh
+   pkg install jq
+   (tanpa ini dispatcher.sh gagal total — jq tidak ditemukan)
+2. mosquitto-clients — untuk mosquitto_pub dan mosquitto_sub
+   pkg install mosquitto
+   (butuh untuk MQTT dispatcher)
+3. termux-api — untuk mic input SSOT-9
+   pkg install termux-api
+   (sudah ada tapi perlu verifikasi aktif)
+4. piper-tts (via pkg atau binary) — untuk TTS
+   Cek: pkg search piper
+   Atau binary dari: https://github.com/rhasspy/piper/releases
+5. ffmpeg — untuk audio processing pipeline
+   pkg install ffmpeg
+   (butuh untuk voice pipeline, disebutkan di SSOT-9)
+VERIFIKASI SEMUA SEKARANG:
+which jq mosquitto_pub mosquitto_sub ffmpeg \
+    termux-microphone-record 2>&1
+```
+---
+## SCRIPT AMAN — VERSI YANG SUDAH DIKOREKSI
+### dispatcher.sh — Versi Aman
+```bash
+#!/bin/bash
+# MICO Dispatcher SAFE v1.0
+NODE_ID="$1"; shift; COMMAND="$*"
+[ -z "$NODE_ID" ] || [ -z "$COMMAND" ] && {
+    echo "Usage: dispatcher.sh <node_id> <command>"; exit 1; }
+NODES_FILE="$HOME/JDEQ/NODE_REGISTRY/nodes.json"
+# Pastikan jq ada
+command -v jq >/dev/null || { echo "ERROR: jq tidak ada — pkg install jq"; exit 1; }
+# Pastikan nodes.json ada
+[ -f "$NODES_FILE" ] || { echo "ERROR: nodes.json tidak ditemukan"; exit 1; }
+NODE=$(jq -r ".nodes[] | select(.id==\"$NODE_ID\")" "$NODES_FILE")
+[ -z "$NODE" ] && { echo "ERROR: Node $NODE_ID tidak ditemukan"; exit 1; }
+TYPE=$(echo "$NODE" | jq -r '.type')
+IP=$(echo "$NODE" | jq -r '.ip')
+PORT=$(echo "$NODE" | jq -r '.port')
+STATUS=$(echo "$NODE" | jq -r '.status')
+# Cek status node
+[ "$STATUS" != "active" ] && { echo "ERROR: Node $NODE_ID status=$STATUS (bukan active)"; exit 1; }
+# Audit trail
+AUDIT_DIR="$HOME/JDEQ/AUDIT/actions"
+mkdir -p "$AUDIT_DIR"
+echo "$(date '+%Y-%m-%d %H:%M:%S') | DISPATCH | $NODE_ID | $COMMAND" \
+    >> "$AUDIT_DIR/dispatcher_$(date +%Y%m%d).log"
+case "$TYPE" in
+    termux|linux)
+        if [ "$IP" == "127.0.0.1" ]; then
+            eval "$COMMAND"
+        else
+            ssh -o StrictHostKeyChecking=no \
+                -o ConnectTimeout=5 \
+                -i ~/.ssh/id_ed25519 \
+                -p "$PORT" "$IP" "$COMMAND"
+        fi
+        ;;
+    nix)
+        # Verifikasi MQTT dulu
+        mosquitto_pub -h 127.0.0.1 -p 1883 \
+            -t "jdeq/nix/exec" -m "$COMMAND" 2>/dev/null || {
+            echo "ERROR: MQTT tidak responsif"; exit 1; }
+        mosquitto_sub -h 127.0.0.1 -p 1883 \
+            -t "jdeq/nix/result" -C 1 -W 10 2>/dev/null || {
+            echo "WARN: Tidak ada respons dari Nix dalam 10 detik"; }
+        ;;
+    *)
+        echo "ERROR: Tipe node tidak dikenal: $TYPE"; exit 1 ;;
+esac
+```
+### nix_worker.sh — Versi Aman dengan Whitelist
+```bash
+#!/bin/bash
+# Nix Worker SAFE v1.0 — dengan whitelist command
+WHITELIST=(
+    "nix --version"
+    "uname -a"
+    "ls"
+    "pwd"
+    "echo"
+    "cat"
+    "free"
+)
+is_allowed() {
+    local CMD="$1"
+    for allowed in "${WHITELIST[@]}"; do
+        [[ "$CMD" == "$allowed"* ]] && return 0
+    done
+    return 1
+}
+mosquitto_sub -h 127.0.0.1 -p 1883 -t "jdeq/nix/exec" | while read -r CMD; do
+    if is_allowed "$CMD"; then
+        OUTPUT=$(eval "$CMD" 2>&1)
+        mosquitto_pub -h 127.0.0.1 -p 1883 \
+            -t "jdeq/nix/result" -m "$OUTPUT"
+    else
+        mosquitto_pub -h 127.0.0.1 -p 1883 \
+            -t "jdeq/nix/result" \
+            -m "REJECTED: Command tidak ada di whitelist: $CMD"
+        echo "$(date): REJECTED: $CMD" >> /sdcard/NixBridge/security.log
+    fi
+done
+```
+---
+## KEPUTUSAN AUDIT
+```
+STATUS:  TOLAK EKSEKUSI LANGSUNG — REVISI DULU
+3 temuan KRITIS harus diselesaikan sebelum eksekusi:
+KRITIS-1: eval tanpa whitelist = RCE vulnerability
+KRITIS-2: sed -i tanpa backup pada file produksi
+KRITIS-3: MQTT belum terverifikasi aktif
+URUTAN EKSEKUSI YANG BENAR:
+Step 1: Verifikasi semua dependency:
+  which jq mosquitto_pub mosquitto_sub ffmpeg
+Step 2: Verifikasi MQTT aktif:
+  pgrep -f mosquitto && echo OK || echo MATI
+Step 3: Install yang kurang:
+  pkg install jq mosquitto ffmpeg
+Step 4: Jalankan BAGIAN 1 dengan script AMAN (versi koreksi)
+Step 5: Jalankan BAGIAN 2 dengan nix_worker SAFE (whitelist)
+Step 6: Test dispatcher dengan command sederhana:
+  dispatcher.sh NODE-002 "echo test"
+JANGAN jalankan versi original DeepSeek sebelum
+patch keamanan diterapkan.
+```
+---
+*Laporan ini siap dikirim ke DeepSeek untuk revisi script, ChatGPT untuk review arsitektur, dan DOLA untuk SSOT.*
+*— Chief Audit Officer | JDEQ-AUDIT-BOARD*
+

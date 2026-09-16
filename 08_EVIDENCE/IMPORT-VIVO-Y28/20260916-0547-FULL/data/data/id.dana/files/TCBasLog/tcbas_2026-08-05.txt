@@ -1,0 +1,11 @@
+2026-08-05 03:11:28.315 24976 I/HttpClientAndroid: Create http client(101044126). [ThreadName:HttpClient_101044126][ThreadId:3893]
+2026-08-05 03:11:28.585 24976 D/TCBasNative: (0xb400007410696da0)Create httpclient
+2026-08-05 03:11:29.125 24979 E/HttpClientAndroid: (101044126)Do read data failed. Fail to get InputStream.
+2026-08-05 03:11:29.139 25002 E/TCBasNative: Channel establishment failed: Network error during establishment. HttpCode(1001), java.io.FileNotFoundException: https://mgs-gw.m.dana.id/.eo-sec-bot/
+2026-08-05 03:11:29.183 24976 E/ClientAttestation: Get attestation config failed | InitResult=1, errMsg={"EstablishResult":4,"message":"Network error during establishment. HttpCode(1001), java.io.FileNotFoundException: https://mgs-gw.m.dana.id/.eo-sec-bot/"}
+2026-08-05 09:55:39.275 9161 I/HttpClientAndroid: Create http client(35803384). [ThreadName:HttpClient_35803384][ThreadId:4452]
+2026-08-05 09:55:39.289 9161 D/TCBasNative: (0xb400007410685470)Create httpclient
+2026-08-05 09:55:39.305 9162 W/HttpClientAndroid: (35803384)Do send body failed.
+2026-08-05 09:55:39.307 9162 E/HttpClientAndroid: (35803384)Do send failed. Catch error. ex= 
+2026-08-05 09:55:39.344 9167 E/TCBasNative: Channel establishment failed: Network error during establishment. HttpCode(1003), java.net.UnknownHostException: Unable to resolve host "mgs-gw.m.dana.id": No address associated with hostname
+2026-08-05 09:55:39.354 9161 E/ClientAttestation: Get attestation config failed | InitResult=1, errMsg={"EstablishResult":4,"message":"Network error during establishment. HttpCode(1003), java.net.UnknownHostException: Unable to resolve host "mgs-gw.m.dana.id": No address associated with hostname"}

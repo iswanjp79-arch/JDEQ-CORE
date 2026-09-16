@@ -1,0 +1,25 @@
+2026-08-10 04:20:21.186 7030 I/HttpClientAndroid: Create http client(1534938). [ThreadName:HttpClient_1534938][ThreadId:5821]
+2026-08-10 04:20:21.261 7030 D/TCBasNative: (0xb400007deb4b97a0)Create httpclient
+2026-08-10 04:20:21.482 7033 E/HttpClientAndroid: (1534938)Do read data failed. Fail to get InputStream.
+2026-08-10 04:20:21.488 7038 E/TCBasNative: Channel establishment failed: Network error during establishment. HttpCode(1001), java.io.FileNotFoundException: https://mgs-gw.m.dana.id/.eo-sec-bot/
+2026-08-10 04:20:21.490 7030 E/ClientAttestation: Get attestation config failed | InitResult=1, errMsg={"EstablishResult":4,"message":"Network error during establishment. HttpCode(1001), java.io.FileNotFoundException: https://mgs-gw.m.dana.id/.eo-sec-bot/"}
+2026-08-10 10:02:06.747 20211 I/HttpClientAndroid: Create http client(132316188). [ThreadName:HttpClient_132316188][ThreadId:6138]
+2026-08-10 10:02:06.755 20211 D/TCBasNative: (0xb400007deb4bc0e0)Create httpclient
+2026-08-10 10:02:07.040 20213 E/HttpClientAndroid: (132316188)Do read data failed. Fail to get InputStream.
+2026-08-10 10:02:07.049 20214 E/TCBasNative: Channel establishment failed: Network error during establishment. HttpCode(1001), java.io.FileNotFoundException: https://mgs-gw.m.dana.id/.eo-sec-bot/
+2026-08-10 10:02:07.058 20211 E/ClientAttestation: Get attestation config failed | InitResult=1, errMsg={"EstablishResult":4,"message":"Network error during establishment. HttpCode(1001), java.io.FileNotFoundException: https://mgs-gw.m.dana.id/.eo-sec-bot/"}
+2026-08-10 13:33:27.882 16505 I/HttpClientAndroid: Create http client(24217611). [ThreadName:HttpClient_24217611][ThreadId:6607]
+2026-08-10 13:33:27.894 16505 D/TCBasNative: (0xb400007deb4acf90)Create httpclient
+2026-08-10 13:33:29.016 16524 E/HttpClientAndroid: (24217611)Do read data failed. Fail to get InputStream.
+2026-08-10 13:33:29.018 16526 E/TCBasNative: Channel establishment failed: Network error during establishment. HttpCode(1001), java.io.FileNotFoundException: https://mgs-gw.m.dana.id/.eo-sec-bot/
+2026-08-10 13:33:29.019 16505 E/ClientAttestation: Get attestation config failed | InitResult=1, errMsg={"EstablishResult":4,"message":"Network error during establishment. HttpCode(1001), java.io.FileNotFoundException: https://mgs-gw.m.dana.id/.eo-sec-bot/"}
+2026-08-10 19:23:24.160 20738 I/HttpClientAndroid: Create http client(98572031). [ThreadName:HttpClient_98572031][ThreadId:1104]
+2026-08-10 19:23:24.289 20738 D/TCBasNative: (0xb40000796a460c10)Create httpclient
+2026-08-10 19:23:24.631 20757 E/HttpClientAndroid: (98572031)Do read data failed. Fail to get InputStream.
+2026-08-10 19:23:24.632 20765 E/TCBasNative: Channel establishment failed: Network error during establishment. HttpCode(1001), java.io.FileNotFoundException: https://mgs-gw.m.dana.id/.eo-sec-bot/
+2026-08-10 19:23:24.634 20738 E/ClientAttestation: Get attestation config failed | InitResult=1, errMsg={"EstablishResult":4,"message":"Network error during establishment. HttpCode(1001), java.io.FileNotFoundException: https://mgs-gw.m.dana.id/.eo-sec-bot/"}
+2026-08-10 19:24:04.309 22289 I/HttpClientAndroid: Create http client(100199189). [ThreadName:HttpClient_100199189][ThreadId:1270]
+2026-08-10 19:24:04.361 22289 D/TCBasNative: (0xb40000796a4fb7c0)Create httpclient
+2026-08-10 19:24:04.670 22293 E/HttpClientAndroid: (100199189)Do read data failed. Fail to get InputStream.
+2026-08-10 19:24:04.751 22295 E/TCBasNative: Channel establishment failed: Network error during establishment. HttpCode(1001), java.io.FileNotFoundException: https://mgs-gw.m.dana.id/.eo-sec-bot/
+2026-08-10 19:24:04.760 22289 E/ClientAttestation: Get attestation config failed | InitResult=1, errMsg={"EstablishResult":4,"message":"Network error during establishment. HttpCode(1001), java.io.FileNotFoundException: https://mgs-gw.m.dana.id/.eo-sec-bot/"}

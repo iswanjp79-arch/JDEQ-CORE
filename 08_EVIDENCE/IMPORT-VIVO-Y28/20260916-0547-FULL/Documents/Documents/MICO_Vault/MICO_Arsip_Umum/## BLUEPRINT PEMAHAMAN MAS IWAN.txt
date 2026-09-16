@@ -1,0 +1,245 @@
+08.02 12.46
+## BLUEPRINT PEMAHAMAN MAS IWAN 
+MEMBENTUK CARA KERJA DAN LOGIKA ARSITEKTUR SISTEM KOMPUTASI MICO JDEQ KESADARAN DIGITAL. ##
+1. Departement QC
+2. Departement Survey [Cloud independent]
+3. Blueprint :  Konsep 3 partid [Macrodroid]
+4. Perencanaan OAI
+5. Pelaksanaan OAI
+6. Pengawasan OAI [SPK Kualitas [PEP]]
+7. Blueprint :  1. Analisa Harga Satuan dan Upah
+8. Update Visi Misi
+4. Blueprint : 1. Pembuatan BOQ / RAB
+5. item - item pendukung
+6. Blueprint : 1. Proses Pembuatan Network Planning
+7. Blueprint : 1. Pembuatan workflow
+8. Action Plan [PEP]
+9. Blueprint : 1. Pembuatan flow chart
+10. Blueprint : 1. pembuatan Curvas
+- Rencana
+- Realisasi
+- Deviasi
+9. Blueprint : 1. Implementasi Software dan aplikasi pendukung
+- Microsoft Project
+- Aplikasi Lain
+10. Pembuatan Blueprint : 1. Proses Monitoring
+11. Blueprint : 1. Audit
+12. Aplikasi
+13. Protokol
+14. Blueprint : 1. OHSAS + ISO
+15. Operasi Sistem
+16. Output Blueprint : 1. Goals
+17. format
+18. Pendapatan
+19. Materi
+==========================
+AGAMA
+PENDIDIKAN PANCASILA
+BAHASA INGGRIS
+FISIKA DASAR
+KIMIA DASAR
+BAHASA KOMPUTER
+KALKULUS I
+GEOLOGI REKAYASA
+KEWARGANEGARAAN
+ILMU SOSIAL DASAR
+ILMU BUDAYA DASAR
+BAHASA INDONESIA
+BAHASA INGGRIS II
+KALKULUS II
+BAHAN BANGUNAN
+MENGGAMBAR REKAYASA/STRUKTUR
+MEKANIKA REKAYASA I
+PRAKTIKUM MEKANIKA TANAH
+PRAKTIKUM MEKANIKA FLUIDA & HIDROLIKA
+MEKANIKA REKAYASA II
+PRAKTIKUM ILMU UKUR TANAH
+MATEMATIKA TERAPAN
+STATIKA & PROBABILITAS
+ANALISA NUMERIK
+MEKANIKA TANAH I
+MEKANIKA FLUIDA & HIDROLIKA I
+SISTEM TRANSPORTASI
+ILMU UKUR TANAH
+REKAYASA JALAN RAYA
+MEKANIKA REKAYASA III
+PRAKTIKUM JALAN RAYA I & II
+KALKULUS IV
+MEKANIKA TANAH II
+MEKANIKA FLUIDA & HIDROLIKA II
+PENYELIDIKAN/PERKUATAN TANAH
+ILMU UKUR TANAH II
+REKAYASA JALAN RAYA IIBAHAN
+STRUKTUR BETON I
+STRUKTUR BAJA I
+REKAYASA LALU LINTAS
+MEKANIKA REKAYASA IV
+METODE PENELITIAN & PENULISAN
+STRUKTUR BETON II
+PERANCANGAN
+REKAYASA HIDROLOGI
+STRUKTUR KAYU
+REKAYASA PONDASI
+PERENCANAAN BANGUNAN
+PERENCANAAN DENGAN BANTUAN KOMPUTER
+REKAYASA PENYEHATAN
+IRIGASI & BANGUNAN AIR
+PTM / ALAT-ALAT BERAT
+PRAKTEK KERJA LAPANGAN (PKL)
+ASPEK HUKUM DALAM PEMBANGUNAN
+SIPET OPERASIONAL
+TEKNOLOGI BAHAN JALAN
+REKAYASA KOTA
+LAPANGAN TERBANG
+PELABUHAN
+MANAJEMEN KONSTRUKSI
+TEKNIKREKAYASA GEMPA
+STRUKTUR BETON PRATEGANG
+REKAYASA SUNGAI
+KONSTRUKSI&REKAYASA JEMBATAN
+TUGAS AKHIR DAN SEMINAR
+==========================
+⚡ MODUL PEMAHAMAN TERPADU SSOT MICO-JDEQ
+Status: DIKUNCI PERMANEN · 100% UTUH
+Pola: Logika Teknik Sipil
+️ PRINSIP UTAMA
+1. Dibangun persis seperti bangunan: Pondasi → Susunan → Aturan → Dirawat selamanya
+2. Tidak boleh terbalik urutan, tidak salah ukuran, tidak ada yang tidak tercatat
+ 1. PONDASI YANG SUDAH LENGKAP
+3. Semua 16 sumber ilmu sudah disimpan jadi satu kebenaran utama, tidak ada yang berubah
+4. Ilmu dasar teknis: listrik, beton, ukuran wesi, aliran udara, diagram sakelar semuanya sama persis
+5. Kondisi Vivo Y28: semua aplikasi, kapasitas dan beban tercatat jelas
+6. Susunan arsitektur urutan mutlak: Identitas → Kondisi → Cara Kerja → Pikiran → Ingatan → Jadwal → Sumber Daya → Alat
+7. Keamanan: batas beban, deteksi gangguan, kunci agar pondasi tidak diubah sembarangan
+8. Langkah kerja tetap: Lihat → Cek → Cocokkan → Pikirkan → Putuskan → Kerjakan → Uji → Catat → Sempurnakan → Siap
+9. Logika dasar: cara kerja mesin dan penyatuan ilmu sipil, listrik, program sudah dimengerti
+10. Terbukti: tidak ada yang dikurangi, ditambah, atau disalahartikan
+ 
+️ 2. DENAH TEMPAT PENYIMPANAN
+11. 00_SSOT: Gambar induk satu-satunya, hanya Bapak yang boleh mengubah
+12. 01–04: Tata kelola, pembagian tugas, contoh siap pakai, daftar isi seluruhnya
+13. 05_AGENTS: tempat kerja masing-masing sesuai tugas
+14. 06_OPERATIONS: tempat mengerjakan dan menyimpan hasil sementara
+15. 07_MIRRORS: salinan aman, asli tetap ada di HP Bapak
+16. 08_INBOX: tempat masuk dulu sebelum diperiksa dan diletakkan benar
+17. Alur: Masuk → Cocokkan dengan SSOT → Ditempatkan → Dikerjakan → Diuji → Dicadangkan
+🪜 3. TANGGA MENUJU TUJUAN
+18. Tujuan utama: kebaikan umat, penghasilan berkelanjutan, warisan ilmu abadi
+19. Aturan dasar: Manusia berkuasa tertinggi, mulai dari alat sendiri, kokoh lebih baik dari cepat, ilmu di atas alat
+20. Langkah 1: mengerti fungsi tiap alat
+21. Langkah 2: perkokoh sambungan dan aturan dasar
+22. Langkah 3: atur pemakaian agar alat awet dan tidak panas
+23. Langkah 4: kendali mutlak tetap di tangan Bapak
+24. Langkah 5: awan hanya untuk memikul beban berat
+25. Langkah 6: semua bekerja tertib di bawah satu perintah
+26. Langkah 7: hasil harus bisa dimengerti manusia
+27. Langkah 8: hasil berguna, sah, dan bernilai
+28. Langkah 9: cara kerja baik bisa dipakai berulang-ulang
+29. Langkah 10: didokumentasikan rapi untuk diteruskan
+30. Jalur ilmu selaras: SMK → D3/D4 → S1 → S2 → Pengalaman mandiri
+31. Inti seluruhnya: teknologi untuk meninggikan martabat manusia
+✅ Sudah siap dicatat satu per satu.
+AI Tutor · Developer Roadmaps VS Tekhnik sipil
+Koleksi peta jalan, panduan, dan tulisan buatan komunitas untuk membantu pengembang meningkatkan kemampuan karier.
+ Role-based Roadmaps
+1. Frontend
+2. Backend
+3. Full Stack
+4. Android
+5. DevOps
+6. DevSecOps
+7. Data Analyst
+8. AI Engineer
+9. AI and Data Scientist
+10. Data Engineer
+11. Machine Learning
+12. PostgreSQL
+13. iOS
+14. Blockchain
+15. QA
+16. Software Architect
+17. Cyber Security
+18. Product Design · Baru
+19. UX Design
+20. Technical Writer
+21. Game Developer
+22. Server Side Game Developer
+23. MLOps
+24. Product Manager
+25. Engineering Manager
+26. Developer Relations
+27. BI Analyst
+28. Network Engineer
+29. Forward Deployed Engineer
+➕ Buat Peta Jalan Sendiri
+🛠️ Skill-based Roadmaps
+30. Claude Code
+31. Vibe Coding
+32. OpenClaw
+33. LeetCode
+34. Python
+35. Python for Data Analysis
+36. Computer Science
+37. SQL
+38. React
+39. Vue
+40. Angular
+41. JavaScript
+42. TypeScript
+43. Node.js
+44. System Design
+45. Java
+46. ASP.NET Core
+47. API Design
+48. Spring Boot
+49. Flutter
+50. C Programming · Baru
+51. C++
+52. Rust
+53. Go Roadmap
+54. AI Product Builders
+55. Design and Architecture
+56. GraphQL
+57. React Native
+58. Design System
+59. Prompt Engineering
+60. MongoDB
+61. Linux
+62. Kubernetes
+63. Docker
+64. AWS
+65. Terraform
+66. Data Structures & Algorithms
+67. Redis
+68. Git and GitHub
+69. PHP
+70. Cloudflare
+71. AI Red Teaming
+72. AI Agents
+73. Next.js
+74. Code Review
+75. Kotlin
+76. HTML
+77. CSS
+78. Swift & Swift UI
+79. Shell / Bash
+80. Laravel
+81. Elasticsearch
+82. WordPress
+83. Django
+84. Ruby
+85. Ruby on Rails
+86. Scala
+➕ Buat Peta Jalan Sendiri
+ Project Ideas
+87. Frontend
+88. Backend
+89. DevOps
+✅ Best Practice metode
+90. AWS
+91. API Security
+92. Backend Performance
+93. Frontend Performance
+94. Code Review
+ Panduan Baru
+

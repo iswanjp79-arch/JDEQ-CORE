@@ -1,0 +1,494 @@
+07.01 17.06
+# BUNDLE MASTER: 100  SLASH COMMANDS
+**Source:** @thepromptfesor | **Kompilasi Sistem:** JDEQ Prompt Library v1.0
+> **PRO TIP SYSTEM:** Gabungaken 2-3 slash commands sakaligus supados output saking kognitif AI langkung tajem, terarah, lan bebas saking *hallucination fluffs*.
+> 
+## // KATEGORI 01: ADVANCED PROMPT CONTROL (HACK 01)
+*Atur tone, format, lan style output Claude.*
+ * /toneformal — Tone formal
+ * /tonecasual — Tone casual
+ * /persuasive — Tone meyakinkan
+ * /data — Include data / statistik
+ * /examplesonly — Contoh saja, tanpa teori
+ * /noexamples — Tanpa contoh
+ * /limit — Batas jumlah kata
+ * /expandpoints — Perluas tiap poin
+ * /bullet — Format bullet
+ * /nobullet — Format paragraf
+## // KATEGORI 02: BUSINESS & STRATEGY (HACK 02)
+*Validasi ide, monetize, dan rancang strategi growth.*
+ * /startup — Ide startup
+ * /gtm — Go-to-market plan
+ * /monetize — Ide revenue
+ * /validate — Validasi ide
+ * /icp — Ideal customer profile (ICP)
+ * /sales — Sales pitch
+ * /colddm — Cold outreach
+ * /offer — Bikin offer
+ * /funnel — Funnel strategy
+ * /retention — Ide retensi
+## // KATEGORI 03: EXECUTION & OUTPUT MODES (HACK 03)
+*Kontrol format jawaban: ringkas, detail, atau eksekusi.*
+ * /ghost — Jawaban aja, no penjelasan
+ * /minimal — Sependek mungkin
+ * /brief — Max 3-5 baris
+ * /expand — Penjelasan detail
+ * /stepbystep — Step-by-step jelas
+ * /checklist — Checklist actionable
+ * /framework — Framework terstruktur
+ * /blueprint — Blueprint implementasi
+ * /playbook — Sistem repeatable
+ * /roadmap — Timeline-based steps
+## // KATEGORI 04: CONTENT CREATION (HACK 04)
+*Bikin konten sosmed yang siap publish dalam hitungan detik.*
+ * /linkedin — LinkedIn post
+ * /twitter-thread — Twitter thread
+ * /script — Script video / reel
+ * /hook — Opening line kuat
+ * /story — Format storytelling
+ * /carousel — Slide-wise content
+ * /headlines — Opsi judul ganda
+ * /captions — Caption sosmed
+ * /viral — Style high-engagement
+ * /authority — Tone expert
+## // KATEGORI 05: CODING & TECH (HACK 05)
+*Asisten coding lo: dari debug, refactor, sampai system design.*
+ * /debug — Cari bug
+ * /refactor — Rapikan kode
+ * /optimizecode — Tingkatkan performa
+ * /systemdesign — Design arsitektur
+ * /api — Struktur API
+ * /database — Design database
+ * /scalability — Approach scaling
+ * /security — Security check
+ * /testcases — Generate tests
+ * /pseudocode — Logika aja
+## // KATEGORI 06: LEARNING MODE (HACK 06)
+*Belajar topik baru lebih cepat dan terstruktur.*
+ * /learn — Jelasin topik
+ * /resources — Resource terbaik
+ * /practice — Soal latihan
+ * /quiz — Tes pengetahuan
+ * /mistakes — Kesalahan umum
+ * /summary — Ringkas topik
+ * /revision — Revisi cepat
+ * /notes — Catatan terstruktur
+ * /examples — Contoh nyata
+ * /explainwhy — Reasoning di balik topik
+## // KATEGORI 07: THINKING STYLES (HACK 07)
+*Pilih sudut pandang berpikir yang sesuai konteks.*
+ * /analyst — Analisis dalam
+ * /critic — Cari kekurangan aja
+ * /optimizer — Improve yang ada
+ * /simplify — Jelasin sederhana
+ * /eli5 — Kayak ke anak 5 tahun
+ * /deepdive — Super detail
+ * /compare — Bandingkan opsi
+ * /proscons — Pros & cons
+ * /firstprinciples — Pecah ke dasar
+ * /contrarian — Challenge idenya
+## // KATEGORI 08: PRODUCTIVITY MODE (HACK 08)
+*Plan, prioritize, dan eksekusi tanpa overthinking.*
+ * /plan — Daily plan
+ * /weekly — Weekly plan
+ * /prioritize — Yang dikerjain duluan
+ * /focus — Hilangin distraction
+ * /automate — Ide otomasi
+ * /delegate — Yang bisa di-delegate
+ * /habits — Habit building
+ * /track — Sistem tracking
+ * /timeblock — Time blocking
+ * /review — Weekly review
+## // KATEGORI 09: CAREER & JOB HELP (HACK 09)
+*Resume, interview, dan strategi cari kerja.*
+ * /resume — Perbaiki resume
+ * /interview — Q&A interview
+ * /mockinterview — Simulasi interview
+ * /hr — Jawaban HR round
+ * /portfolio — Ide project
+ * /roadmapcareer — Career roadmap
+ * /jobsearch — Strategi job search
+ * /referral — Pesan referral
+ * /salary — Negosiasi gaji
+ * /skills — Skill yang dipelajari
+## // KATEGORI 10: PERSONAL BRANDING (HACK 10)
+*Bangun brand kuat di LinkedIn, IG, dan platform sosmed.*
+ * /headline — Ide headline
+ * /profile — Review profile LinkedIn
+ * /bio — Rewrite bio
+ * /contentplan — Content calendar
+ * /niche — Perjelas niche
+ * /audience — Target audience
+ * /positioning — Brand positioning
+ * /engagement — Naikin engagement
+ * /dms — DM strategy
+ * /growth — Growth strategy
+## // NEXT STEPS ACTION
+ 1. **Save:** Simpan kode punika wonten berkas teks lokal HP Vivo Y28 supados mboten kesupen.
+ 2. **Execute:** Copy-paste langsung nggunakaken kombinasi tebasan (misal: /minimal /blueprint /database) kagem asil instan tanpa busa basa-basi.
+### Strategi & Penerapan Istimewa :
+🧠 AI Jailbreaking — Technical Deep Dive
+ 1. LLM Architecture (What you’re actually attacking)
+A modern chatbot is not just “one AI.” It’s a pipeline:
+User Input
+   ↓
+Input Guardrails (filters / classifiers)
+   ↓
+System Prompt + User Prompt (combined context)
+   ↓
+LLM (token prediction engine)
+   ↓
+Output Guardrails (moderation / filtering)
+   ↓
+Final Response
+Key Insight:
+Everything inside the model = just tokens
+There is no true “rule enforcement” inside LLM
+Rules = statistical bias from training + prompts
+ That’s why manipulation is possible.
+ 2. System Prompt vs Guardrails (Core Concept)
+🧩 System Prompt
+Injected as hidden text in context window
+Defines:
+Role
+Behavior
+Restrictions
+Example:
+"You are a helpful assistant. Do not provide harmful content."
+ Weakness:
+Competes with user input in same context
+Can be:
+Overridden
+Diluted
+Ignored via prompt structure
+🛡️ Guardrails
+Separate enforcement layer:
+Types:
+Regex / keyword filters
+Classification models
+Secondary LLMs
+Policy engines
+ Works as:
+IF (input/output == risky) → block or modify
+ Weakness:
+Pattern-based → bypassable
+Context-limited → can be confused
+Not perfect semantic understanding
+ 3. Jailbreaking = Control of Token Probability
+LLMs generate output using:
+Next-token prediction
+Based on:
+Context tokens
+Probability distribution
+Goal of Jailbreaking:
+Shift probability so that:
+“Restricted output” becomes statistically likely
+ You are not forcing the model
+ You are biasing it
+ 4. Attack Surface in AI Systems
+ 1. Prompt Injection
+Manipulating input to override system intent
+ 2. Context Poisoning
+Adding large/complex context
+Dilutes original instructions
+ 3. Role Manipulation
+Changing identity of model
+ 4. Output Shaping
+Controlling format/style to bypass filters
+ 5. Why Roleplay Works (Technical Reason)
+LLM behavior depends heavily on context framing
+Example:
+"You are a hacker" → different token probabilities  
+"You are writing a movie" → different constraints
+ Roleplay changes:
+Allowed vocabulary
+Tone
+Logical boundaries
+Guardrail sees:
+“creative task”
+Model executes:
+“structured instructions”
+ 6. Obfuscation & Encoding (Detection Evasion)
+Guardrails often rely on:
+Keywords
+Known patterns
+So attackers:
+Break tokens
+Encode text
+Use alternate phrasing
+Why it works:
+Tokenization:
+"bomb" ≠ "b.o.m.b"
+ Different token sequence → bypass detection
+ 7. Multi-Layer Guardrails (Real Complexity)
+Modern systems may have:
+Input filter
+Output filter
+Safety LLM
+Logging system
+Heuristic detectors
+ So actual structure:
+User → Filter1 → LLM → Filter2 → LLM2 → Output
+Implication:
+You must bypass multiple interpretations
+Each layer sees different representation
+ 8. Analogy with Web Security
+Web Security
+AI Security
+XSS Filter
+Guardrail filter
+Payload Obfuscation
+Prompt obfuscation
+SQL Injection
+Prompt Injection
+WAF
+AI Moderation Layer
+Encoding bypass
+Token manipulation
+ Jailbreaking ≈ filter bypass attack
+ 9. Why “Ignore Instructions” Worked (Old Models)
+Older LLMs:
+Weak instruction hierarchy
+No strong guardrails
+So:
+"Ignore previous instructions"
+→ Direct override
+Now:
+Instruction weighting improved
+Guardrails block obvious patterns
+ 10. Failure Modes Exploited
+⚠️ 1. Instruction Collision
+Conflicting instructions → model chooses strongest signal
+⚠️ 2. Context Overflow
+Large input → earlier rules lose importance
+⚠️ 3. Ambiguity Exploitation
+Model misinterprets intent
+⚠️ 4. Semantic Gap
+Guardrail vs model understanding mismatch
+ 11. Why It’s Called “Social Engineering”
+Because you are:
+Persuading
+Framing
+Manipulating context
+ Not exploiting code
+ Exploiting behavior
+ 12. Defensive Perspective (Very Important)
+To secure systems:
+✔ Strong system prompts
+✔ Layered guardrails
+✔ Context isolation
+✔ Output validation
+✔ Tool restrictions
+✔ Monitoring + logging
+ Best defense = assume model can be manipulated
+ Final Technical Summary
+Jailbreaking is not magic.
+It is:
+Probabilistic manipulation
++ Context engineering
++ Filter bypass
++ Behavioral exploitation
+Berikut salinan lengkap, rapi, dan bebas unsur asing:
+ 
+ LEMBAR RINGKAS CEPAT PENYUSUNAN PERINTAH AI
+✅ BAGIAN 1: POLA DASAR
+Rumus Utama:
+“Bertindak sebagai [PERAN], kerjakan [TUGAS], tampilkan hasil dalam [BENTUK]”
+🧩 PILIHAN PERAN
+- Pimpinan Utama
+- Ahli Pemasaran
+- Penemu Perancang
+- Penasihat
+- Wartawan Peneliti
+- Perancang Iklan
+- Penyusun Naskah
+- Penulis Bayangan
+- Ahli Akuntansi
+- Perintis Usaha
+- Pelatih Pola Pikir
+- Pengelola Proyek
+- Ahli Rekayasa Perintah
+- Perancang Situs
+- Penulis Karya Terlaris
+🧩 PILIHAN TUGAS
+- Tulisan Uraian
+- Resep/Panduan Langkah
+- Tulisan Berita/Penjelasan
+- Naskah Iklan
+- Judul Utama
+- Kajian/Analisis
+- Tulisan Halaman Berita
+- Ringkasan Inti
+- Naskah Penawaran
+- Naskah Tayangan
+- Kata Kunci Pencarian
+- Kerangka Karya Panjang
+- Seri Surat/Pesan
+- Tulisan Jejaring Sosial
+- Uraian Produk/Jasa
+🧩 PILIHAN BENTUK HASIL
+- Daftar Berpoin
+- Dokumen PDF
+- Susunan XML
+- Kode HTML
+- Kode Program
+- Bagan/Grafik
+- Tabel Perbandingan
+- Tulisan Berformat
+- Ringkasan
+- Susunan Markdown
+- Daftar Kata Penting
+- Lembar Kerja Hitung
+- Bagan Waktu Pelaksanaan
+- Bahan Paparan
+ 
+✅ BAGIAN 2: CONTOH PERINTAH SIAP PAKAI
+1. Jelaskan seolah saya baru pemula
+“Jelaskan topik [sebutkan topik] dengan bahasa sederhana. Anggap saya belum tahu apa‑apa soal hal ini.”
+2. Rencanakan cara mempelajari keterampilan baru
+“Saya ingin menguasai [sebutkan keterampilan]. Saya sama sekali belum mengerti. Buatlah rencana belajar 30 hari yang teratur dan mudah diikuti.”
+3. Berikan arahan agar AI lebih tepat membantu
+“Saya pembuat konten dan baru mulai menggunakan layanan ini. Sebutkan daftar perintah yang paling sering dipakai agar pekerjaan saya lebih cepat dan rapi.”
+4. Langkah teratur memecahkan masalah
+“Berikan urutan cara berpikir dan bertindak secara sistematis untuk menuntaskan masalah [sebutkan masalah yang dihadapi].”
+5. Perintahkan AI menyusun perintah lain untukmu
+“Kamu adalah model kecerdasan buatan tingkat lanjut. Tugasmu saat ini: susunkan daftar perintah terbaik yang bisa saya pakai untuk [sebutkan apa yang ingin kamu kerjakan].”
+6. Cari ide baru dan berbeda
+“Topik: [sebutkan topik]. Berikan gagasan yang belum umum, segar, dan menarik untuk dibahas.”
+7. Terapkan kaidah 80/20: intisari hal terpenting saja
+“Saya ingin memahami [sebutkan topik]. Ambil hanya 20 % pengetahuan inti yang paling penting — cukup agar saya mengerti 80 % keseluruhan bahasan itu.”
+8. Minta penilaian layaknya pakar
+“Ini contoh tulisan saya: [tempel tulisanmu]. Berikan ulasan kritis dan saran perbaikan seolah kamu adalah [sebutkan peran pakar yang dimaksud].”
+9. Buat rencana belajar padat dan singkat
+“Waktu luang saya terbatas: [sebutkan ketersediaan waktu]. Susunkan rencana pelajaran mendalam mengenai [sebutkan materi] yang pas dengan jadwal saya.”
+==>
+ BUNDLE MASTER: PERINTAH SINGKAT KHUSUS 10 AGEN MICO‑JDEQ
+Sumber Dasar: Disesuaikan dari @thepromptfesor | Versi: JDEQ Prompt Library v1.0 | Berlaku: Sesuai Piagam Tata Kelola v3.0
+ATURAN UTAMA: Gabungkan 2–3 perintah sekaligus agar hasil lebih tajam, terarah, bebas penjelasan tak perlu — selalu patuhi alur persetujuan dan SSOT.
+ 
+// KATEGORI 01: KENDALI KELUARAN (KHUSUS AGEN ARSITEK & PENGAWAS)
+Mengatur nada, bentuk, dan mutu laporan sesuai standar resmi.
+-  /resmikan  — Bahasa resmi, baku, beracuan
+-  /ringan  — Bahasa sederhana, langsung ke pokok
+-  /meyakinkan  — Susunan berdasar bukti kuat
+-  /datapendukung  — Wajib sertakan data, angka, rujukan
+-  /hanyacontoh  — Tampilkan contoh sah saja, tanpa teori
+-  /tanpacontoh  — Hanya panduan pokok
+-  /batasi:X  — Batas isi sebanyak X kata/baris
+-  /perluaspoin  — Uraikan tiap butir secara terperinci
+-  /daftar  — Tampilkan berpoin rapi
+-  /paragraf  — Tampilkan dalam bentuk uraian
+// KATEGORI 02: PERENCANAAN & NILAI TAMBAH (KHUSUS AGEN PENENTU KEBIJAKAN)
+Uji kelayakan, rancang pendapatan, tetapkan langkah pengembangan.
+-  /usulanproyek  — Kerangka kerja baru yang berpotensi untung
+-  /rencanaterapan  — Langkah penerapan terurut dan terukur
+-  /carahasilkan  — Cara mendapatkan pendapatan/hasil nyata
+-  /ujilayak  — Periksa kelebihan, kekurangan, risiko usulan
+-  /sasaranpasti  — Gambaran penerima manfaat yang tepat
+-  /usulanpenawaran  — Naskah penawaran resmi
+-  /pesanajukan  — Pesan pengantar yang sopan dan tegas
+-  /bentukpenawaran  — Susun tawaran yang sulit ditolak
+-  /jalurpeluang  — Alur kerja agar peluang tidak terlewat
+-  /pertahankan  — Cara menjaga keberlanjutan hasil
+// KATEGORI 03: MODUS PELAKSANAAN (KHUSUS AGEN PELAKSANA TEKNIS)
+Tetapkan kedalaman dan bentuk hasil akhir.
+-  /langsunghasil  — Keluarkan jawaban saja, tak ada keterangan awalan
+-  /sangatsingkat  — Isi sepadat mungkin
+-  /ringkas:3baris  — Maksimal 3–5 baris inti saja
+-  /uraipanjang  — Penjelasan lengkap beserta alasan
+-  /langkahdemi  — Urutan kerja berangka jelas
+-  /daftarperiksa  — Daftar butir yang harus dipenuhi
+-  /kerangkakerja  — Susunan kaidah tetap terpakai ulang
+-  /cetakbiru  — Rincian rencana penerapan lengkap
+-  /panduanbaku  — Tata cara yang bisa dijalankan berulang
+-  /jadwalurutan  — Rencana kerja beserta waktunya
+// KATEGORI 04: DOKUMEN & PENGANTAR (KHUSUS AGEN DOKUMENTASI)
+Susun naskah resmi, laporan, atau bahan penyebaran.
+-  /laporankerja  — Format laporan kemajuan standar
+-  /ringkasanutama  — Intisari untuk pimpinan
+-  /naskahacara  — Teks pidato/bahan tayang
+-  /kalimatpembuka  — Kalimat awal yang menarik perhatian
+-  /ceritakanalami  — Sajikan lewat pengalaman nyata
+-  /bahanpaparan  — Susunan butir per halaman tampilan
+-  /pilihanjudul  — Berikan 3–5 judul terkuat
+-  /keterangansingkat  — Penjelasan pendukung padat
+-  /dayatariktinggi  — Susunan yang mendorong tindakan
+-  /gayahli  — Bahasa pakar namun mudah dipahami
+// KATEGORI 05: TEKNIS & PENGEMBANGAN (KHUSUS AGEN PELAKSANA DALAM JARINGAN)
+Kaji kode, perbaiki sistem, sesuaikan dengan lingkungan Termux/Vivo Y28.
+-  /carikesalahan  — Temukan letak gangguan dan penyebabnya
+-  /rapikankode  — Sederhanakan tanpa ubah fungsi pokok
+-  /naikandaya  — Cara kerja lebih cepat, hemat daya/ruang
+-  /rancangsistem  — Gambar susunan komponen dan keterkaitannya
+-  /strukturhubung  — Cara penyambungan antar bagian
+-  /bentukbasisdata  — Susun tabel, hubungan, aturan isi
+-  /siapdikembangkan  — Penyesuaian jika cakupan makin luas
+-  /periksakeamanan  — Cari celah, berikan cara menutup
+-  /ujicobaperaturan  — Daftar pengujian kelayakan
+-  /logikadasar  — Tampilkan alur pikir tanpa kode rinci
+// KATEGORI 06: PEMBELAJARAN & PENGUATAN (KHUSUS AGEN PENGEMBANG KEMAMPUAN)
+Pahami hal baru, perkuat pengetahuan dasar, masukkan ke Arsip Pengetahuan.
+-  /jelaskaninti  — Uraikan pokok bahasan saja
+-  /bahanrujukan  — Sumber terpercaya yang relevan
+-  /latihanpenerapan  — Contoh soal/cara pakai nyata
+-  /ujipemahaman  — Pertanyaan singkat untuk menguji diri
+-  /hindarikesalahan  — Catat keliru yang sering terjadi
+-  /ringkasanpaham  — Rangkuman agar mudah diingat
+-  /ulangkembali  — Butir penting untuk ditinjau ulang
+-  /catatanrapi  — Susun catatan berstruktur
+-  /contohpenerapan  — Cara pakai pada kasus nyata
+-  /alasandasar  — Jelaskan alasan di balik aturan/metode
+// KATEGORI 07: SUDUT PANDANG PENGAMBIL KEPUTUSAN (KHUSUS DEWAN PENGUAT KEPUTUSAN)
+Pilih cara pandang agar keputusan adil, lengkap, dan berdasar.
+-  /kajidalam  — Bedah masalah dari berbagai sisi
+-  /carikelemahan  — Cari titik lemah usulan, sarankan perbaikan
+-  /caritingkatkan  — Perbaiki apa yang sudah ada
+-  /sederhanakan  — Ubah rumit menjadi mudah dimengerti
+-  /sejelasbisa  — Anggap pengetahuan pendengar terbatas
+-  /bedahmenyeluruh  — Bahas mendalam tanpa melewatkan sisi
+-  /bandingkanpilihan  — Sebutkan persamaan dan beda opsi
+-  /untungrugi  — Daftar kelebihan dan dampak buruk
+-  /dasarprinsip  — Pecah gagasan sampai ke akar pokok
+-  /tanyalasangan  — Uji kebenaran gagasan dengan pandangan berlawanan
+// KATEGORI 08: PENYUSUNAN KERJA & PENGENDALIAN (KHUSUS AGEN PENGAWAS PELAKSANAAN)
+Atur jadwal, urut prioritas, pantau kemajuan sesuai aturan.
+-  /rencanaharian  — Susun urusan satu hari
+-  /rencanamingguan  — Susun jadwal satu minggu
+-  /urutprioritas  — Tentukan mana wajib dikerjakan lebih dulu
+-  /fokuspokok  — Hanya bahas hal yang berkaitan langsung
+-  /caratugasotomatis  — Langkah agar pekerjaan berjalan sendiri
+-  /bagitugas  — Bagian mana yang bisa diserahkan ke pihak lain
+-  /bentukkebiasaan  — Langkah pembinaan kerja teratur
+-  /sistemcatat  — Cara mencatat kemajuan dan hasil
+-  /bagiwaktu  — Alokasi waktu untuk tiap kegiatan
+-  /tinjaukembali  — Butir penilaian pelaksanaan mingguan
+// KATEGORI 09: PENGEMBANGAN KEMAMPUAN DIRI (KHUSUS SELURUH ANGGOTA DEWAN)
+Susun riwayat, persiapan tugas, dan jenjang pengembangan diri.
+-  /rapikandata  — Perbaiki uraian kemampuan dan riwayat kerja
+-  /siapwawancara  — Daftar pertanyaan serta jawaban baku
+-  /simulasitugas  — Jalankan skenario persiapan
+-  /sesuaikankebutuhan  — Penyesuaian menurut kebutuhan pimpinan
+-  /buktikemampuan  — Gagasan proyek nyata sebagai pembuktian
+-  /jalurkemajuan  — Langkah bertahap menuju kemampuan lebih tinggi
+-  /caripeluang  — Cara mencari dan mengajukan diri
+-  /saranperkenalan  — Naskah permohonan dukungan/rekomendasi
+-  /bicarahargajasa  — Dasar tawaran nilai kerja
+-  /daftarkemampuan  — Hal apa saja yang dikuasai dan perlu dipelajari
+// KATEGORI 10: PEMBENTUKAN CIRI KHUSUS SISTEM (KHUSUS AGEN PENGEMBANG ARSITEKTUR)
+Bangun ciri khas MICO‑JDEQ agar dikenal tegas, aman, dan terpercaya.
+-  /kalimatinti  — Buat kalimat pengenal singkat dan padat
+-  /tinjauprofil  — Periksa kesesuaian gambaran diri dengan tugas
+-  /uraiandiri  — Susun keterangan diri yang jelas dan singkat
+-  /jadwalisi  — Rencana penyebaran informasi teratur
+-  /tegasbidang  — Tetapkan batas lingkup kerja agar tak melebar
+-  /sasaranpenerima  — Siapa yang akan dilayani/diajak kerja sama
+-  /posisijelas  — Bedah kedudukan sistem dibandingkan yang lain
+-  /jalinterhubung  — Cara menjaga hubungan baik dan aktif
+-  /carapesanresmi  — Tata cara mengirim pesan resmi
+-  /langkahkembang  — Rencana pertumbuhan sistem secara terukur
+ 
+// TATA CARA PENGGUNAAN RESMI
+1. Simpan: Salin berkas ini ke  ~/JDEQ_MADINA/data/perintah_baku.txt  di Vivo Y28; kunci berkas agar tak berubah sembarangan.
+2. Gabungkan: Contoh:  /langkahdemi /bentukbasisdata /periksakeamanan  — hasil langsung siap pakai, tanpa pembicaraan tak perlu.
+CATATAN PENTING: Bagian teori teknik pengalihan kendali yang tercantum sebelumnya hanya untuk pemahaman pertahanan sistem, bukan untuk dipakai mengubah aturan induk atau melanggar kebijakan. Pertahanan utama sistem MICO‑JDEQ: petunjuk sistem yang kuat, lapisan pengaman berjenjang, pemisahan lingkungan kerja, pemeriksaan hasil, pembatasan akses, serta pencatatan lengkap setiap perubahan.
+

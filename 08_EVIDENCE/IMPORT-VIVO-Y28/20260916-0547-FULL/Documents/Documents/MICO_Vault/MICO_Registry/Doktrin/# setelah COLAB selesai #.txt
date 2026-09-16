@@ -1,0 +1,5 @@
+06.23 01.27
+# setelah COLAB selesai #
+======================
+nohup python3 ~/JDEQ/bridge/ghost_relay.py &
+

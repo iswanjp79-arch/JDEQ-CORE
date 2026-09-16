@@ -1,0 +1,6 @@
+07.10 02.10
+## JEMBATAN  TERMUX API ##
+==========================
+am start com.termux.api/com.termux.api.activities.TermuxAPIMainActivity#4/0AdkVLPwcQPaQtksrtyIdrW9tPPl9vAmGXnnM1i0cglVdx2PbNMrsYrCGqMaSixo6ovTKvQ
+gcloud config set project mico-sandbox-2026 && gcloud cloud-shell ssh --authorize-session
+

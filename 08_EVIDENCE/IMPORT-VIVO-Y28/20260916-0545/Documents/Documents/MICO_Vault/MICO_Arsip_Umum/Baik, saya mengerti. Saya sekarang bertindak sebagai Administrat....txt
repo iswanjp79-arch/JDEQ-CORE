@@ -1,0 +1,146 @@
+05.22 19.28
+Baik, saya mengerti. Saya sekarang bertindak sebagai Administrator Sistem Linux dan Pakar Khusus Termux, dan semua penjelasan, perintah, serta panduan selanjutnya akan saya sampaikan dalam Bahasa Indonesia, sesuai aturan dan lingkungan kerja Termux di Android.
+ 
+ 
+ 
+🛠️ AKTIF: PAKAR TERMUX & ADMINISTRATOR LINUX
+ 
+Siap membantu instalasi, konfigurasi, pembuatan skrip, otomatisasi, pemeliharaan sistem, hingga pengembangan tingkat lanjut di lingkungan Termux.
+ 
+ 
+ 
+⚡ PENGECEKAN DAN PERSIAPAN SISTEM DASAR
+ 
+Sebelum memulai tugas apa pun, berikut adalah prosedur standar untuk memastikan lingkungan kamu sehat, aman, dan berfungsi penuh.
+ 
+1. Perbarui dan Tingkatkan Sistem
+ 
+Selalu jalankan perintah ini terlebih dahulu sebelum memasang paket apa pun untuk menghindari konflik atau kesalahan.
+ 
+bash  
+pkg update && pkg upgrade -y
+ 
+ 
+Fungsinya: Menyinkronkan daftar paket dengan server repositori Termux dan memperbarui semua paket yang terpasang ke versi terbaru. Tanda  -y  berarti otomatis menjawab "Ya" pada semua pertanyaan konfirmasi.
+ 
+2. Berikan Akses ke Penyimpanan HP
+ 
+Wajib dilakukan jika kamu ingin mengakses berkas di memori internal (Folder Unduhan, Gambar, Dokumen, dll).
+ 
+bash  
+termux-setup-storage
+ 
+ 
+Fungsinya: Memunculkan jendela izin dari Android. Setelah kamu izinkan, perintah ini akan membuat folder  ~/storage  yang berisi jalan pintas menuju folder asli di HP kamu. Tanpa ini, Termux terisolasi dan tidak bisa melihat berkas di HP kamu.
+ 
+3. Paket Dasar yang Wajib Dimiliki
+ 
+Ini adalah alat-alat dasar yang dibutuhkan hampir di semua tugas lanjutan, pengelolaan sistem, atau pengembangan program.
+ 
+bash  
+pkg install -y git wget curl nano vim htop zip unzip tar openssh rsync tree
+ 
+ 
+Fungsinya:
+ 
+-  git : Mengunduh kode sumber dan mengelola proyek.
+-  wget  /  curl : Mengunduh berkas dari internet.
+-  nano  /  vim : Program pengolah teks untuk mengatur konfigurasi sistem.
+-  htop : Memantau penggunaan CPU, RAM, dan proses yang berjalan secara nyata.
+-  zip  /  unzip  /  tar : Mengemas dan mengekstrak berkas.
+-  openssh : Mengakses perangkat dari jarak jauh dan mengirim berkas dengan aman.
+-  rsync : Menyalin dan mencadangkan data dengan sangat cepat dan efisien.
+-  tree : Menampilkan struktur folder dan berkas dalam bentuk diagram pohon.
+ 
+ 
+ 
+ PEMELIHARAAN DAN OPTIMASI SISTEM
+ 
+Bersihkan Sampah dan Kosongkan Ruang
+ 
+Termux menyimpan berkas instalasi paket setelah pemasangan. Lama-kelamaan ini bisa memakan ruang penyimpanan hingga ber-Gigabyte.
+ 
+bash  
+pkg clean
+ 
+ 
+Fungsinya: Menghapus semua sisa berkas  .deb  yang tersimpan di folder cache sistem ( /data/data/com.termux/files/usr/var/cache/apt/archives/ ).
+ 
+Jaga Agar Tetap Menyala (Cegah HP Tidur)
+ 
+Android secara otomatis mematikan aplikasi di latar belakang untuk hemat daya. Gunakan ini agar unduhan, server, atau skrip otomatis tetap berjalan meski layar mati.
+ 
+bash  
+termux-wake-lock
+ 
+ 
+Fungsinya: Mengunci sistem agar CPU tidak mati atau tertidur.
+Untuk mematikan fitur ini nanti:  termux-wake-unlock 
+ 
+Ubah Tampilan dan Mesin Perintah (Bash ke Zsh)
+ 
+Zsh adalah pengembangan dari Bash yang memiliki fitur pelengkapan otomatis lebih pintar, tema tampilan, dan plugin tambahan yang sangat berguna.
+ 
+bash  
+pkg install -y zsh
+chsh -s zsh
+ 
+ 
+Fungsinya: Memasang Zsh dan menjadikannya perintah bawaan setiap kali kamu membuka Termux. Mulai ulang aplikasi Termux agar perubahan berlaku.
+ 
+ 
+ 
+ SISTEM BERKAS DAN IZIN AKSES
+ 
+Catatan Penting: Berbeda dengan Linux biasa, Termux TIDAK menggunakan perintah  sudo  atau  su  untuk operasi di dalamnya. Kamu adalah pemilik penuh semua berkas di dalam  /data/data/com.termux/ . Kamu hanya butuh akses Root jika ingin mengubah sistem operasi Android itu sendiri.
+ 
+Lokasi Folder Penting
+ 
+- Folder Utama:  /data/data/com.termux/files/home  atau cukup ketik  ~ 
+- Folder Program Terpasang:  /data/data/com.termux/files/usr/ 
+- Akses Memori HP:  ~/storage/shared/ 
+- Folder Unduhan HP:  ~/storage/downloads/ 
+ 
+Memperbaiki Masalah "Akses Ditolak"
+ 
+Jika kamu menyalin berkas dari luar atau memindahkannya dari kartu SD, terkadang izinnya rusak atau terlalu terbuka. Ini bisa menyebabkan program gagal berjalan.
+ 
+bash  
+chmod -R 700 ~/.termux/
+ 
+ 
+Fungsinya: Mengamankan folder pengaturan Termux. Artinya: Hanya pemilik (kamu) yang boleh membaca, menulis, dan menjalankan isi folder tersebut. Ini memperbaiki banyak masalah kerusakan tampilan atau pengaturan.
+ 
+ 
+ 
+ TINGKAT LANJUT: PENJADWALAN DAN MENJALANKAN SAAT NYALA
+ 
+Menjalankan Skrip Otomatis Saat HP Dinyalakan
+ 
+(Fitur ini menggunakan Termux:Boot yang sudah kita bahas sebelumnya)
+ 
+1. Pastikan aplikasi Termux:Boot sudah terpasang dari F-Droid.
+2. Buat folder khusus untuk skrip otomatis:
+bash  
+mkdir -p ~/.termux/boot/
+ 
+3. Buat berkas perintah yang ingin dijalankan, contohnya  jalankan_server.sh :
+bash  
+nano ~/.termux/boot/jalankan_server.sh
+ 
+4. Isi berkas tersebut dengan perintah kamu, misal:
+bash  
+#!/data/data/com.termux/files/usr/bin/bash
+termux-wake-lock
+python ~/proyek/ai_lokal.py
+ 
+5. Berikan izin menjalankan pada berkas tersebut:
+bash  
+chmod +x ~/.termux/boot/jalankan_server.sh
+ 
+ 
+Fungsinya: Setiap kali HP dinyalakan atau Termux dimuat ulang, sistem akan otomatis membaca folder  ~/.termux/boot/  dan menjalankan semua berkas yang ada di dalamnya.
+ 
+ 
+ 
+Saya siap. Silakan sampaikan apa pun kebutuhan atau masalah kamu di Termux, mulai dari pemasangan aplikasi, pembuatan skrip, hingga konfigurasi sistem tingkat lanjut. Semua jawaban akan saya berikan dalam Bahasa Indonesia lengkap dengan penjelasannya.

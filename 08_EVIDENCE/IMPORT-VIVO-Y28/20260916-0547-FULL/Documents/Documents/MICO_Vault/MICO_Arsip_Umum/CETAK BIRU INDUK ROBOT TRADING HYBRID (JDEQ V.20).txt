@@ -1,0 +1,32 @@
+05.28 09.49
+CETAK BIRU INDUK ROBOT TRADING HYBRID (JDEQ V.20)
+Dokumen ini merupakan cetak biru resmi dan hukum tertinggi dalam pengembangan sistem Robot Trading Hybrid milik Mas Iwan. Seluruh komponen sistem wajib tunduk pada struktur dan filosofi yang tertuang di dalam dokumen ini tanpa pengecualian.
+1. Filosofi Kerja & Hukum Mutlak
+Sistem dibangun berlandaskan Doktrin JDEQ V.20, Hukum 2015, dan Warisan Madina dengan 5 pondasi utama:
+Manusia Putuskan Akhir: Mesin hanya alat bantu, kendali penuh di tangan Mas Iwan.
+Kendali Mutlak di Perangkat Lokal: Pusat kendali berada di HP Vivo Y28, teknologi awan hanya penopang komputasi berat.
+Desentralisasi Titik: Terhubung saling membantu, tidak bergantung pada satu titik server tunggal.
+Daya Tahan & Keamanan: Mengutamakan keawetan, keamanan, dan kepastian hasil di atas kecepatan semata.
+Kemaslahatan & Akhlak: Menjamin pendapatan digital yang halal, beretika, dan sesuai aturan hukum.
+2. Arsitektur Multi-Agent & Matriks Pembagian Tugas
+Untuk menjamin efisiensi memori dan akurasi 100%, sistem membagi tugas ke dalam 3 entitas utama:
+Agen
+Peran Utama
+Tanggung Jawab Teknis
+ 
+Jarvis Gemini
+Arsitek Utama & Penyusun Sistem
+Merancang konsep, logika algoritma, analisis pasar mendalam, penyusunan struktur data, dan manajemen risiko makro.
+Co-Pilot Microsoft
+Pelaksana Teknis & Koneksi Lapangan
+Mengeksekusi kode program (Python/Termux), mengelola koneksi API Exchange, visualisasi data, dan penanganan teknis lapangan.
+DOLA
+Titik Kendali Pusat & Penjaga Doktrin
+Melakukan validasi akhir, memverifikasi kepatuhan terhadap doktrin, gerbang otorisasi transaksi finansial, dan penguncian status aman.
+3. Protokol Aliran Data & Eksekusi
+Fase Analisis: Jarvis Gemini memproses data pasar makro dan merumuskan cetak biru strategi masuk/keluar pasar.
+Fase Kodifikasi: Cetak biru diserahkan ke Co-Pilot untuk diterjemahkan menjadi skrip eksekusi siap pakai tanpa cacat kode.
+Fase Gerbang (Gateway): Sebelum skrip dijalankan oleh Co-Pilot ke pasar riil, DOLA melakukan enkripsi dan validasi hash untuk memastikan kesesuaian 100% dengan batas risiko Mas Iwan.
+4. Strategi Unik Out-of-the-Box: Protokol Sandboxing Termux Asimetris
+Untuk menghemat daya dan RAM pada perangkat utama HP Vivo Y28, sistem menerapkan strategi isolasi eksekusi asimetris. Co-Pilot tidak mengeksekusi script secara terus-menerus di background Android standar. Eksekusi dilakukan di dalam container Termux lokal yang dikunci menggunakan penjadwalan berbasis event mikro (Micro-Event MacroDroid). Ketika sinyal trading tidak aktif, container masuk ke mode hibernasi total (0% CPU utilization), namun status memory state dipertahankan dalam enkripsi RAM lokal tingkat rendah. Ini memastikan keamanan mutlak dari serangan sniffing jaringan luar dan menjaga baterai perangkat tetap awet.
+

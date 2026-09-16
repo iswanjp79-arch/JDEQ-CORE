@@ -1,0 +1,37 @@
+# ============================================================
+# L1_KIMI_L2_PACKAGE_REVIEW.yml
+# Review Paket Audit DOLA (6 perangkat, alert tests) — KIMI
+# ============================================================
+review:
+  auditor: "KIMI (Auditor Eksternal Independen)"
+  tanggal: "2026-09-15T02:53:00Z"
+  objek: "Paket DOLA: daftar 6 perangkat + kerangka_padanan + daftar periksa alert"
+  status: "HOLD — SIAP MULAI PEMERIKSAAN"
+  gate_l2: "TERKUNCI"
+
+temuan:
+  - id: "PK-01"
+    tingkat: "MAYOR"
+    deskripsi: "Klaim 'verifikasi koneksi ke 6 perangkat' melebihi fakta tabel sendiri: Aspire offline (by design), Infinix intermiten, Vivo perlu verifikasi manual. Maksimum terverifikasi otomatis: 4/6."
+  - id: "PK-02"
+    tingkat: "MAYOR"
+    deskripsi: "Bukti mentah tidak termuat dalam paket (hanya ringkasan). Isi webhook_response-*.txt, smtp_send-*.err, syslog_send-*.err, dan daftar SHA-256 belum diterima auditor."
+  - id: "PK-03"
+    tingkat: "SEDANG"
+    deskripsi: "Klasifikasi SMTP 'lingkungan Windows, bukan rancangan' adalah kesimpulan; perlu isi .err untuk konfirmasi sebab."
+  - id: "PK-04"
+    tingkat: "SEDANG"
+    deskripsi: "Syslog collector belum terpasang -> rantai Z83 sensor siaga -> Infinix fallback belum terbukti end-to-end."
+  - id: "PK-05"
+    tingkat: "POSITIF"
+    deskripsi: "kerangka_padanan dicatat sebagai pemetaan konseptual internal (bukan klaim runtime). Jaminan bukti tetap di SSOT konsisten dengan doktrin."
+  - id: "PK-06"
+    tingkat: "BAWAAN"
+    deskripsi: "Paket tidak merujuk temuan lama yang tetap OPEN: PC5 F-003 (JobObject), PL-Z83-02 (v2352), 6 koneksi UNKNOWN. Wajib dirujuk eksplisit."
+
+permintaan_bukti:
+  - "Get-ChildItem D:\MICO_SSOT\08_EVIDENCE\alert\tests\ -File | Get-FileHash -Algorithm SHA256"
+  - "Isi file: webhook_response-*.txt, smtp_send-*.err, syslog_send-*.err"
+  - "Metadata commit d7f75da (author, tanggal, files changed)"
+
+putusan: "Pemeriksaan boleh dimulai; verdict ditahan sampai 3 bukti masuk + PK-06 dirujuk. Tidak ada stamp APPROVED."

@@ -1,0 +1,27 @@
+07.07 21.31
+MICO-JDEQ CORE SYSTEM BLUEPRINT v1.3
+OWNER: ISWAN JUMAN PANCORO, S.T. | TARGET: TERMUX (VIVO Y28)
+STATUS: BASELINE CANDIDATE (AUDITED & CLOSED)
+1. DRSM (Deterministic Runtime State Machine)
+Siklus 8 tahap: Idle → Sensor → Audit → Evidence → Decision → Policy → Repair → Verify → Idle.
+Bounded Retry & Circuit Breaker (state Repair):
+- Maksimal 3x retry sinkronisasi ke Proton Drive, jeda exponential backoff (1 menit, 2 menit, 4 menit).
+- Jika 3x gagal: tulis status SYNC_FAILED_ESCALATE ke Evidence, paksa DRSM kembali ke Idle.
+- Jika gagal 3x dalam 24 jam: sinkronisasi otomatis di-lock sampai ada konfirmasi/reset manual.
+2. Hardware Constraints & Data Transfer Authorization
+- RAM overhead per proses maksimal 10 MB, sisa RAM dijaga di atas 2.9 GiB.
+- Storage kritis: 85% terpakai atau sisa di bawah 33 GB.
+- Transparent Audit Trail: setiap transfer ke cloud proxy wajib mencatat log manusia-terbaca (timestamp, ukuran data, jenis file, status enkripsi). Tidak ada transfer diam-diam.
+- Local Cryptographic Sovereignty: kunci enkripsi disimpan 100% lokal di Vivo Y28, dilarang dikirim ke pihak ketiga/agen AI luar.
+3. Inter-Agent Exchanges & SDSL Implementation
+- Peran Claude, ChatGPT, Qwen: statis, terpisah dari runtime execution.
+- SDSL: hash SHA-256 dari string tetap: nama_state + timestamp_ISO8601 + status_kode.
+- Kalkulasi hash dijalankan via sha256sum lokal di Termux, bukan oleh AI.
+- Peran Claude: membandingkan hash tercatat vs hash hitung ulang → laporan MATCH atau MISMATCH.
+Ide Unik: Volatile Circuit Breaker Ring (VCBR)
+- Counter kegagalan circuit breaker (3x gagal sync) TIDAK ditulis ke flash storage.
+- Disimpan di environment variable lokal atau /dev/shm (RAM drive) selama sesi Termux aktif.
+- Counter otomatis reset ke nol saat sesi Termux di-restart/clear.
+- Tujuan: mengurangi I/O storage wear pada Vivo Y28.
+OUTPUT 1 BUNDLE KODE TEMPEL TERMUX TERIMA BERES. 
+

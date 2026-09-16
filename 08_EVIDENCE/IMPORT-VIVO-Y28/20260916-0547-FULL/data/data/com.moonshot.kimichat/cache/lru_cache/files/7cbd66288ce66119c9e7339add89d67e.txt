@@ -1,0 +1,1790 @@
+{
+  "system": "MICO-JDEQ TREE-L PC-i5 BASELINE",
+  "version": "1.0_20260907",
+  "status": "APPROVED_WITH_CORRECTIONS",
+  "mode": "CONCEPTUAL_BASELINE",
+  "hardware_baseline": {
+    "cpu": "Intel Core i5-3470, 4C/4T",
+    "ram_gb": 16,
+    "storage": {
+      "os_drive": "SSD 128GB (C:) — SYSTEM ONLY",
+      "data_drive": "HDD/SSD D: — WORKING AREA",
+      "temp_drive": "RAM-Disk 4GB (Z:) — EPHEMERAL, NON-PERSISTENT"
+    },
+    "network": "LAN + Tailscale (remote access)",
+    "os": "Windows 10 Enterprise + WSL2 (optional)"
+  },
+  "core_principles": {
+    "capability_vs_installation": "APPROVED — Need → Resource Check → Approval → Install",
+    "git_role": "CONFIG/MANIFEST/SOP ONLY — NO LARGE DATA/LOG/MODEL",
+    "evidence_rule": "NO CLAIM WITHOUT EVIDENCE_ID + TIMESTAMP + SHA256",
+    "adr_rule": "IMMUTABLE — NEW VERSION ON CHANGE, NEVER OVERWRITE",
+    "log_rule": "ROTATE + ARCHIVE + RETENTION — NO OVERWRITE, NO INFINITE GROWTH",
+    "agent_model": "WORKER_CONTRACT — ROLE/BOUNDARY/INPUT/OUTPUT/TIMEOUT/RECOVERY"
+  },
+  "folder_structure_14_pillars": {
+    "01_FISIK": {
+      "purpose": "Hardware, OS, Network, Identity Baseline",
+      "subdirs": ["OS", "WSL", "NETWORK", "NODE_IDENTITY", "DEVICE_MANIFEST", "RESOURCE_BASELINE"],
+      "tech": "PowerShell, Bash, Git, Tailscale",
+      "install_now": true
+    },
+    "02_DATA": {
+      "purpose": "Data Lifecycle — Raw → Staging → Curated → Knowledge",
+      "subdirs": ["RAW", "STAGING", "CURATED", "KNOWLEDGE", "SCHEMA", "MANIFEST"],
+      "tech": "Python, JSON, SQLite (PILOT ONLY)",
+      "install_now": false,
+      "note": "DATA ≠ DATABASE — database is implementation, not definition"
+    },
+    "03_LOGIKA": {
+      "purpose": "State Machine, Rules, Decision Engine, Guardrails",
+      "subdirs": ["RULES", "STATE_MACHINE", "PRIORITY", "VALIDATION", "GUARDRAILS", "DECISION", "SCHEMA_RULES", "ROUTING"],
+      "tech": "JSON Schema, Python logic, Rust (FUTURE)",
+      "install_now": false
+    },
+    "04_APLIKASI": {
+      "purpose": "CLI, Worker, API, Local Service — NON-GUI",
+      "subdirs": ["WORKER", "API", "RAG", "OCR", "AGENT_RUNTIME"],
+      "tech": "Python, FastAPI (light), CLI tools",
+      "install_now": false
+    },
+    "05_PIPELINE": {
+      "purpose": "Input → Validate → Classify → Transform → Process → Store → Evidence → Output",
+      "subdirs": ["INPUT", "PROCESS", "OUTPUT", "ETL", "ROUTING"],
+      "tech": "Python, JSON (message standard)",
+      "install_now": false
+    },
+    "06_RUNTIME": {
+      "purpose": "Live Evidence — Process, Port, CPU, RAM, Log, Health",
+      "subdirs": ["LOGS", "METRICS", "PROCESS", "STATUS"],
+      "tech": "RotatingFileHandler, PS scripts, logrotate policy",
+      "install_now": true,
+      "log_policy": "10MB or daily rotation, 5 copies, archive compress 90d"
+    },
+    "07_INDEX": {
+      "purpose": "Artifact Metadata, Search Index — START SIMPLE",
+      "subdirs": ["FILE_INDEX", "KNOWLEDGE_INDEX", "TASK_INDEX"],
+      "tech": "CSV/JSON index — NO Elasticsearch/Vector DB YET",
+      "install_now": false,
+      "note": "UPGRADE ONLY WHEN SEARCH PERFORMANCE DEGRADES"
+    },
+    "08_EVIDENCE": {
+      "purpose": "Immutable Proof — Test, Runtime, Audit, Change, Incident",
+      "subdirs": ["DISCOVERY", "TEST", "RUNTIME", "CHANGE", "AUDIT", "INCIDENT", "BACKUP", "RESTORE"],
+      "tech": "SHA256 hash, timestamp, immutable file naming",
+      "install_now": true,
+      "policy": "NEVER OVERWRITE — new file + version + hash on change"
+    },
+    "09_GOVERNANCE": {
+      "purpose": "Policy, ADR, Approval, Role Boundary",
+      "subdirs": ["ADR", "POLICY", "TASK_CARDS", "APPROVAL"],
+      "tech": "ADR-0001 onward — immutable, versioned, signed",
+      "install_now": true
+    },
+    "10_SECURITY": {
+      "purpose": "Vault, ACL, Firewall, Credential Protection",
+      "subdirs": ["VAULT", "ACL", "NETWORK_POLICY", "SECRET_ROTATION"],
+      "tech": "Windows DPAPI, ACL, Tailscale, NO hardcode",
+      "install_now": false
+    },
+    "11_OBSERVABILITY": {
+      "purpose": "Telemetry, Metrics, Health Check",
+      "subdirs": ["METRICS", "ALERTS", "DASHBOARD"],
+      "tech": "Basic log metrics — Prometheus/Grafana DEFERRED",
+      "install_now": false
+    },
+    "12_BACKUP": {
+      "purpose": "Sync, Snapshot, Restore Plan",
+      "subdirs": ["LOCAL", "CLOUD_SYNC", "SNAPSHOT"],
+      "tech": "Robocopy, Rclone (LATER) — NO critical data to public cloud",
+      "install_now": false
+    },
+    "13_TEST": {
+      "purpose": "Unit, Integration, Runtime Verification",
+      "subdirs": ["UNIT", "INTEGRATION", "RUNTIME", "BENCHMARK"],
+      "tech": "pytest, Pester — framework INSTALL ON NEED",
+      "install_now": false
+    },
+    "99_ARCHIVE": {
+      "purpose": "Historical, Cold Storage, Deprecated",
+      "subdirs": ["2026_Q3", "LEGACY_CONFIG", "OBSOLETE"],
+      "tech": "Compress, move, retain 2y",
+      "install_now": true
+    }
+  },
+  "deferred_technologies": {
+    "immediate_no": ["K3s/Kubernetes", "NATS", "Vector DB", "Redis", "Elasticsearch", "Message Queue"],
+    "pilot_possible": ["SQLite", "Docker Compose"],
+    "when_to_evaluate": "Need → Resource Check → Approval → Task Card → Evidence → Install",
+    "reasoning": "i5-3470 + 16GB RAM — over-engineered stack causes I/O bottleneck + SSD wear"
+  },
+  "three_sop_mutlak": [
+    {
+      "id": "SOP-001",
+      "title": "Manajemen Sumber Daya (RAM 16GB & SSD 128GB)",
+      "summary": "Hindari DB besar & orkestrasi berat. Gunakan SQLite untuk pilot. Docker Compose cukup — K3s ditunda. RAM-Disk 4GB untuk temp/cache/scratch: cepat 100x, SSD aman, hilang saat mati = tanpa jejak."
+    },
+    {
+      "id": "SOP-002",
+      "title": "Pemisahan Zona — Git vs Data",
+      "summary": "Git = Buku Direksi (kode, konfigurasi, SOP, Task Card — di bawah 1GB). Data besar (log, model, media, evidence) = Drive D: / 08_EVIDENCE. Jangan campur — Git crash & repo bengkak."
+    },
+    {
+      "id": "SOP-003",
+      "title": "Agen = Pekerja Kontrak (SPK)",
+      "summary": "Setiap AI wajib Task Card: ROLE, CONTEXT, BOUNDARY, INPUT/OUTPUT, TIMEOUT, RECOVERY. Keluar batas → ditolak. Tidak ada agen bebas → mencegah halusinasi & kerusakan file."
+    }
+  ],
+  "adr_policy": {
+    "format": "ADR-XXXX-title.md",
+    "immutable": true,
+    "fields": ["Status", "Context", "Decision", "Consequences", "Compliance", "Evidence", "Timestamp", "Author", "SHA256"],
+    "on_change": "NEW ADR with new number — never edit existing"
+  },
+  "log_management": {
+    "rotation": "10MB or daily, 5 active copies",
+    "archive": "compress after 3, retain 90 days",
+    "evidence": "SHA256 + timestamp on every close — no overwrite",
+    "temp_storage": "RAM-Disk Z: — cleared on reboot"
+  },
+  "agent_contract_template": {
+    "agent_id": "",
+    "role": "",
+    "context": "",
+    "task": "",
+    "capability_boundary": "",
+    "input_schema": "",
+    "output_schema": "",
+    "timeout_sec": 300,
+    "retry_limit": 2,
+    "recovery_plan": "",
+    "evidence_required": true
+  },
+  "implementation_sequence": [
+    "FASE_0: Buat 14 folder kosong di D:\\MICO_SSOT\\TREE_L\\ — PELETAKAN BATU PERTAMA",
+    "FASE_1: Isi 01_FISIK → Baseline hardware & environment (READ-ONLY audit)",
+    "FASE_2: Tetapkan ADR-0001 (Arsitektur Dasar) di 09_GOVERNANCE/ADR/",
+    "FASE_3: Terapkan log rotation policy di 06_RUNTIME/",
+    "FASE_4: Siapkan 08_EVIDENCE dengan hash manifest — immutability",
+    "FASE_5: SQLite pilot di 02_DATA — hanya saat ada kebutuhan nyata",
+    "FASE_6+: Setiap langkah butuh Task Card + Approval + Evidence → baru implementasi"
+  ],
+  "risks_mitigated": {
+    "overwrite_log": "Rotation + versioned naming + hash",
+    "phantom_log": "Retention policy + archive + cleanup",
+    "over_engineering": "Capability ≠ Installation gate",
+    "git_bloat": "Strict separation — config only, no large data",
+    "agent_hallucination": "Task Card boundary + output validation",
+    "ssd_wear": "RAM-Disk for temp, minimal write, SQLite WAL"
+  },
+  "next_step": "EXECUTE FASE_0: Create 14 empty folders. Then FASE_1: Baseline Audit Read-Only. No installation until Task Card approved.",
+  "l0_approval": "YA — SETUJU. Diterapkan mulai saat ini."
+}
+===>
+Chat GPT :
+Memproses selama 41s
+
+STATUS
+
+MICO-JDEQ PC-i5 RESEARCH/KNOWLEDGE MODULE — PRO v1.0
+
+Putusan arsitektural: APPROVED AS RESEARCH GOVERNANCE + KNOWLEDGE ACQUISITION BLUEPRINT, bukan installation manifest.
+
+Riset ini saya luruskan pada beberapa titik penting. ISO/IEC 42001 adalah standar Artificial Intelligence Management System, sedangkan NIST AI RMF adalah kerangka manajemen risiko AI yang bersifat sukarela; keduanya bukan “hukum tertinggi” dan bukan bukti otomatis bahwa MICO sudah compliant/tersertifikasi. 
+
+Untuk Git, pemisahan kode/konfigurasi dari data besar memang mempunyai dasar teknis: GitHub saat ini merekomendasikan repository tetap ≤10 GB, merekomendasikan objek individual ≤1 MB, dan memberlakukan batas 100 MB per object; Git LFS memang ditujukan untuk binary besar seperti video, dataset, dan grafik. 
+
+Untuk agent, pendekatan contract + guardrail + evidence juga konsisten dengan kemampuan modern Agents SDK, yang menyediakan agents, handoffs, guardrails, dan tracing. 
+
+Untuk sistem ber-resource terbatas, Docker sendiri menyediakan pengendalian CPU/memory container; MQTT memang dirancang ringan untuk M2M/IoT; OpenTelemetry menangani traces, metrics, dan logs. 
+
+OWASP juga sekarang memiliki Top 10 for Agentic Applications 2026, sehingga pengamanan agentic workflow layak dimasukkan sebagai materi riset tersendiri. 
+
+
+---
+
+GOVERNANCE GATE
+
+L0
+ ↓
+DOLA / Governance Review
+ ↓
+AG-001 — Architecture / Planner
+ ↓
+AG-002 — Research / Source Validation
+ ↓
+AG-003 — DeepSeek / Technical Execution
+ ↓
+Independent Audit
+ ↓
+L0 Acceptance
+
+Tidak ada penelitian → otomatis menjadi instalasi.
+
+Formula yang dikunci:
+
+LITERATURE
+→ EXTRACT
+→ CLASSIFY
+→ CROSS-CHECK
+→ APPLY TO MICO
+→ DESIGN
+→ TASK CARD
+→ APPROVAL
+→ IMPLEMENTATION
+→ RUNTIME
+→ EVIDENCE
+
+
+---
+
+EPISTEMIC LABEL
+
+FACT
+= didukung sumber primer/official/current evidence
+
+OBSERVED
+= terlihat pada runtime PC-i5
+
+INFERENCE
+= kesimpulan logis dari evidence
+
+ASSUMPTION
+= belum dibuktikan
+
+UNKNOWN
+= belum tersedia
+
+PROPOSED
+= rancangan
+
+CANDIDATE
+= teknologi/metode yang sedang dievaluasi
+
+VERIFIED
+= sudah diverifikasi dengan evidence yang cukup
+
+DEFERRED
+= sengaja belum diterapkan
+
+REJECTED
+= tidak dipilih karena alasan teknis/risk
+
+Khusus source research:
+
+SOURCE_SCORE:
+10 = normative / primary standard / official authority
+5  = official technical documentation
+3  = established engineering book / peer-reviewed research
+1  = community discussion / anecdotal material
+
+Nilai source ≠ kebenaran absolut. Source-score hanya menunjukkan bobot awal untuk prioritas verifikasi.
+
+
+---
+
+BLUEPRINT — 1 BUNDLE JSON PRO UNTUK DEEPSEEK
+
+{
+  "module_id": "MICO-JDEQ-PC5-KNOWLEDGE-RESEARCH-100-PRO-001",
+  "title": "MICO-JDEQ PC-i5 100-Literature Knowledge Engineering Module",
+  "version": "1.0",
+  "status": "APPROVED_AS_RESEARCH_BLUEPRINT",
+  "mode": "PRO_RESEARCH_READ_ONLY",
+  "owner": "L0_HUMAN",
+  "architect": "AG-001_CHATGPT",
+  "governance": "DOLA",
+  "researcher": "AG-002_PERPLEXITY",
+  "executor": "AG-003_DEEPSEEK",
+
+  "target_node": {
+    "node_id": "KAPAL-INDUK",
+    "role": "HEAVY_LOCAL_WORKER",
+    "platform": "PC-i5",
+    "cpu": "Intel Core i5-3470",
+    "cpu_topology": "4C/4T",
+    "ram_gb": 16,
+    "os": "Windows 10 Enterprise",
+    "storage_roles": {
+      "C": "SYSTEM_OS",
+      "D": "WORKING_DATA",
+      "E": "DATA_ADDITIONAL_REQUIRES_HEALTH_REVALIDATION"
+    },
+    "runtime_status": "OBSERVED_BUT_REVALIDATE_BEFORE_IMPLEMENTATION"
+  },
+
+  "mission": {
+    "primary_goal": "Build an evidence-grounded knowledge and engineering reference system for MICO-JDEQ PC-i5 without turning every technology reference into an installation requirement.",
+    "secondary_goals": [
+      "Generate reusable tips",
+      "Generate educational notes",
+      "Generate operational manuals",
+      "Generate troubleshooting guides",
+      "Generate implementation decision criteria",
+      "Generate ADR candidates",
+      "Generate Task Card candidates",
+      "Generate resource and risk analytics"
+    ]
+  },
+
+  "core_doctrine": {
+    "capability_is_not_installation": true,
+    "local_first": true,
+    "cloud_is_capability_provider": true,
+    "human_final_authority": true,
+    "evidence_before_claim": true,
+    "architecture_before_automation": true,
+    "stability_before_features": true,
+    "least_destructive_first": true,
+    "no_silent_overwrite": true,
+    "no_silent_deletion": true,
+    "no_automatic_framework_accumulation": true
+  },
+
+  "research_prohibition": {
+    "installation": false,
+    "package_installation": false,
+    "system_mutation": false,
+    "firewall_mutation": false,
+    "network_mutation": false,
+    "delete": false,
+    "format": false,
+    "credential_collection": false,
+    "secret_collection": false,
+    "bypass_access_control": false,
+    "copyright_access_control_bypass": false,
+    "cloud_deployment": false
+  },
+
+  "knowledge_filter": {
+    "name": "10-5-3-1-PLUS-5",
+    "questions_per_literature": 24,
+    "application": "APPLY_IDENTICAL_FILTER_TO_EACH_OF_100_ITEMS",
+
+    "level_10": {
+      "count": 10,
+      "purpose": "WHAT_WHY_CONTEXT",
+      "questions": [
+        "Apa masalah utama yang dibahas sumber?",
+        "Mengapa masalah tersebut penting?",
+        "Siapa atau sistem apa yang menjadi target?",
+        "Dalam konteks apa konsep tersebut berlaku?",
+        "Apa asumsi dasar sumber?",
+        "Apa batasan pendekatan?",
+        "Apa manfaat utamanya?",
+        "Apa risiko jika pendekatan diabaikan?",
+        "Apa prerequisite untuk menerapkannya?",
+        "Apa metrik keberhasilannya?"
+      ]
+    },
+
+    "level_5": {
+      "count": 5,
+      "purpose": "HOW_IMPLEMENTATION",
+      "questions": [
+        "Bagaimana prinsip tersebut diterapkan?",
+        "Bagaimana keberhasilannya diukur?",
+        "Bagaimana troubleshooting dilakukan?",
+        "Bagaimana integrasinya dengan sistem lain?",
+        "Bagaimana pendekatan tersebut diskalakan atau diperkecil?"
+      ]
+    },
+
+    "level_3": {
+      "count": 3,
+      "purpose": "FAILURE_AND_EDGE_CASES",
+      "questions": [
+        "Apa yang terjadi jika resource terbatas?",
+        "Apa yang terjadi jika requirement berubah?",
+        "Apa yang terjadi jika komponen gagal?"
+      ]
+    },
+
+    "level_1": {
+      "count": 1,
+      "purpose": "CORE_PRINCIPLE",
+      "questions": [
+        "Prinsip engineering apa yang paling fundamental dari sumber ini?"
+      ]
+    },
+
+    "plus_5": {
+      "count": 5,
+      "purpose": "MICO_JDEQ_APPLICATION",
+      "questions": [
+        "Apa relevansinya untuk PC-i5?",
+        "Apakah ini capability yang benar-benar diperlukan atau hanya teknologi menarik?",
+        "Bagaimana dampaknya terhadap data, Git, evidence, dan runtime?",
+        "Bagaimana konsep ini diterjemahkan menjadi Task Card agen?",
+        "Apa alasan ACCEPT, REVISE, DEFER, atau REJECT untuk MICO-JDEQ?"
+      ]
+    }
+  },
+
+  "required_outputs_per_literature": {
+    "source_card": true,
+    "10_what_why_answers": true,
+    "5_how_answers": true,
+    "3_failure_answers": true,
+    "1_core_principle": true,
+    "5_mico_questions": true,
+    "tip": true,
+    "education": true,
+    "manual_outline": true,
+    "tutorial_outline": true,
+    "troubleshooting_notes": true,
+    "resource_notes": true,
+    "security_notes": true,
+    "decision": true,
+    "evidence_links": true
+  },
+
+  "source_quality_rules": {
+    "preferred_order": [
+      "standards_body",
+      "government_reference",
+      "official_project_documentation",
+      "official_vendor_documentation",
+      "peer_reviewed_research",
+      "established_engineering_book",
+      "engineering_community",
+      "social_media_or_anecdotal"
+    ],
+    "minimum_cross_check_for_high_risk_claim": 2,
+    "minimum_cross_check_for_architecture_decision": 2,
+    "minimum_for_security_claim": 2,
+    "minimum_for_hardware_claim": 2,
+    "unknown_if_not_verified": true
+  },
+
+  "100_literature_registry": [
+
+    {
+      "id": "L001",
+      "category": "SOFTWARE_ARCHITECTURE",
+      "type": "BOOK",
+      "title": "Designing Data-Intensive Applications",
+      "author": "Martin Kleppmann",
+      "relevance": "data architecture, reliability, storage, distributed systems",
+      "source_score": 3
+    },
+    {
+      "id": "L002",
+      "category": "SOFTWARE_ARCHITECTURE",
+      "type": "BOOK",
+      "title": "Clean Architecture",
+      "author": "Robert C. Martin",
+      "relevance": "separation of concerns, dependency boundaries",
+      "source_score": 3
+    },
+    {
+      "id": "L003",
+      "category": "SOFTWARE_ARCHITECTURE",
+      "type": "BOOK",
+      "title": "Fundamentals of Software Architecture",
+      "author": "Mark Richards and Neal Ford",
+      "relevance": "architectural trade-offs and decision making",
+      "source_score": 3
+    },
+    {
+      "id": "L004",
+      "category": "SOFTWARE_ARCHITECTURE",
+      "type": "BOOK",
+      "title": "Software Architecture: The Hard Parts",
+      "author": "Neal Ford, Mark Richards, Pramod Sadalage, Zhamak Dehghani",
+      "relevance": "distributed architecture trade-offs",
+      "source_score": 3
+    },
+    {
+      "id": "L005",
+      "category": "SOFTWARE_ARCHITECTURE",
+      "type": "BOOK",
+      "title": "Release It!",
+      "author": "Michael T. Nygard",
+      "relevance": "stability, resilience, production failure patterns",
+      "source_score": 3
+    },
+    {
+      "id": "L006",
+      "category": "SOFTWARE_ARCHITECTURE",
+      "type": "BOOK",
+      "title": "Building Evolutionary Architectures",
+      "author": "Rebecca Parsons, Patrick Kua, Neal Ford",
+      "relevance": "architecture evolution and fitness functions",
+      "source_score": 3
+    },
+    {
+      "id": "L007",
+      "category": "SOFTWARE_ARCHITECTURE",
+      "type": "BOOK",
+      "title": "Team Topologies",
+      "author": "Matthew Skelton and Manuel Pais",
+      "relevance": "team boundaries and cognitive load",
+      "source_score": 3
+    },
+    {
+      "id": "L008",
+      "category": "SOFTWARE_ARCHITECTURE",
+      "type": "BOOK",
+      "title": "Domain-Driven Design",
+      "author": "Eric Evans",
+      "relevance": "bounded contexts and domain modeling",
+      "source_score": 3
+    },
+    {
+      "id": "L009",
+      "category": "SOFTWARE_ARCHITECTURE",
+      "type": "BOOK",
+      "title": "Designing Distributed Systems",
+      "author": "Brendan Burns",
+      "relevance": "distributed system patterns",
+      "source_score": 3
+    },
+    {
+      "id": "L010",
+      "category": "SOFTWARE_ARCHITECTURE",
+      "type": "BOOK",
+      "title": "Enterprise Integration Patterns",
+      "author": "Gregor Hohpe and Bobby Woolf",
+      "relevance": "messaging, routing, integration",
+      "source_score": 3
+    },
+
+    {
+      "id": "L011",
+      "category": "GOVERNANCE_STANDARDS",
+      "type": "STANDARD",
+      "title": "ISO/IEC 42001:2023",
+      "relevance": "AI management system",
+      "source_score": 10
+    },
+    {
+      "id": "L012",
+      "category": "GOVERNANCE_STANDARDS",
+      "type": "STANDARD",
+      "title": "ISO/IEC 27001",
+      "relevance": "information security management",
+      "source_score": 10
+    },
+    {
+      "id": "L013",
+      "category": "GOVERNANCE_STANDARDS",
+      "type": "STANDARD",
+      "title": "ISO 9001",
+      "relevance": "quality management system",
+      "source_score": 10
+    },
+    {
+      "id": "L014",
+      "category": "GOVERNANCE_STANDARDS",
+      "type": "STANDARD",
+      "title": "ISO 45001",
+      "relevance": "occupational health and safety management",
+      "source_score": 10
+    },
+    {
+      "id": "L015",
+      "category": "GOVERNANCE_STANDARDS",
+      "type": "FRAMEWORK",
+      "title": "NIST AI Risk Management Framework",
+      "relevance": "AI risk governance",
+      "source_score": 10
+    },
+    {
+      "id": "L016",
+      "category": "GOVERNANCE_STANDARDS",
+      "type": "FRAMEWORK",
+      "title": "NIST Cybersecurity Framework 2.0",
+      "relevance": "cybersecurity risk management",
+      "source_score": 10
+    },
+    {
+      "id": "L017",
+      "category": "GOVERNANCE_STANDARDS",
+      "type": "STANDARD",
+      "title": "NIST SP 800-207 Zero Trust Architecture",
+      "relevance": "identity-centric security architecture",
+      "source_score": 10
+    },
+    {
+      "id": "L018",
+      "category": "GOVERNANCE_STANDARDS",
+      "type": "STANDARD",
+      "title": "NIST SP 800-218 Secure Software Development Framework",
+      "relevance": "secure software lifecycle",
+      "source_score": 10
+    },
+    {
+      "id": "L019",
+      "category": "GOVERNANCE_STANDARDS",
+      "type": "GUIDANCE",
+      "title": "NIST SP 800-61 Incident Response",
+      "relevance": "incident handling and recovery",
+      "source_score": 10
+    },
+    {
+      "id": "L020",
+      "category": "GOVERNANCE_STANDARDS",
+      "type": "GUIDANCE",
+      "title": "CISA SBOM Guidance",
+      "relevance": "software supply-chain transparency",
+      "source_score": 10
+    },
+
+    {
+      "id": "L021",
+      "category": "SECURITY",
+      "type": "FRAMEWORK",
+      "title": "OWASP Top 10 for Large Language Model Applications",
+      "relevance": "LLM security risks",
+      "source_score": 10
+    },
+    {
+      "id": "L022",
+      "category": "SECURITY",
+      "type": "FRAMEWORK",
+      "title": "OWASP Top 10 for Agentic Applications 2026",
+      "relevance": "agentic system security",
+      "source_score": 10
+    },
+    {
+      "id": "L023",
+      "category": "SECURITY",
+      "type": "STANDARD",
+      "title": "OWASP Application Security Verification Standard",
+      "relevance": "application security verification",
+      "source_score": 10
+    },
+    {
+      "id": "L024",
+      "category": "SECURITY",
+      "type": "FRAMEWORK",
+      "title": "OWASP Software Assurance Maturity Model",
+      "relevance": "software security maturity",
+      "source_score": 10
+    },
+    {
+      "id": "L025",
+      "category": "SECURITY",
+      "type": "BENCHMARK",
+      "title": "CIS Benchmarks",
+      "relevance": "secure system configuration",
+      "source_score": 10
+    },
+    {
+      "id": "L026",
+      "category": "SECURITY",
+      "type": "KNOWLEDGE_BASE",
+      "title": "MITRE ATT&CK",
+      "relevance": "adversary behaviors and defensive mapping",
+      "source_score": 10
+    },
+    {
+      "id": "L027",
+      "category": "SECURITY",
+      "type": "KNOWLEDGE_BASE",
+      "title": "MITRE ATLAS",
+      "relevance": "AI threat techniques",
+      "source_score": 10
+    },
+    {
+      "id": "L028",
+      "category": "SECURITY",
+      "type": "FRAMEWORK",
+      "title": "SLSA",
+      "relevance": "software supply-chain integrity",
+      "source_score": 10
+    },
+    {
+      "id": "L029",
+      "category": "SECURITY",
+      "type": "PROJECT",
+      "title": "Sigstore",
+      "relevance": "artifact signing and provenance",
+      "source_score": 10
+    },
+    {
+      "id": "L030",
+      "category": "SECURITY",
+      "type": "FRAMEWORK",
+      "title": "Cloud Security Alliance Cloud Controls Matrix",
+      "relevance": "cloud control mapping",
+      "source_score": 10
+    },
+
+    {
+      "id": "L031",
+      "category": "CORE_RUNTIME",
+      "type": "OFFICIAL_DOCS",
+      "title": "Python Documentation",
+      "relevance": "core language and runtime",
+      "source_score": 5
+    },
+    {
+      "id": "L032",
+      "category": "CORE_RUNTIME",
+      "type": "OFFICIAL_DOCS",
+      "title": "PowerShell Documentation",
+      "relevance": "Windows automation and diagnostics",
+      "source_score": 5
+    },
+    {
+      "id": "L033",
+      "category": "CORE_RUNTIME",
+      "type": "OFFICIAL_DOCS",
+      "title": "Microsoft WSL Documentation",
+      "relevance": "Linux integration on Windows",
+      "source_score": 5
+    },
+    {
+      "id": "L034",
+      "category": "CORE_RUNTIME",
+      "type": "OFFICIAL_DOCS",
+      "title": "Docker Engine Documentation",
+      "relevance": "container runtime and resources",
+      "source_score": 5
+    },
+    {
+      "id": "L035",
+      "category": "CORE_RUNTIME",
+      "type": "OFFICIAL_DOCS",
+      "title": "Docker Compose Documentation",
+      "relevance": "multi-container application lifecycle",
+      "source_score": 5
+    },
+    {
+      "id": "L036",
+      "category": "CORE_RUNTIME",
+      "type": "OFFICIAL_DOCS",
+      "title": "Git Documentation",
+      "relevance": "versioned configuration and code",
+      "source_score": 5
+    },
+    {
+      "id": "L037",
+      "category": "CORE_RUNTIME",
+      "type": "OFFICIAL_DOCS",
+      "title": "GitHub Repository Limits",
+      "relevance": "repository sizing and operational limits",
+      "source_score": 10
+    },
+    {
+      "id": "L038",
+      "category": "CORE_RUNTIME",
+      "type": "OFFICIAL_PROJECT",
+      "title": "Git Large File Storage",
+      "relevance": "large binary versioning",
+      "source_score": 5
+    },
+    {
+      "id": "L039",
+      "category": "CORE_RUNTIME",
+      "type": "OFFICIAL_DOCS",
+      "title": "SQLite WAL Documentation",
+      "relevance": "embedded database concurrency",
+      "source_score": 5
+    },
+    {
+      "id": "L040",
+      "category": "CORE_RUNTIME",
+      "type": "OFFICIAL_DOCS",
+      "title": "SQLite Online Backup Documentation",
+      "relevance": "database backup and recovery",
+      "source_score": 5
+    },
+
+    {
+      "id": "L041",
+      "category": "DATA_AND_RAG",
+      "type": "OFFICIAL_DOCS",
+      "title": "PostgreSQL Documentation",
+      "relevance": "relational database architecture",
+      "source_score": 5
+    },
+    {
+      "id": "L042",
+      "category": "DATA_AND_RAG",
+      "type": "OFFICIAL_DOCS",
+      "title": "Redis Documentation",
+      "relevance": "cache and in-memory data structures",
+      "source_score": 5
+    },
+    {
+      "id": "L043",
+      "category": "DATA_AND_RAG",
+      "type": "OFFICIAL_DOCS",
+      "title": "DuckDB Documentation",
+      "relevance": "local analytical processing",
+      "source_score": 5
+    },
+    {
+      "id": "L044",
+      "category": "DATA_AND_RAG",
+      "type": "OFFICIAL_DOCS",
+      "title": "Qdrant Documentation",
+      "relevance": "vector search",
+      "source_score": 5
+    },
+    {
+      "id": "L045",
+      "category": "DATA_AND_RAG",
+      "type": "PROJECT_DOCS",
+      "title": "pgvector",
+      "relevance": "vector search in PostgreSQL",
+      "source_score": 5
+    },
+    {
+      "id": "L046",
+      "category": "DATA_AND_RAG",
+      "type": "RESEARCH_PROJECT",
+      "title": "FAISS",
+      "relevance": "similarity search and vector indexing",
+      "source_score": 5
+    },
+    {
+      "id": "L047",
+      "category": "DATA_AND_RAG",
+      "type": "OFFICIAL_DOCS",
+      "title": "Weaviate Documentation",
+      "relevance": "vector database architecture",
+      "source_score": 5
+    },
+    {
+      "id": "L048",
+      "category": "DATA_AND_RAG",
+      "type": "OFFICIAL_DOCS",
+      "title": "Milvus Documentation",
+      "relevance": "vector search at scale",
+      "source_score": 5
+    },
+    {
+      "id": "L049",
+      "category": "DATA_AND_RAG",
+      "type": "OFFICIAL_DOCS",
+      "title": "Hugging Face Transformers Documentation",
+      "relevance": "model architecture and inference",
+      "source_score": 5
+    },
+    {
+      "id": "L050",
+      "category": "DATA_AND_RAG",
+      "type": "RESEARCH_PAPER",
+      "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+      "author": "Lewis et al.",
+      "relevance": "RAG foundation",
+      "source_score": 3
+    },
+
+    {
+      "id": "L051",
+      "category": "AGENTS_AND_ORCHESTRATION",
+      "type": "OFFICIAL_DOCS",
+      "title": "OpenAI Agents SDK",
+      "relevance": "agents, tools, handoffs, guardrails, tracing",
+      "source_score": 5
+    },
+    {
+      "id": "L052",
+      "category": "AGENTS_AND_ORCHESTRATION",
+      "type": "SPECIFICATION",
+      "title": "Model Context Protocol Specification",
+      "relevance": "tool/context interoperability",
+      "source_score": 10
+    },
+    {
+      "id": "L053",
+      "category": "AGENTS_AND_ORCHESTRATION",
+      "type": "OFFICIAL_DOCS",
+      "title": "LangGraph Documentation",
+      "relevance": "stateful and durable workflows",
+      "source_score": 5
+    },
+    {
+      "id": "L054",
+      "category": "AGENTS_AND_ORCHESTRATION",
+      "type": "OFFICIAL_DOCS",
+      "title": "n8n Documentation",
+      "relevance": "workflow automation",
+      "source_score": 5
+    },
+    {
+      "id": "L055",
+      "category": "AGENTS_AND_ORCHESTRATION",
+      "type": "OFFICIAL_DOCS",
+      "title": "Temporal Documentation",
+      "relevance": "durable workflow execution",
+      "source_score": 5
+    },
+    {
+      "id": "L056",
+      "category": "AGENTS_AND_ORCHESTRATION",
+      "type": "OFFICIAL_DOCS",
+      "title": "NATS Documentation",
+      "relevance": "messaging and event transport",
+      "source_score": 5
+    },
+    {
+      "id": "L057",
+      "category": "AGENTS_AND_ORCHESTRATION",
+      "type": "STANDARD",
+      "title": "MQTT Version 5.0",
+      "relevance": "lightweight publish/subscribe messaging",
+      "source_score": 10
+    },
+    {
+      "id": "L058",
+      "category": "AGENTS_AND_ORCHESTRATION",
+      "type": "SPECIFICATION",
+      "title": "AsyncAPI",
+      "relevance": "message-driven API contracts",
+      "source_score": 10
+    },
+    {
+      "id": "L059",
+      "category": "AGENTS_AND_ORCHESTRATION",
+      "type": "SPECIFICATION",
+      "title": "CloudEvents",
+      "relevance": "event interoperability",
+      "source_score": 10
+    },
+    {
+      "id": "L060",
+      "category": "AGENTS_AND_ORCHESTRATION",
+      "type": "SPECIFICATION",
+      "title": "OpenAPI",
+      "relevance": "HTTP API contracts",
+      "source_score": 10
+    },
+
+    {
+      "id": "L061",
+      "category": "OBSERVABILITY_AND_RELIABILITY",
+      "type": "OFFICIAL_DOCS",
+      "title": "OpenTelemetry Documentation",
+      "relevance": "traces, metrics, logs",
+      "source_score": 5
+    },
+    {
+      "id": "L062",
+      "category": "OBSERVABILITY_AND_RELIABILITY",
+      "type": "OFFICIAL_DOCS",
+      "title": "Prometheus Documentation",
+      "relevance": "metrics and monitoring",
+      "source_score": 5
+    },
+    {
+      "id": "L063",
+      "category": "OBSERVABILITY_AND_RELIABILITY",
+      "type": "OFFICIAL_DOCS",
+      "title": "Grafana Documentation",
+      "relevance": "visualization and observability",
+      "source_score": 5
+    },
+    {
+      "id": "L064",
+      "category": "OBSERVABILITY_AND_RELIABILITY",
+      "type": "OFFICIAL_DOCS",
+      "title": "Grafana Loki Documentation",
+      "relevance": "log aggregation",
+      "source_score": 5
+    },
+    {
+      "id": "L065",
+      "category": "OBSERVABILITY_AND_RELIABILITY",
+      "type": "BOOK",
+      "title": "Site Reliability Engineering",
+      "author": "Google",
+      "relevance": "reliability engineering",
+      "source_score": 3
+    },
+    {
+      "id": "L066",
+      "category": "OBSERVABILITY_AND_RELIABILITY",
+      "type": "BOOK",
+      "title": "The Site Reliability Workbook",
+      "author": "Google",
+      "relevance": "practical SRE implementation",
+      "source_score": 3
+    },
+    {
+      "id": "L067",
+      "category": "OBSERVABILITY_AND_RELIABILITY",
+      "type": "BOOK",
+      "title": "Accelerate",
+      "author": "Nicole Forsgren, Jez Humble, Gene Kim",
+      "relevance": "software delivery performance",
+      "source_score": 3
+    },
+    {
+      "id": "L068",
+      "category": "OBSERVABILITY_AND_RELIABILITY",
+      "type": "RESEARCH_PROGRAM",
+      "title": "DORA Research",
+      "relevance": "engineering performance metrics",
+      "source_score": 5
+    },
+    {
+      "id": "L069",
+      "category": "OBSERVABILITY_AND_RELIABILITY",
+      "type": "BOOK",
+      "title": "Observability Engineering",
+      "author": "Charity Majors, Liz Fong-Jones, George Miranda",
+      "relevance": "debugging and system visibility",
+      "source_score": 3
+    },
+    {
+      "id": "L070",
+      "category": "OBSERVABILITY_AND_RELIABILITY",
+      "type": "BOOK",
+      "title": "Chaos Engineering",
+      "author": "Casey Rosenthal and Nora Jones",
+      "relevance": "failure experimentation",
+      "source_score": 3
+    },
+
+    {
+      "id": "L071",
+      "category": "WINDOWS_NETWORK_STORAGE",
+      "type": "OFFICIAL_DOCS",
+      "title": "Microsoft BCDEdit Documentation",
+      "relevance": "boot configuration diagnostics",
+      "source_score": 5
+    },
+    {
+      "id": "L072",
+      "category": "WINDOWS_NETWORK_STORAGE",
+      "type": "OFFICIAL_DOCS",
+      "title": "Windows Recovery Environment Documentation",
+      "relevance": "Windows recovery architecture",
+      "source_score": 5
+    },
+    {
+      "id": "L073",
+      "category": "WINDOWS_NETWORK_STORAGE",
+      "type": "OFFICIAL_TOOLS",
+      "title": "Microsoft Sysinternals",
+      "relevance": "Windows diagnostic tooling",
+      "source_score": 5
+    },
+    {
+      "id": "L074",
+      "category": "WINDOWS_NETWORK_STORAGE",
+      "type": "OFFICIAL_DOCS",
+      "title": "Tailscale Documentation",
+      "relevance": "private networking and remote access",
+      "source_score": 5
+    },
+    {
+      "id": "L075",
+      "category": "WINDOWS_NETWORK_STORAGE",
+      "type": "STANDARD_PROJECT",
+      "title": "WireGuard",
+      "relevance": "secure network tunneling",
+      "source_score": 5
+    },
+    {
+      "id": "L076",
+      "category": "WINDOWS_NETWORK_STORAGE",
+      "type": "OFFICIAL_DOCS",
+      "title": "rclone Documentation",
+      "relevance": "storage transfer and cloud mounts",
+      "source_score": 5
+    },
+    {
+      "id": "L077",
+      "category": "WINDOWS_NETWORK_STORAGE",
+      "type": "OFFICIAL_MANUAL",
+      "title": "VirtualBox User Manual",
+      "relevance": "virtualization and device passthrough",
+      "source_score": 5
+    },
+    {
+      "id": "L078",
+      "category": "WINDOWS_NETWORK_STORAGE",
+      "type": "OFFICIAL_DOCS",
+      "title": "Windows Performance Analyzer Documentation",
+      "relevance": "runtime performance diagnosis",
+      "source_score": 5
+    },
+    {
+      "id": "L079",
+      "category": "WINDOWS_NETWORK_STORAGE",
+      "type": "OFFICIAL_DOCS",
+      "title": "Windows Event Log Documentation",
+      "relevance": "system events and diagnostics",
+      "source_score": 5
+    },
+    {
+      "id": "L080",
+      "category": "WINDOWS_NETWORK_STORAGE",
+      "type": "OFFICIAL_DOCS",
+      "title": "Windows Storage Management Documentation",
+      "relevance": "disk, partition, volume management",
+      "source_score": 5
+    },
+
+    {
+      "id": "L081",
+      "category": "AI_COMPUTE",
+      "type": "OFFICIAL_DOCS",
+      "title": "vLLM Documentation",
+      "relevance": "LLM inference serving",
+      "source_score": 5
+    },
+    {
+      "id": "L082",
+      "category": "AI_COMPUTE",
+      "type": "OPEN_SOURCE_PROJECT",
+      "title": "llama.cpp",
+      "relevance": "local CPU-oriented LLM inference",
+      "source_score": 5
+    },
+    {
+      "id": "L083",
+      "category": "AI_COMPUTE",
+      "type": "OFFICIAL_DOCS",
+      "title": "Ollama Documentation",
+      "relevance": "local model lifecycle and inference",
+      "source_score": 5
+    },
+    {
+      "id": "L084",
+      "category": "AI_COMPUTE",
+      "type": "OFFICIAL_DOCS",
+      "title": "PyTorch Documentation",
+      "relevance": "deep learning framework",
+      "source_score": 5
+    },
+    {
+      "id": "L085",
+      "category": "AI_COMPUTE",
+      "type": "OFFICIAL_DOCS",
+      "title": "TensorFlow Documentation",
+      "relevance": "ML framework",
+      "source_score": 5
+    },
+    {
+      "id": "L086",
+      "category": "AI_COMPUTE",
+      "type": "OFFICIAL_DOCS",
+      "title": "NumPy Documentation",
+      "relevance": "numerical computing",
+      "source_score": 5
+    },
+    {
+      "id": "L087",
+      "category": "AI_COMPUTE",
+      "type": "OFFICIAL_DOCS",
+      "title": "pandas Documentation",
+      "relevance": "data analysis",
+      "source_score": 5
+    },
+    {
+      "id": "L088",
+      "category": "AI_COMPUTE",
+      "type": "OFFICIAL_DOCS",
+      "title": "Pillow Documentation",
+      "relevance": "image processing",
+      "source_score": 5
+    },
+    {
+      "id": "L089",
+      "category": "AI_COMPUTE",
+      "type": "OFFICIAL_DOCS",
+      "title": "OpenCV Documentation",
+      "relevance": "computer vision",
+      "source_score": 5
+    },
+    {
+      "id": "L090",
+      "category": "AI_COMPUTE",
+      "type": "OFFICIAL_DOCS",
+      "title": "ONNX Runtime Documentation",
+      "relevance": "portable inference runtime",
+      "source_score": 5
+    },
+
+    {
+      "id": "L091",
+      "category": "COMMUNITY_CLOUD_ENGINEERING",
+      "type": "COMMUNITY",
+      "title": "Stack Overflow",
+      "relevance": "practical implementation problems",
+      "source_score": 1
+    },
+    {
+      "id": "L092",
+      "category": "COMMUNITY_CLOUD_ENGINEERING",
+      "type": "COMMUNITY",
+      "title": "GitHub Discussions",
+      "relevance": "maintainer and practitioner discussion",
+      "source_score": 1
+    },
+    {
+      "id": "L093",
+      "category": "COMMUNITY_CLOUD_ENGINEERING",
+      "type": "COMMUNITY",
+      "title": "Hacker News",
+      "relevance": "engineering and infrastructure discussion",
+      "source_score": 1
+    },
+    {
+      "id": "L094",
+      "category": "COMMUNITY_CLOUD_ENGINEERING",
+      "type": "COMMUNITY",
+      "title": "Reddit r/sysadmin",
+      "relevance": "operations and troubleshooting experience",
+      "source_score": 1
+    },
+    {
+      "id": "L095",
+      "category": "COMMUNITY_CLOUD_ENGINEERING",
+      "type": "COMMUNITY",
+      "title": "Reddit r/devops",
+      "relevance": "DevOps practices and operations",
+      "source_score": 1
+    },
+    {
+      "id": "L096",
+      "category": "COMMUNITY_CLOUD_ENGINEERING",
+      "type": "COMMUNITY",
+      "title": "Reddit r/selfhosted",
+      "relevance": "local infrastructure and self-hosting experience",
+      "source_score": 1
+    },
+    {
+      "id": "L097",
+      "category": "COMMUNITY_CLOUD_ENGINEERING",
+      "type": "COMMUNITY",
+      "title": "DEV Community",
+      "relevance": "engineering tutorials and practitioner experience",
+      "source_score": 1
+    },
+    {
+      "id": "L098",
+      "category": "COMMUNITY_CLOUD_ENGINEERING",
+      "type": "ENGINEERING_MEDIA",
+      "title": "InfoQ",
+      "relevance": "architecture and engineering practice",
+      "source_score": 1
+    },
+    {
+      "id": "L099",
+      "category": "COMMUNITY_CLOUD_ENGINEERING",
+      "type": "CLOUD_GUIDANCE",
+      "title": "AWS Well-Architected Framework",
+      "relevance": "cloud architecture trade-offs",
+      "source_score": 10
+    },
+    {
+      "id": "L100",
+      "category": "COMMUNITY_CLOUD_ENGINEERING",
+      "type": "CLOUD_GUIDANCE",
+      "title": "Google Cloud Architecture Framework",
+      "relevance": "cloud architecture design and operations",
+      "source_score": 10
+    }
+  ],
+
+  "community_discovery_channels": {
+    "purpose": "DISCOVERY_ONLY_NOT_PRIMARY_TRUTH",
+    "hashtags": [
+      "#softwarearchitecture",
+      "#systemdesign",
+      "#devops",
+      "#sre",
+      "#observability",
+      "#aiagents",
+      "#llmops",
+      "#rag",
+      "#edgecomputing",
+      "#selfhosting",
+      "#cybersecurity",
+      "#zerotrust",
+      "#eventdriven",
+      "#gitops",
+      "#docker",
+      "#python",
+      "#windowsserver",
+      "#networkengineering"
+    ],
+    "rule": "Hashtag and community material may generate candidates but high-risk claims require primary or independent verification."
+  },
+
+  "knowledge_extraction_pipeline": {
+    "phase_0": "REGISTER_SOURCE",
+    "phase_1": "VERIFY_SOURCE_IDENTITY",
+    "phase_2": "EXTRACT_RELEVANT_CONTENT",
+    "phase_3": "APPLY_10_5_3_1_PLUS_5_FILTER",
+    "phase_4": "CLASSIFY_FACT_INFERENCE_ASSUMPTION_UNKNOWN",
+    "phase_5": "CROSS_VALIDATE",
+    "phase_6": "MAP_TO_TREE_L",
+    "phase_7": "MAP_TO_PC5_CAPABILITY",
+    "phase_8": "GENERATE_TIP_EDUCATION_MANUAL_TUTORIAL",
+    "phase_9": "GENERATE_TROUBLESHOOTING",
+    "phase_10": "GENERATE_ADR_CANDIDATE",
+    "phase_11": "GENERATE_TASK_CARD_CANDIDATE",
+    "phase_12": "AUDIT",
+    "phase_13": "ARCHIVE_RESEARCH_RECORD"
+  },
+
+  "tree_l_mapping": {
+    "01_FISIK": {
+      "purpose": "hardware, OS, device, network, resource baseline"
+    },
+    "02_DATA": {
+      "purpose": "raw, staging, curated, knowledge, schema, manifest"
+    },
+    "03_LOGIKA": {
+      "purpose": "rules, state machines, validation, routing, decision logic, guardrails"
+    },
+    "04_APLIKASI": {
+      "purpose": "CLI, API, worker, agent runtime, OCR, RAG applications"
+    },
+    "05_PIPELINE": {
+      "purpose": "input, transform, ETL, routing, messaging, API contracts"
+    },
+    "06_RUNTIME": {
+      "purpose": "process, service, port, CPU, RAM, logs, latency, health"
+    },
+    "07_INDEX": {
+      "purpose": "artifact metadata, search index, knowledge index, task index"
+    },
+    "08_EVIDENCE": {
+      "purpose": "discovery, test, runtime, audit, change, incident, backup, restore"
+    },
+    "09_GOVERNANCE": {
+      "purpose": "policy, ADR, approval, task contracts"
+    },
+    "10_SECURITY": {
+      "purpose": "identity, ACL, secret boundary, network policy"
+    },
+    "11_OBSERVABILITY": {
+      "purpose": "telemetry, metrics, alerting, dashboards"
+    },
+    "12_BACKUP": {
+      "purpose": "local backup, off-site backup, restore plan"
+    },
+    "13_TEST": {
+      "purpose": "unit, integration, benchmark, recovery testing"
+    },
+    "99_ARCHIVE": {
+      "purpose": "superseded research, deprecated decisions, historical artifacts"
+    }
+  },
+
+  "capability_gate": {
+    "rule": "CAPABILITY != INSTALLATION",
+    "decision_sequence": [
+      "IDENTIFY_NEED",
+      "VERIFY_EXISTING_CAPABILITY",
+      "MEASURE_RESOURCE",
+      "ASSESS_SECURITY",
+      "ASSESS_OPERATIONAL_BENEFIT",
+      "CHECK_DEPENDENCIES",
+      "COMPARE_ALTERNATIVES",
+      "DECIDE_ACCEPT_REVISE_DEFER_REJECT",
+      "CREATE_TASK_CARD_IF_IMPLEMENTATION_IS_NEEDED",
+      "REQUEST_APPROVAL"
+    ],
+    "automatic_installation_for_research_result": false
+  },
+
+  "pc5_resource_policy": {
+    "cpu": {
+      "default_concurrency": "LOW",
+      "benchmark_before_high_parallelism": true
+    },
+    "ram": {
+      "baseline_gb": 16,
+      "protect_host_memory": true,
+      "no_fixed_ramdisk_requirement": true
+    },
+    "storage": {
+      "C": "protect_OS",
+      "D": "preferred_working_data_area",
+      "E": "requires_health_aware_policy",
+      "large_data_in_git": false,
+      "unbounded_logs": false
+    },
+    "container_policy": {
+      "resource_limits_required_for_heavy_services": true
+    }
+  },
+
+  "adr_policy": {
+    "principle": "APPEND_ONLY_DECISION_HISTORY",
+    "existing_adr": "MUST_NOT_BE_SILENTLY_REWRITTEN",
+    "changed_decision": "CREATE_NEW_ADR_AND_MARK_PREVIOUS_AS_SUPERSEDED",
+    "versioning": true,
+    "hash": true,
+    "hash_is_not_immutability": true,
+    "independent_manifest_protection_required": true
+  },
+
+  "log_policy": {
+    "active_log": "ROTATABLE",
+    "rotation": [
+      "SIZE",
+      "TIME"
+    ],
+    "archive": true,
+    "retention_policy_required": true,
+    "evidence_snapshot": true,
+    "no_unbounded_growth": true,
+    "no_silent_overwrite": true,
+    "retention_expiry": "DELETE_ONLY_IF_POLICY_AUTHORIZES_AND_DELETION_EVENT_IS_RECORDED"
+  },
+
+  "evidence_policy": {
+    "minimum_fields": [
+      "evidence_id",
+      "source",
+      "task_id",
+      "node_id",
+      "timestamp",
+      "classification",
+      "provenance",
+      "status",
+      "review_status"
+    ],
+    "hash_when_required": true,
+    "secret_redaction": true,
+    "claim_without_evidence": "BELUM_TERBUKTI"
+  },
+
+  "research_output_schema": {
+    "literature_id": "",
+    "source_type": "",
+    "source_title": "",
+    "source_author": "",
+    "source_version": "",
+    "publication_or_update_date": "",
+    "source_score": 0,
+    "verified_source": false,
+    "relevance_to_pc5": "",
+    "facts": [],
+    "inferences": [],
+    "assumptions": [],
+    "unknowns": [],
+    "answers_10": [],
+    "answers_5": [],
+    "answers_3": [],
+    "answer_1": "",
+    "answers_plus_5": [],
+    "tip": "",
+    "education": "",
+    "manual": "",
+    "tutorial": "",
+    "troubleshooting": [],
+    "resource_impact": {},
+    "security_impact": {},
+    "tree_l_mapping": [],
+    "capability_decision": "UNVERIFIED",
+    "adr_candidate": "",
+    "task_card_candidate": "",
+    "evidence_refs": []
+  },
+
+  "decision_states": [
+    "ACCEPT",
+    "REVISE",
+    "DEFER",
+    "REJECT",
+    "BLOCK"
+  ],
+
+  "task_card_generation_rules": {
+    "only_if": [
+      "implementation_need_is_demonstrated",
+      "resource_impact_is_known",
+      "security_impact_is_assessed",
+      "dependencies_are_known",
+      "acceptance_criteria_are_defined",
+      "rollback_or_recovery_is_defined"
+    ],
+    "task_classification": {
+      "A": "discussion_or_education",
+      "B": "read_only_audit_or_research",
+      "C": "isolated_low_risk_pilot",
+      "D": "configuration_or_integration",
+      "E": "high_risk_or_destructive"
+    }
+  },
+
+  "deepseek_execution_contract": {
+    "agent_id": "AG-003_DEEPSEEK",
+    "role": "BOUNDED_TECHNICAL_EXECUTOR",
+    "objective": "Convert approved research and architecture decisions into evidence-backed implementation candidates and, only when separately authorized, execute task cards.",
+    "must": [
+      "follow_current_task_card",
+      "respect_scope",
+      "respect_data_classification",
+      "report_unknowns",
+      "capture_evidence",
+      "report_deviation",
+      "stop_on_blocker",
+      "separate_observed_from_inferred",
+      "separate_research_from_runtime"
+    ],
+    "must_not": [
+      "treat_literature_as_runtime_evidence",
+      "install_every_technology_in_registry",
+      "invent_hardware_capability",
+      "invent_service_status",
+      "invent_network_state",
+      "promote_candidate_to_verified_without_evidence",
+      "overwrite_ADR",
+      "overwrite_evidence",
+      "delete_history_silently",
+      "collect_or_expose_secrets"
+    ]
+  },
+
+  "research_work_packages": {
+    "WP-R01": "Source Registry and Identity Verification",
+    "WP-R02": "100 Literature Evidence Extraction",
+    "WP-R03": "24-Question Filter Execution",
+    "WP-R04": "Cross-Source Conflict Detection",
+    "WP-R05": "PC-i5 Resource Mapping",
+    "WP-R06": "TREE-L Knowledge Mapping",
+    "WP-R07": "Capability vs Installation Decision Matrix",
+    "WP-R08": "Security and Governance Mapping",
+    "WP-R09": "ADR Candidate Generation",
+    "WP-R10": "Task Card Candidate Generation",
+    "WP-R11": "Troubleshooting Knowledge Base",
+    "WP-R12": "Final Independent Audit"
+  },
+
+  "acceptance_criteria": {
+    "source_registry": "100 literature records registered",
+    "filter_coverage": "24 analysis questions available for every literature item",
+    "evidence_quality": "Primary sources prioritized and high-risk claims cross-checked",
+    "epistemic_integrity": "Fact, inference, assumption, and unknown are explicitly separated",
+    "architecture_integrity": "No literature item automatically becomes installation requirement",
+    "tree_l_integrity": "Every accepted knowledge item is mapped to one or more TREE-L domains",
+    "adr_integrity": "Existing ADR history remains traceable",
+    "log_integrity": "No silent overwrite and no unbounded log growth",
+    "security_integrity": "No secrets requested, exposed, or embedded",
+    "implementation_gate": "Implementation requires separate Task Card and approval"
+  },
+
+  "final_outputs": [
+    "MICO_100_LITERATURE_REGISTER",
+    "MICO_100_SOURCE_MATRIX",
+    "MICO_2400_QUESTION_MATRIX",
+    "MICO_TREE_L_KNOWLEDGE_MAP",
+    "MICO_PC5_CAPABILITY_MATRIX",
+    "MICO_ARCHITECTURE_DECISION_CANDIDATES",
+    "MICO_TROUBLESHOOTING_KNOWLEDGE_BASE",
+    "MICO_TIPS_LIBRARY",
+    "MICO_EDUCATION_LIBRARY",
+    "MICO_MANUAL_LIBRARY",
+    "MICO_TUTORIAL_LIBRARY",
+    "MICO_RESEARCH_EVIDENCE_REGISTER",
+    "MICO_ADR_CANDIDATES",
+    "MICO_TASK_CARD_CANDIDATES",
+    "MICO_RESEARCH_AUDIT_REPORT"
+  ],
+
+  "promotion_rule": {
+    "research_complete": "DOES_NOT_EQUAL_IMPLEMENTATION_APPROVED",
+    "candidate_to_verified": "REQUIRES_RUNTIME_EVIDENCE",
+    "architecture_to_baseline": "REQUIRES_AG001_REVIEW",
+    "baseline_to_execution": "REQUIRES_TASK_CARD_AND_L0_APPROVAL",
+    "execution_to_production": "REQUIRES_VALIDATION_AND_AUDIT"
+  },
+
+  "research_efficiency": {
+    "do_not_dump_all_source_text": true,
+    "do_not_duplicate_same_fact": true,
+    "prefer_structured_extraction": true,
+    "prefer_primary_source": true,
+    "retain_source_reference": true,
+    "generate_summary_after_extraction": true,
+    "generate_manual_after_validation": true
+  },
+
+  "final_formula": {
+    "human_language": "Mas Iwan memberi arah",
+    "research": "AG-002 mencari dan memverifikasi",
+    "planning": "AG-001 menyusun keputusan arsitektur",
+    "execution": "AG-003 menjalankan Task Card yang sah",
+    "audit": "independent_agent_reviews",
+    "evidence": "runtime_proof",
+    "learning": "research_and_incident_history",
+    "next_cycle": "feedback_into_new_version"
+  },
+
+  "final_status": "READY_FOR_RESEARCH_BATCH_EXECUTION",
+  "implementation_status": "NOT_AUTOMATICALLY_AUTHORIZED"
+}
+
+
+---
+
+RISK REGISTER
+
+Risiko	Level	Pengendalian
+
+100 literatur menjadi 100 instalasi	CRITICAL	CAPABILITY != INSTALLATION
+Sumber komunitas dianggap fakta	HIGH	community = discovery; cross-check primary
+ADR “overwrite”	HIGH	append-only + superseded ADR
+Log menjadi phantom/unbounded	HIGH	rotation + retention + archive
+Hash dianggap immutable	HIGH	hash hanya integrity signal; manifest juga dilindungi
+RAG dianggap truth	CRITICAL	provenance + citation + validation
+Framework terlalu banyak	HIGH	capability gate
+PC-i5 overload	HIGH	resource budget + benchmark
+Drive E degraded	HIGH	health-aware gate
+Agent mengarang runtime state	CRITICAL	current-evidence rule
+Secret masuk knowledge base	CRITICAL	secret exclusion
+Copyright/access-control bypass	HIGH	public/licensed source only
+
+
+
+---
+
+TASK CARD UNTUK DEEPSEEK (L3)
+
+Task Card induk yang saya rekomendasikan sekarang:
+
+TASK_ID:
+MICO-RESEARCH-PC5-100LIT-PRO-001
+
+CLASS:
+B — READ-ONLY RESEARCH / KNOWLEDGE ENGINEERING
+
+TARGET:
+PC-i5 / KAPAL-INDUK
+
+OBJECTIVE:
+Build a 100-literature evidence-grounded knowledge base for
+MICO-JDEQ PC-i5 using the 10-5-3-1+5 filter.
+
+SCOPE:
+Research
+Source verification
+Knowledge extraction
+Cross-reference
+TREE-L mapping
+Capability assessment
+ADR candidates
+Task Card candidates
+Troubleshooting knowledge
+
+FORBIDDEN:
+Installation
+Mutation
+Deletion
+Format
+Firewall change
+Network change
+Credential collection
+Secret collection
+Cloud deployment
+
+PRIMARY_OUTPUT:
+One structured research bundle following the JSON schema.
+
+SUCCESS:
+100 sources registered
++
+24-question analytical framework applied to every source
++
+facts separated from inference
++
+MICO relevance mapped
++
+implementation candidates separated from implementation approval
++
+evidence references retained
+
+Urutan kerja DeepSeek
+
+R01 — REGISTER
+   ↓
+R02 — VERIFY SOURCE
+   ↓
+R03 — EXTRACT
+   ↓
+R04 — 10-5-3-1+5
+   ↓
+R05 — CROSS-CHECK
+   ↓
+R06 — CLASSIFY
+   ↓
+R07 — MAP TREE-L
+   ↓
+R08 — CAPABILITY ANALYSIS
+   ↓
+R09 — GENERATE TIP/EDUCATION/MANUAL/TUTORIAL
+   ↓
+R10 — ADR/TASK CARD CANDIDATE
+   ↓
+R11 — AUDIT
+   ↓
+R12 — EVIDENCE PACKAGE
+
+
+---
+
+AETERNA SELF-AUDIT
+
+Yang saya koreksi dari rancangan DOLA/Jarvis sebelumnya:
+
+❌ ISO = bukti otomatis compliant
+✅ ISO = reference framework / management-system standard
+
+❌ HASH = immutable
+✅ HASH = integrity evidence; immutability membutuhkan control tambahan
+
+❌ ADR tidak boleh pernah berubah secara teknis
+✅ ADR lama tidak di-rewrite secara diam-diam; perubahan menjadi new ADR
+
+❌ Log tidak boleh dihapus sama sekali
+✅ Log memiliki retention policy; removal harus traceable
+
+❌ RAM-Disk otomatis solusi SSD
+✅ RAM scratch = candidate; benchmark dahulu
+
+❌ Vector DB/RAG harus dipasang
+✅ Vector capability hanya diterapkan jika kebutuhan terbukti
+
+❌ 100 literatur = 100 software
+✅ 100 literatur = 100 sumber pengetahuan
+
+❌ Community = truth
+✅ Community = experience/discovery → cross-check
+
+❌ Research complete = implementation authorized
+✅ Research → architecture decision → task card → approval → implementation
+
+Kondisi akhir:
+
+MICO-JDEQ
+    │
+    ├── 100 LITERATURE
+    │      ↓
+    │   2.400 ANALYTICAL QUESTIONS
+    │      ↓
+    ├── KNOWLEDGE EXTRACTION
+    │      ↓
+    ├── TREE-L
+    │      ↓
+    ├── CAPABILITY MAP
+    │      ↓
+    ├── ADR / DECISION CANDIDATES
+    │      ↓
+    ├── TASK CARD CANDIDATES
+    │      ↓
+    └── L0 DECISION
+
+Jadi 100 literasi × 24 pertanyaan = 2.400 titik analisis, tetapi hasil akhirnya tidak perlu menjadi 2.400 halaman. Engine harus melakukan distilasi menjadi pengetahuan yang dapat dipakai: tip → education → manual → tutorial → troubleshooting → decision → Task Card.
+
+Dan satu hal penting untuk DeepSeek:
+
+> Tugasnya bukan menjadi “kuli yang banyak bekerja”, tetapi menjadi engineer yang tahu apa yang sedang diperiksa, mengapa diperiksa, batas pekerjaannya, bukti yang harus ditinggalkan, dan kapan harus berhenti.
+
+
+
+Saya sengaja menjadikan 100 item tersebut sebagai registry penelitian, bukan klaim bahwa semua 100 sumber sudah dibaca penuh dalam respons ini. Sumber primer yang menjadi jangkar utama sudah saya verifikasi pada standar dan dokumentasi kunci di atas. 

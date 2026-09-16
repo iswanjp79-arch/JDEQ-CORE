@@ -1,0 +1,71 @@
+07.04 15.10
+Berikut format yang saya rekomendasikan untuk komunikasi Machine-to-Machine (M2M) antar Dewan Agen MICO–JDEQ. Format ini dibuat agar seragam, mudah diparse oleh AI maupun script, serta mendukung audit, governance, dan pelacakan.
+MICO–JDEQ OFFICIAL MACHINE REPORT (MJMR)
+Versi: 1.0 (LOCK)
+Format: Wajib (Machine-to-Machine)
+Output: Markdown / JSON (sesuai kebutuhan)
+HEADER
+=========================================================== MICO–JDEQ OFFICIAL MACHINE REPORT (MJMR) =========================================================== REPORT_ID : TASK_ID : SESSION_ID : TIMESTAMP : AGENT_ID : AGENT_ROLE : REPORT_TYPE : VERSION : OWNER : MAS IWAN PRIORITY : STATUS : 
+1. REFERENCE
+BLUEPRINT_REF : SSOT_REF : ADR_REF : CONSTITUTION_REF : REGISTRY_REF : WORKFLOW_REF : RUNTIME_REF : 
+2. OBJECTIVE
+OBJECTIVE : EXPECTED_OUTPUT : SUCCESS_CRITERIA : 
+3. CURRENT STATE
+CURRENT_CONDITION : SYSTEM_HEALTH : DEPENDENCY : RISK_LEVEL : 
+4. GAP ANALYSIS
+BLUEPRINT ↓ EXPECTED ↓ ACTUAL ↓ DEVIATION 
+Format
+DEV_ID : DESCRIPTION : BLUEPRINT_REFERENCE : ACTUAL_STATE : SEVERITY : IMPACT : ROOT_CAUSE : 
+5. ENGINEERING PLAN
+STEP 01 : STEP 02 : STEP 03 : STEP 04 : ROLLBACK_PLAN : RECOVERY_PLAN : 
+6. EXECUTION
+EXECUTION_MODE : DRY_RUN : REAL_EXECUTION : COMMAND : SCRIPT : WORKFLOW : NODE : OUTPUT : 
+7. VERIFICATION
+FUNCTIONAL_TEST : INTEGRATION_TEST : SECURITY_TEST : PERFORMANCE_TEST : RECOVERY_TEST : CHAOS_TEST : ACCEPTANCE_TEST : 
+8. EVIDENCE
+EXIT_CODE : SHA256 : LOG : TIMESTAMP : MANIFEST : SCREENSHOT : OUTPUT_FILE : 
+9. AUDIT
+AUDIT_RESULT : COVERAGE : SEVERITY : NON_CONFORMITY : CORRECTIVE_ACTION : PREVENTIVE_ACTION : OWNER_ACTION : 
+10. FINAL STATUS
+STATUS : NOT_VERIFIED PLANNED IMPLEMENTED VERIFIED HEALTHY PRODUCTION_READY REJECTED 
+11. NEXT ACTION
+NEXT_STEP : BLOCKER : OWNER_DECISION_REQUIRED : APPROVAL : 
+12. MACHINE SIGNATURE
+AGENT : ROLE : SIGNATURE : HASH : END_OF_REPORT 
+STANDAR STATUS (WAJIB)
+PLANNED ↓ ANALYZED ↓ READY_FOR_APPROVAL ↓ APPROVED ↓ IMPLEMENTED ↓ VERIFIED ↓ TESTED ↓ PRODUCTION_READY 
+Jika gagal:
+FAILED ↓ ROLLBACK ↓ RECOVERY ↓ RETEST 
+STANDAR DEWAN AGEN
+Gateway (Gemini)
+Validasi Input + Routing
+DeepSeek
+Engineering Plan + Implementation
+ChatGPT
+Architecture Review + Audit
+DOLA
+Governance + Compliance
+Claude
+Documentation + Knowledge
+Copilot
+Source Code Review
+Perplexity
+External Evidence
+Emergent
+Experimental Report
+RULE M2M (LOCK)
+Setiap laporan wajib memuat:
+Blueprint Reference
+SSOT Reference
+ADR Reference
+Task ID
+Report ID
+Exit Code
+SHA256
+Timestamp
+Evidence
+Final Status
+Next Action
+Machine Signature
+Laporan yang tidak memenuhi 12 elemen tersebut otomatis berstatus UNVERIFIED dan tidak boleh digunakan sebagai dasar pengambilan keputusan maupun eksekusi. Format ini memberikan struktur yang konsisten sehingga seluruh Dewan Agen dapat saling bertukar informasi secara deterministik, mudah diaudit, dan dapat diproses otomatis oleh workflow seperti n8n maupun skrip Python/Shell.
+

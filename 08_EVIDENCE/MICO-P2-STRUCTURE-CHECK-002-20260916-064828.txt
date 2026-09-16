@@ -1,0 +1,1085 @@
+=== MICO-P2-STRUCTURE-CHECK-002 · 20260916-064828 ===
+Mode: READ-ONLY · Reconcile existing locations
+
+============================================================
+A. NAME SEARCH — File dengan nama terkait DeepSeek/Behavior Contract
+============================================================
+
+--- Scan nama di: D:\MICO_SSOT ---
+  [FILE] D:\MICO_SSOT\08_EVIDENCE\IMPORT-VIVO-Y28\20260916-0545\Documents\Documents\MICO_Vault\MICO_Arsip_Umum\📡 PESAN MESIN-KE-MESIN DEEPSEEK → JARVIS GEMINI GATEWAY.txt
+         Size: 1520 bytes · Modified: 16/09/2026 5:45:07
+  [FILE] D:\MICO_SSOT\08_EVIDENCE\IMPORT-VIVO-Y28\20260916-0545\Documents\Documents\MICO_Vault\MICO_Arsip_Umum\BLUEPRINT EKSEKUSI RESMI — DEEPSEEK EXECUTOR.txt
+         Size: 18391 bytes · Modified: 16/09/2026 5:45:06
+  [FILE] D:\MICO_SSOT\08_EVIDENCE\IMPORT-VIVO-Y28\20260916-0545\Documents\Documents\MICO_Vault\MICO_Arsip_Umum\Saya baca tuntas semua output ChatGPT + DeepSeek. Sekarang saya ....txt
+         Size: 1493 bytes · Modified: 16/09/2026 5:45:07
+  [FILE] D:\MICO_SSOT\08_EVIDENCE\IMPORT-VIVO-Y28\20260916-0547-FULL\Documents\Documents\MICO_Vault\MICO_Arsip_Umum\📡 PESAN MESIN-KE-MESIN DEEPSEEK → JARVIS GEMINI GATEWAY.txt
+         Size: 1520 bytes · Modified: 16/09/2026 5:48:49
+  [FILE] D:\MICO_SSOT\08_EVIDENCE\IMPORT-VIVO-Y28\20260916-0547-FULL\Documents\Documents\MICO_Vault\MICO_Arsip_Umum\BLUEPRINT EKSEKUSI RESMI — DEEPSEEK EXECUTOR.txt
+         Size: 18391 bytes · Modified: 16/09/2026 5:48:48
+  [FILE] D:\MICO_SSOT\08_EVIDENCE\IMPORT-VIVO-Y28\20260916-0547-FULL\Documents\Documents\MICO_Vault\MICO_Arsip_Umum\Saya baca tuntas semua output ChatGPT + DeepSeek. Sekarang saya ....txt
+         Size: 1493 bytes · Modified: 16/09/2026 5:48:49
+  [FILE] D:\MICO_SSOT\09_GOVERNANCE\AGENT_ERRORS\AG-003_ERRORS.md
+         Size: 3127 bytes · Modified: 12/09/2026 17:08:01
+  [FILE] D:\MICO_SSOT\09_GOVERNANCE\P1-PLANNING\MICO-P1-BEHAVIOR-CONTRACT.md
+         Size: 6364 bytes · Modified: 16/09/2026 1:16:10
+  [FILE] D:\MICO_SSOT\09_GOVERNANCE\P1-PLANNING\MICO-P1-BEHAVIOR-CONTRACT.md.sha256
+         Size: 135 bytes · Modified: 16/09/2026 1:16:10
+
+--- Scan nama di: D:\MICO ---
+  (tidak ada file cocok di lokasi ini)
+
+--- Scan nama di: D:\MICO-CORE ---
+  [FILE] D:\MICO-CORE\C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\tests\agent\test_deepseek_anthropic_thinking.py
+         Size: 4316 bytes · Modified: 21/08/2026 2:58:56
+  [FILE] D:\MICO-CORE\C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\tests\plugins\model_providers\test_deepseek_profile.py
+         Size: 8173 bytes · Modified: 21/08/2026 2:58:57
+  [FILE] D:\MICO-CORE\C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\tests\run_agent\test_deepseek_reasoning_content_echo.py
+         Size: 16358 bytes · Modified: 21/08/2026 2:58:58
+  [FILE] D:\MICO-CORE\C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\tests\run_agent\test_deepseek_v4_thinking_live.py
+         Size: 8113 bytes · Modified: 21/08/2026 2:58:58
+  [FILE] D:\MICO-CORE\C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\tests\agent\test_deepseek_anthropic_thinking.py
+         Size: 4316 bytes · Modified: 21/08/2026 2:58:56
+  [FILE] D:\MICO-CORE\C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\tests\plugins\model_providers\test_deepseek_profile.py
+         Size: 8173 bytes · Modified: 21/08/2026 2:58:57
+  [FILE] D:\MICO-CORE\C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\tests\run_agent\test_deepseek_reasoning_content_echo.py
+         Size: 16358 bytes · Modified: 21/08/2026 2:58:58
+  [FILE] D:\MICO-CORE\C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\tests\run_agent\test_deepseek_v4_thinking_live.py
+         Size: 8113 bytes · Modified: 21/08/2026 2:58:58
+  [FILE] D:\MICO-CORE\C_DRIVE_MIGRATED\MICO\VIVO_VAULT_BACKUP\MICO_Vault\MICO_Arsip_Umum\📡 PESAN MESIN-KE-MESIN DEEPSEEK → JARVIS GEMINI GATEWAY.txt
+         Size: 1520 bytes · Modified: 15/08/2026 11:13:03
+  [FILE] D:\MICO-CORE\C_DRIVE_MIGRATED\MICO\VIVO_VAULT_BACKUP\MICO_Vault\MICO_Arsip_Umum\BLUEPRINT EKSEKUSI RESMI — DEEPSEEK EXECUTOR.txt
+         Size: 18391 bytes · Modified: 15/08/2026 11:13:02
+  [FILE] D:\MICO-CORE\C_DRIVE_MIGRATED\MICO\VIVO_VAULT_BACKUP\MICO_Vault\MICO_Arsip_Umum\Saya baca tuntas semua output ChatGPT + DeepSeek. Sekarang saya ....txt
+         Size: 1493 bytes · Modified: 15/08/2026 11:13:03
+
+--- Scan nama di: D:\MICO_PROJECTS ---
+  (tidak ada file cocok di lokasi ini)
+
+--- Scan nama di: D:\MICO_ARCHIVE ---
+  [FILE] D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20251119_RETRY\Internal_Storage\sdcard\AI_Models\llm\llama.cpp\llama.cpp\models\ggml-vocab-deepseek-coder.gguf
+         Size: 1156067 bytes · Modified: 19/11/2025 14:53:33
+  [FILE] D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20251119_RETRY\Internal_Storage\sdcard\AI_Models\llm\llama.cpp\llama.cpp\models\ggml-vocab-deepseek-coder.gguf.inp
+         Size: 1943 bytes · Modified: 19/11/2025 14:53:33
+  [FILE] D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20251119_RETRY\Internal_Storage\sdcard\AI_Models\llm\llama.cpp\llama.cpp\models\ggml-vocab-deepseek-coder.gguf.out
+         Size: 2096 bytes · Modified: 19/11/2025 14:53:33
+  [FILE] D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20251119_RETRY\Internal_Storage\sdcard\AI_Models\llm\llama.cpp\llama.cpp\models\ggml-vocab-deepseek-llm.gguf
+         Size: 3970167 bytes · Modified: 19/11/2025 14:53:33
+  [FILE] D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20251119_RETRY\Internal_Storage\sdcard\AI_Models\llm\llama.cpp\llama.cpp\models\ggml-vocab-deepseek-llm.gguf.inp
+         Size: 1943 bytes · Modified: 19/11/2025 14:53:33
+  [FILE] D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20251119_RETRY\Internal_Storage\sdcard\AI_Models\llm\llama.cpp\llama.cpp\models\ggml-vocab-deepseek-llm.gguf.out
+         Size: 1920 bytes · Modified: 19/11/2025 14:53:33
+  [FILE] D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20251119_RETRY\Internal_Storage\sdcard\AI_Models\llm\llama.cpp\llama.cpp\models\templates\deepseek-ai-DeepSeek-R1-Distill-Llama-8B.jinja
+         Size: 2246 bytes · Modified: 19/11/2025 14:53:36
+  [FILE] D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20251119_RETRY\Internal_Storage\sdcard\AI_Models\llm\llama.cpp\llama.cpp\models\templates\deepseek-ai-DeepSeek-R1-Distill-Qwen-32B.jinja
+         Size: 2246 bytes · Modified: 19/11/2025 14:53:36
+  [FILE] D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20251119_RETRY\Internal_Storage\sdcard\AI_Models\llm\llama.cpp\llama.cpp\models\templates\deepseek-ai-DeepSeek-V3.1.jinja
+         Size: 2925 bytes · Modified: 19/11/2025 14:53:36
+  [FILE] D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20251119_RETRY\Internal_Storage\sdcard\AI_Models\llm\llama.cpp\llama.cpp\models\templates\llama-cpp-deepseek-r1.jinja
+         Size: 3074 bytes · Modified: 19/11/2025 14:53:36
+  [FILE] D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20251119_RETRY\Internal_Storage\sdcard\AI_Models\llm\llama.cpp\llama.cpp\src\models\deepseek.cpp
+         Size: 5287 bytes · Modified: 19/11/2025 14:53:31
+  [FILE] D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20251119_RETRY\Internal_Storage\sdcard\AI_Models\llm\llama.cpp\llama.cpp\src\models\deepseek2.cpp
+         Size: 10554 bytes · Modified: 19/11/2025 14:53:31
+  [FILE] D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20251119_RETRY\Internal_Storage\sdcard\AI_Models\llm\llama.cpp\models\ggml-vocab-deepseek-coder.gguf
+         Size: 1156067 bytes · Modified: 19/11/2025 14:54:06
+  [FILE] D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20251119_RETRY\Internal_Storage\sdcard\AI_Models\llm\llama.cpp\models\ggml-vocab-deepseek-coder.gguf.inp
+         Size: 1943 bytes · Modified: 19/11/2025 14:54:06
+  [FILE] D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20251119_RETRY\Internal_Storage\sdcard\AI_Models\llm\llama.cpp\models\ggml-vocab-deepseek-coder.gguf.out
+         Size: 2096 bytes · Modified: 19/11/2025 14:54:06
+  [FILE] D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20251119_RETRY\Internal_Storage\sdcard\AI_Models\llm\llama.cpp\models\ggml-vocab-deepseek-llm.gguf
+         Size: 3970167 bytes · Modified: 19/11/2025 14:54:06
+  [FILE] D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20251119_RETRY\Internal_Storage\sdcard\AI_Models\llm\llama.cpp\models\ggml-vocab-deepseek-llm.gguf.inp
+         Size: 1943 bytes · Modified: 19/11/2025 14:54:06
+  [FILE] D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20251119_RETRY\Internal_Storage\sdcard\AI_Models\llm\llama.cpp\models\ggml-vocab-deepseek-llm.gguf.out
+         Size: 1920 bytes · Modified: 19/11/2025 14:54:06
+  [FILE] D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20251119_RETRY\Internal_Storage\sdcard\AI_Models\llm\llama.cpp\models\templates\deepseek-ai-DeepSeek-R1-Distill-Llama-8B.jinja
+         Size: 2246 bytes · Modified: 19/11/2025 14:54:09
+  [FILE] D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20251119_RETRY\Internal_Storage\sdcard\AI_Models\llm\llama.cpp\models\templates\deepseek-ai-DeepSeek-R1-Distill-Qwen-32B.jinja
+         Size: 2246 bytes · Modified: 19/11/2025 14:54:09
+  [FILE] D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20251119_RETRY\Internal_Storage\sdcard\AI_Models\llm\llama.cpp\models\templates\deepseek-ai-DeepSeek-V3.1.jinja
+         Size: 2925 bytes · Modified: 19/11/2025 14:54:09
+  [FILE] D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20251119_RETRY\Internal_Storage\sdcard\AI_Models\llm\llama.cpp\models\templates\llama-cpp-deepseek-r1.jinja
+         Size: 3074 bytes · Modified: 19/11/2025 14:54:09
+  [FILE] D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20251119_RETRY\Internal_Storage\sdcard\AI_Models\llm\llama.cpp\src\models\deepseek.cpp
+         Size: 5287 bytes · Modified: 19/11/2025 14:54:03
+  [FILE] D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20251119_RETRY\Internal_Storage\sdcard\AI_Models\llm\llama.cpp\src\models\deepseek2.cpp
+         Size: 10554 bytes · Modified: 19/11/2025 14:54:03
+  [FILE] D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20260101\sdcard\AI_Models\llm\llama.cpp\llama.cpp\models\ggml-vocab-deepseek-coder.gguf
+         Size: 1156067 bytes · Modified: 19/11/2025 10:43:52
+  [FILE] D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20260101\sdcard\AI_Models\llm\llama.cpp\llama.cpp\models\ggml-vocab-deepseek-coder.gguf.inp
+         Size: 1943 bytes · Modified: 19/11/2025 10:43:52
+  [FILE] D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20260101\sdcard\AI_Models\llm\llama.cpp\llama.cpp\models\ggml-vocab-deepseek-coder.gguf.out
+         Size: 2096 bytes · Modified: 19/11/2025 10:43:52
+  [FILE] D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20260101\sdcard\AI_Models\llm\llama.cpp\llama.cpp\models\ggml-vocab-deepseek-llm.gguf
+         Size: 3970167 bytes · Modified: 19/11/2025 10:43:52
+  [FILE] D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20260101\sdcard\AI_Models\llm\llama.cpp\llama.cpp\models\ggml-vocab-deepseek-llm.gguf.inp
+         Size: 1943 bytes · Modified: 19/11/2025 10:43:52
+  [FILE] D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20260101\sdcard\AI_Models\llm\llama.cpp\llama.cpp\models\ggml-vocab-deepseek-llm.gguf.out
+         Size: 1920 bytes · Modified: 19/11/2025 10:43:52
+  [FILE] D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20260101\sdcard\AI_Models\llm\llama.cpp\llama.cpp\models\templates\deepseek-ai-DeepSeek-R1-Distill-Llama-8B.jinja
+         Size: 2246 bytes · Modified: 19/11/2025 10:43:56
+  [FILE] D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20260101\sdcard\AI_Models\llm\llama.cpp\llama.cpp\models\templates\deepseek-ai-DeepSeek-R1-Distill-Qwen-32B.jinja
+         Size: 2246 bytes · Modified: 19/11/2025 10:43:56
+  [FILE] D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20260101\sdcard\AI_Models\llm\llama.cpp\llama.cpp\models\templates\deepseek-ai-DeepSeek-V3.1.jinja
+         Size: 2925 bytes · Modified: 19/11/2025 10:43:56
+  [FILE] D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20260101\sdcard\AI_Models\llm\llama.cpp\llama.cpp\models\templates\llama-cpp-deepseek-r1.jinja
+         Size: 3074 bytes · Modified: 19/11/2025 10:43:56
+  [FILE] D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20260101\sdcard\AI_Models\llm\llama.cpp\llama.cpp\src\models\deepseek.cpp
+         Size: 5287 bytes · Modified: 19/11/2025 10:43:50
+  [FILE] D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20260101\sdcard\AI_Models\llm\llama.cpp\llama.cpp\src\models\deepseek2.cpp
+         Size: 10554 bytes · Modified: 19/11/2025 10:43:50
+  [FILE] D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20260101\sdcard\AI_Models\llm\llama.cpp\models\ggml-vocab-deepseek-coder.gguf
+         Size: 1156067 bytes · Modified: 19/11/2025 10:44:22
+  [FILE] D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20260101\sdcard\AI_Models\llm\llama.cpp\models\ggml-vocab-deepseek-coder.gguf.inp
+         Size: 1943 bytes · Modified: 19/11/2025 10:44:22
+  [FILE] D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20260101\sdcard\AI_Models\llm\llama.cpp\models\ggml-vocab-deepseek-coder.gguf.out
+         Size: 2096 bytes · Modified: 19/11/2025 10:44:22
+  [FILE] D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20260101\sdcard\AI_Models\llm\llama.cpp\models\ggml-vocab-deepseek-llm.gguf
+         Size: 3970167 bytes · Modified: 19/11/2025 10:44:22
+  [FILE] D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20260101\sdcard\AI_Models\llm\llama.cpp\models\ggml-vocab-deepseek-llm.gguf.inp
+         Size: 1943 bytes · Modified: 19/11/2025 10:44:22
+  [FILE] D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20260101\sdcard\AI_Models\llm\llama.cpp\models\ggml-vocab-deepseek-llm.gguf.out
+         Size: 1920 bytes · Modified: 19/11/2025 10:44:22
+  [FILE] D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20260101\sdcard\AI_Models\llm\llama.cpp\models\templates\deepseek-ai-DeepSeek-R1-Distill-Llama-8B.jinja
+         Size: 2246 bytes · Modified: 19/11/2025 10:44:25
+  [FILE] D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20260101\sdcard\AI_Models\llm\llama.cpp\models\templates\deepseek-ai-DeepSeek-R1-Distill-Qwen-32B.jinja
+         Size: 2246 bytes · Modified: 19/11/2025 10:44:25
+  [FILE] D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20260101\sdcard\AI_Models\llm\llama.cpp\models\templates\deepseek-ai-DeepSeek-V3.1.jinja
+         Size: 2925 bytes · Modified: 19/11/2025 10:44:25
+  [FILE] D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20260101\sdcard\AI_Models\llm\llama.cpp\models\templates\llama-cpp-deepseek-r1.jinja
+         Size: 3074 bytes · Modified: 19/11/2025 10:44:25
+  [FILE] D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20260101\sdcard\AI_Models\llm\llama.cpp\src\models\deepseek.cpp
+         Size: 5287 bytes · Modified: 19/11/2025 10:44:19
+  [FILE] D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20260101\sdcard\AI_Models\llm\llama.cpp\src\models\deepseek2.cpp
+         Size: 10554 bytes · Modified: 19/11/2025 10:44:19
+  [FILE] D:\MICO_ARCHIVE\99_ARCHIVE_AND_TRANSIT\TESERACXT_OTAK_V21\PHI3_RUNTIME_V21\models\ggml-vocab-deepseek-coder.gguf
+         Size: 1156067 bytes · Modified: 06/11/2025 21:32:26
+  [FILE] D:\MICO_ARCHIVE\99_ARCHIVE_AND_TRANSIT\TESERACXT_OTAK_V21\PHI3_RUNTIME_V21\models\ggml-vocab-deepseek-coder.gguf.inp
+         Size: 1943 bytes · Modified: 06/11/2025 21:32:26
+  [FILE] D:\MICO_ARCHIVE\99_ARCHIVE_AND_TRANSIT\TESERACXT_OTAK_V21\PHI3_RUNTIME_V21\models\ggml-vocab-deepseek-coder.gguf.out
+         Size: 2096 bytes · Modified: 06/11/2025 21:32:26
+  [FILE] D:\MICO_ARCHIVE\99_ARCHIVE_AND_TRANSIT\TESERACXT_OTAK_V21\PHI3_RUNTIME_V21\models\ggml-vocab-deepseek-llm.gguf
+         Size: 3970167 bytes · Modified: 06/11/2025 21:32:26
+  [FILE] D:\MICO_ARCHIVE\99_ARCHIVE_AND_TRANSIT\TESERACXT_OTAK_V21\PHI3_RUNTIME_V21\models\ggml-vocab-deepseek-llm.gguf.inp
+         Size: 1943 bytes · Modified: 06/11/2025 21:32:26
+  [FILE] D:\MICO_ARCHIVE\99_ARCHIVE_AND_TRANSIT\TESERACXT_OTAK_V21\PHI3_RUNTIME_V21\models\ggml-vocab-deepseek-llm.gguf.out
+         Size: 1920 bytes · Modified: 06/11/2025 21:32:26
+  [FILE] D:\MICO_ARCHIVE\99_ARCHIVE_AND_TRANSIT\TESERACXT_OTAK_V21\PHI3_RUNTIME_V21\models\templates\deepseek-ai-DeepSeek-R1-Distill-Llama-8B.jinja
+         Size: 2246 bytes · Modified: 06/11/2025 21:32:27
+  [FILE] D:\MICO_ARCHIVE\99_ARCHIVE_AND_TRANSIT\TESERACXT_OTAK_V21\PHI3_RUNTIME_V21\models\templates\deepseek-ai-DeepSeek-R1-Distill-Qwen-32B.jinja
+         Size: 2246 bytes · Modified: 06/11/2025 21:32:27
+  [FILE] D:\MICO_ARCHIVE\99_ARCHIVE_AND_TRANSIT\TESERACXT_OTAK_V21\PHI3_RUNTIME_V21\models\templates\deepseek-ai-DeepSeek-V3.1.jinja
+         Size: 2925 bytes · Modified: 06/11/2025 21:32:27
+  [FILE] D:\MICO_ARCHIVE\99_ARCHIVE_AND_TRANSIT\TESERACXT_OTAK_V21\PHI3_RUNTIME_V21\models\templates\llama-cpp-deepseek-r1.jinja
+         Size: 3074 bytes · Modified: 06/11/2025 21:32:27
+
+--- Scan nama di: D:\MICO_BACKUP ---
+  (tidak ada file cocok di lokasi ini)
+
+--- Scan nama di: D:\00_JDEQ_SYSTEM_CORE ---
+  [FILE] D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\KURCACI_ENGINE_V21\ai-orchestrator\bin\llama.cpp\models\ggml-vocab-deepseek-coder.gguf
+         Size: 1156067 bytes · Modified: 06/11/2025 21:52:17
+  [FILE] D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\KURCACI_ENGINE_V21\ai-orchestrator\bin\llama.cpp\models\ggml-vocab-deepseek-coder.gguf.inp
+         Size: 1943 bytes · Modified: 06/11/2025 21:52:17
+  [FILE] D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\KURCACI_ENGINE_V21\ai-orchestrator\bin\llama.cpp\models\ggml-vocab-deepseek-coder.gguf.out
+         Size: 2096 bytes · Modified: 06/11/2025 21:52:17
+  [FILE] D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\KURCACI_ENGINE_V21\ai-orchestrator\bin\llama.cpp\models\ggml-vocab-deepseek-llm.gguf
+         Size: 3970167 bytes · Modified: 06/11/2025 21:52:17
+  [FILE] D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\KURCACI_ENGINE_V21\ai-orchestrator\bin\llama.cpp\models\ggml-vocab-deepseek-llm.gguf.inp
+         Size: 1943 bytes · Modified: 06/11/2025 21:52:17
+  [FILE] D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\KURCACI_ENGINE_V21\ai-orchestrator\bin\llama.cpp\models\ggml-vocab-deepseek-llm.gguf.out
+         Size: 1920 bytes · Modified: 06/11/2025 21:52:17
+  [FILE] D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\KURCACI_ENGINE_V21\ai-orchestrator\bin\llama.cpp\models\templates\deepseek-ai-DeepSeek-R1-Distill-Llama-8B.jinja
+         Size: 2246 bytes · Modified: 06/11/2025 21:52:22
+  [FILE] D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\KURCACI_ENGINE_V21\ai-orchestrator\bin\llama.cpp\models\templates\deepseek-ai-DeepSeek-R1-Distill-Qwen-32B.jinja
+         Size: 2246 bytes · Modified: 06/11/2025 21:52:22
+  [FILE] D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\KURCACI_ENGINE_V21\ai-orchestrator\bin\llama.cpp\models\templates\deepseek-ai-DeepSeek-V3.1.jinja
+         Size: 2925 bytes · Modified: 06/11/2025 21:52:22
+  [FILE] D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\KURCACI_ENGINE_V21\ai-orchestrator\bin\llama.cpp\models\templates\llama-cpp-deepseek-r1.jinja
+         Size: 3074 bytes · Modified: 06/11/2025 21:52:22
+  [FILE] D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\KURCACI_ENGINE_V21\bin\llama.cpp\models\ggml-vocab-deepseek-coder.gguf
+         Size: 1156067 bytes · Modified: 06/11/2025 21:47:43
+  [FILE] D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\KURCACI_ENGINE_V21\bin\llama.cpp\models\ggml-vocab-deepseek-coder.gguf.inp
+         Size: 1943 bytes · Modified: 06/11/2025 21:47:43
+  [FILE] D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\KURCACI_ENGINE_V21\bin\llama.cpp\models\ggml-vocab-deepseek-coder.gguf.out
+         Size: 2096 bytes · Modified: 06/11/2025 21:47:43
+  [FILE] D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\KURCACI_ENGINE_V21\bin\llama.cpp\models\ggml-vocab-deepseek-llm.gguf
+         Size: 3970167 bytes · Modified: 06/11/2025 21:47:43
+  [FILE] D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\KURCACI_ENGINE_V21\bin\llama.cpp\models\ggml-vocab-deepseek-llm.gguf.inp
+         Size: 1943 bytes · Modified: 06/11/2025 21:47:43
+  [FILE] D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\KURCACI_ENGINE_V21\bin\llama.cpp\models\ggml-vocab-deepseek-llm.gguf.out
+         Size: 1920 bytes · Modified: 06/11/2025 21:47:43
+  [FILE] D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\KURCACI_ENGINE_V21\bin\llama.cpp\models\templates\deepseek-ai-DeepSeek-R1-Distill-Llama-8B.jinja
+         Size: 2246 bytes · Modified: 06/11/2025 21:47:47
+  [FILE] D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\KURCACI_ENGINE_V21\bin\llama.cpp\models\templates\deepseek-ai-DeepSeek-R1-Distill-Qwen-32B.jinja
+         Size: 2246 bytes · Modified: 06/11/2025 21:47:47
+  [FILE] D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\KURCACI_ENGINE_V21\bin\llama.cpp\models\templates\deepseek-ai-DeepSeek-V3.1.jinja
+         Size: 2925 bytes · Modified: 06/11/2025 21:47:47
+  [FILE] D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\KURCACI_ENGINE_V21\bin\llama.cpp\models\templates\llama-cpp-deepseek-r1.jinja
+         Size: 3074 bytes · Modified: 06/11/2025 21:47:47
+  [FILE] D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\PHI3_RUNTIME_V21\models\ggml-vocab-deepseek-coder.gguf
+         Size: 1156067 bytes · Modified: 06/11/2025 21:54:27
+  [FILE] D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\PHI3_RUNTIME_V21\models\ggml-vocab-deepseek-coder.gguf.inp
+         Size: 1943 bytes · Modified: 06/11/2025 21:54:27
+  [FILE] D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\PHI3_RUNTIME_V21\models\ggml-vocab-deepseek-coder.gguf.out
+         Size: 2096 bytes · Modified: 06/11/2025 21:54:27
+  [FILE] D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\PHI3_RUNTIME_V21\models\ggml-vocab-deepseek-llm.gguf
+         Size: 3970167 bytes · Modified: 06/11/2025 21:54:27
+  [FILE] D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\PHI3_RUNTIME_V21\models\ggml-vocab-deepseek-llm.gguf.inp
+         Size: 1943 bytes · Modified: 06/11/2025 21:54:27
+  [FILE] D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\PHI3_RUNTIME_V21\models\ggml-vocab-deepseek-llm.gguf.out
+         Size: 1920 bytes · Modified: 06/11/2025 21:54:27
+  [FILE] D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\PHI3_RUNTIME_V21\models\templates\deepseek-ai-DeepSeek-R1-Distill-Llama-8B.jinja
+         Size: 2246 bytes · Modified: 06/11/2025 21:54:31
+  [FILE] D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\PHI3_RUNTIME_V21\models\templates\deepseek-ai-DeepSeek-R1-Distill-Qwen-32B.jinja
+         Size: 2246 bytes · Modified: 06/11/2025 21:54:31
+  [FILE] D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\PHI3_RUNTIME_V21\models\templates\deepseek-ai-DeepSeek-V3.1.jinja
+         Size: 2925 bytes · Modified: 06/11/2025 21:54:31
+  [FILE] D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\PHI3_RUNTIME_V21\models\templates\llama-cpp-deepseek-r1.jinja
+         Size: 3074 bytes · Modified: 06/11/2025 21:54:31
+  [FILE] D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\TESERACXT_OTAK_V21\KURCACI_ENGINE_V21\ai-orchestrator\bin\llama.cpp\models\ggml-vocab-deepseek-coder.gguf
+         Size: 1156067 bytes · Modified: 06/11/2025 21:41:20
+  [FILE] D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\TESERACXT_OTAK_V21\KURCACI_ENGINE_V21\ai-orchestrator\bin\llama.cpp\models\ggml-vocab-deepseek-coder.gguf.inp
+         Size: 1943 bytes · Modified: 06/11/2025 21:41:20
+  [FILE] D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\TESERACXT_OTAK_V21\KURCACI_ENGINE_V21\ai-orchestrator\bin\llama.cpp\models\ggml-vocab-deepseek-coder.gguf.out
+         Size: 2096 bytes · Modified: 06/11/2025 21:41:20
+  [FILE] D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\TESERACXT_OTAK_V21\KURCACI_ENGINE_V21\ai-orchestrator\bin\llama.cpp\models\ggml-vocab-deepseek-llm.gguf
+         Size: 3970167 bytes · Modified: 06/11/2025 21:41:20
+  [FILE] D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\TESERACXT_OTAK_V21\KURCACI_ENGINE_V21\ai-orchestrator\bin\llama.cpp\models\ggml-vocab-deepseek-llm.gguf.inp
+         Size: 1943 bytes · Modified: 06/11/2025 21:41:20
+  [FILE] D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\TESERACXT_OTAK_V21\KURCACI_ENGINE_V21\ai-orchestrator\bin\llama.cpp\models\ggml-vocab-deepseek-llm.gguf.out
+         Size: 1920 bytes · Modified: 06/11/2025 21:41:20
+  [FILE] D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\TESERACXT_OTAK_V21\KURCACI_ENGINE_V21\ai-orchestrator\bin\llama.cpp\models\templates\deepseek-ai-DeepSeek-R1-Distill-Llama-8B.jinja
+         Size: 2246 bytes · Modified: 06/11/2025 21:41:21
+  [FILE] D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\TESERACXT_OTAK_V21\KURCACI_ENGINE_V21\ai-orchestrator\bin\llama.cpp\models\templates\deepseek-ai-DeepSeek-R1-Distill-Qwen-32B.jinja
+         Size: 2246 bytes · Modified: 06/11/2025 21:41:21
+  [FILE] D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\TESERACXT_OTAK_V21\KURCACI_ENGINE_V21\ai-orchestrator\bin\llama.cpp\models\templates\deepseek-ai-DeepSeek-V3.1.jinja
+         Size: 2925 bytes · Modified: 06/11/2025 21:41:21
+  [FILE] D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\TESERACXT_OTAK_V21\KURCACI_ENGINE_V21\ai-orchestrator\bin\llama.cpp\models\templates\llama-cpp-deepseek-r1.jinja
+         Size: 3074 bytes · Modified: 06/11/2025 21:41:21
+  [FILE] D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\TESERACXT_OTAK_V21\KURCACI_ENGINE_V21\bin\llama.cpp\models\ggml-vocab-deepseek-coder.gguf
+         Size: 1156067 bytes · Modified: 06/11/2025 21:31:41
+  [FILE] D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\TESERACXT_OTAK_V21\KURCACI_ENGINE_V21\bin\llama.cpp\models\ggml-vocab-deepseek-coder.gguf.inp
+         Size: 1943 bytes · Modified: 06/11/2025 21:31:41
+  [FILE] D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\TESERACXT_OTAK_V21\KURCACI_ENGINE_V21\bin\llama.cpp\models\ggml-vocab-deepseek-coder.gguf.out
+         Size: 2096 bytes · Modified: 06/11/2025 21:31:41
+  [FILE] D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\TESERACXT_OTAK_V21\KURCACI_ENGINE_V21\bin\llama.cpp\models\ggml-vocab-deepseek-llm.gguf
+         Size: 3970167 bytes · Modified: 06/11/2025 21:31:41
+  [FILE] D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\TESERACXT_OTAK_V21\KURCACI_ENGINE_V21\bin\llama.cpp\models\ggml-vocab-deepseek-llm.gguf.inp
+         Size: 1943 bytes · Modified: 06/11/2025 21:31:41
+  [FILE] D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\TESERACXT_OTAK_V21\KURCACI_ENGINE_V21\bin\llama.cpp\models\ggml-vocab-deepseek-llm.gguf.out
+         Size: 1920 bytes · Modified: 06/11/2025 21:31:41
+  [FILE] D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\TESERACXT_OTAK_V21\KURCACI_ENGINE_V21\bin\llama.cpp\models\templates\deepseek-ai-DeepSeek-R1-Distill-Llama-8B.jinja
+         Size: 2246 bytes · Modified: 06/11/2025 21:31:42
+  [FILE] D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\TESERACXT_OTAK_V21\KURCACI_ENGINE_V21\bin\llama.cpp\models\templates\deepseek-ai-DeepSeek-R1-Distill-Qwen-32B.jinja
+         Size: 2246 bytes · Modified: 06/11/2025 21:31:42
+  [FILE] D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\TESERACXT_OTAK_V21\KURCACI_ENGINE_V21\bin\llama.cpp\models\templates\deepseek-ai-DeepSeek-V3.1.jinja
+         Size: 2925 bytes · Modified: 06/11/2025 21:31:42
+  [FILE] D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\TESERACXT_OTAK_V21\KURCACI_ENGINE_V21\bin\llama.cpp\models\templates\llama-cpp-deepseek-r1.jinja
+         Size: 3074 bytes · Modified: 06/11/2025 21:31:42
+
+TOTAL NAME HITS: 128
+
+============================================================
+B. CONTENT SEARCH — Referensi di dalam file teks
+============================================================
+
+--- Content scan: D:\MICO_SSOT ---
+  [HIT] D:\MICO_SSOT\08_EVIDENCE\FINAL-EVIDENCE-20260916-012013.txt
+         Line 13: e97133ad P1: Behavior Contract formal + anchor update + hook v9 (BEHAVIOR-CONTRACT whitelist) - ref ADR-005 ADR-006 - 20...
+  [HIT] D:\MICO_SSOT\08_EVIDENCE\MICO-P2-LEGACY-RECON-001-20260916-055810.txt
+         Line 320: P1-PLANNING MICO-P1-BEHAVIOR-CONTRACT.md                                      MICO-P1-BEHAVIOR-CONTRACT.md
+  [HIT] D:\MICO_SSOT\08_EVIDENCE\MICO-P2-STRUCTURE-CHECK-001-20260916-064515.txt
+         Line 208: BELUM ADA: D:\MICO_SSOT\09_GOVERNANCE\DOLA\L6-AG-CONTRACTS
+  [HIT] D:\MICO_SSOT\08_EVIDENCE\MICO-P2-STRUCTURE-CHECK-002-20260916-064828.txt
+         Line 21: [FILE] D:\MICO_SSOT\09_GOVERNANCE\AGENT_ERRORS\AG-003_ERRORS.md
+         Line 23: [FILE] D:\MICO_SSOT\09_GOVERNANCE\P1-PLANNING\MICO-P1-BEHAVIOR-CONTRACT.md
+         Line 25: [FILE] D:\MICO_SSOT\09_GOVERNANCE\P1-PLANNING\MICO-P1-BEHAVIOR-CONTRACT.md.sha256
+         ... (+3 baris lain)
+  [HIT] D:\MICO_SSOT\08_EVIDENCE\MICO-P2-TRACE-002-20260916-052353.txt
+         Line 77: FOUND	D:\MICO_SSOT\09_GOVERNANCE\P1-PLANNING\MICO-P1-BEHAVIOR-CONTRACT.md
+         Line 78: FOUND	D:\MICO_SSOT\09_GOVERNANCE\P1-PLANNING\MICO-P1-BEHAVIOR-CONTRACT.md.sha256
+         Line 5751: REFERENCE_ONLY	D:\MICO_SSOT\09_GOVERNANCE\P1-PLANNING\MICO-P1-BEHAVIOR-CONTRACT.md	2026-09-16 01:16
+  [HIT] D:\MICO_SSOT\08_EVIDENCE\MICO-P2-TRACE-002b-SUMMARY-20260916-053540.txt
+         Line 207: REFERENCE_ONLY	D:\MICO_SSOT\09_GOVERNANCE\P1-PLANNING\MICO-P1-BEHAVIOR-CONTRACT.md	2026-09-16 01:16
+  [HIT] D:\MICO_SSOT\08_EVIDENCE\P1-COMPLETE-EVIDENCE-20260916-001700.txt
+         Line 10: EXECUTOR      : DeepSeek (AG-003)
+  [HIT] D:\MICO_SSOT\08_EVIDENCE\P1-EXECUTE-MASTER-PLAN-20260916-000812-CORRECTED.txt
+         Line 19: Ini adalah defect pribadi pelaksana (DeepSeek AG-003), bukan cacat sistem.
+  [HIT] D:\MICO_SSOT\08_EVIDENCE\scan_dola_20260912_205412.txt
+         Line 8: D:\MICO_SSOT\09_GOVERNANCE\ADR-003.txt:32: - Diverifikasi oleh: AG-003 DeepSeek & DOLA
+         Line 9: D:\MICO_SSOT\09_GOVERNANCE\DOKTRIN_PROMPT_MICO.md:19: - Peran: AG-001/AG-002/AG-003/DOLA/L0
+         Line 10: D:\MICO_SSOT\09_GOVERNANCE\AGENT_ERRORS\AG-003_ERRORS.md:37: - ringkas: Menerima label Perplexity/DOLA dari file ekstern...
+         ... (+5 baris lain)
+  [HIT] D:\MICO_SSOT\08_EVIDENCE\IMPORT-VIVO-Y28\20260916-0545\Download\Download\Notes\Export\Ekspor catatan 20260807-0830\MICO_PLATFORM\MICO_Vault\MICO JDEQ ENTERPRISE\.obsidian\Blueprint..md
+         Line 1900: "agent_id": "AG-003",
+  [HIT] D:\MICO_SSOT\08_EVIDENCE\IMPORT-VIVO-Y28\20260916-0547-FULL\data\data\com.moonshot.kimichat\cache\lru_cache\files\26246699b1bb424b157d546f99e57537.txt
+         Line 10: ESEKUTOR     : AG-003 / DEEPSEEK
+         Line 96: ## 📢 INSTRUKSI MESIN KE MESIN KE AG-003 DEEPSEEK
+  [HIT] D:\MICO_SSOT\08_EVIDENCE\IMPORT-VIVO-Y28\20260916-0547-FULL\data\data\com.moonshot.kimichat\cache\lru_cache\files\2745a3bab07e160cd9b5527e8bfc8796.txt
+         Line 31: · AG-003 DeepSeek = eksekusi Linux/Ubuntu/Termux, verifikasi bukti, kontrol risiko, lan governance.
+         Line 37: Status nyata AG-003:
+         Line 54: AgenPosisi DomainFungsi Utami ing EkosistemMicrosoft CopilotCloud & Windows ArchitectIntegrasi Azure, Graph API, OneDriv...
+         ... (+2 baris lain)
+  [HIT] D:\MICO_SSOT\08_EVIDENCE\IMPORT-VIVO-Y28\20260916-0547-FULL\data\data\com.moonshot.kimichat\cache\lru_cache\files\5a685f3c86bec259b84e086dcd3d25de.txt
+         Line 22: ├── AG-003 DeepSeek
+  [HIT] D:\MICO_SSOT\08_EVIDENCE\IMPORT-VIVO-Y28\20260916-0547-FULL\data\data\com.moonshot.kimichat\cache\lru_cache\files\7cbd66288ce66119c9e7339add89d67e.txt
+         Line 216: AG-003 — DeepSeek / Technical Execution
+         Line 298: "executor": "AG-003_DEEPSEEK",
+         Line 1516: "agent_id": "AG-003_DEEPSEEK",
+         ... (+1 baris lain)
+  [HIT] D:\MICO_SSOT\08_EVIDENCE\IMPORT-VIVO-Y28\20260916-0547-FULL\data\data\com.moonshot.kimichat\cache\lru_cache\files\8299b2665e6f2745104f1032fda47840.txt
+         Line 1900: "agent_id": "AG-003",
+  [HIT] D:\MICO_SSOT\08_EVIDENCE\IMPORT-VIVO-Y28\20260916-0547-FULL\data\data\com.moonshot.kimichat\cache\lru_cache\files\8299b2665e6f2745104f1032fda47840(1).txt
+         Line 1900: "agent_id": "AG-003",
+  [HIT] D:\MICO_SSOT\08_EVIDENCE\IMPORT-VIVO-Y28\20260916-0547-FULL\data\data\com.moonshot.kimichat\cache\lru_cache\files\9df084d591a38afdb6db91058fe28237.txt
+         Line 34: | *Eksekusi aman sawise L0 setuju:* | *DeepSeek / AG-003* |
+         Line 184: ## 📢 INSTRUKSI RESMI DARI DOLA KE AG-003 DEEPSEEK
+  [HIT] D:\MICO_SSOT\08_EVIDENCE\IMPORT-VIVO-Y28\20260916-0547-FULL\data\data\com.moonshot.kimichat\cache\lru_cache\files\dfdd4f5a89b0a0cab21e66d3aa09fbe2.txt
+         Line 2118: 📡 PEMBERITAHUAN RESMI KE DEEPSEEK AG-003
+  [HIT] D:\MICO_SSOT\08_EVIDENCE\IMPORT-VIVO-Y28\20260916-0547-FULL\data\data\com.moonshot.kimichat\cache\lru_cache\files\f249a944391a4ef5946a8b699a31db2b(1).txt
+         Line 334: **Dari:** AG-003 DeepSeek
+  [HIT] D:\MICO_SSOT\08_EVIDENCE\IMPORT-VIVO-Y28\20260916-0547-FULL\data\data\com.moonshot.kimichat\cache\lru_cache\files\f9c12c80f5d6a34f064fc6868052a4f8.txt
+         Line 168: AGENT: AG-003 DEEPSEEK
+         Line 181: AGENT: AG-001 CHATGPT (Design) → AG-003 DEEPSEEK (Test)
+         Line 785: # DEEPSEEK AG-003 — TECHNICAL EXECUTION REPORT
+         ... (+1 baris lain)
+  [HIT] D:\MICO_SSOT\08_EVIDENCE\IMPORT-VIVO-Y28\20260916-0547-FULL\data\data\com.moonshot.kimichat\cache\lru_cache\files\fa02332a3f307518afb6dbbb973eac3c.txt
+         Line 107: L0 HUMAN AUTHORITY         ↓ DOLA — GOVERNANCE / POLICY         ↓ AG-001 CHATGPT — ENTERPRISE ARCHITECT         ↓ AG-002...
+         Line 264: TITLE: Build Enterprise Architecture Baseline — Document 1  ROLE: DeepSeek AG-003 — Technical Documentation Executor  OB...
+  [HIT] D:\MICO_SSOT\08_EVIDENCE\IMPORT-VIVO-Y28\20260916-0547-FULL\data\data\com.moonshot.kimichat\cache\lru_cache\files\fa02332a3f307518afb6dbbb973eac3c(1).txt
+         Line 107: L0 HUMAN AUTHORITY         ↓ DOLA — GOVERNANCE / POLICY         ↓ AG-001 CHATGPT — ENTERPRISE ARCHITECT         ↓ AG-002...
+         Line 264: TITLE: Build Enterprise Architecture Baseline — Document 1  ROLE: DeepSeek AG-003 — Technical Documentation Executor  OB...
+  [HIT] D:\MICO_SSOT\08_EVIDENCE\IMPORT-VIVO-Y28\20260916-0547-FULL\data\data\com.moonshot.kimichat\cache\lru_cache\files\MICO_JDEQ_STRATEGY_MODULE.yml
+         Line 27: alur_wajib: "L0 → DOLA → AG-001 → TASK CARD → AG-003 → BUKTI → AUDIT → L0"
+  [HIT] D:\MICO_SSOT\08_EVIDENCE\IMPORT-VIVO-Y28\20260916-0547-FULL\Download\Download\Notes\Export\Ekspor catatan 20260807-0830\MICO_PLATFORM\MICO_Vault\MICO JDEQ ENTERPRISE\.obsidian\Blueprint..md
+         Line 1900: "agent_id": "AG-003",
+  [HIT] D:\MICO_SSOT\08_EVIDENCE\L1\HP_Mini\L1-08_ACCEPTANCE_ACC.md
+         Line 48: Executor : AG-003 / DeepSeek
+  [HIT] D:\MICO_SSOT\08_EVIDENCE\L1\HP_Mini\L1-08_ACCEPTANCE.md
+         Line 89: Executor: AG-003 / DeepSeek
+  [HIT] D:\MICO_SSOT\08_EVIDENCE\L1\PC5\L1-07_PASSPORT_PC5.yml
+         Line 13: executor: AG-003-DeepSeek
+  [HIT] D:\MICO_SSOT\08_EVIDENCE\L1\Vivo\L1_VIVO_BRIEF_20260911.md
+         Line 39: Executor: AG-003 DeepSeek | Reviewer: L0
+  [HIT] D:\MICO_SSOT\08_EVIDENCE\L1\_AUDIT\L1_BUNDLE_FULL_for_KIMI.md
+         Line 100: Executor: AG-003 / DeepSeek
+         Line 153: Executor : AG-003 / DeepSeek
+         Line 187: executor: AG-003-DeepSeek
+  [HIT] D:\MICO_SSOT\08_EVIDENCE\l4-final\SELF-AUDIT\audit_2026-09-14_0140.txt
+         Line 35: [KAPAL-INDUK] Write-Output "Auditor : AG-003 (DeepSeek)"
+         Line 36: Auditor : AG-003 (DeepSeek)
+  [HIT] D:\MICO_SSOT\08_EVIDENCE\l4-final\SELF-AUDIT\VERDICT_2026-09-14_0140.md
+         Line 2: Auditor   : AG-003 (DeepSeek)
+         Line 42: AG-003 (DeepSeek)
+  [HIT] D:\MICO_SSOT\08_EVIDENCE\L5_SECURITY\L5_FINAL_RECORD.md
+         Line 5: Executor  : AG-003 DeepSeek
+  [HIT] D:\MICO_SSOT\08_EVIDENCE\L7-OPERATIONAL\rt_harness_2026-09-14_1257.json
+         Line 6: "stdout": "{\"test_suite\": \"L7-RUNTIME-RT01-RT15\", \"mode\": \"TEST_FIXTURE\", \"timestamp_utc\": \"2026-09-14T05:57:...
+  [HIT] D:\MICO_SSOT\08_EVIDENCE\L7-OPERATIONAL\rt_harness_2026-09-14_1258.json
+         Line 6: "stdout": "{\"test_suite\": \"L7-RUNTIME-RT01-RT15\", \"mode\": \"TEST_FIXTURE\", \"timestamp_utc\": \"2026-09-14T05:58:...
+  [HIT] D:\MICO_SSOT\08_EVIDENCE\L7-OPERATIONAL\sprint5_e2e_readiness_2026-09-14_1308.json
+         Line 7: "stdout": "{\"suite\": \"L7-E2E\", \"mode\": \"TEST_FIXTURE\", \"timestamp_utc\": \"2026-09-14T06:08:51.528063+00:00\", ...
+  [HIT] D:\MICO_SSOT\08_EVIDENCE\L7_Z83_INFINIX\INFINIX-STATUS-CORRECTION.txt
+         Line 20: CATATAN AG-003:
+  [HIT] D:\MICO_SSOT\08_EVIDENCE\PROBE-V3-20260916-004153\INVALID_METHOD_NOTE.md
+         Line 6: Tiga output (gen-A, gen-B, gen-C) ditulis manual oleh AG-003 dengan
+  [HIT] D:\MICO_SSOT\08_EVIDENCE\PROBE-V3-20260916-004153\V3-STATUS.txt
+         Line 7: - AG-003 tidak dapat menjalankan 3 inference independen dari satu sesi chat
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\ADR-003-L3-Execution.txt
+         Line 5: Diverifikasi: DOLA (Governance Gate) · AG-003 DeepSeek (Executor) · KIMI (Auditor)
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\ADR-003.txt
+         Line 32: - Diverifikasi oleh: AG-003 DeepSeek & DOLA
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\DOKTRIN_PROMPT_MICO.md
+         Line 19: - Peran: AG-001/AG-002/AG-003/DOLA/L0
+         Line 24: - SoD: rencana (AG-001) != eksekusi (AG-003)
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\HANDOFF_STATE.md
+         Line 3: Dari: DeepSeek AG-003
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\SSOT-SECURITY-MANIFEST.md
+         Line 24: └── P1-PLANNING/MICO-P1-BEHAVIOR-CONTRACT.md [ADA]
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\ADR\ADR-005_REKONSILIASI_GOVERNANCE_V21.md
+         Line 6: **Pelaksana:** DeepSeek (AG-003)
+         Line 54: - Disusun oleh: DeepSeek (AG-003)
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\ADR\ADR-005-REV1.md
+         Line 6: **Pelaksana:** DeepSeek (AG-003)
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\ADR\ADR-006-LAYER-MODEL-CANONICAL.md
+         Line 6: **Pelaksana:** DeepSeek (AG-003)
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\AGENT_ERRORS\AG-003_ERRORS.md
+         Line 1: # AG-003 ERROR LOG
+         Line 4: - agen: AG-003 (DeepSeek)
+         Line 14: - agen: AG-003 (DeepSeek)
+         ... (+5 baris lain)
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\ARCHITECTURE\MICO_JDEQ_ARCHITECTURE.md
+         Line 84: | DeepSeek | AG-003 | Technical executor / troubleshooting | Tidak ubah scope sendiri |
+         Line 88: Catatan: "DOLA AG-003" yang muncul di sesi lain = salah. DOLA = AG-00, DeepSeek = AG-003.
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\DECREE\DOLA_DEPRECATION_20260912.md
+         Line 42: - Laporan kesalahan agen: `09_GOVERNANCE\AGENT_ERRORS\AG-003_ERRORS.md`
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\DECREE\session-safety-gate.md
+         Line 48: Credential tetap: Z83. AG-003 tidak pegang secret.
+         Line 69: TEST 08 Credential store tidak terekspos ke AG-003 -> PASS
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\L4-DESIGN\L4-CLOSURE-REPORT-DOLA.json
+         Line 4: "from_agent": "AG-003",
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\L4-DESIGN\L4-CLOSURE-REPORT-DOLA.yaml
+         Line 3: # Dari   : AG-003 (DeepSeek)
+         Line 11: from_agent: AG-003
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\L5-DESIGN\L5-AUDIT-REPORT-DOLA.json
+         Line 5: "from": "AG-003",
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\L5-DESIGN\L5-AUDIT-REPORT-DOLA.yaml
+         Line 3: # Dari   : AG-003 (DeepSeek) — Internal Auditor
+         Line 12: from: AG-003
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\L5-DESIGN\L5-CLOSURE-REPORT-DOLA.json
+         Line 4: "from_agent": "AG-003",
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\L5-DESIGN\L5-CLOSURE-REPORT-DOLA.yaml
+         Line 3: # Dari   : AG-003 (DeepSeek)
+         Line 11: from_agent: AG-003
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\L6-ANALYTICS\L6-M1-REPORT-DOLA.md
+         Line 3: Dari   : AG-003 (DeepSeek) — Executor
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\L6-ANALYTICS\L6-M2-REPORT-DOLA-CORRECTED.md
+         Line 3: Dari   : AG-003 (DeepSeek)
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\L6-ANALYTICS\L6-M2-REPORT-DOLA-FINAL.md
+         Line 3: Dari   : AG-003 (DeepSeek)
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\L6-ANALYTICS\L6-M2-REPORT-DOLA.md
+         Line 3: Dari   : AG-003 (DeepSeek) — Executor
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\L6-ANALYTICS\L6-M3-REPORT-DOLA-CORRECTED.md
+         Line 3: Dari   : AG-003 (DeepSeek)
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\L6-ANALYTICS\L6-M3-REPORT-DOLA.md
+         Line 3: Dari   : AG-003 (DeepSeek)
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\L6-ANALYTICS\L6-M4-REPORT-DOLA.md
+         Line 3: Dari   : AG-003 (DeepSeek)
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\L7-COMMAND\L7-DEVICE-REPORT-2026-09-14.md
+         Line 6: Pelaksana: AG-003 / DeepSeek
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\L7-COMMAND\PROMPT-AG001-L7-COMMAND-UNIFICATION.md
+         Line 9: EXECUTOR  : AG-003 / DeepSeek
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\L7-COMMAND\PROMPT-AG003-L7-DEPLOYMENT.md
+         Line 5: AGENT     : AG-003 / DeepSeek
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\L7-COMMAND\PROMPT-AG004-L7-VERIFICATION.md
+         Line 10: EXECUTOR  : AG-003 / DeepSeek
+         Line 20: E. Task Card untuk AG-003 & DOLA + acceptance criteria
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\L7-COMMAND\PROMPT-STANDARD-IDEAL.md
+         Line 6: Pelaksana: AG-003 / DeepSeek
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\L7-COMMAND\REKAP-CLOUD-LOKAL.md
+         Line 6: Pelaksana: AG-003 DeepSeek
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\L7-COMMAND\ALERT\alert_acl.json
+         Line 5: "AG-003": ["create","update","test"],
+         Line 10: "create_or_update": ["AG-003"],
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\L7-COMMAND\AUDIT\CROSS-ROOM-HANDOFF\_PHASE1_2026-09-14_0511.log
+         Line 212: agent         : AG-003/DeepSeek
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\L7-COMMAND\AUDIT\CROSS-ROOM-HANDOFF\_PHASE3_2026-09-14_0512.log
+         Line 52: - **Agent**       : AG-003 / DeepSeek
+         Line 182: - Agent          : AG-003/DeepSeek
+         Line 293: | AG-003 | DeepSeek | DeepSeek | PRESERVED |
+         ... (+2 baris lain)
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\L7-COMMAND\AUDIT\CROSS-ROOM-HANDOFF\_PHASE3_RESCUE_2026-09-14_0515.log
+         Line 55: | AG-003 | DeepSeek | DeepSeek | PRESERVED |
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\L7-COMMAND\AUDIT\CROSS-ROOM-HANDOFF\CURRENT_STATE.md
+         Line 35: - Agent          : AG-003/DeepSeek
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\L7-COMMAND\AUDIT\CROSS-ROOM-HANDOFF\DIFFERENCE.md
+         Line 29: | AG-003 | DeepSeek | DeepSeek | PRESERVED |
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\L7-COMMAND\AUDIT\CROSS-ROOM-HANDOFF\HANDOFF_MANIFEST.md
+         Line 9: - **Agent**       : AG-003 / DeepSeek
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\L7-COMMAND\AUDIT\VERIFICATION-GAP-CLOSURE\_FINALIZE_2026-09-14_1231.log
+         Line 146: "- Agent        : AG-003/DeepSeek",
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\L7-COMMAND\AUDIT\VERIFICATION-GAP-CLOSURE\_GAPCLOSURE_2026-09-14_0530.log
+         Line 49: 'sama dengan AG-003 pada sesi ini. Karena itu tidak memenuhi independensi',
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\L7-COMMAND\AUDIT\VERIFICATION-GAP-CLOSURE\AG004-SOD-LIMITATION.md
+         Line 11: sama dengan AG-003 pada sesi ini. Karena itu tidak memenuhi independensi
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\L7-COMMAND\AUDIT\VERIFICATION-GAP-CLOSURE\FIXTURE-EXECUTION-PROVENANCE.md
+         Line 12: - Agent        : AG-003/DeepSeek
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\L7-COMMAND\AWARENESS\MICO-L7-IOT-AWARENESS-001.md
+         Line 5: Eksekutor  : DeepSeek (AG-003)
+         Line 146: - Disusun oleh: DeepSeek (AG-003)
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\L7-COMMAND\P2-DESIGN\P2-1-open_items_closure_plan.md
+         Line 6: | P2-1 | Rotasi log runtime_audit | AG-003 | DESIGN_DONE |
+         Line 7: | P2-2 | Saluran peringatan konkret | AG-003 | DESIGN_DONE |
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\L7-COMMAND\PRODUCTION-READINESS\incident_escalation.md
+         Line 4: - Level 2: AG-003 diagnosis.
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\L7-COMMAND\PRODUCTION-READINESS\L7-AG004-HANDOFF.md
+         Line 38: - AG-003 cannot self-approve AG-004
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\L7-COMMAND\PRODUCTION-READINESS\L7-INCIDENT-ESCALATION.md
+         Line 8: ## Level 2 - AG-003 Diagnosis
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\L7-COMMAND\RELIABILITY\FIXTURE-TEST-REPORT.md
+         Line 5: Executor  : AG-003 / DeepSeek
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\L7-COMMAND\RELIABILITY\FIXTURE-EVIDENCE\FIXTURE-TEST-SUMMARY.json
+         Line 6: "agent": "AG-003/DeepSeek",
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\L7-COMMAND\RELIABILITY\FIXTURE-EVIDENCE\T01_ev-fixture-T01-c818b97b.json
+         Line 6: "agent": "AG-003/DeepSeek",
+         Line 12: "agent": "AG-003/DeepSeek",
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\L7-COMMAND\RELIABILITY\FIXTURE-EVIDENCE\T02_ev-fixture-T02-56ce3e42.json
+         Line 6: "agent": "AG-003/DeepSeek",
+         Line 12: "agent": "AG-003/DeepSeek",
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\L7-COMMAND\RELIABILITY\FIXTURE-EVIDENCE\T03_ev-fixture-T03-3389bdcf.json
+         Line 6: "agent": "AG-003/DeepSeek",
+         Line 12: "agent": "AG-003/DeepSeek",
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\L7-COMMAND\RELIABILITY\FIXTURE-EVIDENCE\T04_ev-fixture-T04-ffe7d28e.json
+         Line 6: "agent": "AG-003/DeepSeek",
+         Line 12: "agent": "AG-003/DeepSeek",
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\L7-COMMAND\RELIABILITY\FIXTURE-EVIDENCE\T05_ev-fixture-T05-f109258d.json
+         Line 6: "agent": "AG-003/DeepSeek",
+         Line 12: "agent": "AG-003/DeepSeek",
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\L7-COMMAND\RELIABILITY\FIXTURE-EVIDENCE\T06_ev-fixture-T06-15e39de6.json
+         Line 6: "agent": "AG-003/DeepSeek",
+         Line 12: "agent": "AG-003/DeepSeek",
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\L7-COMMAND\RELIABILITY\FIXTURE-EVIDENCE\T07_ev-fixture-T07-d2e1e5d0.json
+         Line 6: "agent": "AG-003/DeepSeek",
+         Line 12: "agent": "AG-003/DeepSeek",
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\L7-COMMAND\RELIABILITY\FIXTURE-EVIDENCE\T08_ev-fixture-T08-af76d26b.json
+         Line 6: "agent": "AG-003/DeepSeek",
+         Line 12: "agent": "AG-003/DeepSeek",
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\L7-COMMAND\RELIABILITY\FIXTURE-EVIDENCE\T09_ev-fixture-T09-a0bd49d9.json
+         Line 6: "agent": "AG-003/DeepSeek",
+         Line 12: "agent": "AG-003/DeepSeek",
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\L7-COMMAND\RELIABILITY\FIXTURE-EVIDENCE\T10_ev-fixture-T10-b8c10b00.json
+         Line 6: "agent": "AG-003/DeepSeek",
+         Line 12: "agent": "AG-003/DeepSeek",
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\L7-COMMAND\RELIABILITY\FIXTURE-EVIDENCE\T11_ev-fixture-T11-ddfb0a97.json
+         Line 6: "agent": "AG-003/DeepSeek",
+         Line 12: "agent": "AG-003/DeepSeek",
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\L7-COMMAND\RELIABILITY\FIXTURE-EVIDENCE\T12_ev-fixture-T12-d0f1d87a.json
+         Line 6: "agent": "AG-003/DeepSeek",
+         Line 12: "agent": "AG-003/DeepSeek",
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\L7-COMMAND\RUNTIME\test_e2e.py
+         Line 95: "agent":"AG-003/DeepSeek","actor":"L0:Iswan",
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\L7-COMMAND\RUNTIME\test_rt_harness.py
+         Line 130: "host":os.environ.get("COMPUTERNAME","?"),"agent":"AG-003/DeepSeek",
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\P1-PLANNING\AUDIT-ANCHOR-REGISTRY.md
+         Line 63: | Behavior Contract | MISSING_IN_SSOT | ✅ SAH · MICO-P1-BEHAVIOR-CONTRACT.md | commit ini |
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\P1-PLANNING\MICO-JDEQ-CORE-LOGIC.json
+         Line 10: "generated_by": "DeepSeek AG-003"
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\P1-PLANNING\MICO-P1-BEHAVIOR-CONTRACT.md
+         Line 20: - id_agen: (contoh: AG-003)
+         Line 115: # 4. CONTOH: BEHAVIOR CONTRACT AG-003 (DeepSeek)
+         Line 118: - id_agen: AG-003
+         ... (+2 baris lain)
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\P1-PLANNING\MICO-P1-LAPORAN-JARVIS-DOLA.md
+         Line 4: Dari    : DeepSeek (AG-003) — Eksekutor Teknis
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\P1-PLANNING\MONUMENT-LATEST.sha256.txt
+         Line 12: Generated by : DeepSeek (AG-003)
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\P1-PLANNING\P1-FINAL-REPORT-MODUL-PENJELASAN.md
+         Line 5: Eksekutor: DeepSeek (AG-003) · Penyerapan Koreksi ChatGPT
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\P1-PLANNING\P1-FINAL-REPORT.md
+         Line 5: Eksekutor: DeepSeek (AG-003)
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\P2-DESIGN\MICO-P2-ARCH-EVAL-001.md
+         Line 4: Dari    : DeepSeek (AG-003)
+         Line 45: - Evaluator: DeepSeek (AG-003)
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\P2-DESIGN\MICO-P2-C02-SESSION-IDENTITY\SESSION-IDENTITY.md
+         Line 17: - MICO_AGENT_ID         : AG-001 / AG-003 / dst
+  [HIT] D:\MICO_SSOT\09_GOVERNANCE\P2-DESIGN\MICO-P2-CONTROL-003\AGENT-CLOSURE-PROTOCOL.md
+         Line 77: AG-003_CRED_ACCESS   = DENIED
+  [HIT] D:\MICO_SSOT\12_BACKUP\MONUMENTS\MICO_JDEQ_MONUMENT_20260916-001407.zip.sha256.txt
+         Line 12: Generated by : DeepSeek (AG-003)
+  [HIT] D:\MICO_SSOT\12_BACKUP\MONUMENTS\BUILD-20260916-001330\01_GOVERNANCE_AND_DOCTRINE\ADR-005_REKONSILIASI_GOVERNANCE_V21.md
+         Line 6: **Pelaksana:** DeepSeek (AG-003)
+         Line 54: - Disusun oleh: DeepSeek (AG-003)
+  [HIT] D:\MICO_SSOT\12_BACKUP\MONUMENTS\BUILD-20260916-001330\01_GOVERNANCE_AND_DOCTRINE\ADR-005-REV1.md
+         Line 6: **Pelaksana:** DeepSeek (AG-003)
+  [HIT] D:\MICO_SSOT\12_BACKUP\MONUMENTS\BUILD-20260916-001330\01_GOVERNANCE_AND_DOCTRINE\ADR-006-LAYER-MODEL-CANONICAL.md
+         Line 6: **Pelaksana:** DeepSeek (AG-003)
+  [HIT] D:\MICO_SSOT\12_BACKUP\MONUMENTS\BUILD-20260916-001330\01_GOVERNANCE_AND_DOCTRINE\DOLA_DEPRECATION_20260912.md
+         Line 42: - Laporan kesalahan agen: `09_GOVERNANCE\AGENT_ERRORS\AG-003_ERRORS.md`
+  [HIT] D:\MICO_SSOT\12_BACKUP\MONUMENTS\BUILD-20260916-001330\02_ARCHITECTURE_7_LAYERS\MICO-L7-IOT-AWARENESS-001.md
+         Line 5: Eksekutor  : DeepSeek (AG-003)
+         Line 146: - Disusun oleh: DeepSeek (AG-003)
+  [HIT] D:\MICO_SSOT\12_BACKUP\MONUMENTS\BUILD-20260916-001330\04_MULTI_AGENT_DNA\PROMPT-AG001-L7-COMMAND-UNIFICATION.md
+         Line 9: EXECUTOR  : AG-003 / DeepSeek
+  [HIT] D:\MICO_SSOT\12_BACKUP\MONUMENTS\BUILD-20260916-001330\04_MULTI_AGENT_DNA\PROMPT-AG003-L7-DEPLOYMENT.md
+         Line 5: AGENT     : AG-003 / DeepSeek
+  [HIT] D:\MICO_SSOT\12_BACKUP\MONUMENTS\BUILD-20260916-001330\04_MULTI_AGENT_DNA\PROMPT-AG004-L7-VERIFICATION.md
+         Line 10: EXECUTOR  : AG-003 / DeepSeek
+         Line 20: E. Task Card untuk AG-003 & DOLA + acceptance criteria
+  [HIT] D:\MICO_SSOT\12_BACKUP\MONUMENTS\BUILD-20260916-001330\09_P1-PLANNING_MASTER-PLAN\MICO-JDEQ-CORE-LOGIC.json
+         Line 10: "generated_by": "DeepSeek AG-003"
+  [HIT] D:\MICO_SSOT\99_ARCHIVE\TREE_L_LEGACY\99_ARCHIVE\Z83_3YEARS_BACKUP\iswanjp\mico\JDEQ-CORE-repo\backups\baseline_v2\registry\registry.json
+         Line 25: "id": "AG-003",
+  [HIT] D:\MICO_SSOT\L7-modules\fixture\l7_fixture_harness.py
+         Line 18: AGENT = "AG-003/DeepSeek"
+  [HIT] D:\MICO_SSOT\TREE-L\08_EVIDENCE\RUNTIME\RENOVAL_SUCCESS_20260909-1123.json
+         Line 8: "executed_by":  "AG-003_DEEPSEEK",
+  [HIT] D:\MICO_SSOT\TREE_L\CHANGELOG.md
+         Line 5: - Diajukan oleh: DeepSeek AG-003
+         Line 11: - Diajukan oleh: DeepSeek AG-003
+         Line 17: - Diajukan oleh: DeepSeek AG-003
+         ... (+1 baris lain)
+  [HIT] D:\MICO_SSOT\TREE_L\02_DATA\TANDON_UPDATE\08_EVIDENCE_EVIDENCE_TEMPLATE.json
+         Line 12: "approval": "L0 / DOLA / AG-003",
+  [HIT] D:\MICO_SSOT\TREE_L\03_LOGIKA\vivo_9L_telemetry.json
+         Line 3: "created_by": "DeepSeek AG-003",
+  [HIT] D:\MICO_SSOT\TREE_L\04_APLIKASI\application_manifest_template.json
+         Line 8: "author": "DeepSeek AG-003",
+  [HIT] D:\MICO_SSOT\TREE_L\04_APLIKASI\MEZANINE\MICO_ESTETIKA.json
+         Line 5: "penyusun":  "DeepSeek AG-003 (atas arahan L0)",
+  [HIT] D:\MICO_SSOT\TREE_L\05_PIPELINE\OUTBOX_DISTRIBUSI\Vivo Y28\08_EVIDENCE_EVIDENCE_TEMPLATE.json
+         Line 12: "approval": "L0 / DOLA / AG-003",
+  [HIT] D:\MICO_SSOT\TREE_L\08_EVIDENCE\EVIDENCE_TEMPLATE.json
+         Line 12: "approval": "L0 / DOLA / AG-003",
+  [HIT] D:\MICO_SSOT\TREE_L\08_EVIDENCE\AUDIT\MICO-BAST-PHASE1-2-001.md
+         Line 5: **Penyusun:** DeepSeek AG-003
+         Line 83: | Penyusun | DeepSeek AG-003 | ______________ |
+  [HIT] D:\MICO_SSOT\TREE_L\09_GOVERNANCE\02_ROLE_BOUNDARY.md
+         Line 9: DeepSeek AG-003 (execution)
+  [HIT] D:\MICO_SSOT\TREE_L\09_GOVERNANCE\ADR\ADR-0002-credential-vault-zero-trust.md
+         Line 28: - Author: DeepSeek AG-003 / L0
+  [HIT] D:\MICO_SSOT\TREE_L\12_BACKUP\LOCAL\backup_20260908_124809\ADR-0002-credential-vault-zero-trust.md
+         Line 28: - Author: DeepSeek AG-003 / L0
+  [HIT] D:\MICO_SSOT\TREE_L\12_BACKUP\LOCAL\backup_20260908_124809\CHANGELOG.md
+         Line 5: - Diajukan oleh: DeepSeek AG-003
+         Line 11: - Diajukan oleh: DeepSeek AG-003
+         Line 17: - Diajukan oleh: DeepSeek AG-003
+         ... (+1 baris lain)
+  [HIT] D:\MICO_SSOT\TREE_L\12_BACKUP\LOCAL\backup_20260908_124809\EVIDENCE_TEMPLATE.json
+         Line 12: "approval": "L0 / DOLA / AG-003",
+  [HIT] D:\MICO_SSOT\TREE_L\12_BACKUP\LOCAL\backup_20260908_124909\ADR-0002-credential-vault-zero-trust.md
+         Line 28: - Author: DeepSeek AG-003 / L0
+  [HIT] D:\MICO_SSOT\TREE_L\12_BACKUP\LOCAL\backup_20260908_124909\CHANGELOG.md
+         Line 5: - Diajukan oleh: DeepSeek AG-003
+         Line 11: - Diajukan oleh: DeepSeek AG-003
+         Line 17: - Diajukan oleh: DeepSeek AG-003
+         ... (+1 baris lain)
+  [HIT] D:\MICO_SSOT\TREE_L\12_BACKUP\LOCAL\backup_20260908_124909\EVIDENCE_TEMPLATE.json
+         Line 12: "approval": "L0 / DOLA / AG-003",
+  Subtotal file dengan referensi di lokasi ini: 140
+
+--- Content scan: D:\MICO ---
+  [HIT] D:\MICO\core_registry\README.md
+         Line 2: Dibuat oleh DeepSeek AG-003 berdasarkan Task Card MICO-BUILD-UNIT-001-D.
+  Subtotal file dengan referensi di lokasi ini: 1
+
+--- Content scan: D:\MICO-CORE ---
+  [HIT] D:\MICO-CORE\C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\tests\hermes_cli\test_plugin_api_compat.py
+         Line 1: """Behavior-contract compatibility tests for native Hermes plugins."""
+  [HIT] D:\MICO-CORE\C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\tests\tools\test_mcp_lazy_start.py
+         Line 1: """Behavior-contract tests for lazy MCP server startup (#56832).
+  [HIT] D:\MICO-CORE\C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\tests\hermes_cli\test_plugin_api_compat.py
+         Line 1: """Behavior-contract compatibility tests for native Hermes plugins."""
+  [HIT] D:\MICO-CORE\C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\tests\tools\test_mcp_lazy_start.py
+         Line 1: """Behavior-contract tests for lazy MCP server startup (#56832).
+  [HIT] D:\MICO-CORE\C_DRIVE_MIGRATED\JDEQ_Core\JDEQ-CORE\backups\baseline_v2\registry\registry.json
+         Line 25: "id": "AG-003",
+  [HIT] D:\MICO-CORE\C_DRIVE_MIGRATED\JDEQ_Core\JDEQ-CORE\registry\registry.json
+         Line 25: "id": "AG-003",
+  Subtotal file dengan referensi di lokasi ini: 6
+
+--- Content scan: D:\MICO_PROJECTS ---
+  (tidak ada referensi teks di lokasi ini)
+
+--- Content scan: D:\MICO_ARCHIVE ---
+  [HIT] D:\MICO_ARCHIVE\99_ARCHIVE_AND_TRANSIT\TeraBoxDownload\JDEQ-CORE\backups\baseline_v2\registry\registry.json
+         Line 25: "id": "AG-003",
+  [HIT] D:\MICO_ARCHIVE\99_ARCHIVE_AND_TRANSIT\TeraBoxDownload\JDEQ-CORE\registry\registry.json
+         Line 25: "id": "AG-003",
+  [HIT] D:\MICO_ARCHIVE\BACKUP_CHROME_PROFILES\Profile 1\Sync Extension Settings\cdefhknoicechoepcaplknhahbbjenhc\000003.log
+         Line 4:           &p_a5a84016-3282-4fcd-bcf0-98ec0de6d84d�!{"createdAt":1.786478943407e+12,"id":"a5a84016-3282-4fcd-bcf0-98ec0...
+         Line 5:           &p_a5a84016-3282-4fcd-bcf0-98ec0de6d84d�!{"createdAt":1.786478943407e+12,"id":"a5a84016-3282-4fcd-bcf0-98ec0...
+  Subtotal file dengan referensi di lokasi ini: 3
+
+--- Content scan: D:\MICO_BACKUP ---
+  [HIT] D:\MICO_BACKUP\SSOT\20260910_024254\TREE-L\08_EVIDENCE\RUNTIME\RENOVAL_SUCCESS_20260909-1123.json
+         Line 8: "executed_by":  "AG-003_DEEPSEEK",
+  [HIT] D:\MICO_BACKUP\SSOT\20260910_024254\TREE_L\CHANGELOG.md
+         Line 5: - Diajukan oleh: DeepSeek AG-003
+         Line 11: - Diajukan oleh: DeepSeek AG-003
+         Line 17: - Diajukan oleh: DeepSeek AG-003
+         ... (+1 baris lain)
+  [HIT] D:\MICO_BACKUP\SSOT\20260910_024254\TREE_L\02_DATA\TANDON_UPDATE\08_EVIDENCE_EVIDENCE_TEMPLATE.json
+         Line 12: "approval": "L0 / DOLA / AG-003",
+  [HIT] D:\MICO_BACKUP\SSOT\20260910_024254\TREE_L\03_LOGIKA\vivo_9L_telemetry.json
+         Line 3: "created_by": "DeepSeek AG-003",
+  [HIT] D:\MICO_BACKUP\SSOT\20260910_024254\TREE_L\04_APLIKASI\application_manifest_template.json
+         Line 8: "author": "DeepSeek AG-003",
+  [HIT] D:\MICO_BACKUP\SSOT\20260910_024254\TREE_L\04_APLIKASI\MEZANINE\MICO_ESTETIKA.json
+         Line 5: "penyusun":  "DeepSeek AG-003 (atas arahan L0)",
+  [HIT] D:\MICO_BACKUP\SSOT\20260910_024254\TREE_L\05_PIPELINE\OUTBOX_DISTRIBUSI\Vivo Y28\08_EVIDENCE_EVIDENCE_TEMPLATE.json
+         Line 12: "approval": "L0 / DOLA / AG-003",
+  [HIT] D:\MICO_BACKUP\SSOT\20260910_024254\TREE_L\08_EVIDENCE\EVIDENCE_TEMPLATE.json
+         Line 12: "approval": "L0 / DOLA / AG-003",
+  [HIT] D:\MICO_BACKUP\SSOT\20260910_024254\TREE_L\08_EVIDENCE\AUDIT\MICO-BAST-PHASE1-2-001.md
+         Line 5: **Penyusun:** DeepSeek AG-003
+         Line 83: | Penyusun | DeepSeek AG-003 | ______________ |
+  [HIT] D:\MICO_BACKUP\SSOT\20260910_024254\TREE_L\09_GOVERNANCE\02_ROLE_BOUNDARY.md
+         Line 9: DeepSeek AG-003 (execution)
+  [HIT] D:\MICO_BACKUP\SSOT\20260910_024254\TREE_L\09_GOVERNANCE\ADR\ADR-0002-credential-vault-zero-trust.md
+         Line 28: - Author: DeepSeek AG-003 / L0
+  [HIT] D:\MICO_BACKUP\SSOT\20260910_024254\TREE_L\12_BACKUP\LOCAL\backup_20260908_124809\ADR-0002-credential-vault-zero-trust.md
+         Line 28: - Author: DeepSeek AG-003 / L0
+  [HIT] D:\MICO_BACKUP\SSOT\20260910_024254\TREE_L\12_BACKUP\LOCAL\backup_20260908_124809\CHANGELOG.md
+         Line 5: - Diajukan oleh: DeepSeek AG-003
+         Line 11: - Diajukan oleh: DeepSeek AG-003
+         Line 17: - Diajukan oleh: DeepSeek AG-003
+         ... (+1 baris lain)
+  [HIT] D:\MICO_BACKUP\SSOT\20260910_024254\TREE_L\12_BACKUP\LOCAL\backup_20260908_124809\EVIDENCE_TEMPLATE.json
+         Line 12: "approval": "L0 / DOLA / AG-003",
+  [HIT] D:\MICO_BACKUP\SSOT\20260910_024254\TREE_L\12_BACKUP\LOCAL\backup_20260908_124909\ADR-0002-credential-vault-zero-trust.md
+         Line 28: - Author: DeepSeek AG-003 / L0
+  [HIT] D:\MICO_BACKUP\SSOT\20260910_024254\TREE_L\12_BACKUP\LOCAL\backup_20260908_124909\CHANGELOG.md
+         Line 5: - Diajukan oleh: DeepSeek AG-003
+         Line 11: - Diajukan oleh: DeepSeek AG-003
+         Line 17: - Diajukan oleh: DeepSeek AG-003
+         ... (+1 baris lain)
+  [HIT] D:\MICO_BACKUP\SSOT\20260910_024254\TREE_L\12_BACKUP\LOCAL\backup_20260908_124909\EVIDENCE_TEMPLATE.json
+         Line 12: "approval": "L0 / DOLA / AG-003",
+  [HIT] D:\MICO_BACKUP\SSOT\20260910_024254\TREE_L\99_ARCHIVE\Z83_3YEARS_BACKUP\iswanjp\mico\JDEQ-CORE-repo\backups\baseline_v2\registry\registry.json
+         Line 25: "id": "AG-003",
+  [HIT] D:\MICO_BACKUP\SSOT\20260910_024254\TREE_L\99_ARCHIVE\Z83_3YEARS_BACKUP\iswanjp\mico\JDEQ-CORE-repo\registry\registry.json
+         Line 25: "id": "AG-003",
+  Subtotal file dengan referensi di lokasi ini: 19
+
+--- Content scan: D:\00_JDEQ_SYSTEM_CORE ---
+  (tidak ada referensi teks di lokasi ini)
+
+============================================================
+C. TREE ANALYSIS — TREE_L vs TREE-L vs ROOT MICO_SSOT
+============================================================
+
+--- TREE_L : D:\MICO_SSOT\TREE_L ---
+  Subfolder: 14 · File root: 3
+  Daftar subfolder (1 level):
+    - 01_FISIK  (modified: 2026-09-15 10:21)
+    - 02_DATA  (modified: 2026-09-15 10:21)
+    - 03_LOGIKA  (modified: 2026-09-15 10:21)
+    - 04_APLIKASI  (modified: 2026-09-15 10:21)
+    - 05_PIPELINE  (modified: 2026-09-15 10:21)
+    - 06_RUNTIME  (modified: 2026-09-15 10:21)
+    - 07_INDEX  (modified: 2026-09-15 10:21)
+    - 08_EVIDENCE  (modified: 2026-09-15 10:21)
+    - 09_GOVERNANCE  (modified: 2026-09-15 10:21)
+    - 10_SECURITY  (modified: 2026-09-15 10:21)
+    - 11_OBSERVABILITY  (modified: 2026-09-15 10:21)
+    - 12_BACKUP  (modified: 2026-09-15 10:21)
+    - 13_TEST  (modified: 2026-09-15 10:21)
+    - 99_ARCHIVE  (modified: 2026-09-15 10:21)
+  Daftar file (1 level):
+    - 00_MADINA_MANIFESTO.md  (768 bytes)
+    - CHANGELOG.md  (911 bytes)
+    - INDEKS_MASTER.md  (1214 bytes)
+
+--- TREE-L : D:\MICO_SSOT\TREE-L ---
+  Subfolder: 1 · File root: 0
+  Daftar subfolder (1 level):
+    - 08_EVIDENCE  (modified: 2026-09-15 10:21)
+  Daftar file (1 level):
+
+--- ROOT : D:\MICO_SSOT ---
+  Subfolder: 16 · File root: 8
+  Daftar subfolder (1 level):
+    - .git  (modified: 2026-09-16 04:24)
+    - 00_QUARANTINE  (modified: 2026-09-15 10:39)
+    - 02_DATA  (modified: 2026-09-15 10:39)
+    - 06_APLIKASI  (modified: 2026-09-15 10:39)
+    - 08_EVIDENCE  (modified: 2026-09-16 06:48)
+    - 09_GOVERNANCE  (modified: 2026-09-16 04:12)
+    - 09_INDEX  (modified: 2026-09-14 01:28)
+    - 12_BACKUP  (modified: 2026-09-16 00:13)
+    - 99_ARCHIVE  (modified: 2026-09-15 10:39)
+    - L3-backups  (modified: 2026-09-13 19:04)
+    - L3-modules  (modified: 2026-09-15 10:39)
+    - L5-modules  (modified: 2026-09-14 02:37)
+    - L6-modules  (modified: 2026-09-14 04:00)
+    - L7-modules  (modified: 2026-09-14 04:35)
+    - TREE_L  (modified: 2026-09-15 10:21)
+    - TREE-L  (modified: 2026-09-15 10:21)
+  Daftar file (1 level):
+    - .gitignore  (1010 bytes)
+    - BASELINE_HASHES.json  (194 bytes)
+    - capture_sheet_email.py  (3828 bytes)
+    - capture_sheet_store.py  (2415 bytes)
+    - MANUAL_BOOK_MICO_JDEQ.md  (1170 bytes)
+    - test_suite_final_v2.ps1  (2446 bytes)
+    - test_tarik_sheet.py  (495 bytes)
+    - UU_MICO_JDEQ.md  (686 bytes)
+
+--- Perbandingan nama subfolder TREE_L vs TREE-L ---
+  Hanya di TREE_L  : 01_FISIK, 02_DATA, 03_LOGIKA, 04_APLIKASI, 05_PIPELINE, 06_RUNTIME, 07_INDEX, 09_GOVERNANCE, 10_SECURITY, 11_OBSERVABILITY, 12_BACKUP, 13_TEST, 99_ARCHIVE
+  Hanya di TREE-L  : 
+  Sama di keduanya : 08_EVIDENCE
+
+============================================================
+D. MICO* CLASSIFICATION — 16 folder di D:\
+============================================================
+Total folder MICO*: 16
+
+--- MICO ---
+  Path     : D:\MICO
+  Modified : 07/09/2026 3:32:40
+  Subfolder (max 15): core_registry, database, EVIDENCE, SCRIPTS
+  File di root      : 0
+  .git?     : False
+  08_EVID?  : False
+  09_GOV?   : False
+
+--- MICO_ARCHIVE ---
+  Path     : D:\MICO_ARCHIVE
+  Modified : 07/09/2026 12:13:10
+  Subfolder (max 15): _MOVE_FROM_GD, 02_DEV_ENVIRONMENT, 03_DOCUMENTS_PERSONAL, 04_DEVICE_BACKUPS, 98_ENTERTAINMENT, 99_ARCHIVE_AND_TRANSIT, BACKUP_CHROME_PROFILES, BACKUP_OTOMATIS, ISO, JDEQ_Tools, MICO_ARCHIVE_G, OFFLOAD_SYSTEM_C, TEMP, TeraBoxDownload, USER_DATA_ARCHIVE
+  File di root      : 16
+  .git?     : False
+  08_EVID?  : False
+  09_GOV?   : False
+
+--- MICO_ARCHIVE_G ---
+  Path     : D:\MICO_ARCHIVE_G
+  Modified : 07/09/2026 2:54:20
+  Subfolder (max 15): 
+  File di root      : 0
+  .git?     : False
+  08_EVID?  : False
+  09_GOV?   : False
+
+--- MICO_AUTOMATION ---
+  Path     : D:\MICO_AUTOMATION
+  Modified : 26/08/2026 18:46:31
+  Subfolder (max 15): LOG
+  File di root      : 0
+  .git?     : False
+  08_EVID?  : False
+  09_GOV?   : False
+
+--- MICO_BACKUP ---
+  Path     : D:\MICO_BACKUP
+  Modified : 10/09/2026 2:42:54
+  Subfolder (max 15): SSOT
+  File di root      : 0
+  .git?     : False
+  08_EVID?  : False
+  09_GOV?   : False
+
+--- MICO_DROPZONE_EDUKASI ---
+  Path     : D:\MICO_DROPZONE_EDUKASI
+  Modified : 07/09/2026 22:46:24
+  Subfolder (max 15): 
+  File di root      : 10
+  .git?     : False
+  08_EVID?  : False
+  09_GOV?   : False
+
+--- MICO_EVIDENCE ---
+  Path     : D:\MICO_EVIDENCE
+  Modified : 07/09/2026 2:38:07
+  Subfolder (max 15): 
+  File di root      : 0
+  .git?     : False
+  08_EVID?  : False
+  09_GOV?   : False
+
+--- MICO_PORTABLE_ENGINE ---
+  Path     : D:\MICO_PORTABLE_ENGINE
+  Modified : 24/08/2026 8:30:08
+  Subfolder (max 15): 
+  File di root      : 1
+  .git?     : False
+  08_EVID?  : False
+  09_GOV?   : False
+
+--- MICO_PROJECTS ---
+  Path     : D:\MICO_PROJECTS
+  Modified : 07/09/2026 2:38:07
+  Subfolder (max 15): 
+  File di root      : 0
+  .git?     : False
+  08_EVID?  : False
+  09_GOV?   : False
+
+--- MICO_RECOVERY ---
+  Path     : D:\MICO_RECOVERY
+  Modified : 07/09/2026 2:53:13
+  Subfolder (max 15): backup_drive_e
+  File di root      : 1
+  .git?     : False
+  08_EVID?  : False
+  09_GOV?   : False
+
+--- MICO_RUNTIME ---
+  Path     : D:\MICO_RUNTIME
+  Modified : 07/09/2026 2:38:07
+  Subfolder (max 15): 
+  File di root      : 0
+  .git?     : False
+  08_EVID?  : False
+  09_GOV?   : False
+
+--- MICO_SSOT ---
+  Path     : D:\MICO_SSOT
+  Modified : 15/09/2026 19:20:25
+  Subfolder (max 15): .git, 00_QUARANTINE, 02_DATA, 06_APLIKASI, 08_EVIDENCE, 09_GOVERNANCE, 09_INDEX, 12_BACKUP, 99_ARCHIVE, L3-backups, L3-modules, L5-modules, L6-modules, L7-modules, TREE_L
+  File di root      : 8
+  .git?     : True
+  08_EVID?  : True
+  09_GOV?   : True
+
+--- MICO-CORE ---
+  Path     : D:\MICO-CORE
+  Modified : 01/09/2026 23:27:30
+  Subfolder (max 15): C_DRIVE_MIGRATED, EVIDENCE, OFFLOAD, Z83
+  File di root      : 0
+  .git?     : False
+  08_EVID?  : False
+  09_GOV?   : False
+
+--- MICO-DATA ---
+  Path     : D:\MICO-DATA
+  Modified : 02/09/2026 1:24:03
+  Subfolder (max 15): 01_media_ai, 02_technical_engineering, 03_chat_logs, 04_personal_family, 05_education_learning
+  File di root      : 0
+  .git?     : False
+  08_EVID?  : False
+  09_GOV?   : False
+
+--- MICO-EVIDENCE ---
+  Path     : D:\MICO-EVIDENCE
+  Modified : 03/09/2026 5:09:45
+  Subfolder (max 15): DRIVE_D_PHASE0, DRIVE_D_PHASE2, DRIVE_D_PHASE3
+  File di root      : 7
+  .git?     : False
+  08_EVID?  : False
+  09_GOV?   : False
+
+--- MICO-QUEUE ---
+  Path     : D:\MICO-QUEUE
+  Modified : 02/09/2026 1:24:03
+  Subfolder (max 15): 01_inbox_jarvis, 02_outbox_jarvis, 03_inbox_kimi, 04_outbox_kimi, 05_inbox_hermes, 06_outbox_hermes, 07_archive_dola
+  File di root      : 0
+  .git?     : False
+  08_EVID?  : False
+  09_GOV?   : False
+
+
+============================================================
+E. RINGKASAN & GAP
+============================================================
+
+A. Behavior Contract ditemukan di:
+   - D:\MICO_SSOT\08_EVIDENCE\IMPORT-VIVO-Y28\20260916-0545\Documents\Documents\MICO_Vault\MICO_Arsip_Umum\📡 PESAN MESIN-KE-MESIN DEEPSEEK → JARVIS GEMINI GATEWAY.txt
+   - D:\MICO_SSOT\08_EVIDENCE\IMPORT-VIVO-Y28\20260916-0545\Documents\Documents\MICO_Vault\MICO_Arsip_Umum\BLUEPRINT EKSEKUSI RESMI — DEEPSEEK EXECUTOR.txt
+   - D:\MICO_SSOT\08_EVIDENCE\IMPORT-VIVO-Y28\20260916-0545\Documents\Documents\MICO_Vault\MICO_Arsip_Umum\Saya baca tuntas semua output ChatGPT + DeepSeek. Sekarang saya ....txt
+   - D:\MICO_SSOT\08_EVIDENCE\IMPORT-VIVO-Y28\20260916-0547-FULL\Documents\Documents\MICO_Vault\MICO_Arsip_Umum\📡 PESAN MESIN-KE-MESIN DEEPSEEK → JARVIS GEMINI GATEWAY.txt
+   - D:\MICO_SSOT\08_EVIDENCE\IMPORT-VIVO-Y28\20260916-0547-FULL\Documents\Documents\MICO_Vault\MICO_Arsip_Umum\BLUEPRINT EKSEKUSI RESMI — DEEPSEEK EXECUTOR.txt
+   - D:\MICO_SSOT\08_EVIDENCE\IMPORT-VIVO-Y28\20260916-0547-FULL\Documents\Documents\MICO_Vault\MICO_Arsip_Umum\Saya baca tuntas semua output ChatGPT + DeepSeek. Sekarang saya ....txt
+   - D:\MICO_SSOT\09_GOVERNANCE\AGENT_ERRORS\AG-003_ERRORS.md
+   - D:\MICO_SSOT\09_GOVERNANCE\P1-PLANNING\MICO-P1-BEHAVIOR-CONTRACT.md
+   - D:\MICO_SSOT\09_GOVERNANCE\P1-PLANNING\MICO-P1-BEHAVIOR-CONTRACT.md.sha256
+   - D:\MICO-CORE\C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\tests\agent\test_deepseek_anthropic_thinking.py
+   - D:\MICO-CORE\C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\tests\plugins\model_providers\test_deepseek_profile.py
+   - D:\MICO-CORE\C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\tests\run_agent\test_deepseek_reasoning_content_echo.py
+   - D:\MICO-CORE\C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\tests\run_agent\test_deepseek_v4_thinking_live.py
+   - D:\MICO-CORE\C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\tests\agent\test_deepseek_anthropic_thinking.py
+   - D:\MICO-CORE\C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\tests\plugins\model_providers\test_deepseek_profile.py
+   - D:\MICO-CORE\C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\tests\run_agent\test_deepseek_reasoning_content_echo.py
+   - D:\MICO-CORE\C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\tests\run_agent\test_deepseek_v4_thinking_live.py
+   - D:\MICO-CORE\C_DRIVE_MIGRATED\MICO\VIVO_VAULT_BACKUP\MICO_Vault\MICO_Arsip_Umum\📡 PESAN MESIN-KE-MESIN DEEPSEEK → JARVIS GEMINI GATEWAY.txt
+   - D:\MICO-CORE\C_DRIVE_MIGRATED\MICO\VIVO_VAULT_BACKUP\MICO_Vault\MICO_Arsip_Umum\BLUEPRINT EKSEKUSI RESMI — DEEPSEEK EXECUTOR.txt
+   - D:\MICO-CORE\C_DRIVE_MIGRATED\MICO\VIVO_VAULT_BACKUP\MICO_Vault\MICO_Arsip_Umum\Saya baca tuntas semua output ChatGPT + DeepSeek. Sekarang saya ....txt
+   - D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20251119_RETRY\Internal_Storage\sdcard\AI_Models\llm\llama.cpp\llama.cpp\models\ggml-vocab-deepseek-coder.gguf
+   - D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20251119_RETRY\Internal_Storage\sdcard\AI_Models\llm\llama.cpp\llama.cpp\models\ggml-vocab-deepseek-coder.gguf.inp
+   - D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20251119_RETRY\Internal_Storage\sdcard\AI_Models\llm\llama.cpp\llama.cpp\models\ggml-vocab-deepseek-coder.gguf.out
+   - D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20251119_RETRY\Internal_Storage\sdcard\AI_Models\llm\llama.cpp\llama.cpp\models\ggml-vocab-deepseek-llm.gguf
+   - D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20251119_RETRY\Internal_Storage\sdcard\AI_Models\llm\llama.cpp\llama.cpp\models\ggml-vocab-deepseek-llm.gguf.inp
+   - D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20251119_RETRY\Internal_Storage\sdcard\AI_Models\llm\llama.cpp\llama.cpp\models\ggml-vocab-deepseek-llm.gguf.out
+   - D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20251119_RETRY\Internal_Storage\sdcard\AI_Models\llm\llama.cpp\llama.cpp\models\templates\deepseek-ai-DeepSeek-R1-Distill-Llama-8B.jinja
+   - D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20251119_RETRY\Internal_Storage\sdcard\AI_Models\llm\llama.cpp\llama.cpp\models\templates\deepseek-ai-DeepSeek-R1-Distill-Qwen-32B.jinja
+   - D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20251119_RETRY\Internal_Storage\sdcard\AI_Models\llm\llama.cpp\llama.cpp\models\templates\deepseek-ai-DeepSeek-V3.1.jinja
+   - D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20251119_RETRY\Internal_Storage\sdcard\AI_Models\llm\llama.cpp\llama.cpp\models\templates\llama-cpp-deepseek-r1.jinja
+   - D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20251119_RETRY\Internal_Storage\sdcard\AI_Models\llm\llama.cpp\llama.cpp\src\models\deepseek.cpp
+   - D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20251119_RETRY\Internal_Storage\sdcard\AI_Models\llm\llama.cpp\llama.cpp\src\models\deepseek2.cpp
+   - D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20251119_RETRY\Internal_Storage\sdcard\AI_Models\llm\llama.cpp\models\ggml-vocab-deepseek-coder.gguf
+   - D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20251119_RETRY\Internal_Storage\sdcard\AI_Models\llm\llama.cpp\models\ggml-vocab-deepseek-coder.gguf.inp
+   - D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20251119_RETRY\Internal_Storage\sdcard\AI_Models\llm\llama.cpp\models\ggml-vocab-deepseek-coder.gguf.out
+   - D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20251119_RETRY\Internal_Storage\sdcard\AI_Models\llm\llama.cpp\models\ggml-vocab-deepseek-llm.gguf
+   - D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20251119_RETRY\Internal_Storage\sdcard\AI_Models\llm\llama.cpp\models\ggml-vocab-deepseek-llm.gguf.inp
+   - D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20251119_RETRY\Internal_Storage\sdcard\AI_Models\llm\llama.cpp\models\ggml-vocab-deepseek-llm.gguf.out
+   - D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20251119_RETRY\Internal_Storage\sdcard\AI_Models\llm\llama.cpp\models\templates\deepseek-ai-DeepSeek-R1-Distill-Llama-8B.jinja
+   - D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20251119_RETRY\Internal_Storage\sdcard\AI_Models\llm\llama.cpp\models\templates\deepseek-ai-DeepSeek-R1-Distill-Qwen-32B.jinja
+   - D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20251119_RETRY\Internal_Storage\sdcard\AI_Models\llm\llama.cpp\models\templates\deepseek-ai-DeepSeek-V3.1.jinja
+   - D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20251119_RETRY\Internal_Storage\sdcard\AI_Models\llm\llama.cpp\models\templates\llama-cpp-deepseek-r1.jinja
+   - D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20251119_RETRY\Internal_Storage\sdcard\AI_Models\llm\llama.cpp\src\models\deepseek.cpp
+   - D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20251119_RETRY\Internal_Storage\sdcard\AI_Models\llm\llama.cpp\src\models\deepseek2.cpp
+   - D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20260101\sdcard\AI_Models\llm\llama.cpp\llama.cpp\models\ggml-vocab-deepseek-coder.gguf
+   - D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20260101\sdcard\AI_Models\llm\llama.cpp\llama.cpp\models\ggml-vocab-deepseek-coder.gguf.inp
+   - D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20260101\sdcard\AI_Models\llm\llama.cpp\llama.cpp\models\ggml-vocab-deepseek-coder.gguf.out
+   - D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20260101\sdcard\AI_Models\llm\llama.cpp\llama.cpp\models\ggml-vocab-deepseek-llm.gguf
+   - D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20260101\sdcard\AI_Models\llm\llama.cpp\llama.cpp\models\ggml-vocab-deepseek-llm.gguf.inp
+   - D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20260101\sdcard\AI_Models\llm\llama.cpp\llama.cpp\models\ggml-vocab-deepseek-llm.gguf.out
+   - D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20260101\sdcard\AI_Models\llm\llama.cpp\llama.cpp\models\templates\deepseek-ai-DeepSeek-R1-Distill-Llama-8B.jinja
+   - D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20260101\sdcard\AI_Models\llm\llama.cpp\llama.cpp\models\templates\deepseek-ai-DeepSeek-R1-Distill-Qwen-32B.jinja
+   - D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20260101\sdcard\AI_Models\llm\llama.cpp\llama.cpp\models\templates\deepseek-ai-DeepSeek-V3.1.jinja
+   - D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20260101\sdcard\AI_Models\llm\llama.cpp\llama.cpp\models\templates\llama-cpp-deepseek-r1.jinja
+   - D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20260101\sdcard\AI_Models\llm\llama.cpp\llama.cpp\src\models\deepseek.cpp
+   - D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20260101\sdcard\AI_Models\llm\llama.cpp\llama.cpp\src\models\deepseek2.cpp
+   - D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20260101\sdcard\AI_Models\llm\llama.cpp\models\ggml-vocab-deepseek-coder.gguf
+   - D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20260101\sdcard\AI_Models\llm\llama.cpp\models\ggml-vocab-deepseek-coder.gguf.inp
+   - D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20260101\sdcard\AI_Models\llm\llama.cpp\models\ggml-vocab-deepseek-coder.gguf.out
+   - D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20260101\sdcard\AI_Models\llm\llama.cpp\models\ggml-vocab-deepseek-llm.gguf
+   - D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20260101\sdcard\AI_Models\llm\llama.cpp\models\ggml-vocab-deepseek-llm.gguf.inp
+   - D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20260101\sdcard\AI_Models\llm\llama.cpp\models\ggml-vocab-deepseek-llm.gguf.out
+   - D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20260101\sdcard\AI_Models\llm\llama.cpp\models\templates\deepseek-ai-DeepSeek-R1-Distill-Llama-8B.jinja
+   - D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20260101\sdcard\AI_Models\llm\llama.cpp\models\templates\deepseek-ai-DeepSeek-R1-Distill-Qwen-32B.jinja
+   - D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20260101\sdcard\AI_Models\llm\llama.cpp\models\templates\deepseek-ai-DeepSeek-V3.1.jinja
+   - D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20260101\sdcard\AI_Models\llm\llama.cpp\models\templates\llama-cpp-deepseek-r1.jinja
+   - D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20260101\sdcard\AI_Models\llm\llama.cpp\src\models\deepseek.cpp
+   - D:\MICO_ARCHIVE\04_DEVICE_BACKUPS\BACKUP_INFINIX_20260101\sdcard\AI_Models\llm\llama.cpp\src\models\deepseek2.cpp
+   - D:\MICO_ARCHIVE\99_ARCHIVE_AND_TRANSIT\TESERACXT_OTAK_V21\PHI3_RUNTIME_V21\models\ggml-vocab-deepseek-coder.gguf
+   - D:\MICO_ARCHIVE\99_ARCHIVE_AND_TRANSIT\TESERACXT_OTAK_V21\PHI3_RUNTIME_V21\models\ggml-vocab-deepseek-coder.gguf.inp
+   - D:\MICO_ARCHIVE\99_ARCHIVE_AND_TRANSIT\TESERACXT_OTAK_V21\PHI3_RUNTIME_V21\models\ggml-vocab-deepseek-coder.gguf.out
+   - D:\MICO_ARCHIVE\99_ARCHIVE_AND_TRANSIT\TESERACXT_OTAK_V21\PHI3_RUNTIME_V21\models\ggml-vocab-deepseek-llm.gguf
+   - D:\MICO_ARCHIVE\99_ARCHIVE_AND_TRANSIT\TESERACXT_OTAK_V21\PHI3_RUNTIME_V21\models\ggml-vocab-deepseek-llm.gguf.inp
+   - D:\MICO_ARCHIVE\99_ARCHIVE_AND_TRANSIT\TESERACXT_OTAK_V21\PHI3_RUNTIME_V21\models\ggml-vocab-deepseek-llm.gguf.out
+   - D:\MICO_ARCHIVE\99_ARCHIVE_AND_TRANSIT\TESERACXT_OTAK_V21\PHI3_RUNTIME_V21\models\templates\deepseek-ai-DeepSeek-R1-Distill-Llama-8B.jinja
+   - D:\MICO_ARCHIVE\99_ARCHIVE_AND_TRANSIT\TESERACXT_OTAK_V21\PHI3_RUNTIME_V21\models\templates\deepseek-ai-DeepSeek-R1-Distill-Qwen-32B.jinja
+   - D:\MICO_ARCHIVE\99_ARCHIVE_AND_TRANSIT\TESERACXT_OTAK_V21\PHI3_RUNTIME_V21\models\templates\deepseek-ai-DeepSeek-V3.1.jinja
+   - D:\MICO_ARCHIVE\99_ARCHIVE_AND_TRANSIT\TESERACXT_OTAK_V21\PHI3_RUNTIME_V21\models\templates\llama-cpp-deepseek-r1.jinja
+   - D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\KURCACI_ENGINE_V21\ai-orchestrator\bin\llama.cpp\models\ggml-vocab-deepseek-coder.gguf
+   - D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\KURCACI_ENGINE_V21\ai-orchestrator\bin\llama.cpp\models\ggml-vocab-deepseek-coder.gguf.inp
+   - D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\KURCACI_ENGINE_V21\ai-orchestrator\bin\llama.cpp\models\ggml-vocab-deepseek-coder.gguf.out
+   - D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\KURCACI_ENGINE_V21\ai-orchestrator\bin\llama.cpp\models\ggml-vocab-deepseek-llm.gguf
+   - D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\KURCACI_ENGINE_V21\ai-orchestrator\bin\llama.cpp\models\ggml-vocab-deepseek-llm.gguf.inp
+   - D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\KURCACI_ENGINE_V21\ai-orchestrator\bin\llama.cpp\models\ggml-vocab-deepseek-llm.gguf.out
+   - D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\KURCACI_ENGINE_V21\ai-orchestrator\bin\llama.cpp\models\templates\deepseek-ai-DeepSeek-R1-Distill-Llama-8B.jinja
+   - D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\KURCACI_ENGINE_V21\ai-orchestrator\bin\llama.cpp\models\templates\deepseek-ai-DeepSeek-R1-Distill-Qwen-32B.jinja
+   - D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\KURCACI_ENGINE_V21\ai-orchestrator\bin\llama.cpp\models\templates\deepseek-ai-DeepSeek-V3.1.jinja
+   - D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\KURCACI_ENGINE_V21\ai-orchestrator\bin\llama.cpp\models\templates\llama-cpp-deepseek-r1.jinja
+   - D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\KURCACI_ENGINE_V21\bin\llama.cpp\models\ggml-vocab-deepseek-coder.gguf
+   - D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\KURCACI_ENGINE_V21\bin\llama.cpp\models\ggml-vocab-deepseek-coder.gguf.inp
+   - D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\KURCACI_ENGINE_V21\bin\llama.cpp\models\ggml-vocab-deepseek-coder.gguf.out
+   - D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\KURCACI_ENGINE_V21\bin\llama.cpp\models\ggml-vocab-deepseek-llm.gguf
+   - D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\KURCACI_ENGINE_V21\bin\llama.cpp\models\ggml-vocab-deepseek-llm.gguf.inp
+   - D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\KURCACI_ENGINE_V21\bin\llama.cpp\models\ggml-vocab-deepseek-llm.gguf.out
+   - D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\KURCACI_ENGINE_V21\bin\llama.cpp\models\templates\deepseek-ai-DeepSeek-R1-Distill-Llama-8B.jinja
+   - D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\KURCACI_ENGINE_V21\bin\llama.cpp\models\templates\deepseek-ai-DeepSeek-R1-Distill-Qwen-32B.jinja
+   - D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\KURCACI_ENGINE_V21\bin\llama.cpp\models\templates\deepseek-ai-DeepSeek-V3.1.jinja
+   - D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\KURCACI_ENGINE_V21\bin\llama.cpp\models\templates\llama-cpp-deepseek-r1.jinja
+   - D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\PHI3_RUNTIME_V21\models\ggml-vocab-deepseek-coder.gguf
+   - D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\PHI3_RUNTIME_V21\models\ggml-vocab-deepseek-coder.gguf.inp
+   - D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\PHI3_RUNTIME_V21\models\ggml-vocab-deepseek-coder.gguf.out
+   - D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\PHI3_RUNTIME_V21\models\ggml-vocab-deepseek-llm.gguf
+   - D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\PHI3_RUNTIME_V21\models\ggml-vocab-deepseek-llm.gguf.inp
+   - D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\PHI3_RUNTIME_V21\models\ggml-vocab-deepseek-llm.gguf.out
+   - D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\PHI3_RUNTIME_V21\models\templates\deepseek-ai-DeepSeek-R1-Distill-Llama-8B.jinja
+   - D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\PHI3_RUNTIME_V21\models\templates\deepseek-ai-DeepSeek-R1-Distill-Qwen-32B.jinja
+   - D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\PHI3_RUNTIME_V21\models\templates\deepseek-ai-DeepSeek-V3.1.jinja
+   - D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\KURCACI_CLUSTER_V21\KURCACI_01\PHI3_RUNTIME_V21\models\templates\llama-cpp-deepseek-r1.jinja
+   - D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\TESERACXT_OTAK_V21\KURCACI_ENGINE_V21\ai-orchestrator\bin\llama.cpp\models\ggml-vocab-deepseek-coder.gguf
+   - D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\TESERACXT_OTAK_V21\KURCACI_ENGINE_V21\ai-orchestrator\bin\llama.cpp\models\ggml-vocab-deepseek-coder.gguf.inp
+   - D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\TESERACXT_OTAK_V21\KURCACI_ENGINE_V21\ai-orchestrator\bin\llama.cpp\models\ggml-vocab-deepseek-coder.gguf.out
+   - D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\TESERACXT_OTAK_V21\KURCACI_ENGINE_V21\ai-orchestrator\bin\llama.cpp\models\ggml-vocab-deepseek-llm.gguf
+   - D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\TESERACXT_OTAK_V21\KURCACI_ENGINE_V21\ai-orchestrator\bin\llama.cpp\models\ggml-vocab-deepseek-llm.gguf.inp
+   - D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\TESERACXT_OTAK_V21\KURCACI_ENGINE_V21\ai-orchestrator\bin\llama.cpp\models\ggml-vocab-deepseek-llm.gguf.out
+   - D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\TESERACXT_OTAK_V21\KURCACI_ENGINE_V21\ai-orchestrator\bin\llama.cpp\models\templates\deepseek-ai-DeepSeek-R1-Distill-Llama-8B.jinja
+   - D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\TESERACXT_OTAK_V21\KURCACI_ENGINE_V21\ai-orchestrator\bin\llama.cpp\models\templates\deepseek-ai-DeepSeek-R1-Distill-Qwen-32B.jinja
+   - D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\TESERACXT_OTAK_V21\KURCACI_ENGINE_V21\ai-orchestrator\bin\llama.cpp\models\templates\deepseek-ai-DeepSeek-V3.1.jinja
+   - D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\TESERACXT_OTAK_V21\KURCACI_ENGINE_V21\ai-orchestrator\bin\llama.cpp\models\templates\llama-cpp-deepseek-r1.jinja
+   - D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\TESERACXT_OTAK_V21\KURCACI_ENGINE_V21\bin\llama.cpp\models\ggml-vocab-deepseek-coder.gguf
+   - D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\TESERACXT_OTAK_V21\KURCACI_ENGINE_V21\bin\llama.cpp\models\ggml-vocab-deepseek-coder.gguf.inp
+   - D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\TESERACXT_OTAK_V21\KURCACI_ENGINE_V21\bin\llama.cpp\models\ggml-vocab-deepseek-coder.gguf.out
+   - D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\TESERACXT_OTAK_V21\KURCACI_ENGINE_V21\bin\llama.cpp\models\ggml-vocab-deepseek-llm.gguf
+   - D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\TESERACXT_OTAK_V21\KURCACI_ENGINE_V21\bin\llama.cpp\models\ggml-vocab-deepseek-llm.gguf.inp
+   - D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\TESERACXT_OTAK_V21\KURCACI_ENGINE_V21\bin\llama.cpp\models\ggml-vocab-deepseek-llm.gguf.out
+   - D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\TESERACXT_OTAK_V21\KURCACI_ENGINE_V21\bin\llama.cpp\models\templates\deepseek-ai-DeepSeek-R1-Distill-Llama-8B.jinja
+   - D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\TESERACXT_OTAK_V21\KURCACI_ENGINE_V21\bin\llama.cpp\models\templates\deepseek-ai-DeepSeek-R1-Distill-Qwen-32B.jinja
+   - D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\TESERACXT_OTAK_V21\KURCACI_ENGINE_V21\bin\llama.cpp\models\templates\deepseek-ai-DeepSeek-V3.1.jinja
+   - D:\00_JDEQ_SYSTEM_CORE\JDE_RESOURCES\02_ILMU\TESERACXT_OTAK_V21\KURCACI_ENGINE_V21\bin\llama.cpp\models\templates\llama-cpp-deepseek-r1.jinja
+
+B. Jalur SSOT yang dinyatakan di Behavior Contract:
+   D:\MICO_SSOT\09_GOVERNANCE\DOLA\L6-AG-CONTRACTS
+   Status: False
+
+C. Catatan: verifikasi ini READ-ONLY. Tidak ada perubahan.
+
+=== SELESAI ===
+File bukti: D:\MICO_SSOT\08_EVIDENCE\MICO-P2-STRUCTURE-CHECK-002-20260916-064828.txt

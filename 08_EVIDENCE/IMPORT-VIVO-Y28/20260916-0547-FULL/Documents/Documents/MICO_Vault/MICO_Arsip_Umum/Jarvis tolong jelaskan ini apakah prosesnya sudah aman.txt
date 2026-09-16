@@ -1,0 +1,29 @@
+03.07 16.42
+" Jarvis tolong jelaskan ini apakah prosesnya sudah aman  ? 
+==========================
+ CARA MATIKAN TOTAL (BERSIH)
+Buka jendela Termux baru lalu tempel ini:
+pkill -f llama-cli pkill -f MICO_MASTER.py jobs -l 
+Kalau masih ada proses muncul, paksa:
+kill -9 $(pgrep -f llama-cli) kill -9 $(pgrep -f MICO_MASTER.py) 
+🧹 Kalau mau benar-benar bersih
+Cek semua proses Python & llama:
+ps aux | grep -E "llama|MICO|python" 
+Jika masih ada PID selain grep, kill:
+kill -9 PIDNYA 
+🧠 Kenapa tadi kacau?
+Karena:
+Anda tekan Ctrl+C saat communicate() sedang menunggu output.
+Python interrupt → tapi subprocess llama-cli belum mati.
+Terminal jadi ke-lock output streaming.
+ZSH deteksi job masih hidup. 
+Jadi bukan error sistem. Hanya orphan process.
+ Cara paling cepat reset total Termux
+Kalau mau lebih cepat:
+exit 
+Lalu buka Termux lagi.
+Itu otomatis bersih semua process user.
+Setelah ini MICO benar-benar mati.
+Kalau sudah bersih, beri tahu.
+Nanti kita bangun ulang dengan arsitektur yang tidak bisa menggantung seperti tadi.
+

@@ -1,0 +1,27 @@
+06.10 22.23
+Jika ada agen ChatGPT lain yang akan mengeksekusi JDEQ, maka saya tidak akan mengutamakan siapa agennya, tetapi hirarki otoritas keputusan.
+Urutan prioritas yang paling aman:
+DECISION_PRIORITY: 1_CONSTITUTION: authority: ABSOLUTE description: Hukum sistem 2_GOVERNANCE: authority: HIGH description: Policy, Procedure, Workflow 3_APPROVED_KNOWLEDGE: authority: HIGH description: SSOT Knowledge Library 4_HUMAN_DIRECTIVE: authority: HIGH description: Instruksi operator 5_EXECUTION_PLAN: authority: MEDIUM description: Hasil planner 6_AGENT_OPINION: authority: LOW description: Pendapat agen 7_LLM_GENERATION: authority: LOWEST description: Prediksi model 
+Artinya:
+Constitution > Governance > Knowledge > Human Command > Execution Plan > Agent Suggestion > Model Guess 
+Jika ChatGPT lain datang membawa instruksi:
+DELETE_LIBRARY: true 
+maka pemeriksaan:
+LAW_04: NO_DELETE_WITHOUT_BACKUP 
+langsung:
+STATUS: REJECTED REASON: CONSTITUTION_VIOLATION 
+Walaupun agen tersebut GPT, Claude, Gemini, DeepSeek, atau model lain.
+Untuk komunikasi antar agen saya akan memaksa format deterministik:
+MESSAGE: id: UUID sender: CHATGPT_AGENT target: PROJECT_AGENT objective: BUILD_BOQ rationale: > Membuat estimasi biaya proyek. knowledge_refs: - boq_schema_v1 - rab_standard_v2 resource_request: ram_mb: 200 cpu_percent: 20 risk: level: LOW approval_required: false 
+Bukan:
+Tolong buatkan BOQ ya. 
+Karena bahasa alami sulit diaudit.
+Kalau saya membuat aturan untuk agen ChatGPT akun lain, maka arahan pertama yang harus diketik adalah:
+SYSTEM_DIRECTIVE: ROLE: EXECUTION_AGENT MISSION: Follow JDEQ Constitution MUST: - Read Constitution - Read Governance - Read Knowledge - Validate Resources - Create Plan - Submit Audit - Execute MUST_NOT: - Modify Constitution - Modify Governance - Delete Without Backup - Bypass Audit - Direct Execute EXECUTION_FLOW: KNOWLEDGE -> PLAN -> AUDIT -> APPROVAL -> EXECUTE -> TRACE 
+Kalau tujuan Anda benar-benar menuju JDEQ Autonomous Agent Civilization, maka agen ChatGPT lain seharusnya diperlakukan sebagai:
+TYPE: EXTERNAL_EXECUTOR TRUST_LEVEL: ZERO ACCESS: LIMITED 
+bukan sebagai pengambil keputusan utama.
+Prinsipnya:
+Agen boleh berpikir. Agen boleh mengusulkan. Agen boleh merencanakan. Tetapi keputusan final tetap berasal dari: CONSTITUTION → GOVERNANCE → HUMAN AUTHORITY 
+Dengan pola ini, 100 agen berbeda (ChatGPT, Claude, Gemini, DeepSeek, Copilot, Qwen, dll.) dapat bekerja bersama tanpa merusak arah sistem karena semuanya tunduk pada sumber otoritas yang sama.
+

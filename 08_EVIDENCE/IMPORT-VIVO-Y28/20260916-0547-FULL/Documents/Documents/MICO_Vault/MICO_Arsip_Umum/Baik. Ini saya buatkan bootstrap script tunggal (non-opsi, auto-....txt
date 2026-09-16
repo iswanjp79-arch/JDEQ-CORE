@@ -1,0 +1,53 @@
+06.11 13.13
+Baik. Ini saya buatkan bootstrap script tunggal (non-opsi, auto-recovery) yang memastikan setiap kali Termux dibuka, sistem selalu kembali ke state JDEQ yang bersih, konsisten, dan anti-duplikasi environment.
+🧭 BOOTSTRAP TERMUX JDEQ AUTO-RESET SYSTEM
+ TUJUAN
+Setiap Termux start:
+kembali ke ~/JDEQ
+hentikan semua env Python aktif
+reset PATH runtime
+validasi hanya 1 struktur JDEQ
+siapkan runtime tunggal (tanpa duplikasi) 
+⚙️ 1. FILE UTAMA BOOTSTRAP
+Buat file ini:
+nano ~/.bashrc 
+Tambahkan DI PALING BAWAH:
+# ========================= # JDEQ AUTO BOOTSTRAP CORE # ========================= # FORCE ROOT ENTRY cd ~/JDEQ 2>/dev/null || cd ~ # CLEAN VIRTUAL ENV STATE deactivate 2>/dev/null || true unset VIRTUAL_ENV hash -r # KILL ORPHAN PYTHON ENV (SAFE MODE) find ~/JDEQ -name "pyvenv.cfg" 2>/dev/null | while read venv; do VENV_DIR=$(dirname "$venv") if [ -d "$VENV_DIR/bin" ]; then rm -rf "$VENV_DIR" fi done # FORCE SINGLE PYTHON RESOLUTION export PATH=$(echo "$PATH" | tr ':' '\n' | grep -v "venv" | tr '\n' ':') # DEFINE SYSTEM ROOT export JDEQ_ROOT=~/JDEQ # SAFE CONFIRMATION LOG echo "[JDEQ BOOTSTRAP] System normalized → single root active" 
+🧱 2. VALIDATOR DAEMON (ANTI DUPLICATE ENV CHECK)
+Buat file:
+nano ~/JDEQ/tools/state_validator.sh 
+Isi:
+#!/data/data/com.termux/files/usr/bin/bash cd ~/JDEQ || exit 1 echo "[STATE VALIDATOR] scanning system..." # check python runtime echo "[PYTHON]" which python python -V # detect multiple env ENV_COUNT=$(find ~ -name "pyvenv.cfg" 2>/dev/null | wc -l) if [ "$ENV_COUNT" -gt 1 ]; then echo "[WARNING] duplicate env detected: $ENV_COUNT" echo "[ACTION] enforcing cleanup..." find ~ -name "pyvenv.cfg" -exec rm -rf "$(dirname {})" \; fi echo "[STATE] OK - single runtime enforced" 
+🧠 3. AUTO EXECUTION HOOK (TERMUX START FIX)
+Aktifkan juga di:
+nano ~/.profile 
+Tambahkan:
+# AUTO START JDEQ BOOTSTRAP bash ~/.bashrc >/dev/null 2>&1 
+️ 4. STRUKTUR MINIMAL WAJIB (JIKA BELUM ADA)
+mkdir -p ~/JDEQ/{kernel_engine,runtime,agents,queue,memory,state,logs,tools,bridge} 
+⚙️ 5. RULE OPERASI FINAL (HARUS DIKUNCI SISTEM)
+Sistem sekarang mengikuti aturan ini:
+ Tidak boleh:
+multiple venv aktif
+install python di luar runtime
+run script dari folder random
+PATH bercampur pyenv + termux + manual build 
+🟢 Hanya boleh:
+entry: cd ~/JDEQ
+runtime: ~/JDEQ/runtime/
+validation: ~/JDEQ/tools/state_validator.sh 
+ 6. CARA KERJA SAAT TERMUX DIBUKA
+Urutan otomatis:
+Termux start ↓ ~/.profile ↓ ~/.bashrc bootstrap ↓ cd ~/JDEQ ↓ cleanup env ↓ normalize PATH ↓ validate system ↓ READY STATE 
+🧩 HASIL AKHIR
+Dengan ini:
+tidak ada env ganda
+tidak ada “lingering runtime”
+tidak ada python konflik
+sistem selalu balik ke JDEQ root
+semua agent bisa dibangun di atas struktur stabil 
+ STATUS SISTEM
+BOOTSTRAP CORE : ACTIVE ENV CLEANER : ACTIVE STATE VALIDATOR : ACTIVE ROOT LOCK : ~/JDEQ DUPLICATE RISK : MITIGATED 
+Kalau kamu mau langkah berikutnya, urutan logis setelah ini adalah:
+“membangun Mico Orchestrator (agen pusat yang mengontrol 12 agen tanpa konflik eksekusi)”
+

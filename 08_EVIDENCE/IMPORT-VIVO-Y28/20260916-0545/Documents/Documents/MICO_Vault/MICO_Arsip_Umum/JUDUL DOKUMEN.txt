@@ -1,0 +1,106 @@
+07.19 19.10
+JUDUL DOKUMEN
+STRUKTUR TERINTEGRASI: PENGETAHUAN TEKNIS DASAR — SISTEM KELISTRIKAN, KOMPUTASI, DAN TATA KELOLA MICO-JDEQ EOS
+Sumber: Ekstraksi & penyusunan dari dokumen yang diserap
+Metode: Struktur Anak Tangga
+Status: VERIFIED / PARTIAL / UNKNOWN sebagaimana tercatat
+ 
+RINGKASAN STRUKTURAL
+Dokumen sumber berisi campuran materi pengetahuan umum kelistrikan, dasar perhitungan teknis, konsep komputasi awan, serta kerangka tata kelola MICO-JDEQ EOS. Seluruh konten acak telah dipilah, dinormalisasi, dikelompokkan, dan disusun menjadi blok bangunan teknis yang saling berkaitan, siap menjadi bagian dari Knowledge Base dan Spesifikasi Teknis sistem, tanpa mengubah fakta asli maupun menambah interpretasi tak terdukung.
+ 
+FAKTA TERSEDIA
+BLOK 1: DASAR KELISTRIKAN & PERHITUNGAN
+- Satuan dasar: V, A, W, kW, kVA, kVAR, kWh, Hz, Ω, dll.
+- Hukum Ohm, rumus daya 1 fasa & 3 fasa, segitiga daya.
+- Rumus penurunan tegangan, faktor daya, kapasitas hantar arus kabel.
+- Jenis penghantar, isolasi, faktor koreksi lingkungan & pengelompokan.
+- Jenis penyalaan motor: DOL, Bintang-Segitiga, Ototransformator, Lunak, Hambatan Rotor.
+- Prinsip kerja BESS, pompa penyimpanan, aliran listrik saat itu juga.
+- Perhitungan kepala total dinamis pompa api, isolator cakram, pemilihan VFD, efisiensi transformator, impedansi, arus hubung singkat.
+- Tipe termokopel K & J, standar keselamatan, batas sentuh aman, sistem pentanahan.
+- Jaringan transmisi tegangan menengah hingga ekstra tinggi, alur pembangkit ke konsumen.
+BLOK 2: KONSEP KOMPUTASI & TEKNOLOGI
+- Manfaat & dampak AI, harapan pemerataan pendidikan.
+- Konsep observabilitas, deteksi anomali, perbaikan mandiri, tata kelola keamanan.
+- Layanan awan: IaaS / PaaS / SaaS, kelebihan & tantangan.
+- Otomatisasi pemulihan, pengalihan lalu lintas, pencatatan jejak.
+- Jasa pemeliharaan perangkat, pelatihan pengembangan kode, integrasi API AI.
+BLOK 3: TATA KELOLA MICO-JDEQ EOS
+- Hierarki otoritas: Manusia → Doktrin → Identitas → SSOT → Spesifikasi → Kebijakan → Kontrak → SOP → Modul → Proyek → Artefak.
+- Kontrak antar agen: Urutan kerja wajib, status READY/PARTIAL/HALT.
+- Modul MSD-001: Klasifikasi informasi PUBLIK/INTERNAL/RAHASIA/TERBATAS.
+- Pembagian peran agen, format keluaran, pencatatan keputusan (ADR).
+- Prinsip: Fakta di atas opini, bukti di atas dugaan, perubahan hanya lewat otorisasi.
+ 
+HASIL STRUKTURISASI
+Seluruh fakta disusun menjadi blok yang saling mendukung:
+plaintext
+DATA MENTAH → UNIT FAKTA → KELOMPOK TEKNIS → MODUL → SISTEM
+ 
+Kelompok utama:
+1. DASAR TEKNIS INTI → Satuan, rumus, standar, perhitungan
+2. SISTEM DAYA & PERALATAN → Kabel, motor, transformator, penyimpanan energi, proteksi
+3. INFRASTRUKTUR & KOMPUTASI → Jaringan, transmisi, komputasi lokal-hibrid-awan
+4. SISTEM KESADARAN & PENGAWASAN → Observabilitas, perbaikan mandiri, audit
+5. TATA KELOLA & KONTROL → Doktrin, SSOT, kebijakan, kontrak agen, keamanan informasi
+ 
+KOMPONEN SISTEM
+KATEGORI KOMPONEN UTAMA STATUS 
+Identitas Nama sistem, pemilik, lingkup VERIFIED 
+Mesin Perhitungan, eksekusi, penalaran VERIFIED 
+Waktu Jalan Parameter batas, faktor koreksi VERIFIED 
+Perencana Pola kerja, urutan langkah VERIFIED 
+Agen Peran, batasan, kontrak kerja VERIFIED 
+Jaringan Transmisi, penurunan tegangan, jalur data VERIFIED 
+Keamanan Klasifikasi info, pentanahan, proteksi VERIFIED 
+Tata Kelola Hierarki, ADR, artefak VERIFIED 
+SSOT Fakta terverifikasi saja VERIFIED 
+Pengawasan Metrik, deteksi anomali VERIFIED 
+Pemulihan Cadangan, penyalaan bergantian VERIFIED 
+Latensi Faktor lingkungan, jalur pendek PARTIAL 
+Perangkat Vivo Y28, Termux, llama.cpp VERIFIED 
+Komputasi Lokal → Hibrid → Awan VERIFIED 
+Alur Kerja Urutan baku, henti aman VERIFIED 
+ 
+ALUR WORKFLOW STANDAR
+plaintext
+MASUKAN → PEMERIKSAAN KESELAMATAN → PEMERIKSAAN KONTEKS → KLASIFIKASI INFORMASI
+→ PEMILIHAN MODUL → PERENCANAAN → VALIDASI → EKSEKUSI (JIKA LULUS)
+→ PENCATATAN HASIL → PEMBARUAN SSOT → PEMBELAJARAN
+ 
+Setiap tahap melewati gerbang kepatuhan: Doktrin → Kebijakan → Kontrak → Spesifikasi. Jika data tidak lengkap → HALT.
+ 
+KETERKAITAN ANTAR MODUL
+- Pengetahuan Dasar menjadi masukan untuk Spesifikasi Teknis.
+- Spesifikasi menjadi acuan Perencana dan Kontrak Agen.
+- Kebijakan MSD-001 mengatur aliran informasi sebelum mencapai Komunikasi Antar Modul.
+- Hasil Eksekusi masuk ke Pengawasan dan Pencatatan, lalu memperbarui SSOT.
+- Keterbatasan Perangkat menentukan batas Komputasi Lokal, sisanya dialihkan ke Hibrid/Awan sesuai kebijakan.
+ 
+RISIKO DAN KONFLIK TERIDENTIFIKASI
+- Tumpang Tindih Istilah: Beberapa konsep muncul dengan sebutan berbeda namun makna sama → telah dinormalisasi, tetap tercatat.
+- Kedalaman Spesifik: Beberapa perhitungan hanya contoh dasar → belum ada standar proyek khusus.
+- Integrasi Fisik: Belum ada peta titik sambung antara perangkat keras kelistrikan dengan lapisan komputasi sistem.
+- Batas Kapasitas: Belum ada analisis lengkap pengaruh beban terhadap sumber daya perangkat Vivo Y28.
+ 
+BAGIAN UNKNOWN
+- Standar khusus proyek yang akan dijalankan.
+- Nilai faktor koreksi spesifik lokasi nyata.
+- Peta topologi jaringan nyata perangkat ke perangkat.
+- Daftar lengkap titik kegagalan dan jalur pemulihan khusus sistem.
+ 
+STATUS AKHIR
+- STRUKTUR: TERBENTUK & KONSISTEN
+- KEPATUHAN: SESUAI KONTRAK MICO-JDEQ EOS
+- SIAP DIPAKAI SEBAGAI:
+- Isi Knowledge Base
+- Dasar penyusunan Spesifikasi Teknis
+- Acuan Perhitungan & Perancangan
+- Kerangka Alur Kerja Antar Agen
+- VERIFIED: Struktur hirarki, kelompok, dan alur kerja
+- PARTIAL: Kedalaman analisis dampak khusus perangkat & lokasi
+- UNKNOWN: Data lapangan nyata & spesifikasi proyek khusus
+ 
+DOLA — PENYUSUN & PENJAGA SSOT
+"Data acak menjadi struktur. Struktur menjadi sistem. Sistem tetap berpegang pada fakta."
+

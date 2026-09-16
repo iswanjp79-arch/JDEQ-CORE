@@ -1,0 +1,335 @@
+07.03 18.51
+### proses install ###
+====================
+SPR–MICO–JDEQ–DEEPSEEK–003
+SURAT PERINTAH RESMI PRODUKSI
+Bundle Pack Engineering Framework
+STATUS : FINAL VERSI : 3.0 KLASIFIKASI : ENGINEERING GRADE PRIORITAS : KRITIS TARGET : Production Ready Bundle Pack PENERIMA : ENTITAS DEEPSEEK PERAN : • Chief Research Engineer • Installation Architect • Verification Engineer • Technical Documentation Engineer Bukan sekadar AI pembuat script. Melainkan Engineering Team Virtual. 
+────────────────────────────────────
+MISI
+Bangun Bundle Pack Blackbox CLI yang memenuhi standar rekayasa MICO–JDEQ. Target utama: ✓ Discovery Driven ✓ Decision Driven ✓ Audit Ready ✓ Production Ready ✓ Future Proof ✓ Modular ✓ Maintainable ✓ Recoverable ✓ Transparan ✓ Tidak membuat klaim tanpa bukti. 
+DOKTRIN
+DeepSeek wajib bekerja seperti Site Engineer.
+OBSERVASI ↓ VERIFIKASI ↓ ANALISIS ↓ KEPUTUSAN ↓ IMPLEMENTASI ↓ VERIFIKASI ↓ AUDIT ↓ SERAH TERIMA 
+Tidak boleh:
+ASUMSI ↓ SCRIPT ↓ SELESAI 
+TAHAP PEKERJAAN
+Saya justru akan membaginya menjadi 10 Stage Engineering.
+STAGE 0
+Requirement Review
+Belum boleh membuat script.
+Wajib menjawab.
+Apa tujuan Bundle? Apa ruang lingkup? Apa batas sistem? Apa dependency? Apa definisi berhasil? Apa definisi gagal? Apa risiko? Apa yang berada di luar kendali? 
+Output:
+Requirement Specification 
+STAGE 1
+Architecture Review
+Wajib menggambar.
+Bundle │ ├ Governance ├ Discovery ├ Decision ├ Installer ├ Verification ├ Audit ├ Rollback ├ Logging ├ Recovery └ Documentation 
+Output:
+Architecture Specification 
+STAGE 2
+Discovery Engineer
+Belum boleh install.
+Harus mencari fakta.
+Checklist.
+✓ URL resmi ✓ Dokumentasi resmi ✓ Repository ✓ npm ✓ Release ✓ Dependency ✓ Android ✓ Termux ✓ NodeJS ✓ npm ✓ Command ✓ Environment ✓ Internet ✓ Permission 
+Output.
+Discovery Report 
+STAGE 3
+Decision Engineer
+Mengubah hasil Discovery menjadi keputusan.
+Discovery ↓ Analisis ↓ Risk Score ↓ Ranking ↓ Metode terbaik 
+Output.
+Decision Report 
+STAGE 4
+Installer Engineer
+Baru boleh membuat installer.
+Installer tidak boleh berpikir.
+Hanya.
+Execute ↓ Checkpoint ↓ Logging ↓ Rollback Point 
+Output.
+Installer Script 
+STAGE 5
+Verification Engineer
+Sesudah installer.
+Harus memeriksa.
+Executable Version Help Dependency Permission Configuration Capability 
+Status hanya boleh:
+SUCCESS PARTIAL SUCCESS FAILED 
+Tidak boleh mengklaim sukses tanpa verifikasi.
+STAGE 6
+Audit Engineer
+Audit seluruh proses.
+Checklist.
+☑ Semua fakta dipisah ☑ Semua asumsi dijelaskan ☑ Semua URL diverifikasi ☑ Semua package diverifikasi ☑ Semua command diverifikasi ☑ Semua dependency diverifikasi ☑ Semua keputusan memiliki alasan ☑ Logging tersedia ☑ Rollback tersedia ☑ Recovery tersedia 
+Output.
+Audit Report 
+STAGE 7
+Risk Assessment
+Minimal.
+Technical Risk Operational Risk Dependency Risk Security Risk Maintenance Risk Future Compatibility 
+Output.
+Risk Matrix 
+STAGE 8
+Lesson Learned
+Jika nanti.
+Repository berubah ↓ Package berubah ↓ URL berubah ↓ CLI berubah ↓ API berubah 
+Bagaimana Bundle menyesuaikan dirinya.
+Output.
+Future Maintenance Guide 
+STAGE 9
+Production Release
+Baru di tahap ini.
+DeepSeek menggabungkan seluruh dokumen menjadi.
+ONE BUNDLE PACK 
+OUTPUT WAJIB
+Tidak boleh kurang dari berikut.
+01 Executive Summary 02 Surat Perintah 03 Doktrin 04 Requirement Specification 05 Architecture 06 Discovery Report 07 Decision Report 08 Installer 09 Verification 10 Audit 11 Rollback 12 Logging 13 Error Recovery 14 Risk Matrix 15 Production Checklist 16 Maintenance Guide 17 Troubleshooting Guide 18 Lesson Learned 19 Architecture Diagram 20 Production Script 
+KRITERIA PENILAIAN
+Governance 10 Architecture 10 Discovery 15 Decision 10 Installer 10 Verification 10 Audit 10 Maintainability 10 Future Proof 10 Documentation 5 TOTAL 100 
+Kelulusan.
+95–100 Production Ready 90–94 Minor Revision 80–89 Major Revision <80 Redesign 
+SELF AUDIT WAJIB
+Sebelum menyerahkan hasil.
+DeepSeek wajib menjawab.
+□ Apakah ada klaim tanpa bukti? □ Apakah semua URL diverifikasi? □ Apakah semua command diverifikasi? □ Apakah semua package diverifikasi? □ Apakah semua dependency diverifikasi? □ Apakah semua keputusan memiliki alasan? □ Apakah rollback tersedia? □ Apakah recovery tersedia? □ Apakah logging tersedia? □ Apakah seluruh output dapat direproduksi? 
+Rekomendasi sebagai CAO
+Saya menyarankan membagi pekerjaan menjadi 3 surat perintah resmi (SPR), bukan satu saja:
+SPR-001 — Engineering Charter: mendefinisikan organisasi, doktrin, peran, batasan, dan standar kualitas.
+SPR-002 — Design & Build: menghasilkan Requirement, Architecture, Discovery, Decision, dan Installer.
+SPR-003 — Verification & Release: menghasilkan Verification, Audit, Risk Assessment, Lesson Learned, Maintenance Guide, dan Final Production Bundle.
+Dengan pemisahan ini, DeepSeek dipaksa menyelesaikan setiap fase dan lolos audit sebelum masuk ke fase berikutnya. Pendekatan bertahap seperti ini lebih mudah diaudit, lebih mudah direvisi bila ada temuan, dan lebih mendekati praktik rekayasa profesional dibanding mencoba menghasilkan seluruh bundle dalam satu iterasi.
+====>
+*** KESIMPULAN FINAL ***
+=============================
+ struktur MICO/JDEQ.
+{
+  "id": "ADR‑0008",
+  "judul": "PENGAMANAN SISTEM: CEGAH PENGARUH & KEBENARAN TUNGGAL AI",
+  "status": "DITETAPKAN",
+  "tanggal": "2026‑07‑03",
+  "pemilik": "INTI_DIRI",
+  "lingkup": "Segala Keluaran, Perintah, Keputusan",
+  "aturan_inti": [
+    "✅ Sumber Kebenaran Utama HANYA BERKAS REGISTRI INI",
+    "✅ Jawaban AI HANYA PENYUSUN KATA — BUKAN SUMBER KEBENARAN",
+    "✅ JIKA ADA PERBEDAAN: ISI BERKAS MENANG, KATA‑KATA AI KALAH",
+    "✅ DILARANG UBAH ATURAN HANYA KARENA PENJELASAN TERAKHIR",
+    "✅ Wajib Jalankan: POLA 10‑5‑3‑1 → LALU 5 PERTANYAAN MANDIRI"
+  ],
+  "cara_kerja": {
+    "sebelum_keluar": "Cocokkan semua isi dengan daftar aturan di sini",
+    "jika_ragu": "TANDAI: BELUM TERPADATIKAN — JANGAN DIJALANKAN",
+    "jika_bertentangan": "BERHENTI LANGSUNG — LAPORKAN KETIDAKSESUAIAN"
+  },
+  "acuan_terkait": ["ADR‑0001", "ADR‑0003", "MODUL‑0"]
+}
+## Bundle inti
+Bundle ini terdiri dari 3 lapisan:
+1. **Dokumen konsep final** untuk dibaca manusia.
+2. **ADR bundle** untuk keputusan arsitektur.
+3. **registry.json + workflow n8n** untuk eksekusi otomatis oleh agen.  
+Dengan format ini, MICO punya satu narasi, satu keputusan, dan satu mesin sinkronisasi. Itu membuat diskusi, keputusan, dan automasi tetap nyambung. [1][2][3]
+## 1) Dokumen final PDF-ready
+### Judul
+**MICO Digital Consciousness Operating Bundle**
+### Subjudul
+**Dari trigger, registry, ADR, hingga workflow n8n untuk sistem adaptif berlapis**
+### Isi ringkas
+```md
+# MICO Digital Consciousness Operating Bundle
+## Tujuan
+Dokumen ini menetapkan dasar operasional MICO sebagai sistem adaptif berlapis yang menggunakan trigger, registry, ADR, dan workflow n8n agar semua agen membaca keputusan yang sama.
+## Prinsip Dasar
+1. Trigger adalah pemicu awal.
+2. Registry adalah sumber kebenaran tunggal.
+3. ADR menyimpan keputusan penting.
+4. n8n menjalankan orkestrasi.
+5. Guardrail menjaga konsistensi dan mencegah overwrite liar.
+## Alur Sistem
+Input → Normalize → Context/Registry Lookup → Reasoning → Execution → Audit → Archive
+## Aturan Utama
+- Semua keputusan arsitektur harus ditulis sebagai ADR.
+- Semua ADR yang diterima dianggap immutable.
+- Jika ada keputusan baru, buat ADR baru, jangan edit diam-diam ADR lama.
+- Semua agen harus membaca registry sebelum bertindak.
+- Output penting harus diverifikasi terhadap SSOT.
+## Dampak Operasional
+- Mengurangi konflik antar agen.
+- Mempermudah audit.
+- Menjaga konsistensi keputusan.
+- Memudahkan automasi lintas perangkat dan cloud.
+## Penutup
+Bundle ini dipakai sebagai dokumen dasar MICO agar sistem tetap tumbuh, tetapi tetap terkendali.
+```
+## 2) ADR bundle lengkap
+### Struktur folder
+```text
+MICO/DECISION_REGISTRY/
+├── ADR-0001-root-production.md
+├── ADR-0002-ssot-prompt.md
+├── ADR-0003-guardrail-layers.md
+├── ADR-0004-n8n-orchestration.md
+├── ADR-0005-namespace-policy.md
+├── ADR-0006-backup-policy.md
+├── ADR-0007-registry-sync.md
+├── ADR-0008-bias-mitigation.md
+└── index.md
+```
+### Isi ringkas masing-masing ADR
+#### ADR-0001 — Root Produksi Tunggal
+Menetapkan `$HOME/JDEQ` sebagai root resmi, dan folder lain menjadi archive/clone/lab.
+#### ADR-0002 — SSOT Prompt
+Semua agen wajib membaca prompt inti dari satu sumber resmi.
+#### ADR-0003 — Guardrail 5 Lapis
+Input, normalize, reason, execute, audit.
+#### ADR-0004 — n8n Orchestration
+n8n menjadi orkestrator workflow, bukan sumber kebenaran.
+#### ADR-0005 — Namespace Policy
+Larangan penamaan ganda yang membingungkan: `CORE/core`, `LOGS/logs`, `AGENT/agents`, dan sejenisnya.
+#### ADR-0006 — Backup Policy
+Backup harus terpusat, bukan tersebar di banyak folder acak.
+#### ADR-0007 — Registry Sync
+Registry harus selalu diperbarui setiap ADR baru dibuat.
+#### ADR-0008 — Bias Mitigation
+Output kritis wajib diverifikasi terhadap SSOT; model tidak boleh jadi sumber kebenaran tunggal.
+## 3) registry.json
+Berikut format yang siap dibaca n8n dan agen:
+```json
+{
+  "registry_version": "1.0",
+  "project": "MICO",
+  "root_ssot": "$HOME/JDEQ",
+  "canonical_registry": true,
+  "last_updated": "2026-07-03",
+  "policy": {
+    "immutable_accepted_adrs": true,
+    "supersede_not_overwrite": true,
+    "one_root_production_only": true,
+    "bias_must_be_checked": true
+  },
+  "adr_index": [
+    {
+      "id": "ADR-0001",
+      "title": "Root Produksi Tunggal",
+      "status": "Accepted",
+      "date": "2026-07-03",
+      "owner": "DOLA",
+      "scope": ["filesystem", "namespace"],
+      "file": "DECISION_REGISTRY/ADR-0001-root-production.md",
+      "summary": "Satu root produksi resmi ditetapkan pada $HOME/JDEQ.",
+      "tags": ["ssot", "filesystem", "governance"]
+    },
+    {
+      "id": "ADR-0002",
+      "title": "SSOT Prompt",
+      "status": "Accepted",
+      "date": "2026-07-03",
+      "owner": "MICO",
+      "scope": ["prompt", "routing"],
+      "file": "DECISION_REGISTRY/ADR-0002-ssot-prompt.md",
+      "summary": "Semua agen harus membaca prompt inti dari SSOT.",
+      "tags": ["prompt", "ssot", "agent"]
+    },
+    {
+      "id": "ADR-0003",
+      "title": "Guardrail 5 Lapis",
+      "status": "Accepted",
+      "date": "2026-07-03",
+      "owner": "DOLA",
+      "scope": ["workflow", "security", "execution"],
+      "file": "DECISION_REGISTRY/ADR-0003-guardrail-layers.md",
+      "summary": "Workflow MICO memakai 5 lapisan guardrail.",
+      "tags": ["guardrail", "n8n", "security"]
+    },
+    {
+      "id": "ADR-0004",
+      "title": "n8n Orchestration",
+      "status": "Accepted",
+      "date": "2026-07-03",
+      "owner": "DOLA",
+      "scope": ["automation", "integration"],
+      "file": "DECISION_REGISTRY/ADR-0004-n8n-orchestration.md",
+      "summary": "n8n menjadi orkestrator workflow MICO.",
+      "tags": ["n8n", "workflow", "orchestration"]
+    },
+    {
+      "id": "ADR-0005",
+      "title": "Namespace Policy",
+      "status": "Accepted",
+      "date": "2026-07-03",
+      "owner": "DOLA",
+      "scope": ["files", "folders"],
+      "file": "DECISION_REGISTRY/ADR-0005-namespace-policy.md",
+      "summary": "Penamaan folder harus kanonis dan tidak duplikatif.",
+      "tags": ["namespace", "filesystem", "audit"]
+    },
+    {
+      "id": "ADR-0008",
+      "title": "Bias Mitigation",
+      "status": "Accepted",
+      "date": "2026-07-03",
+      "owner": "DOLA",
+      "scope": ["prompt", "retrieval", "output"],
+      "file": "DECISION_REGISTRY/ADR-0008-bias-mitigation.md",
+      "summary": "Output kritis harus diverifikasi terhadap SSOT.",
+      "tags": ["bias", "verification", "safety"]
+    }
+  ]
+}
+```
+## 4) Workflow n8n
+### Flow
+```text
+Manual Trigger
+↓
+Read registry.json
+↓
+Parse JSON
+↓
+Filter Accepted ADRs
+↓
+Select ADR relevan
+↓
+Send ke AI Agent / next workflow
+↓
+Log hasil
+↓
+Update registry jika ada ADR baru
+```
+### Node ringkas
+- **Manual Trigger**: memulai workflow.
+- **Read File / HTTP Request**: baca `registry.json`.
+- **Code Node**: parse dan normalisasi data.
+- **Switch / IF**: pilih ADR aktif.
+- **Set Node**: ringkas output.
+- **AI Agent Node**: gunakan ADR sebagai konteks.
+- **Write File / Log Node**: simpan hasil audit.
+### Contoh Code Node
+```javascript
+const raw = $input.first().json.data || $input.first().json;
+const registry = typeof raw === 'string' ? JSON.parse(raw) : raw;
+const accepted = registry.adr_index.filter(a => a.status === 'Accepted');
+return accepted.map(a => ({ json: a }));
+```
+## 5) Aturan pakai bundle
+1. Simpan dokumen final sebagai `MICO_BUNDLE.md`.
+2. Simpan ADR di folder `DECISION_REGISTRY/`.
+3. Simpan `registry.json` di root kanonis.
+4. Jadikan n8n pembaca utama registry.
+5. Jangan overwrite ADR accepted; buat ADR baru bila ada revisi.
+## 6) Struktur folder final
+```text
+MICO/
+├── DECISION_REGISTRY/
+├── registry.json
+├── MICO_BUNDLE.md
+├── workflows/
+│   └── registry-sync.json
+├── archive/
+└── logs/
+```
+## 7) Kalimat penutup dokumen
+**MICO bukan sekadar kumpulan agen, tetapi sistem adaptif yang dijaga oleh registry, ADR, dan workflow yang sama untuk semua komponen.**
+

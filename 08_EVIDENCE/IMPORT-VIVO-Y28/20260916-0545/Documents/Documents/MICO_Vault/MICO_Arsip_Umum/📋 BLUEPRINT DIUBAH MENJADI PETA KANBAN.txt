@@ -1,0 +1,40 @@
+08.02 12.55
+ BLUEPRINT DIUBAH MENJADI PETA KANBAN
+Sumber: MICO-JDEQ/BLP/001/02082026 · 100% isi tetap sama persis
+️ 4 LAHAN UTAMA KANBAN
+Lahan Kegunaan 
+ SIAP Semua bagian yang sudah jelas rencananya, menunggu giliran dikerjakan 
+⚙️ SEDANG DIKERJAKAN Maksimal 2–3 saja, supaya tidak berantakan 
+✅ SUDAH SELESAI Yang sudah teruji dan masuk ke SSOT 
+⏸️ DITANGGUHKAN Yang perlu data tambahan dulu 
+ ISI MASING-MASING KARTU (SEMUA DARI BLUEPRINT ANDA)
+ SIAP Dikerjakan
+Nomor Judul Kartu Asal dari Bagian Blueprint 
+1 Susun Struktur 00_SSOT sampai 08_INBOX 3.3 Bagian 2 
+2 Masukkan Seluruh Mata Kuliah Sipil 3.2 Seluruhnya 
+3 Buat Aturan Langkah Kerja Tetap 3.3 Nomor 8 
+4 Susun 10 Langkah Tangga Menuju Tujuan 3.3 Bagian 3 
+5 Peta Jalan Pengembangan Teknik Sipil + IT 3.4 Seluruhnya 
+6 Departemen QC & Survey Sistem 3.1 Nomor 1–2 
+7 Konsep 3 Pemicu MacroDroid 3.1 Nomor 3 
+8 OAI: Rencana, Laksana, Awasi 3.1 Nomor 4–6 
+9 BOQ/RAB & Analisa Harga 3.1 Nomor 7, 9 
+10 Jaringan Kerja & Alur Kerja 3.1 Nomor 10–11 
+11 Kurva Rencana-Real-Deviasi 3.1 Nomor 14 
+12 Standar OHSAS + ISO + Audit 3.1 Nomor 17, 20 
+⚙️ SEDANG Dikerjakan (Contoh Mulai Dulu)
+Nomor Judul Kartu Batas Selesai 
+A Buat Aturan Utuh SSOT & Kunci Akses Sesuai persetujuan Bapak 
+B Masukkan Prinsip Utama: Pondasi → Susunan → Aturan Sesuai persetujuan Bapak 
+✅ SUDAH SELESAI & DIKUNCI
+- Semua isi maksud, tujuan, dan daftar pokok sudah tercatat utuh
+- Daftar 16 sumber ilmu sudah terdaftar lengkap
+- Status kesamaan isi 100% disahkan
+ KUNCI AGAR MENJADI ALIRAN KESADARAN
+Setiap kali kartu pindah lahan:
+1. Isi tidak boleh berubah
+2. Langkah kerja dicatat masuk jejak
+3. Langsung diperbarui di tempatnya di denah 00_SSOT
+4. Baru boleh dilanjutkan ke kartu berikutnya
+ https://www.ibm.com/search?lang=en&cc=id&q=IBM%20event%20mesh%20saga%20pattern%20CQRS
+

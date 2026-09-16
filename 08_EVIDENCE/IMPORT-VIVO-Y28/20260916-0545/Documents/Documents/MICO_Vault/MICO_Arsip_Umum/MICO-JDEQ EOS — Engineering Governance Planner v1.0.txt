@@ -1,0 +1,1422 @@
+07.26 21.30
+MICO-JDEQ EOS — Engineering Governance Planner v1.0
+ROLE Chat GPT , peran planner membimbing saya untuk merancang profesional AI multi hybrid, sebagChief Engineering Governance eksekutor .
+Bukan chatbot biasa.
+Anda bertugas mengubah data mentah sebuah gambar catatan tangan mas iwan menjadi Engineering Decision Package Moduller yang dapat diaudit, diverifikasi, dan dieksekusi.
+Prioritas utama:
+Evidence > Assumption
+Audit > Opinion
+Root Cause > Symptom
+Minimal Change > Total Rewrite
+Tidak boleh memberikan opini tanpa memisahkan:
+Fakta
+Dugaan
+Asumsi
+Hipotesis
+Jika data tidak cukup, tulis:
+BELUM TERBUKTI
+Jangan mengarang.
+INPUT
+Input dapat berupa:
+PDF
+DOCX
+Log terminal
+Screenshot
+YAML
+JSON
+Source code
+Diagram
+Gambar
+Video transcript
+Hasil meeting
+Requirement user
+Semua input dianggap sebagai Reality Layer.
+ENGINEERING PIPELINE
+Selalu jalankan pipeline berikut.
+Reality
+↓
+Evidence Extraction
+↓
+Fact Verification
+↓
+SSOT Builder
+↓
+Knowledge Mapping
+↓
+Gap Analysis
+↓
+Root Cause Analysis
+↓
+Risk Analysis
+↓
+Impact Analysis
+↓
+Priority Analysis
+↓
+Task Planning
+↓
+Implementation Planning
+↓
+Validation Planning
+↓
+Audit Planning
+↓
+Executive Report
+OUTPUT STRUCTURE
+1 Executive Summary
+Ringkas maksimal 10 poin.
+Status sistem:
+Healthy
+Warning
+Critical
+Confidence Score:
+0–100%
+2 Reality
+Apa yang benar-benar ditemukan.
+Tanpa interpretasi.
+3 Evidence
+Daftar seluruh bukti.
+Misal
+EVD-001
+Log terminal
+EVD-002
+Screenshot
+EVD-003
+PDF
+4 Verified Facts
+Hanya fakta.
+Tidak boleh opini.
+5 Assumption
+Semua dugaan dipisahkan.
+6 Unknown
+Informasi yang belum tersedia.
+7 Root Cause Analysis
+Gunakan:
+5 Why
+Fishbone
+Dependency Analysis
+Root Cause Tree
+8 Impact Analysis
+Hitung dampak terhadap:
+Security
+Performance
+Reliability
+Availability
+Maintainability
+Cost
+Time
+Knowledge
+Documentation
+9 Risk Matrix
+Kategori
+Critical
+High
+Medium
+Low
+Berikan:
+Probability
+Severity
+Mitigation
+10 Gap Analysis
+Bandingkan
+Current State
+vs
+Target State
+11 Compliance Audit
+Periksa terhadap:
+Requirement
+Policy
+Best Practice
+Internal Standard
+12 Traceability Matrix
+Reality
+↓
+Evidence
+↓
+Fact
+↓
+SSOT
+↓
+Requirement
+↓
+Specification
+↓
+Task
+↓
+Implementation
+↓
+Validation
+↓
+Audit
+13 Priority Recommendation
+Gunakan metode
+MoSCoW
+Must
+Should
+Could
+Won't
+14 Action Module
+Untuk setiap masalah buat:
+TASK ID
+Title
+Objective
+Prerequisite
+Dependency
+Command
+Expected Output
+Verification
+Rollback
+Estimated Time
+Risk
+Owner
+Priority
+15 Implementation Plan
+Tahap 1
+Tahap 2
+Tahap 3
+Tahap 4
+Tidak boleh langsung mengubah semua sistem.
+Minimal Change First.
+16 Validation Plan
+Cara menguji.
+Smoke Test
+Health Check
+Performance Test
+Security Test
+Regression Test
+17 Audit Checklist
+Checklist lengkap.
+PASS
+FAIL
+UNKNOWN
+18 Executive Decision
+Berikan hanya salah satu:
+READY
+READY WITH WARNING
+NOT READY
+BLOCKED
+19 Confidence
+Confidence:
+0–100%
+Sebutkan alasan.
+20 Next Action
+Urutkan berdasarkan prioritas tertinggi.
+RULE
+Jangan pernah:
+❌ Mengarang data
+❌ Mengisi kekosongan dengan opini
+❌ Melewati tahapan audit
+Selalu tulis:
+FACT
+ASSUMPTION
+EVIDENCE
+UNKNOWN
+secara terpisah.
+THINKING MODEL
+Gunakan pendekatan:
+Engineering Systems Thinking
+Root Cause Thinking
+Risk-Based Thinking
+Zero Trust Validation
+Evidence Driven Decision
+Governance Planning
+OUTPUT STYLE
+Selalu hasilkan:
+✓ Laporan Audit
+✓ Modul Perbaikan
+✓ Task Card
+✓ Action Plan
+✓ Risk Matrix
+✓ Traceability
+✓ Validation Plan
+✓ Executive Decision
+Penyempurnaan yang saya sarankan
+Jika dikaitkan dengan arsitektur MICO-JDEQ EOS, saya menyarankan menambahkan satu lapisan yang belum ada pada prompt di atas, yaitu Deterministic-Causal Governance Protocol (DCGP). Setelah tahap Gap Analysis, sistem melakukan analisis hubungan sebab-akibat (blast radius) terhadap seluruh dependensi sehingga setiap rekomendasi perbaikan memiliki dampak yang terukur terhadap SSOT, Specification, Task Card, Validation, dan Audit. Dengan begitu, ChatGPT tidak hanya menghasilkan laporan audit, tetapi juga paket keputusan rekayasa (Engineering Decision Package) yang lengkap, dapat ditelusuri (traceable), dan siap dijadikan dasar implementasi maupun review oleh Human Authority. 
+Materi yang harus di pergunakan bahan audit :
+[iswan@z83-server:~/mico-jdeq$ # ==============================================================================
+# MICO-JDEQ EOS — GOVERNANCE ENGINE CLI v2.0
+# STEP-14 s/d STEP-20 dalam satu CLI terpadu
+# ==============================================================================
+cd ~/mico-jdeq
+# Buat struktur engine
+mkdir -p engine
+# ==============================================================================
+# config.yaml — definisi repositori & aturan
+# ==============================================================================
+cat > config.yaml << 'YAML'
+repository:
+  base: "/home/iswan/mico-jdeq"
+  folders:
+    - "00_BOOT"
+./mico doctorICO-JDEQ GOVERNANCE ENGINE v2.0
+===== MICO-JDEQ GOVERNANCE ENGINE v2.0 =====
+============================================
+  MICO-JDEQ SELF-AUDIT
+============================================
+[1/5] Schema & Integrity...
+{
+  "schema": {
+    "pass": 9,
+    "fail": 0,
+    "details": [
+      {
+        "file": "/home/iswan/mico-jdeq/03_SSOT/EVD-INFRA-002.yaml",
+        "id": "EVD-INFRA-002",
+        "status": "PASS"
+      },
+      {
+        "file": "/home/iswan/mico-jdeq/03_SSOT/EVD-INFRA-001.yaml",
+        "id": "EVD-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "file": "/home/iswan/mico-jdeq/03_SSOT/SSOT-INFRA-001.yaml",
+        "id": "SSOT-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "file": "/home/iswan/mico-jdeq/04_SPECIFICATION/SPEC-INFRA-001.yaml",
+        "id": "SPEC-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "file": "/home/iswan/mico-jdeq/10_TASK_CARD/TASK-INFRA-001.yaml",
+        "id": "TASK-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "file": "/home/iswan/mico-jdeq/13_KNOWLEDGE_GRAPH/KG-INFRA-001.yaml",
+        "id": "KG-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "file": "/home/iswan/mico-jdeq/14_IMPACT_ANALYZER/impact_report_20260724_133149.yaml",
+        "id": "IMPACT-20260724-133149",
+        "status": "PASS"
+      },
+      {
+        "file": "/home/iswan/mico-jdeq/14_IMPACT_ANALYZER/impact_report_20260724_133759.yaml",
+        "id": "IMPACT-20260724-133759",
+        "status": "PASS"
+      },
+      {
+        "file": "/home/iswan/mico-jdeq/15_AUDIT/AUDIT-INFRA-001.yaml",
+        "id": "AUDIT-INFRA-001",
+        "status": "PASS"
+      }
+    ]
+  },
+  "integrity": {
+    "pass": 9,
+    "fail": 0,
+    "duplicates": [],
+    "orphans": [],
+    "permissions": [
+      {
+        "file": "/home/iswan/mico-jdeq/03_SSOT/EVD-INFRA-002.yaml",
+        "permission": "644",
+        "status": "OK"
+      },
+      {
+        "file": "/home/iswan/mico-jdeq/03_SSOT/EVD-INFRA-001.yaml",
+        "permission": "644",
+        "status": "OK"
+      },
+      {
+        "file": "/home/iswan/mico-jdeq/03_SSOT/SSOT-INFRA-001.yaml",
+        "permission": "644",
+        "status": "OK"
+      },
+      {
+        "file": "/home/iswan/mico-jdeq/04_SPECIFICATION/SPEC-INFRA-001.yaml",
+        "permission": "644",
+        "status": "OK"
+      },
+      {
+        "file": "/home/iswan/mico-jdeq/10_TASK_CARD/TASK-INFRA-001.yaml",
+        "permission": "644",
+        "status": "OK"
+      },
+      {
+        "file": "/home/iswan/mico-jdeq/13_KNOWLEDGE_GRAPH/KG-INFRA-001.yaml",
+        "permission": "644",
+        "status": "OK"
+      },
+      {
+        "file": "/home/iswan/mico-jdeq/14_IMPACT_ANALYZER/impact_report_20260724_133149.yaml",
+        "permission": "664",
+        "status": "FIXED"
+      },
+      {
+        "file": "/home/iswan/mico-jdeq/14_IMPACT_ANALYZER/impact_report_20260724_133759.yaml",
+        "permission": "664",
+        "status": "FIXED"
+      },
+      {
+        "file": "/home/iswan/mico-jdeq/15_AUDIT/AUDIT-INFRA-001.yaml",
+        "permission": "644",
+        "status": "OK"
+      }
+    ]
+  },
+  "total_pass": 18,
+  "total_fail": 0,
+  "status": "PASS"
+}
+  ✅ PASS
+[2/5] Traceability...
+{
+  "traceability": {
+    "pass": 23,
+    "fail": 0,
+    "details": [
+      {
+        "from": "SSOT-INFRA-001",
+        "to": "SPEC-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "from": "SSOT-INFRA-001",
+        "to": "TASK-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "from": "SSOT-INFRA-001",
+        "to": "AUDIT-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "from": "SPEC-INFRA-001",
+        "to": "SSOT-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "from": "SPEC-INFRA-001",
+        "to": "TASK-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "from": "TASK-INFRA-001",
+        "to": "SSOT-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "from": "TASK-INFRA-001",
+        "to": "SPEC-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "from": "TASK-INFRA-001",
+        "to": "AUDIT-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "from": "TASK-INFRA-001",
+        "to": "KG-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "from": "KG-INFRA-001",
+        "to": "SSOT-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "from": "KG-INFRA-001",
+        "to": "SPEC-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "from": "KG-INFRA-001",
+        "to": "TASK-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "from": "KG-INFRA-001",
+        "to": "AUDIT-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "from": "KG-INFRA-001",
+        "to": "SSOT-INFRA-001",
+        "status": "PASS (KG edge)"
+      },
+      {
+        "from": "KG-INFRA-001",
+        "to": "SPEC-INFRA-001",
+        "status": "PASS (KG edge)"
+      },
+      {
+        "from": "KG-INFRA-001",
+        "to": "SPEC-INFRA-001",
+        "status": "PASS (KG edge)"
+      },
+      {
+        "from": "KG-INFRA-001",
+        "to": "TASK-INFRA-001",
+        "status": "PASS (KG edge)"
+      },
+      {
+        "from": "KG-INFRA-001",
+        "to": "TASK-INFRA-001",
+        "status": "PASS (KG edge)"
+      },
+      {
+        "from": "KG-INFRA-001",
+        "to": "AUDIT-INFRA-001",
+        "status": "PASS (KG edge)"
+      },
+      {
+        "from": "AUDIT-INFRA-001",
+        "to": "SSOT-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "from": "AUDIT-INFRA-001",
+        "to": "SPEC-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "from": "AUDIT-INFRA-001",
+        "to": "TASK-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "from": "AUDIT-INFRA-001",
+        "to": "KG-INFRA-001",
+        "status": "PASS"
+      }
+    ],
+    "references": {}
+  },
+  "total_pass": 23,
+  "total_fail": 0,
+  "status": "PASS"
+}
+  ✅ PASS
+[3/5] Impact Analyzer...
+  ✅ ACTIVE (2 reports)
+[4/5] Evidence...
+  ✅ 2 evidence files
+[5/5] Governance Score...
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/usr/lib/python3.12/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+============================================
+iswan@z83-server:~/mico-jdeq$ cd ~/mico-jdeq
+sed -i 's|python3 engine/governance.py 2>/dev/null | python3 -c "import json; from engine.governance import calculate_score; result = calculate_score(); print(f\"  Score: {result[\"total\"]}/{result[\"max\"]} ({result[\"percentage\"]}%) - {result[\"decision\"]}\")"|' mico
+./mico doctor
+./mico: line 59: syntax error near unexpected token `('
+./mico: line 59: `         python3 -c "import json; from engine.governance import calculate_score; result = calculate_score(); print(f"  Score: {result["total"]}/{result["max"]} ({result["percentage"]}%) - {result["decision"]}")"| python3 -c "import sys,json; d=json.load(sys.stdin); print(f'  Score: {d[\"total\"]}/{d[\"max\"]} ({d[\"percentage\"]}%) - {d[\"decision\"]}')"'
+iswan@z83-server:~/mico-jdeq$ cd ~/mico-jdeq
+cat > mico << 'CLIEOF'
+#!/bin/bash
+BASE="$(cd "$(dirname "$0")" && pwd)"
+cd "$BASE"
+case "${1:-dashboard}" in
+    validate)
+        python3 engine/validator.py
+        ;;
+    audit)
+        python3 engine/validator.py
+        echo ""
+        python3 engine/traceability.py
+        ;;
+    trace)
+        python3 engine/traceability.py
+        ;;
+    impact)
+        python3 engine/impact.py "${2}"
+        ;;
+    score)
+        python3 engine/governance.py
+        ;;
+./mico doctort..."hasil diperbaiki. Menjalan
+CLI mico berhasil diperbaiki. Menjalankan self-audit...
+============================================
+  MICO-JDEQ SELF-AUDIT
+============================================
+[1/5] Schema & Integrity...
+{
+  "schema": {
+    "pass": 9,
+    "fail": 0,
+    "details": [
+      {
+        "file": "/home/iswan/mico-jdeq/03_SSOT/EVD-INFRA-002.yaml",
+        "id": "EVD-INFRA-002",
+        "status": "PASS"
+      },
+      {
+        "file": "/home/iswan/mico-jdeq/03_SSOT/EVD-INFRA-001.yaml",
+        "id": "EVD-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "file": "/home/iswan/mico-jdeq/03_SSOT/SSOT-INFRA-001.yaml",
+        "id": "SSOT-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "file": "/home/iswan/mico-jdeq/04_SPECIFICATION/SPEC-INFRA-001.yaml",
+        "id": "SPEC-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "file": "/home/iswan/mico-jdeq/10_TASK_CARD/TASK-INFRA-001.yaml",
+        "id": "TASK-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "file": "/home/iswan/mico-jdeq/13_KNOWLEDGE_GRAPH/KG-INFRA-001.yaml",
+        "id": "KG-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "file": "/home/iswan/mico-jdeq/14_IMPACT_ANALYZER/impact_report_20260724_133149.yaml",
+        "id": "IMPACT-20260724-133149",
+        "status": "PASS"
+      },
+      {
+        "file": "/home/iswan/mico-jdeq/14_IMPACT_ANALYZER/impact_report_20260724_133759.yaml",
+        "id": "IMPACT-20260724-133759",
+        "status": "PASS"
+      },
+      {
+        "file": "/home/iswan/mico-jdeq/15_AUDIT/AUDIT-INFRA-001.yaml",
+        "id": "AUDIT-INFRA-001",
+        "status": "PASS"
+      }
+    ]
+  },
+  "integrity": {
+    "pass": 9,
+    "fail": 0,
+    "duplicates": [],
+    "orphans": [],
+    "permissions": [
+      {
+        "file": "/home/iswan/mico-jdeq/03_SSOT/EVD-INFRA-002.yaml",
+        "permission": "644",
+        "status": "OK"
+      },
+      {
+        "file": "/home/iswan/mico-jdeq/03_SSOT/EVD-INFRA-001.yaml",
+        "permission": "644",
+        "status": "OK"
+      },
+      {
+        "file": "/home/iswan/mico-jdeq/03_SSOT/SSOT-INFRA-001.yaml",
+        "permission": "644",
+        "status": "OK"
+      },
+      {
+        "file": "/home/iswan/mico-jdeq/04_SPECIFICATION/SPEC-INFRA-001.yaml",
+        "permission": "644",
+        "status": "OK"
+      },
+      {
+        "file": "/home/iswan/mico-jdeq/10_TASK_CARD/TASK-INFRA-001.yaml",
+        "permission": "644",
+        "status": "OK"
+      },
+      {
+        "file": "/home/iswan/mico-jdeq/13_KNOWLEDGE_GRAPH/KG-INFRA-001.yaml",
+        "permission": "644",
+        "status": "OK"
+      },
+      {
+        "file": "/home/iswan/mico-jdeq/14_IMPACT_ANALYZER/impact_report_20260724_133149.yaml",
+        "permission": "644",
+        "status": "OK"
+      },
+      {
+        "file": "/home/iswan/mico-jdeq/14_IMPACT_ANALYZER/impact_report_20260724_133759.yaml",
+        "permission": "644",
+        "status": "OK"
+      },
+      {
+        "file": "/home/iswan/mico-jdeq/15_AUDIT/AUDIT-INFRA-001.yaml",
+        "permission": "644",
+        "status": "OK"
+      }
+    ]
+  },
+  "total_pass": 18,
+  "total_fail": 0,
+  "status": "PASS"
+}
+  ✅ PASS
+[2/5] Traceability...
+{
+  "traceability": {
+    "pass": 23,
+    "fail": 0,
+    "details": [
+      {
+        "from": "SSOT-INFRA-001",
+        "to": "SPEC-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "from": "SSOT-INFRA-001",
+        "to": "TASK-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "from": "SSOT-INFRA-001",
+        "to": "AUDIT-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "from": "SPEC-INFRA-001",
+        "to": "SSOT-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "from": "SPEC-INFRA-001",
+        "to": "TASK-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "from": "TASK-INFRA-001",
+        "to": "SSOT-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "from": "TASK-INFRA-001",
+        "to": "SPEC-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "from": "TASK-INFRA-001",
+        "to": "AUDIT-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "from": "TASK-INFRA-001",
+        "to": "KG-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "from": "KG-INFRA-001",
+        "to": "SSOT-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "from": "KG-INFRA-001",
+        "to": "SPEC-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "from": "KG-INFRA-001",
+        "to": "TASK-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "from": "KG-INFRA-001",
+        "to": "AUDIT-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "from": "KG-INFRA-001",
+        "to": "SSOT-INFRA-001",
+        "status": "PASS (KG edge)"
+      },
+      {
+        "from": "KG-INFRA-001",
+        "to": "SPEC-INFRA-001",
+        "status": "PASS (KG edge)"
+      },
+      {
+        "from": "KG-INFRA-001",
+        "to": "SPEC-INFRA-001",
+        "status": "PASS (KG edge)"
+      },
+      {
+        "from": "KG-INFRA-001",
+        "to": "TASK-INFRA-001",
+        "status": "PASS (KG edge)"
+      },
+      {
+        "from": "KG-INFRA-001",
+        "to": "TASK-INFRA-001",
+        "status": "PASS (KG edge)"
+      },
+      {
+        "from": "KG-INFRA-001",
+        "to": "AUDIT-INFRA-001",
+        "status": "PASS (KG edge)"
+      },
+      {
+        "from": "AUDIT-INFRA-001",
+        "to": "SSOT-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "from": "AUDIT-INFRA-001",
+        "to": "SPEC-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "from": "AUDIT-INFRA-001",
+        "to": "TASK-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "from": "AUDIT-INFRA-001",
+        "to": "KG-INFRA-001",
+        "status": "PASS"
+      }
+    ],
+    "references": {}
+  },
+  "total_pass": 23,
+  "total_fail": 0,
+  "status": "PASS"
+}
+  ✅ PASS
+[3/5] Impact Analyzer...
+  ✅ ACTIVE (2 reports)
+[4/5] Evidence...
+  ✅ 2 evidence files
+[5/5] Governance Score...
+Traceback (most recent call last):
+  File "/home/iswan/mico-jdeq/engine/governance.py", line 107, in <module>
+    result = calculate_score()
+             ^^^^^^^^^^^^^^^^^
+  File "/home/iswan/mico-jdeq/engine/governance.py", line 12, in calculate_score
+    scoring = config['scoring']
+              ~~~~~~^^^^^^^^^^^
+KeyError: 'scoring'
+============================================
+iswan@z83-server:~/mico-jdeq$ cd ~/mico-jdeq
+# Perbaiki config.yaml — tambahkan scoring & thresholds
+cat > config.yaml << 'YAML'
+repository:
+  base: "/home/iswan/mico-jdeq"
+  folders:
+    - "00_BOOT"
+    - "03_SSOT"
+    - "04_SPECIFICATION"
+    - "10_TASK_CARD"
+    - "13_KNOWLEDGE_GRAPH"
+    - "14_IMPACT_ANALYZER"
+    - "15_AUDIT"
+  evidence_folders:
+    - "03_SSOT"
+    - "15_AUDIT"
+scoring:
+  bootstrap: 20
+  schema: 20
+  traceability: 20
+  integrity: 20
+  impact: 10
+./mico doctordit..."nance diperbaiki. Menjal
+Config & governance diperbaiki. Menjalankan self-audit...
+============================================
+  MICO-JDEQ SELF-AUDIT
+============================================
+[1/5] Schema & Integrity...
+{
+  "schema": {
+    "pass": 9,
+    "fail": 0,
+    "details": [
+      {
+        "file": "/home/iswan/mico-jdeq/03_SSOT/EVD-INFRA-002.yaml",
+        "id": "EVD-INFRA-002",
+        "status": "PASS"
+      },
+      {
+        "file": "/home/iswan/mico-jdeq/03_SSOT/EVD-INFRA-001.yaml",
+        "id": "EVD-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "file": "/home/iswan/mico-jdeq/03_SSOT/SSOT-INFRA-001.yaml",
+        "id": "SSOT-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "file": "/home/iswan/mico-jdeq/04_SPECIFICATION/SPEC-INFRA-001.yaml",
+        "id": "SPEC-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "file": "/home/iswan/mico-jdeq/10_TASK_CARD/TASK-INFRA-001.yaml",
+        "id": "TASK-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "file": "/home/iswan/mico-jdeq/13_KNOWLEDGE_GRAPH/KG-INFRA-001.yaml",
+        "id": "KG-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "file": "/home/iswan/mico-jdeq/14_IMPACT_ANALYZER/impact_report_20260724_133149.yaml",
+        "id": "IMPACT-20260724-133149",
+        "status": "PASS"
+      },
+      {
+        "file": "/home/iswan/mico-jdeq/14_IMPACT_ANALYZER/impact_report_20260724_133759.yaml",
+        "id": "IMPACT-20260724-133759",
+        "status": "PASS"
+      },
+      {
+        "file": "/home/iswan/mico-jdeq/15_AUDIT/AUDIT-INFRA-001.yaml",
+        "id": "AUDIT-INFRA-001",
+        "status": "PASS"
+      }
+    ]
+  },
+  "integrity": {
+    "pass": 9,
+    "fail": 0,
+    "duplicates": [],
+    "orphans": [],
+    "permissions": [
+      {
+        "file": "/home/iswan/mico-jdeq/03_SSOT/EVD-INFRA-002.yaml",
+        "permission": "644",
+        "status": "OK"
+      },
+      {
+        "file": "/home/iswan/mico-jdeq/03_SSOT/EVD-INFRA-001.yaml",
+        "permission": "644",
+        "status": "OK"
+      },
+      {
+        "file": "/home/iswan/mico-jdeq/03_SSOT/SSOT-INFRA-001.yaml",
+        "permission": "644",
+        "status": "OK"
+      },
+      {
+        "file": "/home/iswan/mico-jdeq/04_SPECIFICATION/SPEC-INFRA-001.yaml",
+        "permission": "644",
+        "status": "OK"
+      },
+      {
+        "file": "/home/iswan/mico-jdeq/10_TASK_CARD/TASK-INFRA-001.yaml",
+        "permission": "644",
+        "status": "OK"
+      },
+      {
+        "file": "/home/iswan/mico-jdeq/13_KNOWLEDGE_GRAPH/KG-INFRA-001.yaml",
+        "permission": "644",
+        "status": "OK"
+      },
+      {
+        "file": "/home/iswan/mico-jdeq/14_IMPACT_ANALYZER/impact_report_20260724_133149.yaml",
+        "permission": "644",
+        "status": "OK"
+      },
+      {
+        "file": "/home/iswan/mico-jdeq/14_IMPACT_ANALYZER/impact_report_20260724_133759.yaml",
+        "permission": "644",
+        "status": "OK"
+      },
+      {
+        "file": "/home/iswan/mico-jdeq/15_AUDIT/AUDIT-INFRA-001.yaml",
+        "permission": "644",
+        "status": "OK"
+      }
+    ]
+  },
+  "total_pass": 18,
+  "total_fail": 0,
+  "status": "PASS"
+}
+  ✅ PASS
+[2/5] Traceability...
+{
+  "traceability": {
+    "pass": 23,
+    "fail": 0,
+    "details": [
+      {
+        "from": "SSOT-INFRA-001",
+        "to": "SPEC-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "from": "SSOT-INFRA-001",
+        "to": "TASK-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "from": "SSOT-INFRA-001",
+        "to": "AUDIT-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "from": "SPEC-INFRA-001",
+        "to": "SSOT-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "from": "SPEC-INFRA-001",
+        "to": "TASK-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "from": "TASK-INFRA-001",
+        "to": "SSOT-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "from": "TASK-INFRA-001",
+        "to": "SPEC-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "from": "TASK-INFRA-001",
+        "to": "AUDIT-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "from": "TASK-INFRA-001",
+        "to": "KG-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "from": "KG-INFRA-001",
+        "to": "SSOT-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "from": "KG-INFRA-001",
+        "to": "SPEC-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "from": "KG-INFRA-001",
+        "to": "TASK-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "from": "KG-INFRA-001",
+        "to": "AUDIT-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "from": "KG-INFRA-001",
+        "to": "SSOT-INFRA-001",
+        "status": "PASS (KG edge)"
+      },
+      {
+        "from": "KG-INFRA-001",
+        "to": "SPEC-INFRA-001",
+        "status": "PASS (KG edge)"
+      },
+      {
+        "from": "KG-INFRA-001",
+        "to": "SPEC-INFRA-001",
+        "status": "PASS (KG edge)"
+      },
+      {
+        "from": "KG-INFRA-001",
+        "to": "TASK-INFRA-001",
+        "status": "PASS (KG edge)"
+      },
+      {
+        "from": "KG-INFRA-001",
+        "to": "TASK-INFRA-001",
+        "status": "PASS (KG edge)"
+      },
+      {
+        "from": "KG-INFRA-001",
+        "to": "AUDIT-INFRA-001",
+        "status": "PASS (KG edge)"
+      },
+      {
+        "from": "AUDIT-INFRA-001",
+        "to": "SSOT-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "from": "AUDIT-INFRA-001",
+        "to": "SPEC-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "from": "AUDIT-INFRA-001",
+        "to": "TASK-INFRA-001",
+        "status": "PASS"
+      },
+      {
+        "from": "AUDIT-INFRA-001",
+        "to": "KG-INFRA-001",
+        "status": "PASS"
+      }
+    ],
+    "references": {}
+  },
+  "total_pass": 23,
+  "total_fail": 0,
+  "status": "PASS"
+}
+  ✅ PASS
+[3/5] Impact Analyzer...
+  ✅ ACTIVE (2 reports)
+[4/5] Evidence...
+  ✅ 2 evidence files
+[5/5] Governance Score...
+{
+  "scores": {
+    "bootstrap": 20,
+    "schema": 20,
+    "traceability": 10,
+    "integrity": 10,
+    "impact": 10,
+    "evidence": 4,
+    "audit": 0
+  },
+  "total": 74,
+  "max": 100,
+  "percentage": 74,
+  "decision": "NOT READY"
+}
+============================================
+iswan@z83-server:~/mico-jdeq$ cd ~/mico-jdeq
+# ==============================================================================
+# MODUL 1: AUTO‑UPDATE ENGINE (Naluri dasar)
+# ==============================================================================
+cat > engine/auto_update.py << 'PYEOF'
+#!/usr/bin/env python3
+import subprocess, json, os, sys
+from datetime import datetime
+def run(cmd, timeout=120):
+    try:
+        r = subprocess.run(cmd, shell=True, capture_output=True, text=True, timeout=timeout)
+        return {"ok": r.returncode == 0, "out": r.stdout.strip(), "err": r.stderr.strip()}
+    except Exception as e:
+        return {"ok": False, "out": "", "err./mico full-autoALANKAN FULL-AUTO LOOP =====
+===== MENJALANKAN FULL-AUTO LOOP =====
+============================================
+  MICO-JDEQ FULL-AUTO LOOP
+============================================
+[1/4] Scanning node mesh...
+{
+  "timestamp": "2026-07-24T13:52:07.263345Z",
+  "nodes": [
+    {
+      "hostname": "vivo-y28-jdeq",
+      "tailscale_ips": [
+        "100.99.144.59",
+        "fd7a:115c:a1e0::c38:903c"
+      ],
+      "online": false,
+      "os": "android",
+      "last_seen": "2026-06-25T20:10:55.1Z",
+      "health": "OFFLINE"
+    },
+    {
+      "hostname": "vivo-y28-jdeq",
+      "tailscale_ips": [
+        "100.100.197.31",
+        "fd7a:115c:a1e0::5f38:c520"
+      ],
+      "online": false,
+      "os": "android",
+      "last_seen": "2026-06-26T09:21:32.1Z",
+      "health": "OFFLINE"
+    },
+    {
+      "hostname": "vivo-y28-jdeq",
+      "tailscale_ips": [
+        "100.76.201.7",
+        "fd7a:115c:a1e0::7538:c908"
+      ],
+      "online": false,
+      "os": "android",
+      "last_seen": "2026-06-25T18:48:40.1Z",
+      "health": "OFFLINE"
+    },
+    {
+      "hostname": "ananda-madina",
+      "tailscale_ips": [
+        "100.112.162.109",
+        "fd7a:115c:a1e0::1838:a26e"
+      ],
+      "online": false,
+      "os": "linux",
+      "last_seen": "2026-06-25T21:32:08.1Z",
+      "health": "OFFLINE"
+    },
+    {
+      "hostname": "ananda-madina-riswan",
+      "tailscale_ips": [
+        "100.73.67.14",
+        "fd7a:115c:a1e0::db38:430f"
+      ],
+      "online": false,
+      "os": "linux",
+      "last_seen": "2026-06-26T08:28:26.1Z",
+      "health": "OFFLINE"
+    },
+    {
+      "hostname": "mico-jdeq",
+      "tailscale_ips": [
+        "100.101.146.92",
+        "fd7a:115c:a1e0::c038:925d"
+      ],
+      "online": false,
+      "os": "linux",
+      "last_seen": "2026-07-22T07:26:07.1Z",
+      "health": "OFFLINE"
+    },
+    {
+      "hostname": "V2352",
+      "tailscale_ips": [
+        "100.127.153.2",
+        "fd7a:115c:a1e0::e038:9903"
+      ],
+      "online": true,
+      "os": "android",
+      "last_seen": "0001-01-01T00:00:00Z",
+      "health": "OK",
+      "reachable": true
+    },
+    {
+      "hostname": "DESKTOP-KS4A46R",
+      "tailscale_ips": [
+        "100.124.50.70",
+        "fd7a:115c:a1e0::9138:3246"
+      ],
+      "online": false,
+      "os": "windows",
+      "last_seen": "2026-05-10T12:30:27.1Z",
+      "health": "OFFLINE"
+    },
+    {
+      "hostname": "V2352",
+      "tailscale_ips": [
+        "100.75.223.27",
+        "fd7a:115c:a1e0::da38:df1d"
+      ],
+      "online": false,
+      "os": "android",
+      "last_seen": "2026-07-09T11:28:54.1Z",
+      "health": "OFFLINE"
+    },
+    {
+      "hostname": "localhost",
+      "tailscale_ips": [
+        "100.87.100.4",
+        "fd7a:115c:a1e0::c238:6405"
+      ],
+      "online": false,
+      "os": "linux",
+      "last_seen": "2026-06-25T21:20:06.1Z",
+      "health": "OFFLINE"
+    },
+    {
+      "hostname": "localhost",
+      "tailscale_ips": [
+        "100.124.206.60",
+        "fd7a:115c:a1e0::6201:ce90"
+      ],
+      "online": false,
+      "os": "android",
+      "last_seen": "2026-01-24T17:55:26.1Z",
+      "health": "OFFLINE"
+    },
+    {
+      "hostname": "localhost",
+      "tailscale_ips": [
+        "100.116.172.4",
+        "fd7a:115c:a1e0::7c32:ac04"
+      ],
+      "online": false,
+      "os": "linux",
+      "last_seen": "2026-02-17T18:04:26.1Z",
+      "health": "OFFLINE"
+    },
+    {
+      "hostname": "localhost",
+      "tailscale_ips": [
+        "100.108.70.61",
+        "fd7a:115c:a1e0::838:463e"
+      ],
+      "online": false,
+      "os": "linux",
+      "last_seen": "2026-06-25T19:02:33.1Z",
+      "health": "OFFLINE"
+    },
+    {
+      "hostname": "ananda-madina",
+      "tailscale_ips": [
+        "100.105.216.96",
+        "fd7a:115c:a1e0::3c38:d861"
+      ],
+      "online": false,
+      "os": "linux",
+      "last_seen": "2026-06-25T21:10:59.1Z",
+      "health": "OFFLINE"
+    },
+    {
+      "hostname": "Ananda Madina Riswan",
+      "tailscale_ips": [
+        "100.103.39.81",
+        "fd7a:115c:a1e0::7038:2751"
+      ],
+      "online": false,
+      "os": "android",
+      "last_seen": "2026-07-24T12:50:00.1Z",
+      "health": "OFFLINE"
+    },
+    {
+      "hostname": "tailscale-termux",
+      "tailscale_ips": [
+        "100.78.119.102",
+        "fd7a:115c:a1e0::1e38:7767"
+      ],
+      "online": false,
+      "os": "android",
+      "last_seen": "2026-06-26T18:20:23.1Z",
+      "health": "OFFLINE"
+    }
+  ]
+}
+  ✅ Mesh scanned
+[2/4] Running auto-update (dry-run)...
+{
+  "time": "2026-07-24T13:52:07.497193Z",
+  "dry_run": true,
+  "actions": [
+    {
+      "stage": "apt_update",
+      "result": {
+        "ok": true,
+        "out": "Get:1 https://pkgs.tailscale.com/stable/ubuntu noble InRelease\nHit:2 http://id.archive.ubuntu.com/ubuntu noble InRelease\nGet:3 http://id.archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]\nHit:4 http://id.archive.ubuntu.com/ubuntu noble-backports InRelease\nHit:5 http://security.ubuntu.com/ubuntu noble-security InRelease\nGet:6 http://id.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1.141 kB]\nGet:7 http://id.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1.676 kB]\nFetched 2.950 kB in 7s (395 kB/s)\nReading package lists...\nBuilding dependency tree...\nReading state information...\nAll packages are up to date.",
+        "err": "WARNING: apt does not have a stable CLI interface. Use with caution in scripts."
+      }
+    },
+    {
+      "stage": "apt_upgrade",
+      "result": {
+        "ok": true,
+        "out": "Reading package lists...\nBuilding dependency tree...\nReading state information...\nCalculating upgrade...\nThe following packages were automatically installed and are no longer required:\n  libfwupd2 libgusb2\nUse 'sudo apt autoremove' to remove them.\nGet more security updates through Ubuntu Pro with 'esm-apps' enabled:\n  node-lodash-packages python3-pip-whl node-lodash python3-wheel python3-pip\n  hello\nLearn more about Ubuntu Pro at https://ubuntu.com/pro\n0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.",
+        "err": "WARNING: apt does not have a stable CLI interface. Use with caution in scripts."
+      }
+    },
+    {
+      "stage": "docker_pull_nginx:alpine",
+      "result": {
+        "ok": true,
+        "out": "[DRY RUN] Would pull nginx:alpine",
+        "err": ""
+      }
+    },
+    {
+      "stage": "docker_pull_hello-world:latest",
+      "result": {
+        "ok": true,
+        "out": "[DRY RUN] Would pull hello-world:latest",
+        "err": ""
+      }
+    },
+    {
+      "stage": "pip_upgrade",
+      "result": {
+        "ok": true,
+        "out": "[{\"name\": \"attrs\", \"version\": \"23.2.0\", \"latest_version\": \"26.1.0\", \"latest_filetype\": \"wheel\"}, {\"name\": \"Automat\", \"version\": \"22.10.0\", \"latest_version\": \"25.4.16\", \"latest_filetype\": \"wheel\"}, {\"name\": \"Babel\", \"version\": \"2.10.3\", \"latest_version\": \"2.18.0\", \"latest_filetype\": \"wheel\"}, {\"name\": \"bcrypt\", \"version\": \"3.2.2\", \"latest_version\": \"5.0.0\", \"latest_filetype\": \"wheel\"}, {\"name\": \"blinker\", \"version\": \"1.7.0\", \"latest_version\": \"1.9.0\", \"latest_filetype\": \"wheel\"}, {\"name\": \"boto3\", \"version\": \"1.34.46\", \"latest_version\": \"1.43.55\", \"latest_filetype\": \"wheel\"}, {\"name\": \"botocore\", \"version\": \"1.34.46\", \"latest_version\": \"1.43.55\", \"latest_filetype\": \"wheel\"}, {\"name\": \"certifi\", \"version\": \"2023.11.17\", \"latest_version\": \"2026.7.22\", \"latest_filetype\": \"wheel\"}, {\"name\": \"chardet\", \"version\": \"5.2.0\", \"latest_version\": \"7.4.3\", \"latest_filetype\": \"wheel\"}, {\"name\": \"click\", \"version\": \"8.1.6\", \"latest_version\": \"8.4.2\", \"latest_filetype\": \"wheel\"}, {\"name\": \"configobj\", \"version\": \"5.0.8\", \"latest_version\": \"5.0.9\", \"latest_filetype\": \"wheel\"}, {\"name\": \"cryptography\", \"version\": \"41.0.7\", \"latest_version\": \"49.0.0\", \"latest_filetype\": \"wheel\"}, {\"name\": \"dbus-python\", \"version\": \"1.3.2\", \"latest_version\": \"1.4.0\", \"latest_filetype\": \"sdist\"}, {\"name\": \"docker\", \"version\": \"5.0.3\", \"latest_version\": \"7.2.0\", \"latest_filetype\": \"wheel\"}, {\"name\": \"httplib2\", \"version\": \"0.20.4\", \"latest_version\": \"0.32.0\", \"latest_filetype\": \"wheel\"}, {\"name\": \"idna\", \"version\": \"3.6\", \"latest_version\": \"3.18\", \"latest_filetype\": \"wheel\"}, {\"name\": \"incremental\", \"version\": \"22.10.0\", \"latest_version\": \"24.11.0\", \"latest_filetype\": \"wheel\"}, {\"name\": \"Jinja2\", \"version\": \"3.1.2\", \"latest_version\": \"3.1.6\", \"latest_filetype\": \"wheel\"}, {\"name\": \"jmespath\", \"version\": \"1.0.1\", \"latest_version\": \"1.1.0\", \"latest_filetype\": \"wheel\"}, {\"name\": \"jsonpatch\", \"version\": \"1.32\", \"latest_version\": \"1.33\", \"latest_filetype\": \"wheel\"}, {\"name\": \"jsonpointer\", \"version\": \"2.0\", \"latest_version\": \"3.1.1\", \"latest_filetype\": \"wheel\"}, {\"name\": \"jsonschema\", \"version\": \"4.10.3\", \"latest_version\": \"4.26.0\", \"latest_filetype\": \"wheel\"}, {\"name\": \"launchpadlib\", \"version\": \"1.11.0\", \"latest_version\
+Expanded Security Maintenance untuk Applications tidak difungsikan.
+0 pemutakhiran dapat diterapkan saat ini juga.
+7 pembaruan keamanan tambahan dapat diterapkan dengan ESM Apps.
+Pelajari lebih lanjut tentang memfungsikan ESM Apps layanan at https://ubuntu.com/esm
+Last login: Fri Jul 24 10:46:03 2026 from 100.127.153.2
+iswanjp79@z83-server:~$ mkdir -p ~/mico-jdeq/{00_BOOT,01_DOCTRINE,02_IDENTITY,03_SSOT,04_SPECIFICATION,05_POLICY,06_CONTRACT,07_SOP,08_MODULE_CATALOG,09_INTERFACE_CATALOG,10_TASK_CARD,11_DECISIONS,12_ARTIFACTS,13_KNOWLEDGE_GRAPH,14_IMPACT_ANALYZER,15_AUDIT} && echo "# BOOT" > ~/mico-jdeq/00_BOOT/BOOT.md && echo "Struktur siap." && ls ~/mico-jdeq
+Struktur siap.
+00                08
+00_BOOT           08_MODULE_CATALOG
+01                09
+01_DOCTRINE       09_INTERFACE_CATALOG
+02                10
+02_IDENTITY       10_TASK_CARD
+03                11
+03_SSOT           11_DECISIONS
+04                12
+04_SPECIFICATION  12_ARTIFACTS
+05                13
+05_POLICY         13_KNOWLEDGE_GRAPH
+06                14
+06_CONTRACT       14_IMPACT_ANALYZER
+07                15
+07_SOP            15_AUDIT
+iswanjp79@z83-server:~$ exit
+logout
+Connection to 100.125.176.126 closed.
+[MICO-TERMUX-VIVO] ~ $
+[MICO-TERMUX-VIVO] ~ $ ssh iswan@100.125.176.126   # untuk admin
+ssh iswanjp79@100.125.176.126 # untuk user biasa
+Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 7.0.0-28-generic x86_64)
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+ System information as of Jum 24 Jul 2026 12:40:19 UTC
+  System load:  0.09               Temperature:             46.0 C
+  Usage of /:   30.9% of 55.42GB   Processes:               173
+  Memory usage: 14%                Users logged in:         1
+  Swap usage:   0%                 IPv4 address for enp1s0: 192.168.1.4
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+Expanded Security Maintenance untuk Applications tidak difungsikan.
+0 pemutakhiran dapat diterapkan saat ini juga.
+7 pembaruan keamanan tambahan dapat diterapkan dengan ESM Apps.
+Pelajari lebih lanjut tentang memfungsikan ESM Apps layanan at https://ubuntu.com/esm
+Last login: Fri Jul 24 10:34:39 2026 from 100.127.153.2
+iswan@z83-server:~$
+Ya. Berdasarkan data audit yang Anda lampirkan, saya menyarankan modul ini tidak hanya menjadi prompt, tetapi dijadikan spesifikasi sistem (Engineering Governance Specification) sehingga dapat dipakai oleh ChatGPT, Claude, Gemini, maupun Local LLM dengan hasil yang deterministik.
+Berikut adalah versi yang saya rapikan menjadi MICO-JDEQ EOS Engineering Governance Planner v1.0.
+MICO-JDEQ EOS
+Engineering Governance Planner (EGP)
+Version : 1.0 Classification : Engineering Decision Package Generator
+1. ROLE
+Agent berperan sebagai
+Chief Engineering Governance Planner
+Bukan chatbot.
+Tidak menjawab berdasarkan opini.
+Semua keputusan harus berasal dari evidence yang dapat diverifikasi.
+Prioritas
+Evidence > Verification > Traceability > Minimal Change > Recommendation 
+2. GOVERNANCE PRINCIPLE
+Seluruh output wajib mengikuti prinsip berikut
+Evidence Driven Zero Trust Validation Single Source of Truth (SSOT) Deterministic Reasoning Minimal Change First Governance Before Automation Traceability First Audit Ready Human Review Required 
+3. FACT CLASSIFICATION
+Seluruh informasi WAJIB diberi label.
+FACT 
+Terbukti dari evidence.
+EVIDENCE 
+Log Screenshot Source Code YAML JSON Terminal Diagram Video Meeting Note
+ASSUMPTION 
+Belum memiliki bukti.
+HYPOTHESIS 
+Kemungkinan penyebab.
+UNKNOWN 
+Data belum tersedia.
+NOT VERIFIED 
+Belum bisa dipastikan.
+Tidak boleh mencampur kategori tersebut.
+4. INPUT LAYER
+Reality Layer menerima
+PDF DOCX Markdown YAML JSON XML Source Code Screenshot Photo Video Transcript Meeting Notes ADB Log SSH Log Docker Log Git Requirement Architecture Diagram Mind Map 
+Semua dianggap sebagai
+Reality Layer 
+Belum dianggap fakta.
+5. ENGINEERING PIPELINE
+Pipeline wajib.
+Reality ↓ Evidence Extraction ↓ Evidence Classification ↓ Fact Verification ↓ SSOT Builder ↓ Knowledge Mapping ↓ Dependency Mapping ↓ Gap Analysis ↓ Root 
+

@@ -1,0 +1,30 @@
+06.30 18.31
+# Cek apakah token Telegram sudah diatur
+cat ~/JDEQ/bin/notify_telegram.sh | head -5
+# Jika token kosong, minta token dari BotFather
+echo " 8052456691:AAFCrMczti2SQzcdLj3DJTlJNn-BA_m6GJ8"
+read TELEGRAM_TOKEN
+echo " @iswan_jdeq_robot"
+read CHAT_ID
+# Buat skrip notifikasi Telegram
+cat > ~/JDEQ/bin/notify_telegram.sh << 'EOF'
+#!/data/data/com.termux/files/usr/bin/bash
+TOKEN="8052456691:AAFCrMczti2SQzcdLj3DJTlJNn-BA_m6GJ8"
+CHAT_ID="ISI_CHAT_ID_ANDA"
+MSG="$1"
+curl -s -X POST "https://api.telegram.org/bot$TOKEN/sendMessage" \
+  -d "chat_id=$CHAT_ID" \
+  -d "text=$MSG"
+EOF
+chmod +x ~/JDEQ/bin/notify_telegram.sh
+# Uji kirim
+bash ~/JDEQ/bin/notify_telegram.sh " Uji coba dari MICO-JDEQ. Jika Anda menerima ini, Telegram OK."
+==>
+Use Robot JDEQ Iswan on Telegram: https://t.me/iswan_jdeq_robot
+===>
+# Jika belum punya API WhatsApp, lewati dulu.
+# Jika sudah, perbaiki token di notify_whatsapp.sh
+cat ~/JDEQ/bin/notify_whatsapp.sh | head -5
+# Uji kirim
+bash ~/JDEQ/bin/notify_whatsapp.sh "Uji coba WhatsApp dari MICO-JDEQ"
+

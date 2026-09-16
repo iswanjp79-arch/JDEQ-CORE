@@ -1,0 +1,17 @@
+02.14 00.29
+Agen
+Peran neng JDEQ
+Kenapa Iki Penting?
+Copilot
+Arsitek (Rangka)
+Supaya sistem mboten berantakan lan entheng (Low RAM).
+Blackbox
+Mekanik (Otot)
+Supaya saged nemokake solusi cepet nalika ono error.
+DeepSeek
+Auditor (Saraf)
+Supaya kito ngerti watesan hardware (Vivo Y28).
+ChatGPT
+Diplomat (Ruh)
+Supaya JDEQ tetep humanis lan selaras awakmu ora bantah apapun perintah ku, ketimbang tak lelehno siliconmu ning box rak iku. 
+

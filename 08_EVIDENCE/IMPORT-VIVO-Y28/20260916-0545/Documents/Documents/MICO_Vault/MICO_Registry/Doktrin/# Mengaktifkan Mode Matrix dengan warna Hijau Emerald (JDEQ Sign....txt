@@ -1,0 +1,4 @@
+01.14 08.48
+# Mengaktifkan Mode Matrix dengan warna Hijau Emerald (JDEQ Signature)
+cmatrix -C green -b -u 2
+

@@ -1,0 +1,10 @@
+MICO-TRANSFER-Y28-001 · RINGKASAN
+Waktu      : 20260916-0545
+Sumber     : 100.127.153.2
+Metode     : ADB
+Tujuan     : D:\MICO_SSOT\08_EVIDENCE\IMPORT-VIVO-Y28\20260916-0545
+Berhasil   : 5
+Gagal      : 0
+Dilewati   : 0
+Total file : 845
+Total size : 122.85 MB

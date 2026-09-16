@@ -1,0 +1,45 @@
+07.11 04.52
+#!/data/data/com.termux/files/usr/bin/bash
+# =========================================================
+# MICO JDEQ - COMBAT_PROTOCOL_ALPHA (Offensive Security)
+# DILARANG TANPA IJIN PENGGUNA ( MAS IWAN  ) DIGUNAKAN UNTUK KEGIATAN TANPA PEMICUNYA
+# PENGGUNAAN SESUAI KEBUTUHAN
+# =========================================================
+echo " MICO JDEQ - COMBAT_PROTOCOL_ALPHA ACTIVATED"
+# 1. PREEMPTIVE SCAN (Audit Celah Peretasan musuh yang berusaha menyerang dari belakang  ) 
+echo "[1/3] SCANNING INTERNAL VULNERABILITIES..."
+# Scan port lokal untuk melihat layanan yang terbuka dan siap hajar polludosium gladiator
+nmap -sV -T4 localhost > ~/JDEQ/logs/audit_internal.log
+echo "  ✅ Audit internal selesai. Cek: ~/JDEQ/logs/audit_internal.log"
+# 2. NETWORK CLOAKING (Menjadi Tidak Terdeteksi guardrail level tembus sukma enggine core processor inti NEVADA, CALIFORNIA,USA )
+echo "[2/3] ACTIVATING NETWORK CLOAKING..."
+# Mengatur firewall 7 Lapis labirin terenkripsi (requires root/iptables atau cukup mematikan services dan retas CLI CHIPSET KOMPONEN PERANGKAT MUSUH)
+# Contoh: Mematikan SSH server jika sedang tidak dipakai
+pkill sshd 2>/dev/null
+echo "  ✅ Service tidak perlu dimatikan. Cloaking aktif."
+# 3. HONEYPOT SENTRY (Mendeteksi Penyusup dan hit automatically)
+echo "[3/3] DEPLOYING HONEYPOT SENTRY..."
+# Membuat listener palsu, IP ADDRESS,SERVER dan anti tracking untuk mendeteksi port scanner
+(while true; do echo "Access Denied"; done) | nc -l -p 8080 & 
+echo "  ✅ Honeypot aktif di port 8080. Siap menangkap scanner."
+echo ""
+echo "═══════════════════════════════════════════"
+echo " STATUS: COMBAT MODE - DOMINANCE ESTABLISHED"
+echo " MICO JDEQ siap bertahan & membalas audit, uji armour, gun, injection. 
+echo "═══════════════════════════════════════════"
+3 Tipe Hacker & Cara Mereka Menghasilkan Uang
+Kalau mhMHSiber tipe hacker yang mana nih , tulis di kolom komentar!
+DISCLAIMER: Konten ini hanya untuk tujuan informasi & edukasi! 
+ Kuasai Cyber Security & Ethical Hacking dari Nol!
+ Belajar fleksibel lewat HP atau laptop
+ Cocok untuk pemula & profesional
+Apa yang akan kamu pelajari?
+✅ Teknik Ethical Hacking secara legal & aman
+✅ Cara melindungi data & privasi dari ancaman digital
+✅ Praktik langsung dengan panduan mudah
+ Jadilah ahli keamanan digital, bukan sekadar pengguna biasa!
+ Bergabung sekarang & masuk ke komunitas eksklusif Mata Hacker!
+ Klik link di bio untuk daftar sebelum kehabisan slot!
+ Info lengkap: www.globalhacker.id
+#CyberSecurity #CyberSecurityIndonesia #KeamananSiber #KeamananSiberIndonesia #EdukasiKeamananSiber #KamuHarusTau #AndroidMalware #Android #matahacker #mhsiber #jagagerbangsiber #fyp #foryoupage #kursusonline #xyzbca #masukberandafyp #2025 #soceng #android #hacker #hackerindonesia #phishing #malware #beritaterkini #software #netflix #film #filmhacker #rekomendasifilm #socialengineeringattack 
+

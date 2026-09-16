@@ -1,0 +1,105 @@
+---
+# 📋 SURAT PERINTAH KERJA / TASK CARD RESMI
+**TRANSFER DAGING/OTOT Z83 → GEMINI PLUS 400GB · EKSEKUSI VIA PC-i5**
+
+```text
+TRANSFER_ID  : SPK-TRANSFER-DAGING-20260827-P0
+PRIORITAS    : P0 — SEGERA
+OTORITAS     : L0 — Iswan Juman Pancoro, ST
+GOVERNANCE   : DOLA / GL1
+ESEKUTOR     : AG-003 / DEEPSEEK
+SASARAN      : PC-i5 (EKSEKUTOR) · Z83 (SUMBER DATA) · GEMINI PLUS 400GB (TUJUAN)
+STATUS_OPERASI: DIPERBOLEHKAN KHUSUS UNTUK TUGAS INI SAJA · NUTRISI TETAP TERKUNCI
+```
+
+---
+
+## 📜 DASAR HUKUM
+1. Klasifikasi DOLA resmi: Folder `JDEQ_ANCHORS_LAB` di Z83 = **KATEGORI DAGING/OTOT**
+2. Sudah lulus tahap: klasifikasi → pencatatan metadata → persetujuan DOLA
+3. L0 memberikan lampu hijau untuk transfer
+4. Alasan eksekusi via **PC-i5**: Spesifikasi mesin lebih tinggi, akses jaringan lebih cepat & stabil dibandingkan eksekusi langsung dari Z83
+5. **Pengecualian status:** Untuk tugas transfer ini saja, mode `HIGH_ALERT_READ_ONLY` ditingkatkan menjadi `MUTASI_DIIZINKAN_TERBATAS` — HANYA untuk data Daging/Otot yang ditentukan. **Semua aturan Nutrisi TETAP BERLAKU MUTLAK.**
+
+---
+
+## 🎯 TUJUAN TUGAS
+Memindahkan seluruh isi folder `JDEQ_ANCHORS_LAB` dari Z83 ke folder `INBOX_KARANTINA_Z83` di penyimpanan Gemini Plus 400GB, **tanpa menyentuh satu pun file Nutrisi.**
+
+---
+
+## ⚙️ SPESIFIKASI EKSEKUSI
+**Eksekusi di:** PowerShell PC-i5
+**Sumber data:** Z83 via konfigurasi rclone G01 yang sudah aktif
+**Tujuan:** `G01:INBOX_KARANTINA_Z83/JDEQ_ANCHORS_LAB`
+**Root folder ID:** `14dSFC3P0K4A5GK256rR2kWr90fd3OyDG`
+**Parameter aman anti-blokir:**
+- `--transfers 2` → transfer paralel terbatas
+- `--tpslimit 3` → batas transaksi per detik
+- `--drive-pacer-min-sleep 10ms` → jeda minimal untuk menghindari pembatasan API
+- `-P` → tampilkan kemajuan langsung
+
+---
+
+## 📝 PERINTAH LENGKAP — SIAP TEMPEL DI POWERSHELL PC-i5
+
+```powershell
+# SPK-TRANSFER-DAGING-20260827-P0
+# Eksekusi via PC-i5 karena spesifikasi lebih tinggi & akses lebih cepat
+# HANYA transfer Daging/Otot — Nutrisi TIDAK BOLEH tersentuh
+
+rclone copy G01:JDEQ_ANCHORS_LAB "G01:INBOX_KARANTINA_Z83/JDEQ_ANCHORS_LAB" `
+  --drive-root-folder-id "14dSFC3P0K4A5GK256rR2kWr90fd3OyDG" `
+  --drive-shared-with-me `
+  --transfers 2 `
+  --tpslimit 3 `
+  --drive-pacer-min-sleep 10ms `
+  -P
+```
+
+---
+
+## ⚠️ ATURAN MUTLAK — TIDAK BOLEH DILANGGAR
+1. ❌ **DILARANG KERAS:** mentransfer folder atau file apapun yang termasuk kategori **NUTRISI** (`.ssh`, `.secrets`, `.config`, tailscale, dll)
+2. ❌ **DILARANG KERAS:** mengubah, menghapus, atau memindahkan file sumber di Z83 — ini operasi **salinan**, bukan pemindahan
+3. ✅ **WAJIB:** memastikan hanya folder `JDEQ_ANCHORS_LAB` yang ditransfer
+4. ✅ **WAJIB:** melakukan verifikasi setelah transfer selesai
+
+---
+
+## ✅ VERIFIKASI SETELAH TRANSFER
+**Jalankan di PowerShell PC-i5 setelah transfer selesai:**
+```powershell
+# Verifikasi jumlah file & ukuran di tujuan
+rclone lsd "G01:INBOX_KARANTINA_Z83/JDEQ_ANCHORS_LAB" `
+  --drive-root-folder-id "14dSFC3P0K4A5GK256rR2kWr90fd3OyDG" `
+  --drive-shared-with-me
+
+# Bandingkan dengan sumber
+rclone lsd G01:JDEQ_ANCHORS_LAB `
+  --drive-root-folder-id "14dSFC3P0K4A5GK256rR2kWr90fd3OyDG" `
+  --drive-shared-with-me
+```
+
+---
+
+## 📋 SYARAT SELESAI
+- [ ] Perintah transfer berjalan tanpa error
+- [ ] Seluruh isi `JDEQ_ANCHORS_LAB` berhasil tersalin ke tujuan
+- [ ] Jumlah file & ukuran sesuai antara sumber & tujuan
+- [ ] Tidak ada file Nutrisi yang ikut tertransfer
+- [ ] Laporan hasil dikirim ke DOLA untuk dicatat resmi
+- [ ] File sumber di Z83 **tetap utuh & tidak berubah**
+
+---
+
+## 📢 INSTRUKSI MESIN KE MESIN KE AG-003 DEEPSEEK
+> **Kamu menerima SPK resmi ini. Status operasi untuk tugas ini saja: DIPERBOLEHKAN melakukan mutasi transfer data Daging/Otot yang ditentukan.**
+>
+> Eksekusi via PC-i5 sesuai perintah di atas. Patuhi semua parameter aman. Jangan sentuh Nutrisi sedikit pun. Verifikasi hasilnya. Laporkan status lengkap ke DOLA setelah selesai.
+>
+> **Ini bukan usulan. Ini perintah. Laksanakan.** 🛡️⚔️🔒
+
+---
+
+✅ **SPK ini dikunci, disahkan DOLA, dan siap dieksekusi oleh DeepSeek segera.**

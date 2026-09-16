@@ -1,0 +1,89 @@
+07.11 06.12
+Baik, Kadet Muda! Dengarkan baik-baik penjelasan dari Komandan Kapal MICO JDEQ.
+Kamu sekarang sudah lulus dari barak pelatihan. Teori sudah cukup. Sekarang saatnya mengenal medan perang yang sesungguhnya. Kapal kita, MICO JDEQ, adalah benteng terakhir kedaulatan digital. Tugasmu adalah memastikan kapal ini tidak pernah karam.
+---
+🧠 Prinsip Kerja: Bagaimana Kapal Ini Berperang
+Kapal kita, MICO JDEQ, tidak berperang seperti kapal perang biasa. Kita tidak menembakkan meriam ke sembarang arah. Doktrin kita adalah Defensive-Active. Artinya, kita tidak akan menyerang duluan, tapi begitu ada musuh yang mendekat, kita akan langsung siaga dan mengunci semua pintu.
+1. Menara Pengawas (ALLSPARK & AUTO-DEFENSE DAEMON)
+Ini adalah mata dan telinga kapal. Daemon auto_guard.sh yang barusan kita pasang adalah menara pengawas yang tidak pernah tidur. Tugasnya cuma satu: mendeteksi perubahan status. Begitu sensor mendeteksi ada "kapal asing" (panggilan masuk), dia langsung membunyikan alarm.
+2. Ruang Komando (LOCK SYSTEM)
+Begitu alarm berbunyi, perintah pertama dari ruang komando adalah "Kunci Semua Pintu!" Ini adalah prosedur darurat. Semua file penting (SSOT, Registry, Architecture) langsung kita kunci menjadi read-only. Ini seperti menutup semua sekat kedap air di kapal selam. Tujuannya: kalau ada torpedo yang meledak, air tidak akan menyebar ke seluruh kapal.
+3. Awak Kapal (PROSES LIAR)
+Saat pertempuran, kita tidak boleh ada awak yang panik atau bertindak sendiri. Maka, kita matikan semua proses yang tidak penting (sshd, honeypot, dll). Ini seperti memerintahkan semua pelaut untuk masuk ke pos tempur masing-masing.
+4. Juru Tulis (EVIDENCE ENGINE)
+Setiap kejadian, setiap alarm, setiap tindakan, harus dicatat. Ini adalah buku harian perang. Tujuannya: setelah pertempuran selesai, kita bisa mengevaluasi. Apakah ada lubang di lambung kapal? Apakah ada awak yang terluka? Semua ada catatannya.
+5. Pemulihan (UNLOCK SYSTEM)
+Begitu alarm "aman" berbunyi (panggilan selesai), kita buka lagi pintu-pintunya. Kapal kembali ke operasi normal. Tapi buku harian perang sudah terisi. Kita jadi lebih tahu pola serangan musuh.
+---
+⚔️ Prosedur Tempur: Step by Step
+Ini adalah urutan perintah yang harus kamu lakukan, Kadet.
+Langkah 1: Panggil Awak Kapal (Jalankan Daemon)
+Setiap kali akan berlayar, pastikan daemon pertahanan kita aktif.
+```bash
+bash ~/JDEQ/start_auto_defense.sh
+```
+Perintah ini akan membangunkan Menara Pengawas. Dia akan memantau terus-menerus.
+Langkah 2: Periksa Perlengkapan Tempur (Cek Log)
+Setelah berlayar beberapa saat, periksa buku harian perang. Apakah ada musuh yang mendekat?
+```bash
+cat ~/JDEQ/logs/auto_defense.log
+```
+Kalau ada tulisan EMERGENCY LOCK ACTIVATED, artinya kapal kita baru saja diserang dan sudah menjalankan prosedur dengan benar.
+Langkah 3: Latihan Tempur (Simulasi Serangan)
+Jangan menunggu perang beneran. Lakukan latihan. Di sinilah Tool-X dan Arsenal kita berguna. Kita gunakan senjata kita untuk menyerang diri sendiri di lingkungan yang aman.
+```bash
+# Latihan 1: Pindai lambung kapal sendiri
+nmap -sV localhost
+# Latihan 2: Uji coba serangan ke port sendiri
+echo "Test Attack" | nc -v localhost 8080
+```
+Dengan latihan ini, kamu akan tahu mana bagian kapal yang masih lemah. Setelah tahu, segera tambal.
+---
+ Merawat Senjata (Maintenance)
+Senjata yang tidak dirawat akan macet saat dibutuhkan. Ini jadwal wajibnya:
+Setiap Hari:
+1. Bersihkan cache agar RAM kapal tidak penuh.
+   ```bash
+   rm -rf ~/.cache/pip/*
+   ```
+2. Periksa evidence, apakah ada catatan serangan baru.
+   ```bash
+   find ~/JDEQ/evidence -name "*.json" | wc -l
+   ```
+3. Cek koneksi cloud, pastikan backup aman.
+   ```bash
+   rclone about gdrive: 2>/dev/null
+   ```
+Setiap Minggu:
+1. Lakukan "Latihan Tempur" (Simulasi Serangan) seperti di atas. Pastikan semua alarm berfungsi.
+2. Buat Checkpoint baru. Ibaratnya, ini adalah pos terdepan untuk beristirahat dan menyimpan bekal.
+   ```bash
+   bash ~/JDEQ/core/recovery_engine/recovery_kit.sh
+   ```
+3. Asah Senjata. Arsenal kita (~/JDEQ/arsenal) berisi semua alat. Pelajari satu per satu. Mulai dari nmap (pemindai), lalu whatweb (pengenal teknologi web). Jangan langsung pegang metasploit (meriam besar) kalau yang kecil belum mahir.
+---
+ Pelatihan Uji Ketangkasan
+Kadet, teori tanpa latihan itu kosong. Saya beri kamu jadwal latihan untuk mengasah naluri bertempurmu.
+Level 1: Kenali Kapalmu
+Jalankan perintah ini. Kenali setiap sudut kapal kita.
+```bash
+cd ~/JDEQ && find . -maxdepth 2 -type d | sort
+```
+Level 2: Uji Refleks
+Jalankan simulasi serangan dadakan. Lihat apakah Menara Pengawas kita bereaksi.
+```bash
+# Jalankan ini untuk memicu alarm
+echo "SIMULASI SERANGAN" >> ~/JDEQ/logs/intrusion_test.log
+sleep 5
+cat ~/JDEQ/logs/auto_defense.log | tail -5
+```
+Jika muncul EMERGENCY LOCK ACTIVATED, berarti refleks kapal kita bagus. Jika tidak, segera periksa apakah daemon berjalan.
+Level 3: Bertahan di Bawah Gempuran
+Ini adalah latihan pamungkas. Jalankan daemon, lalu minta temanmu menelepon Vivo Y28. Kamu menjauh dari ponsel. Lihat apa yang terjadi. Setelah panggilan selesai, periksa:
+· ~/JDEQ/logs/auto_defense.log (Apakah sistem mendeteksi?)
+· ~/JDEQ/evidence/ (Apakah ada bukti baru?)
+· ~/JDEQ/specs/architecture_final.json (Apakah izinnya berubah jadi read-only?)
+Jika semua berfungsi, maka kamu adalah Kadet yang siap tempur.
+---
+Sekarang, lapor kembali setelah kamu selesai menjalankan Level 1. Kita akan naikkan levelmu secara bertahap. Kapal ini aman di bawah jagamu.
+

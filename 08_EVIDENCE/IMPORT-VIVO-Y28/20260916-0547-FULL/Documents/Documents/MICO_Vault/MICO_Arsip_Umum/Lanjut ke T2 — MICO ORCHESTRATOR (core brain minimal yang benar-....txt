@@ -1,0 +1,31 @@
+06.11 13.29
+Lanjut ke T2 — MICO ORCHESTRATOR (core brain minimal yang benar-benar jalan di Termux). Ini versi working minimal, bukan konsep.
+T2 — MICO ORCHESTRATOR (IMPLEMENTASI NYATA)
+1. Struktur wajib (dibuat dulu)
+mkdir -p ~/MICO_SYSTEM/core mkdir -p ~/MICO_SYSTEM/agents mkdir -p ~/MICO_SYSTEM/executor 
+2. FILE UTAMA: mico.py (ORCHESTRATOR INTI)
+cat > ~/MICO_SYSTEM/core/mico.py << 'EOF' import os import json import time from core.router import route_task from core.task_queue import TaskQueue MICO_HOME = os.path.expanduser("~/MICO_SYSTEM") QUEUE_FILE = MICO_HOME + "/registry.json" queue = TaskQueue(QUEUE_FILE) def bootstrap(): print("[MICO] Orchestrator starting...") queue.load() def add_task(task): queue.push(task) queue.save() def run(): while True: task = queue.pop() if not task: time.sleep(1) continue print(f"[MICO] Dispatch: {task}") route_task(task) queue.save() if __name__ == "__main__": bootstrap() # contoh task awal (test) if len(queue.data) == 0: queue.push({ "agent": "A01_construction_mapper", "action": "init", "payload": "hello" }) queue.save() run() EOF 
+3. TASK QUEUE (ANTI TABRAKAN EKSEKUSI)
+cat > ~/MICO_SYSTEM/core/task_queue.py << 'EOF' import json import os class TaskQueue: def __init__(self, file): self.file = file self.data = [] def load(self): if os.path.exists(self.file): with open(self.file, "r") as f: self.data = json.load(f) else: self.data = [] def save(self): with open(self.file, "w") as f: json.dump(self.data, f, indent=2) def push(self, task): self.data.append(task) def pop(self): if len(self.data) == 0: return None return self.data.pop(0) EOF 
+4. ROUTER (PENGARAH KE AGENT)
+cat > ~/MICO_SYSTEM/core/router.py << 'EOF' import os import subprocess AGENT_DIR = os.path.expanduser("~/MICO_SYSTEM/agents") def route_task(task): agent = task.get("agent") action = task.get("action") payload = task.get("payload") agent_path = f"{AGENT_DIR}/{agent}/run.sh" if not os.path.exists(agent_path): print(f"[MICO] Agent missing: {agent}") return cmd = f"bash {agent_path} '{action}' '{payload}'" subprocess.call(cmd, shell=True) EOF 
+5. AGENT TEST (WAJIB 1 BIAR SISTEM HIDUP)
+mkdir -p ~/MICO_SYSTEM/agents/A01_construction_mapper cat > ~/MICO_SYSTEM/agents/A01_construction_mapper/run.sh << 'EOF' echo "[A01] ACTION: $1" echo "[A01] PAYLOAD: $2" EOF chmod +x ~/MICO_SYSTEM/agents/A01_construction_mapper/run.sh 
+6. REGISTRY FILE
+echo "[]" > ~/MICO_SYSTEM/registry.json 
+7. EKSEKUSI (FINAL TEST)
+cd ~/MICO_SYSTEM python core/mico.py 
+HASIL YANG HARUS TERJADI
+Kalau benar:
+[MICO] Orchestrator starting... [MICO] Dispatch: {'agent': 'A01_construction_mapper', ...} [A01] ACTION: init [A01] PAYLOAD: hello 
+MAKNA ARSITEKTUR INI (INTI)
+Mico = 1 otak pusat (single dispatcher)
+Queue = anti konflik eksekusi
+Router = pemisah logika vs eksekusi
+Agent = modul kerja terisolasi
+Tidak ada duplicate runtime kalau semua lewat queue 
+NEXT STEP (T3 — jika kamu lanjut)
+Kalau ini sudah jalan stabil, langkah berikutnya:
+“Membangun 12 agent lengkap + lock system + isolation executor (anti tabrakan resource CPU/RAM Termux)”
+Saya tunggu konfirmasi hasil run MICO ini dulu.
+

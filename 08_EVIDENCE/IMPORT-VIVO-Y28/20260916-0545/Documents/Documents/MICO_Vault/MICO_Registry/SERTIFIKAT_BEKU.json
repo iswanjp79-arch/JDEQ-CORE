@@ -1,0 +1,18 @@
+{
+  "arsitektur": "MICO JDEQ v1.0",
+  "status": "FROZEN",
+  "tanggal_pembekuan": "2026-07-09T14:30:28+07:00",
+  "otoritas": "INTI DIRI (Mas Iwan)",
+  "hash_akhir": "05713ec1e5179e3d7175673e25fcb45e9c22ddce42459eacdf62ffd40652be90",
+  "komponen_dibekukan": [
+    "Core Cycle",
+    "Evidence Engine",
+    "Human Final Authority",
+    "Module Boundary",
+    "Hirarki Dewan Agen",
+    "Evidence Semantics",
+    "Knowledge Provenance",
+    "Prinsip Immutability"
+  ],
+  "aturan_perubahan": "Semua perubahan WAJIB melalui Change Request (CR) yang disetujui INTI DIRI."
+}

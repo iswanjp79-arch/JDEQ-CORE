@@ -1,0 +1,3 @@
+06.19 04.24
+DAEMON WAJIB  :
+ps aux | grep -E 'llama-server|event_listener|tts_worker|memory_guard|ollama_watchdog|mico_runner|ts'

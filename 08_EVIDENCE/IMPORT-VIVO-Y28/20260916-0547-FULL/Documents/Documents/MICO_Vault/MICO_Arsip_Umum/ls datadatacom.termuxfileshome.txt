@@ -1,0 +1,3 @@
+06.19 00.48
+ls /data/data/com.termux/files/home
+

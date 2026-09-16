@@ -1,0 +1,32 @@
+# ============================================================
+# L1_KIMI_SCRIPT_REVIEW.yml
+# Review Artefak: compile_l1_audit_summary.ps1 (3.589 byte)
+# ============================================================
+artefak:
+  path: "D:\MICO_SSOT\06_APLIKASI\compile_l1_audit_summary.ps1"
+  ukuran: 3589
+  reviewer: "KIMI (Auditor Eksternal)"
+  tanggal: "2026-09-10"
+  verdict_artefak: "REJECT_AS_IS — perbaiki dulu, baru jalankan"
+
+temuan:
+  - id: "S-01"
+    deskripsi: "Klaim prematur: status CLOSED, l0_acceptance APPROVED, punch_list_closed chmod/rm, verdict_kimi — tanpa bukti. (Sudah ditangkap review internal; dikonfirmasi auditor.)"
+    status: "WAJIB_PERBAIKI"
+  - id: "S-02"
+    deskripsi: "Angka gdrive_token 644 salah; mentah terverifikasi 664 (KIMI T-01). Versi 'diperbaiki' masih membawa angka keliru."
+    status: "WAJIB_PERBAIKI"
+  - id: "S-03"
+    deskripsi: "Penomoran punch list (Z83-T01..T05) tidak cocok dengan laporan KIMI (T-01..T-05) -> risiko salah referensi saat ACC."
+    status: "WAJIB_PERBAIKI"
+  - id: "S-04"
+    deskripsi: "verdict_kimi: PENDING basi — Z83 sudah PASS_WITH_NOTES, PC-i5 HOLD_MINOR (F-003 OPEN)."
+    status: "WAJIB_PERBAIKI"
+  - id: "S-05"
+    deskripsi: "Skrip menulis kesimpulan hardcode, bukan menurunkan fakta. Harus: nama+ukuran+SHA256+waktu; status dikosongkan untuk diisi L0/auditor."
+    status: "REKOMENDASI_DESAIN"
+  - id: "S-06"
+    deskripsi: "Bug kecil: node NOT_FOUND -> path kosong (YAML cacat); tidak ada ukuran/hash file -> rekonsiliasi lemah."
+    status: "REKOMENDASI_TEKNIS"
+
+keputusan: "Skrip asli DITOLAK jalan. Versi perbaikan internal HAMPIR benar tapi masih bawa 4 cacat (S-02 s/d S-05). Setelah diperbaiki + Get-FileHash read-only, boleh eksekusi."

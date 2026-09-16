@@ -1,0 +1,48 @@
+05.16 16.21
+Welcome to Termux!
+
+Docs:       https://termux.dev/docs
+Donate:     https://termux.dev/donate
+Community:  https://termux.dev/community
+
+Working with packages:
+
+ - Search:  pkg search <query>
+ - Install: pkg install <package>
+ - Upgrade: pkg upgrade
+
+Subscribing to additional repositories:
+
+ - Root:    pkg install root-repo
+ - X11:     pkg install x11-repo
+
+For fixing any repository issues,
+try 'termux-change-repo' command.
+
+Report issues at https://termux.dev/issues
+==================================================
+ JDEQ V2.1 | AUDITOR DOLA VERIFIED
+==================================================
+ ts             : 2026-05-15 19:04:06.202696
+ status         : NORMAL
+ cpu_load       : N/A
+ mem_total_mb   : 7757
+ mem_avail_mb   : 3180
+ batt_pct       : 73
+ batt_state     : DISCHARGING
+--------------------------------------------------
+ AGEN TERDAFTAR: 12
+ [01] JARVIS
+ [02] EMERGENT
+ [03] AGENT_ZERO
+ [04] CLAUDE
+ [05] CHAT_GPT
+ [06] DEEPSEEK
+ [07] BLACKBOX_AI
+ [08] GH_COPILOT
+ [09] QWEN
+ [10] DOLA
+ [11] MS_COPILOT
+ [12] XAU_TRADER
+==================================================
+(PYTHON_ENV) u0_a221@jdeq:~$

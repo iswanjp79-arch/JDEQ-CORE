@@ -1,0 +1,10 @@
+08.01 20.06
+IBM Engineering Workflow Management audit trail"
+  · Ini akan membawa Anda ke spesifikasi QC, seperti workflow dan dokumentasi audit.
+· "IBM Engineering Lifecycle Management quality control"
+  · Ini akan membawa Anda ke standar QC yang mencakup inspeksi material hingga uji beban.
+· "IBM ELM vs conventional QC comparison"
+  · Ini akan membantu Anda melihat perbandingan langsung antara metode QC konvensional (proyek Anda) dan metode digital (IT).
+· "IBM Engineering Requirements Management traceability"
+  · Ini setara dengan spesifikasi teknis yang harus dipenuhi oleh setiap material. Di IT, ini memastikan setiap kode bisa dilacak kembali ke perintah aslinya
+

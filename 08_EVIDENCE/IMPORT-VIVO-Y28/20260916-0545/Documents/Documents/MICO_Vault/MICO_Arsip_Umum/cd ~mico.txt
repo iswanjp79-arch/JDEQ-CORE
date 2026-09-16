@@ -1,0 +1,7 @@
+06.27 20.12
+cd ~/mico
+cat > ~/.mico_keys << 'EOF'
+export TELEGRAM_BOT_TOKEN="8052456691:AAFCrMczti2SQzcdLj3DJTlJNn-BA_m6GJ8"
+EOF
+chmod 600 ~/.mico_keys
+

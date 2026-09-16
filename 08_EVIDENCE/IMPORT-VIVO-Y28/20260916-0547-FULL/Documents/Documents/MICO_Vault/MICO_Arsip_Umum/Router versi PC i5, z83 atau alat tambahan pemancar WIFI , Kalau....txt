@@ -1,0 +1,31 @@
+07.30 17.50
+Router versi PC i5, z83 atau alat tambahan pemancar WIFI , Kalau tsudah pasang WiFi (alias t ada router WiFi sampai 2 unit atau koneksi internet rumah/kantor), kamu masih bisa berbagi koneksi dan kontrol perangkat dengan mengandalkan hotspot antar perangkat atau tethering kabel – fokus pada manajemen kecepatan Mbps agar semua bisa berjalan lancar! 
+ KECEPATAN & KAPASITAS Mbps KETIKA  ADA WIFI SECARA OPTIMAL
+1. HOTSPOT PONSEL (DARI KARTU SIM + FASILITAS MODEM + ROUTER PINJAMAN dari Tekhnisi )
+Ini adalah pilihan utama kalau mau optimalkan WiFi yang ada di rumah. 
+- Kecepatan yang bisa didapat:
+- SIM 4G: Rata-rata 10-50 Mbps (tergantung sinyal operator dan lokasi jaringan GSM dan provider penyedia layanan) – cukup untuk kontrol Scrcpy wireless, browsing, dan menjalankan aplikasi Python ringan.
+- SIM + WIFI 4+5G: Jika ada sinyal, bisa sampe 100-300 Mbps – cukup untuk menangani 5-6 perangkat sekaligus tanpa lag.
+- Pengaturan agar kapasitas Mbps optimal:
+- Batasi jumlah perangkat yang tersambung maksimal 3-4 saja (jauh dari batas 8 yang kamu punya) agar kecepatan tidak terbagi terlalu banyak.
+- Pilih mode hotspot 2.4GHz kalau ada banyak tembok atau jarak jauh (jangkauan lebih luas), atau 5GHz kalau perangkat dekat (kecepatan lebih stabil).
+- Matikan fitur yang tidak perlu di ponsel hotspot (seperti GPS atau aplikasi berjalan di background) agar daya tidak terbuang dan kecepatan tetap stabil.
+2. TETHERING KABEL (LEBIH STABIL DARI HOTSPOT WIFI)
+Kalau kamu punya kabel USB cukup banyak (atau USB hub kecil), tethering kabel lebih baik karena kecepatan Mbps lebih stabil.
+- Kecepatan yang bisa didapat:
+- Sama dengan kecepatan SIM ponsel, tapi lebih stabil karena tidak terpengaruh gangguan sinyal WiFi. Contoh: Jika SIM 4G kamu dapat 30 Mbps, tethering kabel akan memberikan hampir full 30 Mbps ke perangkat yang tersambung.
+- Manajemen kapasitas:
+- Colok 1 ponsel ke laptop via kabel untuk tethering internet utama.
+- Gunakan hotspot dari ponsel tersebut untuk 2 ponsel lain – jadi total kecepatan yang dibagi lebih terkontrol.
+- Misalnya: Ponsel A (tethering kabel ke laptop) dapat 30 Mbps → laptop dapat full 30 Mbps, lalu ponsel A jadi hotspot untuk ponsel B dan C → masing-masing dapat sekitar 10-15 Mbps.
+3. BERBAGI HOTSPOT ANTARA PONSEL + Z83 server + PC i5
+Kalau ada 2 ponsel dengan kartu SIM berbeda, bisa jadi "rantai" agar kapasitas Mbps lebih maksimal + WIFI rumah. 
+- Ponsel A (SIM dengan kecepatan tinggi) jadi hotspot utama → sambungkan ponsel B dan C ke hotspot A.
+- Ponsel B juga jadi hotspot kecil untuk ponsel D (jika ada) → kecepatan yang diterima ponsel D tetap cukup karena sudah melalui ponsel B yang sudah mendapatkan alokasi Mbps dari A.
+- Ini efektif kalau kamu perlu sambungkan lebih dari 4 perangkat tanpa membuat kecepatan terlalu lambat.
+ TIPS JAGA KECEPATAN Mbps KETIKA TIDAK ADA WIFI:
+- Pilih operator dengan sinyal kuat di lokasi kamu: Cek kecepatan SIM kamu dengan aplikasi seperti Speedtest untuk tahu mana yang paling cepat.
+- Batasi penggunaan data berat: Jangan download file besar atau streaming video saat menggunakan hotspot, karena akan menghabiskan bandwidth dan membuat kecepatan lain turun.
+- Gunakan mode hemat data: Aktifkan fitur "hemat data" di ponsel hotspot dan perangkat lain agar tidak ada data yang terbuang percuma.
+- Untuk Scrcpy: Gunakan perintah  scrcpy --bit-rate=1M --max-size=480  agar penggunaan bandwidth lebih kecil tapi tampilan tetap cukup jelas.
+

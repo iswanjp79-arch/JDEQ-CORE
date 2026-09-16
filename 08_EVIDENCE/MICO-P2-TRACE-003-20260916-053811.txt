@@ -1,0 +1,582 @@
+=== MICO-P2-TRACE-003 · 20260916-053811 ===
+Root: D:\MICO-CORE
+
+[1] STRUCTURE MAP (2 level)
+  [DIR] C_DRIVE_MIGRATED
+        └── 01_NEXUS_CORE
+        └── 02_ENGINEERING_WORKS
+        └── 03_AI_MODELS
+        └── 04_SYSTEM_MIRROR
+        └── AI_Models
+        └── APPDATA_OFFLOAD
+        └── backups
+        └── JARVIS_CORE
+        └── JATI_DIRI_ENCER
+        └── JDEQ_Core
+        └── JDEQ_FINAL
+        └── JDEQ_LOCAL
+        └── JDEQ_Project
+        └── JDEQ_Sandbox
+        └── JDEQ_SYNC
+        └── MICO
+        └── MICO_AUDIT
+        └── MICO_Bridge
+        └── MICO_Engine
+        └── MICO_EVIDENCE
+        └── MICO_TRIAGE
+        └── MICO-Artifacts
+        └── quarantine
+  [DIR] EVIDENCE
+  [DIR] OFFLOAD
+        └── hermes-agent
+  [DIR] Z83
+        └── sari-inti
+
+
+[2] FILE TYPES
+ 43808  .js
+ 33239  .ts
+ 28138  .py
+ 27778  .map
+ 27455  .mjs
+ 26846  .svg
+ 10108  .pyc
+  9008  .tsx
+  9004  (noext)
+  8087  .cjs
+  7331  .md
+  6030  .json
+  5796  .mts
+  2484  .png
+  2343  .xml
+  2286  .cmake
+  1944  .dll
+  1506  .qm
+  1455  .txt
+  1087  .pyi
+  1064  .com
+   938  .pyd
+   723  .kuip
+   720  .html
+   656  .cts
+
+
+[3] P2-RELATED FILES (top 200)
+DIR	Z83	2026-09-01 15:41
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\api-ms-win-crt-runtime-l1-1-0.dll	2026-04-15 11:20
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\vcruntime140_1.dll	2026-04-15 11:35
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\vcruntime140_threads.dll	2026-04-15 11:35
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\vcruntime140.dll	2026-04-15 11:35
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\site-packages\numpy\typing\tests\test_runtime.py	2024-02-06 20:27
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\site-packages\numpy\typing\tests\__pycache__\test_runtime.cpython-311.pyc	2024-02-06 20:28
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\lib\qt6\mkspecs\features\static_runtime.prf	2025-02-14 00:45
+DIR	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\gateway-service	2026-08-21 03:12
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\gateway-service\Hermes_Gateway.cmd	2026-08-21 03:09
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\gateway-service\Hermes_Gateway.vbs	2026-08-21 03:09
+DIR	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\gateway	2026-08-21 03:13
+DIR	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\tui_gateway	2026-08-21 03:18
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\agent\agent_runtime_helpers.py	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\agent\codex_runtime.py	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\agent\relay_runtime.py	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\agent\runtime_cwd.py	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\agent\monitoring\gateway_health_export.py	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\agent\monitoring\gateway_health.py	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\electron\active-runtime-state.test.ts	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\electron\active-runtime-state.ts	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\electron\gateway-file-download-transport.test.ts	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\electron\gateway-file-download.test.ts	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\electron\gateway-file-download.ts	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\electron\gateway-ws-probe.test.ts	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\electron\gateway-ws-probe.ts	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\scripts\perf\gateway_attach_bench.py	2026-08-21 02:58
+DIR	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\app\gateway	2026-08-21 03:13
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\app\chat\runtime-repository.test.ts	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\app\chat\runtime-repository.ts	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\app\gateway\hooks\gateway-hmr-survivor.test.ts	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\app\gateway\hooks\gateway-hmr-survivor.ts	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\app\gateway\hooks\use-gateway-boot.test.tsx	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\app\gateway\hooks\use-gateway-boot.ts	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\app\gateway\hooks\use-gateway-request.test.ts	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\app\gateway\hooks\use-gateway-request.ts	2026-08-21 02:58
+DIR	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\app\session\hooks\use-message-stream\gateway-event	2026-08-21 03:13
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\app\settings\gateway-settings.test.ts	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\app\settings\gateway-settings.test.tsx	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\app\settings\gateway-settings.tsx	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\app\shell\gateway-menu-panel.test.tsx	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\app\shell\gateway-menu-panel.tsx	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\components\gateway-connecting-overlay.test.tsx	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\components\gateway-connecting-overlay.tsx	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\contrib\runtime-loader.test.ts	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\contrib\runtime-loader.ts	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\i18n\runtime.test.ts	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\i18n\runtime.ts	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\lib\chat-runtime.test.ts	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\lib\chat-runtime.ts	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\lib\gateway-events.test.ts	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\lib\gateway-events.ts	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\lib\gateway-rpc.test.ts	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\lib\gateway-rpc.ts	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\lib\gateway-ws-url.test.ts	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\lib\incremental-external-store-runtime.test.ts	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\lib\incremental-external-store-runtime.ts	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\lib\json-rpc-gateway-url-guard.test.ts	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\lib\runtime-readiness.test.ts	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\lib\runtime-readiness.ts	2026-08-21 02:58
+DIR	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\plugins\hello-runtime	2026-08-21 03:13
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\plugins\hello-runtime\plugin.runtime.js	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\sdk\runtime.ts	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\store\gateway-activation-prune-lease.test.ts	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\store\gateway-agent-scope.test.ts	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\store\gateway-connection-lifecycle.test.ts	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\store\gateway-connection-scope.test.ts	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\store\gateway-profile-request.test.ts	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\store\gateway-reconnect.test.ts	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\store\gateway-reconnect.ts	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\store\gateway-shared-remote.test.ts	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\store\gateway-switch.test.ts	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\store\gateway-switch.ts	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\store\gateway.ts	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\shared\src\json-rpc-gateway.ts	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\docs\kanban\multi-gateway.md	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\gateway\runtime_footer.py	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\hermes_cli\codex_runtime_plugin_migration.py	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\hermes_cli\codex_runtime_switch.py	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\hermes_cli\gateway_enroll.py	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\hermes_cli\gateway_windows.py	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\hermes_cli\gateway.py	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\hermes_cli\runtime_provider.py	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\hermes_cli\sqlite_runtime.py	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\hermes_cli\windows_ssh_runtime.py	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\hermes_cli\observability\relay_runtime.py	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\hermes_cli\subcommands\gateway.py	2026-08-21 02:58
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\hermes_cli\__pycache__\gateway_windows.cpython-311.pyc	2026-08-21 03:09
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\hermes_cli\__pycache__\gateway.cpython-311.pyc	2026-08-21 03:09
+DIR	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\builder-util-runtime	2026-08-21 03:17
+DIR	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\hast-util-to-jsx-runtime	2026-08-21 03:17
+DIR	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\http2-wrapper	2026-08-21 03:17
+DIR	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime	2026-08-21 03:13
+DIR	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtimes	2026-08-21 03:13
+DIR	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\react\runtimes	2026-08-21 03:13
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\react\AssistantRuntimeProvider.d.ts	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\react\AssistantRuntimeProvider.d.ts.map	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\react\AssistantRuntimeProvider.js	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\react\AssistantRuntimeProvider.js.map	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\react\RuntimeAdapter.d.ts	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\react\RuntimeAdapter.d.ts.map	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\react\RuntimeAdapter.js	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\react\RuntimeAdapter.js.map	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\react\providers\ThreadListItemRuntimeProvider.d.ts	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\react\providers\ThreadListItemRuntimeProvider.d.ts.map	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\react\providers\ThreadListItemRuntimeProvider.js	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\react\providers\ThreadListItemRuntimeProvider.js.map	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\react\runtimes\createRuntimeExtras.d.ts	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\react\runtimes\createRuntimeExtras.d.ts.map	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\react\runtimes\createRuntimeExtras.js	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\react\runtimes\createRuntimeExtras.js.map	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\react\runtimes\RemoteThreadListThreadListRuntimeCore.d.ts	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\react\runtimes\RemoteThreadListThreadListRuntimeCore.d.ts.map	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\react\runtimes\RemoteThreadListThreadListRuntimeCore.js	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\react\runtimes\RemoteThreadListThreadListRuntimeCore.js.map	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\react\runtimes\RuntimeAdapterProvider.d.ts	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\react\runtimes\RuntimeAdapterProvider.d.ts.map	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\react\runtimes\RuntimeAdapterProvider.js	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\react\runtimes\RuntimeAdapterProvider.js.map	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\react\runtimes\useExternalStoreRuntime.d.ts	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\react\runtimes\useExternalStoreRuntime.d.ts.map	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\react\runtimes\useExternalStoreRuntime.js	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\react\runtimes\useExternalStoreRuntime.js.map	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\react\runtimes\useLocalRuntime.d.ts	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\react\runtimes\useLocalRuntime.d.ts.map	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\react\runtimes\useLocalRuntime.js	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\react\runtimes\useLocalRuntime.js.map	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\react\runtimes\useRemoteThreadListRuntime.d.ts	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\react\runtimes\useRemoteThreadListRuntime.d.ts.map	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\react\runtimes\useRemoteThreadListRuntime.js	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\react\runtimes\useRemoteThreadListRuntime.js.map	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\api\assistant-runtime.d.ts	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\api\assistant-runtime.d.ts.map	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\api\assistant-runtime.js	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\api\assistant-runtime.js.map	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\api\attachment-runtime.d.ts	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\api\attachment-runtime.d.ts.map	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\api\attachment-runtime.js	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\api\attachment-runtime.js.map	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\api\composer-runtime.d.ts	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\api\composer-runtime.d.ts.map	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\api\composer-runtime.js	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\api\composer-runtime.js.map	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\api\message-part-runtime.d.ts	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\api\message-part-runtime.d.ts.map	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\api\message-part-runtime.js	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\api\message-part-runtime.js.map	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\api\message-runtime.d.ts	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\api\message-runtime.d.ts.map	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\api\message-runtime.js	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\api\message-runtime.js.map	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\api\thread-list-item-runtime.d.ts	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\api\thread-list-item-runtime.d.ts.map	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\api\thread-list-item-runtime.js	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\api\thread-list-item-runtime.js.map	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\api\thread-list-runtime.d.ts	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\api\thread-list-runtime.d.ts.map	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\api\thread-list-runtime.js	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\api\thread-list-runtime.js.map	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\api\thread-runtime.d.ts	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\api\thread-runtime.d.ts.map	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\api\thread-runtime.js	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\api\thread-runtime.js.map	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\base\base-assistant-runtime-core.d.ts	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\base\base-assistant-runtime-core.d.ts.map	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\base\base-assistant-runtime-core.js	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\base\base-assistant-runtime-core.js.map	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\base\base-composer-runtime-core.d.ts	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\base\base-composer-runtime-core.d.ts.map	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\base\base-composer-runtime-core.js	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\base\base-composer-runtime-core.js.map	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\base\base-thread-runtime-core.d.ts	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\base\base-thread-runtime-core.d.ts.map	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\base\base-thread-runtime-core.js	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\base\base-thread-runtime-core.js.map	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\base\default-edit-composer-runtime-core.d.ts	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\base\default-edit-composer-runtime-core.d.ts.map	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\base\default-edit-composer-runtime-core.js	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\base\default-edit-composer-runtime-core.js.map	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\base\default-thread-composer-runtime-core.d.ts	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\base\default-thread-composer-runtime-core.d.ts.map	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\base\default-thread-composer-runtime-core.js	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\base\default-thread-composer-runtime-core.js.map	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\interfaces\assistant-runtime-core.d.ts	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\interfaces\assistant-runtime-core.d.ts.map	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\interfaces\assistant-runtime-core.js	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\interfaces\composer-runtime-core.d.ts	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\interfaces\composer-runtime-core.d.ts.map	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\interfaces\composer-runtime-core.js	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\interfaces\thread-list-runtime-core.d.ts	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\interfaces\thread-list-runtime-core.d.ts.map	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\interfaces\thread-list-runtime-core.js	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\interfaces\thread-runtime-core.d.ts	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\interfaces\thread-runtime-core.d.ts.map	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtime\interfaces\thread-runtime-core.js	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtimes\external-store\external-store-runtime-core.d.ts	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtimes\external-store\external-store-runtime-core.d.ts.map	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtimes\external-store\external-store-runtime-core.js	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtimes\external-store\external-store-runtime-core.js.map	2026-08-21 03:01
+FILE	C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtimes\external-store\external-store-thread-list-runtime-core.d.ts	2026-08-21 03:01
+
+
+[4] ADR / GOVERNANCE FILES
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\site-packages\mpmath\calculus\quadrature.py
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\site-packages\pytz\zoneinfo\Europe\Madrid
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\site-packages\scipy\integrate\_quadrature.py
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\site-packages\scipy\integrate\__pycache__\_quadrature.cpython-311.pyc
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\site-packages\sympy\integrals\quadrature.py
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\site-packages\sympy\integrals\tests\test_quadrature.py
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\site-packages\tzdata\zoneinfo\Europe\Madrid
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\lib\tcl8.6\tzdata\Europe\Madrid
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\contributors\emails\adrian.soto6@gmail.com
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\docs\ADR.md
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtimes\readonly\ReadonlyThreadRuntimeCore.d.ts
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtimes\readonly\ReadonlyThreadRuntimeCore.d.ts.map
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtimes\readonly\ReadonlyThreadRuntimeCore.js
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\dist\runtimes\readonly\ReadonlyThreadRuntimeCore.js.map
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\core\src\runtimes\readonly\ReadonlyThreadRuntimeCore.ts
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\react\dist\legacy-runtime\runtime\ThreadRuntime.d.ts
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\react\dist\legacy-runtime\runtime\ThreadRuntime.js
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\react\dist\legacy-runtime\runtime-cores\core\BaseThreadRuntimeCore.d.ts
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\react\dist\legacy-runtime\runtime-cores\core\BaseThreadRuntimeCore.js
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\react\dist\legacy-runtime\runtime-cores\core\ThreadRuntimeCore.d.ts
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\react\dist\legacy-runtime\runtime-cores\core\ThreadRuntimeCore.js
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\react\dist\legacy-runtime\runtime-cores\external-store\ExternalStoreThreadRuntimeCore.d.ts
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\react\dist\legacy-runtime\runtime-cores\external-store\ExternalStoreThreadRuntimeCore.js
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\react\dist\legacy-runtime\runtime-cores\local\LocalThreadRuntimeCore.d.ts
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\react\dist\legacy-runtime\runtime-cores\local\LocalThreadRuntimeCore.js
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\react\dist\primitives\thread\ThreadRoot.d.ts
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\react\dist\primitives\thread\ThreadRoot.d.ts.map
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\react\dist\primitives\thread\ThreadRoot.js
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\react\dist\primitives\thread\ThreadRoot.js.map
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\react\src\legacy-runtime\runtime\ThreadRuntime.ts
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\react\src\legacy-runtime\runtime-cores\core\BaseThreadRuntimeCore.ts
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\react\src\legacy-runtime\runtime-cores\core\ThreadRuntimeCore.ts
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\react\src\legacy-runtime\runtime-cores\external-store\ExternalStoreThreadRuntimeCore.ts
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\react\src\legacy-runtime\runtime-cores\local\LocalThreadRuntimeCore.ts
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\react\src\primitives\thread\ThreadRoot.tsx
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\react\src\tests\ExternalStoreThreadRuntimeCore.test.ts
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@assistant-ui\react\src\tests\LocalThreadRuntimeCore.test.ts
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@icons-pack\react-simple-icons\icons\SiAdroll.cjs
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@icons-pack\react-simple-icons\icons\SiAdroll.d.ts
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@icons-pack\react-simple-icons\icons\SiAdroll.mjs
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@icons-pack\react-simple-icons\icons\SiDoctrine.cjs
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@icons-pack\react-simple-icons\icons\SiDoctrine.d.ts
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@icons-pack\react-simple-icons\icons\SiDoctrine.mjs
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@icons-pack\react-simple-icons\icons\SiMetrodemadrid.cjs
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@icons-pack\react-simple-icons\icons\SiMetrodemadrid.d.ts
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@icons-pack\react-simple-icons\icons\SiMetrodemadrid.mjs
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@icons-pack\react-simple-icons\src\icons\SiAdroll.tsx
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@icons-pack\react-simple-icons\src\icons\SiDoctrine.tsx
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@icons-pack\react-simple-icons\src\icons\SiMetrodemadrid.tsx
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@tabler\icons\categories\outline\Brand\brand-doctrine.svg
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@tabler\icons\icons\outline\brand-doctrine.svg
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@tabler\icons-react\dist\esm\icons\IconBrandDoctrine.mjs
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@tabler\icons-react\dist\esm\icons\IconBrandDoctrine.mjs.map
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\aria-query\lib\etc\roles\abstract\sectionheadRole.js
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\mermaid\dist\chunks\mermaid.core\quadrantDiagram-CIZ2JOQS.mjs
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\mermaid\dist\chunks\mermaid.core\quadrantDiagram-CIZ2JOQS.mjs.map
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\mermaid\dist\chunks\mermaid.esm\quadrantDiagram-MXEHXERY.mjs
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\mermaid\dist\chunks\mermaid.esm\quadrantDiagram-MXEHXERY.mjs.map
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\mermaid\dist\chunks\mermaid.esm.min\quadrantDiagram-VO5QLCXA.mjs
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\mermaid\dist\chunks\mermaid.esm.min\quadrantDiagram-VO5QLCXA.mjs.map
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\mermaid\dist\diagrams\quadrant-chart
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\mermaid\dist\diagrams\quadrant-chart\quadrantBuilder.d.ts
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\mermaid\dist\diagrams\quadrant-chart\quadrantDb.d.ts
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\mermaid\dist\diagrams\quadrant-chart\quadrantDb.spec.d.ts
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\mermaid\dist\diagrams\quadrant-chart\quadrantDetector.d.ts
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\mermaid\dist\diagrams\quadrant-chart\quadrantDiagram.d.ts
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\mermaid\dist\diagrams\quadrant-chart\quadrantRenderer.d.ts
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\mermaid\dist\diagrams\quadrant-chart\parser\quadrant.jison.spec.d.ts
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\mermaid\dist\diagrams\railroad\railroadRenderer.d.ts
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\mermaid\dist\diagrams\railroad\railroadRenderer.spec.d.ts
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\three\src\extras\curves\QuadraticBezierCurve.js
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\three\src\extras\curves\QuadraticBezierCurve3.js
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\venv\Lib\site-packages\pytz\zoneinfo\Europe\Madrid
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\venv\Lib\site-packages\tzdata\zoneinfo\Europe\Madrid
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\contributors\emails\adrian.soto6@gmail.com
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\docs\ADR.md
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\node_modules\@assistant-ui\core\dist\runtimes\readonly\ReadonlyThreadRuntimeCore.d.ts
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\node_modules\@assistant-ui\core\dist\runtimes\readonly\ReadonlyThreadRuntimeCore.d.ts.map
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\node_modules\@assistant-ui\core\dist\runtimes\readonly\ReadonlyThreadRuntimeCore.js
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\node_modules\@assistant-ui\core\dist\runtimes\readonly\ReadonlyThreadRuntimeCore.js.map
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\node_modules\@assistant-ui\core\src\runtimes\readonly\ReadonlyThreadRuntimeCore.ts
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\node_modules\@assistant-ui\react\dist\legacy-runtime\runtime\ThreadRuntime.d.ts
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\node_modules\@assistant-ui\react\dist\legacy-runtime\runtime\ThreadRuntime.js
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\node_modules\@assistant-ui\react\dist\legacy-runtime\runtime-cores\core\BaseThreadRuntimeCore.d.ts
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\node_modules\@assistant-ui\react\dist\legacy-runtime\runtime-cores\core\BaseThreadRuntimeCore.js
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\node_modules\@assistant-ui\react\dist\legacy-runtime\runtime-cores\core\ThreadRuntimeCore.d.ts
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\node_modules\@assistant-ui\react\dist\legacy-runtime\runtime-cores\core\ThreadRuntimeCore.js
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\node_modules\@assistant-ui\react\dist\legacy-runtime\runtime-cores\external-store\ExternalStoreThreadRuntimeCore.d.ts
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\node_modules\@assistant-ui\react\dist\legacy-runtime\runtime-cores\external-store\ExternalStoreThreadRuntimeCore.js
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\node_modules\@assistant-ui\react\dist\legacy-runtime\runtime-cores\local\LocalThreadRuntimeCore.d.ts
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\node_modules\@assistant-ui\react\dist\legacy-runtime\runtime-cores\local\LocalThreadRuntimeCore.js
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\node_modules\@assistant-ui\react\dist\primitives\thread\ThreadRoot.d.ts
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\node_modules\@assistant-ui\react\dist\primitives\thread\ThreadRoot.d.ts.map
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\node_modules\@assistant-ui\react\dist\primitives\thread\ThreadRoot.js
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\node_modules\@assistant-ui\react\dist\primitives\thread\ThreadRoot.js.map
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\node_modules\@assistant-ui\react\src\legacy-runtime\runtime\ThreadRuntime.ts
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\node_modules\@assistant-ui\react\src\legacy-runtime\runtime-cores\core\BaseThreadRuntimeCore.ts
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\node_modules\@assistant-ui\react\src\legacy-runtime\runtime-cores\core\ThreadRuntimeCore.ts
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\node_modules\@assistant-ui\react\src\legacy-runtime\runtime-cores\external-store\ExternalStoreThreadRuntimeCore.ts
+C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\node_modules\@assistant-ui\react\src\legacy-runtime\runtime-cores\local\LocalThreadRuntimeCore.ts
+
+
+[5] GROUPING
+  -- group: DESIGN
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Qt6Designer.dll
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Qt6DesignerComponents.dll
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\site-packages\fontTools\designspaceLib
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\site-packages\freecad\partdesign.py
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\site-packages\freecad\__pycache__\partdesign.cpython-311.pyc
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\site-packages\pivy\quarter\plugins\designer
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\site-packages\PySide6\QtDesigner.cp311-win_amd64.pyd
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\site-packages\PySide6\QtDesigner.pyi
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\site-packages\scipy\signal\_filter_design.py
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\site-packages\scipy\signal\_fir_filter_design.py
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\site-packages\scipy\signal\filter_design.py
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\site-packages\scipy\signal\fir_filter_design.py
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\site-packages\scipy\signal\__pycache__\_filter_design.cpython-311.pyc
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\site-packages\scipy\signal\__pycache__\_fir_filter_design.cpython-311.pyc
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\site-packages\scipy\signal\__pycache__\filter_design.cpython-311.pyc
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\site-packages\scipy\signal\__pycache__\fir_filter_design.cpython-311.pyc
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\turtledemo\bytedesign.py
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\turtledemo\__pycache__\bytedesign.cpython-311.pyc
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\data\examples\PartDesignExample.FCStd
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\data\Mod\PartDesign
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\data\Mod\PartDesign\Resources\icons\PartDesignWorkbench.svg
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\data\Mod\Start\Resources\icons\PartDesignWorkbench.svg
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\lib\_PartDesign.pyd
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\lib\PartDesignGui.pyd
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\lib\Qt6Designer.prl
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\lib\Qt6DesignerComponents.prl
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\lib\cmake\Qt6Designer
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\lib\cmake\Qt6DesignerComponentsPrivate
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\lib\cmake\Qt6Designer\Qt6DesignerAdditionalTargetInfo.cmake
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\lib\cmake\Qt6Designer\Qt6DesignerConfig.cmake
+  -- group: CONTROL
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Controls.dll
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Qt6QuickControls2.dll
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Qt6QuickControls2Basic.dll
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Qt6QuickControls2BasicStyleImpl.dll
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Qt6QuickControls2FluentWinUI3StyleImpl.dll
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Qt6QuickControls2Fusion.dll
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Qt6QuickControls2FusionStyleImpl.dll
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Qt6QuickControls2Imagine.dll
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Qt6QuickControls2ImagineStyleImpl.dll
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Qt6QuickControls2Impl.dll
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Qt6QuickControls2Material.dll
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Qt6QuickControls2MaterialStyleImpl.dll
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Qt6QuickControls2Universal.dll
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Qt6QuickControls2UniversalStyleImpl.dll
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Qt6QuickControls2WindowsStyleImpl.dll
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\site-packages\collada\controller.py
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\site-packages\ifcopenshell\api\control
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\site-packages\ifcopenshell\api\control\assign_control.py
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\site-packages\ifcopenshell\api\control\unassign_control.py
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\site-packages\ifcopenshell\api\control\__pycache__\assign_control.cpython-311.pyc
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\site-packages\ifcopenshell\api\control\__pycache__\unassign_control.cpython-311.pyc
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\site-packages\ifcopenshell\api\system\assign_flow_control.py
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\site-packages\ifcopenshell\api\system\unassign_flow_control.py
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\site-packages\ifcopenshell\api\system\__pycache__\assign_flow_control.cpython-311.pyc
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\site-packages\ifcopenshell\api\system\__pycache__\unassign_flow_control.cpython-311.pyc
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\site-packages\OCC\Core\_IGESCAFControl.pyd
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\site-packages\OCC\Core\_IGESControl.pyd
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\site-packages\OCC\Core\_STEPCAFControl.pyd
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\site-packages\OCC\Core\_STEPControl.pyd
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\site-packages\OCC\Core\_XSControl.pyd
+  -- group: RELIABILITY
+  -- group: RUNTIME
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\api-ms-win-crt-runtime-l1-1-0.dll
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\vcruntime140_1.dll
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\vcruntime140_threads.dll
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\vcruntime140.dll
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\site-packages\numpy\typing\tests\test_runtime.py
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\site-packages\numpy\typing\tests\__pycache__\test_runtime.cpython-311.pyc
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\lib\qt6\mkspecs\features\static_runtime.prf
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\agent\agent_runtime_helpers.py
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\agent\codex_runtime.py
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\agent\relay_runtime.py
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\agent\runtime_cwd.py
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\electron\active-runtime-state.test.ts
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\electron\active-runtime-state.ts
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\app\chat\runtime-repository.test.ts
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\app\chat\runtime-repository.ts
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\contrib\runtime-loader.test.ts
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\contrib\runtime-loader.ts
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\i18n\runtime.test.ts
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\i18n\runtime.ts
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\lib\chat-runtime.test.ts
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\lib\chat-runtime.ts
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\lib\incremental-external-store-runtime.test.ts
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\lib\incremental-external-store-runtime.ts
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\lib\runtime-readiness.test.ts
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\lib\runtime-readiness.ts
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\plugins\hello-runtime
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\plugins\hello-runtime\plugin.runtime.js
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\sdk\runtime.ts
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\gateway\runtime_footer.py
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\hermes_cli\codex_runtime_plugin_migration.py
+  -- group: ADOPT
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\site-packages\setuptools\tests\test_distutils_adoption.py
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\components\pane-shell\tree\floating-adoption.test.ts
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\plugins\hermes-bots\tests\canonical-chat-adopt-before-mint.test.mjs
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@icons-pack\react-simple-icons\icons\SiEclipseadoptium.cjs
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@icons-pack\react-simple-icons\icons\SiEclipseadoptium.d.ts
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@icons-pack\react-simple-icons\icons\SiEclipseadoptium.mjs
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@icons-pack\react-simple-icons\src\icons\SiEclipseadoptium.tsx
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\css-tree\cjs\tokenizer\adopt-buffer.cjs
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\css-tree\lib\tokenizer\adopt-buffer.js
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\tests\agent\test_compression_adoption_preserves_live_tail.py
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\tests\gateway\test_stream_final_adoption_gate.py
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\tests\run_agent\test_compression_closed_adoption.py
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\apps\desktop\src\components\pane-shell\tree\floating-adoption.test.ts
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\apps\desktop\src\plugins\hermes-bots\tests\canonical-chat-adopt-before-mint.test.mjs
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\node_modules\@icons-pack\react-simple-icons\icons\SiEclipseadoptium.cjs
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\node_modules\@icons-pack\react-simple-icons\icons\SiEclipseadoptium.d.ts
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\node_modules\@icons-pack\react-simple-icons\icons\SiEclipseadoptium.mjs
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\node_modules\@icons-pack\react-simple-icons\src\icons\SiEclipseadoptium.tsx
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\node_modules\css-tree\cjs\tokenizer\adopt-buffer.cjs
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\node_modules\css-tree\lib\tokenizer\adopt-buffer.js
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\tests\agent\test_compression_adoption_preserves_live_tail.py
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\tests\gateway\test_stream_final_adoption_gate.py
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\tests\run_agent\test_compression_closed_adoption.py
+  -- group: GATEWAY
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\gateway-service
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\gateway-service\Hermes_Gateway.cmd
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\gateway-service\Hermes_Gateway.vbs
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\gateway
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\tui_gateway
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\agent\monitoring\gateway_health_export.py
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\agent\monitoring\gateway_health.py
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\electron\gateway-file-download-transport.test.ts
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\electron\gateway-file-download.test.ts
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\electron\gateway-file-download.ts
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\electron\gateway-ws-probe.test.ts
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\electron\gateway-ws-probe.ts
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\scripts\perf\gateway_attach_bench.py
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\app\gateway
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\app\gateway\hooks\gateway-hmr-survivor.test.ts
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\app\gateway\hooks\gateway-hmr-survivor.ts
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\app\gateway\hooks\use-gateway-boot.test.tsx
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\app\gateway\hooks\use-gateway-boot.ts
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\app\gateway\hooks\use-gateway-request.test.ts
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\app\gateway\hooks\use-gateway-request.ts
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\app\session\hooks\use-message-stream\gateway-event
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\app\settings\gateway-settings.test.ts
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\app\settings\gateway-settings.test.tsx
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\app\settings\gateway-settings.tsx
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\app\shell\gateway-menu-panel.test.tsx
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\app\shell\gateway-menu-panel.tsx
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\components\gateway-connecting-overlay.test.tsx
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\components\gateway-connecting-overlay.tsx
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\lib\gateway-events.test.ts
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\lib\gateway-events.ts
+  -- group: TIME
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\api-ms-win-core-datetime-l1-1-0.dll
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\api-ms-win-core-timezone-l1-1-0.dll
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\api-ms-win-crt-runtime-l1-1-0.dll
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\api-ms-win-crt-time-l1-1-0.dll
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\boost_date_time.dll
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\boost_timer.dll
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\vcruntime140_1.dll
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\vcruntime140_threads.dll
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\vcruntime140.dll
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\_strptime.py
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\datetime.py
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\timeit.py
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\asyncio\timeouts.py
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\asyncio\__pycache__\timeouts.cpython-311.pyc
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\site-packages\win32_setctime
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\site-packages\win32_setctime-1.2.0.dist-info
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\site-packages\debugpy\common\timestamp.py
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\site-packages\debugpy\common\__pycache__\timestamp.cpython-311.pyc
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\site-packages\debugpy\_vendored\pydevd\_pydevd_bundle\pydevd_timeout.py
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\site-packages\debugpy\_vendored\pydevd\_pydevd_bundle\__pycache__\pydevd_timeout.cpython-311.pyc
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\site-packages\fontTools\misc\timeTools.py
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\site-packages\fontTools\misc\__pycache__\timeTools.cpython-311.pyc
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\site-packages\ifcopenshell\api\resource\add_resource_time.py
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\site-packages\ifcopenshell\api\resource\edit_resource_time.py
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\site-packages\ifcopenshell\api\resource\__pycache__\add_resource_time.cpython-311.pyc
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\site-packages\ifcopenshell\api\resource\__pycache__\edit_resource_time.cpython-311.pyc
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\site-packages\ifcopenshell\api\sequence\add_date_time.py
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\site-packages\ifcopenshell\api\sequence\add_task_time.py
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\site-packages\ifcopenshell\api\sequence\add_time_period.py
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\FreeCAD 1.1\bin\Lib\site-packages\ifcopenshell\api\sequence\add_work_time.py
+  -- group: CLOSURE
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\components\chat\disclosure-row.tsx
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\components\ui\disclosure-caret.tsx
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\apps\desktop\src\store\reasoning-disclosure.ts
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@shikijs\langs\dist\closure-templates.d.mts
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@shikijs\langs\dist\closure-templates.mjs
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@streamdown\code\node_modules\@shikijs\langs\dist\closure-templates.d.mts
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@streamdown\code\node_modules\@shikijs\langs\dist\closure-templates.mjs
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@streamdown\code\node_modules\shiki\dist\langs\closure-templates.d.mts
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\@streamdown\code\node_modules\shiki\dist\langs\closure-templates.mjs
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\shiki\dist\langs\closure-templates.d.mts
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\node_modules\shiki\dist\langs\closure-templates.mjs
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\tests\tools\test_read_binary_type_disclosure.py
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes\hermes-agent\tests\tools\test_vision_scale_disclosure.py
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\apps\desktop\src\components\chat\disclosure-row.tsx
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\apps\desktop\src\components\ui\disclosure-caret.tsx
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\apps\desktop\src\store\reasoning-disclosure.ts
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\node_modules\@shikijs\langs\dist\closure-templates.d.mts
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\node_modules\@shikijs\langs\dist\closure-templates.mjs
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\node_modules\@streamdown\code\node_modules\@shikijs\langs\dist\closure-templates.d.mts
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\node_modules\@streamdown\code\node_modules\@shikijs\langs\dist\closure-templates.mjs
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\node_modules\@streamdown\code\node_modules\shiki\dist\langs\closure-templates.d.mts
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\node_modules\@streamdown\code\node_modules\shiki\dist\langs\closure-templates.mjs
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\node_modules\shiki\dist\langs\closure-templates.d.mts
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\node_modules\shiki\dist\langs\closure-templates.mjs
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\tests\tools\test_read_binary_type_disclosure.py
+     C_DRIVE_MIGRATED\APPDATA_OFFLOAD\hermes-agent\tests\tools\test_vision_scale_disclosure.py
+     C_DRIVE_MIGRATED\JDEQ_Core\JDEQ-CORE\evidence\audit_closure_final.md
+
+
+[6] SCALE
+Files: 272007 · Dirs: 24489 · Size: 8803.8 MB

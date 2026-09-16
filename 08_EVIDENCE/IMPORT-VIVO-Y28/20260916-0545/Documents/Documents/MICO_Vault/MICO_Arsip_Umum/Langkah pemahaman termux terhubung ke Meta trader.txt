@@ -1,0 +1,32 @@
+04.27 20.03
+Langkah pemahaman termux terhubung ke Meta trader
+============================
+Pak Iswan, mari kita sederhanakan. Saya mengerti rasa bingung Bapak. Kita kunci fokus hanya pada **Vivo Y28** sebagai satu-satunya "Pusat Komando" saat ini. Lupakan laptop dan Infinix dulu.
+Berikut adalah penjelasan **Logika Aliran Data** di ponsel Bapak agar Bapak meresapi mengapa semua ini harus ada:
+### 1. Mengapa harus pakai Termux? Kenapa tidak MetaTrader saja?
+ * **MetaTrader 5 (MT5):** Ini hanya "Eksekutor". Ia robot yang patuh tapi buta. Ia akan beli/jual kapan saja tanpa peduli risiko besar jika tidak diatur.
+ * **Termux (AgentZero):** Ini adalah **"Filter Otak"**. Di sinilah kita memasang "Logika Bang Olan" (Manajemen Risiko).
+ * **Hubungannya:** Sebelum MT5 melakukan transaksi, ia "bertanya" ke Termux: *"Apakah kondisi pasar aman?"*. Termux menghitung, lalu memberi jawaban. Tanpa Termux, Bapak hanya trading pakai insting; dengan Termux, Bapak trading pakai **Sains**.
+### 2. Memahami "Jembatan" (Bridge) di Satu HP
+Bapak bingung bagaimana kode hitam-putih di Termux bisa nyambung ke aplikasi MT5 yang berwarna.
+ * **Langkah 1 (Input):** Termux mengambil data harga dari internet/cloud.
+ * **Langkah 2 (Proses):** Kode trading_logic.py yang Bapak buat tadi menghitung angka Stop Loss (SL) agar uang Bapak tidak habis.
+ * **Langkah 3 (Output):** Hasil hitungan itu dikirim ke MT5 untuk dieksekusi.
+### 3. Apa Fungsi "Mesin Raksasa" (Nvidia/Cloud) untuk Bapak?
+Bapak mungkin bertanya: *"Kenapa harus pakai mesin di Amerika sana?"*
+ * Vivo Y28 adalah ponsel yang bagus, tapi untuk menghitung ribuan kemungkinan pergerakan harga emas (XAUUSD) dalam sedetik, ia butuh bantuan.
+ * **Analoginya:** Vivo Y28 adalah **Mandor** (yang memberi instruksi), dan Mesin Nvidia di Cloud adalah **Ribuan Pekerja** (yang menghitung cepat). Bapak cukup pegang ponselnya, biarkan mesin raksasa itu yang berkeringat menghitung untuk Bapak.
+### 4. Roadmap Sederhana (Hanya di Vivo Y28)
+Agar Bapak paham, lakukan urutan ini di pikiran Bapak:
+ 1. **Buka Termux:** Pastikan "Otak" sudah menyala (Modul Risiko Bang Olan aktif).
+ 2. **Buka MetaTrader:** Pantau harga Emas di akun Demo.
+ 3. **Lihat Hasilnya:** Di Termux akan muncul tulisan: SL Berhasil Dihitung. Jika angka SL di Termux sama dengan yang Bapak pasang di MetaTrader, berarti **Jembatan Berhasil**.
+**TL;DR (Inti Sari):**
+Bapak sedang tidak membuat aplikasi baru, Bapak sedang **menghubungkan titik-titik yang sudah ada**.
+ * **Data** dari MT5.
+ * **Aturan** dari Bang Olan (di Termux).
+ * **Tenaga** dari Cloud (Nvidia/Google).
+**Pesan Saya:**
+Jangan takut salah ketik di Termux. Selama Bapak masih di akun **Demo (Virtual)**, tidak ada uang yang hilang. Tarik napas, resapi bahwa Bapak sedang membangun **Sistem Otomatis**, bukan sekadar aplikasi chat.
+Apakah ada satu bagian spesifik, misal saat "mengetik kode" atau "melihat grafik", yang paling membuat Bapak bingung? Katakan pada saya, saya akan bedah bagian itu saja.
+

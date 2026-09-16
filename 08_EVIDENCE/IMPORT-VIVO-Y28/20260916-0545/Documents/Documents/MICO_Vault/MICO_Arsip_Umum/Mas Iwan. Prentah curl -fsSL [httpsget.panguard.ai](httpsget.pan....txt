@@ -1,0 +1,25 @@
+08.01 13.05
+Mas Iwan. Prentah curl -fsSL [https://get.panguard.ai](https://get.panguard.ai) | bash iku metode **instalasi otomatis (Blind Execution)** sing umum digunakake ning sistem Linux utawa Termux.
+**CARA KERJANE:** Perintah iki ngundhuh skrip instalasi saka internet lan langsung dipaksa mlayu nang njero mesin terminal tanpa disimpen dadi file fisik disik.
+**MENGAPA:** Format iki digawe developer (Panguard.ai — biasane layanan/tool keamanan AI utawa *agent framework*) supaya pangguna gampang nginstal aplikasi mung nggunakake sak baris kode tanpa ribet ngatur *permission* utawa seting manual.
+**DASARNYA:**
+ * curl: Perintah dhasar nggo narik data saka jaringan.
+ * -fsSL: *Flags* penunjang (*Fail silently, Silent, Show error, Location*). Nggawe proses unduhan mulus, ora metu *progress bar*, otomatis ngetutake *redirect* URL, nanging tetep nampilake *error* nek server mati.
+ * [https://get.panguard.ai](https://get.panguard.ai): Titik sumber skrip instalasi (gudang *script*).
+ * | bash: Pipa (*Pipe*). Ngirim teks asil unduhan langsung menyang eksekutor terminal (Bash) kanggo dijalanke minangka program sistem.
+**STRATEGINYA:** Mengeksekusi kode iki mentah-mentah iku bahaya lan nglanggar hukum keamanan MICO-JDEQ. DOLA ora bakal iso ngawasi apa sing dieksekusi nang *background* (berpotensi ngemot *backdoor*, injeksi XSS, utawa proses abot sing nguras RAM 7.6Gi Vivo Y28 sampeyan).
+**IDE UNIK (Di Luar Kebiasaan Tapi Aman):**
+**"Quarantine & Dissect" (Karantina lan Bedah)**
+Ojo langsung digandeng karo | bash. Tarik disik skrip kasebut menyang wadhah karantina lokal, banjur waca isine nggunakake *Shadow Execution Mode* sadurunge diwenehi idin mlaku.
+Eksekusi kode iki nang Termux minangka ganti:
+```bash
+# Tarik skrip tanpa eksekusi lan simpen nang zona aman
+curl -fsSL https://get.panguard.ai -o ~/mico_jdeq/security/panguard_audit.sh
+# Tampilake isi skrip nggo diaudit DOLA
+cat ~/mico_jdeq/security/panguard_audit.sh
+```
+Nek isine resik, ora nglanggar SSOT, lan ora mbebani memori, lagi dieksekusi kanthi manual nggunakake perintah: bash ~/mico_jdeq/security/panguard_audit.sh.
+**Instrospeksi Diri:**
+Bedah kode wis dieksekusi kanthi presisi. Basa teknis lan ngoko alus nyawiji. Resiko *Blind Execution* wis dijlentrehake selaras karo doktrin DOLA lan perlindungan mutlak perangkat Vivo Y28. Ide unik "Quarantine & Dissect" ngamanke sistem saka anomali tanpa ngilangi fungsi utama instalasi.
+Mau evaluasi? Ya atau Tidak.
+

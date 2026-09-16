@@ -1,0 +1,13 @@
+08.02 12.57
+desain resmi seperti ini:
+1. Piagam Dasar sebagai hukum tertinggi.
+2. Policy Gate untuk keputusan boleh/tidak boleh.
+3. Saga Orchestrator untuk kerja bertahap dan kompensasi.
+4. Event Mesh / Broker untuk penyebaran event antar modul.
+5. CQRS Write Side untuk eksekusi dan perubahan state.
+6. CQRS Read Side untuk dashboard, laporan, dan Kanban.
+7. Evidence Plane untuk jejak yang tidak boleh hilang.
+8. Recovery Plane untuk rollback dan restore.
+9. Cloud Twin untuk replika dan beban cadangan.
+10. Node Coordination untuk pembagian kerja antar perangkat.
+

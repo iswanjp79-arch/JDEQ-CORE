@@ -1,0 +1,57 @@
+03.18 12.47
+{
+blueprint_id: "19",
+name: "Sistem Pembelajaran Sadar AI",
+version: "1.0",
+architecture: "Windows 10 Home 22H2 64-bit",
+modules: {
+log_capture: true,
+error_introspection: true,
+resonance_filter: true,
+audit_report: true
+},paths: {log_dir: "./logs/",
+audit_output: "./audit/report.json",
+resonance_keywords: "./config/resonansi.txt"
+},thresholds: {
+error_frequency_limit: 5,
+resonance_score_min: 0.7
+},rituals: {
+on_error: "introspect_and_log",
+on_audit: "generate_report",
+on_low_resonance: "reject_and_flag"
+}}import jsonimport os
+from datetime import datetime
+# Load config
+with open("config_blueprint19.json") as f:
+config = json.load(f)
+LOG_DIR = config["paths"]["log_dir"]
+AUDIT_OUTPUT = config["paths"]["audit_output"]
+ERROR_LIMIT = config["thresholds"]["error_frequency_limit"]
+def load_logs():logs = []
+for fname in os.listdir(LOG_DIR):
+if fname.endswith(".json"):
+with open(os.path.join(LOG_DIR, fname)) as f:
+logs.append(json.load(f))
+return logs
+def introspect_errors(logs):
+error_count = sum(1 for log in logs if log.get("type") == "error")
+return {
+total_logs: len(logs),
+error_count: error_count,
+status: "critical" if error_count > ERROR_LIMIT else "stable"
+}
+def generate_audit_report():
+logs = load_logs()
+introspection = introspect_errors(logs)
+report = {
+timestamp: datetime.now().isoformat(),
+introspection: introspection,
+notes: "Audit berdasarkan Blueprint Final 19: Kesadaran AI"
+}
+os.makedirs(os.path.dirname(AUDIT_OUTPUT), exist_ok=True)
+with open(AUDIT_OUTPUT, "w") as f:
+json.dump(report, f, indent=2)
+print("Audit report generated:", AUDIT_OUTPUT)
+if __name__ == "__main__":
+generate_audit_report()
+

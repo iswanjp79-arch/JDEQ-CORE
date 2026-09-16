@@ -1,0 +1,8 @@
+07.09 18.15
+#### SETELAH PONSEL MENYALA###
+===============================
+bash $HOME/pre_reboot_bundle.sh
+### PANTAI SISTEM TERMUX ####
+==============================
+tmux attach -t mico_dolco
+

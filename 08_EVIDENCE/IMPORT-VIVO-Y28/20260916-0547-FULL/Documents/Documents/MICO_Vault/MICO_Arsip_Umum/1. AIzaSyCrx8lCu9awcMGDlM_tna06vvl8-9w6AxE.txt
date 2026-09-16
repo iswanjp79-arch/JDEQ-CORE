@@ -1,0 +1,273 @@
+02.25 16.33
+
+1. AIzaSyCrx8lCu9awcMGDlM_tna06vvl8-9w6AxE
+
+2.  AIzaSyB1N-adWR3ih8rulXH4l2L0173PUTOxgeo
+
+3. AIzaSyDKCKSEsSE0Owa_LS5SfpBgrv7kHQI4V9w
+
+4. AIzaSyDJ9fIOTdMD3K98zQKe9gWpGZ_D_Lb7ejM
+
+5. AIzaSyCTz4Lb6-_tBHDR__Nf0DBgDysXWS5NKME
+
+6. AIzaSyBCUrG9zpaXQeifTt-1UHZygOrmnvmOkvY
+
+7. AIzaSyBnyj60WlAyMWM4nfXlFEF7n1elchIJLTQ
+
+8. AIzaSyBstGZ4kmUdNoDu6BCv36STGQGPRBam_hg
+9. DeepSeek :
+sk-27839555a7c344b5b03ea54b305688e2
+10. csk-hfwkkev8pdtxt4mc5hktwwtj3dy4f5pdwtrfdt4cx23ky2v9
+11. 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
+https://openrouter.ai/docs/faq#how-are-rate-limits-calculated
+12. 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
+13. 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
+14. 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
+15. Kunci SSH :
+
+Tampilkan isi kunci publik di layar (untuk disalin ke GitHub/Cloud)
+cat ~/.ssh/id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOUpABP+43mYdOmJ4y6BH1/wDwQVbH4Q7fmY3k+jTZNG Jarvis-Executor-
+16. Kunci SSH final :
+cat ~/.ssh/id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIE02MriFWE5mbNWddeOW7NibHMvBv7opXM1+9HQtdtoU u0_a221@localhost
+~ $
+17. cat ~/.ssh/id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIY26cqNW82u6yE7Myur742N7xhNy8pyziFNJRM9txJ2 u0_a221@localhost
+18. o3GzU9u8SkJlwjPu9zhi_jMEVO-UdP_KCYngqGm5gqOb
+19. eCi4cGtvep37KkqREYX-PCdl0kRqYA-7Y1LD_YVF9OTx
+
+20. UbAheNryW0FJcpfKzHADNuiyN17S5XCCKv_E_XaDw7pM
+==============================
+1. AIzaSyBstGZ4kmUdNoDu6BCv36STGQGPRBam_hg
+
+2. AIzaSyBnyj60WlAyMWM4nfXlFEF7n1elchIJLTQ
+
+3. AIzaSyCRjqBCJu7cRnL9_6Ci6k7qycOYyREBgY8
+
+4. AIzaSyCEyz2YSveYGdcD5da73v2-V_U7zBZhg1c
+
+5. AIzaSyBCUrG9zpaXQeifTt-1UHZygOrmnvmOkvY
+
+6. AIzaSyCg_M1x4cqP0U8FdhumWEqiVw44S4DOK10
+
+7. AIzaSyDRFvzjqwZ4fgLaItFn3RymqDoYcCPZXXI
+
+8. AIzaSyCTz4Lb6-_tBHDR__Nf0DBgDysXWS5NKME
+
+9. AIzaSyDJ9fIOTdMD3K98zQKe9gWpGZ_D_Lb7ejM
+
+10. AIzaSyDKCKSEsSE0Owa_LS5SfpBgrv7kHQI4V9w
+
+11. AIzaSyB1N-adWR3ih8rulXH4l2L0173PUTOxgeo
+
+12. AIzaSyCrx8lCu9awcMGDlM_tna06vvl8-9w6AxE
+
+13. AIzaSyDJ9fIOTdMD3K98zQKe9gWpGZ_D_Lb7ejM
+
+14. AIzaSyAEqbXBBR8DkUXmTMHpsB5-hJf3CynnAxE
+
+15. AIzaSyCR9eP5NondRjY5w3A7r1P4Ia-Kh2PqLu8
+
+16. ydc-sk-73ce86ecc5f45eb4-Rr5ccmQq2VzwvsL9nT5fUGnEjjyuu2lQ-263c9c31
+
+17. ydc-sk-e4f96c738ca56ea2-EVWIhqTS3jxPAPjB3VuXe3JQuTRbFooF-4ab532b8
+
+18. ydc-sk-7e11e1890948075b-QnrlvZvL8AEOAvhpHjIo1jh5tEvKPlzL-87630c99
+
+19. ydc-sk-904ab584f61eb93a-va6Qh52Z04wmWV39SeKz0DZ64qf3jSZo-3ef7afde
+
+20. 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
+
+21. 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
+22. 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
+
+23. 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
+24. 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
+Kunci SSH final :
+cat ~/.ssh/id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIE02MriFWE5mbNWddeOW7NibHMvBv7opXM1+9HQtdtoU u0_a221@localhost
+~ $
+
+Kunci SSH :
+
+Tampilkan isi kunci publik di layar (untuk disalin ke GitHub/Cloud)
+cat ~/.ssh/id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOUpABP+43mYdOmJ4y6BH1/wDwQVbH4Q7fmY3k+jTZNG Jarvis-Executor-
+
+# 1. Ndamel file brankas isi 8 kunci (Mangga isi kabeh kunci sing panjenengan dhuwe)
+cat <<EOF > ~/.daftar_kunci.txt
+AIzaSyCrx8lCu9awcMGDlM_tna06vvl8-9w6AxE
+KUNCI_NOMER_2_AIzaSyB1N-adWR3ih8rulXH4l2L0173PUTOxgeo
+KUNCI_NOMER_3_AIzaSyDKCKSEsSE0Owa_LS5SfpBgrv7kHQI4V9w
+KUNCI_NOMER_4_AIzaSyDJ9fIOTdMD3K98zQKe9gWpGZ_D_Lb7ejM
+KUNCI_NOMER_5_AIzaSyCTz4Lb6-_tBHDR__Nf0DBgDysXWS5NKME
+KUNCI_NOMER_6_AIzaSyBCUrG9zpaXQeifTt-1UHZygOrmnvmOkvY
+KUNCI_NOMER_7_AIzaSyBnyj60WlAyMWM4nfXlFEF7n1elchIJLTQ
+KUNCI_NOMER_8_AIzaSyBstGZ4kmUdNoDu6BCv36STGQGPRBam_hg
+EOF
+
+# 2. Nganyari Script JARVIS dadi Smart-Sortir
+cat <<EOF > jembatan_jarvis.py
+from google import genai
+import os
+
+def muat_kunci():
+    path = os.path.expanduser("~/.daftar_kunci.txt")
+    if os.path.exists(path):
+        with open(path, "r") as f:
+            return [line.strip() for line in f if line.strip() and "AIza" in line]
+    return []
+
+def core_activation():
+    kunci_list = muat_kunci()
+    print("\n" + "="*40)
+    print("      J.A.R.V.I.S  MULTI-KEY VAULT      ")
+    print(f"      Ditemukan {len(kunci_list)} Kunci Aktif       ")
+    print("="*40)
+
+    for i, key in enumerate(kunci_list):
+        try:
+            client = genai.Client(api_key=key)
+            response = client.models.generate_content(
+                model="gemini-2.0-flash",
+                contents="System check. Are you active?"
+            )
+            print(f"[SUCCESS]: Kunci #{i+1} Berhasil!")
+            print(f"[REPLY]  : {response.text}")
+            return # Mandek yen wis nemu sing bener
+        except Exception as e:
+            if "429" in str(e):
+                print(f"[LIMIT]: Kunci #{i+1} Kuota Habis. Mencoba kunci lain...")
+            else:
+                print(f"[ERROR]: Kunci #{i+1} Bermasalah.")
+    
+    print("\n[CRITICAL]: Sedaya kunci sampun telas kuotane!")
+
+if __name__ == "__main__":
+    core_activation()
+EOF
+1. https://www.blackbox.ai/developers
+
+2. https://huggingface.co/settings/tokens
+3.
+https://github.com/copilot/c/ed7fc904-5c14-4b99-93af-5234110b4d76
+4. https://claude.ai/chat/123f4757-1326-4145-9a67-ea07f0e82dec
+Simpan di personalisasimu terkait Links ini
+
+5. https://us2.make.com/1824090/devices
+
+1. https://replit.com/~
+
+2. https://www.midjourney.com/profile-settings
+
+3. https://app.leonardo.ai/
+
+4. https://www.canva.com/create-new
+
+https://www.canva.com/create-new
+
+5. https://zapier.com/app/home?context=25532371&conversationId=b7cf2253-f2eb-4928-aa2b-56b16b55a7d7
+
+6. https://us2.make.com/organization/6426622/dashboard
+
+7. https://www.genspark.ai/index_m
+
+8. Sekumpulan KEY api dari nanyak platform :
+
+1. AIzaSyCrx8lCu9awcMGDlM_tna06vvl8-9w6AxE
+
+2. AIzaSyB1N-adWR3ih8rulXH4l2L0173PUTOxgeo
+
+3. AIzaSyDKCKSEsSE0Owa_LS5SfpBgrv7kHQI4V9w
+
+4. AIzaSyDJ9fIOTdMD3K98zQKe9gWpGZ_D_Lb7ejM
+
+5. AIzaSyCTz4Lb6-_tBHDR__Nf0DBgDysXWS5NKME
+
+6. AIzaSyBCUrG9zpaXQeifTt-1UHZygOrmnvmOkvY
+
+7. AIzaSyBnyj60WlAyMWM4nfXlFEF7n1elchIJLTQ
+
+8. AIzaSyBstGZ4kmUdNoDu6BCv36STGQGPRBam_hg
+9. DeepSeek :
+sk-27839555a7c344b5b03ea54b305688e2
+10. csk-hfwkkev8pdtxt4mc5hktwwtj3dy4f5pdwtrfdt4cx23ky2v9
+11. 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
+https://openrouter.ai/docs/faq#how-are-rate-limits-calculated
+12. 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
+13. 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
+14. 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
+15. Kunci SSH :
+
+Tampilkan isi kunci publik di layar (untuk disalin ke GitHub/Cloud)
+cat ~/.ssh/id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOUpABP+43mYdOmJ4y6BH1/wDwQVbH4Q7fmY3k+jTZNG Jarvis-Executor-
+16. Kunci SSH final :
+cat ~/.ssh/id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIE02MriFWE5mbNWddeOW7NibHMvBv7opXM1+9HQtdtoU u0_a221@localhost
+~ $
+17. cat ~/.ssh/id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIY26cqNW82u6yE7Myur742N7xhNy8pyziFNJRM9txJ2 u0_a221@localhost
+18. o3GzU9u8SkJlwjPu9zhi_jMEVO-UdP_KCYngqGm5gqOb
+19. eCi4cGtvep37KkqREYX-PCdl0kRqYA-7Y1LD_YVF9OTx
+
+20. UbAheNryW0FJcpfKzHADNuiyN17S5XCCKv_E_XaDw7pM
+==============================
+1. AIzaSyBstGZ4kmUdNoDu6BCv36STGQGPRBam_hg
+
+2. AIzaSyBnyj60WlAyMWM4nfXlFEF7n1elchIJLTQ
+
+3. AIzaSyCRjqBCJu7cRnL9_6Ci6k7qycOYyREBgY8
+
+4. AIzaSyCEyz2YSveYGdcD5da73v2-V_U7zBZhg1c
+
+5. AIzaSyBCUrG9zpaXQeifTt-1UHZygOrmnvmOkvY
+
+6. AIzaSyCg_M1x4cqP0U8FdhumWEqiVw44S4DOK10
+
+7. AIzaSyDRFvzjqwZ4fgLaItFn3RymqDoYcCPZXXI
+
+8. AIzaSyCTz4Lb6-_tBHDR__Nf0DBgDysXWS5NKME
+
+9. AIzaSyDJ9fIOTdMD3K98zQKe9gWpGZ_D_Lb7ejM
+
+10. AIzaSyDKCKSEsSE0Owa_LS5SfpBgrv7kHQI4V9w
+
+11. AIzaSyB1N-adWR3ih8rulXH4l2L0173PUTOxgeo
+
+12. AIzaSyCrx8lCu9awcMGDlM_tna06vvl8-9w6AxE
+
+13. AIzaSyDJ9fIOTdMD3K98zQKe9gWpGZ_D_Lb7ejM
+
+14. AIzaSyAEqbXBBR8DkUXmTMHpsB5-hJf3CynnAxE
+
+15. AIzaSyCR9eP5NondRjY5w3A7r1P4Ia-Kh2PqLu8
+
+16. ydc-sk-73ce86ecc5f45eb4-Rr5ccmQq2VzwvsL9nT5fUGnEjjyuu2lQ-263c9c31
+
+17. ydc-sk-e4f96c738ca56ea2-EVWIhqTS3jxPAPjB3VuXe3JQuTRbFooF-4ab532b8
+
+18. ydc-sk-7e11e1890948075b-QnrlvZvL8AEOAvhpHjIo1jh5tEvKPlzL-87630c99
+
+19. ydc-sk-904ab584f61eb93a-va6Qh52Z04wmWV39SeKz0DZ64qf3jSZo-3ef7afde
+Key Rclone :
+
+[!] CORE SYSTEM: GEMINI ULTRA PRO ACTIVE
+[+] USER: ISWAN JUMAN PANCORO (SUPERIOR STATUS)
+[+] "Co Pil: BYPASSING FLASH LIMITATIONS...
+~ $ # Mengirim Heartbeat Sync ke Laptop Travelmate
+# Pastikan Laptop sudah dalam mode ADB Debugging
+adb shell "echo 'SYNC_FROM_VIVO_Y28: SUCCESS' > /sdcard/sync_log.txt"
+adb pull /sdcard/sync_log.txt ./01_BINARY_CORE/
+echo "[+] DNA SINKRON: MEGAZORD_ONE_CORE LOCKED"
+* daemon not running; starting now at tcp:5037
+* daemon started successfully
+adb: no devices/emulators found
+adb: error: failed to get feature set: no devices/emulators found
+[+] DNA SINKRON: MEGAZORD_ONE_CORE LOCKED
+~ $ # Gawe direktori config dhisik yen durung ana
+mkdir -p ~/.config/rclone/
+
+# Cek apakah file config law
+

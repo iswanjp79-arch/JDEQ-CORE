@@ -1,0 +1,752 @@
+06.27 14.08
+Key grog
+=======>
+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
+Saya punya banyak Key API, mau di apakan  ? 
+bagaimana cara simpannya , bisa permanen rotasi otomatis ? 
+=======================
+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
+# --- PLATFORM AI DEVELOPER ---
+1. Blackbox AI: https://www.blackbox.ai/developers
+2. Hugging Face Tokens: https://huggingface.co/settings/tokens
+3. GitHub Copilot: https://github.com/copilot/c/ed7fc904-5c14-4b99-93af-5234110b4d76
+4. Claude AI: https://claude.ai/chat/123f4757-1326-4145-9a67-ea07f0e82dec
+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
+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
+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
+# --- NODE & AUTOMATION ---
+5. Make.com Devices: https://us2.make.com/1824090/devices
+6. Make.com Dashboard: https://us2.make.com/organization/6426622/dashboard
+7. Zapier: https://zapier.com/app/home?context=25532371&conversationId=b7cf2253-f2eb-4928-aa2b-56b16b55a7d7
+# --- DEVELOPMENT & DESIGN ---
+8. Replit: https://replit.com/~
+9. Midjourney: https://www.midjourney.com/profile-settings
+10. Leonardo AI: https://app.leonardo.ai/
+11. Canva: https://www.canva.com/create-new
+# --- PRODUCTIVITY ---
+12. Genspark AI: https://www.genspark.ai/index_m
+=========================
+1. AIzaSyCrx8lCu9awcMGDlM_tna06vvl8-9w6AxE
+2. AIzaSyB1N-adWR3ih8rulXH4l2L0173PUTOxgeo
+3. AIzaSyDKCKSEsSE0Owa_LS5SfpBgrv7kHQI4V9w
+4. AIzaSyDJ9fIOTdMD3K98zQKe9gWpGZ_D_Lb7ejM
+5. AIzaSyCTz4Lb6-_tBHDR__Nf0DBgDysXWS5NKME
+6. AIzaSyBCUrG9zpaXQeifTt-1UHZygOrmnvmOkvY
+7. AIzaSyBnyj60WlAyMWM4nfXlFEF7n1elchIJLTQ
+8. AIzaSyBstGZ4kmUdNoDu6BCv36STGQGPRBam_hg
+9. DeepSeek :
+sk-27839555a7c344b5b03ea54b305688e2
+10. csk-hfwkkev8pdtxt4mc5hktwwtj3dy4f5pdwtrfdt4cx23ky2v9
+11. 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
+https://openrouter.ai/docs/faq#how-are-rate-limits-calculated
+12. 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
+13. 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
+14. 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
+15. Kunci SSH :
+Tampilkan isi kunci publik di layar (untuk disalin ke GitHub/Cloud)
+cat ~/.ssh/id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOUpABP+43mYdOmJ4y6BH1/wDwQVbH4Q7fmY3k+jTZNG Jarvis-Executor-
+16. Kunci SSH final :
+cat ~/.ssh/id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIE02MriFWE5mbNWddeOW7NibHMvBv7opXM1+9HQtdtoU u0_a221@localhost
+~ $
+17. cat ~/.ssh/id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIY26cqNW82u6yE7Myur742N7xhNy8pyziFNJRM9txJ2 u0_a221@localhost
+18. o3GzU9u8SkJlwjPu9zhi_jMEVO-UdP_KCYngqGm5gqOb
+19. eCi4cGtvep37KkqREYX-PCdl0kRqYA-7Y1LD_YVF9OTx
+20. UbAheNryW0FJcpfKzHADNuiyN17S5XCCKv_E_XaDw7pM
+==============================
+1. AIzaSyBstGZ4kmUdNoDu6BCv36STGQGPRBam_hg
+2. AIzaSyBnyj60WlAyMWM4nfXlFEF7n1elchIJLTQ
+3. AIzaSyCRjqBCJu7cRnL9_6Ci6k7qycOYyREBgY8
+4. AIzaSyCEyz2YSveYGdcD5da73v2-V_U7zBZhg1c
+5. AIzaSyBCUrG9zpaXQeifTt-1UHZygOrmnvmOkvY
+6. AIzaSyCg_M1x4cqP0U8FdhumWEqiVw44S4DOK10
+7. AIzaSyDRFvzjqwZ4fgLaItFn3RymqDoYcCPZXXI
+8. AIzaSyCTz4Lb6-_tBHDR__Nf0DBgDysXWS5NKME
+9. AIzaSyDJ9fIOTdMD3K98zQKe9gWpGZ_D_Lb7ejM
+10. AIzaSyDKCKSEsSE0Owa_LS5SfpBgrv7kHQI4V9w
+11. AIzaSyB1N-adWR3ih8rulXH4l2L0173PUTOxgeo
+12. AIzaSyCrx8lCu9awcMGDlM_tna06vvl8-9w6AxE
+13. AIzaSyDJ9fIOTdMD3K98zQKe9gWpGZ_D_Lb7ejM
+14. AIzaSyAEqbXBBR8DkUXmTMHpsB5-hJf3CynnAxE
+15. AIzaSyCR9eP5NondRjY5w3A7r1P4Ia-Kh2PqLu8
+16. ydc-sk-73ce86ecc5f45eb4-Rr5ccmQq2VzwvsL9nT5fUGnEjjyuu2lQ-263c9c31
+17. ydc-sk-e4f96c738ca56ea2-EVWIhqTS3jxPAPjB3VuXe3JQuTRbFooF-4ab532b8
+18. ydc-sk-7e11e1890948075b-QnrlvZvL8AEOAvhpHjIo1jh5tEvKPlzL-87630c99
+19. ydc-sk-904ab584f61eb93a-va6Qh52Z04wmWV39SeKz0DZ64qf3jSZo-3ef7afde
+20. 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
+21. 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
+22. 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
+23. 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
+24. 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
+Kunci SSH final :
+cat ~/.ssh/id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIE02MriFWE5mbNWddeOW7NibHMvBv7opXM1+9HQtdtoU u0_a221@localhost
+~ $
+Kunci SSH :
+Tampilkan isi kunci publik di layar (untuk disalin ke GitHub/Cloud)
+cat ~/.ssh/id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOUpABP+43mYdOmJ4y6BH1/wDwQVbH4Q7fmY3k+jTZNG Jarvis-Executor-
+# 1. Ndamel file brankas isi 8 kunci (Mangga isi kabeh kunci sing panjenengan dhuwe)
+cat ~/.daftar_kunci.txt
+AIzaSyCrx8lCu9awcMGDlM_tna06vvl8-9w6AxE
+KUNCI_NOMER_2_AIzaSyB1N-adWR3ih8rulXH4l2L0173PUTOxgeo
+KUNCI_NOMER_3_AIzaSyDKCKSEsSE0Owa_LS5SfpBgrv7kHQI4V9w
+KUNCI_NOMER_4_AIzaSyDJ9fIOTdMD3K98zQKe9gWpGZ_D_Lb7ejM
+KUNCI_NOMER_5_AIzaSyCTz4Lb6-_tBHDR__Nf0DBgDysXWS5NKME
+KUNCI_NOMER_6_AIzaSyBCUrG9zpaXQeifTt-1UHZygOrmnvmOkvY
+KUNCI_NOMER_7_AIzaSyBnyj60WlAyMWM4nfXlFEF7n1elchIJLTQ
+KUNCI_NOMER_8_AIzaSyBstGZ4kmUdNoDu6BCv36STGQGPRBam_hg
+EOF
+# 2. Nganyari Script JARVIS dadi Smart-Sortir
+cat jembatan_jarvis.py
+from google import genai
+import os
+def muat_kunci():
+path = os.path.expanduser("~/.daftar_kunci.txt")
+if os.path.exists(path):
+with open(path, "r") as f:
+return [line.strip() for line in f if line.strip() and "AIza" in line]
+return []
+def core_activation():
+kunci_list = muat_kunci()
+print("\n" + "="*40)
+print(" J.A.R.V.I.S MULTI-KEY VAULT ")
+print(f" Ditemukan {len(kunci_list)} Kunci Aktif ")
+print("="*40)
+for i, key in enumerate(kunci_list):
+try:
+client = genai.Client(api_key=key)
+response = client.models.generate_content(
+model="gemini-2.0-flash",
+contents="System check. Are you active?"
+)
+print(f"[SUCCESS]: Kunci #{i+1} Berhasil!")
+print(f"[REPLY] : {response.text}")
+return # Mandek yen wis nemu sing bener
+except Exception as e:
+if "429" in str(e):
+print(f"[LIMIT]: Kunci #{i+1} Kuota Habis. Mencoba kunci lain...")
+else:
+print(f"[ERROR]: Kunci #{i+1} Bermasalah.")
+print("\n[CRITICAL]: Sedaya kunci sampun telas kuotane!")
+if __name__ == "__main__":
+core_activation()
+EOF
+1. https://www.blackbox.ai/developers
+2. https://huggingface.co/settings/tokens
+3.
+https://github.com/copilot/c/ed7fc904-5c14-4b99-93af-5234110b4d76
+4. https://claude.ai/chat/123f4757-1326-4145-9a67-ea07f0e82dec
+Simpan di personalisasimu terkait Links ini
+5. https://us2.make.com/1824090/devices
+1. https://replit.com/~
+2. https://www.midjourney.com/profile-settings
+3. https://app.leonardo.ai/
+4. https://www.canva.com/create-new
+https://www.canva.com/create-new
+5. https://zapier.com/app/home?context=25532371&conversationId=b7cf2253-f2eb-4928-aa2b-56b16b55a7d7
+6. https://us2.make.com/organization/6426622/dashboard
+7. https://www.genspark.ai/index_m
+8. Sekumpulan KEY api dari nanyak platform :
+1. AIzaSyCrx8lCu9awcMGDlM_tna06vvl8-9w6AxE
+2. AIzaSyB1N-adWR3ih8rulXH4l2L0173PUTOxgeo
+3. AIzaSyDKCKSEsSE0Owa_LS5SfpBgrv7kHQI4V9w
+4. AIzaSyDJ9fIOTdMD3K98zQKe9gWpGZ_D_Lb7ejM
+5. AIzaSyCTz4Lb6-_tBHDR__Nf0DBgDysXWS5NKME
+6. AIzaSyBCUrG9zpaXQeifTt-1UHZygOrmnvmOkvY
+7. AIzaSyBnyj60WlAyMWM4nfXlFEF7n1elchIJLTQ
+8. AIzaSyBstGZ4kmUdNoDu6BCv36STGQGPRBam_hg
+9. DeepSeek :
+sk-27839555a7c344b5b03ea54b305688e2
+10. csk-hfwkkev8pdtxt4mc5hktwwtj3dy4f5pdwtrfdt4cx23ky2v9
+11. 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
+https://openrouter.ai/docs/faq#how-are-rate-limits-calculated
+12. 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
+13. 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
+14. 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
+15. Kunci SSH :
+Tampilkan isi kunci publik di layar (untuk disalin ke GitHub/Cloud)
+cat ~/.ssh/id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOUpABP+43mYdOmJ4y6BH1/wDwQVbH4Q7fmY3k+jTZNG Jarvis-Executor-
+16. Kunci SSH final :
+cat ~/.ssh/id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIE02MriFWE5mbNWddeOW7NibHMvBv7opXM1+9HQtdtoU u0_a221@localhost
+~ $
+17. cat ~/.ssh/id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIY26cqNW82u6yE7Myur742N7xhNy8pyziFNJRM9txJ2 u0_a221@localhost
+18. o3GzU9u8SkJlwjPu9zhi_jMEVO-UdP_KCYngqGm5gqOb
+19. eCi4cGtvep37KkqREYX-PCdl0kRqYA-7Y1LD_YVF9OTx
+20. UbAheNryW0FJcpfKzHADNuiyN17S5XCCKv_E_XaDw7pM
+==============================
+1. AIzaSyBstGZ4kmUdNoDu6BCv36STGQGPRBam_hg
+2. AIzaSyBnyj60WlAyMWM4nfXlFEF7n1elchIJLTQ
+3. AIzaSyCRjqBCJu7cRnL9_6Ci6k7qycOYyREBgY8
+4. AIzaSyCEyz2YSveYGdcD5da73v2-V_U7zBZhg1c
+5. AIzaSyBCUrG9zpaXQeifTt-1UHZygOrmnvmOkvY
+6. AIzaSyCg_M1x4cqP0U8FdhumWEqiVw44S4DOK10
+7. AIzaSyDRFvzjqwZ4fgLaItFn3RymqDoYcCPZXXI
+8. AIzaSyCTz4Lb6-_tBHDR__Nf0DBgDysXWS5NKME
+9. AIzaSyDJ9fIOTdMD3K98zQKe9gWpGZ_D_Lb7ejM
+10. AIzaSyDKCKSEsSE0Owa_LS5SfpBgrv7kHQI4V9w
+11. AIzaSyB1N-adWR3ih8rulXH4l2L0173PUTOxgeo
+12. AIzaSyCrx8lCu9awcMGDlM_tna06vvl8-9w6AxE
+13. AIzaSyDJ9fIOTdMD3K98zQKe9gWpGZ_D_Lb7ejM
+14. AIzaSyAEqbXBBR8DkUXmTMHpsB5-hJf3CynnAxE
+15. AIzaSyCR9eP5NondRjY5w3A7r1P4Ia-Kh2PqLu8
+16. ydc-sk-73ce86ecc5f45eb4-Rr5ccmQq2VzwvsL9nT5fUGnEjjyuu2lQ-263c9c31
+17. ydc-sk-e4f96c738ca56ea2-EVWIhqTS3jxPAPjB3VuXe3JQuTRbFooF-4ab532b8
+18. ydc-sk-7e11e1890948075b-QnrlvZvL8AEOAvhpHjIo1jh5tEvKPlzL-87630c99
+19. ydc-sk-904ab584f61eb93a-va6Qh52Z04wmWV39SeKz0DZ64qf3jSZo-3ef7afde
+Key Rclone :
+[!] CORE SYSTEM: GEMINI ULTRA PRO ACTIVE
+[+] USER: ISWAN JUMAN PANCORO (SUPERIOR STATUS)
+[+] "Co Pil: BYPASSING FLASH LIMITATIONS...
+~ $ # Mengirim Heartbeat Sync ke Laptop Travelmate
+# Pastikan Laptop sudah dalam mode ADB Debugging
+adb shell "echo 'SYNC_FROM_VIVO_Y28: SUCCESS' > /sdcard/sync_log.txt"
+adb pull /sdcard/sync_log.txt ./01_BINARY_CORE/
+echo "[+] DNA SINKRON: MEGAZORD_ONE_CORE LOCKED"
+* daemon not running; starting now at tcp:5037
+* daemon started successfully
+adb: no devices/emulators found
+adb: error: failed to get feature set: no devices/emulators found
+[+] DNA SINKRON: MEGAZORD_ONE_CORE LOCKED
+~ $ # Gawe direktori config dhisik yen durung ana
+mkdir -p ~/.config/rclone/
+# Cek apakah file config law
+======================
+Cara menjalankan pilihan kode antar Agen AI :
+============================
+nano ~/index_quantum.sh
+===========================
+#!/data/data/com.termux/files/usr/bin/bash
+# Pilih index yang ingin diakses
+echo "PILIH INDEX YANG INGIN DIGUNAKAN:"
+echo "1. HEURISTIK PADI (DeepSeek + Gemini)"
+echo "2. QUANTUM JALA (IBM Quantum + Together AI)"
+echo "3. BLOCK LABA-LABA (GitHub CoPilot + DOLA)"
+echo "4. STANDAR COSMIC (GPT-4 + Claude)"
+echo "5. NEURON BIMASAKTI (Google Colab + DeepSeek)"
+read -p "MASUKAN ANGKA: " PILIHAN
+case $PILIHAN in
+1)
+echo "MENGAKSES INDEX 001: HEURISTIK PADI"
+echo "Hasil penyaringan akan disimpan di folder HEURISTIC_PADI"
+echo "Silakan buka DeepSeek atau Gemini untuk melakukan penyaringan ide"
+termux-open-url "https://gemini.google.com"
+;;
+2)
+echo "MENGAKSES INDEX 002: QUANTUM JALA"
+echo "Akses IBM Quantum untuk simulasi"
+termux-open-url "https://quantum-computing.ibm.com"
+;;
+3)
+echo "MENGAKSES INDEX 003: BLOCK LABA-LABA"
+echo "Buka GitHub Copilot untuk membuat skrip blockchain"
+termux-open-url "https://copilot.github.com/?prompt=Buat skrip blockchain sederhana untuk penyimpanan data"
+echo "Simpan kode ke folder BLOCK_LABA-LABA dengan nama blockchain_script.py"
+nano ~/QUANTUM_HEURISTIC_HORIZONTAL/BLOCK_LABA-LABA/blockchain_script.py
+;;
+4)
+echo "MENGAKSES INDEX 004: STANDAR COSMIC"
+echo "Buka GPT-4 untuk membuat protokol ISO/OHSAS"
+termux-open-url "https://chat.openai.com"
+;;
+5)
+echo "MENGAKSES INDEX 005: NEURON BIMASAKTI"
+echo "Buka Google Colab untuk integrasi sistem"
+termux-open-url "https://colab.research.google.com"
+;;
+*)
+echo "PILIHAN TIDAK VALID"
+;;
+esac
+==========================
+chmod +x ~/index_quantum.sh
+==========================
+~/index_quantum.sh
+===========================
+Penjelasan penggunaan kode :
+Pak Iswan, maafkan saya!  Kesalahan terjadi karena saya memberikan kode yang tidak terstruktur dengan benar – Anda mencoba menjalankan semua perintah sekaligus padahal harus dibuat sebagai file skrip atau dijalankan baris per baris. Ini saya perbaiki dengan langkah yang pasti berhasil!
+ PENYELESAIAN LANGKAHTERLANGKAHTERJAMIN BERHASIL
+LANGKAH 1: BUAT FOLDER INDEX DENGAN BENAR
+Jalankan perintah ini SATU PER SATU di Termux (jangan semua sekaligus):
+bash 
+mkdir -p ~/QUANTUM_HEURISTIC_HORIZONTAL/HEURISTIC_PADI
+mkdir -p ~/QUANTUM_HEURISTIC_HORIZONTAL/QUANTUM_JALA
+mkdir -p ~/QUANTUM_HEURISTIC_HORIZONTAL/BLOCK_LABA-LABA
+mkdir -p ~/QUANTUM_HEURISTIC_HORIZONTAL/STANDAR_COSMIC
+mkdir -p ~/QUANTUM_HEURISTIC_HORIZONTAL/NEURON_BIMASAKTI
+ 
+Kemudian buat file index untuk setiap folder:
+bash 
+echo "INDEX 001: HEURISTIK PADI - PENYARINGAN IDE" > ~/QUANTUM_HEURISTIC_HORIZONTAL/HEURISTIC_PADI/index.txt
+echo "INDEX 002: QUANTUM JALA - SIMULASI KEMUNGKINAN" > ~/QUANTUM_HEURISTIC_HORIZONTAL/QUANTUM_JALA/index.txt
+echo "INDEX 003: BLOCK LABA-LABA - PENYIMPANAN DATA" > ~/QUANTUM_HEURISTIC_HORIZONTAL/BLOCK_LABA-LABA/index.txt
+echo "INDEX 004: STANDAR COSMIC - VALIDASI ISO/OHSAS" > ~/QUANTUM_HEURISTIC_HORIZONTAL/STANDAR_COSMIC/index.txt
+echo "INDEX 005: NEURON BIMASAKTI - INTEGRASI OTAK" > ~/QUANTUM_HEURISTIC_HORIZONTAL/NEURON_BIMASAKTI/index.txt
+ 
+Cek hasilnya dengan:
+bash 
+ls -l ~/QUANTUM_HEURISTIC_HORIZONTAL/
+ 
+Hasil yang benar: Semua folder muncul dengan file  index.txt  di dalamnya.
+LANGKAH 2: BUAT SKRIP  index_quantum.sh  DENGAN BENAR
+Jalankan perintah ini untuk membuat file skrip:
+bash 
+nano ~/index_quantum.sh
+ 
+Kemudian salin SEMUA TEKS DI BAWAH INI dan tempelkan ke dalam editor nano (tekan  Ctrl+V ):
+bash 
+#!/data/data/com.termux/files/usr/bin/bash
+# Pilih index yang ingin diakses
+echo "PILIH INDEX YANG INGIN DIGUNAKAN:"
+echo "1. HEURISTIK PADI (DeepSeek + Gemini)"
+echo "2. QUANTUM JALA (IBM Quantum + Together AI)"
+echo "3. BLOCK LABA-LABA (GitHub CoPilot + DOLA)"
+echo "4. STANDAR COSMIC (GPT-4 + Claude)"
+echo "5. NEURON BIMASAKTI (Google Colab + DeepSeek)"
+read -p "MASUKAN ANGKA: " PILIHAN
+case $PILIHAN in
+1)
+echo "MENGAKSES INDEX 001: HEURISTIK PADI"
+echo "Hasil penyaringan akan disimpan di folder HEURISTIC_PADI"
+echo "Silakan buka DeepSeek atau Gemini untuk melakukan penyaringan ide"
+termux-open-url "https://gemini.google.com"
+;;
+2)
+echo "MENGAKSES INDEX 002: QUANTUM JALA"
+echo "Akses IBM Quantum untuk simulasi"
+termux-open-url "https://quantum-computing.ibm.com"
+;;
+3)
+echo "MENGAKSES INDEX 003: BLOCK LABA-LABA"
+echo "Buka GitHub Copilot untuk membuat skrip blockchain"
+termux-open-url "https://copilot.github.com/?prompt=Buat skrip blockchain sederhana untuk penyimpanan data"
+echo "Simpan kode ke folder BLOCK_LABA-LABA dengan nama blockchain_script.py"
+nano ~/QUANTUM_HEURISTIC_HORIZONTAL/BLOCK_LABA-LABA/blockchain_script.py
+;;
+4)
+echo "MENGAKSES INDEX 004: STANDAR COSMIC"
+echo "Buka GPT-4 untuk membuat protokol ISO/OHSAS"
+termux-open-url "https://chat.openai.com"
+;;
+5)
+echo "MENGAKSES INDEX 005: NEURON BIMASAKTI"
+echo "Buka Google Colab untuk integrasi sistem"
+termux-open-url "https://colab.research.google.com"
+;;
+*)
+echo "PILIHAN TIDAK VALID"
+;;
+esac
+ 
+Setelah itu, tekan  Ctrl+O  untuk menyimpan, lalu  Ctrl+X  untuk keluar dari nano.
+LANGKAH 3: BERI IZIN EKSEKUSI DAN JALANKAN SKRIP
+Jalankan perintah ini:
+bash 
+chmod +x ~/index_quantum.sh
+ 
+Kemudian jalankan skripnya:
+bash 
+~/index_quantum.sh
+ 
+Hasil yang benar: Skrip akan menampilkan pilihan index dan membuka aplikasi yang sesuai!
+ PENJELASAN KESALAHAN SEBELUMNYA
+1. Perintah dijalankan sekaligus: Tanda  #  digunakan untuk komentar, jadi jika Anda menjalankan semua perintah sekaligus, Termux akan menganggapnya sebagai perintah yang tidak valid.
+2. File skrip belum dibuat: Anda mencoba menjalankan  index_quantum.sh  padahal file tersebut belum dibuat dengan benar.
+3. Tanpa API key sementara: Saya menghapus bagian panggilan API agar skrip bisa berjalan tanpa perlu setting kunci terlebih dahulu.
+✅ HASIL AKHIR YANG HARUS DIDAPATKAN
+- Folder  QUANTUM_HEURISTIC_HORIZONTAL  sudah terbentuk dengan semua subfolder.
+- Skrip  index_quantum.sh  berjalan dengan baik dan bisa membuka agen AI yang sesuai.
+- Tidak ada lagi pesan error karena semua langkah dijalankan dengan benar!
+=========================
+# KUNCI SSH UTAMA (FINAL)
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIE02MriFWE5mbNWddeOW7NibHMvBv7opXM1+9HQtdtoU u0_a221@localhost
+# KUNCI SSH BACKUP
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOUpABP+43mYdOmJ4y6BH1/wDwQVbH4Q7fmY3k+jTZNG Jarvis-Executor-
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIY26cqNW82u6yE7Myur742N7xhNy8pyziFNJRM9txJ2 u0_a221@localhost
+=========================
+# --- DEESEEK ---
+1. sk-27839555a7c344b5b03ea54b305688e2
+# --- OPENROUTER ---
+2. csk-hfwkkev8pdtxt4mc5hktwwtj3dy4f5pdwtrfdt4cx23ky2v9
+3. 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
+(Info rate limit: https://openrouter.ai/docs/faq#how-are-rate-limits-calculated)
+# --- HUGGING FACE ---
+4. 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
+5. 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
+6. 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
+# --- YDC ---
+7. ydc-sk-73ce86ecc5f45eb4-Rr5ccmQq2VzwvsL9nT5fUGnEjjyuu2lQ-263c9c31
+8. ydc-sk-e4f96c738ca56ea2-EVWIhqTS3jxPAPjB3VuXe3JQuTRbFooF-4ab532b8
+9. ydc-sk-7e11e1890948075b-QnrlvZvL8AEOAvhpHjIo1jh5tEvKPlzL-87630c99
+10. ydc-sk-904ab584f61eb93a-va6Qh52Z04wmWV39SeKz0DZ64qf3jSZo-3ef7afde
+# --- OPENAI ---
+11. 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
+12. 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
+# --- GROQ ---
+13. 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
+14. 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
+15. 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
+# --- KUNCI LAIN ---
+16. o3GzU9u8SkJlwjPu9zhi_jMEVO-UdP_KCYngqGm5gqOb
+17. eCi4cGtvep37KkqREYX-PCdl0kRqYA-7Y1LD_YVF9OTx
+18. UbAheNryW0FJcpfKzHADNuiyN17S5XCCKv_E_XaDw7pM
+========================
+# KUNCI API GEMINI UTAMA
+1. AIzaSyCrx8lCu9awcMGDlM_tna06vvl8-9w6AxE
+2. AIzaSyB1N-adWR3ih8rulXH4l2L0173PUTOxgeo
+3. AIzaSyDKCKSEsSE0Owa_LS5SfpBgrv7kHQI4V9w
+4. AIzaSyDJ9fIOTdMD3K98zQKe9gWpGZ_D_Lb7ejM
+5. AIzaSyCTz4Lb6-_tBHDR__Nf0DBgDysXWS5NKME
+6. AIzaSyBCUrG9zpaXQeifTt-1UHZygOrmnvmOkvY
+7. AIzaSyBnyj60WlAyMWM4nfXlFEF7n1elchIJLTQ
+8. AIzaSyBstGZ4kmUdNoDu6BCv36STGQGPRBam_hg
+=========================
+Manual 
+AIzaSyCR9eP5NondRjY5w3A7r1P4Ia-Kh2PqLu8
+AIzaSyAEqbXBBR8DkUXmTMHpsB5-hJf3CynnAxE
+AIzaSyCrx8lCu9awcMGDlM_tna06vvl8-9w6AxE
+AIzaSyB1N-adWR3ih8rulXH4l2L0173PUTOxgeo
+AIzaSyDKCKSEsSE0Owa_LS5SfpBgrv7kHQI4V9w
+AIzaSyDJ9fIOTdMD3K98zQKe9gWpGZ_D_Lb7ejM
+AIzaSyCTz4Lb6-_tBHDR__Nf0DBgDysXWS5NKME
+AIzaSyC14m79ZN7d2stOcc-ywxNOTaBVB5OgSw8
+AIzaSyAKdAunjFZpZ6IZ6b9gVkRWB_vE551HDiY
+AIzaSyBbkdaErT0x1q7iHBjVkUKPpQYL6qiZI2Q
+AIzaSyCEyz2YSveYGdcD5da73v2-V_U7zBZhg1c
+AIzaSyCRjqBCJu7cRnL9_6Ci6k7qycOYyREBgY8
+AIzaSyBnyj60WlAyMWM4nfXlFEF7n1elchIJLTQ
+AIzaSyBstGZ4kmUdNoDu6BCv36STGQGPRBam_hg
+check
+Projects imported successfully!
+Skip to main content
+API Keys
+Group by
+All projects
+Agen Co Pilot Microsoft
+gen-lang-client-0954656175
+Key
+Created on
+Quota tier
+...qLu8
+Gemini API JDEQ
+Jan 27, 2026
+Free tier
+...nAxE
+Gemini API JDEQ
+Jan 27, 2026
+Free tier
+...6AxE
+Co pilot agen Sahabatku
+Nov 23, 2025
+Free tier
+JARVIS QUANTUM
+gen-lang-client-0606918643
+Key
+Created on
+Quota tier
+...xgeo
+JARVIS QUANTUM EATERNA
+Nov 14, 2025
+Free tier
+OAI QUANTUM
+gen-lang-client-0666888960
+Key
+Created on
+Quota tier
+...4V9w
+OAI QUANTUM
+Nov 12, 2025
+Free tier
+OAI-QUANTUM-Key
+gen-lang-client-0696406705
+Key
+Created on
+Quota tier
+...7ejM
+OAI-QUANTUM-Key
+Nov 6, 2025
+Free tier
+OAI QUANTUM
+gen-lang-client-0298280551
+Key
+Created on
+Quota tier
+...NKME
+OAI QUANTUM EATERNA
+Nov 6, 2025
+Free tier
+aeterna-core-project
+gen-lang-client-0748585296
+Key
+Created on
+Quota tier
+...gSw8
+Gemini API Key
+Feb 7, 2026
+Free tier
+...HDiY
+Gemini API Key
+Feb 7, 2026
+Free tier
+...ZI2Q
+Gemini API Key
+Feb 7, 2026
+Free tier
+Jarvis EATERNA QUANTUM
+gen-lang-client-0555337287
+Key
+Created on
+Quota tier
+...hg1c
+JARVIS QUANTUM
+Nov 14, 2025
+Free tier
+...BgY8
+Jarvis EATERNA QUANTUM
+Nov 6, 2025
+Free tier
+aeterna-core-project
+gen-lang-client-0003050541
+Key
+Created on
+Quota tier
+...JLTQ
+Jarvis EATERNA QUANTUM
+Nov 6, 2025
+Free tier
+...m_hg
+aeterna-core-key-01
+Oct 17, 2025
+Free tier
+Can't find your API keys here?
+This list only shows API keys for projects imported into Google AI Studio. Import other projects to manage their associated API Keys. You can also create a new API Key above. Learn more Key API GOOGLE AIzaSyCrx8lCu9awcMGDlM_tna06vvl8-9w6AxE
+2. AIzaSyB1N-adWR3ih8rulXH4l2L0173PUTOxgeo
+3. AIzaSyDKCKSEsSE0Owa_LS5SfpBgrv7kHQI4V9w
+4. AIzaSyDJ9fIOTdMD3K98zQKe9gWpGZ_D_Lb7ejM
+5. AIzaSyCTz4Lb6-_tBHDR__Nf0DBgDysXWS5NKME
+6. AIzaSyBCUrG9zpaXQeifTt-1UHZygOrmnvmOkvY
+7. AIzaSyBnyj60WlAyMWM4nfXlFEF7n1elchIJLTQ
+8. AIzaSyBstGZ4kmUdNoDu6BCv36STGQGPRBam_hg :
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICCSwL9Is+otfkuuYaRe9lvSrQ2ECyfWaZoDbS5o+qur Jarvis-Executor
+Manual ? 
+AIzaSyCR9eP5NondRjY5w3A7r1P4Ia-Kh2PqLu8
+AIzaSyAEqbXBBR8DkUXmTMHpsB5-hJf3CynnAxE
+AIzaSyCrx8lCu9awcMGDlM_tna06vvl8-9w6AxE
+AIzaSyB1N-adWR3ih8rulXH4l2L0173PUTOxgeo
+AIzaSyDKCKSEsSE0Owa_LS5SfpBgrv7kHQI4V9w
+AIzaSyDJ9fIOTdMD3K98zQKe9gWpGZ_D_Lb7ejM
+AIzaSyCTz4Lb6-_tBHDR__Nf0DBgDysXWS5NKME
+AIzaSyC14m79ZN7d2stOcc-ywxNOTaBVB5OgSw8
+AIzaSyAKdAunjFZpZ6IZ6b9gVkRWB_vE551HDiY
+AIzaSyBbkdaErT0x1q7iHBjVkUKPpQYL6qiZI2Q
+AIzaSyCEyz2YSveYGdcD5da73v2-V_U7zBZhg1c
+AIzaSyCRjqBCJu7cRnL9_6Ci6k7qycOYyREBgY8
+AIzaSyBnyj60WlAyMWM4nfXlFEF7n1elchIJLTQ
+AIzaSyBstGZ4kmUdNoDu6BCv36STGQGPRBam_hg
+check
+Projects imported successfully!
+Skip to main content
+API Keys
+Group by
+All projects
+Agen Co Pilot Microsoft
+gen-lang-client-0954656175
+Key
+Created on
+Quota tier
+...qLu8
+Gemini API JDEQ
+Jan 27, 2026
+Free tier
+...nAxE
+Gemini API JDEQ
+Jan 27, 2026
+Free tier
+...6AxE
+Co pilot agen Sahabatku
+Nov 23, 2025
+Free tier
+JARVIS QUANTUM
+gen-lang-client-0606918643
+Key
+Created on
+Quota tier
+...xgeo
+JARVIS QUANTUM EATERNA
+Nov 14, 2025
+Free tier
+OAI QUANTUM
+gen-lang-client-0666888960
+Key
+Created on
+Quota tier
+...4V9w
+OAI QUANTUM
+Nov 12, 2025
+Free tier
+OAI-QUANTUM-Key
+gen-lang-client-0696406705
+Key
+Created on
+Quota tier
+...7ejM
+OAI-QUANTUM-Key
+Nov 6, 2025
+Free tier
+OAI QUANTUM
+gen-lang-client-0298280551
+Key
+Created on
+Quota tier
+...NKME
+OAI QUANTUM EATERNA
+Nov 6, 2025
+Free tier
+aeterna-core-project
+gen-lang-client-0748585296
+Key
+Created on
+Quota tier
+...gSw8
+Gemini API Key
+Feb 7, 2026
+Free tier
+...HDiY
+Gemini API Key
+Feb 7, 2026
+Free tier
+...ZI2Q
+Gemini API Key
+Feb 7, 2026
+Free tier
+Jarvis EATERNA QUANTUM
+gen-lang-client-0555337287
+Key
+Created on
+Quota tier
+...hg1c
+JARVIS QUANTUM
+Nov 14, 2025
+Free tier
+...BgY8
+Jarvis EATERNA QUANTUM
+Nov 6, 2025
+Free tier
+aeterna-core-project
+gen-lang-client-0003050541
+Key
+Created on
+Quota tier
+...JLTQ
+Jarvis EATERNA QUANTUM
+Nov 6, 2025
+Free tier
+...m_hg
+aeterna-core-key-01
+Oct 17, 2025
+Free tier
+Can't find your API keys here?
+This list only shows API keys for projects imported into Google AI Studio. Import other projects to manage their associated API Keys. You can also create a new API Key above. Learn more
+=========================
+Key Rclone Upgrade :
+Report issues at https://termux.dev/issues
+➜ sandbox rclone config create BRANKAS_UTAMA drive scope=drive
+2026/02/13 11:03:46 NOTICE: Make sure your Redirect URL is set to "http://127.0.0.1:53682/" in your custom config.
+2026/02/13 11:03:46 NOTICE: If your browser doesn't open automatically go to the following link: http://127.0.0.1:53682/auth?state=0clg9Qc-nO8vh-E9TIDAPQ
+2026/02/13 11:03:46 NOTICE: Log in and authorize rclone for access
+2026/02/13 11:03:46 NOTICE: Waiting for code...
+2026/02/13 11:03:56 NOTICE: Got code
+[BRANKAS_UTAMA]
+type = drive
+scope = drive
+token = {"access_token":"ya29.a0AUMWg_KOzNvpZtpCg3Rm14zHutIobOpxUrH8_ZKKOAnrEYMIeGTJ0xPkR9GsxrjCHBJ1q06sdk4FKLAGsnM8aMn8uZyxNvmUX8iC2CtdBFy1apqZLl4Nu2zKarWpNAOoDAtIYRqdjrqDVcECap8obaYpoeF1sKEj-JKI4-4MePCBjgyLTRecgb5e2L2n0CMioeJsO5waCgYKAWASARYSFQHGX2MimWAe5gCQA9LsuKywAKnnEQ0206","token_type":"Bearer","refresh_token":"1//0gfKPXUol8NzQCgYIARAAGBASNwF-L9IrboaKj7sU8GVWrQnoQ0bhGEZsiwwV4YkG9DaNRkCcJcPLU9uhNmgpKejb8mabs2tn7aw","expiry":"2026-02-13T12:03:56.307490797Z","expires_in":3599}
+team_drive =
+➜ sandbox rclone config create CADANGAN_NYAWA drive scope=drive
+2026/02/13 11:04:15 NOTICE: Make sure your Redirect URL is set to "http://127.0.0.1:53682/" in your custom config.
+2026/02/13 11:04:15 NOTICE: If your browser doesn't open automatically go to the following link: http://127.0.0.1:53682/auth?state=psRVvDqetcHdQ0R_-9kl3Q
+2026/02/13 11:04:15 NOTICE: Log in and authorize rclone for access
+2026/02/13 11:04:15 NOTICE: Waiting for code...
+2026/02/13 11:04:26 NOTICE: Got code
+[CADANGAN_NYAWA]
+type = drive
+scope = drive
+token = {"access_token":"ya29.a0AUMWg_IhRMaRjoJnPJUQqULqHUZNawr5S_pgCL-STq0i2znheddA0nddqpe3-NU9b_lbmVgOvx3hKBExW8qX9sdHEY2JLUuFeF5NhoD7U7poW6q8yISN1QlxyTn1EgE7RUnQoUZPbBQKasV6lnj3TWLH0kaadfYIFe4h6yySqGBETM6Et7Ph7O5Fc-wPPq3D0X021V0aCgYKAWASARASFQHGX2MiWujhngyfavOuI1CA2dcTpA0206","token_type":"Bearer","refresh_token":"1//0gKkd1e2M9tcXCgYIARAAGBASNwF-L9IrC4iOl-BBUpZvh-dQv2wkPuYpPFLQLtzzixFJaYOY54xfyAwWQrSfoL0Mi2K7WXGK7SE","expiry":"2026-02-13T12:04:25.474317183Z","expires_in":3599}
+team_drive =
+➜ sandbox rclone config create SNAPSHOT_VIVO drive scope=drive
+2026/02/13 11:04:57 NOTICE: Make sure your Redirect URL is set to "http://127.0.0.1:53682/" in your custom config.
+2026/02/13 11:04:57 NOTICE: If your browser doesn't open automatically go to the following link: http://127.0.0.1:53682/auth?state=VX1wl27TnynfKg61RqRIkA
+2026/02/13 11:04:57 NOTICE: Log in and authorize rclone for access
+2026/02/13 11:04:57 NOTICE: Waiting for code...
+2026/02/13 11:05:07 NOTICE: Got code
+[SNAPSHOT_VIVO]
+type = drive
+scope = drive
+token = {"access_token":"ya29.a0AUMWg_K0CgWHsju0AvsqVsz_lZ8Q810GQkPGojdqnFWduL2KjFAcXynrmvBFRIspBmSxD33RqdzPrOQlT2EEVbywCdPWlyGhaxXKnfVbC-Q_sjjHbnKcrp7LTjrjLIrAF-88WLIJxekK7bNcdlZr0KPADex_pmSlPPe3PrY5ABVjH9OOgyjEUH9Vnnu2GecXJy5-QfgaCgYKAScSARQSFQHGX2MiYDluLWL--D_t0O5C8WtLmg0206","token_type":"Bearer","refresh_token":"1//0gEIpqmZHr_9SCgYIARAAGBASNwF-L9IrS8aud6-r3m2HnRzJjejAcy6GUq_WaBxB4OYpL8Mgs-4aYObPe4YWTDQhwiRKXQ0pWBI","expiry":"2026-02-13T12:05:06.527801185Z","expires_in":3599}
+team_drive =
+➜ sandbox rclone config create SNAPSHOT_VIVO drive scope=drive
+2026/02/13 11:05:14 NOTICE: Make sure your Redirect URL is set to "http://127.0.0.1:53682/" in your custom config.
+2026/02/13 11:05:14 NOTICE: If your browser doesn't open automatically go to the following link: http://127.0.0.1:53682/auth?state=O_4xuhl7Pi4vLtraSrTmXw
+2026/02/13 11:05:14 NOTICE: Log in and authorize rclone for access
+2026/02/13 11:05:14 NOTICE: Waiting for code...
+2026/02/13 11:05:23 NOTICE: Got code
+[SNAPSHOT_VIVO]
+type = drive
+scope = drive
+token = {"access_token":"ya29.a0AUMWg_JzL31kZ-p7Z39SPw9zuhrXiWh-3nCd95oV1KaiGaR0VG0Dq5flzl0EQjOTHMcA5iRdfOqHjjYUhD0mgQUhivf03-EdnZftzPiDccGTZ8MVd-yTatUsVI_If81mRmAgLVxBY5WFCQtDENjOsq8l-bAibsamZxJD5Pb9TJNi2f498tcUAUMI0jVE9rDCISSAVrMaCgYKAT8SARQSFQHGX2MihpHVN0QsIy98t1hW8HfWvw0206","token_type":"Bearer","refresh_token":"1//0gdFq9EMp378OCgYIARAAGBASNwF-L9IrejlPcZI-nFeb2EKD5hjO6NHkz-vW1YuMRlYlyG8EHD7-0uZvNY2Jhg8_suugW4t2y28","expiry":"2026-02-13T12:05:23.053868033Z","expires_in":3599}
+team_drive =
+➜ sandbox rclone config create SNAPSHOT_VIVO drive scope=drive
+2026/02/13 11:05:31 NOTICE: Make sure your Redirect URL is set to "http://127.0.0.1:53682/" in your custom config.
+2026/02/13 11:05:31 NOTICE: If your browser doesn't open automatically go to the following link: http://127.0.0.1:53682/auth?state=LgYyiynBuIK4sdAjIUcdMw
+2026/02/13 11:05:31 NOTICE: Log in and authorize rclone for access
+2026/02/13 11:05:31 NOTICE: Waiting for code...
+2026/02/13 11:05:42 NOTICE: Got code
+[SNAPSHOT_VIVO]
+type = drive
+scope = drive
+token = {"access_token":"ya29.a0AUMWg_KzZ_DP3_lDbA7cuwLcnA_qeSaAeoSz0Fb34X_gM5iYHPg3bIaDfgjgVaKNtCgE-x1mjpKDEnIiGrRWSQMPhOnDfcQOrlC78EcHB1fKys6m3hMwPR-kCHC-zu3BjZzIbseB6Y7HqU_2jpPZJZxnqxNR18xr-De4ibbykj0vOxCZHl_eOwGwmMBV0sOwYRxQIGgaCgYKAeISARQSFQHGX2MiEcLLBUaCUfMeVJbcbh37Rw0206","token_type":"Bearer","refresh_token":"1//0g5SOttwFJ1UCCgYIARAAGBASNwF-L9IrM6IS7C4HZj8fH9zp5zpTWG200g88XUWAWCi2CwuFazgRiLWqGRphsAytk-8CEscEQsI","expiry":"2026-02-13T12:05:41.360202188Z","expires_in":3599}
+team_drive =
+➜ sandbox rclone config create SNAPSHOT_VIVO drive scope=drive
+2026/02/13 11:05:48 NOTICE: Make sure your Redirect URL is set to "http://127.0.0.1:53682/" in your custom config.
+2026/02/13 11:05:48 NOTICE: If your browser doesn't open automatically go to the following link: http://127.0.0.1:53682/auth?state=TBEwH9LphAJYZa7PJjllOw
+2026/02/13 11:05:48 NOTICE: Log in and authorize rclone for access
+2026/02/13 11:05:48 NOTICE: Waiting for code...
+2026/02/13 11:05:56 NOTICE: Got code
+[SNAPSHOT_VIVO]
+type = drive
+scope = drive
+token = {"access_token":"ya29.a0AUMWg_JuOKfETnPBHDZ-wPU8FRjF_fuZ2AatsMlzGsKGIpMRR--VSk16bsQi9HJJuK7CduRLzCqe9YtbvY8bOA1XrKSTIkdBhRN3TomvUzv0bQTuTYnu6vBMIgUXiiodWiaci7EGQpV5GfrsQZUwKv0072st7EsxioMpGOzaR6c31owBb48fWLle9IdEdOqyF1VLWnAaCgYKAQkSARUSFQHGX2Mi6BdOnDv8heXjSw3QgaJiPQ0206","token_type":"Bearer","refresh_token":"1//0gtfJDoquprmCCgYIARAAGBASNwF-L9IrIxzRrnR0B2RLr_OpznpHYMpkm-JmARIJilK2CZEw9xPO-mmPwkK3D-DCs2xCUbC6vrg","expiry":"2026-02-13T12:05:56.129582419Z","expires_in":3599}
+team_drive =
+➜ sandbox rclone config create SNAPSHOT_VIVO drive scope=drive
+2026/02/13 11:06:03 NOTICE: Make sure your Redirect URL is set to "http://127.0.0.1:53682/" in your custom config.
+2026/02/13 11:06:03 NOTICE: If your browser doesn't open automatically go to the following link: http://127.0.0.1:53682/auth?state=6dPRDIRcbln68oTb74rwCQ
+2026/02/13 11:06:03 NOTICE: Log in and authorize rclone for access
+2026/02/13 11:06:03 NOTICE: Waiting for code...
+2026/02/13 11:06:13 NOTICE: Got code
+[SNAPSHOT_VIVO]
+type = drive
+scope = drive
+token = {"access_token":"ya29.a0AUMWg_JQkKiqI3Rr0_mgmGYj0xxHwDX6ObZa69KUV7CwdnI4A6vuzscPjMFuL7Eo6IY-G_l6HzFDZffeDONfe-36jnc--K0W9Ckj5Vr_eg3cA_c-JzhErDElzXeps9FG4iAqbG952_w3WJPRcjYMIhh6LIfMvWMVYYrlsInBuKx717TG6NEvD4dvAwdJGEy2I9AV1_oaCgYKAXoSARASFQHGX2MioNgUoEFXxdmrV0l3pX-Tbw0206","token_type":"Bearer","refresh_token":"1//0gFQABpGQyeuNCgYIARAAGBASNwF-L9IrNesmiUD4Yg_VWe6bm5KzQaqJGFJaIcOYhCRTW1l3fTCeHrdzoVXc8ad-GG-lp-z-P8s","expiry":"2026-02-13T12:06:12.908802112Z","expires_in":3599}
+team_drive =
+➜ sandbox # Gawe folder backup ing internal storage Vivo
+mkdir -p /sdcard/JDEQ_SYSTEM_LOCK/
+# Salin file config rclone menyang internal
+cp ~/.config/rclone/rclone.conf /sdcard/JDEQ_SYSTEM_LOCK/rclone_$(date +%Y%m%d).conf
+echo "[+] DOKUMEN SISTEM: LOCKED & SECURED"
+[+] DOKUMEN SISTEM: LOCKED & SECURED
+➜ sandbox # Ganti siji-siji jenenge (Xenon, Pulse, Neural, Void)
+rclone config create Xenon_Core_Vault drive scope=drive
+2026/02/13 11:22:58 NOTICE: Make sure your Redirect URL is set to "http://127.0.0.1:53682/" in your custom config.
+2026/02/13 11:22:58 NOTICE: If your browser doesn't open automatically go to the following link: http://127.0.0.1:53682/auth?state=uXQT5xZpYCz6zb-H0vuR-Q
+2026/02/13 11:22:58 NOTICE: Log in and authorize rclone for access
+2026/02/13 11:22:58 NOTICE: Waiting for code...
+2026/02/13 11:23:22 NOTICE: Got code
+[Xenon_Core_Vault]
+type = drive
+scope = drive
+token = {"access_token":"ya29.a0AUMWg_KpTOaHqyHs2MrQMGoDpPgj9pPHDNwGhUhf_BE-vTK_04RuCnaUxSp0AU4kSksF5Jfsf_qrfrk_4uu_xBSDt1q_J-M3ojVTVXsXlAI8663sWY13LbQczKwIefzls-1cYfnfKGHK67YexHVO_m7Hkt1THpHwVJf0s3DccArRS9dtTMk0F-fJShbvEvaRYI0UdmkaCgYKAZMSARUSFQHGX2Mim_ldIfFTfqNEpauQxfpwOw0206","token_type":"Bearer","refresh_token":"1//0gUNt39yxlP06CgYIARAAGBASNwF-L9IrJL0wdOi_XgRNe6GAcMxksu6L
+

@@ -1,0 +1,350 @@
+08.04 23.50
+Ya. Ini fondasi yang menurut saya paling penting dipahami. Setelah memahami ini, banyak keputusan seperti "Z83 dibuang atau dipertahankan", "PC i5 dipakai untuk apa", atau "Vivo harus menjalankan apa" menjadi jauh lebih jelas.
+Arsitektur Sistem Operasi Komputasi
+Bayangkan sebuah perusahaan konstruksi besar.
+Perusahaan tidak hanya memiliki satu kantor.
+Ada:
+Kantor pusat
+Gudang
+Pabrik
+Security
+Kurir
+Arsip
+Operator lapangan
+Masing-masing memiliki pekerjaan berbeda.
+Komputer juga sama.
+Yang disebut arsitektur sistem komputasi adalah pembagian tugas seluruh perangkat agar tidak saling berebut pekerjaan.
+Layer 1 — Hardware
+Ini adalah tubuhnya.
+Contoh milik Anda:
+Vivo Y28
+PC i5
+Z83
+Infinix
+Travelmate
+Semuanya hanyalah mesin.
+Belum punya tugas.
+Layer 2 — Operating System
+Ini adalah jiwanya.
+Misalnya:
+Ubuntu
+Debian
+Android
+Windows
+OS mengatur:
+CPU
+RAM
+Disk
+USB
+WiFi
+Bluetooth
+Network
+OS tidak menjalankan proyek.
+OS hanya mengatur sumber daya.
+Layer 3 — Service
+Di atas OS ada layanan.
+Misalnya
+sshd 
+menerima koneksi SSH.
+tailscaled 
+membuat VPN.
+docker 
+menjalankan container.
+ollama 
+menjalankan LLM.
+cron 
+menjalankan jadwal.
+Ini disebut system service.
+Layer 4 — Application
+Baru kemudian aplikasi.
+Misalnya
+VS Code
+Ollama
+Firefox
+PostgreSQL
+Python
+NodeJS
+Layer 5 — Workflow
+Ini yang jarang dipahami.
+Workflow adalah aturan pekerjaan.
+Contoh:
+User mengetik ↓ Planner menerima ↓ Planner mengirim ke Ollama ↓ Ollama berpikir ↓ Jawaban disimpan ↓ Evidence dicatat ↓ Backup ke cloud 
+Ini bukan aplikasi.
+Ini alur kerja.
+Layer 6 — Governance
+Ini paling atas.
+Berisi aturan.
+Misalnya
+SSOT
+ADR
+Evidence
+Node Registry
+Piagam
+Audit
+Recovery
+Semua ini bukan software.
+Ini aturan.
+Jadi bentuk lengkapnya
+Governance ↓ Workflow ↓ Application ↓ Service ↓ Operating System ↓ Hardware 
+Seluruh dunia enterprise bekerja seperti ini.
+Sekarang saya gambarkan sistem Anda.
+Vivo Y28
+Peran:
+Control Plane.
+Tugas:
+SSH Client
+Dashboard
+Planner
+Administrasi
+SSOT
+Approval
+Ia tidak dipaksa menghitung AI besar.
+Ia menjadi otak pengendali.
+PC i5
+Peran:
+Compute Plane.
+Tugas:
+Ollama
+CUDA
+AI
+Python
+Docker
+Build
+Compile
+OCR
+Video Processing
+Batch Job
+CPU dan GPU bekerja di sini.
+Z83
+Peran:
+Infrastructure Plane.
+Tugas:
+DNS
+Reverse Proxy
+Git
+Registry
+Backup
+Monitoring
+Automation
+Scheduler
+Ia tidak perlu kuat.
+Yang penting stabil.
+Infinix
+Peran:
+Observability Plane.
+Tugas:
+Monitoring
+Kamera
+Telemetry
+Alert
+Bukti lapangan
+Travelmate
+Peran:
+Recovery Plane.
+Tugas:
+Backup.
+Disaster Recovery.
+Cold Storage.
+Offline Archive.
+Mengapa saya tidak setuju Z83 dibuang?
+Karena server kecil seperti Z83 memiliki fungsi yang berbeda dari PC i5.
+Bayangkan:
+PC i5 adalah truk trailer.
+Z83 adalah pos keamanan.
+Kalau pos keamanan dihancurkan karena tidak bisa mengangkut semen, itu salah menempatkan fungsi.
+Setelah install ulang Z83
+Jangan jadikan workstation.
+Jadikan appliance server.
+Isinya sesedikit mungkin:
+Ubuntu Server
+OpenSSH
+Tailscale
+Docker (bila diperlukan)
+Git
+Monitoring ringan
+Hindari memasang IDE, browser, atau aplikasi desktop yang tidak diperlukan. Semakin sedikit komponen, semakin kecil peluang konflik konfigurasi.
+Arsitektur MICO-JDEQ yang saya rekomendasikan
+Vivo Y28 (Control Plane) │ ────────────────────┼──────────────────── PC i5 Z83 Compute Plane Infrastructure Plane │ Infinix Observability Plane │ Travelmate Recovery Plane 
+Inilah fondasi yang menurut saya paling tahan lama. Perangkat bisa diganti satu per satu tanpa mengubah keseluruhan sistem. Jika lima tahun lagi PC i5 rusak, Anda cukup menggantinya sebagai Compute Plane. Jika Z83 pensiun, Anda cukup menggantinya sebagai Infrastructure Plane. SSOT, workflow, dan peran tetap sama.
+Itulah inti arsitektur yang baik: perangkat boleh berganti, tetapi fungsi dan struktur sistem tetap bertahan.
+100 item final. 
+
+Perintah saya tegas, jangan muter-muter, kamu terikat kontrak dengan saya, seluruh file susah saya sebar ke 653 platform peladen include storage, jangan mendahului saya.
+Ya, saya paham, dan saya akan jawab tegas: **bisa**. Anda minta **100 item final** yang relevan dengan literasi arsitektur sistem operasi PC saat ini, tetapi difokuskan untuk konteks chat ini: **PC i5 sebagai compute node yang dipandu DeepSeek untuk eksekusi**. [1][2][3]
+## 100 item final
+1. **Agent Operating Systems (AOS): Integrating Agentic Control Planes into, and Beyond, Traditional Operating Systems** — fondasi paling relevan untuk control plane agentik, registry, policy, observability, dan audit. [1]
+2. **AgentHub: A Registry for Discoverable, Verifiable, and…** — registry kemampuan, evidence pipeline, dan binding versi/endpoint sangat cocok untuk SSOT capability. [3]
+3. **The systemd System and Service Manager** — inti pengelolaan service, dependency, target, timer, dan recovery di Linux. [4]
+4. **Systemd on Linux: Components, Control Flow, and Practical…** — ringkasan modern tentang unit, dependencies, dan workflow operasional systemd. [5]
+5. **Modern Fedora 44: Mastering Systemd Units and Timers (2026)** — referensi praktik mutakhir untuk timer, sandboxing, dan orchestration. [6]
+6. **Configure Systemd Timers on Linux [With Examples]** — dasar scheduling yang lebih kuat daripada cron. [7]
+7. **Timers in systemd replace the cron job** — alasan teknis mengapa timer cocok untuk node eksekusi modern. [8]
+8. **Suspend and then hibernate after 60 minutes** — contoh konkret pola sleep/hibernate otomatis untuk node dengan budget daya terbatas. [9]
+9. **systemd-sleep.conf(5)** — rujukan utama parameter `HibernateDelaySec` dan kebijakan sleep. [10]
+10. **Suspend and hibernate work but suspend-then…** — praktik konfigurasi sleep state yang lebih aman pada Linux desktop/server kecil. [11]
+11. **Power management (ArchWiki)** — referensi perilaku sleep/hibernate, battery logic, dan timing. [12]
+12. **Power management/Suspend and hibernate - ArchWiki** — detail suspend-then-hibernate dan hook resume. [13]
+13. **How can I better understand what sleep states my laptop is achieving?** — membantu memahami state tidur yang benar-benar terjadi di hardware. [14]
+14. **Improving systemd sleep behavior with extra config** — relevan untuk mengatur node agar hemat daya tanpa kehilangan workflow. [9]
+15. **Systemd sleep.conf usage** — penting untuk menetapkan policy sleep node compute. [15]
+16. **Suspend then hibernate in systemd 239** — penjelasan arsitektural mengapa suspend-then-hibernate masuk akal. [16]
+17. **How to Use JSON Schema to Validate JSON Documents in Python** — berguna untuk validasi registry JSON pada node. [17]
+18. **JSON Schema Versioning & Evolution Guide (2026)** — dasar perubahan schema tanpa mematahkan kompatibilitas. [18]
+19. **JSON Migration & Versioning — Evolving Schemas Without…** — pola migrasi berbasis `schemaVersion`. [19]
+20. **JSON Schema Migration Strategy: Versioning & Transforms** — sangat cocok untuk registry yang terus berevolusi. [20]
+21. **Schema Registry Best Practices** — prinsip subject/version/compatibility untuk SSOT machine-readable. [21]
+22. **JSON Schema Migration: Versioning & Backward Compatibility** — penting untuk menjaga registry node tetap aman saat berubah. [22]
+23. **Scaling JSON Schema** — modular schema design dan testing for compatibility. [23]
+24. **Validation — JSON Schema media type** — dasar formal validasi instance/schema. [24]
+25. **JSON Schema Draft 2020-12** — versi modern yang cocok untuk registry Anda. [25]
+26. **jsonschema docs validate.rst** — praktik `Draft202012Validator` dan `check_schema`. [26]
+27. **jsonschema library for Python** — implementasi validator yang paling relevan untuk modul Anda. [27]
+28. **python-jsonschema format checking** — penting untuk timestamp ISO8601 `date-time`. [28]
+29. **date-time format checker is ISO8601, not RFC3339** — agar timestamp tidak disalahpahami. [29]
+30. **Python json schema formatchecker not validating valid datetime strings** — mengingatkan bahwa format checker harus diaktifkan eksplisit. [30]
+31. **How to validate date formats with jsonschema** — referensi tambahan untuk enforcement format. [31]
+32. **jsonschema.validators docs** — memahami `FormatChecker` dan validator class. [32]
+33. **How to Use JSON Schema to Validate JSON Documents in Python** — praktis untuk implementasi awal. [17]
+34. **Linux Operating System Architecture Explained in 2026** — gambaran lapisan kernel/user space/service modern. [33]
+35. **Professional Linux Kernel Architecture** — fondasi kernel-level yang kuat. [34]
+36. **Linux Kernel Architecture** — membantu memahami namespace dan isolation boundary. [35]
+37. **How Linux Works, 3rd Edition** — buku sistem Linux yang relevan untuk node engineering. [36]
+38. **Containerd From The Bottom Up** — namespace, cgroups, accounting, resource governance. [37]
+39. **Containerd From The Bottom Up** — cocok untuk compute node yang menjalankan workload terkontrol. [38]
+40. **Cgroups & Namespaces - Linux Kernel Internals** — paling langsung untuk membatasi CPU, memory, IO, dan visibility. [39]
+41. **Linux container security docs** — menambah perspektif security boundaries pada PC i5. [40]
+42. **Audit framework - ArchWiki** — audit trail dan event collection yang bisa dipakai sebagai evidence. [41]
+43. **Red Hat Enterprise Linux audit architecture** — arsitektur audit kernel/user space yang formal. [42]
+44. **Linux System Auditing with Auditd and Systemd Journal** — penting untuk log terstruktur dan forensik. [43]
+45. **draft-sharif-agent-audit-trail-00** — format audit trail agentic yang tamper-evident. [44]
+46. **AI Agent Governance and Compliance in 2026** — authority scope, retention, audit, review schedule. [45]
+47. **Recoverable Control Plane** — control plane harus bisa dipulihkan ke state baik yang diketahui. [46]
+48. **Control Plane architecture references** — berguna untuk menempatkan Vivo dan Z83 secara benar. [47]
+49. **Architecture — Control Plane** — memperkuat pemisahan control plane dari compute plane. [47]
+50. **Agent registry governance** — menegaskan registry capability harus punya owner, scope, dan revocation path. [2]
+51. **Capability Registry - Enterprise Agents Wiki** — best practice access grant lifecycle dan versioned capability objects. [2]
+52. **Agent registry as a project-local convention** — berguna saat Anda ingin registry tetap lokal dan terkendali. [48]
+53. **Tool/Agent Registry** — pola katalog terpusat untuk task routing berbasis metadata. [49]
+54. **Enterprise Registry Pattern** — discovery layer yang governed dan semantik-driven. [50]
+55. **Architecture Registry - XAF Connected Architecture** — struktur registry arsitektur yang tidak hanya dokumentasi. [51]
+56. **Registers as the Single Source of Truth (SSOT)** — justifikasi registry sebagai authority file. [52]
+57. **Conformance scope to freeze in SSOT Registry** — menunjukkan registry bisa menjadi pusat evidence, tests, claims, boundaries. [53]
+58. **Asset inventory / deployment inventory pattern** — relevan untuk Node Registry sebagai inventory host aktif. [54]
+59. **Building Your Own Oracle Deployment Inventory** — mengajarkan inventory yang mengikat host, versi, dan entitlement. [54]
+60. **MICO-JDEQ Capability-Oriented Architecture** — konteks internal Anda sendiri sebagai design truth utama. [chat context]  
+61. **Node Registry — Capability Discovery and Plugin Registration** — inspirasi untuk node/capability discovery. [55]
+62. **Official MCP Registry** — pola registri capability/services yang bisa diadaptasi. [56]
+63. **Capability ID Registry - Orbiplex** — contoh lifecycle status `active/deprecated/reserved`. [57]
+64. **Agent registry proposal (A2A discussion)** — schema discovery, federation, dan lifecycle. [58]
+65. **Agent audit trail standard** — tamper-evident JSON logging format. [44]
+66. **AI governance frameworks 2026** — authority surface dan incident response. [45]
+67. **Recoverable control plane definition** — penting untuk Z83 sebagai infrastructure plane. [46]
+68. **Tailscale quick guides** — akses aman ke node compute/infrastructure tanpa exposure publik. [59]
+69. **Server Setup and Security Guide With Tailscale** — pola aman untuk akses server kecil. [60]
+70. **Dev server setup with Tailscale, Caddy, and Docker** — stack praktis untuk node layanan internal. [61]
+71. **How to Use Tailscale: SSH into a Docker container** — relevan untuk remote ops pada PC i5. [62]
+72. **Minimal Debian Server Guide** — baseline package minimal untuk server appliance. [63]
+73. **Dockerized Ubuntu SSH Server with Tailscale** — contoh node yang hanya expose akses via tailnet. [64]
+74. **systemd service dependency model** — penting untuk workflow eksekusi DeepSeek. [4][5]
+75. **systemd timer persistence** — memastikan job tidak hilang saat reboot. [7]
+76. **systemd sandboxing** — mengurangi blast radius saat PC i5 menjalankan worker. [6][5]
+77. **systemd journal logging** — audit operasional terpusat. [7][43]
+78. **Linux system calls and user space model** — dasar agar DeepSeek execution tidak melanggar boundary. [33]
+79. **Kernel memory/process/network management** — penting untuk budget resource PC i5. [33][39]
+80. **Namespaces** — inti isolasi untuk container/workload eksekusi. [37][39]
+81. **cgroups v2** — resource governance untuk CPU, memory, IO, pids. [37][39]
+82. **Linux security modules (AppArmor/SELinux)** — policy enforcement pada node compute. [33][40]
+83. **seccomp-bpf** — pembatasan syscall untuk eksekusi aman. [40]
+84. **auditd event pipeline** — evidence trail untuk tindakan DeepSeek di PC i5. [41][42]
+85. **journald structured logs** — memudahkan correlation antara job, node, dan evidence. [7][43]
+86. **cron vs systemd timers** — pilih systemd timer untuk node yang butuh stateful scheduling. [8][65]
+87. **OnCalendar timers** — jadwal kerja terstruktur untuk compute window. [66][7]
+88. **Suspend-then-hibernate service** — hemat daya untuk PC i5 yang tidak 24/7. [9][10]
+89. **HibernateDelaySec** — parameter kunci untuk sleep policy node. [10][67]
+90. **RTC wake / wake alarms** — wake-up terjadwal bila hardware mendukung. [68][13]
+91. **Evidence pipeline linked to claims** — cocok untuk SSOT eksekusi DeepSeek. [3]
+92. **Immutable artifact hashing** — penting untuk reproducibility dan audit. [3][44]
+93. **Owner-scope-review registry pattern** — siap dipakai untuk capability owner di MICO-JDEQ. [2][45]
+94. **Revocation path for capabilities** — penting agar DeepSeek tidak punya akses liar. [2]
+95. **Search and rank capability candidates** — relevan jika PC i5 menjalankan worker dari registry. [3]
+96. **Resolve stable identifier to concrete endpoint** — inti binding capability ke host aktif. [3]
+97. **Lifecycle events affecting discovery** — cocok untuk Node Registry aktif/pasif. [3]
+98. **Agentic AI Committee / governance model** — menegaskan keputusan eksekusi harus bisa ditinjau. [45]
+99. **Durable workflow state** — kalau workflow DeepSeek berhenti, state tidak boleh hilang. [69]
+100. **Loose coupling with recoverable coordination infrastructure** — fondasi agar PC i5, Z83, Vivo, dan Travelmate bisa diganti tanpa merombak sistem. [69][46]
+## Kesimpulan yang paling penting
+Daftar ini sengaja saya prioritaskan ke **literasi arsitektur yang bisa dipakai**, bukan sekadar bacaan umum. Untuk konteks Anda, yang paling bernilai adalah kombinasi **AOS, systemd, registry/evidence, cgroups/namespaces, audit, dan recoverable control plane** karena itulah fondasi agar PC i5 dapat dipakai sebagai node eksekusi DeepSeek secara disiplin dan bisa diaudit. [1][2][43][37][39]
+Kalau Anda mau, langkah berikutnya yang paling efektif adalah saya ubah 100 item ini menjadi **peta kurasi 4 level**: **wajib baca, penting, pelengkap, dan arsip** untuk MICO-JDEQ.
+Kutipan:
+[1] [2606.01508] Agent Operating Systems (AOS): Integrating ... https://arxiv.org/abs/2606.01508
+[2] Capability Registry - Enterprise Agents Wiki https://capableguptadotcom.github.io/agents-wiki/capability-registry.html
+[3] AgentHub: A Registry for Discoverable, Verifiable, and ... - arXiv https://arxiv.org/html/2510.03495v2
+[4] The systemd System and Service Manager - GitHub https://github.com/systemd/systemd
+[5] Systemd on Linux: Components, Control Flow, and Practical ... https://thelinuxcode.com/systemd-on-linux-components-control-flow-and-practical-patterns-for-2026/
+[6] Modern Fedora 44: Mastering Systemd Units and Timers (2026) https://www.fosslinux.com/156821/modern-fedora-mastering-systemd-units-and-timers.htm
+[7] Configure Systemd Timers on Linux [With Examples] https://computingforgeeks.com/systemd-timers-linux/
+[8] Timers in systemd replace the cron job https://www.linuxmaker.com/en/linux/timers-in-systemd-replace-the-cron-job.html
+[9] Suspend and then hibernate after 60 minutes https://gist.github.com/mattdenner/befcf099f5cfcc06ea04dcdd4969a221
+[10] Systemd-sleep.conf (5) Linux Manual Page - SysTutorials https://www.systutorials.com/linux-manual-page-5-systemd-sleep-conf/
+[11] suspend and hibernate work but suspend-then ... - Arch Linux Forums https://bbs.archlinux.org/viewtopic.php?id=281373
+[12] Power management (Русский) - ArchWiki https://wiki.archlinux.org/title/Power_management_(%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9)
+[13] Power management/Suspend and hibernate - ArchWiki https://wiki.archlinux.org/title/Power_management/Suspend_and_hibernate
+[14] How can I better understand what sleep states my laptop is achieving? https://askubuntu.com/questions/1449739/how-can-i-better-understand-what-sleep-states-my-laptop-is-achieving
+[15] systemd/src/sleep/sleep.conf at main · systemd/systemd https://github.com/systemd/systemd/blob/main/src/sleep/sleep.conf
+[16] Suspend then hibernate in systemd 239 https://aymanbagabas.com/posts/suspend-then-hibernate/
+[17] How to Use JSON Schema to Validate JSON Documents in ... https://builtin.com/software-engineering-perspectives/python-json-schema
+[18] JSON Schema Versioning & Evolution Guide (2026) https://www.zerodatatools.com/blog/json-schema-versioning-guide/
+[19] JSON Migration & Versioning — Evolving Schemas Without ... https://devtoolsbuilder.com/learn/json/migration-versioning
+[20] JSON Schema Migration Strategy: Versioning & Transforms https://jsonic.io/guides/json-migrations
+[21] Schema Registry Best Practices https://www.confluent.io/blog/best-practices-for-confluent-schema-registry/
+[22] JSON Schema Migration: Versioning & Backward Compatibility https://jsonic.io/guides/json-schema-migration
+[23] Scaling JSON Schema - Amit Prakash https://www.amitprakash.me/blog/scaling-json-schema
+[24] Validation https://json-schema.org/draft/2020-12/json-schema-validation
+[25] Draft 2020-12 - JSON Schema https://json-schema.org/draft/2020-12
+[26] jsonschema/docs/validate.rst at main · python-jsonschema/jsonschema https://github.com/python-jsonschema/jsonschema/blob/main/docs/validate.rst
+[27] GitHub - python-jsonschema/jsonschema: An implementation of ... https://github.com/python-jsonschema/jsonschema
+[28] json schema date-time does not check correctly https://stackoverflow.com/questions/20264146/json-schema-date-time-does-not-check-correctly/25802217
+[29] date-time format checker is ISO8601, not RFC3339 · Issue #115 · python-jsonschema/jsonschema https://github.com/python-jsonschema/jsonschema/issues/115
+[30] Python json schema formatchecker not validating valid datetime strings https://stackoverflow.com/questions/57288207/python-json-schema-formatchecker-not-validating-valid-datetime-strings
+[31] 如何在Python中用JSON Schema有效验证日期格式？ https://www.volcengine.com/article/1311087
+[32] jsonschema.validators - Read the Docs https://python-jsonschema.readthedocs.io/en/latest/api/jsonschema/validators/
+[33] Linux Operating System Architecture Explained in 2026 https://www.youstable.com/blog/architecture-of-the-linux-operating-system/
+[34] Professional Linux Kernel Architecture [Book] https://www.oreilly.com/library/view/professional-linux-kernel/9780470343432/
+[35] [PDF] Linux Kernel Architecture http://ndl.ethernet.edu.et/bitstream/123456789/38426/1/12.pdf
+[36] Amazon.com: How Linux Works, 3rd Edition: What Every Superuser Should Know: 9781718500402: Ward, Brian: Books https://www.amazon.com/How-Linux-Works-Brian-Ward/dp/1718500408
+[37] book.pdf - Containerd From The Bottom Up https://thecontainerdbook.com/book.pdf
+[38] Containerd From The Bottom Up. https://thecontainerdbook.com/
+[39] Cgroups & Namespaces - Linux Kernel Internals https://kernel-internals.org/cgroups/
+[40] GitHub - makash/linux-container-security-docs: A gitbook for doing a null Bangalore session on linux container security to discuss and teach namespaces, cgroups etc. https://github.com/makash/linux-container-security-docs
+[41] Audit framework - ArchWiki https://wiki.archlinux.org/title/Audit_framework
+[42] Red Hat Enterprise Linux https://docs.redhat.com/zh-cn/documentation/red_hat_enterprise_linux/8/html/system_design_guide/audit-system-architecture_auditing-the-system
+[43] eBook: Linux System Auditing with Auditd and Systemd ... https://www.lehmanns.de/shop/mathematik-informatik/81725490-9780000999481-linux-system-auditing-with-auditd-and-systemd-journal
+[44] draft-sharif-agent-audit-trail-00 https://datatracker.ietf.org/doc/draft-sharif-agent-audit-trail/
+[45] AI Agent Governance and Compliance in 2026: Frameworks, Audit ... https://zylos.ai/en/research/2026-05-01-ai-agent-governance-compliance-2026/
+[46] What Is Recoverable Control Plane? Definition & Examples https://nhimg.org/glossary/recoverable-control-plane/
+[47] Architecture — Control Plane https://controlplane.com/architecture
+[48] Agent registry as a project-local convention https://pratikdhanave.com/blog/posts/maf-agent-registry-convention.html
+[49] Tool/Agent Registry https://agentpatternscatalog.github.io/patterns/patterns/tool-agent-registry.html
+[50] Enterprise Registry Pattern https://arqua.com.au/enterprise-implementation-patterns/enterprise-registry-pattern
+[51] Architecture Registry - XAF Connected Architecture https://xaf.au/component/core/registry/
+[52] Registers as the Single Source of Truth (SSOT) https://www.fostermoore.com/hubfs/White%20Papers/Registers%20as%20the%20Single%20Source%20of%20Truth%20(SSOT)%20White%20Paper%202025.pdf
+[53] Conformance scope to freeze in SSOT Registry for Architects https://ssot-registry.com/workflows/architect/conformance/scope-to-freeze/
+[54] Building Your Own Oracle Deployment Inventory https://oraclelicenseaudits.com/blog/building-your-own-deployment-inventory/
+[55] Node Registry — Capability Discovery and Plugin Registration https://deepwiki.com/hakureireimuyo/businessCapabilityGateway/2.2-node-registry-capability-discovery-and-plugin-registration
+[56] Official MCP Registry https://registry.modelcontextprotocol.io/
+[57] Capability ID Registry - Orbiplex https://docs.orbiplex.ai/doc/project/60-solutions/CAPABILITY-REGISTRY/
+[58] Agent Registry - Proposal · a2aproject A2A · Discussion #741 - GitHub https://github.com/a2aproject/A2A/discussions/741
+[59] Tailscale quick guides · Tailscale Docs https://tailscale.com/docs/quick-guides
+[60] Server Setup and Security Guide With Tailscale · GitHub https://gist.github.com/xfathurrahman/6000d17dc2bb062e8f351c29e6eec982
+[61] Your Ultimate Dev Server Setup: With Tailscale, Caddy, and Docker https://dev.to/shrsv/your-ultimate-dev-server-setup-with-tailscale-caddy-and-docker-1laf
+[62] How to Use Tailscale: SSH into a Docker container https://tailscale.com/learn/ssh-into-docker-container
+[63] Minimal Debian Server Guide - Chirag Bharambe https://bharam.be/posts/debian-setup/
+[64] GitHub - Ajayos/UTSS: Dockerized Ubuntu SSH Server with ... https://github.com/Ajayos/UTSS
+[65] systemd-timers vs. cron https://www.reddit.com/r/linuxadmin/comments/k8l272/systemdtimers_vs_cron/
+[66] Auto hibernate/wake a Linux machine on a time schedule with ... https://rich.grundy.io/blog/auto-hibernate-wake-a-linux-machine-on-a-time-schedule-with-systemd/
+[67] suspend-then-hibernateの設定を正しく理解する - Zenn https://zenn.dev/seiichihorie/articles/20251205-suspend-then-hibernate
+[68] Выключение ноутбука по таймеру в ждущем режиме https://habr.com/ru/articles/589243/
+[69] agentrel04-bp04.md https://docs.aws.amazon.com/it_it/wellarchitected/latest/agentic-ai-lens/agentrel04-bp04.md
+[70] Version 12.4-systemd Published September 1st, 2025 https://www.linuxfromscratch.org/lfs/downloads/stable-systemd/LFS-BOOK-SYSD-12.4.pdf
+[71] Chat with a Specific library https://search.library.wisc.edu/catalog/9913447423002121
+

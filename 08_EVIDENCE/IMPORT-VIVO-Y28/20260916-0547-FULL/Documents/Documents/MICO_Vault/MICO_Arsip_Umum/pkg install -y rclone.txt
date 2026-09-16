@@ -1,0 +1,9 @@
+07.12 16.17
+pkg install -y rclone
+mkdir -p ~/JDEQ/storage/cloud
+rclone config create gdrive drive client_id="" client_secret="" scope=drive 2>/dev/null
+rclone config update gdrive config_is_local=false config_refresh_token=""
+echo "✅ rclone terinstal. Buka browser Anda dan jalankan:"
+echo "   rclone authorize drive"
+echo "   Setelah otentikasi, tempel token yang diberikan di sini."
+

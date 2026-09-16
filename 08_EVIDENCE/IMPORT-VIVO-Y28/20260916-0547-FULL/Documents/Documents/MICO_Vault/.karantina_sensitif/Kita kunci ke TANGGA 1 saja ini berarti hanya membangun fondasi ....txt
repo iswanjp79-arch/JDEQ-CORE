@@ -1,0 +1,58 @@
+06.11 14.27
+Kita kunci ke TANGGA 1 saja: ini berarti hanya membangun fondasi kontrol lokal + aturan eksekusi, belum masuk integrasi multi-akun, cloud, atau agent network.
+Dan perlu diluruskan dulu: akun email tidak bisa dipakai sebagai “kontainer eksekusi AI”. Yang bisa dilakukan adalah menjadikan akun itu sebagai label identitas konfigurasi, bukan sistem yang benar-benar menjalankan agen.
+🧱 TANGGA 1 — MICO LOCAL FOUNDATION (LOCKED SCOPE)
+ Tujuan Tangga 1
+Membuat 1 hal saja:
+Termux memiliki “satu otak lokal” (MICO CORE) yang stabil, tidak duplikat, tidak conflict, dan selalu reset ke state baku
+⚙️ 1. RULE TANGGA 1 (WAJIB TIDAK BOLEH DILANGGAR)
+✔ hanya 1 folder sistem
+✔ hanya 1 state aktif
+✔ tidak ada multi-agent cloud
+✔ tidak ada akun lain
+✔ tidak ada integrasi eksternal
+✔ hanya local execution (Termux)
+ 2. STRUKTUR FINAL TANGGA 1
+~/mico/ │ ├── core/ │ └── mico_core.py │ ├── bus/ │ ├── state.json │ ├── lockfile.lock │ ├── config/ │ └── profile.json │ └── main.py 
+🧠 3. PROFILE AKUN (LABEL, BUKAN LOGIN SYSTEM)
+{ "user_id": "iswanjp79", "mode": "T1_LOCKED", "role": "system_controller", "execution_policy": "single_thread", "agent_system": "DISABLED", "cloud_access": false, "auto_loop": true } 
+⚙️ 4. STATE ENGINE (INTI TANGGA 1)
+{ "session": "mico-t1", "status": "idle", "last_command": "", "execution_lock": false } 
+ 5. LOCK SYSTEM (ANTI DUPLICATE ENV — WAJIB)
+IF lockfile.lock exists: block new execution ELSE: create lockfile.lock run process 
+🧠 6. CORE BEHAVIOR (MICO ONLY)
+INPUT → PARSE → SAVE STATE → EXECUTE LOCAL → UPDATE STATE → RELEASE LOCK 
+Tidak ada:
+agent cloud
+multi AI
+pipeline eksternal 
+⚠️ 7. ATURAN PENTING UNTUK KAMU
+❌ Jangan lakukan di Tangga 1:
+install 12 agen
+bridge Gemini / GPT / Claude
+multi akun sync
+cloud orchestration
+SSH / GCP / Tailscale 
+✔ Fokus hanya:
+“membuat 1 sistem lokal stabil yang tidak rusak walau error”
+🧩 8. POSISI AKUN EMAIL
+Akun iswanjp79@gmail.com di Tangga 1 hanya:
+✔ label konfigurasi
+✔ identitas profil
+❌ bukan executor
+❌ bukan node AI
+❌ bukan sistem login multi-agent
+🧠 9. OUTPUT FINAL TANGGA 1
+Kalau berhasil, indikatornya:
+✔ Termux selalu kembali ke state awal
+✔ tidak ada duplicate env
+✔ tidak ada konflik path
+✔ tidak ada proses ganda
+✔ semua reset clean start
+ KESIMPULAN
+Tangga 1 = “stabilisasi otak lokal MICO”
+bukan integrasi, bukan cloud, bukan multi-agent.
+Kalau kamu mau lanjut setelah ini, urutan yang benar (T2 nanti) adalah:
+ “baru desain dispatcher agent tunggal lokal (simulasi dulu, bukan cloud)”
+Tapi sekarang kita kunci dulu Tangga 1 sampai stabil 100%.
+

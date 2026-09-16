@@ -1,0 +1,5 @@
+04.29 16.03
+echo "8052456691:AAFCe6dKIk-_YsnLnLfyMs4Ckn9N4BB28Ps" > ~/jdeq_config.env
+k0MtHio3DlZtfy-0TjxGqeVwXhDG6ZPjwSFiwM7IohDQ
+nfZDZkUQBJzCSKKS7vJzC_a_goPou2eUpZpXtWdzvAli
+NGdwZvd0OVnzsc0RtPjXJFnJrivTWMLFiyx4dNzu1Liq

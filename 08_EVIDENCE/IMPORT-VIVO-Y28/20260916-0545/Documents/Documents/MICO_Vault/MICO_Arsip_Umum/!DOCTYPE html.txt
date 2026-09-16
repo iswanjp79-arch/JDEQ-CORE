@@ -1,0 +1,106 @@
+07.21 23.26
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MICO-JDEQ Command Center</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: #0a0a0f; color: #e0e0e0; font-family: 'Courier New', monospace; padding: 20px; }
+        h1 { color: #00ff88; text-align: center; margin-bottom: 20px; font-size: 28px; letter-spacing: 2px; }
+        .status-bar { display: flex; justify-content: space-around; background: #111; padding: 15px; border-radius: 8px; margin-bottom: 25px; border: 1px solid #333; }
+        .status-item { text-align: center; }
+        .status-label { color: #888; font-size: 12px; text-transform: uppercase; }
+        .status-value { font-size: 22px; font-weight: bold; }
+        .online { color: #00ff88; }
+        .maintenance { color: #ffcc00; }
+        .offline { color: #ff4444; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; }
+        .card { background: #111; border: 1px solid #333; border-radius: 8px; padding: 15px; }
+        .card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+        .card-title { font-size: 16px; font-weight: bold; }
+        .card-status { padding: 4px 10px; border-radius: 4px; font-size: 11px; text-transform: uppercase; }
+        .log-section { background: #111; border: 1px solid #333; border-radius: 8px; padding: 15px; margin-top: 25px; }
+        .log-title { color: #00ff88; margin-bottom: 10px; }
+        .log-entry { padding: 5px 0; border-bottom: 1px solid #1a1a1a; font-size: 13px; color: #aaa; }
+        .log-time { color: #888; margin-right: 10px; }
+    </style>
+</head>
+<body>
+    <h1>MICO-JDEQ COMMAND CENTER</h1>
+    <div class="status-bar">
+        <div class="status-item">
+            <div class="status-label">Node Online</div>
+            <div class="status-value online">2/5</div>
+        </div>
+        <div class="status-item">
+            <div class="status-label">Tugas Aktif</div>
+            <div class="status-value maintenance">1</div>
+        </div>
+        <div class="status-item">
+            <div class="status-label">Jaringan</div>
+            <div class="status-value online">Stabil</div>
+        </div>
+        <div class="status-item">
+            <div class="status-label">Uptime</div>
+            <div class="status-value">4h 12m</div>
+        </div>
+    </div>
+    <div class="grid">
+        <div class="card">
+            <div class="card-header">
+                <span class="card-title">PC i5</span>
+                <span class="card-status" style="background:#ffcc00;color:#000;">MAINTENANCE</span>
+            </div>
+            <p>CPU: Intel (4 core) | RAM: 8GB</p>
+            <p>Sistem: Windows 10 (recovery)</p>
+            <p>Tugas: Worker AI (menunggu stabil)</p>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <span class="card-title">Z83</span>
+                <span class="card-status" style="background:#ffcc00;color:#000;">PENDING</span>
+            </div>
+            <p>CPU: Atom x5-Z8350 | RAM: 4GB</p>
+            <p>Sistem: Menunggu instalasi Ubuntu</p>
+            <p>Tugas: Server utama (target)</p>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <span class="card-title">Vivo Y28</span>
+                <span class="card-status" style="background:#00ff88;color:#000;">ONLINE</span>
+            </div>
+            <p>CPU: ARM aarch64 | RAM: 7.6GB</p>
+            <p>Sistem: Termux + MICO-JDEQ</p>
+            <p>Status: 37/37 PASSED</p>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <span class="card-title">Infinix</span>
+                <span class="card-status" style="background:#00ff88;color:#000;">STANDBY</span>
+            </div>
+            <p>CPU: ARM 32-bit | RAM: 1.8GB</p>
+            <p>Sistem: Termux (struktur siap)</p>
+            <p>Tugas: Cadangan</p>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <span class="card-title">TravelMate</span>
+                <span class="card-status" style="background:#ff4444;color:#fff;">OFFLINE</span>
+            </div>
+            <p>Layar mati, tidak booting</p>
+            <p>Status: Tamat</p>
+        </div>
+    </div>
+    <div class="log-section">
+        <div class="log-title">Log Aktivitas</div>
+        <div class="log-entry"><span class="log-time">[21:22]</span>Flashdisk bootable Ubuntu berhasil dibuat (Rufus, manual).</div>
+        <div class="log-entry"><span class="log-time">[21:10]</span>DeepSeek dikoreksi: Anchor v2.0 aktif.</div>
+        <div class="log-entry"><span class="log-time">[20:55]</span>PC i5 menyelesaikan DISM 100%. SFC masih pending.</div>
+        <div class="log-entry"><span class="log-time">[20:40]</span>Z83 diakui sebagai target instalasi Linux murni.</div>
+        <div class="log-entry"><span class="log-time">[20:30]</span>Laptop TravelMate dinyatakan tamat.</div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,359 @@
+07.10 20.23
+~/JDEQ $ # =========================================
+# GENESIS v1.1 – METADATA INJECTOR          # Perbaiki evidence tanpa source_module
+# ========================================= cd ~/JDEQ && python3 << 'EOF'
+import json, os
+from pathlib import Path
+EVDIR = Path.home() / "JDEQ" / "evidence"
+count = 0
+for f in sorted(os.listdir(EVDIR)):
+    if not f.endswith(".json"): continue
+    path = EVDIR / f
+    with open(path) as fh:
+        ev = json.load(fh)                  
+    # Jika belum ada source_module, tambahkan
+    if "source_module" not in ev or not ev.get("source_module"):
+        ev["source_module"] = "Evidence Engine"
+        with open(path, "w") as fh:
+            json.dump(ev, fh, indent=2)
+        count += 1
+print(f"✅ {count} evidence diperbarui dengan source_module 'Evidence Engine'")
+EOF
+python3 core/genesis/genesis_analyzer.py
+✅ 13 evidence diperbarui dengan source_module 'Evidence Engine'
+=== MODUL TERDAFTAR ===
+  ADR-0001: Root Produksi Tunggal
+  ADR-0002: SSOT Prompt
+  ADR-0003: Guardrail 5 Lapis
+  ADR-0004: n8n Orchestration
+  ADR-0005: Namespace Policy
+  ADR-0008: Bias Mitigation
+  ADR-0009: PAEE (Probe Auto-Evolution Engine)
+=== LAPORAN GENESIS ===
+  Evidence Engine: 1 error, 10KB, ✅ STABIL
+✅ Genesis Analyzer selesai.
+~/JDEQ $
+### DIAGRAM HIRARKI###
+======================
+INTI DIRI
+    │
+    ▼
+MICO Architecture Board
+    │
+    ▼
+JARVIS Control Gateway
+    │
+    ├── Work Order Manager
+    ├── Evidence Manager
+    ├── Change Control
+    ├── Risk Manager
+    ├── Safety & Quality
+    ├── Traceability Engine
+    └── Project Control
+    │
+    ▼
+ST-001 ChatGPT             Canonical Architecture Audit
+ST-002 DOLA                Governance & Compliance
+ST-003 DeepSeek            Engineering & Runtime Analysis
+ST-004 Claude              Documentation & Traceability
+ST-005 GitHub Copilot      Source Code Implementation
+ST-006 Microsoft Copilot   Operational Documentation & Office Assets
+ST-007 Perplexity          External Knowledge Validation
+ST-008 Emergent            Independent Architecture Improvement Review
+    │
+    ▼
+Evidence Integration
+    │
+    ▼
+JARVIS Runtime Validation
+    │
+    ▼
+MICO Architecture Board Approval
+    │
+    ▼
+INTI DIRI
+============================
+Berdasarkan Blueprint V20 yang Anda tunjukkan, Dokumen yang Anda minta sebaiknya tidak langsung memerintahkan DeepSeek untuk mengeksekusi atau menghasilkan satu bundle Bash, karena itu akan mencampur ST-001 (arsitektur) dengan ST-003 (implementasi). Jika ST-001 mulai menulis implementasi, maka pemisahan tanggung jawab dalam BASELINE-ORG-001 menjadi kabur.
+Yang tepat adalah ST-001 mengeluarkan Engineering Work Order (EWO) yang menjadi kontrak teknis bagi DeepSeek. DeepSeek kemudian mengubah kontrak itu menjadi kode.
+Berikut adalah dokumen resminya.
+ENGINEERING WORK ORDER
+EWO-001/MICO-JDEQ/ST-003
+Status
+READY FOR ST-003 IMPLEMENTATION
+Issued By
+ST-001
+Chief System Architect
+ChatGPT
+Destination
+ST-003
+Chief Engineering & Runtime
+DeepSeek
+Priority
+CRITICAL
+Authority Chain
+INTI DIRI
+↓
+MICO Architecture Board
+↓
+JARVIS Gateway & Project Control Center
+↓
+ST-001 Architecture Audit ✅
+↓
+ST-002 Governance Validation
+↓
+ST-003 Engineering Runtime ← EXECUTE
+MISSION
+Melaksanakan implementasi runtime berdasarkan artefak yang telah diaudit tanpa melakukan perubahan terhadap keputusan arsitektur.
+DeepSeek bertindak sebagai Runtime Engineering Authority.
+Tidak boleh mengubah:
+Canonical Tree
+Governance
+Authority
+Registry
+ADR
+SSOT
+Tanpa Change Request.
+INPUT ARTIFACT
+DeepSeek WAJIB menggunakan artefak berikut sebagai SSOT:
+EWO-001
+Architecture Report
+Canonical Tree
+Registry
+ADR
+Governance Approval ST-002
+Decision Specification
+Runtime Specification
+State Machine Specification
+Rollback Specification
+Hardware Constraint
+Evidence Requirement
+OUTPUT ARTIFACT
+DeepSeek WAJIB menghasilkan:
+01 Runtime Bash Package
+02 Runtime Library
+03 Runtime Validator
+04 Runtime Health Check
+05 Runtime Recovery Engine
+06 Runtime IPC Layer
+07 Shizuku Integration Layer
+08 SBTI Runtime Module
+09 Evidence Writer
+10 Event Dispatcher
+11 Recovery Dispatcher
+12 Decision Runtime
+13 Runtime Installer
+14 Runtime Uninstaller
+15 Runtime Verification Report
+IMPLEMENTATION CONSTRAINT
+Runtime harus memenuhi:
+RAM tambahan <10 MB
+Flash write minimal
+Human-readable log
+Tidak ada infinite loop
+Retry wajib bounded
+Rollback wajib deterministic
+Thermal handler wajib exit condition
+ADB timeout wajib rollback
+Shizuku disconnect wajib recovery
+Cloud transfer wajib tercatat
+Semua hash wajib deterministic
+IPC REQUIREMENT
+Implementasikan komunikasi:
+Termux
+↓
+rish
+↓
+Shell UID 2000
+↓
+cmd
+↓
+Android Framework
+↓
+Power Manager
+↓
+DeviceIdle
+↓
+Battery Service
+↓
+Thermal Service
+Tidak boleh:
+root
+SELinux patch
+boot image patch
+Magisk dependency
+REQUIRED MODULE
+DeepSeek wajib membangun:
+runtime/ runtime/core/ runtime/ipc/ runtime/evidence/ runtime/recovery/ runtime/thermal/ runtime/power/ runtime/shizuku/ runtime/sbti/ runtime/event/ runtime/validator/ runtime/install/ runtime/uninstall/ 
+SBTI REQUIREMENT
+Bangun deterministic state machine:
+Idle ↓ Monitor ↓ Evaluate ↓ Decision ↓ Power Injection ↓ Verify ↓ Recovery ↓ Idle 
+Tidak boleh ada state tambahan tanpa persetujuan Architecture Board.
+RUNTIME SAFETY
+Seluruh retry:
+bounded
+Seluruh timeout:
+rollback
+Seluruh recovery:
+exit condition
+Seluruh exception:
+logged
+Seluruh failure:
+evidence
+LOG FORMAT
+Semua log:
+ISO8601
+Human Readable
+SHA256
+State
+Status
+Timestamp
+Evidence ID
+TEST REQUIREMENT
+DeepSeek wajib membuat:
+Runtime Self Test
+IPC Test
+Shizuku Test
+Power Test
+Thermal Test
+Recovery Test
+Rollback Test
+Evidence Test
+Stress Test
+Memory Test
+PROHIBITED
+Tidak boleh:
+mengubah Registry
+mengubah Governance
+mengubah Authority
+mengubah Architecture
+mengubah Canonical Tree
+mengubah SSOT
+mengubah ADR
+DELIVERABLE
+DeepSeek menyerahkan:
+Runtime Package
+Source Code
+Runtime Documentation
+Runtime Test Report
+Runtime Dependency Report
+Runtime Risk Report
+Runtime Memory Report
+Runtime Verification Report
+HANDOFF
+Setelah seluruh implementasi selesai:
+ST-003
+↓
+ST-004 Claude
+Documentation & Traceability
+↓
+ST-005 GitHub Copilot
+Code Review & Refinement
+↓
+ST-006 Microsoft Copilot
+Operational Assets
+↓
+ST-007 Perplexity
+External Knowledge Validation
+↓
+ST-008 Emergent
+Architecture Improvement Review
+↓
+JARVIS
+Final Runtime Validation
+CATATAN ARSITEKTUR
+Saya tidak menyarankan ST-001 mengirim "1 bundle kode Termux" kepada DeepSeek. Itu akan mencampur peran arsitek dengan implementer.
+Model yang lebih kuat adalah:
+ST-001 (ChatGPT): spesifikasi teknis dan kontrak implementasi.
+ST-002 (DOLA): validasi governance.
+ST-003 (DeepSeek): implementasi Bash/Termux sesuai kontrak.
+ST-004 (Claude): audit dokumentasi dan traceability.
+ST-005 (GitHub Copilot): refactoring, kualitas kode, dan review implementasi.
+ST-006 (Microsoft Copilot): aset operasional (installer, dokumentasi pengguna, template, integrasi Office jika diperlukan).
+ST-007 (Perplexity): validasi terhadap referensi eksternal dan praktik terbaik yang relevan.
+ST-008 (Emergent): telaah peningkatan arsitektur sebelum baseline berikutnya.
+Dengan pembagian ini, setiap agen memiliki tanggung jawab yang jelas dan artefak yang dapat diaudit, tanpa tumpang tindih fungsi.
+Kalau mengikuti hirarki yang Anda tunjukkan, maka jawabannya adalah: dashboard itu bukan milik satu agen, melainkan dashboard sistem JDEQ. Namun setiap panel di dalamnya dimiliki oleh agen yang berbeda.
+Pembagiannya kira-kira seperti ini.
+System Architecture
+ST-001 (ChatGPT)
+Karena berisi blueprint, EDA, ADR, Canonical Tree, SSOT.
+Governance & Compliance
+ST-002 (DOLA)
+Kebijakan, approval, compliance.
+Runtime Engine
+ST-003 (DeepSeek)
+Status implementasi, runtime, installer, health check.
+Documentation
+ST-004 (Claude)
+Traceability dan dokumentasi.
+Source Code Quality
+ST-005 (GitHub Copilot)
+Review kualitas implementasi.
+Operational Assets
+ST-006 (Microsoft Copilot)
+Manual, template, aset operasional.
+External Validation
+ST-007 (Perplexity)
+Validasi terhadap referensi eksternal.
+Improvement Review
+ST-008 (Emergent)
+Rekomendasi evolusi arsitektur.
+Artinya dashboard yang saya buat sebelumnya lebih cocok sebagai Dashboard JARVIS Control Gateway, bukan dashboard khusus ST-001.
+Kalau mengikuti Blueprint V20 secara ketat
+Hirarkinya menjadi:
+INTI DIRI │ ▼ MICO Architecture Board │ ▼ JARVIS Control Gateway │ ┌────┼─────────────────────────┐ │ │ │ ▼ ▼ ▼ Project Control Evidence Center Risk Center Runtime Center Architecture Center Governance Center 
+Lalu di bawahnya baru muncul kartu (card) setiap agen.
+ST-001 Architecture STATUS : VERIFIED ST-002 Governance STATUS : VERIFIED ST-003 Runtime STATUS : RUNNING ST-004 Documentation STATUS : VERIFIED ST-005 Code Review STATUS : WAITING ST-006 Operational Assets STATUS : READY ST-007 External Validation STATUS : NOT STARTED ST-008 Improvement Review STATUS : IDLE 
+Peran saya (ST-001)
+Kalau konsisten dengan arsitektur yang Anda definisikan, maka dashboard yang saya hasilkan seharusnya hanya mengelola area ST-001, misalnya:
+Architecture Health
+SSOT Status
+ADR Status
+Decision Authority
+Canonical Tree
+Evidence Traceability
+Acceptance Review
+Architecture Risk
+Saya tidak seharusnya menampilkan status runtime Ollama, proses installer, atau health check implementasi sebagai fakta, kecuali datanya memang dikirim dari ST-003. Itu wilayah implementasi.
+Dashboard yang paling tepat
+Menurut saya, yang paling kuat bukan dashboard untuk satu agen, melainkan dashboard federasi.
+INTI DIRI │ ▼ ══════════════════════════════════════════════ JARVIS ENGINEERING COMMAND CENTER ══════════════════════════════════════════════ Architecture (ST-001) VERIFIED Governance (ST-002) VERIFIED Runtime (ST-003) RUNNING Documentation (ST-004) VERIFIED Code Quality (ST-005) VERIFIED Operations (ST-006) READY External Review (ST-007) WAITING Architecture Review (ST-008) REVIEW ══════════════════════════════════════════════ 
+Dengan model ini:
+Saya (ST-001) bertanggung jawab atas desain dan konsistensi arsitektur.
+DeepSeek (ST-003) bertanggung jawab atas implementasi runtime.
+Dashboard JARVIS hanya menggabungkan status dari semua agen tanpa mengambil alih tanggung jawab mereka.
+Menurut saya, ini paling konsisten dengan hirarki yang Anda rancang: tidak ada satu agen yang menjadi pusat segalanya. Pusatnya tetap INTI DIRI → MICO Architecture Board → JARVIS Control Gateway, sedangkan setiap agen memiliki domain tanggung jawab yang terpisah dan dapat diaudit.
+protokol permanen setiap instruksi input berikutnya :
+Pahami niatku ==>
+Bisa, tetapi saya menyarankan versi yang lebih ringkas dan stabil.
+Yang Anda tempel di atas sebenarnya mencampur 3 jenis dokumen menjadi satu:
+Governance (hirarki agen).
+Engineering Work Order (EWO).
+Penjelasan arsitektur.
+Akibatnya:
+prompt menjadi sangat panjang,
+banyak token terbuang,
+sebagian informasi akan berulang setiap chat,
+model AI lain bisa lebih fokus mengolah "cerita" daripada tugas inti.
+Yang saya sarankan
+Jadikan pembuka setiap chat hanya sebagai Constitution Header.
+Contohnya:
+============================== JDEQ CONSTITUTION HEADER ============================== INTI DIRI │ ▼ MICO Architecture Board │ ▼ JARVIS Control Gateway │ ├── Work Order Manager ├── Evidence Manager ├── Change Control ├── Risk Manager ├── Safety & Quality ├── Traceability Engine └── Project Control AGENT AUTHORITY ST-001 ChatGPT Role: Canonical Architecture Architecture Audit EDA ADR ST-002 DOLA Role: Governance Compliance ST-003 DeepSeek Role: Runtime Engineering Implementation ST-004 Claude Role: Documentation Traceability ST-005 GitHub Copilot Role: Code Review ST-006 Microsoft Copilot Role: Operational Assets ST-007 Perplexity Role: External Validation ST-008 Emergent Role: Independent Architecture Review GLOBAL RULES • SSOT adalah sumber kebenaran tunggal. • ADR tidak boleh diubah tanpa Change Request. • Evidence lebih tinggi daripada opini. • Semua keputusan harus dapat ditelusuri. • Setiap agen hanya boleh bekerja sesuai domainnya. 
+Lalu setelah header itu, baru tempel tugas.
+Misalnya:
+TASK Susun Runtime Architecture Volume II. OUTPUT Engineering Design Authority. Tidak boleh membuat kode. 
+atau
+TASK Bangun Runtime Installer. OUTPUT 1 bundle Bash. Target: Android Termux. 
+Untuk ChatGPT
+Saya akan membaca header itu sebagai konteks kerja, bukan sebagai aturan yang mengikat sistem saya. Saya akan mengikuti sejauh tidak bertentangan dengan kemampuan dan kebijakan saya.
+Untuk DeepSeek
+Header tersebut berfungsi sebagai konstitusi proyek sehingga setiap prompt baru tidak perlu mengulang penjelasan panjang.
+Rekomendasi akhir
+Daripada selalu menempel seluruh uraian yang sangat panjang, buat tiga dokumen tetap:
+JDEQ-CONSTITUTION.md → hirarki, peran, aturan global.
+JDEQ-EDA.md → keputusan arsitektur dan desain resmi.
+JDEQ-EWO.md → format Work Order yang dikirim ke agen implementasi.
+Lalu setiap chat cukup:
+[JDEQ-CONSTITUTION ACTIVE] [JDEQ-EDA ACTIVE] [JDEQ-EWO ACTIVE] TASK: ... 
+Pendekatan ini lebih mudah dipelihara, mengurangi pengulangan, dan menjaga pemisahan peran antara arsitektur, governance, dan implementasi.
+

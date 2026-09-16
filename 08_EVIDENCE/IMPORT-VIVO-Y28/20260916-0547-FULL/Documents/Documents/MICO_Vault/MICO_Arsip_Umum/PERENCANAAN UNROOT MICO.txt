@@ -1,0 +1,32 @@
+07.03 03.04
+*** PERENCANAAN UNROOT MICO ***
+===============================
+Apa alternatif metode otomasi sistem selain akses root di Android
+Alternatif paling realistis untuk otomasi Android tanpa root adalah **memakai layer aplikasi dan izin resmi**, bukan memodifikasi kernel atau sistem host. Jadi Anda tetap bisa membangun sistem otomasi yang kuat, tetapi lewat kombinasi aksesibilitas, intent, tasker-style automation, shell terbatas, dan integrasi cloud. [11][12][13]
+## Opsi utama
+- **Automation app** seperti MacroDroid atau Automate untuk trigger berbasis event, jadwal, notifikasi, lokasi, dan status perangkat. [1]
+- **Aksesibilitas service** untuk mengontrol UI aplikasi lain, klik otomatis, baca layar, dan flow berbasis tampilan.
+- **Shizuku-style privilege bridge** untuk fitur tertentu yang butuh level izin lebih tinggi tanpa root.
+- **ADB via Termux** untuk beberapa operasi perangkat, selama debug dan izin sesuai.
+- **Intent-based integration** untuk membuka app, mengirim data, atau memicu aksi antar aplikasi. [14][15]
+## Yang cocok untuk MICO
+Untuk arsitektur MICO, yang paling berguna adalah:
+- **Termux** untuk shell, Python, script, file ops, dan automation.
+- **Nix-on-Droid** untuk environment yang lebih stabil dan reproducible.
+- **Automation app** untuk trigger visual dan event-based.
+- **Cloud sync** untuk mirror tree dan backup.
+- **Aksesibilitas/intent** untuk menjembatani aksi antar aplikasi. [16][17][18]
+## Kelebihan pendekatan non-root
+- Lebih aman daripada utak-atik sistem.
+- Tidak merusak garansi atau bootloader state.
+- Cocok untuk workflow harian, riset, prompt, dan orkestrasi agen.
+- Lebih mudah dipindah antar perangkat. [11][13]
+## Kekurangannya
+- Tidak bisa menguasai seluruh sistem host.
+- Banyak aksi sistem level tetap dibatasi sandbox Android.
+- Otomasi UI bisa rapuh kalau tampilan aplikasi berubah.
+- Beberapa tugas tetap butuh izin tambahan atau root. [13][11]
+## Kesimpulan
+Kalau tujuan Anda adalah **otomasi sistem yang praktis tanpa root**, maka kombinasi terbaik adalah **Termux + Nix-on-Droid + automation app + intent/aksesibilitas + cloud mirror**. Itu sudah cukup untuk membangun MICO sebagai control plane yang kuat, walau bukan pengganti penuh kontrol sistem tingkat root. [16][17][1][15]
+Jika Anda mau, saya bisa lanjut buatkan **stack otomasi non-root MICO yang paling stabil**: mana yang dipasang di Termux, mana di Nix-on-Droid, mana di app automation, dan mana di cloud.
+

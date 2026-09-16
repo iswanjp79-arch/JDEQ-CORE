@@ -1,0 +1,34 @@
+# ============================================================
+# L1_KIMI_Z83_SIGNATURE.yml — TANDA TANGAN BASAH DIGITAL
+# ============================================================
+signature:
+  auditor: "KIMI (Auditor Eksternal Independen)"
+  node: "Z83 (markas-utama)"
+  signed_at: "2026-09-11T01:51+07:00"
+  verdict: "ACC_BERSYARAT"
+  canonical_payload_sha256: "3AEA24D9425D12D4F386FD8EC804558AD832D4A26FFBAAEAE0EBBBF8585F4B7C"
+  audit_pack_sha256: "74653F4FA5174C6F832AB57A13FCC1C0D1127C461EC9B3E7E21573E74ECC195D"
+
+terverifikasi_mentah:
+  - "Funnel OFF: 'No serve config' terlihat langsung terminal (PL-Z83-01 sah)"
+  - "12 file L1 ter-hash SHA256, timestamp konsisten"
+  - "Port bersih: hanya tailscaled :443 mesh + 127.0.0.1:8022 lokal"
+  - "PL-Z83-02 dibiarkan OPEN secara jujur"
+
+temuan_drift:
+  - id: "D-01"
+    deskripsi: "Dashboard klaim funnel OFF, tetapi terminal menunjukkan funnel ON mem-proxy localhost:8080 ke publik sebelum dimatikan sesi ini. Ada jendela eksposur yang harus tercatat + identifikasi layanan :8080."
+  - id: "D-02"
+    deskripsi: "BAST mencantumkan verifier 'KIMI' sebelum verdict keluar (klaim prematur pola S-01). Sah hanya setelah tanda tangan ini."
+
+syarat_segel:
+  - "PL-Z83-02 (v2352) tetap OPEN; segel bersifat CONDITIONAL"
+  - "Jendela eksposir funnel tercatat di closure declaration + layanan :8080 diidentifikasi"
+  - "Resolusi 6 koneksi UNKNOWN (KIMI T-04) dirujuk eksplisit di L2"
+  - "Jika L0 menolak v2352 -> segel dibuka kembali otomatis"
+
+batasan:
+  - "Isi L1-02/L1-04 belum dibaca KIMI; hash menjaga integritas sejak 2026-09-10"
+  - "Isi T05_resolution.md belum dibaca"
+
+putusan: "Z83 layak tersegel — ACC BERSYARAT. Final acceptance tetap hak L0."

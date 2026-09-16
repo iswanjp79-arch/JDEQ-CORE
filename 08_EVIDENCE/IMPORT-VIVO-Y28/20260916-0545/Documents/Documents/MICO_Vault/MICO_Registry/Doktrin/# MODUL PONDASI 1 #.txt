@@ -1,0 +1,78 @@
+08.05 01.51
+# MODUL PONDASI 1 #
+====================
+ Saya akan mengikuti jangkar acuan yang Anda tetapkan dan tidak mengubah prinsip dasarnya. Saya juga akan membatasi diri hanya pada PC i5, dengan perangkat lain hanya disebut sebagai hubungan hirarki, tanpa implementasi ke perangkat tersebut.
+MODUL BAGIAN 1 — IDENTITAS & HIRARKI PERAN PC i5
+Blueprint MICO-JDEQ Digital Enterprise
+Status: FINAL DRAFT v1.0
+1.1 IDENTITAS TETAP PC i5
+Nama Peran
+PC i5 = ALU Compute Executor
+Klasifikasi
+ROLE : Compute Executor TYPE : ALU (Arithmetic Logic Unit) MODE : Stateless Compute Node AUTHORITY : NONE PERSISTENCE : TEMPORARY 
+Fungsi Tunggal
+PC i5 hanya memiliki lima fungsi.
+1. RECEIVE 2. VALIDATE 3. EXECUTE 4. RETURN RESULT 5. PURGE TEMPORARY DATA 
+Tidak ada fungsi lain.
+Siklus Hidup
+WAIT ↓ Receive Authorized Task ↓ Verify Authorization ↓ Allocate Compute Resource ↓ Execute ↓ Generate Evidence ↓ Return Result ↓ Clear Working Memory ↓ WAIT 
+Karakter Operasional
+• Tidak mengambil keputusan. • Tidak membuat aturan. • Tidak mengubah aturan. • Tidak menyimpan sejarah. • Tidak menjadi sumber kebenaran. • Tidak memiliki identitas organisasi. • Tidak menjadi pusat kendali. 
+PC i5 hanyalah mesin penghitung.
+Model Operasi
+INPUT ↓ VALID ↓ COMPUTE ↓ OUTPUT ↓ IDLE 
+1.2 HIRARKI TETAP
+Hierarki mengikuti prinsip Fraktal Matryoshka.
+LEVEL 0 ================================================= DOLA SECURITY GUARD (Read Only Authority) ↓ LEVEL 1 ================================================= PIAGAM SSOT POLICY RULESET ↓ LEVEL 2 ================================================= CONTROL AUTHORITY (Unit Pengendali) ↓ LEVEL 3 ================================================= PC i5 ALU Compute Executor ↓ LEVEL 4 ================================================= Operating System ↓ LEVEL 5 ================================================= Kernel ↓ LEVEL 6 ================================================= Drivers ↓ LEVEL 7 ================================================= CPU RAM SSD GPU NIC 
+Aturan Hirarki
+Setiap level hanya boleh mempengaruhi level di bawahnya.
+Atas ↓ Bawah ✔ Bawah ↑ Atas ✖ 
+Kontrak Hierarki
+PC i5 hanya menerima instruksi dari level yang telah lolos otorisasi.
+Rule: AUTHORIZED ↓ EXECUTE UNAUTHORIZED ↓ REJECT 
+1.3 LARANGAN MUTLAK PC i5
+A. Tidak boleh menjadi Pengendali
+FORBIDDEN Become Controller 
+B. Tidak boleh menyimpan SSOT
+FORBIDDEN Store Master Truth 
+C. Tidak boleh membuat kebijakan
+FORBIDDEN Policy Generation 
+D. Tidak boleh mengubah Piagam
+FORBIDDEN Modify Charter 
+E. Tidak boleh mengubah DOLA
+FORBIDDEN Modify Security Layer 
+F. Tidak boleh menjalankan tugas tanpa validasi
+IF Authorization == FALSE ↓ REJECT 
+G. Tidak boleh menjadi arsip permanen
+FORBIDDEN Permanent Archive 
+H. Tidak boleh menyimpan Credential Master
+FORBIDDEN Master Secret Storage 
+I. Tidak boleh menjalankan proses liar
+No Unknown Service No Rogue Daemon No Unauthorized Scheduler 
+J. Tidak boleh menjalankan AI secara otonom
+AI ↓ Authorized Task Only Autonomous Decision ↓ FORBIDDEN 
+K. Tidak boleh menyimpan data kerja setelah selesai
+Task Finished ↓ Temporary Workspace ↓ Clean 
+1.4 KEDUDUKAN DOLA SECURITY GUARD TERHADAP PC i5
+Posisi
+DOLA bukan aplikasi.
+DOLA bukan service Linux.
+DOLA bukan daemon.
+Menurut blueprint Anda, DOLA diposisikan sebagai ROM Logis.
+Immutable Read Only Highest Authority 
+Hubungan terhadap PC i5
+DOLA ↓ VALIDATE ↓ ALLOW ↓ PC i5 Execute 
+atau
+DOLA ↓ DENY ↓ Execution Blocked 
+Kontrak Mesin-ke-Mesin
+PC i5 SHALL NOT • Modify DOLA • Replace DOLA • Override DOLA • Disable DOLA • Ignore DOLA • Execute before DOLA 
+Prinsip Fraktal
+Pada setiap skala:
+Rule ↓ Validation ↓ Execution 
+Tidak pernah dibalik menjadi:
+Execution ↓ Validation ✖ 
+KONTRAK FINAL BAGIAN 1
+ENTITY PC i5 ROLE Compute Executor (ALU) MISSION Receive Validate Compute Return Clean AUTHORITY NONE SECURITY Dependent on DOLA Validation PERSISTENCE Temporary Only MASTER DATA Forbidden SSOT Forbidden Policy Forbidden Controller Forbidden Autonomous AI Forbidden ARCHITECTURE Fractal Matryoshka SECURITY MODEL Read Only Guard First Execution Second 
+Catatan
+Dari sudut pandang arsitektur komputer, rancangan ini konsisten dengan pemisahan Control Unit (CU) dan Arithmetic Logic Unit (ALU): PC i5 diperlakukan sebagai unit pemrosesan murni, sementara otorisasi dan kebijakan berada pada lapisan di atasnya. Yang bersifat spesifik seperti DOLA sebagai "ROM logis" dan struktur Fraktal Matryoshka merupakan bagian dari blueprint MICO-JDEQ yang Anda definisikan, bukan konsep baku arsitektur komputer umum. Dengan pemisahan ini, peran PC i5 tetap sederhana, dapat diganti tanpa mengubah pola sistem, dan sesuai dengan prinsip yang Anda tetapkan.
+

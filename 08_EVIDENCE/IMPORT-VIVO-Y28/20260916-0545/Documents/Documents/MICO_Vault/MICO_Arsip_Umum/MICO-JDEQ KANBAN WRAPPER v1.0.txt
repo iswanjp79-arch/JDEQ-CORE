@@ -1,0 +1,230 @@
+08.02 13.23
+MICO-JDEQ KANBAN WRAPPER v1.0
+Tujuan: mengubah blueprint besar menjadi kartu kerja yang kecil, jelas, bisa dipindah, bisa diaudit, dan bisa dipulihkan.
+Prinsip: satu kartu = satu tujuan = satu hasil = satu bukti.
+Mode: local-first, cloud-backed, evidence-driven, rollback-ready.
+Otoritas: Mas Iwan.
+Eksekutor: DeepSeek.
+Sumber kebenaran: SSOT.
+Penjaga aturan: DOLA.
+Status yang belum terbukti: UNVERIFIED.
+---
+1) Bentuk paling optimal
+KANBAN jangan dibuat sebagai 100 lapisan vertikal.
+KANBAN harus dibuat sebagai sarang kartu:
+Pintu masuk: blueprint besar
+Pecah jadi kartu
+Kartu masuk board
+Kartu dipilih satu per satu
+Kartu dieksekusi
+Kartu menghasilkan evidence
+Kartu ditutup dan disimpan
+Jadi yang banyak bukan lapisannya, tetapi kartu-kartunya.
+Lapisan tetap sedikit, tapi fungsi tiap lapisan tegas.
+---
+2) Susunan lapisan optimal
+Lapisan A — Charter Layer
+Ini piagam dasar.
+Isinya:
+local-first
+cloud sebagai penyangga
+evidence wajib
+rollback wajib
+AI bukan sumber kebenaran tunggal
+Fungsi: mengunci arah.
+Larangan: tidak boleh diubah oleh executor.
+Lapisan B — Board Layer
+Ini papan Kanban.
+Status kartu hanya boleh:
+SIAP
+SEDANG_DIJALANKAN
+SELESAI
+DITANGGUHKAN
+BLOCKED
+UNVERIFIED
+Fungsi: menampilkan kondisi kerja.
+Larangan: tidak boleh mencampur status dengan opini.
+Lapisan C — Card Envelope Layer
+Ini “bungkus kado”-nya.
+Setiap kartu harus punya:
+id unik
+judul
+tujuan
+asal blueprint
+input
+output
+owner
+target node
+batasan
+dependensi
+evidence path
+rollback path
+status
+hash kontrak
+Fungsi: membuat kerja menjadi kecil dan jelas.
+Larangan: satu kartu tidak boleh berisi banyak tujuan.
+Lapisan D — Policy Gate Layer
+Ini pintu izin.
+DeepSeek hanya boleh lanjut jika:
+kartu lengkap
+dependensi tersedia
+SSOT cocok
+evidence path ada
+target node sehat
+tidak ada conflict
+Fungsi: mencegah asumsi liar.
+Larangan: tidak boleh eksekusi jika UNVERIFIED.
+Lapisan E — Execution Layer
+Ini pelaksana.
+DeepSeek membaca kartu, lalu:
+mengeksekusi tugas
+menulis log
+menghasilkan hasil kerja
+menutup kartu hanya jika bukti ada
+Fungsi: kerja nyata.
+Larangan: tidak boleh memutuskan kebijakan.
+Lapisan F — Evidence Layer
+Ini gudang bukti.
+Setiap kartu selesai harus meninggalkan:
+result.json
+state_before.json
+state_after.json
+commit_stack.txt
+evidence_manifest.sha256
+rollback.log
+Fungsi: membuktikan kerja.
+Larangan: bukti tidak boleh dihapus diam-diam.
+Lapisan G — Recovery Layer
+Ini pemulihan.
+Kalau gagal:
+stop
+rollback
+restore
+tandai BLOCKED atau FAILED
+jangan lanjut kartu berikutnya
+Fungsi: menjaga sistem tetap utuh.
+Larangan: tidak boleh menutupi kegagalan.
+---
+3) Struktur folder final
+mico_jdeq/
+├── charter/
+│   └── PIAGAM.md
+├── board/
+│   ├── board.json
+│   ├── backlog.json
+│   ├── wip.json
+│   ├── done.json
+│   └── blocked.json
+├── cards/
+│   ├── card_schema.json
+│   ├── card_0001.json
+│   ├── card_0002.json
+│   └── ...
+├── policy/
+│   ├── policy.json
+│   └── policy_gate.sh
+├── execution/
+│   ├── orchestrator.sh
+│   ├── executor.sh
+│   └── dispatcher.sh
+├── evidence/
+│   ├── manifests/
+│   ├── logs/
+│   ├── snapshots/
+│   └── archive/
+├── recovery/
+│   ├── rollback.sh
+│   ├── restore.sh
+│   └── recovery.log
+├── knowledge/
+│   ├── README.md
+│   ├── ADR/
+│   └── playbooks/
+└── ssot/
+    ├── state.db
+    ├── registry.json
+    └── runtime.json
+---
+4) Skema kartu resmi
+{
+  "card_id": "KANBAN-0001",
+  "title": "Susun Struktur SSOT",
+  "source": "Blueprint MICO-JDEQ",
+  "status": "SIAP",
+  "owner": "DeepSeek",
+  "target_node": "Z83",
+  "priority": "HIGH",
+  "input": {
+    "docs": ["PIAGAM.md", "board.json"]
+  },
+  "output": {
+    "files": ["ssot/state.db", "ssot/registry.json"]
+  },
+  "dependencies": [
+    "PIAGAM_LOCKED",
+    "POLICY_READY"
+  ],
+  "constraints": [
+    "local_first",
+    "evidence_required",
+    "rollback_required"
+  ],
+  "evidence_path": "evidence/cards/KANBAN-0001/",
+  "rollback_path": "recovery/rollback_KANBAN-0001.sh",
+  "hash": "UNVERIFIED"
+}
+---
+5) Alur kerja DeepSeek yang paling mudah dipahami
+DeepSeek cukup mengikuti 8 langkah ini:
+1. Baca kartu.
+2. Cek hash kontrak.
+3. Cek policy gate.
+4. Cek status node.
+5. Eksekusi satu kartu.
+6. Tulis evidence.
+7. Update board.
+8. Kalau gagal, rollback.
+Tidak boleh lompat langkah.
+Tidak boleh menebak isi kartu.
+Tidak boleh mengubah kartu tanpa izin.
+---
+6) Aturan emas KANBAN MICO-JDEQ
+Satu kartu hanya satu pekerjaan.
+Satu pekerjaan hanya satu hasil.
+Satu hasil hanya sah jika ada bukti.
+Satu bukti hanya sah jika hash cocok.
+Satu kegagalan harus bisa rollback.
+Satu node boleh memegang tugas yang ringan saja jika edge device.
+Beban berat boleh dilempar ke cloud twin, tapi state tetap milik SSOT lokal.
+Jika evidence belum ada, status adalah UNVERIFIED.
+Jika policy gagal, status adalah BLOCKED.
+Jika recovery gagal, sistem berhenti.
+---
+7) Kenapa ini paling optimal
+Karena struktur ini:
+ringan untuk Vivo Y28,
+jelas untuk DeepSeek,
+aman untuk Z83,
+mudah di-audit,
+tidak menciptakan lapisan palsu,
+dan bisa tumbuh jadi ribuan kartu tanpa membuat perangkat “berat”.
+Yang besar bukan satu rantai eksekusi.
+Yang besar adalah jumlah kartu yang dikelola secara disiplin.
+---
+8) Artefak inti yang harus dihormati DeepSeek
+DeepSeek hanya boleh bekerja dengan 5 artefak inti ini:
+PIAGAM.md
+board.json
+card_schema.json
+policy.json
+evidence_manifest.sha256
+Kalau lima ini tidak cocok, DeepSeek wajib berhenti.
+---
+9) Kesimpulan resmi
+Modul KANBAN paling optimal untuk MICO-JDEQ adalah sistem sarang kartu dengan 7 lapisan fungsi: Charter, Board, Card Envelope, Policy Gate, Execution, Evidence, Recovery.
+Bukan 100 lapis vertikal, bukan 1000 lapis eksekusi.
+Yang diperbanyak adalah kartu kerja, bukan beban logika.
+Kalau dilihat sebagai artefak “all spark”, maka inti percikannya ada di sini:
+satu kartu, satu tujuan, satu bukti, satu rollback.
+Itu yang membuat sistem hidup, disiplin, dan tidak ngawur.
+

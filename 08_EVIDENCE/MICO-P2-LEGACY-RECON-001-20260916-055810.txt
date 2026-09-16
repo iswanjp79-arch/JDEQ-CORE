@@ -1,0 +1,513 @@
+=== MICO-P2-LEGACY-RECON-001 · 20260916-055810 ===
+
+[A] LEGACY FILES (dokumen kunci saja)
+
+Root                Rel
+----                ---                                                                                                                                               
+01__Master_Mutu     01. Master Mutu\01. System Manual\Appendix 6 Job Description\Dokumen kontrol 2.doc
+01__Master_Mutu     01. Master Mutu\01. System Manual\PJ – MR – Manual – 01.doc
+01__Master_Mutu     01. Master Mutu\04. Standart Form\F&A\PJ-F&A-F-01==Pembayaran Jatuh Tempo.xls
+01__Master_Mutu     01. Master Mutu\04. Standart Form\F&A\PJ-F&A-F-02==Slip Kas Keluar.xls
+01__Master_Mutu     01. Master Mutu\04. Standart Form\F&A\PJ-F&A-F-03==Pengajuan Termin Pembayaran.xls
+01__Master_Mutu     01. Master Mutu\04. Standart Form\F&A\PJ-F&A-F-04==Slip Kas Masuk.xls
+01__Master_Mutu     01. Master Mutu\02. Standard Procedure\F&A\PJ-F&A-P- 01 Penagihan.doc
+01__Master_Mutu     01. Master Mutu\02. Standard Procedure\F&A\PJ-F&A-P- 02 Pembayaran.doc
+01__Master_Mutu     01. Master Mutu\02. Standard Procedure\F&A\PJ-F&A-P- 03 Perpajakan.doc
+01__Master_Mutu     01. Master Mutu\04. Standart Form\HRGA\PJ-HRGA-F-01==Daftar Hadir Pelatihan.xls
+01__Master_Mutu     01. Master Mutu\04. Standart Form\HRGA\PJ-HRGA-F-010==Daftar Kompetensi.xlsx
+01__Master_Mutu     01. Master Mutu\04. Standart Form\HRGA\PJ-HRGA-F-011==Evaluasi Kompetensi.xlsx
+01__Master_Mutu     01. Master Mutu\04. Standart Form\HRGA\PJ-HRGA-F-012==Permohonan Permintaan Karyawan.xls
+01__Master_Mutu     01. Master Mutu\04. Standart Form\HRGA\PJ-HRGA-F-013==Penerimaan Barang Pelanggan.xls
+01__Master_Mutu     01. Master Mutu\04. Standart Form\HRGA\PJ-HRGA-F-014==Daftar Stock Barang.xls
+01__Master_Mutu     01. Master Mutu\04. Standart Form\HRGA\PJ-HRGA-F-015==Status Barang Pelanggan.xls
+01__Master_Mutu     01. Master Mutu\04. Standart Form\HRGA\PJ-HRGA-F-016==Laporan Barang Milik Pelanggan.xls
+01__Master_Mutu     01. Master Mutu\04. Standart Form\HRGA\PJ-HRGA-F-017==Surat Permintaan Barang.xls
+01__Master_Mutu     01. Master Mutu\04. Standart Form\HRGA\PJ-HRGA-F-018==Surat Penawaran Harga.xls
+01__Master_Mutu     01. Master Mutu\04. Standart Form\HRGA\PJ-HRGA-F-019==Tabel Perbandingan Harga.xls
+01__Master_Mutu     01. Master Mutu\04. Standart Form\HRGA\PJ-HRGA-F-02==Jadwal Pelatihan.xls
+01__Master_Mutu     01. Master Mutu\04. Standart Form\HRGA\PJ-HRGA-F-020==Surat Pesanan Barang.xls
+01__Master_Mutu     01. Master Mutu\04. Standart Form\HRGA\PJ-HRGA-F-021==Pemeriksaan Barang Datang.xls
+01__Master_Mutu     01. Master Mutu\04. Standart Form\HRGA\PJ-HRGA-F-022==Daftar Supplier.xls
+01__Master_Mutu     01. Master Mutu\04. Standart Form\HRGA\PJ-HRGA-F-023==Evaluasi Supplier.xls
+01__Master_Mutu     01. Master Mutu\04. Standart Form\HRGA\PJ-HRGA-F-024==Pemeliharaan Infrastruktur.xls
+01__Master_Mutu     01. Master Mutu\04. Standart Form\HRGA\PJ-HRGA-F-025==Hasil Perbaikan Infrastruktur.xls
+01__Master_Mutu     01. Master Mutu\04. Standart Form\HRGA\PJ-HRGA-F-026==Daftar Infrastruktur.xls
+01__Master_Mutu     01. Master Mutu\04. Standart Form\HRGA\PJ-HRGA-F-027==Jadwal Pemeliharaan.xls
+01__Master_Mutu     01. Master Mutu\04. Standart Form\HRGA\PJ-HRGA-F-028==Stock Barang.xls
+01__Master_Mutu     01. Master Mutu\04. Standart Form\HRGA\PJ-HRGA-F-029==Tanda Terima Barang.xls
+01__Master_Mutu     01. Master Mutu\04. Standart Form\HRGA\PJ-HRGA-F-03==Catatan Hasil Pelatihan.xls
+01__Master_Mutu     01. Master Mutu\04. Standart Form\HRGA\PJ-HRGA-F-030==Bukti Pengiriman Barang.xls
+01__Master_Mutu     01. Master Mutu\04. Standart Form\HRGA\PJ-HRGA-F-031==Surat Jalan.xls
+01__Master_Mutu     01. Master Mutu\04. Standart Form\HRGA\PJ-HRGA-F-032==Daftar Alat Ukur.xls
+01__Master_Mutu     01. Master Mutu\04. Standart Form\HRGA\PJ-HRGA-F-033==Tabel Kalibrasi.xls
+01__Master_Mutu     01. Master Mutu\04. Standart Form\HRGA\PJ-HRGA-F-034==Laporan Penggantian Alat Ukur.xls
+01__Master_Mutu     01. Master Mutu\04. Standart Form\HRGA\PJ-HRGA-F-05==Data Karyawan.xls
+01__Master_Mutu     01. Master Mutu\04. Standart Form\HRGA\PJ-HRGA-F-06==Seleksi Karyawan.xlsx
+01__Master_Mutu     01. Master Mutu\04. Standart Form\HRGA\PJ-HRGA-F-07==Surat Pengangkatan Kerja.xlsx
+01__Master_Mutu     01. Master Mutu\02. Standard Procedure\HRGA\PJ-HRGA-P-01 Penerimaan Karyawan.doc
+01__Master_Mutu     01. Master Mutu\02. Standard Procedure\HRGA\PJ-HRGA-P-02 Pelatihan Karyawan.doc
+01__Master_Mutu     01. Master Mutu\02. Standard Procedure\HRGA\PJ-HRGA-P-03 Penilaian Kinerja Karyawan.doc
+01__Master_Mutu     01. Master Mutu\02. Standard Procedure\HRGA\PJ-HRGA-P-04 Seleksi dan Evaluasi Supplier.doc
+01__Master_Mutu     01. Master Mutu\02. Standard Procedure\HRGA\PJ-HRGA-P-05 Pembelian dan Penyewaan.doc
+01__Master_Mutu     01. Master Mutu\02. Standard Procedure\HRGA\PJ-HRGA-P-06 Pemeliharaan Infrastruktur.doc
+01__Master_Mutu     01. Master Mutu\02. Standard Procedure\HRGA\PJ-HRGA-P-07 Penyimpanan Barang.doc
+01__Master_Mutu     01. Master Mutu\02. Standard Procedure\HRGA\PJ-HRGA-P-08 Penanganan Barang Milik Pelanggan.doc
+01__Master_Mutu     01. Master Mutu\02. Standard Procedure\HRGA\PJ-HRGA-P-09 Penanganan Alat Ukur dan Monitor.doc
+01__Master_Mutu     01. Master Mutu\04. Standart Form\HSE\PJ-HSE-F-01==Daftar Keadaan Darurat.doc
+01__Master_Mutu     01. Master Mutu\04. Standart Form\HSE\PJ-HSE-F-02==Laporan Latihan Tanggap Darurat.doc
+01__Master_Mutu     01. Master Mutu\04. Standart Form\HSE\PJ-HSE-F-03==Emergency Report.doc
+01__Master_Mutu     01. Master Mutu\04. Standart Form\HSE\PJ-HSE-F-04==Emergency contact.doc
+01__Master_Mutu     01. Master Mutu\04. Standart Form\HSE\PJ-HSE-F-05==Komunikasi Keadaan Darurat.xls
+01__Master_Mutu     01. Master Mutu\04. Standart Form\HSE\PJ-HSE-F-06==Inspeksi Lingkungan.xls
+01__Master_Mutu     01. Master Mutu\04. Standart Form\HSE\PJ-HSE-F-12==Laporan awal insiden.doc
+01__Master_Mutu     01. Master Mutu\04. Standart Form\HSE\PJ-HSE-F-14==Log Book Komunikasi K3LL.xls
+01__Master_Mutu     01. Master Mutu\04. Standart Form\HSE\PJ-HSE-F-15==Daftar Hadir.xls
+01__Master_Mutu     01. Master Mutu\04. Standart Form\HSE\PJ-HSE-F-18==Rencana Pengukuran dan Pemantauan Indikator Kerja.doc
+01__Master_Mutu     01. Master Mutu\04. Standart Form\HSE\PJ-HSE-F-19==Hasil Pengukuran dan Pemantauan.doc
+01__Master_Mutu     01. Master Mutu\04. Standart Form\HSE\PJ-HSE-F-20==HSE Performance Monitoring.xls
+01__Master_Mutu     01. Master Mutu\04. Standart Form\HSE\PJ-HSE-F-21==Permintaan Tindakan Perbaikan Pencegahan.xls
+01__Master_Mutu     01. Master Mutu\04. Standart Form\HSE\PJ-HSE-F-22==Daftar PTPP.xls
+01__Master_Mutu     01. Master Mutu\04. Standart Form\HSE\PJ-HSE-F-23==Risk Register.xls
+01__Master_Mutu     01. Master Mutu\02. Standard Procedure\HSE\PJ-HSE-P-01 laporan dan Investigasi Insiden.doc
+01__Master_Mutu     01. Master Mutu\02. Standard Procedure\HSE\PJ-HSE-P-02 Identifikasi Bahaya dan Dampak.doc
+01__Master_Mutu     01. Master Mutu\02. Standard Procedure\HSE\PJ-HSE-P-03 Identifikasi, Akses dan Evaluasi Kepatuhan Perundangan.doc
+01__Master_Mutu     01. Master Mutu\02. Standard Procedure\HSE\PJ-HSE-P-04 Komunikasi Internal dan Eksternal.doc
+01__Master_Mutu     01. Master Mutu\02. Standard Procedure\HSE\PJ-HSE-P-05 Pemantauan dan Pengukuran K3LL.doc
+01__Master_Mutu     01. Master Mutu\02. Standard Procedure\HSE\PJ-HSE-P-06 Kesiagaan dan Tanggap Darurat.doc
+01__Master_Mutu     01. Master Mutu\02. Standard Procedure\HSE\PJ-HSE-P-07 Pengendalian K3LL.doc
+01__Master_Mutu     01. Master Mutu\03. Intruksi Kerja\PJ-IK-QHSE-001 Ijin Kerja.doc
+01__Master_Mutu     01. Master Mutu\03. Intruksi Kerja\PJ-IK-QHSE-002 Penyimpanan Material Berbahaya.doc
+01__Master_Mutu     01. Master Mutu\03. Intruksi Kerja\PJ-IK-QHSE-003 Housekeeping.doc
+01__Master_Mutu     01. Master Mutu\03. Intruksi Kerja\PJ-IK-QHSE-004 Penanganan Material berbahaya.doc
+01__Master_Mutu     01. Master Mutu\03. Intruksi Kerja\PJ-IK-QHSE-005 Pencegahan Bahaya Kebakaran.doc
+01__Master_Mutu     01. Master Mutu\03. Intruksi Kerja\PJ-IK-QHSE-006 P3K.doc
+01__Master_Mutu     01. Master Mutu\03. Intruksi Kerja\PJ-IK-QHSE-007 APAR.doc
+01__Master_Mutu     01. Master Mutu\03. Intruksi Kerja\PJ-IK-QHSE-008 Perkasas Tangan.doc
+01__Master_Mutu     01. Master Mutu\03. Intruksi Kerja\PJ-IK-QHSE-009 Scaffolding.doc
+01__Master_Mutu     01. Master Mutu\03. Intruksi Kerja\PJ-IK-QHSE-010 Stairways.doc
+01__Master_Mutu     01. Master Mutu\03. Intruksi Kerja\PJ-IK-QHSE-011 Instalasi Listrik.doc
+01__Master_Mutu     01. Master Mutu\03. Intruksi Kerja\PJ-IK-QHSE-012 Bekerja di Malam Hari.doc
+01__Master_Mutu     01. Master Mutu\03. Intruksi Kerja\PJ-IK-QHSE-013 Bekerja di Lalulintas Padat.doc
+01__Master_Mutu     01. Master Mutu\03. Intruksi Kerja\PJ-IK-QHSE-014 Penggalian.doc
+01__Master_Mutu     01. Master Mutu\03. Intruksi Kerja\PJ-IK-QHSE-015 Pengelasan.doc
+01__Master_Mutu     01. Master Mutu\03. Intruksi Kerja\PJ-IK-QHSE-016 Angkut Manual.doc
+01__Master_Mutu     01. Master Mutu\03. Intruksi Kerja\PJ-IK-QHSE-017 Mengemudi.doc
+01__Master_Mutu     01. Master Mutu\03. Intruksi Kerja\PJ-IK-QHSE-018 Pengoperasian Komputer.doc
+01__Master_Mutu     01. Master Mutu\03. Intruksi Kerja\PJ-IK-QHSE-019 Tangki BBM.doc
+01__Master_Mutu     01. Master Mutu\03. Intruksi Kerja\PJ-IK-QHSE-020 Akses Kerja.doc
+01__Master_Mutu     01. Master Mutu\03. Intruksi Kerja\PJ-IK-QHSE-021 Ladder.doc
+01__Master_Mutu     01. Master Mutu\03. Intruksi Kerja\PJ-IK-QHSE-022 Penggerindaan.doc
+01__Master_Mutu     01. Master Mutu\03. Intruksi Kerja\PJ-IK-QHSE-023 Pemotongan.doc
+01__Master_Mutu     01. Master Mutu\03. Intruksi Kerja\PJ-IK-QHSE-024 Pembongkaran.doc
+01__Master_Mutu     01. Master Mutu\03. Intruksi Kerja\PJ-IK-QHSE-025 Pekerjaan Atap.doc
+01__Master_Mutu     01. Master Mutu\03. Intruksi Kerja\PJ-IK-QHSE-026 Bekerja di Ketinggian.doc
+01__Master_Mutu     01. Master Mutu\03. Intruksi Kerja\PJ-IK-QHSE-027 Pengoperasian Alat Berat.doc
+01__Master_Mutu     01. Master Mutu\03. Intruksi Kerja\PJ-IK-QHSE-028 Fasilitas Umum.doc
+01__Master_Mutu     01. Master Mutu\03. Intruksi Kerja\PJ-IK-QHSE-029 Plant & Basement.doc
+01__Master_Mutu     01. Master Mutu\03. Intruksi Kerja\PJ-IK-QHSE-030 Pengecatan.doc
+01__Master_Mutu     01. Master Mutu\03. Intruksi Kerja\PJ-IK-QHSE-031 ID & Informasi K3LL.doc
+01__Master_Mutu     01. Master Mutu\03. Intruksi Kerja\PJ-IK-QHSE-032 Pengaspalan.doc
+01__Master_Mutu     01. Master Mutu\03. Intruksi Kerja\PJ-IK-QHSE-033 Pengecoran.doc
+01__Master_Mutu     01. Master Mutu\03. Intruksi Kerja\PJ-IK-QHSE-034 Galian Tanah.doc
+01__Master_Mutu     01. Master Mutu\03. Intruksi Kerja\PJ-IK-QHSE-035 Pembesian.doc
+01__Master_Mutu     01. Master Mutu\03. Intruksi Kerja\PJ-IK-QHSE-036 Pengendalian Tumpahan Minyak.doc
+01__Master_Mutu     01. Master Mutu\03. Intruksi Kerja\PJ-IK-QHSE-037 Pemeliharaan Oil Trap.doc
+01__Master_Mutu     01. Master Mutu\03. Intruksi Kerja\PJ-IK-QHSE-038 Bongkar Muat Limbah B3.doc
+01__Master_Mutu     01. Master Mutu\03. Intruksi Kerja\PJ-IK-QHSE-039 Ganti Oli.doc
+01__Master_Mutu     01. Master Mutu\03. Intruksi Kerja\PJ-IK-QHSE-040 Penanganan Oli Bekas.doc
+01__Master_Mutu     01. Master Mutu\03. Intruksi Kerja\PJ-IK-QHSE-041 Pengisian BBM.doc
+01__Master_Mutu     01. Master Mutu\04. Standart Form\MKT\PJ-MKT-F-01==Tender.xlsx
+01__Master_Mutu     01. Master Mutu\04. Standart Form\MKT\PJ-MKT-F-02==Pra Kualifikasi.xls
+01__Master_Mutu     01. Master Mutu\02. Standard Procedure\MKT\PJ-MKT-P-01 Tender.doc
+01__Master_Mutu     01. Master Mutu\02. Standard Procedure\MKT\PJ-MKT-P-02 Pra Kualifikasi.doc
+01__Master_Mutu     01. Master Mutu\04. Standart Form\MR\PJ-MR-F-01==Jadwal audit.xls
+01__Master_Mutu     01. Master Mutu\04. Standart Form\MR\PJ-MR-F-02==Laporan Audit.xls
+01__Master_Mutu     01. Master Mutu\04. Standart Form\MR\PJ-MR-F-03==Check List Audit Mutu Internal.xls
+01__Master_Mutu     01. Master Mutu\04. Standart Form\MR\PJ-MR-F-04==Daftar Catatan Mutu, K3 Dan Lingkungan.xlsx
+01__Master_Mutu     01. Master Mutu\04. Standart Form\MR\PJ-MR-F-05==Berita Acara Pemusnahan Catatan.xlsx
+01__Master_Mutu     01. Master Mutu\04. Standart Form\MR\PJ-MR-F-06==Daftar Dokumen Internal.xls
+01__Master_Mutu     01. Master Mutu\04. Standart Form\MR\PJ-MR-F-07==Daftar Dokumen Eksternal.xls
+01__Master_Mutu     01. Master Mutu\04. Standart Form\MR\PJ-MR-F-08==Lembar Perubahan Dokumen.xls
+01__Master_Mutu     01. Master Mutu\04. Standart Form\MR\PJ-MR-F-09==Tanda Terima Dokumen.xls
+01__Master_Mutu     01. Master Mutu\04. Standart Form\MR\PJ-MR-F-10==Laporan Pencapaian Sasaran.xls
+01__Master_Mutu     01. Master Mutu\04. Standart Form\MR\PJ-MR-F-11==Undangan Rapat Tinjauan Manajemen.xls
+01__Master_Mutu     01. Master Mutu\04. Standart Form\MR\PJ-MR-F-12==Daftar Hadir RTMC.doc
+01__Master_Mutu     01. Master Mutu\04. Standart Form\MR\PJ-MR-F-13==Program Rapat Tinjauan Manajemen Tahunan.xls
+01__Master_Mutu     01. Master Mutu\04. Standart Form\MR\PJ-MR-F-15==Daftar, Rencana dan Evaluasi Ketaatan.xls
+01__Master_Mutu     01. Master Mutu\02. Standard Procedure\MR\PJ-MR-M- 01 Manual.doc
+01__Master_Mutu     01. Master Mutu\02. Standard Procedure\MR\PJ-MR-P-01 Pengendalian Dokumen.doc
+01__Master_Mutu     01. Master Mutu\02. Standard Procedure\MR\PJ-MR-P-02 Pengendalian Catatan.doc
+01__Master_Mutu     01. Master Mutu\02. Standard Procedure\MR\PJ-MR-P-03 Audit Internal.doc
+01__Master_Mutu     01. Master Mutu\02. Standard Procedure\MR\PJ-MR-P-04 Tinjauan Manajemen.doc
+01__Master_Mutu     01. Master Mutu\02. Standard Procedure\MR\PJ-MR-P-05 Tindakan Koreksi dan Pencegahan.doc
+01__Master_Mutu     01. Master Mutu\04. Standart Form\TEKNIK\PJ-TEK-F-010==Serah Terima Pekerjaan.xls
+01__Master_Mutu     01. Master Mutu\04. Standart Form\TEKNIK\PJ-TEK-F-011==Monitoring Pekerjaan.xls
+01__Master_Mutu     01. Master Mutu\04. Standart Form\TEKNIK\PJ-TEK-F-012==Pekerjaan Tambah Kurang.xls
+01__Master_Mutu     01. Master Mutu\04. Standart Form\TEKNIK\PJ-TEK-F-013==Serah Terima Kunci.xls
+01__Master_Mutu     01. Master Mutu\04. Standart Form\TEKNIK\PJ-TEK-F-013==Survey Kepuasan Pelanggan.xlsx
+01__Master_Mutu     01. Master Mutu\04. Standart Form\TEKNIK\PJ-TEK-F-02==Rencana K3LL Proyek.xls
+01__Master_Mutu     01. Master Mutu\04. Standart Form\TEKNIK\PJ-TEK-F-03==Laporan Hasil Inspeksi.xls
+01__Master_Mutu     01. Master Mutu\04. Standart Form\TEKNIK\PJ-TEK-F-04==Laporan Buku Tamu Proyek.xls
+01__Master_Mutu     01. Master Mutu\04. Standart Form\TEKNIK\PJ-TEK-F-06==Laporan Harian etc.xlsx
+01__Master_Mutu     01. Master Mutu\04. Standart Form\TEKNIK\PJ-TEK-F-07==Laporan Kemajuan Pekerjaan.xls
+01__Master_Mutu     01. Master Mutu\04. Standart Form\TEKNIK\PJ-TEK-F-08==Surat Pemberitahuan Mulai Kerja.xlsx
+01__Master_Mutu     01. Master Mutu\04. Standart Form\TEKNIK\PJ-TEK-F-09==Laporan Perbaikan Hasil Konstruksi.xls
+01__Master_Mutu     01. Master Mutu\02. Standard Procedure\TEKNIK\PJ-TEK-P-01 Perencanaan Kerja.doc
+01__Master_Mutu     01. Master Mutu\02. Standard Procedure\TEKNIK\PJ-TEK-P-02 Pelaksanaan Kerja.doc
+01__Master_Mutu     01. Master Mutu\02. Standard Procedure\TEKNIK\PJ-TEK-P-03 Inspeksi Pekerjaan.doc
+01__Master_Mutu     01. Master Mutu\02. Standard Procedure\TEKNIK\PJ-TEK-P-04 Serah Terima Pekerjaan.doc
+01__Master_Mutu     01. Master Mutu\02. Standard Procedure\TEKNIK\PJ-TEK-P-05 Pekerjaan Tambah Kurang.doc
+01__Master_Mutu     01. Master Mutu\02. Standard Procedure\TEKNIK\PJ-TEK-P-06 Pengendalian Konstruksi Tidak Sesuai.doc
+01__Master_Mutu     01. Master Mutu\02. Standard Procedure\TEKNIK\PJ-TEK-P-07 Pengukuran Kepuasan Pelanggan.doc
+01__Master_Mutu     01. Master Mutu\02. Standard Procedure\TEKNIK\PJ-TEK-P-08 Penanganan Keluhan Pelanggan.doc
+RENCANA_KIRIM_SAIKI 1. PPA  PUSAT CILACAP\1. FILE ENGINEERING\3. REQUEST SURVEI\[Fully Signed] [V1] Formulir Survey Request PertaMC JBT Tank Cleaning.pdf
+RENCANA_KIRIM_SAIKI 1. PPA  PUSAT CILACAP\1. FILE ENGINEERING\4. KUMPULAN PROCEDUR PEKERJAAN\[Fully Signed] [V1] Formulir Survey Request PertaMC JBT Tank Cleaning.pdf
+RENCANA_KIRIM_SAIKI 02. Implementasi\10. Audit\ISO\check list audit internal 2009 PJ.doc
+RENCANA_KIRIM_SAIKI 02. Implementasi\11. Tinjauan Manajemen\FM.OHS.008.00 Notulen Tinjauan Manajemen 2012.doc
+RENCANA_KIRIM_SAIKI 02. Implementasi\10. Audit\OHSAS\FM.OHS.010.00 Checklist Internal Audit (mutu dan K3) 2012.XLS
+RENCANA_KIRIM_SAIKI 02. Implementasi\8. Sosialisasi Form Dan Finding\Form Daftar Hadir Pertemuan PJ.doc
+RENCANA_KIRIM_SAIKI 02. Implementasi\8. Sosialisasi Form Dan Finding\Jawaban AUDIT Paula Jaya new.doc
+RENCANA_KIRIM_SAIKI 02. Implementasi\10. Audit\ISO\Laporan Audit Internal 2009.doc
+RENCANA_KIRIM_SAIKI 02. Implementasi\15. Standar Penomoran\PJ-MR-F-16==Standar Penamaan & Penomoran.xls
+RENCANA_KIRIM_SAIKI 02. Implementasi\10. Audit\ISO\S.1. Form. Check List Audit Mutu Internal PJ.doc
+
+
+Legacy total: 166 file
+
+[B] MICO ARTIFACTS (SSOT)
+
+Root        Rel                                                               Name
+----        ---                                                               ----
+ADR         ADR_001_STRUKTUR_TREE-L.md                                        ADR_001_STRUKTUR_TREE-L.md
+ADR         ADR-004_FOLDER_10_HERITAGE.md                                     ADR-004_FOLDER_10_HERITAGE.md
+ADR         ADR-005_REKONSILIASI_GOVERNANCE_V21.md                            ADR-005_REKONSILIASI_GOVERNANCE_V21.md
+ADR         ADR-005-REV1.md                                                   ADR-005-REV1.md
+ADR         ADR-006-LAYER-MODEL-CANONICAL.md                                  ADR-006-LAYER-MODEL-CANONICAL.md
+ADR         ARC01_TREE_L_RECONCILIATION.md                                    ARC01_TREE_L_RECONCILIATION.md
+DECREE      ADR-0002-SECURITY-BASELINE.md                                     ADR-0002-SECURITY-BASELINE.md
+DECREE      ADR-0003-DOCTRINE-SSG.md                                          ADR-0003-DOCTRINE-SSG.md
+DECREE      ADR-0004-SESSION-IDENTITY.md                                      ADR-0004-SESSION-IDENTITY.md
+DECREE      doctrine-master.md                                                doctrine-master.md
+DECREE      DOLA_DEPRECATION_20260912.md                                      DOLA_DEPRECATION_20260912.md
+DECREE      DOLA-REVERSE-LOGIC-CLOSURE-20260916.md                            DOLA-REVERSE-LOGIC-CLOSURE-20260916.md
+DECREE      JDEQ-SO-2026-09-11-001.json                                       JDEQ-SO-2026-09-11-001.json
+DECREE      PLA-CLOSED-20260916.md                                            PLA-CLOSED-20260916.md
+DECREE      session-safety-gate.md                                            session-safety-gate.md
+L7-COMMAND  RELIABILITY\A_L7_RELIABILITY_BLUEPRINT.md                         A_L7_RELIABILITY_BLUEPRINT.md
+L7-COMMAND  ALERT\acceptance_checklist.md                                     acceptance_checklist.md
+L7-COMMAND  AUDIT\VERIFICATION-GAP-CLOSURE\AG004-SOD-LIMITATION.md            AG004-SOD-LIMITATION.md
+L7-COMMAND  ALERT\alert_acl.json                                              alert_acl.json
+L7-COMMAND  ALERT\alert_dedup.yaml                                            alert_dedup.yaml
+L7-COMMAND  ALERT\alert_payload_schema.json                                   alert_payload_schema.json
+L7-COMMAND  ALERT\alert_pipeline_health.md                                    alert_pipeline_health.md
+L7-COMMAND  ALERT\alert_rate_limit.yaml                                       alert_rate_limit.yaml
+L7-COMMAND  ALERT\alert_recipients.yaml                                       alert_recipients.yaml
+L7-COMMAND  ALERT\alert_severity.yaml                                         alert_severity.yaml
+L7-COMMAND  PRODUCTION-READINESS\audit_retention.md                           audit_retention.md
+L7-COMMAND  RELIABILITY\B_EVIDENCE_CATALOG.md                                 B_EVIDENCE_CATALOG.md
+L7-COMMAND  PRODUCTION-READINESS\backup_restore_procedure.md                  backup_restore_procedure.md
+L7-COMMAND  AUDIT\VERIFICATION-GAP-CLOSURE\BAK-LIFECYCLE-GOVERNANCE.md        BAK-LIFECYCLE-GOVERNANCE.md
+L7-COMMAND  RELIABILITY\C_AUDIT_CONTROL_MATRIX.md                             C_AUDIT_CONTROL_MATRIX.md
+L7-COMMAND  PRODUCTION-READINESS\command_contract.json                        command_contract.json
+L7-COMMAND  PRODUCTION-READINESS\concurrency_policy.md                        concurrency_policy.md
+L7-COMMAND  ALERT\runbooks\critical.md                                        critical.md
+L7-COMMAND  AUDIT\CROSS-ROOM-HANDOFF\CURRENT_STATE.md                         CURRENT_STATE.md
+L7-COMMAND  RELIABILITY\D_FAILURE_INJECTION_MATRIX.md                         D_FAILURE_INJECTION_MATRIX.md
+L7-COMMAND  AWARENESS\DEVICE-ROLES.yaml                                       DEVICE-ROLES.yaml
+L7-COMMAND  AUDIT\CROSS-ROOM-HANDOFF\DIFFERENCE.md                            DIFFERENCE.md
+L7-COMMAND  P2-EXECUTION\DRYRUN\DRYRUN-REPORT.json                            DRYRUN-REPORT.json
+L7-COMMAND  RELIABILITY\E_SELF_HEAL_CONTRACT.md                               E_SELF_HEAL_CONTRACT.md
+L7-COMMAND  ALERT\escalation_policy.yaml                                      escalation_policy.yaml
+L7-COMMAND  AUDIT\CROSS-ROOM-HANDOFF\EVIDENCE_INDEX.json                      EVIDENCE_INDEX.json
+L7-COMMAND  ALERT\evidence_policy.md                                          evidence_policy.md
+L7-COMMAND  RELIABILITY\F_ANTI_REPLAY_CONTRACT.md                             F_ANTI_REPLAY_CONTRACT.md
+L7-COMMAND  PRODUCTION-READINESS\failure_recovery_matrix.md                   failure_recovery_matrix.md
+L7-COMMAND  AUDIT\VERIFICATION-GAP-CLOSURE\FIXTURE-EXECUTION-PROVENANCE.md    FIXTURE-EXECUTION-PROVENANCE.md
+L7-COMMAND  RELIABILITY\FIXTURE-TEST-REPORT.md                                FIXTURE-TEST-REPORT.md
+L7-COMMAND  RELIABILITY\FIXTURE-EVIDENCE\FIXTURE-TEST-SUMMARY.json            FIXTURE-TEST-SUMMARY.json
+L7-COMMAND  RELIABILITY\G_STATE_MACHINE.md                                    G_STATE_MACHINE.md
+L7-COMMAND  AUDIT\VERIFICATION-GAP-CLOSURE\GAP-CLOSURE-REPORT.md              GAP-CLOSURE-REPORT.md
+L7-COMMAND  RELIABILITY\H_READINESS_GATE.md                                   H_READINESS_GATE.md
+L7-COMMAND  AUDIT\CROSS-ROOM-HANDOFF\HANDOFF_MANIFEST.md                      HANDOFF_MANIFEST.md
+L7-COMMAND  AUDIT\VERIFICATION-GAP-CLOSURE\HANDOFF-HASH-CROSSCHECK.md         HANDOFF-HASH-CROSSCHECK.md
+L7-COMMAND  RELIABILITY\I_OPEN_ITEMS_UPDATE_v2.md                             I_OPEN_ITEMS_UPDATE_v2.md
+L7-COMMAND  RELIABILITY\I_OPEN_ITEMS_UPDATE.md                                I_OPEN_ITEMS_UPDATE.md
+L7-COMMAND  PRODUCTION-READINESS\incident_escalation.md                       incident_escalation.md
+L7-COMMAND  PRODUCTION-READINESS\independent_verification.md                  independent_verification.md
+L7-COMMAND  RELIABILITY\J_RUNTIME_ACTIVATION_EVIDENCE_REQUIRED.md             J_RUNTIME_ACTIVATION_EVIDENCE_REQUIRED.md
+L7-COMMAND  L1-ASPIRE-REPORT.md                                               L1-ASPIRE-REPORT.md
+L7-COMMAND  AUDIT\VERIFICATION-GAP-CLOSURE\L4-ATTRIBUTION.md                  L4-ATTRIBUTION.md
+L7-COMMAND  PRODUCTION-READINESS\L7-AG004-HANDOFF.md                          L7-AG004-HANDOFF.md
+L7-COMMAND  L7-DEVICE-REPORT-2026-09-14.md                                    L7-DEVICE-REPORT-2026-09-14.md
+L7-COMMAND  PRODUCTION-READINESS\L7-EVIDENCE-INDEX.json                       L7-EVIDENCE-INDEX.json
+L7-COMMAND  L7-FINAL-BASELINE.md                                              L7-FINAL-BASELINE.md
+L7-COMMAND  PRODUCTION-READINESS\L7-INCIDENT-ESCALATION.md                    L7-INCIDENT-ESCALATION.md
+L7-COMMAND  PRODUCTION-READINESS\L7-OPEN-GATES.md                             L7-OPEN-GATES.md
+L7-COMMAND  L7-OPEN-ITEMS.md                                                  L7-OPEN-ITEMS.md
+L7-COMMAND  L7-POLICY-REGISTERED.md                                           L7-POLICY-REGISTERED.md
+L7-COMMAND  PRODUCTION-READINESS\L7-PRODUCTION-READINESS.md                   L7-PRODUCTION-READINESS.md
+L7-COMMAND  PRODUCTION-READINESS\L7-RELEASE-MANIFEST.md                       L7-RELEASE-MANIFEST.md
+L7-COMMAND  L7-REPOSITORY-MIGRATION-BOUNDARY.md                               L7-REPOSITORY-MIGRATION-BOUNDARY.md
+L7-COMMAND  PRODUCTION-READINESS\L7-ROLLBACK-PLAN.md                          L7-ROLLBACK-PLAN.md
+L7-COMMAND  AWARENESS\MICO-L7-IOT-AWARENESS-001.md                            MICO-L7-IOT-AWARENESS-001.md
+L7-COMMAND  AWARENESS\MODULES-IMPL.yaml                                       MODULES-IMPL.yaml
+L7-COMMAND  AWARENESS\MODULES-MUTU.yaml                                       MODULES-MUTU.yaml
+L7-COMMAND  PRODUCTION-READINESS\monitoring_requirements.md                   monitoring_requirements.md
+L7-COMMAND  AUDIT\CROSS-ROOM-HANDOFF\OPEN_ITEMS.md                            OPEN_ITEMS.md
+L7-COMMAND  AWARENESS\OSI-LAYER-MAP.yaml                                      OSI-LAYER-MAP.yaml
+L7-COMMAND  P2-DESIGN\P2-1-backup_archive_policy.md                           P2-1-backup_archive_policy.md
+L7-COMMAND  P2-DESIGN\P2-1-cb_test_plan.md                                    P2-1-cb_test_plan.md
+L7-COMMAND  P2-DESIGN\P2-1-log_rotation_policy.md                             P2-1-log_rotation_policy.md
+L7-COMMAND  P2-DESIGN\P2-1-open_items_closure_plan.md                         P2-1-open_items_closure_plan.md
+L7-COMMAND  P2-EXECUTION\P2-1-REGISTERED.json                                 P2-1-REGISTERED.json
+L7-COMMAND  P2-DESIGN\P2-1-restore_test_plan.md                               P2-1-restore_test_plan.md
+L7-COMMAND  P2-DESIGN\P2-1-rotation_circuit_breaker.md                        P2-1-rotation_circuit_breaker.md
+L7-COMMAND  P2-DESIGN\P2-1-rotation_manifest.json                             P2-1-rotation_manifest.json
+L7-COMMAND  P2-DESIGN\P2-1-rotation_runner_design.md                          P2-1-rotation_runner_design.md
+L7-COMMAND  P2-DESIGN\P2-1-rotation_test_plan.md                              P2-1-rotation_test_plan.md
+L7-COMMAND  P2-DESIGN\P2-2-alert_channel_spec.md                              P2-2-alert_channel_spec.md
+L7-COMMAND  P2-DESIGN\P2-2-alert_delivery_policy.md                           P2-2-alert_delivery_policy.md
+L7-COMMAND  P2-DESIGN\P2-2-alert_message_schema.json                          P2-2-alert_message_schema.json
+L7-COMMAND  P2-DESIGN\P2-2-metadata_sanitizer_config.json                     P2-2-metadata_sanitizer_config.json
+L7-COMMAND  P2-EXECUTION\P2-2-REGISTERED.json                                 P2-2-REGISTERED.json
+L7-COMMAND  P2-EXECUTION\P2-EXECUTION-ACCEPTANCE.md                           P2-EXECUTION-ACCEPTANCE.md
+L7-COMMAND  P2-EXECUTION\P2-EXECUTION-TASK-CARD.md                            P2-EXECUTION-TASK-CARD.md
+L7-COMMAND  P2-EXECUTION\P2-EXECUTION-TEST-MATRIX.md                          P2-EXECUTION-TEST-MATRIX.md
+L7-COMMAND  P2-EXECUTION\P2-OBSERVABILITY.md                                  P2-OBSERVABILITY.md
+L7-COMMAND  P2-EXECUTION\P2-OPEN-ITEMS.md                                     P2-OPEN-ITEMS.md
+L7-COMMAND  P2-EXECUTION\P2-ROLLBACK.md                                       P2-ROLLBACK.md
+L7-COMMAND  P2-DESIGN\P2-TRANSPORT-DOCTRINE-RECONCILIATION.md                 P2-TRANSPORT-DOCTRINE-RECONCILIATION.md
+L7-COMMAND  PROMPTFOO-WRAPPER\PANDUAN-PAKAI.md                                PANDUAN-PAKAI.md
+L7-COMMAND  AUDIT\CROSS-ROOM-HANDOFF\PREVIOUS_STATE.md                        PREVIOUS_STATE.md
+L7-COMMAND  PRODUCTION-READINESS\production_readiness_checklist.md            production_readiness_checklist.md
+L7-COMMAND  PROMPT-AG001-L7-COMMAND-UNIFICATION.md                            PROMPT-AG001-L7-COMMAND-UNIFICATION.md
+L7-COMMAND  PROMPT-AG003-L7-DEPLOYMENT.md                                     PROMPT-AG003-L7-DEPLOYMENT.md
+L7-COMMAND  PROMPT-AG004-L7-VERIFICATION.md                                   PROMPT-AG004-L7-VERIFICATION.md
+L7-COMMAND  PROMPT-STANDARD-IDEAL.md                                          PROMPT-STANDARD-IDEAL.md
+L7-COMMAND  PROMPTFOO-ARCHITECTURAL-POSITION.md                               PROMPTFOO-ARCHITECTURAL-POSITION.md
+L7-COMMAND  RUNTIME\README.md                                                 README.md
+L7-COMMAND  PRODUCTION-READINESS\README.md                                    README.md
+L7-COMMAND  PRODUCTION-READINESS\recovery_procedure.md                        recovery_procedure.md
+L7-COMMAND  P2-EXECUTION\REGISTRY.json                                        REGISTRY.json
+L7-COMMAND  REKAP-CLOUD-LOKAL.md                                              REKAP-CLOUD-LOKAL.md
+L7-COMMAND  AUDIT\VERIFICATION-GAP-CLOSURE\RESTRUCTURE-GOVERNANCE-COVERAGE.md RESTRUCTURE-GOVERNANCE-COVERAGE.md
+L7-COMMAND  PRODUCTION-READINESS\rollback_procedure.md                        rollback_procedure.md
+L7-COMMAND  PRODUCTION-READINESS\runtime_deployment_manifest.json             runtime_deployment_manifest.json
+L7-COMMAND  PRODUCTION-READINESS\security_boundary.md                         security_boundary.md
+L7-COMMAND  PRODUCTION-READINESS\slo_sla.md                                   slo_sla.md
+L7-COMMAND  AWARENESS\SOURCES.md                                              SOURCES.md
+L7-COMMAND  PRODUCTION-READINESS\state_machine.json                           state_machine.json
+L7-COMMAND  RELIABILITY\FIXTURE-EVIDENCE\T01_ev-fixture-T01-c818b97b.json     T01_ev-fixture-T01-c818b97b.json
+L7-COMMAND  RELIABILITY\FIXTURE-EVIDENCE\T02_ev-fixture-T02-56ce3e42.json     T02_ev-fixture-T02-56ce3e42.json
+L7-COMMAND  RELIABILITY\FIXTURE-EVIDENCE\T03_ev-fixture-T03-3389bdcf.json     T03_ev-fixture-T03-3389bdcf.json
+L7-COMMAND  RELIABILITY\FIXTURE-EVIDENCE\T04_ev-fixture-T04-ffe7d28e.json     T04_ev-fixture-T04-ffe7d28e.json
+L7-COMMAND  RELIABILITY\FIXTURE-EVIDENCE\T05_ev-fixture-T05-f109258d.json     T05_ev-fixture-T05-f109258d.json
+L7-COMMAND  RELIABILITY\FIXTURE-EVIDENCE\T06_ev-fixture-T06-15e39de6.json     T06_ev-fixture-T06-15e39de6.json
+L7-COMMAND  RELIABILITY\FIXTURE-EVIDENCE\T07_ev-fixture-T07-d2e1e5d0.json     T07_ev-fixture-T07-d2e1e5d0.json
+L7-COMMAND  RELIABILITY\FIXTURE-EVIDENCE\T08_ev-fixture-T08-af76d26b.json     T08_ev-fixture-T08-af76d26b.json
+L7-COMMAND  RELIABILITY\FIXTURE-EVIDENCE\T09_ev-fixture-T09-a0bd49d9.json     T09_ev-fixture-T09-a0bd49d9.json
+L7-COMMAND  RELIABILITY\FIXTURE-EVIDENCE\T10_ev-fixture-T10-b8c10b00.json     T10_ev-fixture-T10-b8c10b00.json
+L7-COMMAND  RELIABILITY\FIXTURE-EVIDENCE\T11_ev-fixture-T11-ddfb0a97.json     T11_ev-fixture-T11-ddfb0a97.json
+L7-COMMAND  RELIABILITY\FIXTURE-EVIDENCE\T12_ev-fixture-T12-d0f1d87a.json     T12_ev-fixture-T12-d0f1d87a.json
+L7-COMMAND  ALERT\runbooks\warning.md                                         warning.md
+P1-PLANNING AUDIT-ANCHOR-REGISTRY.md                                          AUDIT-ANCHOR-REGISTRY.md
+P1-PLANNING GAP-ANALYSIS-v1.0.md                                              GAP-ANALYSIS-v1.0.md
+P1-PLANNING LAYER-MODEL-RECONCILIATION-DRAFT.md                               LAYER-MODEL-RECONCILIATION-DRAFT.md
+P1-PLANNING MASTER-PLAN-v1.0-DRAFT.md                                         MASTER-PLAN-v1.0-DRAFT.md
+P1-PLANNING MICO-JDEQ-CORE-LOGIC.json                                         MICO-JDEQ-CORE-LOGIC.json
+P1-PLANNING MICO-JDEQ-MASTER-PLAN-v1.0.md                                     MICO-JDEQ-MASTER-PLAN-v1.0.md
+P1-PLANNING MICO-JDEQ-SYSTEM-MANIFEST.md                                      MICO-JDEQ-SYSTEM-MANIFEST.md
+P1-PLANNING MICO-P1-BEHAVIOR-CONTRACT.md                                      MICO-P1-BEHAVIOR-CONTRACT.md
+P1-PLANNING DEL03-GOVERNANCE\MICO-P1-DEL03-GOV-001_CETAK-BIRU-V21.md          MICO-P1-DEL03-GOV-001_CETAK-BIRU-V21.md
+P1-PLANNING MICO-P1-LAPORAN-JARVIS-DOLA.md                                    MICO-P1-LAPORAN-JARVIS-DOLA.md
+P1-PLANNING MONUMENT-SPEC-v1.0.md                                             MONUMENT-SPEC-v1.0.md
+P1-PLANNING P1-EXECUTION-GUIDE.md                                             P1-EXECUTION-GUIDE.md
+P1-PLANNING P1-FINAL-REPORT-MODUL-PENJELASAN.md                               P1-FINAL-REPORT-MODUL-PENJELASAN.md
+P1-PLANNING P1-FINAL-REPORT.md                                                P1-FINAL-REPORT.md
+P1-PLANNING P1-PLANNING-INDEX.md                                              P1-PLANNING-INDEX.md
+P2-DESIGN   MICO-P2-CONTROL-003\ACCESS-REVOCATION-CHECKLIST.md                ACCESS-REVOCATION-CHECKLIST.md
+P2-DESIGN   MICO-P2-CONTROL-003\AGENT-CLOSURE-PROTOCOL.md                     AGENT-CLOSURE-PROTOCOL.md
+P2-DESIGN   MICO-P2-CONTROL-003\CLOSURE-RECORD-TEMPLATE.yaml                  CLOSURE-RECORD-TEMPLATE.yaml
+P2-DESIGN   MICO-P2-ARCH-EVAL-001.md                                          MICO-P2-ARCH-EVAL-001.md
+P2-DESIGN   MICO-P2-C02-SESSION-IDENTITY\README.md                            README.md
+P2-DESIGN   POC-MICO-VOICE-API-001\README.md                                  README.md
+P2-DESIGN   MICO-P2-C02-SESSION-IDENTITY\SESSION-IDENTITY.md                  SESSION-IDENTITY.md
+
+
+MICO total: 154 file
+
+[C] LEGACY → MICO · KANDIDAT PADANAN
+Cari padanan untuk setiap legacy file (berdasarkan nama)...
+
+PJ – MR – Manual – 01.doc                               → (unmatched)
+Dokumen kontrol 2.doc                                   → (unmatched)
+PJ-F&A-P- 01 Penagihan.doc                              → P2-DESIGN/resource-policy      [CANDIDATE]
+PJ-F&A-P- 02 Pembayaran.doc                             → P2-DESIGN/resource-policy      [CANDIDATE]
+PJ-F&A-P- 03 Perpajakan.doc                             → P2-DESIGN/resource-policy      [CANDIDATE]
+PJ-HRGA-P-01 Penerimaan Karyawan.doc                    → P2-DESIGN/resource-policy      [CANDIDATE]
+PJ-HRGA-P-02 Pelatihan Karyawan.doc                     → P2-DESIGN/resource-policy      [CANDIDATE]
+PJ-HRGA-P-03 Penilaian Kinerja Karyawan.doc             → P2-DESIGN/resource-policy      [CANDIDATE]
+PJ-HRGA-P-04 Seleksi dan Evaluasi Supplier.doc          → P2-DESIGN/resource-policy      [CANDIDATE]
+PJ-HRGA-P-05 Pembelian dan Penyewaan.doc                → P2-DESIGN/resource-policy      [CANDIDATE]
+PJ-HRGA-P-06 Pemeliharaan Infrastruktur.doc             → P2-DESIGN/resource-policy      [CANDIDATE]
+PJ-HRGA-P-07 Penyimpanan Barang.doc                     → P2-DESIGN/resource-policy      [CANDIDATE]
+PJ-HRGA-P-08 Penanganan Barang Milik Pelanggan.doc      → P2-DESIGN/resource-policy      [CANDIDATE]
+PJ-HRGA-P-09 Penanganan Alat Ukur dan Monitor.doc       → P2-DESIGN/resource-policy      [CANDIDATE]
+PJ-HSE-P-01 laporan dan Investigasi Insiden.doc         → P2-DESIGN/risk-recovery        [CANDIDATE]
+PJ-HSE-P-02 Identifikasi Bahaya dan Dampak.doc          → P2-DESIGN/risk-recovery        [CANDIDATE]
+PJ-HSE-P-03 Identifikasi, Akses dan Evaluasi Kepatuhan Perundangan.doc → P2-DESIGN/risk-recovery        [CANDIDATE]
+PJ-HSE-P-04 Komunikasi Internal dan Eksternal.doc       → P2-DESIGN/risk-recovery        [CANDIDATE]
+PJ-HSE-P-05 Pemantauan dan Pengukuran K3LL.doc          → P2-DESIGN/risk-recovery        [CANDIDATE]
+PJ-HSE-P-06 Kesiagaan dan Tanggap Darurat.doc           → P2-DESIGN/risk-recovery        [CANDIDATE]
+PJ-HSE-P-07 Pengendalian K3LL.doc                       → P2-DESIGN/risk-recovery        [CANDIDATE]
+PJ-MKT-P-01 Tender.doc                                  → (di luar core)                 [REFERENCE_ONLY]
+PJ-MKT-P-02 Pra Kualifikasi.doc                         → (di luar core)                 [REFERENCE_ONLY]
+PJ-MR-M- 01 Manual.doc                                  → (unmatched)
+PJ-MR-P-01 Pengendalian Dokumen.doc                     → P2-DESIGN/doc-control          [CANDIDATE]
+PJ-MR-P-02 Pengendalian Catatan.doc                     → P2-DESIGN/evidence-retention   [CANDIDATE]
+PJ-MR-P-03 Audit Internal.doc                           → P2-DESIGN/audit-protocol       [CANDIDATE]
+PJ-MR-P-04 Tinjauan Manajemen.doc                       → P2-DESIGN/mgmt-review          [CANDIDATE]
+PJ-MR-P-05 Tindakan Koreksi dan Pencegahan.doc          → P2-DESIGN/corrective-action    [CANDIDATE]
+PJ-TEK-P-01 Perencanaan Kerja.doc                       → P2-DESIGN/workflow-templates   [CANDIDATE]
+PJ-TEK-P-02 Pelaksanaan Kerja.doc                       → P2-DESIGN/workflow-templates   [CANDIDATE]
+PJ-TEK-P-03 Inspeksi Pekerjaan.doc                      → P2-DESIGN/workflow-templates   [CANDIDATE]
+PJ-TEK-P-04 Serah Terima Pekerjaan.doc                  → P2-DESIGN/workflow-templates   [CANDIDATE]
+PJ-TEK-P-05 Pekerjaan Tambah Kurang.doc                 → P2-DESIGN/workflow-templates   [CANDIDATE]
+PJ-TEK-P-06 Pengendalian Konstruksi Tidak Sesuai.doc    → P2-DESIGN/workflow-templates   [CANDIDATE]
+PJ-TEK-P-07 Pengukuran Kepuasan Pelanggan.doc           → P2-DESIGN/workflow-templates   [CANDIDATE]
+PJ-TEK-P-08 Penanganan Keluhan Pelanggan.doc            → P2-DESIGN/workflow-templates   [CANDIDATE]
+PJ-IK-QHSE-001 Ijin Kerja.doc                           → Behavior Contract (belum ada)  [GAP]
+PJ-IK-QHSE-002 Penyimpanan Material Berbahaya.doc       → Behavior Contract (belum ada)  [GAP]
+PJ-IK-QHSE-003 Housekeeping.doc                         → Behavior Contract (belum ada)  [GAP]
+PJ-IK-QHSE-004 Penanganan Material berbahaya.doc        → Behavior Contract (belum ada)  [GAP]
+PJ-IK-QHSE-005 Pencegahan Bahaya Kebakaran.doc          → Behavior Contract (belum ada)  [GAP]
+PJ-IK-QHSE-006 P3K.doc                                  → Behavior Contract (belum ada)  [GAP]
+PJ-IK-QHSE-007 APAR.doc                                 → Behavior Contract (belum ada)  [GAP]
+PJ-IK-QHSE-008 Perkasas Tangan.doc                      → Behavior Contract (belum ada)  [GAP]
+PJ-IK-QHSE-009 Scaffolding.doc                          → Behavior Contract (belum ada)  [GAP]
+PJ-IK-QHSE-010 Stairways.doc                            → Behavior Contract (belum ada)  [GAP]
+PJ-IK-QHSE-011 Instalasi Listrik.doc                    → Behavior Contract (belum ada)  [GAP]
+PJ-IK-QHSE-012 Bekerja di Malam Hari.doc                → Behavior Contract (belum ada)  [GAP]
+PJ-IK-QHSE-013 Bekerja di Lalulintas Padat.doc          → Behavior Contract (belum ada)  [GAP]
+PJ-IK-QHSE-014 Penggalian.doc                           → Behavior Contract (belum ada)  [GAP]
+PJ-IK-QHSE-015 Pengelasan.doc                           → Behavior Contract (belum ada)  [GAP]
+PJ-IK-QHSE-016 Angkut Manual.doc                        → Behavior Contract (belum ada)  [GAP]
+PJ-IK-QHSE-017 Mengemudi.doc                            → Behavior Contract (belum ada)  [GAP]
+PJ-IK-QHSE-018 Pengoperasian Komputer.doc               → Behavior Contract (belum ada)  [GAP]
+PJ-IK-QHSE-019 Tangki BBM.doc                           → Behavior Contract (belum ada)  [GAP]
+PJ-IK-QHSE-020 Akses Kerja.doc                          → Behavior Contract (belum ada)  [GAP]
+PJ-IK-QHSE-021 Ladder.doc                               → Behavior Contract (belum ada)  [GAP]
+PJ-IK-QHSE-022 Penggerindaan.doc                        → Behavior Contract (belum ada)  [GAP]
+PJ-IK-QHSE-023 Pemotongan.doc                           → Behavior Contract (belum ada)  [GAP]
+PJ-IK-QHSE-024 Pembongkaran.doc                         → Behavior Contract (belum ada)  [GAP]
+PJ-IK-QHSE-025 Pekerjaan Atap.doc                       → Behavior Contract (belum ada)  [GAP]
+PJ-IK-QHSE-026 Bekerja di Ketinggian.doc                → Behavior Contract (belum ada)  [GAP]
+PJ-IK-QHSE-027 Pengoperasian Alat Berat.doc             → Behavior Contract (belum ada)  [GAP]
+PJ-IK-QHSE-028 Fasilitas Umum.doc                       → Behavior Contract (belum ada)  [GAP]
+PJ-IK-QHSE-029 Plant & Basement.doc                     → Behavior Contract (belum ada)  [GAP]
+PJ-IK-QHSE-030 Pengecatan.doc                           → Behavior Contract (belum ada)  [GAP]
+PJ-IK-QHSE-031 ID & Informasi K3LL.doc                  → Behavior Contract (belum ada)  [GAP]
+PJ-IK-QHSE-032 Pengaspalan.doc                          → Behavior Contract (belum ada)  [GAP]
+PJ-IK-QHSE-033 Pengecoran.doc                           → Behavior Contract (belum ada)  [GAP]
+PJ-IK-QHSE-034 Galian Tanah.doc                         → Behavior Contract (belum ada)  [GAP]
+PJ-IK-QHSE-035 Pembesian.doc                            → Behavior Contract (belum ada)  [GAP]
+PJ-IK-QHSE-036 Pengendalian Tumpahan Minyak.doc         → Behavior Contract (belum ada)  [GAP]
+PJ-IK-QHSE-037 Pemeliharaan Oil Trap.doc                → Behavior Contract (belum ada)  [GAP]
+PJ-IK-QHSE-038 Bongkar Muat Limbah B3.doc               → Behavior Contract (belum ada)  [GAP]
+PJ-IK-QHSE-039 Ganti Oli.doc                            → Behavior Contract (belum ada)  [GAP]
+PJ-IK-QHSE-040 Penanganan Oli Bekas.doc                 → Behavior Contract (belum ada)  [GAP]
+PJ-IK-QHSE-041 Pengisian BBM.doc                        → Behavior Contract (belum ada)  [GAP]
+PJ-F&A-F-01==Pembayaran Jatuh Tempo.xls                 → (unmatched)
+PJ-F&A-F-02==Slip Kas Keluar.xls                        → (unmatched)
+PJ-F&A-F-03==Pengajuan Termin Pembayaran.xls            → (unmatched)
+PJ-F&A-F-04==Slip Kas Masuk.xls                         → (unmatched)
+PJ-HRGA-F-01==Daftar Hadir Pelatihan.xls                → (unmatched)
+PJ-HRGA-F-010==Daftar Kompetensi.xlsx                   → (unmatched)
+PJ-HRGA-F-011==Evaluasi Kompetensi.xlsx                 → (unmatched)
+PJ-HRGA-F-012==Permohonan Permintaan Karyawan.xls       → (unmatched)
+PJ-HRGA-F-013==Penerimaan Barang Pelanggan.xls          → (unmatched)
+PJ-HRGA-F-014==Daftar Stock Barang.xls                  → (unmatched)
+PJ-HRGA-F-015==Status Barang Pelanggan.xls              → (unmatched)
+PJ-HRGA-F-016==Laporan Barang Milik Pelanggan.xls       → (unmatched)
+PJ-HRGA-F-017==Surat Permintaan Barang.xls              → (unmatched)
+PJ-HRGA-F-018==Surat Penawaran Harga.xls                → (unmatched)
+PJ-HRGA-F-019==Tabel Perbandingan Harga.xls             → (unmatched)
+PJ-HRGA-F-02==Jadwal Pelatihan.xls                      → (unmatched)
+PJ-HRGA-F-020==Surat Pesanan Barang.xls                 → (unmatched)
+PJ-HRGA-F-021==Pemeriksaan Barang Datang.xls            → (unmatched)
+PJ-HRGA-F-022==Daftar Supplier.xls                      → (unmatched)
+PJ-HRGA-F-023==Evaluasi Supplier.xls                    → (unmatched)
+PJ-HRGA-F-024==Pemeliharaan Infrastruktur.xls           → (unmatched)
+PJ-HRGA-F-025==Hasil Perbaikan Infrastruktur.xls        → (unmatched)
+PJ-HRGA-F-026==Daftar Infrastruktur.xls                 → (unmatched)
+PJ-HRGA-F-027==Jadwal Pemeliharaan.xls                  → (unmatched)
+PJ-HRGA-F-028==Stock Barang.xls                         → (unmatched)
+PJ-HRGA-F-029==Tanda Terima Barang.xls                  → (unmatched)
+PJ-HRGA-F-03==Catatan Hasil Pelatihan.xls               → (unmatched)
+PJ-HRGA-F-030==Bukti Pengiriman Barang.xls              → (unmatched)
+PJ-HRGA-F-031==Surat Jalan.xls                          → (unmatched)
+PJ-HRGA-F-032==Daftar Alat Ukur.xls                     → (unmatched)
+PJ-HRGA-F-033==Tabel Kalibrasi.xls                      → (unmatched)
+PJ-HRGA-F-034==Laporan Penggantian Alat Ukur.xls        → (unmatched)
+PJ-HRGA-F-05==Data Karyawan.xls                         → (unmatched)
+PJ-HRGA-F-06==Seleksi Karyawan.xlsx                     → (unmatched)
+PJ-HRGA-F-07==Surat Pengangkatan Kerja.xlsx             → (unmatched)
+PJ-HSE-F-01==Daftar Keadaan Darurat.doc                 → (unmatched)
+PJ-HSE-F-02==Laporan Latihan Tanggap Darurat.doc        → (unmatched)
+PJ-HSE-F-03==Emergency Report.doc                       → (unmatched)
+PJ-HSE-F-04==Emergency contact.doc                      → (unmatched)
+PJ-HSE-F-05==Komunikasi Keadaan Darurat.xls             → (unmatched)
+PJ-HSE-F-06==Inspeksi Lingkungan.xls                    → (unmatched)
+PJ-HSE-F-12==Laporan awal insiden.doc                   → (unmatched)
+PJ-HSE-F-14==Log Book Komunikasi K3LL.xls               → (unmatched)
+PJ-HSE-F-15==Daftar Hadir.xls                           → (unmatched)
+PJ-HSE-F-18==Rencana Pengukuran dan Pemantauan Indikator Kerja.doc → (unmatched)
+PJ-HSE-F-19==Hasil Pengukuran dan Pemantauan.doc        → (unmatched)
+PJ-HSE-F-20==HSE Performance Monitoring.xls             → (unmatched)
+PJ-HSE-F-21==Permintaan Tindakan Perbaikan Pencegahan.xls → (unmatched)
+PJ-HSE-F-22==Daftar PTPP.xls                            → (unmatched)
+PJ-HSE-F-23==Risk Register.xls                          → (unmatched)
+PJ-MKT-F-01==Tender.xlsx                                → (unmatched)
+PJ-MKT-F-02==Pra Kualifikasi.xls                        → (unmatched)
+PJ-MR-F-01==Jadwal audit.xls                            → (unmatched)
+PJ-MR-F-02==Laporan Audit.xls                           → (unmatched)
+PJ-MR-F-03==Check List Audit Mutu Internal.xls          → (unmatched)
+PJ-MR-F-04==Daftar Catatan Mutu, K3 Dan Lingkungan.xlsx → (unmatched)
+PJ-MR-F-05==Berita Acara Pemusnahan Catatan.xlsx        → (unmatched)
+PJ-MR-F-06==Daftar Dokumen Internal.xls                 → (unmatched)
+PJ-MR-F-07==Daftar Dokumen Eksternal.xls                → (unmatched)
+PJ-MR-F-08==Lembar Perubahan Dokumen.xls                → (unmatched)
+PJ-MR-F-09==Tanda Terima Dokumen.xls                    → (unmatched)
+PJ-MR-F-10==Laporan Pencapaian Sasaran.xls              → (unmatched)
+PJ-MR-F-11==Undangan Rapat Tinjauan Manajemen.xls       → (unmatched)
+PJ-MR-F-12==Daftar Hadir RTMC.doc                       → (unmatched)
+PJ-MR-F-13==Program Rapat Tinjauan Manajemen Tahunan.xls → (unmatched)
+PJ-MR-F-15==Daftar, Rencana dan Evaluasi Ketaatan.xls   → (unmatched)
+PJ-TEK-F-010==Serah Terima Pekerjaan.xls                → (unmatched)
+PJ-TEK-F-011==Monitoring Pekerjaan.xls                  → (unmatched)
+PJ-TEK-F-012==Pekerjaan Tambah Kurang.xls               → (unmatched)
+PJ-TEK-F-013==Serah Terima Kunci.xls                    → (unmatched)
+PJ-TEK-F-013==Survey Kepuasan Pelanggan.xlsx            → (unmatched)
+PJ-TEK-F-02==Rencana K3LL Proyek.xls                    → (unmatched)
+PJ-TEK-F-03==Laporan Hasil Inspeksi.xls                 → (unmatched)
+PJ-TEK-F-04==Laporan Buku Tamu Proyek.xls               → (unmatched)
+PJ-TEK-F-06==Laporan Harian etc.xlsx                    → (unmatched)
+PJ-TEK-F-07==Laporan Kemajuan Pekerjaan.xls             → (unmatched)
+PJ-TEK-F-08==Surat Pemberitahuan Mulai Kerja.xlsx       → (unmatched)
+PJ-TEK-F-09==Laporan Perbaikan Hasil Konstruksi.xls     → (unmatched)
+check list audit internal 2009 PJ.doc                   → (unmatched)
+Laporan Audit Internal 2009.doc                         → (unmatched)
+S.1. Form. Check List Audit Mutu Internal PJ.doc        → (unmatched)
+FM.OHS.010.00 Checklist Internal Audit (mutu dan K3) 2012.XLS → (unmatched)
+FM.OHS.008.00 Notulen Tinjauan Manajemen 2012.doc       → (unmatched)
+PJ-MR-F-16==Standar Penamaan & Penomoran.xls            → P2-DESIGN/naming-standard      [CANDIDATE]
+Form Daftar Hadir Pertemuan PJ.doc                      → (unmatched)
+Jawaban AUDIT Paula Jaya new.doc                        → (unmatched)
+[Fully Signed] [V1] Formulir Survey Request PertaMC JBT Tank Cleaning.pdf → (unmatched)
+[Fully Signed] [V1] Formulir Survey Request PertaMC JBT Tank Cleaning.pdf → (unmatched)
+
+[D] RINGKASAN STATUS
+CANDIDATE               33
+GAP                     41
+REFERENCE_ONLY           2
+UNCLASSIFIED            90

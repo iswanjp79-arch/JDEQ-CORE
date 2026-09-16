@@ -1,0 +1,34 @@
+=== MICO-TRANSFER-Y28-002-FULL · 20260916-0547-FULL ===
+Sumber : Vivo Y28 · 10DE7H05NH000DR
+Tujuan : D:\MICO_SSOT\08_EVIDENCE\IMPORT-VIVO-Y28\20260916-0547-FULL
+Aturan : READ-ONLY · TIDAK HAPUS · VAULT DILINDUNGI
+
+
+TARIK: /sdcard/Documents
+/sdcard/Documents/: 518 files pulled, 0 skipped. 4.8 MB/s (12300833 bytes in 2.434s)
+  STATUS: OK
+
+TARIK: /sdcard/Download
+/sdcard/Download/: 40 files pulled, 0 skipped. 10.0 MB/s (8146039 bytes in 0.776s)
+  STATUS: OK
+
+TARIK: /sdcard/Pictures
+/sdcard/Pictures/: 278 files pulled, 0 skipped. 21.3 MB/s (108191302 bytes in 4.835s)
+  STATUS: OK
+
+TARIK: /sdcard/Music
+/sdcard/Music/: 2 files pulled, 0 skipped. 0.0 MB/s (36 bytes in 0.022s)
+  STATUS: OK
+
+TARIK: /sdcard/Movies
+/sdcard/Movies/: 7 files pulled, 0 skipped. 2.3 MB/s (174180 bytes in 0.071s)
+  STATUS: OK
+
+TARIK: /sdcard/DCIM
+/sdcard/DCIM/: 52 files pulled, 0 skipped. 20.0 MB/s (16183057 bytes in 0.773s)
+  STATUS: OK
+
+TARIK: /sdcard/Android/data
+adb: error: failed to copy '/sdcard/Android/data/org.thunderdog.challegram/files/photos/.nomedia' to 'D:\MICO_SSOT\08_EVIDENCE\IMPORT-VIVO-Y28\20260916-0547-FULL\data\data\org.thunderdog.challegram\files\photos\.nomedia': remote open failed: Permission denied
+[  5%] /sdcard/Android/data/mega.privacy.android.app/files/MEGA Logs/log.2026-09-03.0.zip: 100%
+  STATUS: GAGAL exit=1

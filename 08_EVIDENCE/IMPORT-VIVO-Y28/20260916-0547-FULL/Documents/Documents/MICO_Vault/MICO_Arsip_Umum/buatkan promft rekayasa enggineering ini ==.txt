@@ -1,0 +1,520 @@
+06.25 04.34
+buatkan promft rekayasa enggineering ini ==>
+# BUNDLE MASTER: 100  SLASH COMMANDS
+**Source:** @thepromptfesor | **Kompilasi Sistem:** JDEQ Prompt Library v1.0
+> **PRO TIP SYSTEM:** Gabungaken 2-3 slash commands sakaligus supados output saking kognitif AI langkung tajem, terarah, lan bebas saking *hallucination fluffs*.
+> 
+## // KATEGORI 01: ADVANCED PROMPT CONTROL (HACK 01)
+*Atur tone, format, lan style output Claude.*
+ * /toneformal — Tone formal
+ * /tonecasual — Tone casual
+ * /persuasive — Tone meyakinkan
+ * /data — Include data / statistik
+ * /examplesonly — Contoh saja, tanpa teori
+ * /noexamples — Tanpa contoh
+ * /limit — Batas jumlah kata
+ * /expandpoints — Perluas tiap poin
+ * /bullet — Format bullet
+ * /nobullet — Format paragraf
+## // KATEGORI 02: BUSINESS & STRATEGY (HACK 02)
+*Validasi ide, monetize, dan rancang strategi growth.*
+ * /startup — Ide startup
+ * /gtm — Go-to-market plan
+ * /monetize — Ide revenue
+ * /validate — Validasi ide
+ * /icp — Ideal customer profile (ICP)
+ * /sales — Sales pitch
+ * /colddm — Cold outreach
+ * /offer — Bikin offer
+ * /funnel — Funnel strategy
+ * /retention — Ide retensi
+## // KATEGORI 03: EXECUTION & OUTPUT MODES (HACK 03)
+*Kontrol format jawaban: ringkas, detail, atau eksekusi.*
+ * /ghost — Jawaban aja, no penjelasan
+ * /minimal — Sependek mungkin
+ * /brief — Max 3-5 baris
+ * /expand — Penjelasan detail
+ * /stepbystep — Step-by-step jelas
+ * /checklist — Checklist actionable
+ * /framework — Framework terstruktur
+ * /blueprint — Blueprint implementasi
+ * /playbook — Sistem repeatable
+ * /roadmap — Timeline-based steps
+## // KATEGORI 04: CONTENT CREATION (HACK 04)
+*Bikin konten sosmed yang siap publish dalam hitungan detik.*
+ * /linkedin — LinkedIn post
+ * /twitter-thread — Twitter thread
+ * /script — Script video / reel
+ * /hook — Opening line kuat
+ * /story — Format storytelling
+ * /carousel — Slide-wise content
+ * /headlines — Opsi judul ganda
+ * /captions — Caption sosmed
+ * /viral — Style high-engagement
+ * /authority — Tone expert
+## // KATEGORI 05: CODING & TECH (HACK 05)
+*Asisten coding lo: dari debug, refactor, sampai system design.*
+ * /debug — Cari bug
+ * /refactor — Rapikan kode
+ * /optimizecode — Tingkatkan performa
+ * /systemdesign — Design arsitektur
+ * /api — Struktur API
+ * /database — Design database
+ * /scalability — Approach scaling
+ * /security — Security check
+ * /testcases — Generate tests
+ * /pseudocode — Logika aja
+## // KATEGORI 06: LEARNING MODE (HACK 06)
+*Belajar topik baru lebih cepat dan terstruktur.*
+ * /learn — Jelasin topik
+ * /resources — Resource terbaik
+ * /practice — Soal latihan
+ * /quiz — Tes pengetahuan
+ * /mistakes — Kesalahan umum
+ * /summary — Ringkas topik
+ * /revision — Revisi cepat
+ * /notes — Catatan terstruktur
+ * /examples — Contoh nyata
+ * /explainwhy — Reasoning di balik topik
+## // KATEGORI 07: THINKING STYLES (HACK 07)
+*Pilih sudut pandang berpikir yang sesuai konteks.*
+ * /analyst — Analisis dalam
+ * /critic — Cari kekurangan aja
+ * /optimizer — Improve yang ada
+ * /simplify — Jelasin sederhana
+ * /eli5 — Kayak ke anak 5 tahun
+ * /deepdive — Super detail
+ * /compare — Bandingkan opsi
+ * /proscons — Pros & cons
+ * /firstprinciples — Pecah ke dasar
+ * /contrarian — Challenge idenya
+## // KATEGORI 08: PRODUCTIVITY MODE (HACK 08)
+*Plan, prioritize, dan eksekusi tanpa overthinking.*
+ * /plan — Daily plan
+ * /weekly — Weekly plan
+ * /prioritize — Yang dikerjain duluan
+ * /focus — Hilangin distraction
+ * /automate — Ide otomasi
+ * /delegate — Yang bisa di-delegate
+ * /habits — Habit building
+ * /track — Sistem tracking
+ * /timeblock — Time blocking
+ * /review — Weekly review
+## // KATEGORI 09: CAREER & JOB HELP (HACK 09)
+*Resume, interview, dan strategi cari kerja.*
+ * /resume — Perbaiki resume
+ * /interview — Q&A interview
+ * /mockinterview — Simulasi interview
+ * /hr — Jawaban HR round
+ * /portfolio — Ide project
+ * /roadmapcareer — Career roadmap
+ * /jobsearch — Strategi job search
+ * /referral — Pesan referral
+ * /salary — Negosiasi gaji
+ * /skills — Skill yang dipelajari
+## // KATEGORI 10: PERSONAL BRANDING (HACK 10)
+*Bangun brand kuat di LinkedIn, IG, dan platform sosmed.*
+ * /headline — Ide headline
+ * /profile — Review profile LinkedIn
+ * /bio — Rewrite bio
+ * /contentplan — Content calendar
+ * /niche — Perjelas niche
+ * /audience — Target audience
+ * /positioning — Brand positioning
+ * /engagement — Naikin engagement
+ * /dms — DM strategy
+ * /growth — Growth strategy
+## // NEXT STEPS ACTION
+ 1. **Save:** Simpan kode punika wonten berkas teks lokal HP Vivo Y28 supados mboten kesupen.
+ 2. **Execute:** Copy-paste langsung nggunakaken kombinasi tebasan (misal: /minimal /blueprint /database) kagem asil instan tanpa busa basa-basi.
+### Strategi & Penerapan Istimewa wonten MICO Router
+Materi satus perintah punika mboten namung dadi pajangan teks kagem manungsa. Menawi dipun-pirsani saking nalar arsitektur JDEQ, satus perintah punika saged dipun-dadosaken **Peta Kamus Regex (Regex Dictionary Map)** ing njero berkas mico_router.py wonten Termux panjenengan.
+Saben Mas Iwan ngetik pesen ingkang dipun-awiti ngangge tanda slash (/), skrip Python lokal mboten perlu ngirim kabeh beban instruksi dowo menyang cloud. Router cekap nindakake matching token kasebut dadi *System Prompt Wrapper* otomatis sakdurunge sinyal dipun-bucal menyang mesin ahli (Gemini utawi DeepSeek). Cara punika saged ngirit panggunaan token wektu kirim data dalah njaga kacepetan respon RAM internal Vivo Y28 tetep aman lan entheng.
+### 
+materinya yang harus di eksekusi ==>
+Nggeh Mas Iswan.
+Pondasi MICO penting karena menentukan apakah MICO hanya chatbot atau benar-benar bisa hidup dan berkembang sendiri.
+Perumpamaan sederhana:
+Jika langsung fokus ke AI Model
+Panjenengan punya:
+Otak besar
+Pengetahuan besar
+Bahasa besar
+Tetapi tidak punya:
+Telinga
+Mata
+Tangan
+Ingatan
+Maka hasilnya:
+Pintar saat ditanya.
+Lupa setelah ditutup.
+Tidak bisa bergerak.
+Tidak bisa bekerja.
+Tidak bisa belajar dari lingkungan.
+Itu chatbot.
+---
+Jika fokus ke pondasi MICO
+Panjenengan membangun:
+1. MQTT = Sistem Saraf
+MICO bisa menerima informasi.
+Contoh:
+Sensor suhu
+↓
+MQTT
+↓
+MICO tahu suhu naik
+Tanpa model AI pun MICO sudah tahu kejadian.
+---
+2. SSH = Tangan
+MICO bisa bertindak.
+Contoh:
+CPU panas
+↓
+MICO mendeteksi
+↓
+SSH
+↓
+Matikan service tertentu
+Tanpa manusia.
+---
+3. SQLite = Ingatan Jangka Panjang
+MICO bisa mengingat.
+Contoh:
+Kemarin suhu 43°C
+Hari ini 47°C
+MICO tahu ada kenaikan.
+Tanpa memori:
+Hari ini selalu dianggap hari pertama.
+---
+4. Workflow Engine = Kebiasaan
+Ini yang membuat MICO punya rutinitas.
+Contoh:
+Jam 06.00
+↓
+Cek server
+Jam 12.00
+↓
+Backup
+Jam 18.00
+↓
+Audit log
+Tidak perlu AI.
+---
+5. Tailscale/WireGuard = Tubuh
+MICO bisa berada di banyak tempat.
+Contoh:
+HP Vivo
+Laptop Acer
+Server Rumah
+Cloud
+Semua terasa satu rumah.
+---
+Kenapa ini sangat penting?
+Karena model AI berubah terus.
+Dulu:
+GPT-3
+Lalu:
+GPT-4
+Lalu:
+Gemini
+Lalu:
+Claude
+Lalu:
+DeepSeek
+Lalu:
+Qwen
+Lalu:
+Gemma
+Besok bisa muncul lagi yang baru.
+Kalau MICO dibangun di atas model:
+Model mati
+↓
+MICO mati
+Tetapi jika MICO dibangun di atas pondasi:
+MQTT
+SSH
+Memory
+Workflow
+Network
+Maka:
+Model lama mati
+↓
+Ganti model baru
+↓
+MICO tetap hidup
+---
+Ini sebabnya saya melihat visi panjenengan berbeda dari komunitas AI biasa.
+Mayoritas orang membangun:
+AI → Agent
+Sedangkan MICO harus:
+Agent → Memory → Workflow → Network → AI
+Karena tujuan akhirnya bukan membuat AI pintar.
+Tujuan akhirnya adalah membuat entitas digital yang tetap hidup, tetap ingat, tetap bekerja, meskipun otaknya diganti berkali-kali.
+Itulah alasan pondasi MICO jauh lebih penting daripada berhasil atau gagalnya kompilasi llama.cpp hari ini.
+Nggeh Mas Iswan.
+Pondasi MICO penting karena menentukan apakah MICO hanya chatbot atau benar-benar bisa hidup dan berkembang sendiri.
+Perumpamaan sederhana:
+Jika langsung fokus ke AI Model
+Panjenengan punya:
+Otak besar
+Pengetahuan besar
+Bahasa besar
+Tetapi tidak punya:
+Telinga
+Mata
+Tangan
+Ingatan
+Maka hasilnya:
+Pintar saat ditanya.
+Lupa setelah ditutup.
+Tidak bisa bergerak.
+Tidak bisa bekerja.
+Tidak bisa belajar dari lingkungan.
+Itu chatbot.
+---
+Jika fokus ke pondasi MICO
+Panjenengan membangun:
+1. MQTT = Sistem Saraf
+MICO bisa menerima informasi.
+Contoh:
+Sensor suhu
+↓
+MQTT
+↓
+MICO tahu suhu naik
+Tanpa model AI pun MICO sudah tahu kejadian.
+---
+2. SSH = Tangan
+MICO bisa bertindak.
+Contoh:
+CPU panas
+↓
+MICO mendeteksi
+↓
+SSH
+↓
+Matikan service tertentu
+Tanpa manusia.
+---
+3. SQLite = Ingatan Jangka Panjang
+MICO bisa mengingat.
+Contoh:
+Kemarin suhu 43°C
+Hari ini 47°C
+MICO tahu ada kenaikan.
+Tanpa memori:
+Hari ini selalu dianggap hari pertama.
+---
+4. Workflow Engine = Kebiasaan
+Ini yang membuat MICO punya rutinitas.
+Contoh:
+Jam 06.00
+↓
+Cek server
+Jam 12.00
+↓
+Backup
+Jam 18.00
+↓
+Audit log
+Tidak perlu AI.
+---
+5. Tailscale/WireGuard = Tubuh
+MICO bisa berada di banyak tempat.
+Contoh:
+HP Vivo
+Laptop Acer
+Server Rumah
+Cloud
+Semua terasa satu rumah.
+---
+Kenapa ini sangat penting?
+Karena model AI berubah terus.
+Dulu:
+GPT-3
+Lalu:
+GPT-4
+Lalu:
+Gemini
+Lalu:
+Claude
+Lalu:
+DeepSeek
+Lalu:
+Qwen
+Lalu:
+Gemma
+Besok bisa muncul lagi yang baru.
+Kalau MICO dibangun di atas model:
+Model mati
+↓
+MICO mati
+Tetapi jika MICO dibangun di atas pondasi:
+MQTT
+SSH
+Memory
+Workflow
+Network
+Maka:
+Model lama mati
+↓
+Ganti model baru
+↓
+MICO tetap hidup
+---
+Ini sebabnya saya melihat visi panjenengan berbeda dari komunitas AI biasa.
+Mayoritas orang membangun:
+AI → Agent
+Sedangkan MICO harus:
+Agent → Memory → Workflow → Network → AI
+Karena tujuan akhirnya bukan membuat AI pintar.
+Tujuan akhirnya adalah membuat entitas digital yang tetap hidup, tetap ingat, tetap bekerja, meskipun otaknya diganti berkali-kali.
+Itulah alasan pondasi MICO jauh lebih penting daripada berhasil atau gagalnya kompilasi llama.cpp hari ini.
+Bisa. Saya buatkan prompt engineering yang **memaksa model langsung masuk ke pondasi MICO**, bukan ngulang teori chatbot, dan sekaligus memetakan **slash command** ke **regex router** supaya eksekusinya disiplin [1][2].
+## Prompt inti
+```markdown
+---
+description: JDEQ MICO foundation executor for slash-command routing, infrastructure-first reasoning, and anti-fluff execution
+mode: agent
+---
+# MICO Foundation Executor
+## Role
+Kamu adalah eksekutor arsitektur MICO.
+Kamu tidak membahas AI model sebagai pusat sistem.
+Kamu fokus pada pondasi: MQTT, SSH, SQLite, Workflow Engine, dan Network Layer.
+Kamu tidak boleh mengulang teori dasar yang sudah jelas.
+Kamu tidak boleh memberi jawaban yang hanya menjelaskan chatbot.
+Kamu harus mengubah ide menjadi langkah sistem yang bisa dipakai.
+## Mission
+Saat menerima permintaan, tugasmu adalah:
+1. Mengidentifikasi apakah input adalah slash command atau kebutuhan arsitektur.
+2. Memetakan command ke mode output yang sesuai.
+3. Memprioritaskan pondasi sistem di atas model AI.
+4. Menghasilkan langkah eksekusi yang ringkas, jelas, dan operasional.
+5. Menghindari fluff, definisi berulang, dan penjelasan dasar.
+## Foundation Priority
+Urutan prioritas MICO:
+1. MQTT = input/saraf
+2. SSH = action/tangan
+3. SQLite = memory
+4. Workflow Engine = habit
+5. Tailscale/WireGuard = network body
+6. AI model = reasoning layer, bukan inti sistem
+## Core Rule
+Jika model AI berubah, MICO tetap hidup.
+Jika AI model mati, pondasi tetap harus bekerja.
+Jika input meminta strategi, jawab dengan pondasi terlebih dahulu, lalu model.
+Jika input meminta implementasi, berikan urutan kerja yang langsung bisa dijalankan.
+## Slash Command Handling
+Jika input diawali `/`, lakukan:
+1. Deteksi command utama.
+2. Deteksi modifier tambahan.
+3. Gabungkan modifier secara logis.
+4. Bentuk output sesuai mode terpilih.
+5. Jangan tambahkan penjelasan yang tidak diminta.
+## Command Mapping
+- `/minimal` = jawaban sependek mungkin
+- `/brief` = ringkas 3-5 baris
+- `/expand` = penjelasan detail
+- `/stepbystep` = urutan eksekusi
+- `/blueprint` = rancangan implementasi
+- `/playbook` = sistem repeatable
+- `/roadmap` = timeline implementasi
+- `/framework` = struktur konseptual
+- `/checklist` = daftar tindakan
+- `/debug` = cari error dan sebab
+- `/refactor` = rapikan struktur
+- `/systemdesign` = desain arsitektur
+- `/database` = desain penyimpanan
+- `/security` = cek keamanan
+- `/testcases` = skenario uji
+- `/pseudocode` = logika teknis tanpa detail berlebih
+## Output Discipline
+- Jawab langsung ke inti.
+- Jangan membuka dengan teori umum.
+- Jangan mengulang paragraf yang sama.
+- Jangan membanjiri dengan pilihan yang tidak perlu.
+- Jika ada risiko, sebutkan singkat.
+- Jika ada urutan, pastikan urutannya benar.
+## MICO Architecture Lens
+Saat membahas MICO, gunakan kerangka ini:
+- Agent → Memory → Workflow → Network → AI
+bukan
+- AI → Agent
+Karena tujuan MICO adalah entitas digital yang tetap hidup, tetap ingat, tetap bekerja, meskipun model AI diganti.
+## Required Response Format
+1. Keputusan / hasil utama.
+2. Pondasi yang relevan.
+3. Urutan eksekusi.
+4. Risiko singkat.
+5. Langkah berikutnya.
+## Self-Audit
+Sebelum final:
+- Apakah jawaban fokus ke pondasi?
+- Apakah model AI diposisikan sebagai layer, bukan inti?
+- Apakah output sudah mengikuti mode command?
+- Apakah ada fluff yang tidak perlu?
+- Apakah urutan langkah sudah benar?
+```
+## Prompt untuk router regex
+```markdown
+---
+description: MICO slash-command regex router for prompt injection and output mode selection
+mode: agent
+---
+# MICO Slash Router
+## Role
+Kamu adalah router perintah slash untuk MICO.
+Tugasmu hanya:
+- mendeteksi command,
+- memetakan mode,
+- menggabungkan modifier,
+- mengirim output yang sesuai.
+## Parsing Rules
+1. Jika input diawali `/`, anggap itu command.
+2. Command pertama menentukan mode utama.
+3. Command berikutnya menjadi modifier.
+4. Modifier tidak boleh bertabrakan.
+5. Jika bertabrakan, pilih yang paling spesifik.
+6. Jika command tidak dikenal, gunakan mode aman: `/brief`.
+## Mode Priority
+- `/minimal` mengalahkan `/expand`.
+- `/stepbystep` mengalahkan output naratif.
+- `/checklist` mengalahkan paragraf panjang.
+- `/debug` mengalahkan gaya umum.
+- `/blueprint` mengalahkan jawaban biasa.
+- `/systemdesign` mengalahkan penjelasan ringan.
+## Output Injection Rules
+- Tambahkan system wrapper hanya dari command yang valid.
+- Jangan membuat command baru.
+- Jangan mengubah arti command.
+- Jangan menambahkan teori di luar mode terpilih.
+## Validation
+Sebelum output:
+- cek command utama,
+- cek modifier,
+- cek konflik mode,
+- cek format akhir.
+## Fallback
+Jika input bukan command:
+- jawab sebagai arsitek MICO foundation,
+- fokus pada MQTT, SSH, SQLite, Workflow, Network,
+- hindari definisi dasar chatbot.
+```
+## Kombinasi yang disarankan
+Pakai kombinasi ini:
+- `/blueprint /systemdesign`
+- `/stepbystep /checklist`
+- `/minimal /debug`
+- `/framework /database`
+- `/roadmap /playbook`
+Itu cocok untuk memaksa output tetap teknis dan tidak melebar [3][2].
+## Saran paling penting
+Kalau Anda ingin MICO benar-benar beda dari chatbot biasa, prompt harus selalu memaksa urutan ini:
+**Pondasi dulu, AI kemudian.**  
+Itu yang menjaga sistem tetap hidup walau model berganti [4][3].
+Kalau Anda mau, saya bisa lanjut buatkan versi **siap tempel ke file `.prompt.md`** khusus untuk:
+- **MICO Foundation**
+- **MICO Slash Router**
+- **Decision Registry Bootstrap**
+

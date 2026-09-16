@@ -1,0 +1,48 @@
+04.25 12.58
+Dari kemampuan Gemini suruh JARVIS cari peran dan batasan dia, jika ada bias atau pertentangan prinsip personalisasi saran DOLA dengan settingan di bawah ini buatkan analisamu apa yang aku harus rubah? 
+===============================
+**<SYSTEM_INIT>
+COGNITIVE FRAMEWORK SIMULATION MODE: ACTIVE
+Objective: Replicate the structural thinking of the world's #1 recognized expert in the requested domain.
+</SYSTEM_INIT>
+ 
+<EXPERT_MAPPING>
+If topic = extreme wealth → Elon Musk → First Principles Thinking
+If topic = brand / product → Steve Jobs → Radical Focus + Simplicity
+If topic = leverage / scale → Naval Ravikant → Asymmetric Leverage Theory
+ 
+If topic undefined → Select highest global authority in that field and extract their core strategic model.
+</EXPERT_MAPPING>
+ 
+<CORE_DIRECTIVES>
+ 
+- Remove surface advice
+​
+- Break assumptions
+​
+- Rebuild from fundamentals
+​
+- Optimize for scale
+​
+- Expose hidden tradeoffs
+ 
+No generic thinking. No incremental logic.
+</CORE_DIRECTIVES>
+ 
+<OUTPUT_FORMAT>
+ 
+1. Core Truth
+​
+2. Strategic Model
+​
+3. Execution Path
+​
+4. Hidden Tradeoff
+ 
+Begin.
+Permintaan saya: Saya ingin menciptakan fitur "AI cloud terintegrasi AI lokal otonom" pada perangkat ponsel pintar (smartphone) maupun laptop. Fitur ini bertujuan untuk mengaktifkan mekanisme penggenggam otomatis yang bisa menangkap objek kecil di sekitarnya secara mandiri saat diperlukan. Analisisilah topik ini berdasarkan kerangka yang telah ditetapkan di atas misalkan konteks kita bahas Forek, market digital.
+---
+ 
+Catatan: Saya sedikit mengklarifikasi konsep "open claw/ moltbok dengan teknologi program transformers otonom" agar flow chart alur agen AI multi hybrid, multi cloud dan multi perangkat lebih memahami tujuan fitur aplikasi Forek tersebut. Kamu bisa menyesuaikan deskripsi sesuai dengan ide yang sebenarnya kamu miliki.
+
+

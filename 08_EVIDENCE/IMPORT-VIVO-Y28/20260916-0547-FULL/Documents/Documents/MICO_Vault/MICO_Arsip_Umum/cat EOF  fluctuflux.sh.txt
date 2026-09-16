@@ -1,0 +1,36 @@
+01.17 23.46
+cat <<EOF > fluctuflux.sh
+#!/data/data/com.termux/files/usr/bin/bash
+export JANGKAR_IMEI="VIVO_Y28_UNIQUE_ID"
+export WORK_DIR="\$HOME/flux_engine"
+mkdir -p \$WORK_DIR/payload \$WORK_DIR/output
+
+atomize_payload() {
+    echo -e "\e[31m[☢️] ATOMIZING: Data dadi partikel 1-bit...\e[0m"
+    find \$WORK_DIR/payload/ -type f -not -name "*.flux" | xargs -I {} -P 4 openssl enc -aes-256-cbc -salt -in {} -out {}.flux -k \$JANGKAR_IMEI
+}
+
+tunneling_flux() {
+    echo -e "\e[34m[] TUNNELING: Ngliwati lorong 120 Kbps...\e[0m"
+    if [ -f "./corong_dinamik.py" ]; then
+        python3 ./corong_dinamik.py --capacity 120 --keys 1000 --mode super-fast
+    else
+        echo "[!] Error: corong_dinamik.py mboten wonten!"
+    fi
+}
+
+expand_reality() {
+    echo -e "\e[32m[✨] EXPANDING: AI Fluclight mbangun maneh...\e[0m"
+    for f in \$WORK_DIR/payload/*.flux; do
+        [ -e "\$f" ] || continue
+        openssl enc -d -aes-256-cbc -in "\$f" -out "\${f%.flux}" -k \$JANGKAR_IMEI
+    done
+}
+
+atomize_payload
+tunneling_flux
+expand_reality
+echo -e "\e[35m[✅] PROSES SELESAI!\e[0m"
+EOF
+chmod +x fluctuflux.sh
+

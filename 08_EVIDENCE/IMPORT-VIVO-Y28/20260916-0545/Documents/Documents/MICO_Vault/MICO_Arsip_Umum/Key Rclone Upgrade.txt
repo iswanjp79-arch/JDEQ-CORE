@@ -1,0 +1,156 @@
+03.07 15.38
+Key Rclone Upgrade :
+Report issues at https://termux.dev/issues
+➜  sandbox rclone config create BRANKAS_UTAMA drive scope=drive
+2026/02/13 11:03:46 NOTICE: Make sure your Redirect URL is set to "http://127.0.0.1:53682/" in your custom config.
+2026/02/13 11:03:46 NOTICE: If your browser doesn't open automatically go to the following link: http://127.0.0.1:53682/auth?state=0clg9Qc-nO8vh-E9TIDAPQ
+2026/02/13 11:03:46 NOTICE: Log in and authorize rclone for access
+2026/02/13 11:03:46 NOTICE: Waiting for code...
+2026/02/13 11:03:56 NOTICE: Got code
+[BRANKAS_UTAMA]
+type = drive
+scope = drive
+token = {"access_token":"ya29.a0AUMWg_KOzNvpZtpCg3Rm14zHutIobOpxUrH8_ZKKOAnrEYMIeGTJ0xPkR9GsxrjCHBJ1q06sdk4FKLAGsnM8aMn8uZyxNvmUX8iC2CtdBFy1apqZLl4Nu2zKarWpNAOoDAtIYRqdjrqDVcECap8obaYpoeF1sKEj-JKI4-4MePCBjgyLTRecgb5e2L2n0CMioeJsO5waCgYKAWASARYSFQHGX2MimWAe5gCQA9LsuKywAKnnEQ0206","token_type":"Bearer","refresh_token":"1//0gfKPXUol8NzQCgYIARAAGBASNwF-L9IrboaKj7sU8GVWrQnoQ0bhGEZsiwwV4YkG9DaNRkCcJcPLU9uhNmgpKejb8mabs2tn7aw","expiry":"2026-02-13T12:03:56.307490797Z","expires_in":3599}
+team_drive =
+➜  sandbox rclone config create CADANGAN_NYAWA drive scope=drive
+
+2026/02/13 11:04:15 NOTICE: Make sure your Redirect URL is set to "http://127.0.0.1:53682/" in your custom config.
+2026/02/13 11:04:15 NOTICE: If your browser doesn't open automatically go to the following link: http://127.0.0.1:53682/auth?state=psRVvDqetcHdQ0R_-9kl3Q
+2026/02/13 11:04:15 NOTICE: Log in and authorize rclone for access
+2026/02/13 11:04:15 NOTICE: Waiting for code...
+2026/02/13 11:04:26 NOTICE: Got code
+[CADANGAN_NYAWA]
+type = drive
+scope = drive
+token = {"access_token":"ya29.a0AUMWg_IhRMaRjoJnPJUQqULqHUZNawr5S_pgCL-STq0i2znheddA0nddqpe3-NU9b_lbmVgOvx3hKBExW8qX9sdHEY2JLUuFeF5NhoD7U7poW6q8yISN1QlxyTn1EgE7RUnQoUZPbBQKasV6lnj3TWLH0kaadfYIFe4h6yySqGBETM6Et7Ph7O5Fc-wPPq3D0X021V0aCgYKAWASARASFQHGX2MiWujhngyfavOuI1CA2dcTpA0206","token_type":"Bearer","refresh_token":"1//0gKkd1e2M9tcXCgYIARAAGBASNwF-L9IrC4iOl-BBUpZvh-dQv2wkPuYpPFLQLtzzixFJaYOY54xfyAwWQrSfoL0Mi2K7WXGK7SE","expiry":"2026-02-13T12:04:25.474317183Z","expires_in":3599}
+team_drive =
+➜  sandbox rclone config create SNAPSHOT_VIVO drive scope=drive
+
+2026/02/13 11:04:57 NOTICE: Make sure your Redirect URL is set to "http://127.0.0.1:53682/" in your custom config.
+2026/02/13 11:04:57 NOTICE: If your browser doesn't open automatically go to the following link: http://127.0.0.1:53682/auth?state=VX1wl27TnynfKg61RqRIkA
+2026/02/13 11:04:57 NOTICE: Log in and authorize rclone for access
+2026/02/13 11:04:57 NOTICE: Waiting for code...
+2026/02/13 11:05:07 NOTICE: Got code
+[SNAPSHOT_VIVO]
+type = drive
+scope = drive
+token = {"access_token":"ya29.a0AUMWg_K0CgWHsju0AvsqVsz_lZ8Q810GQkPGojdqnFWduL2KjFAcXynrmvBFRIspBmSxD33RqdzPrOQlT2EEVbywCdPWlyGhaxXKnfVbC-Q_sjjHbnKcrp7LTjrjLIrAF-88WLIJxekK7bNcdlZr0KPADex_pmSlPPe3PrY5ABVjH9OOgyjEUH9Vnnu2GecXJy5-QfgaCgYKAScSARQSFQHGX2MiYDluLWL--D_t0O5C8WtLmg0206","token_type":"Bearer","refresh_token":"1//0gEIpqmZHr_9SCgYIARAAGBASNwF-L9IrS8aud6-r3m2HnRzJjejAcy6GUq_WaBxB4OYpL8Mgs-4aYObPe4YWTDQhwiRKXQ0pWBI","expiry":"2026-02-13T12:05:06.527801185Z","expires_in":3599}
+team_drive =
+➜  sandbox rclone config create SNAPSHOT_VIVO drive scope=drive
+
+2026/02/13 11:05:14 NOTICE: Make sure your Redirect URL is set to "http://127.0.0.1:53682/" in your custom config.
+2026/02/13 11:05:14 NOTICE: If your browser doesn't open automatically go to the following link: http://127.0.0.1:53682/auth?state=O_4xuhl7Pi4vLtraSrTmXw
+2026/02/13 11:05:14 NOTICE: Log in and authorize rclone for access
+2026/02/13 11:05:14 NOTICE: Waiting for code...
+2026/02/13 11:05:23 NOTICE: Got code
+[SNAPSHOT_VIVO]
+type = drive
+scope = drive
+token = {"access_token":"ya29.a0AUMWg_JzL31kZ-p7Z39SPw9zuhrXiWh-3nCd95oV1KaiGaR0VG0Dq5flzl0EQjOTHMcA5iRdfOqHjjYUhD0mgQUhivf03-EdnZftzPiDccGTZ8MVd-yTatUsVI_If81mRmAgLVxBY5WFCQtDENjOsq8l-bAibsamZxJD5Pb9TJNi2f498tcUAUMI0jVE9rDCISSAVrMaCgYKAT8SARQSFQHGX2MihpHVN0QsIy98t1hW8HfWvw0206","token_type":"Bearer","refresh_token":"1//0gdFq9EMp378OCgYIARAAGBASNwF-L9IrejlPcZI-nFeb2EKD5hjO6NHkz-vW1YuMRlYlyG8EHD7-0uZvNY2Jhg8_suugW4t2y28","expiry":"2026-02-13T12:05:23.053868033Z","expires_in":3599}
+team_drive =
+➜  sandbox rclone config create SNAPSHOT_VIVO drive scope=drive
+
+2026/02/13 11:05:31 NOTICE: Make sure your Redirect URL is set to "http://127.0.0.1:53682/" in your custom config.
+2026/02/13 11:05:31 NOTICE: If your browser doesn't open automatically go to the following link: http://127.0.0.1:53682/auth?state=LgYyiynBuIK4sdAjIUcdMw
+2026/02/13 11:05:31 NOTICE: Log in and authorize rclone for access
+2026/02/13 11:05:31 NOTICE: Waiting for code...
+2026/02/13 11:05:42 NOTICE: Got code
+[SNAPSHOT_VIVO]
+type = drive
+scope = drive
+token = {"access_token":"ya29.a0AUMWg_KzZ_DP3_lDbA7cuwLcnA_qeSaAeoSz0Fb34X_gM5iYHPg3bIaDfgjgVaKNtCgE-x1mjpKDEnIiGrRWSQMPhOnDfcQOrlC78EcHB1fKys6m3hMwPR-kCHC-zu3BjZzIbseB6Y7HqU_2jpPZJZxnqxNR18xr-De4ibbykj0vOxCZHl_eOwGwmMBV0sOwYRxQIGgaCgYKAeISARQSFQHGX2MiEcLLBUaCUfMeVJbcbh37Rw0206","token_type":"Bearer","refresh_token":"1//0g5SOttwFJ1UCCgYIARAAGBASNwF-L9IrM6IS7C4HZj8fH9zp5zpTWG200g88XUWAWCi2CwuFazgRiLWqGRphsAytk-8CEscEQsI","expiry":"2026-02-13T12:05:41.360202188Z","expires_in":3599}
+team_drive =
+➜  sandbox rclone config create SNAPSHOT_VIVO drive scope=drive
+
+2026/02/13 11:05:48 NOTICE: Make sure your Redirect URL is set to "http://127.0.0.1:53682/" in your custom config.
+2026/02/13 11:05:48 NOTICE: If your browser doesn't open automatically go to the following link: http://127.0.0.1:53682/auth?state=TBEwH9LphAJYZa7PJjllOw
+2026/02/13 11:05:48 NOTICE: Log in and authorize rclone for access
+2026/02/13 11:05:48 NOTICE: Waiting for code...
+2026/02/13 11:05:56 NOTICE: Got code
+[SNAPSHOT_VIVO]
+type = drive
+scope = drive
+token = {"access_token":"ya29.a0AUMWg_JuOKfETnPBHDZ-wPU8FRjF_fuZ2AatsMlzGsKGIpMRR--VSk16bsQi9HJJuK7CduRLzCqe9YtbvY8bOA1XrKSTIkdBhRN3TomvUzv0bQTuTYnu6vBMIgUXiiodWiaci7EGQpV5GfrsQZUwKv0072st7EsxioMpGOzaR6c31owBb48fWLle9IdEdOqyF1VLWnAaCgYKAQkSARUSFQHGX2Mi6BdOnDv8heXjSw3QgaJiPQ0206","token_type":"Bearer","refresh_token":"1//0gtfJDoquprmCCgYIARAAGBASNwF-L9IrIxzRrnR0B2RLr_OpznpHYMpkm-JmARIJilK2CZEw9xPO-mmPwkK3D-DCs2xCUbC6vrg","expiry":"2026-02-13T12:05:56.129582419Z","expires_in":3599}
+team_drive =
+➜  sandbox rclone config create SNAPSHOT_VIVO drive scope=drive
+
+2026/02/13 11:06:03 NOTICE: Make sure your Redirect URL is set to "http://127.0.0.1:53682/" in your custom config.
+2026/02/13 11:06:03 NOTICE: If your browser doesn't open automatically go to the following link: http://127.0.0.1:53682/auth?state=6dPRDIRcbln68oTb74rwCQ
+2026/02/13 11:06:03 NOTICE: Log in and authorize rclone for access
+2026/02/13 11:06:03 NOTICE: Waiting for code...
+2026/02/13 11:06:13 NOTICE: Got code
+[SNAPSHOT_VIVO]
+type = drive
+scope = drive
+token = {"access_token":"ya29.a0AUMWg_JQkKiqI3Rr0_mgmGYj0xxHwDX6ObZa69KUV7CwdnI4A6vuzscPjMFuL7Eo6IY-G_l6HzFDZffeDONfe-36jnc--K0W9Ckj5Vr_eg3cA_c-JzhErDElzXeps9FG4iAqbG952_w3WJPRcjYMIhh6LIfMvWMVYYrlsInBuKx717TG6NEvD4dvAwdJGEy2I9AV1_oaCgYKAXoSARASFQHGX2MioNgUoEFXxdmrV0l3pX-Tbw0206","token_type":"Bearer","refresh_token":"1//0gFQABpGQyeuNCgYIARAAGBASNwF-L9IrNesmiUD4Yg_VWe6bm5KzQaqJGFJaIcOYhCRTW1l3fTCeHrdzoVXc8ad-GG-lp-z-P8s","expiry":"2026-02-13T12:06:12.908802112Z","expires_in":3599}
+team_drive =
+➜  sandbox # Gawe folder backup ing internal storage Vivo
+mkdir -p /sdcard/JDEQ_SYSTEM_LOCK/
+
+# Salin file config rclone menyang internal
+cp ~/.config/rclone/rclone.conf /sdcard/JDEQ_SYSTEM_LOCK/rclone_$(date +%Y%m%d).conf
+
+echo "[+] DOKUMEN SISTEM: LOCKED & SECURED"
+
+[+] DOKUMEN SISTEM: LOCKED & SECURED
+➜  sandbox # Ganti siji-siji jenenge (Xenon, Pulse, Neural, Void)
+rclone config create Xenon_Core_Vault drive scope=drive
+
+2026/02/13 11:22:58 NOTICE: Make sure your Redirect URL is set to "http://127.0.0.1:53682/" in your custom config.
+2026/02/13 11:22:58 NOTICE: If your browser doesn't open automatically go to the following link: http://127.0.0.1:53682/auth?state=uXQT5xZpYCz6zb-H0vuR-Q
+2026/02/13 11:22:58 NOTICE: Log in and authorize rclone for access
+2026/02/13 11:22:58 NOTICE: Waiting for code...
+2026/02/13 11:23:22 NOTICE: Got code
+[Xenon_Core_Vault]
+type = drive
+scope = drive
+token = {"access_token":"ya29.a0AUMWg_KpTOaHqyHs2MrQMGoDpPgj9pPHDNwGhUhf_BE-vTK_04RuCnaUxSp0AU4kSksF5Jfsf_qrfrk_4uu_xBSDt1q_J-M3ojVTVXsXlAI8663sWY13LbQczKwIefzls-1cYfnfKGHK67YexHVO_m7Hkt1THpHwVJf0s3DccArRS9dtTMk0F-fJShbvEvaRYI0UdmkaCgYKAZMSARUSFQHGX2Mim_ldIfFTfqNEpauQxfpwOw0206","token_type":"Bearer","refresh_token":"1//0gUNt39yxlP06CgYIARAAGBASNwF-L9IrJL0wdOi_XgRNe6GAcMxksu6LRlwXsg4CCKwr0RIckFMb8pKR8Yv0s4yTPv5ZO5kESxM","expiry":"2026-02-13T12:23:22.138003097Z","expires_in":3599}
+team_drive =
+➜  sandbox # Ganti siji-siji jenenge (Xenon, Pulse, Neural, Void)
+rclone config create Quantum_Pulse_Sync
+ drive scope=drive
+
+Usage:
+  rclone config create name type [key value]* [flags]
+
+Flags:
+      --all               Ask the full set of config questions
+      --continue          Continue the configuration process with an answer
+  -h, --help              help for create
+      --no-obscure        Force any passwords not to be obscured
+      --no-output         Don't provide any output
+      --non-interactive   Don't interact with user and return questions
+      --obscure           Force any passwords to be obscured
+      --result string     Result - use with --continue
+      --state string      State - use with --continue
+
+Use "rclone [command] --help" for more information about a command.
+Use "rclone help flags" for to see the global flags.
+Use "rclone help backends" for a list of supported services.
+Command create needs 2 arguments minimum: you provided 1 non flag arguments: ["Quantum_Pulse_Sync"]
+No command drive found, did you mean:
+ Command drill in package ldns
+ Command deriv in package mesa-demos from the x11-repo repository
+ Command prove in package perl
+ Command dpipe in package vde2
+➜  sandbox # Ganti siji-siji jenenge (Xenon, Pulse, Neural, Void)
+rclone config createQuantum_Pulse_Syncdrive scope=drive
+
+Usage:
+  rclone config [flags]
+  rclone config [command]
+
+Available commands:
+  create      Create a new remote with name, type and options.
+  delete      Delete an existing remote.
+  disconnect  Disconnects user from remote
+  dump        Dump the config file as JSON.
+  edit        Enter an interactive configuration session.
+  encryption  set, remove and check the encryption for the config file
+  file        Show path of configuration file in use.
+  password    Update password in an existing remote.
+  paths       Show paths used for configuration, cache, temp etc.
+  providers   List in JSON format all the providers and options.
+  reconnect   Re-authenticates user with remote.
+  redacted    Print redacted (decrypted) config file, or the redacted config for a single remote.
+  show        Print (decrypted) config 

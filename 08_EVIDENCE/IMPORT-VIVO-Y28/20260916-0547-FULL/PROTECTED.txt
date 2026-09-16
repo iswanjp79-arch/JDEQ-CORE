@@ -1,0 +1,10 @@
+=== FOLDER YANG DILINDUNGI (TIDAK DITARIK) ===
+- .jdeq
+- .config/mico-vault
+- .config/rclone
+- vault
+- api_key
+- api_keys
+
+Cek dilakukan via ADB shell (read-only):
+(tidak terlihat via ADB)

@@ -1,0 +1,21 @@
+02.19 18.38
+# --- SINKRON KE LAPTOP ---
+echo "[+] MENGHUBUNGKAN KE LAPTOP TRAVELMATE..."
+# Pastikan Laptop dalam mode ADB Debugging
+adb kill-server
+adb start-server
+adb shell "echo 'SYNC_FROM_VIVO_Y28: SUCCESS' > /sdcard/sync_log.txt" || echo "[⚠️] Belum ada perangkat yang terhubung"
+adb pull /sdcard/sync_log.txt ./01_BINARY_CORE/ || echo "[⚠️] Gagal menarik file log"
+echo "[+] DNA SINKRON: MEGAZORD_ONE_CORE LOCKED"
+
+# --- SETUP RCLONE ---
+echo "[+] MEMBUAT DIREKTORI CONFIG RCLONE..."
+mkdir -p ~/.config/rclone/
+
+# Cek apakah file config lama ada
+if [ -f ~/.config/rclone/rclone.conf ]; then
+    echo "[+] File config RCLONE sudah ada"
+else
+    echo "[+] Silakan buat config RCLONE dengan perintah: rclone config"
+fi
+

@@ -1,0 +1,7 @@
+07.14 14.04
+boot hd0a:/bsd
+=============
+Ketik reboot. Saat muncul boot>, ketik boot hd0a:/bsd.
+Kalau kembali ke pilihan, ketik ini: machine boot hd0a.
+Kalau tetap gagal, tutup paksa VirtualBox. Buka Settings > System > Boot Order. Geser Hard Disk ke paling atas. Klik OK. Nyalakan ulang. Pasti langsung masuk MICO-JDEQ#. Setelah itu, ketik sh /etc/rc. Semua selesai. 
+

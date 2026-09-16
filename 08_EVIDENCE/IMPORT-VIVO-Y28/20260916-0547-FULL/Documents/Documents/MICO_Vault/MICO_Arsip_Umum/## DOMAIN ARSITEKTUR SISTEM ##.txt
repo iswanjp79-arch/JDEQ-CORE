@@ -1,0 +1,121 @@
+07.03 23.52
+## DOMAIN ARSITEKTUR SISTEM ##
+=============================
+ 100 Item Utama untuk Fondasi Tahap 1 MICO–JDEQ
+(Dikelompokkan agar mudah dicari di perpustakaan digital)
+🧱 ARSITEKTUR SISTEM (1–15)
+1. System Architecture Blueprint Design
+2. Single Source of Truth (SSOT) Pattern
+3. Canonical Data Model
+4. Root Production Folder Convention
+5. Namespace Policy in Software
+6. Symlink Management in Linux
+7. Filesystem Hierarchy Standard (FHS)
+8. Event-Driven Architecture Pattern
+9. Message Queue (MQTT) Basics
+10. Orchestration vs Choreography
+11. Guardrail Pattern for AI Systems
+12. Read-Only Audit Design
+13. Immutable Infrastructure Concept
+14. Software Architecture Decision Records (ADR)
+15. Technical Debt Management
+🛡️ TATA KELOLA & GOVERNANCE (16–30)
+16. IT Governance Framework (COBIT, ITIL)
+17. ISO 9001 Quality Management Principles
+18. ISO 27001 Information Security Basics
+19. ISO 31000 Risk Management Overview
+20. OHSAS 18001 / ISO 45001 Safety in Tech
+21. Policy as Code Concept
+22. Access Control List (ACL) Design
+23. Role-Based Access Control (RBAC)
+24. Audit Trail and Logging Standards
+25. Non-Destructive Testing in Software
+26. Evidence-Based Audit Methodology
+27. Version Control for Configuration (Git)
+28. Immutable Log Design
+29. Checksum and Hash Verification (SHA-256)
+30. Digital Signature and Verification
+ KEAMANAN SIBER (31–45)
+31. API Key Management Best Practices
+32. GPG Encryption for Secrets
+33. Plaintext vs Encrypted Storage
+34. Supply Chain Security (npm, pip)
+35. Man-in-the-Middle (MITM) Attack Prevention
+36. TLS/SSL Certificate Basics
+37. Secure Environment Variables Handling
+38. Android Permissions Model (Termux)
+39. Penetration Testing Fundamentals
+40. OWASP Top 10 for APIs
+41. Secrets Vault (HashiCorp Vault, GPG)
+42. Malware Detection in Scripts
+43. Dependency Vulnerability Scanning
+44. Firewall Basics (iptables, nftables)
+45. Zero Trust Architecture Principles
+ LINUX & TERMUX (46–60)
+46. Linux Filesystem Basics (ext4, f2fs)
+47. Termux on Android – Deep Dive
+48. Symlink, Hardlink, and Inode Concepts
+49. Bash Scripting for Automation
+50. Process Management (ps, top, htop)
+51. Cron Jobs and Task Scheduling
+52. Environment Variables in Linux
+53. Path Resolution (realpath, readlink)
+54. Disk Usage and Free Space (df, du)
+55. Memory Management in Android/Linux
+56. Nix-on-Droid Reproducible Builds
+57. Proot and Chroot in Termux
+58. Boot Sequence on Android
+59. Service Management (runit, daemontools)
+60. Log Rotation and Management
+ JARINGAN & CLOUD (61–70)
+61. Tailscale Mesh VPN Basics
+62. Cloudflare Tunnel (cloudflared)
+63. Ngrok for Local Exposure
+64. HTTP/HTTPS Protocol Fundamentals
+65. REST API Design Principles
+66. Webhook Pattern for Automation
+67. n8n Workflow Automation Platform
+68. Cloud Storage Gateway (rclone)
+69. 3-2-1 Backup Rule
+70. Offline-First System Design
+🤖 AI & MULTI-AGENT SYSTEMS (71–85)
+71. Multi-Agent System Architecture
+72. Large Language Model (LLM) Basics
+73. API Integration for ChatGPT, Gemini, Claude
+74. Blackbox CLI Usage and Limitations
+75. Prompt Engineering Fundamentals
+76. Token Limits and Context Window
+77. AI Guardrails and Safety Layers
+78. Bias Mitigation in AI Outputs
+79. Agent Role Separation Pattern
+80. Decision Registry for AI Agents
+81. Emergent Behavior in Multi-Agent Systems
+82. Hallucination Prevention Techniques
+83. Cognitive Architecture (SOAR, ACT-R)
+84. Federated Learning on Edge Devices
+85. Local LLM (llama.cpp, Ollama) on Termux
+ DATA & MEMORY (86–90)
+86. SQLite for Embedded Systems
+87. JSON Schema for Configuration
+88. Vector Database for AI Memory
+89. Knowledge Graph Basics
+90. Data Backup and Recovery Strategy
+ DEVOPS & MONITORING (91–100)
+91. CI/CD for Small Projects
+92. Health Check Endpoint Design
+93. Self-Healing Systems Patterns
+94. Circuit Breaker Pattern
+95. Watchdog Timer Implementation
+96. Resource Monitoring on Android
+97. Bash Script for Automated Audit
+98. Incident Response Plan Template
+99. Post-Mortem Analysis (RCA)
+100. Definition of Done in Engineering
+---
+ Cara Menggunakan Daftar Ini
+1. Buka perpustakaan digital Anda (bisa Google Scholar, arXiv, GitHub, Medium, atau bahkan YouTube).
+2. Ketik satu per satu kata kunci di atas — cukup 2-3 item per hari.
+3. Hubungkan dengan yang sudah kita kerjakan: misalnya saat belajar "Symlink Management", langsung cek folder /JDEQ/TREE_L yang sudah kita perbaiki.
+4. Catat di knowledge/ atau di obsidian Anda agar menjadi bagian dari "katalog hidup" MICO.
+
+

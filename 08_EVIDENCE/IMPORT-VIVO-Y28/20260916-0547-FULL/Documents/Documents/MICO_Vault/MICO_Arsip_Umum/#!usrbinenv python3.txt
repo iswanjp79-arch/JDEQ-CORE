@@ -1,0 +1,163 @@
+06.14 01.53
+#!/usr/bin/env python3
+# Self-Awareness Service (Core Logic for AETERNA Resilience)
+# Authorship: Based on synthesis from Iswan Juman Pancoro, ST.
+import osimport timeimport jsonimport sqlite3
+import subprocess
+from datetime import datetime
+from paho.mqtt import client as mqtt
+# Asumsi: psutil untuk metrik sistem
+import psutil
+# Asumsi: logging untuk pencatatan
+import logging
+# --- Konfigurasi ---
+DB = "/var/lib/awareness/state.db"
+CONFIG = "/etc/awareness/config.json"
+MQTT_HOST = "localhost"
+MQTT_PORT = 1883
+TOPIC = "allspark/awareness/events"
+# Asumsi Interval Monitoring
+MONITOR_INTERVAL = 10
+# --- Logging Setup ---
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+# --- Database & MQTT Functions ---
+def ensure_db():
+"Memastikan database SQLite ada dan tabel events/state sudah dibuat."
+conn = sqlite3.connect(DB)
+c = conn.cursor()
+# Tabel events untuk mencatat semua tindakan/status
+c.execute('''
+CREATE TABLE IF NOT EXISTS events (
+id INTEGER PRIMARY KEY,
+timestamp TEXT,
+event_type TEXT,
+data TEXT)'')
+# Tabel state untuk menyimpan data key-value
+c.execute('''
+CREATE TABLE IF NOT EXISTS state (
+key TEXT PRIMARY KEY,
+value TEXT)'')conn.commit()return conn
+def log_event(conn, event_type, data):
+"Mencatat event ke database lokal."
+timestamp = datetime.now().isoformat()
+conn.execute("INSERT INTO events VALUES (NULL, ?, ?, ?)",
+(timestamp, event_type, json.dumps(data)))
+conn.commit()
+logging.info(f"LOGGED: {event_type} - {data}")
+def publish(client, event_type, data):
+"Menerbitkan event ke MQTT broker."
+payload = {
+timestamp: datetime.now().isoformat(),
+event_type: event_type,
+data: data}
+client.publish(TOPIC, json.dumps(payload), qos=1)
+logging.info(f"PUBLISHED: {event_type}")
+# --- Core Logic ---
+def check_system():
+"Mengambil metrik CPU, Memori, dan Disk."
+try:metrics = {
+cpu: psutil.cpu_percent(interval=1), # CPU usage over 1 second
+mem: psutil.virtual_memory().percent,
+disk: psutil.disk_usage('/').percent
+}return metrics
+except Exception as e:
+logging.error(f"Error checking system metrics: {e}")
+return {"cpu": 0, "mem": 0, "disk": 0}
+def check_broker():
+"Memverifikasi status layanan Mosquitto menggunakan systemctl."
+try:
+# Asumsi Termux menggunakan systemctl emulation (termux-services)
+subprocess.check_call(["sh", "-c", "systemctl status mosquitto > /dev/null 2>&1"])
+return True
+except subprocess.CalledProcessError:
+logging.warning("Mosquitto service is not running.")
+return False
+except FileNotFoundError:
+logging.warning("systemctl command not found (Termux-services not active?)")
+return False
+def run_actions(conn, client, metrics):
+"Memicu tindakan Self-Healing berdasarkan ambang batas."
+triggered = False
+# Ambang Batas Ancaman
+if metrics["cpu"] > 85:
+log_event(conn, "ALERT_CPU_HIGH", {"cpu_usage": metrics["cpu"]})
+publish(client, "ACTION_TRIGGERED", {"action": "scale_down", "reason": "High CPU"})
+# Pemicu Layanan scale_down (layanan eksternal)
+subprocess.Popen(["systemctl", "scale_down"])
+triggered = True
+if metrics["mem"] > 90:
+log_event(conn, "ALERT_MEM_HIGH", {"mem_usage": metrics["mem"]})
+publish(client, "ACTION_TRIGGERED", {"action": "checkpoint", "reason": "High Memory"})
+# Pemicu Skrip checkpoint (skrip eksternal)
+subprocess.Popen(["/usr/local/bin/checkpoint"])
+triggered = Truereturn triggereddef main():
+conn = ensure_db()
+client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION1, "awareness_service")
+client.connect(MQTT_HOST, MQTT_PORT, 60)
+client.loop_start()
+log_event(conn, "SERVICE_START", {"status": "Awareness service initialized"})
+publish(client, "SERVICE_START", {"status": "Awareness service initialized"})
+if not check_broker():
+log_event(conn, "ALERT_MQTT_DOWN", {"status": "MQTT broker not reachable during startup"})
+while True:
+metrics = check_system()
+log_event(conn, "METRICS_REPORT", metrics)
+publish(client, "METRICS_REPORT", metrics)
+run_actions(conn, client, metrics)
+time.sleep(MONITOR_INTERVAL)
+if __name__ == "__main__":
+main()
+#!/usr/bin/env bash
+# File Integrity Watcher Service
+# Uses inotifywait to monitor critical configuration changes.
+# --- Konfigurasi Kritis ---
+DIR="/opt/constitution"
+MQTT_HOST="localhost"
+MQTT_TOPIC="allspark/awareness/manifests"
+LOG_FILE="/var/log/watcher.log"
+# Strict mode: exit immediately if command fails
+set -euo pipefail
+echo "[Watcher] Monitoring directory: $DIR" | tee -a $LOG_FILE
+# Mengawasi direktori secara rekursif (-r) dan terus-menerus (-m)
+# Events yang diawasi: modify, create, delete, move
+inotifywait -r -m -e modify,create,delete,move $DIR |
+while read path action file; do
+TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+# Membuat payload JSON menggunakan jq
+# Asumsi jq terinstal di Termux Anda
+PAYLOAD=$(jq -n \
+--arg timestamp "$TIMESTAMP" \
+--arg path "$path" \
+--arg action "$action" \
+--arg file "$file" \{
+timestamp: $timestamp,
+path: $path,action: $action,file: $file,
+source: "ManifestWatcher"
+}')
+echo "[Watcher] CHANGE DETECTED: $action on $path$file" | tee -a $LOG_FILE
+# Menerbitkan event ke MQTT broker
+mosquitto_pub -h "$MQTT_HOST" -t "$MQTT_TOPIC" -m "$PAYLOAD" -q 1 || \
+echo "[Watcher] ERROR: Failed to publish to MQTT." | tee -a $LOG_FILE
+# Memanggil skrip validasi eksternal
+/usr/local/bin/validate_manifest "$path$file" "$action" || \
+echo "[Watcher] WARNING: Manifest validation failed for $file." | tee -a $LOG_FILE
+done[Unit]
+Description=J.A.R.V.I.S. Self-Awareness Service
+After=network.target mosquitto.service
+[Service]
+# User yang menjalankan layanan (pastikan user 'awareness' ada di sistem Anda)
+User=awareness
+Group=awareness
+# Lokasi skrip utama
+ExecStart=/usr/local/bin/awareness
+# Opsi Restart KRITIS untuk Self-Healing (AETERNA Resilience)
+Restart=always
+# Jeda 5 detik sebelum mencoba restart
+RestartSec=5
+# Output log akan diarahkan ke journal (atau log Termux)
+StandardOutput=journal
+StandardError=journal
+[Install]
+# Menjalankan layanan saat Termux/sistem dimulai
+WantedBy=multi-user.target
+

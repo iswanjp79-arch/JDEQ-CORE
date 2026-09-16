@@ -1,0 +1,37 @@
+06.30 14.52
+==> GRAFANA <==
+# ============================================================
+# MICO → GRAFANA CLOUD — VIA HOSTED PROMETHEUS METRICS
+# ============================================================
+cat > ~/JDEQ/bin/kirim_grafana_prometheus.sh << 'GRAFANA'
+#!/data/data/com.termux/files/usr/bin/bash
+# GANTI dengan kredensial dari Grafana Cloud
+GRAFANA_URL="https://prometheus-prod-01-eu-west-0.grafana.net/api/prom/push"
+GRAFANA_USER="08e9fe60-1a16-48bc-97dc-b27b33496f97"
+GRAFANA_TOKEN="prometheus.remote_write "metrics_hosted_prometheus" {
+   endpoint {
+      name = "hosted-prometheus"
+      url  = "https://prometheus-prod-52-prod-ap-southeast-2.grafana.net/api/prom/push"
+      basic_auth {
+        username = "3340600"
+        password = "glc_eyJvIjoiMTgyOTI5NCIsIm4iOiJzdGFjay0xNzA4MTg4LWFsbG95LW1pY28tamRlcSIsImsiOiIzNUhaazVBTDdIQnJJMWlsMEgwNDBJNkkiLCJtIjp7InIiOiJwcm9kLWFwLXNvdXRoZWFzdC0yIn19"
+      }
+   }
+}"
+while true; do
+  RAM=$(free -m | awk '/Mem/{print $7}')
+  TEMP=$(cat /sys/class/thermal/thermal_zone0/temp 2>/dev/null | awk '{print $1/1000}' || echo 0)
+  LLM=$(pgrep llama-server > /dev/null && echo 1 || echo 0)
+  BRIDGE=$(pgrep -f pocketpal_node.js > /dev/null && echo 1 || echo 0)
+  INFINIX=$(ping -c 1 -W 2 100.103.39.81 > /dev/null 2>&1 && echo 1 || echo 0)
+  curl -s -u "$GRAFANA_USER:$GRAFANA_TOKEN" \
+    -X POST "$GRAFANA_URL" \
+    -H "Content-Type: text/plain" \
+    -d "mico_metrics,device=vivo_y28 ram_mb=$RAM,temp_c=$TEMP,llm=$LLM,bridge=$BRIDGE,infinix=$INFINIX" 2>/dev/null
+  echo "[$(date '+%H:%M:%S')] Metrik terkirim → Grafana"
+  sleep 60
+done
+GRAFANA
+chmod +x ~/JDEQ/bin/kirim_grafana_prometheus.sh
+echo "✅ Skrip siap."
+

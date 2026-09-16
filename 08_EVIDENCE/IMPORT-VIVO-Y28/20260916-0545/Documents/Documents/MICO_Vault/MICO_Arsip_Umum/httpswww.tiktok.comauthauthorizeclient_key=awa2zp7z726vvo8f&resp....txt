@@ -1,0 +1,3 @@
+06.30 19.06
+https://www.tiktok.com/auth/authorize/?client_key=awa2zp7z726vvo8f&response_type=code&scope=user.info.basic,video.upload&redirect_uri=https://localhost/callback&state=mico
+

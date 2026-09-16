@@ -1,0 +1,416 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+[KAPAL-INDUK] C:\Windows\system32 $ Write-Output "=== A. VERIFIKASI VHDX ==="
+=== A. VERIFIKASI VHDX ===
+[KAPAL-INDUK] C:\Windows\system32 $
+[KAPAL-INDUK] C:\Windows\system32 $ Get-Item "D:\MICO_PORTABLE_ENGINE\JDEQ_CORE.vhdx" | Select-Object Name, Length, LastWriteTime
+
+Name                Length LastWriteTime
+----                ------ -------------
+JDEQ_CORE.vhdx 21479030784 8/24/2026 12:12:22 PM
+
+
+[KAPAL-INDUK] C:\Windows\system32 $
+[KAPAL-INDUK] C:\Windows\system32 $ $path = "D:\MICO_PORTABLE_ENGINE\JDEQ_CORE.vhdx"
+[KAPAL-INDUK] C:\Windows\system32 $ try { [System.IO.File]::OpenRead($path).Close(); Write-Output "FILE_ACCESSIBLE" } catch { Write-Output "FILE_LOCKED: $_" }
+FILE_ACCESSIBLE
+[KAPAL-INDUK] C:\Windows\system32 $
+[KAPAL-INDUK] C:\Windows\system32 $ Get-Disk | Where-Object { $_.Location -like "*JDEQ_CORE*" } | Select-Object Number, FriendlyName, HealthStatus, OperationalStatus
+[KAPAL-INDUK] C:\Windows\system32 $ Write-Output "=== B. EVENT LOG DISK 24 JAM ==="
+=== B. EVENT LOG DISK 24 JAM ===
+[KAPAL-INDUK] C:\Windows\system32 $
+[KAPAL-INDUK] C:\Windows\system32 $ Get-WinEvent -FilterHashtable @{LogName='System'; ID=7,9,11,15,55,98,157; StartTime=(Get-Date).AddHours(-24)} -ErrorAction SilentlyContinue |
+>>     Select-Object TimeCreated, Id, LevelDisplayName, Message |
+>>     Format-Table -AutoSize -Wrap
+
+TimeCreated           Id LevelDisplayName Message
+-----------           -- ---------------- -------
+8/24/2026 12:12:37 PM 98 Information      Volume \\?\Volume{74298e45-3bc6-485f-a588-184d6c952793} (\Device\HarddiskVolume4) is healthy.  No action is needed.
+8/24/2026 12:12:37 PM  7 Error            The device, \Device\Harddisk1\DR1, has a bad block.
+8/24/2026 12:12:35 PM 98 Information      Volume E: (\Device\HarddiskVolume5) is healthy.  No action is needed.
+8/24/2026 12:12:34 PM 98 Information      Volume D: (\Device\HarddiskVolume6) is healthy.  No action is needed.
+8/24/2026 12:12:34 PM 55 Information      Processor 3 in group 0 exposes the following power management capabilities:
+
+                                          Idle state type: ACPI Idle (C) States (3 state(s))
+
+                                          Performance state type: ACPI Performance (P) / Throttle (T) States
+                                          Nominal Frequency (MHz): 3201
+                                          Maximum performance percentage: 100
+                                          Minimum performance percentage: 49
+                                          Minimum throttle percentage: 49
+8/24/2026 12:12:34 PM 55 Information      Processor 2 in group 0 exposes the following power management capabilities:
+
+                                          Idle state type: ACPI Idle (C) States (3 state(s))
+
+                                          Performance state type: ACPI Performance (P) / Throttle (T) States
+                                          Nominal Frequency (MHz): 3201
+                                          Maximum performance percentage: 100
+                                          Minimum performance percentage: 49
+                                          Minimum throttle percentage: 49
+8/24/2026 12:12:34 PM 55 Information      Processor 1 in group 0 exposes the following power management capabilities:
+
+                                          Idle state type: ACPI Idle (C) States (3 state(s))
+
+                                          Performance state type: ACPI Performance (P) / Throttle (T) States
+                                          Nominal Frequency (MHz): 3201
+                                          Maximum performance percentage: 100
+                                          Minimum performance percentage: 49
+                                          Minimum throttle percentage: 49
+8/24/2026 12:12:34 PM 55 Information      Processor 0 in group 0 exposes the following power management capabilities:
+
+                                          Idle state type: ACPI Idle (C) States (3 state(s))
+
+                                          Performance state type: ACPI Performance (P) / Throttle (T) States
+                                          Nominal Frequency (MHz): 3201
+                                          Maximum performance percentage: 100
+                                          Minimum performance percentage: 49
+                                          Minimum throttle percentage: 49
+8/24/2026 12:12:33 PM 98 Information      Volume C: (\Device\HarddiskVolume3) is healthy.  No action is needed.
+8/24/2026 8:33:49 AM  98 Information      Volume V: (\Device\HarddiskVolume8) is healthy.  No action is needed.
+8/24/2026 8:32:30 AM  98 Information      Volume V: (\Device\HarddiskVolume8) is healthy.  No action is needed.
+8/24/2026 6:35:00 AM   7 Error            The device, \Device\Harddisk1\DR1, has a bad block.
+8/24/2026 6:34:58 AM   7 Error            The device, \Device\Harddisk1\DR1, has a bad block.
+8/24/2026 6:34:56 AM   7 Error            The device, \Device\Harddisk1\DR1, has a bad block.
+8/24/2026 6:34:49 AM   7 Error            The device, \Device\Harddisk1\DR1, has a bad block.
+8/24/2026 6:34:47 AM   7 Error            The device, \Device\Harddisk1\DR1, has a bad block.
+8/24/2026 5:22:14 AM  98 Information      Volume \\?\Volume{74298e45-3bc6-485f-a588-184d6c952793} (\Device\HarddiskVolume4) is healthy.  No action is needed.
+8/24/2026 5:22:14 AM   7 Error            The device, \Device\Harddisk1\DR1, has a bad block.
+8/24/2026 5:22:12 AM  98 Information      Volume E: (\Device\HarddiskVolume5) is healthy.  No action is needed.
+8/24/2026 5:22:11 AM  55 Information      Processor 3 in group 0 exposes the following power management capabilities:
+
+                                          Idle state type: ACPI Idle (C) States (3 state(s))
+
+                                          Performance state type: ACPI Performance (P) / Throttle (T) States
+                                          Nominal Frequency (MHz): 3201
+                                          Maximum performance percentage: 100
+                                          Minimum performance percentage: 49
+                                          Minimum throttle percentage: 49
+8/24/2026 5:22:11 AM  55 Information      Processor 2 in group 0 exposes the following power management capabilities:
+
+                                          Idle state type: ACPI Idle (C) States (3 state(s))
+
+                                          Performance state type: ACPI Performance (P) / Throttle (T) States
+                                          Nominal Frequency (MHz): 3201
+                                          Maximum performance percentage: 100
+                                          Minimum performance percentage: 49
+                                          Minimum throttle percentage: 49
+8/24/2026 5:22:11 AM  55 Information      Processor 1 in group 0 exposes the following power management capabilities:
+
+                                          Idle state type: ACPI Idle (C) States (3 state(s))
+
+                                          Performance state type: ACPI Performance (P) / Throttle (T) States
+                                          Nominal Frequency (MHz): 3201
+                                          Maximum performance percentage: 100
+                                          Minimum performance percentage: 49
+                                          Minimum throttle percentage: 49
+8/24/2026 5:22:11 AM  55 Information      Processor 0 in group 0 exposes the following power management capabilities:
+
+                                          Idle state type: ACPI Idle (C) States (3 state(s))
+
+                                          Performance state type: ACPI Performance (P) / Throttle (T) States
+                                          Nominal Frequency (MHz): 3201
+                                          Maximum performance percentage: 100
+                                          Minimum performance percentage: 49
+                                          Minimum throttle percentage: 49
+8/24/2026 5:22:11 AM  98 Information      Volume D: (\Device\HarddiskVolume6) is healthy.  No action is needed.
+8/24/2026 5:22:10 AM  98 Information      Volume C: (\Device\HarddiskVolume3) is healthy.  No action is needed.
+8/24/2026 5:21:05 AM  98 Information      Volume \\?\Volume{74298e45-3bc6-485f-a588-184d6c952793} (\Device\HarddiskVolume4) is healthy.  No action is needed.
+8/24/2026 5:21:05 AM   7 Error            The device, \Device\Harddisk1\DR1, has a bad block.
+8/24/2026 5:21:03 AM  98 Information      Volume E: (\Device\HarddiskVolume5) is healthy.  No action is needed.
+8/24/2026 5:21:02 AM  55 Information      Processor 3 in group 0 exposes the following power management capabilities:
+
+                                          Idle state type: ACPI Idle (C) States (3 state(s))
+
+                                          Performance state type: ACPI Performance (P) / Throttle (T) States
+                                          Nominal Frequency (MHz): 3201
+                                          Maximum performance percentage: 100
+                                          Minimum performance percentage: 49
+                                          Minimum throttle percentage: 49
+8/24/2026 5:21:02 AM  55 Information      Processor 2 in group 0 exposes the following power management capabilities:
+
+                                          Idle state type: ACPI Idle (C) States (3 state(s))
+
+                                          Performance state type: ACPI Performance (P) / Throttle (T) States
+                                          Nominal Frequency (MHz): 3201
+                                          Maximum performance percentage: 100
+                                          Minimum performance percentage: 49
+                                          Minimum throttle percentage: 49
+8/24/2026 5:21:02 AM  55 Information      Processor 1 in group 0 exposes the following power management capabilities:
+
+                                          Idle state type: ACPI Idle (C) States (3 state(s))
+
+                                          Performance state type: ACPI Performance (P) / Throttle (T) States
+                                          Nominal Frequency (MHz): 3201
+                                          Maximum performance percentage: 100
+                                          Minimum performance percentage: 49
+                                          Minimum throttle percentage: 49
+8/24/2026 5:21:02 AM  55 Information      Processor 0 in group 0 exposes the following power management capabilities:
+
+                                          Idle state type: ACPI Idle (C) States (3 state(s))
+
+                                          Performance state type: ACPI Performance (P) / Throttle (T) States
+                                          Nominal Frequency (MHz): 3201
+                                          Maximum performance percentage: 100
+                                          Minimum performance percentage: 49
+                                          Minimum throttle percentage: 49
+8/24/2026 5:21:02 AM  98 Information      Volume D: (\Device\HarddiskVolume6) is healthy.  No action is needed.
+8/24/2026 5:21:01 AM  98 Information      Volume C: (\Device\HarddiskVolume3) is healthy.  No action is needed.
+8/24/2026 4:26:17 AM  98 Information      Volume \\?\Volume{74298e45-3bc6-485f-a588-184d6c952793} (\Device\HarddiskVolume4) is healthy.  No action is needed.
+8/24/2026 4:26:17 AM   7 Error            The device, \Device\Harddisk1\DR1, has a bad block.
+8/24/2026 4:26:15 AM  98 Information      Volume E: (\Device\HarddiskVolume5) is healthy.  No action is needed.
+8/24/2026 4:26:14 AM   7 Information      Miniport NIC 6FCD98E3-7BFD-41EC-8976-3FA486673A55 (Friendly Name: WSL) successfully initialized.
+8/24/2026 4:26:14 AM  55 Information      Processor 3 in group 0 exposes the following power management capabilities:
+
+                                          Idle state type: ACPI Idle (C) States (3 state(s))
+
+                                          Performance state type: ACPI Performance (P) / Throttle (T) States
+                                          Nominal Frequency (MHz): 3201
+                                          Maximum performance percentage: 100
+                                          Minimum performance percentage: 49
+                                          Minimum throttle percentage: 49
+8/24/2026 4:26:14 AM  55 Information      Processor 2 in group 0 exposes the following power management capabilities:
+
+                                          Idle state type: ACPI Idle (C) States (3 state(s))
+
+                                          Performance state type: ACPI Performance (P) / Throttle (T) States
+                                          Nominal Frequency (MHz): 3201
+                                          Maximum performance percentage: 100
+                                          Minimum performance percentage: 49
+                                          Minimum throttle percentage: 49
+8/24/2026 4:26:14 AM  55 Information      Processor 1 in group 0 exposes the following power management capabilities:
+
+                                          Idle state type: ACPI Idle (C) States (3 state(s))
+
+                                          Performance state type: ACPI Performance (P) / Throttle (T) States
+                                          Nominal Frequency (MHz): 3201
+                                          Maximum performance percentage: 100
+                                          Minimum performance percentage: 49
+                                          Minimum throttle percentage: 49
+8/24/2026 4:26:14 AM  55 Information      Processor 0 in group 0 exposes the following power management capabilities:
+
+                                          Idle state type: ACPI Idle (C) States (3 state(s))
+
+                                          Performance state type: ACPI Performance (P) / Throttle (T) States
+                                          Nominal Frequency (MHz): 3201
+                                          Maximum performance percentage: 100
+                                          Minimum performance percentage: 49
+                                          Minimum throttle percentage: 49
+8/24/2026 4:26:14 AM  98 Information      Volume D: (\Device\HarddiskVolume6) is healthy.  No action is needed.
+8/24/2026 4:26:14 AM   9 Information      Switch 1ED5EC72-FD1F-4E0B-B9E0-6F4C67087D96 (Friendly Name: WSL) successfully initialized.
+8/24/2026 4:26:13 AM  98 Information      Volume C: (\Device\HarddiskVolume3) is healthy.  No action is needed.
+8/24/2026 2:55:35 AM   7 Information      Miniport NIC 6FCD98E3-7BFD-41EC-8976-3FA486673A55 (Friendly Name: WSL) successfully initialized.
+8/24/2026 2:55:35 AM   9 Information      Switch 1ED5EC72-FD1F-4E0B-B9E0-6F4C67087D96 (Friendly Name: WSL) successfully initialized.
+8/24/2026 12:33:59 AM 98 Information      Volume \\?\Volume{74298e45-3bc6-485f-a588-184d6c952793} (\Device\HarddiskVolume4) is healthy.  No action is needed.
+8/24/2026 12:33:59 AM  7 Error            The device, \Device\Harddisk1\DR1, has a bad block.
+8/24/2026 12:33:57 AM 98 Information      Volume E: (\Device\HarddiskVolume5) is healthy.  No action is needed.
+8/24/2026 12:33:56 AM 55 Information      Processor 3 in group 0 exposes the following power management capabilities:
+
+                                          Idle state type: ACPI Idle (C) States (3 state(s))
+
+                                          Performance state type: ACPI Performance (P) / Throttle (T) States
+                                          Nominal Frequency (MHz): 3201
+                                          Maximum performance percentage: 100
+                                          Minimum performance percentage: 49
+                                          Minimum throttle percentage: 49
+8/24/2026 12:33:56 AM 55 Information      Processor 2 in group 0 exposes the following power management capabilities:
+
+                                          Idle state type: ACPI Idle (C) States (3 state(s))
+
+                                          Performance state type: ACPI Performance (P) / Throttle (T) States
+                                          Nominal Frequency (MHz): 3201
+                                          Maximum performance percentage: 100
+                                          Minimum performance percentage: 49
+                                          Minimum throttle percentage: 49
+8/24/2026 12:33:56 AM 55 Information      Processor 1 in group 0 exposes the following power management capabilities:
+
+                                          Idle state type: ACPI Idle (C) States (3 state(s))
+
+                                          Performance state type: ACPI Performance (P) / Throttle (T) States
+                                          Nominal Frequency (MHz): 3201
+                                          Maximum performance percentage: 100
+                                          Minimum performance percentage: 49
+                                          Minimum throttle percentage: 49
+8/24/2026 12:33:56 AM 55 Information      Processor 0 in group 0 exposes the following power management capabilities:
+
+                                          Idle state type: ACPI Idle (C) States (3 state(s))
+
+                                          Performance state type: ACPI Performance (P) / Throttle (T) States
+                                          Nominal Frequency (MHz): 3201
+                                          Maximum performance percentage: 100
+                                          Minimum performance percentage: 49
+                                          Minimum throttle percentage: 49
+8/24/2026 12:33:56 AM 98 Information      Volume D: (\Device\HarddiskVolume6) is healthy.  No action is needed.
+8/24/2026 12:33:55 AM 98 Information      Volume C: (\Device\HarddiskVolume3) is healthy.  No action is needed.
+8/24/2026 12:32:41 AM  7 Error            The device, \Device\Harddisk1\DR1, has a bad block.
+8/24/2026 12:32:39 AM  7 Error            The device, \Device\Harddisk1\DR1, has a bad block.
+8/24/2026 12:32:37 AM  7 Error            The device, \Device\Harddisk1\DR1, has a bad block.
+8/24/2026 12:32:35 AM  7 Error            The device, \Device\Harddisk1\DR1, has a bad block.
+8/23/2026 11:12:12 PM 98 Information      Volume \\?\Volume{74298e45-3bc6-485f-a588-184d6c952793} (\Device\HarddiskVolume4) is healthy.  No action is needed.
+8/23/2026 11:12:12 PM  7 Error            The device, \Device\Harddisk1\DR1, has a bad block.
+8/23/2026 11:12:10 PM 98 Information      Volume E: (\Device\HarddiskVolume5) is healthy.  No action is needed.
+8/23/2026 11:12:09 PM 55 Information      Processor 3 in group 0 exposes the following power management capabilities:
+
+                                          Idle state type: ACPI Idle (C) States (3 state(s))
+
+                                          Performance state type: ACPI Performance (P) / Throttle (T) States
+                                          Nominal Frequency (MHz): 3201
+                                          Maximum performance percentage: 100
+                                          Minimum performance percentage: 49
+                                          Minimum throttle percentage: 49
+8/23/2026 11:12:09 PM 55 Information      Processor 2 in group 0 exposes the following power management capabilities:
+
+                                          Idle state type: ACPI Idle (C) States (3 state(s))
+
+                                          Performance state type: ACPI Performance (P) / Throttle (T) States
+                                          Nominal Frequency (MHz): 3201
+                                          Maximum performance percentage: 100
+                                          Minimum performance percentage: 49
+                                          Minimum throttle percentage: 49
+8/23/2026 11:12:09 PM 55 Information      Processor 1 in group 0 exposes the following power management capabilities:
+
+                                          Idle state type: ACPI Idle (C) States (3 state(s))
+
+                                          Performance state type: ACPI Performance (P) / Throttle (T) States
+                                          Nominal Frequency (MHz): 3201
+                                          Maximum performance percentage: 100
+                                          Minimum performance percentage: 49
+                                          Minimum throttle percentage: 49
+8/23/2026 11:12:09 PM 55 Information      Processor 0 in group 0 exposes the following power management capabilities:
+
+                                          Idle state type: ACPI Idle (C) States (3 state(s))
+
+                                          Performance state type: ACPI Performance (P) / Throttle (T) States
+                                          Nominal Frequency (MHz): 3201
+                                          Maximum performance percentage: 100
+                                          Minimum performance percentage: 49
+                                          Minimum throttle percentage: 49
+8/23/2026 11:12:09 PM 98 Information      Volume D: (\Device\HarddiskVolume6) is healthy.  No action is needed.
+8/23/2026 11:12:08 PM 98 Information      Volume C: (\Device\HarddiskVolume3) is healthy.  No action is needed.
+8/23/2026 6:32:39 PM   7 Error            The device, \Device\Harddisk1\DR1, has a bad block.
+8/23/2026 6:32:37 PM   7 Error            The device, \Device\Harddisk1\DR1, has a bad block.
+8/23/2026 6:32:35 PM   7 Error            The device, \Device\Harddisk1\DR1, has a bad block.
+8/23/2026 6:32:33 PM   7 Error            The device, \Device\Harddisk1\DR1, has a bad block.
+8/23/2026 6:22:25 PM  98 Information      Volume \\?\Volume{74298e45-3bc6-485f-a588-184d6c952793} (\Device\HarddiskVolume4) is healthy.  No action is needed.
+8/23/2026 6:22:25 PM   7 Error            The device, \Device\Harddisk1\DR1, has a bad block.
+8/23/2026 6:22:23 PM  98 Information      Volume E: (\Device\HarddiskVolume5) is healthy.  No action is needed.
+8/23/2026 6:22:22 PM  55 Information      Processor 3 in group 0 exposes the following power management capabilities:
+
+                                          Idle state type: ACPI Idle (C) States (3 state(s))
+
+                                          Performance state type: ACPI Performance (P) / Throttle (T) States
+                                          Nominal Frequency (MHz): 3201
+                                          Maximum performance percentage: 100
+                                          Minimum performance percentage: 49
+                                          Minimum throttle percentage: 49
+8/23/2026 6:22:22 PM  55 Information      Processor 2 in group 0 exposes the following power management capabilities:
+
+                                          Idle state type: ACPI Idle (C) States (3 state(s))
+
+                                          Performance state type: ACPI Performance (P) / Throttle (T) States
+                                          Nominal Frequency (MHz): 3201
+                                          Maximum performance percentage: 100
+                                          Minimum performance percentage: 49
+                                          Minimum throttle percentage: 49
+8/23/2026 6:22:22 PM  55 Information      Processor 1 in group 0 exposes the following power management capabilities:
+
+                                          Idle state type: ACPI Idle (C) States (3 state(s))
+
+                                          Performance state type: ACPI Performance (P) / Throttle (T) States
+                                          Nominal Frequency (MHz): 3201
+                                          Maximum performance percentage: 100
+                                          Minimum performance percentage: 49
+                                          Minimum throttle percentage: 49
+8/23/2026 6:22:22 PM  55 Information      Processor 0 in group 0 exposes the following power management capabilities:
+
+                                          Idle state type: ACPI Idle (C) States (3 state(s))
+
+                                          Performance state type: ACPI Performance (P) / Throttle (T) States
+                                          Nominal Frequency (MHz): 3201
+                                          Maximum performance percentage: 100
+                                          Minimum performance percentage: 49
+                                          Minimum throttle percentage: 49
+8/23/2026 6:22:22 PM  98 Information      Volume D: (\Device\HarddiskVolume6) is healthy.  No action is needed.
+8/23/2026 6:22:21 PM  98 Information      Volume C: (\Device\HarddiskVolume3) is healthy.  No action is needed.
+8/23/2026 6:02:39 PM  98 Information      Volume \\?\Volume{74298e45-3bc6-485f-a588-184d6c952793} (\Device\HarddiskVolume4) is healthy.  No action is needed.
+8/23/2026 6:02:39 PM   7 Error            The device, \Device\Harddisk1\DR1, has a bad block.
+8/23/2026 6:02:37 PM  98 Information      Volume E: (\Device\HarddiskVolume5) is healthy.  No action is needed.
+8/23/2026 6:02:36 PM   7 Information      Miniport NIC 797FA525-EF8C-41B6-8C37-14C21C50F206 (Friendly Name: WSL) successfully initialized.
+8/23/2026 6:02:36 PM  55 Information      Processor 3 in group 0 exposes the following power management capabilities:
+
+                                          Idle state type: ACPI Idle (C) States (3 state(s))
+
+                                          Performance state type: ACPI Performance (P) / Throttle (T) States
+                                          Nominal Frequency (MHz): 3201
+                                          Maximum performance percentage: 100
+                                          Minimum performance percentage: 49
+                                          Minimum throttle percentage: 49
+8/23/2026 6:02:36 PM  55 Information      Processor 2 in group 0 exposes the following power management capabilities:
+
+                                          Idle state type: ACPI Idle (C) States (3 state(s))
+
+                                          Performance state type: ACPI Performance (P) / Throttle (T) States
+                                          Nominal Frequency (MHz): 3201
+                                          Maximum performance percentage: 100
+                                          Minimum performance percentage: 49
+                                          Minimum throttle percentage: 49
+8/23/2026 6:02:36 PM  55 Information      Processor 1 in group 0 exposes the following power management capabilities:
+
+                                          Idle state type: ACPI Idle (C) States (3 state(s))
+
+                                          Performance state type: ACPI Performance (P) / Throttle (T) States
+                                          Nominal Frequency (MHz): 3201
+                                          Maximum performance percentage: 100
+                                          Minimum performance percentage: 49
+                                          Minimum throttle percentage: 49
+8/23/2026 6:02:36 PM  55 Information      Processor 0 in group 0 exposes the following power management capabilities:
+
+                                          Idle state type: ACPI Idle (C) States (3 state(s))
+
+                                          Performance state type: ACPI Performance (P) / Throttle (T) States
+                                          Nominal Frequency (MHz): 3201
+                                          Maximum performance percentage: 100
+                                          Minimum performance percentage: 49
+                                          Minimum throttle percentage: 49
+8/23/2026 6:02:36 PM  98 Information      Volume D: (\Device\HarddiskVolume6) is healthy.  No action is needed.
+8/23/2026 6:02:36 PM   9 Information      Switch F3E15C79-2EF1-49C1-9ACA-A7BBE5E56BE5 (Friendly Name: WSL) successfully initialized.
+8/23/2026 6:02:35 PM  98 Information      Volume C: (\Device\HarddiskVolume3) is healthy.  No action is needed.
+
+
+[KAPAL-INDUK] C:\Windows\system32 $ Write-Output "=== C. WSL / RUNTIME STATUS ==="
+=== C. WSL / RUNTIME STATUS ===
+[KAPAL-INDUK] C:\Windows\system32 $
+[KAPAL-INDUK] C:\Windows\system32 $ wsl --status
+Default Distribution: Ubuntu-24.04
+Default Version: 2
+[KAPAL-INDUK] C:\Windows\system32 $ wsl --list --verbose
+  NAME              STATE           VERSION
+* Ubuntu-24.04      Stopped         2
+  docker-desktop    Stopped         2
+[KAPAL-INDUK] C:\Windows\system32 $
+[KAPAL-INDUK] C:\Windows\system32 $ Write-Output "=== DOCKER STATUS ==="
+=== DOCKER STATUS ===
+[KAPAL-INDUK] C:\Windows\system32 $ Get-Service -Name com.docker.service -ErrorAction SilentlyContinue | Select-Object Name, Status, StartType
+
+Name                Status StartType
+----                ------ ---------
+com.docker.service Stopped    Manual
+
+
+[KAPAL-INDUK] C:\Windows\system32 $ Write-Output "=== D. STRUKTUR MICO_PORTABLE_ENGINE ==="
+=== D. STRUKTUR MICO_PORTABLE_ENGINE ===
+[KAPAL-INDUK] C:\Windows\system32 $
+[KAPAL-INDUK] C:\Windows\system32 $ Get-ChildItem "D:\MICO_PORTABLE_ENGINE\" -Recurse -ErrorAction SilentlyContinue |
+>>     Select-Object FullName, Length |
+>>     Export-Csv "D:\audit_mico_engine.csv" -NoTypeInformation
+[KAPAL-INDUK] C:\Windows\system32 $
+[KAPAL-INDUK] C:\Windows\system32 $ Write-Output "CSV_TERSIMPAN_DI_D:\audit_mico_engine.csv"
+CSV_TERSIMPAN_DI_D:\audit_mico_engine.csv
+[KAPAL-INDUK] C:\Windows\system32 $
+[KAPAL-INDUK] C:\Windows\system32 $ Write-Output "=== CEK FOLDER 00_JDEQ_SYSTEM_CORE ==="
+=== CEK FOLDER 00_JDEQ_SYSTEM_CORE ===
+[KAPAL-INDUK] C:\Windows\system32 $ Test-Path "D:\00_JDEQ_SYSTEM_CORE"
+True
+[KAPAL-INDUK] C:\Windows\system32 $

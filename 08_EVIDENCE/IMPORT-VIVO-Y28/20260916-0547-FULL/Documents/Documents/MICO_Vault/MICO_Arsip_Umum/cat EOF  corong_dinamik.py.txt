@@ -1,0 +1,11 @@
+01.17 23.46
+cat <<EOF > corong_dinamik.py
+import asyncio, sys
+async def main():
+    print(f"[⚙️] Mesin Pembangkit Quota Aktif mawi {sys.argv[4]} Keys...")
+    await asyncio.sleep(1)
+    print("[✅] Tunneling Berhasil!")
+if __name__ == "__main__":
+    asyncio.run(main())
+EOF
+

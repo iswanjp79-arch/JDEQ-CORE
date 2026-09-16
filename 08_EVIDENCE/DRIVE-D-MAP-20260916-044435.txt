@@ -1,0 +1,116 @@
+D:\ MAPPING — 09/16/2026 04:44:35
+
+=== TOP LEVEL D: ===
+
+Name                               Type Length    LastWriteTime
+----                               ---- ------    -------------
+_MOVE_FROM_GD                      DIR            07/09/2026 2:35:55
+$RECYCLE.BIN                       DIR            10/08/2026 18:18:29
+00_JDEQ_SYSTEM_CORE                DIR            06/09/2026 5:21:12
+01_ENGINEERING_WORKS               DIR            17/08/2026 2:45:41
+02_DEV_ENVIRONMENT                 DIR            07/09/2026 2:53:08
+03_DOCUMENTS_PERSONAL              DIR            07/09/2026 2:53:09
+04_DEVICE_BACKUPS                  DIR            07/09/2026 2:49:53
+98_ENTERTAINMENT                   DIR            07/09/2026 2:53:12
+99_ARCHIVE_AND_TRANSIT             DIR            07/09/2026 2:51:42
+AI_LOCAL_MICO                      DIR            24/08/2026 14:42:35
+APP_CACHE_MIRROR                   DIR            14/09/2026 15:36:09
+BACKUP_CHROME_PROFILES             DIR            07/09/2026 2:54:15
+backup_drive_e                     DIR            07/09/2026 2:53:13
+HERMES_SYSTEM_CORE                 DIR            03/09/2026 14:43:26
+ISO                                DIR            07/09/2026 2:48:24
+JDEQ_Tools                         DIR            07/09/2026 2:54:19
+KARANTINA_L0                       DIR            07/09/2026 2:35:55
+KUMPULAN DATA                      DIR            31/08/2026 21:59:41
+MICO                               DIR            07/09/2026 3:32:40
+MICO_ARCHIVE                       DIR            07/09/2026 12:13:10
+MICO_ARCHIVE_G                     DIR            07/09/2026 2:54:20
+MICO_AUTOMATION                    DIR            26/08/2026 18:46:31
+MICO_BACKUP                        DIR            10/09/2026 2:42:54
+MICO_DROPZONE_EDUKASI              DIR            07/09/2026 22:46:24
+MICO_EVIDENCE                      DIR            07/09/2026 2:38:07
+MICO_PORTABLE_ENGINE               DIR            24/08/2026 8:30:08
+MICO_PROJECTS                      DIR            07/09/2026 2:38:07
+MICO_RECOVERY                      DIR            07/09/2026 2:53:13
+MICO_RUNTIME                       DIR            07/09/2026 2:38:07
+MICO_SSOT                          DIR            15/09/2026 19:20:25
+MICO-CORE                          DIR            01/09/2026 23:27:30
+MICO-DATA                          DIR            02/09/2026 1:24:03
+MICO-EVIDENCE                      DIR            03/09/2026 5:09:45
+MICO-QUEUE                         DIR            02/09/2026 1:24:03
+OBSIDIAN                           DIR            03/09/2026 2:30:48
+OFFLOAD_SYSTEM_C                   DIR            07/09/2026 2:54:20
+System Volume Information          DIR            24/08/2026 5:44:45
+TEMP                               DIR            08/09/2026 20:27:43
+TeraBoxDownload                    DIR            07/09/2026 2:31:34
+USER_DATA_ARCHIVE                  DIR            07/09/2026 2:54:19
+WSL                                DIR            26/08/2026 2:29:05
+WSL_Backup                         DIR            07/09/2026 3:05:57
+WSL_DISTROS                        DIR            25/08/2026 2:39:43
+WSL_MIGRATION_BACKUP               DIR            07/09/2026 3:04:56
+WSL_STORAGE                        DIR            26/08/2026 2:31:42
+WSL_STORE                          DIR            04/09/2026 19:26:22
+audit_manifest_raw.csv             FILE 2449      20/08/2026 3:27:53
+audit_mico_engine.csv              FILE 77        24/08/2026 12:34:02
+audit_size_c.csv                   FILE 950       20/08/2026 3:34:47
+DumpStack.log                      FILE 8192      07/05/2026 8:38:08
+DumpStack.log.tmp                  FILE 8192      13/08/2026 17:37:37
+Laporan_Mesin.txt                  FILE 416005824 03/09/2026 0:16:22
+MICO_PC5_DEPENDENCY_CHECK.txt      FILE 1920      07/09/2026 2:08:41
+MICO_PC5_INVENTORY_DETAIL.txt      FILE 7180      07/09/2026 2:06:50
+MICO_PC5_INVENTORY_REPORT.txt      FILE 7382      07/09/2026 2:00:45
+MICO_PC5_MAPPING_PLAN.txt          FILE 2048      07/09/2026 2:39:32
+pagefile.sys.terabox.uploading.cfg FILE 384       12/08/2026 9:18:42
+
+
+=== UKURAN PER TOP FOLDER ===
+_MOVE_FROM_GD                                         bytes
+$RECYCLE.BIN                                      129 bytes
+00_JDEQ_SYSTEM_CORE                      44.888.591.293 bytes
+01_ENGINEERING_WORKS                     4.598.188.956 bytes
+02_DEV_ENVIRONMENT                                    bytes
+03_DOCUMENTS_PERSONAL                                 bytes
+04_DEVICE_BACKUPS                                     bytes
+98_ENTERTAINMENT                                      bytes
+99_ARCHIVE_AND_TRANSIT                                bytes
+AI_LOCAL_MICO                              96.201.352 bytes
+APP_CACHE_MIRROR                         1.358.056.416 bytes
+BACKUP_CHROME_PROFILES                                bytes
+backup_drive_e                                        bytes
+HERMES_SYSTEM_CORE                       1.811.931.793 bytes
+ISO                                                   bytes
+JDEQ_Tools                                            bytes
+KARANTINA_L0                             28.983.227.468 bytes
+KUMPULAN DATA                             244.067.768 bytes
+MICO                                       28.549.732 bytes
+MICO_ARCHIVE                             458.252.081.731 bytes
+MICO_ARCHIVE_G                                        bytes
+MICO_AUTOMATION                                   216 bytes
+MICO_BACKUP                               306.029.406 bytes
+MICO_DROPZONE_EDUKASI                       6.057.915 bytes
+MICO_EVIDENCE                                         bytes
+MICO_PORTABLE_ENGINE                     21.479.030.784 bytes
+MICO_PROJECTS                                         bytes
+MICO_RECOVERY                             444.396.204 bytes
+MICO_RUNTIME                                          bytes
+MICO_SSOT                                8.371.784.375 bytes
+MICO-CORE                                9.231.410.606 bytes
+MICO-DATA                                8.903.212.949 bytes
+MICO-EVIDENCE                               6.055.637 bytes
+MICO-QUEUE                                            bytes
+OBSIDIAN                                  166.469.977 bytes
+OFFLOAD_SYSTEM_C                                      bytes
+System Volume Information                             bytes
+TEMP                                              298 bytes
+TeraBoxDownload                                       bytes
+USER_DATA_ARCHIVE                                     bytes
+WSL                                                   bytes
+WSL_Backup                                            bytes
+WSL_DISTROS                                           bytes
+WSL_MIGRATION_BACKUP                                  bytes
+WSL_STORAGE                              9.092.239.703 bytes
+WSL_STORE                                13.874.758.046 bytes
+
+=== FILE >100MB ===
+
+=== FILE DENGAN NAMA POLA: deepseek/chat/session/jdeq/mico ===

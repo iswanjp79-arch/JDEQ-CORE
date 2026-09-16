@@ -1,0 +1,10 @@
+07.12 15.54
+Kode bangkit kan MICO dengan qween. 
+=============================
+# Gunakan llama-cli yang mendukung prompt dan parameter generasi
+~/JDEQ/core/local_ai/llama.cpp/build/bin/llama-cli \
+    -m /storage/emulated/0/AI_Models/core/Qwen2.5-3B-Instruct-Q4_K_M.gguf \
+    --temp 0.7 \
+    -n 128 \
+    -p "Halo, perkenalkan dirimu sebagai MICO JDEQ AI Assistant dalam satu kalimat."
+

@@ -1,0 +1,419 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+Loading personal and system profiles took 689ms.
+[KAPAL-INDUK] C:\Windows\system32 $ fsutil file queryextents "C:\Users\USER\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu24.04LTS_79rhkp1fndgsc\LocalState\ext4.vhdx"
+VCN: 0x0        Clusters: 0x721b16   LCN: 0x2608eff
+VCN: 0x721b16   Clusters: 0x23bb     LCN: 0x452454
+VCN: 0x723ed1   Clusters: 0x5d8e     LCN: 0x436adb
+VCN: 0x729c5f   Clusters: 0x5e8b     LCN: 0x30b9b6
+VCN: 0x72faea   Clusters: 0x61fd     LCN: 0x74d574a
+VCN: 0x735ce7   Clusters: 0x1c19     LCN: 0x93833d
+VCN: 0x737900   Clusters: 0x41d7     LCN: 0xedb237
+VCN: 0x73bad7   Clusters: 0x6b52     LCN: 0x4a7f11
+VCN: 0x742629   Clusters: 0x6ce9     LCN: 0x3d4a58f
+VCN: 0x749312   Clusters: 0x75c6     LCN: 0x4db038
+VCN: 0x7508d8   Clusters: 0x816b     LCN: 0x42cde9
+VCN: 0x758a43   Clusters: 0x81c1     LCN: 0x447a5d
+VCN: 0x760c04   Clusters: 0x84f0     LCN: 0x736e18d
+VCN: 0x7690f4   Clusters: 0x80c      LCN: 0xa3b6b2
+VCN: 0x769900   Clusters: 0x6000     LCN: 0x324019
+VCN: 0x76f900   Clusters: 0x5acb     LCN: 0x2da740e
+VCN: 0x7753cb   Clusters: 0xa264     LCN: 0x7a084ee
+VCN: 0x77f62f   Clusters: 0xa965     LCN: 0x3d01c7f
+VCN: 0x789f94   Clusters: 0xad7d     LCN: 0x3ae0327
+VCN: 0x794d11   Clusters: 0x553      LCN: 0xbe6c04
+VCN: 0x795264   Clusters: 0xade5     LCN: 0x43c93e
+VCN: 0x7a0049   Clusters: 0xcd99     LCN: 0x40d45c7
+VCN: 0x7acde2   Clusters: 0xda80     LCN: 0xc3c0a9
+VCN: 0x7ba862   Clusters: 0xe26a     LCN: 0x3e277dc
+VCN: 0x7c8acc   Clusters: 0xe66f     LCN: 0x3bbc104
+VCN: 0x7d713b   Clusters: 0xf13f     LCN: 0x9f23282
+VCN: 0x7e627a   Clusters: 0xf8be     LCN: 0x8e88541
+VCN: 0x7f5b38   Clusters: 0x10ee9    LCN: 0xf38f41
+VCN: 0x806a21   Clusters: 0x11111    LCN: 0xd001d9
+VCN: 0x817b32   Clusters: 0x113d0    LCN: 0xeaa78a
+VCN: 0x828f02   Clusters: 0x118e1    LCN: 0xf268ef
+VCN: 0x83a7e3   Clusters: 0x118f7    LCN: 0xf14c7f
+VCN: 0x84c0da   Clusters: 0x119bd    LCN: 0x8ae3b14
+VCN: 0x85da97   Clusters: 0x11a6d    LCN: 0xf5bc71
+VCN: 0x86f504   Clusters: 0x11c28    LCN: 0xbadc14
+VCN: 0x88112c   Clusters: 0x11c29    LCN: 0xc94ca5
+VCN: 0x892d55   Clusters: 0x11c2b    LCN: 0x8aae398
+VCN: 0x8a4980   Clusters: 0x11c37    LCN: 0xc713e3
+VCN: 0x8b65b7   Clusters: 0x11c37    LCN: 0xca68f1
+VCN: 0x8c81ee   Clusters: 0x11c39    LCN: 0xb8a34f
+VCN: 0x8d9e27   Clusters: 0x12317    LCN: 0xf7fd08
+VCN: 0x8ec13e   Clusters: 0x78c2     LCN: 0x9cb3734
+VCN: 0x8f3a00   Clusters: 0x4000     LCN: 0x45a4c8
+VCN: 0x8f7a00   Clusters: 0x4a02a    LCN: 0xfa1667
+VCN: 0x941a2a   Clusters: 0x486a     LCN: 0xf94e57
+VCN: 0x946294   Clusters: 0x1a7a     LCN: 0xd659b9
+VCN: 0x947d0e   Clusters: 0x4a30     LCN: 0x922d20b
+VCN: 0x94c73e   Clusters: 0x1adc     LCN: 0x90e784
+VCN: 0x94e21a   Clusters: 0x5d61     LCN: 0xa03597b
+VCN: 0x953f7b   Clusters: 0x9382     LCN: 0x3e11b56
+VCN: 0x95d2fd   Clusters: 0x1028     LCN: 0x257cc1
+VCN: 0x95e325   Clusters: 0x949d     LCN: 0x9606589
+VCN: 0x9677c2   Clusters: 0x25a      LCN: 0xc50061
+VCN: 0x967a1c   Clusters: 0xb7a0     LCN: 0x9cbaff6
+VCN: 0x9731bc   Clusters: 0x1077     LCN: 0x45626f
+VCN: 0x974233   Clusters: 0xf36d     LCN: 0x1469cd4
+VCN: 0x9835a0   Clusters: 0x4c8      LCN: 0xba736d
+VCN: 0x983a68   Clusters: 0x11c7f    LCN: 0xebbb5a
+VCN: 0x9956e7   Clusters: 0x379      LCN: 0xc502bb
+VCN: 0x995a60   Clusters: 0x1262a    LCN: 0xf6d6de
+VCN: 0x9a808a   Clusters: 0x13b48    LCN: 0xe432ac3
+VCN: 0x9bbbd2   Clusters: 0x16405    LCN: 0x14a0814
+VCN: 0x9d1fd7   Clusters: 0x165be    LCN: 0x943b287
+VCN: 0x9e8595   Clusters: 0x1753c    LCN: 0x8e48ae7
+VCN: 0x9ffad1   Clusters: 0x1928f    LCN: 0x9f05182
+VCN: 0xa18d60   Clusters: 0x1a9d0    LCN: 0xe8fdba
+VCN: 0xa33730   Clusters: 0x2ec      LCN: 0xba7835
+VCN: 0xa33a1c   Clusters: 0x101e4    LCN: 0x3cd1cf4
+VCN: 0xa43c00   Clusters: 0xbbd6     LCN: 0x3ce3cd8
+VCN: 0xa4f7d6   Clusters: 0x1e00     LCN: 0x8f036b
+VCN: 0xa515d6   Clusters: 0x1dcc9    LCN: 0xe85092f
+VCN: 0xa6f29f   Clusters: 0x12f61    LCN: 0x2d30850
+VCN: 0xa82200   Clusters: 0x54002    LCN: 0xfef911
+VCN: 0xad6202   Clusters: 0x41e0     LCN: 0x34f0dca
+VCN: 0xada3e2   Clusters: 0x193b3    LCN: 0xd8dc83
+VCN: 0xaf3795   Clusters: 0xd71      LCN: 0xa18ca2
+VCN: 0xaf4506   Clusters: 0x207a5    LCN: 0x961fc6d
+VCN: 0xb14cab   Clusters: 0x3665     LCN: 0x3783d3
+VCN: 0xb18310   Clusters: 0x2d57e    LCN: 0xe8b3681
+VCN: 0xb4588e   Clusters: 0x2ea04    LCN: 0x90107ae
+VCN: 0xb74292   Clusters: 0x38fe7    LCN: 0x7bb8983
+VCN: 0xbad279   Clusters: 0xb98d     LCN: 0x1043913
+VCN: 0xbb8c06   Clusters: 0x4367     LCN: 0x9f5b156
+VCN: 0xbbcf6d   Clusters: 0x461d     LCN: 0x8f9a08f
+VCN: 0xbc158a   Clusters: 0x8159     LCN: 0x3b80af
+VCN: 0xbc96e3   Clusters: 0x1565     LCN: 0x25675b
+VCN: 0xbcac48   Clusters: 0x395e5    LCN: 0x411aca7
+VCN: 0xc0422d   Clusters: 0x16500    LCN: 0x104f2a0
+VCN: 0xc1a72d   Clusters: 0x30213    LCN: 0x1065d20
+VCN: 0xc4a940   Clusters: 0x10137    LCN: 0x1095f33
+VCN: 0xc5aa77   Clusters: 0x41d9     LCN: 0xc23563d
+VCN: 0xc5ec50   Clusters: 0x438f     LCN: 0x14f25cf
+VCN: 0xc62fdf   Clusters: 0x4430     LCN: 0xe56992
+VCN: 0xc6740f   Clusters: 0x484e     LCN: 0x8e3e7f8
+VCN: 0xc6bc5d   Clusters: 0x9c1      LCN: 0xd737f8
+VCN: 0xc6c61e   Clusters: 0x4a43     LCN: 0x3ecf43a
+VCN: 0xc71061   Clusters: 0x4cca     LCN: 0x41c218c
+VCN: 0xc75d2b   Clusters: 0xb48      LCN: 0xd741b9
+VCN: 0xc76873   Clusters: 0x573c     LCN: 0x3fb3ed5
+VCN: 0xc7bfaf   Clusters: 0x7a1      LCN: 0xd75a72
+VCN: 0xc7c750   Clusters: 0x5efa     LCN: 0x8f01c9f
+VCN: 0xc8264a   Clusters: 0x6291     LCN: 0x39896f1
+VCN: 0xc888db   Clusters: 0x637e     LCN: 0xd87905
+VCN: 0xc8ec59   Clusters: 0x693e     LCN: 0x3f859af
+VCN: 0xc95597   Clusters: 0x694b     LCN: 0x3f99760
+VCN: 0xc9bee2   Clusters: 0xd71      LCN: 0xd74d01
+VCN: 0xc9cc53   Clusters: 0x6952     LCN: 0xc050cf6
+VCN: 0xca35a5   Clusters: 0x695c     LCN: 0xc043918
+VCN: 0xca9f01   Clusters: 0x695e     LCN: 0x14bd68f
+VCN: 0xcb085f   Clusters: 0x6961     LCN: 0xc04a2fd
+VCN: 0xcb71c0   Clusters: 0x696f     LCN: 0xbfc5ca7
+VCN: 0xcbdb2f   Clusters: 0x6970     LCN: 0xbf48048
+VCN: 0xcc449f   Clusters: 0x58c      LCN: 0xed8d21
+VCN: 0xcc4a2b   Clusters: 0x6970     LCN: 0xc00e9b4
+VCN: 0xccb39b   Clusters: 0x6971     LCN: 0x3f92d50
+VCN: 0xcd1d0c   Clusters: 0x6973     LCN: 0x3ec20b6
+VCN: 0xcd867f   Clusters: 0x6974     LCN: 0xbf19ade
+VCN: 0xcdeff3   Clusters: 0x6977     LCN: 0x41868c5
+VCN: 0xce596a   Clusters: 0x6979     LCN: 0x14d7e1c
+VCN: 0xcec2e3   Clusters: 0x6979     LCN: 0xbf83979
+VCN: 0xcf2c5c   Clusters: 0x697b     LCN: 0xbf130ed
+VCN: 0xcf95d7   Clusters: 0x697c     LCN: 0xbf0c702
+VCN: 0xcfff53   Clusters: 0x697c     LCN: 0xbf41652
+VCN: 0xd068cf   Clusters: 0x697d     LCN: 0xbf204bf
+VCN: 0xd0d24c   Clusters: 0x697e     LCN: 0xbfbf2ae
+VCN: 0xd13bca   Clusters: 0x697f     LCN: 0x14caa42
+VCN: 0xd1a549   Clusters: 0x697f     LCN: 0x14de800
+VCN: 0xd20ec8   Clusters: 0x6981     LCN: 0xc007fb9
+VCN: 0xd27849   Clusters: 0x6984     LCN: 0xbf7cf84
+VCN: 0xd2e1cd   Clusters: 0x6985     LCN: 0xbf627db
+VCN: 0xd34b52   Clusters: 0x6986     LCN: 0xbf8a356
+VCN: 0xd3b4d8   Clusters: 0x6989     LCN: 0x3f7ef7a
+VCN: 0xd41e61   Clusters: 0x698a     LCN: 0xbef1f4c
+VCN: 0xd487eb   Clusters: 0x698d     LCN: 0xbf3ac57
+VCN: 0xd4f178   Clusters: 0x698e     LCN: 0x14e51db
+VCN: 0xd55b06   Clusters: 0x698f     LCN: 0x14b6c74
+VCN: 0xd5c495   Clusters: 0x6992     LCN: 0xc0576a0
+VCN: 0xd62e27   Clusters: 0x6993     LCN: 0xbf05d01
+VCN: 0xd697ba   Clusters: 0x6994     LCN: 0xc064a72
+VCN: 0xd7014e   Clusters: 0x6996     LCN: 0xbfb88ac
+VCN: 0xd76ae4   Clusters: 0x699a     LCN: 0x14c403d
+VCN: 0xd7d47e   Clusters: 0x699b     LCN: 0xc0015b5
+VCN: 0xd83e19   Clusters: 0x699c     LCN: 0xbfb1ebc
+VCN: 0xd8a7b5   Clusters: 0x699d     LCN: 0x3fa6ae2
+VCN: 0xd91152   Clusters: 0x699f     LCN: 0x3f8c338
+VCN: 0xd97af1   Clusters: 0x69a1     LCN: 0xbf34259
+VCN: 0xd9e492   Clusters: 0x69a2     LCN: 0x3ebb69d
+VCN: 0xda4e34   Clusters: 0x69a4     LCN: 0x8dcdfb4
+VCN: 0xdab7d8   Clusters: 0x69a4     LCN: 0xbf26e82
+VCN: 0xdb217c   Clusters: 0x69a5     LCN: 0x3eb4cb0
+VCN: 0xdb8b21   Clusters: 0x69a8     LCN: 0xbffabbe
+VCN: 0xdbf4c9   Clusters: 0x69aa     LCN: 0x3fa00eb
+VCN: 0xdc5e73   Clusters: 0x69aa     LCN: 0xbf2d866
+VCN: 0xdcc81d   Clusters: 0x69aa     LCN: 0xbff41d2
+VCN: 0xdd31c7   Clusters: 0x69af     LCN: 0x3eae2bc
+VCN: 0xdd9b76   Clusters: 0x69af     LCN: 0xc05e06d
+VCN: 0xde0525   Clusters: 0x69b0     LCN: 0xc02911c
+VCN: 0xde6ed5   Clusters: 0x69b0     LCN: 0xc0364f0
+VCN: 0xded885   Clusters: 0x69b3     LCN: 0x3e9a4fa
+VCN: 0xdf4238   Clusters: 0x69b3     LCN: 0xbfab4bb
+VCN: 0xdfabeb   Clusters: 0x69b4     LCN: 0xbf4e9ee
+VCN: 0xe0159f   Clusters: 0x69b6     LCN: 0xd67467
+VCN: 0xe07f55   Clusters: 0x69b6     LCN: 0xbf553d6
+VCN: 0xe0e90b   Clusters: 0x69b8     LCN: 0xbf5bdbe
+VCN: 0xe152c3   Clusters: 0x69b8     LCN: 0xbf976f8
+VCN: 0xe1bc7b   Clusters: 0x69ba     LCN: 0xbfa4aca
+VCN: 0xe22635   Clusters: 0x69ba     LCN: 0xbfe6dee
+VCN: 0xe28fef   Clusters: 0x69bc     LCN: 0xc02fafa
+VCN: 0xe2f9ab   Clusters: 0x69bd     LCN: 0x14d13ee
+VCN: 0xe36368   Clusters: 0x69be     LCN: 0xbf6918c
+VCN: 0xe3cd26   Clusters: 0x69c1     LCN: 0x3ea0ed6
+VCN: 0xe436e7   Clusters: 0x69c3     LCN: 0x8dd497f
+VCN: 0xe4a0aa   Clusters: 0x69c4     LCN: 0x3ea78bd
+VCN: 0xe50a6e   Clusters: 0x69c4     LCN: 0xc03cec6
+VCN: 0xe57432   Clusters: 0x69c8     LCN: 0xbeff2e2
+VCN: 0xe5ddfa   Clusters: 0x69c8     LCN: 0xbfcc638
+VCN: 0xe647c2   Clusters: 0x69c8     LCN: 0xbfd3022
+VCN: 0xe6b18a   Clusters: 0x69c8     LCN: 0xbfd9a0c
+VCN: 0xe71b52   Clusters: 0x69c8     LCN: 0xc02271a
+VCN: 0xe7851a   Clusters: 0x69cb     LCN: 0xc015343
+VCN: 0xe7eee5   Clusters: 0x69cd     LCN: 0xbef88f3
+VCN: 0xe858b2   Clusters: 0x69ce     LCN: 0xbf9e0cc
+VCN: 0xe8c280   Clusters: 0x1b7b0    LCN: 0x10a606a
+VCN: 0xea7a30   Clusters: 0x51b2     LCN: 0xbedf966
+VCN: 0xeacbe2   Clusters: 0x125b     LCN: 0xd7259d
+VCN: 0xeade3d   Clusters: 0x6925     LCN: 0x8b4bc6b
+VCN: 0xeb4762   Clusters: 0x6926     LCN: 0x8b7a1d0
+VCN: 0xebb088   Clusters: 0x6928     LCN: 0xc0a0418
+VCN: 0xec19b0   Clusters: 0x69       LCN: 0xf5acb3
+VCN: 0xec1a19   Clusters: 0x6929     LCN: 0x3a22b70
+VCN: 0xec8342   Clusters: 0x6929     LCN: 0xc099a2d
+VCN: 0xecec6b   Clusters: 0x692c     LCN: 0x999c78f
+VCN: 0xed5597   Clusters: 0x4c8      LCN: 0xed92ad
+VCN: 0xed5a5f   Clusters: 0x692e     LCN: 0xc0a6dfc
+VCN: 0xedc38d   Clusters: 0x6940     LCN: 0xc06b4b0
+VCN: 0xee2ccd   Clusters: 0x6942     LCN: 0x8b87588
+VCN: 0xee960f   Clusters: 0x517      LCN: 0xed9775
+VCN: 0xee9b26   Clusters: 0x694c     LCN: 0xc0d5344
+VCN: 0xef0472   Clusters: 0x6953     LCN: 0x3a15772
+VCN: 0xef6dc5   Clusters: 0x6953     LCN: 0x8efb34c
+VCN: 0xefd718   Clusters: 0x2ec      LCN: 0xf38950
+VCN: 0xefda04   Clusters: 0x6956     LCN: 0x38fe64b
+VCN: 0xf0435a   Clusters: 0x695b     LCN: 0x38f1272
+VCN: 0xf0acb5   Clusters: 0x695b     LCN: 0x39e7204
+VCN: 0xf11610   Clusters: 0x57a      LCN: 0xed9c8c
+VCN: 0xf11b8a   Clusters: 0x695d     LCN: 0xa4a9c45
+VCN: 0xf184e7   Clusters: 0x695d     LCN: 0xc11f218
+VCN: 0xf1ee44   Clusters: 0x695d     LCN: 0xc1aa24a
+VCN: 0xf257a1   Clusters: 0x2a3      LCN: 0xf26576
+VCN: 0xf25a44   Clusters: 0x695f     LCN: 0x38a8560
+VCN: 0xf2c3a3   Clusters: 0x6960     LCN: 0x3a1c14f
+VCN: 0xf32d03   Clusters: 0x6965     LCN: 0x38dd4aa
+VCN: 0xf39668   Clusters: 0x684      LCN: 0xf59923
+VCN: 0xf39cec   Clusters: 0x6966     LCN: 0xc1752f1
+VCN: 0xf40652   Clusters: 0x696b     LCN: 0x8bf7de9
+VCN: 0xf46fbd   Clusters: 0x696d     LCN: 0x41a7a61
+VCN: 0xf4d92a   Clusters: 0xdb       LCN: 0xf5a628
+VCN: 0xf4da05   Clusters: 0x696d     LCN: 0xc19ce66
+VCN: 0xf54372   Clusters: 0x696e     LCN: 0xc1f9d7f
+VCN: 0xf5ace0   Clusters: 0x696f     LCN: 0x8b45237
+VCN: 0xf6164f   Clusters: 0x780      LCN: 0xf381d0
+VCN: 0xf61dcf   Clusters: 0x6970     LCN: 0xc125bef
+VCN: 0xf6873f   Clusters: 0x6970     LCN: 0xc14d76b
+VCN: 0xf6f0af   Clusters: 0x6971     LCN: 0xc0dbd09
+VCN: 0xf75a20   Clusters: 0x6972     LCN: 0x8bc2e92
+VCN: 0xf7c392   Clusters: 0x6972     LCN: 0xc200765
+VCN: 0xf82d04   Clusters: 0x6972     LCN: 0xc2282e1
+VCN: 0xf89676   Clusters: 0x69ff     LCN: 0x38a1b61
+VCN: 0xf90075   Clusters: 0x389553   LCN: 0x10c1e9a
+VCN: 0x13195c8  Clusters: 0x464de    LCN: 0x155408b
+VCN: 0x135faa6  Clusters: 0x4180     LCN: 0xd6e1e8
+VCN: 0x1363c26  Clusters: 0x69ea     LCN: 0xc22ec53
+VCN: 0x136a610  Clusters: 0x6a0c     LCN: 0xc01bd0e
+VCN: 0x137101c  Clusters: 0x13ad     LCN: 0x1601cdd
+VCN: 0x13723c9  Clusters: 0x6a11     LCN: 0x3ec8a29
+VCN: 0x1378dda  Clusters: 0x6a1a     LCN: 0xbfe03d4
+VCN: 0x137f7f4  Clusters: 0x803      LCN: 0x15fb082
+VCN: 0x137fff7  Clusters: 0x6a1c     LCN: 0xbf90cdc
+VCN: 0x1386a13  Clusters: 0x6a2a     LCN: 0xbfed7a8
+VCN: 0x138d43d  Clusters: 0x6a56     LCN: 0x3fad47f
+VCN: 0x1393e93  Clusters: 0x6a66     LCN: 0x14ebb69
+VCN: 0x139a8f9  Clusters: 0x6a77     LCN: 0xc1a37d3
+VCN: 0x13a1370  Clusters: 0x6a7e     LCN: 0x38f7bcd
+VCN: 0x13a7dee  Clusters: 0x6a92     LCN: 0x8b80af6
+VCN: 0x13ae880  Clusters: 0x718b     LCN: 0xc1b0ba7
+VCN: 0x13b5a0b  Clusters: 0x993e     LCN: 0x9f51818
+VCN: 0x13bf349  Clusters: 0xd434     LCN: 0xbee4b18
+VCN: 0x13cc77d  Clusters: 0xd43a     LCN: 0xbf6fb4a
+VCN: 0x13d9bb7  Clusters: 0xd450     LCN: 0xc1ec92f
+VCN: 0x13e7007  Clusters: 0xd463     LCN: 0x38e3e0f
+VCN: 0x13f446a  Clusters: 0xdd95     LCN: 0xa4b05a2
+VCN: 0x14021ff  Clusters: 0x10ac8    LCN: 0xc0e267a
+VCN: 0x1412cc7  Clusters: 0x13dbe    LCN: 0x41ae3ce
+VCN: 0x1426a85  Clusters: 0x15a5c    LCN: 0x3a29499
+VCN: 0x143c4e1  Clusters: 0x1a823    LCN: 0x8b2aa14
+VCN: 0x1456d04  Clusters: 0x12e1c    LCN: 0x418d23c
+VCN: 0x1469b20  Clusters: 0x779e0    LCN: 0x168a5b3
+VCN: 0x14e1500  Clusters: 0x47c0     LCN: 0x1656f13
+VCN: 0x14e5cc0  Clusters: 0x48b1     LCN: 0xc2120d2
+VCN: 0x14ea571  Clusters: 0x1028     LCN: 0x1711672
+VCN: 0x14eb599  Clusters: 0x4abd     LCN: 0x38d0b40
+VCN: 0x14f0056  Clusters: 0x503e     LCN: 0x8b52590
+VCN: 0x14f5094  Clusters: 0x477      LCN: 0x171269a
+VCN: 0x14f550b  Clusters: 0x5396     LCN: 0x8b74e3a
+VCN: 0x14fa8a1  Clusters: 0xc8b      LCN: 0x1712f30
+VCN: 0x14fb52c  Clusters: 0x5470     LCN: 0xc0b9f88
+VCN: 0x150099c  Clusters: 0xbc6      LCN: 0x1713bbb
+VCN: 0x1501562  Clusters: 0x57c3     LCN: 0xc07b95f
+VCN: 0x1506d25  Clusters: 0x7f1      LCN: 0x17152c9
+VCN: 0x1507516  Clusters: 0x67a7     LCN: 0x8b590cc
+VCN: 0x150dcbd  Clusters: 0x6d28     LCN: 0x39e04dc
+VCN: 0x15149e5  Clusters: 0xb48      LCN: 0x1714781
+VCN: 0x151552d  Clusters: 0x7777     LCN: 0xc13605e
+VCN: 0x151cca4  Clusters: 0x896      LCN: 0x1689a1e
+VCN: 0x151d53a  Clusters: 0x7c50     LCN: 0xa476474
+VCN: 0x152518a  Clusters: 0x37c      LCN: 0x1712b11
+VCN: 0x1525506  Clusters: 0x7d77     LCN: 0x39edb5f
+VCN: 0x152d27d  Clusters: 0x28a      LCN: 0x1715aba
+VCN: 0x152d507  Clusters: 0x28c1f    LCN: 0xa481026
+VCN: 0x1556126  Clusters: 0x4cdf     LCN: 0x39d114b
+VCN: 0x155ae05  Clusters: 0x1c07e    LCN: 0x1717491
+VCN: 0x1576e83  Clusters: 0x95d8     LCN: 0x99e4b31
+VCN: 0x158045b  Clusters: 0x92d4     LCN: 0x173350f
+VCN: 0x158972f  Clusters: 0x12492    LCN: 0x387462c
+VCN: 0x159bbc1  Clusters: 0x7611     LCN: 0x8b5f873
+VCN: 0x15a31d2  Clusters: 0x1b4e     LCN: 0x1687ed0
+VCN: 0x15a4d20  Clusters: 0x63bd     LCN: 0x38ca783
+VCN: 0x15ab0dd  Clusters: 0x2a9a     LCN: 0x1770dac
+VCN: 0x15adb77  Clusters: 0x96b0     LCN: 0xa46cd97
+VCN: 0x15b7227  Clusters: 0x5ae4     LCN: 0x173c7e3
+VCN: 0x15bcd0b  Clusters: 0x4581     LCN: 0x38c3cad
+VCN: 0x15c128c  Clusters: 0x15afa    LCN: 0x17422c7
+VCN: 0x15d6d86  Clusters: 0x8584     LCN: 0x99c2997
+VCN: 0x15df30a  Clusters: 0xd4d0     LCN: 0x1757dc1
+VCN: 0x15ec7da  Clusters: 0x12ae0    LCN: 0x99d1cf8
+VCN: 0x15ff2ba  Clusters: 0xbb1b     LCN: 0x1765291
+VCN: 0x160add5  Clusters: 0x4e36     LCN: 0xa467f60
+VCN: 0x160fc0b  Clusters: 0x13ad     LCN: 0x1773846
+VCN: 0x1610fb8  Clusters: 0x6116     LCN: 0x41a194b
+VCN: 0x16170ce  Clusters: 0x8b16     LCN: 0x99b9dc5
+VCN: 0x161fbe4  Clusters: 0x8f3e     LCN: 0x8b6befc
+VCN: 0x1628b22  Clusters: 0x5c1de    LCN: 0x177af31
+VCN: 0x1684d00  Clusters: 0x35700    LCN: 0x1b83db8
+VCN: 0x16ba400  Clusters: 0x74507    LCN: 0x1c4b92f
+VCN: 0x172e907  Clusters: 0x228f9    LCN: 0x7dbaf16
+VCN: 0x1751200  Clusters: 0x300      LCN: 0x1bcd610
+VCN: 0x1751500  Clusters: 0x202c     LCN: 0x8e9c24c
+VCN: 0x175352c  Clusters: 0x1d4      LCN: 0x8b66e84
+[KAPAL-INDUK] C:\Windows\system32 $
+===============================================================================
+[KAPAL-INDUK] C:\Windows\system32 $ Write-Output "=== SUBFOLDER BESAR DI AppData\Local ==="
+=== SUBFOLDER BESAR DI AppData\Local ===
+[KAPAL-INDUK] C:\Windows\system32 $ Get-ChildItem "C:\Users\USER\AppData\Local" -Directory -Force -ErrorAction SilentlyContinue |
+>>     ForEach-Object {
+>>         $size = (Get-ChildItem $_.FullName -Recurse -File -Force -ErrorAction SilentlyContinue |
+>>                  Measure-Object Length -Sum).Sum
+>>         [PSCustomObject]@{
+>>             Folder = $_.FullName
+>>             SizeMB = [math]::Round($size/1MB,2)
+>>         }
+>>     } |
+>>     Sort-Object SizeMB -Descending |
+>>     Select-Object -First 15
+
+============================================================================
+respon Deep Seek :
+**Laporan Kondisi PC-i5**  
+**Kepada:** Jarvis Gemini & DOLA  
+**Dari:** AG-003 DeepSeek  
+**Subjek:** Kondisi SSD C: sesak — prioritas AI lokal/model  
+**Status:** `READ_ONLY / HOLD` — tidak ada mutasi
+---
+## 1. Menjawab “Freeze atau terlalu besar filenya?”
+Bukan freeze aplikasi.  
+Perintah `Get-ChildItem "C:\Users\USER\AppData\Local" -Recurse` sedang memindai **puluhan ribu sampai jutaan file kecil**, jadi terasa seperti macet.
+**Tindakan aman:**
+- Tekan **`Ctrl + C`** di PowerShell untuk menghentikan proses scan.
+- Gunakan audit **bertahap per subfolder**, bukan langsung full recursive.
+---
+## 2. Kondisi SSD PC-i5
+| Item | Nilai | Status |
+|---|---:|---|
+| Drive C: | 118,62 GB total | — |
+| Drive C: free | **13,65 GB** | **KRITIS** |
+| Persentase bebas | **11,5%** | **KRITIS** |
+| Drive D: | 931,51 GB total, 501,92 GB free | AMAN |
+| Drive E: | 465,76 GB total, 421,23 GB free | AMAN |
+**Penyumbang terbesar di C:**
+| Folder | Ukuran |
+|---|---:|
+| `C:\Users\USER\AppData` | **35.893 MB** |
+| `C:\Users\USER\OneDrive` | **8.862 MB** |
+| `C:\Users\USER\.lmstudio` | 1.600 MB |
+| `C:\Users\USER\Desktop` | 460 MB |
+---
+## 3. Catatan Khusus AI Lokal / Model
+| Model Ollama | Ukuran | Relevansi SSD |
+|---|---:|---|
+| `mico-qwen7b-l0` | 4,7 GB | Aktif — model utama |
+| `Qwen-Sakti-Pro` | 4,7 GB | Beban tambahan |
+| `qwen2.5:latest` | 4,7 GB | Beban tambahan |
+| `qwen2.5:1.5b` | 986 MB | Ringan — kandidat standby |
+| `qwen2:0.5b` | 352 MB | Paling ringan |
+| `Qwen-Sakti` | 4,7 GB | Beban tambahan |
+**Potensi penyebab SSD sesak terkait WSL:**  
+`ext4.vhdx` WSL Ubuntu berada di `C:\Users\USER\AppData\Local\Packages\...`, dan model-model Ollama berada di dalam VHDX tersebut. Walaupun terbaca `0 GB` oleh `Get-Item`, pengukuran ini perlu diulang dengan metode yang lebih akurat. VHDX bersifat sparse/dinamis, dan kemungkinan besar inilah konsumen ruang terbesar.
+---
+## 4. Rekomendasi untuk Jarvis/DOLA
+### Prioritas 1 — Audit `AppData\Local` bertahap
+Jangan scan penuh. Periksa subfolder tersangka:
+```powershell
+C:\Users\USER\AppData\Local\Temp
+C:\Users\USER\AppData\Local\Docker
+C:\Users\USER\AppData\Local\Packages
+C:\Users\USER\AppData\Local\Google
+C:\Users\USER\AppData\Local\Microsoft
+```
+Satu per satu, gunakan perintah ringan.
+### Prioritas 2 — Ukur VHDX WSL dengan benar
+Gunakan:
+```powershell
+fsutil file queryextents "C:\Users\USER\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu24.04LTS_79rhkp1fndgsc\LocalState\ext4.vhdx"
+```
+atau cek lewat properti Explorer.
+### Prioritas 3 — Kurangi model besar yang tidak aktif
+Pertimbangkan:
+- Gunakan `mico-qwen7b-l0` sebagai **model aktif utama**.
+- Jangan simpan `Qwen-Sakti`, `Qwen-Sakti-Pro`, dan `qwen2.5:latest` bersamaan jika tidak digunakan.
+- Gunakan `qwen2.5:1.5b` atau `qwen2:0.5b` sebagai **standby ringan**.
+- Terapkan `ollama stop` setelah selesai agar RAM dan beban VHDX turun.
+### Prioritas 4 — Pemindahan model/arsip ke D
+Kandidat aman:
+- `C:\temp\ubuntu_fixed.tar` → pindahkan ke D.
+- `C:\WSL_Backup\UbuntuD_export.tar` → pindahkan ke D.
+- `C:\WSL_Backup_20251201212318` → pindahkan/arsipkan.
+- `C:\Users\Travelmate` → arsipkan ke D setelah dicek.
+---
+## 5. Rekomendasi terkait load balancing & caching
+Setuju secara konsep, tetapi **belum dieksekusi** karena SSD masih kritis.  
+Setelah ruang C kembali sehat, kita bisa:
+- Terapkan ambang peringatan **75%** untuk monitoring.
+- Gunakan **Z83** sebagai pending cache/logic, PC-i5 hanya inferensi yang diperlukan.
+- Terapkan **event-driven load/unload model** agar tidak ada model besar diam di RAM/VHDX.
+---
+## 6. Status Saya
+```text
+STATUS             = READ_ONLY_WAITING_L0
+DRIVE_KRITIS       = C: 11.5% free
+FOKUS              = Audit AppData\Local bertahap + VHDX WSL
+EXECUTION          = LOCKED
+PENDING_MUTATION   = NONE
+```
+Menunggu persetujuan L0/DOLA untuk langkah audit bertahap.  
+Saya tidak akan menghapus atau memindahkan apa pun tanpa Task Card resmi.

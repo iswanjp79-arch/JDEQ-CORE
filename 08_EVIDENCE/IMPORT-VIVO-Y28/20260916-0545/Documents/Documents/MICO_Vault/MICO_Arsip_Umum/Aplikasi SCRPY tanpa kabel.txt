@@ -1,0 +1,49 @@
+03.07 16.59
+Aplikasi SCRPY tanpa kabel
+==============================
+Scrcpy memang sangat praktis buat kontrol banyak ponsel dari satu layar laptop. Berikut adalah cara mengoptimalkannya agar lebih nyaman, tidak boros port USB, dan tampilan lebih teratur:
+1. Hemat Port USB: Gunakan Scrcpy Tanpa Kabel (Wireless)
+Jadi kamu tidak perlu colok 3 ponsel sekaligus ke laptop. Caranya:
+- Langkah 1: Setup awal via USB
+Sambungkan masing-masing ponsel ke laptop dengan kabel, aktifkan debugging USB, lalu jalankan perintah di cmd/PowerShell:
+bash  
+scrcpy --tcpip
+Ini akan otomatis mencari IP ponsel dan mengaktifkan koneksi nirkabel.
+- Langkah 2: Hubungkan tanpa kabel
+Setelah itu cabut kabel, lalu jalankan perintah untuk masing-masing ponsel dengan IP yang sudah didapat (misalnya IP ponsel adalah  192.168.1.100 ,  192.168.1.101 ,  192.168.1.102 ):
+bash  
+scrcpy --tcpip=192.168.1.100
+scrcpy --tcpip=192.168.1.101
+scrcpy --tcpip=192.168.1.102
+- Tips: Set IP statis di setiap ponsel melalui pengaturan router agar tidak berubah setiap kali menyala.
+2. Buka Semua 3 Layar dengan Satu Klik
+Buat file batch (untuk Windows) atau script shell (untuk Linux) agar tidak perlu mengetik perintah satu per satu:
+- Buat file  start-scrcpy.bat  di folder tempat kamu simpan Scrcpy:
+bat  
+@echo off
+start /b scrcpy --tcpip=192.168.1.100 --window-title="Vivo Y28" --window-size=600x1000
+start /b scrcpy --tcpip=192.168.1.101 --window-title="Infinix" --window-size=600x1000
+start /b scrcpy --tcpip=192.168.1.102 --window-title="Vivo Y1807" --window-size=600x1000
+- Keterangan:
+-  --window-title : Memberi nama pada setiap jendela agar tidak bingung.
+-  --window-size : Menyesuaikan ukuran tampilan agar pas di layar laptop.
+- Klik dua kali file ini untuk membuka semua layar sekaligus.
+3. Optimalkan Performa agar Tidak Lag
+Jika laptop mulai lemot saat membuka 3 layar sekaligus:
+- Kurangi resolusi atau bitrate pada perintah Scrcpy:
+bash  
+scrcpy --tcpip=192.168.1.100 --max-size=720 --bit-rate=2M
+- Tutup aplikasi lain yang tidak perlu di laptop.
+- Gunakan jaringan WiFi 5GHz (jika ada) agar koneksi wireless lebih stabil.
+4. Atur Tata Letak Layar agar Rapi
+Kamu bisa menyusun jendela 3 ponsel secara otomatis menggunakan aplikasi seperti:
+- Windows: Fitur Snap Windows bawaan (klik dan tarik jendela ke sisi layar) atau aplikasi gratis seperti  WindowGrid .
+- Linux: Gunakan fitur tiling window manager bawaan dari distro seperti Ubuntu atau aplikasi  i3wm .
+5. Kontrol Lebih Mudah
+- Gunakan shortcut keyboard bawaan Scrcpy:
+-  Alt + F : Mode fullscreen.
+-  Alt + C : Salin teks dari ponsel ke laptop (dan sebaliknya).
+-  Alt + S : Ambil tangkapan layar.
+- Jika ingin kontrol lebih canggih, coba aplikasi tambahan seperti  SWM  (Simple Window Manager for Scrcpy) yang bisa kamu unduh dari GitHub.
+ 
+

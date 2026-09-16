@@ -1,0 +1,17 @@
+06.16 10.10
+Best Alur agen. 
+​5 (Prosedur Eksekusi):
+​GitHub/Gitpod: Kanggo "Mesin Rak-rakan" (CPU/RAM gratis).
+​Claude.ai: Kanggo analisa logika kode sing luwih "manungsa" lan alus.
+​Perplexity: Kanggo golek celah keamanan jaringan paling anyar (Real-time).
+​Zero Touch Script: Nganyari script jdeq_turbo dadi otomatis.
+​Tunneling: Nganggo Cloudflare/Tailscale kanggo mbukak jalur Mbps. 
+​3 (Alat Utama):
+​GitHub (Codespaces): Iki "kantor" kita sing asli. github.com
+​Claude: Kanggo mbedah partikel kode. claude.ai
+​Perplexity: benchmark terbaru
+✔ repo baru
+✔ issue GitHub baru
+✔ alternative implementation
+✔ docs terbaru
+✔ tutorial baru

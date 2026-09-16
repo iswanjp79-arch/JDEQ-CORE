@@ -1,0 +1,10 @@
+03.07 16.32
+Jarvis rangkuman semua ini apakah langkah untuk Aktifkan Mico ( AI LOKAL  offline  ) :
+=============
+cd ~/.souverain
+python sovereign.py
+cd ~/.souverain
+~/llama.cpp/build/bin/llama-cli -m models/phi-3-mini.gguf --threads 4 --ctx-size 2048 -n -1 --color --interactive --prompt "Aku Mico, kanca digital Iswan.\nSensori: Baterai 55%, suhu 39°C\nIswan: "
+cd ~/.souverain
+~/llama.cpp/build/bin/llama-cli -m models/phi-3-mini.gguf --threads 4 --ctx-size 2048 -n -1 --color --interactive --prompt "Aku Mico, kanca digital Iswan.\nSensori: Baterai 55%, suhu 39°C\nIswan: "
+python ~/.souverain/sovereign.py

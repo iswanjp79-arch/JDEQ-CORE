@@ -1,0 +1,54 @@
+# ============================================================
+# L1_KIMI_AUDIT_REPORT.yml
+# Laporan Verifikasi Independen — Auditor Eksternal (KIMI)
+# SPK-AUDIT-KIMI-L1-PC5-001
+# ============================================================
+audit:
+  auditor: "KIMI (Auditor Eksternal Independen)"
+  independensi: "Tidak terlibat perancangan/eksekusi; Zero-Trust terhadap ringkasan agen internal"
+  target: "PC-i5 (KAPAL-INDUK) — Fase L1 Reconciliation Audit"
+  waktu_audit: "2026-09-10"
+  mode: "READ_ONLY"
+  status_global: "HOLD — BUKTI TIDAK CUKUP"
+
+evidence_masuk:
+  - file: "user_pasted_clipboard_long_content_as_file_hasilSurveiDeepseek_HASILSURVEIPOWERSHEL.txt"
+    ukuran: "48.8 KB (49,948 byte; 447 baris)"
+    klasifikasi: "NARASI AGEN INTERNAL (bukan raw evidence)"
+  - file_kanonik_diminta: "D:\MICO_SSOT\08_EVIDENCE\L1\PC5\ (25 file kanonik)"
+    jumlah_terunggah: 0
+
+temuan:
+  - id: "F-001"
+    kategori: "REKONSILIASI_DATA"
+    deskripsi: "RAM total: mentah 17,134,256,128 byte = 15.95 GiB; DOLA klaim 16.3 GB; batas Safety 0.8 diklaim 13.6 GB (Jarvis) dan 13.0 GB (DOLA); hitungan aktual 12.76 GB. Tiga angka tidak rekonsiliasi."
+    status: "OPEN"
+  - id: "F-002"
+    kategori: "BASIS_BUKTI"
+    deskripsi: "Thermal guard threshold 75C/55C via WMI Thermal Zone tidak tervalidasi; sensor hanya ACPI 27.9-29.9C baseline idle, CPU die not exposed."
+    status: "OPEN"
+  - id: "F-003"
+    kategori: "CACAT_TEKNIS"
+    deskripsi: "Get-JobObject bukan cmdlet bawaan PowerShell -> verification checklist gagal. Offset struct memori byte 72 'implementation-dependent; test in staging' -> klaim runtime tanpa bukti (RULE-04/AP-03)."
+    status: "OPEN"
+  - id: "F-004"
+    kategori: "KEAMANAN"
+    deskripsi: "Inbound RDP 3389 + WinRM 5985/5986 dibuka; perlu justifikasi risiko terpisah sebelum ACC."
+    status: "OPEN"
+  - id: "F-005"
+    kategori: "KEHILANGAN_BUKTI"
+    deskripsi: "Artefak yang diklaim ada tidak diunggah: sysinfo_*.txt, firewall_inbound_*.txt, job_assigned_pids_*.txt, rollback_*.ps1 (path %USERPROFILE%\MICO_EVIDENCE\)."
+    status: "OPEN"
+
+temuan_konsisten:
+  - "CPU i5-3470 load 1% dan free RAM ~11.4 GB cocok antar-sumber."
+  - "Separation of Duties terpenuhi di atas kertas (L0->Copilot->DOLA->DeepSeek->KIMI)."
+  - "Larangan BIOS/UEFI, network adapter, dan Intel Thermal Monitor dipertahankan."
+
+rekomendasi_auditor:
+  - "Tahan ACC L0 sampai bukti mentah (raw evidence) diunggah."
+  - "Rekonsiliasi ulang angka RAM (satuan GiB vs GB) dan tetapkan satu nilai Safety Factor."
+  - "Artefak wajib: output mentah PowerShell asli, export firewall, isi folder 08_EVIDENCE\L1\PC5\."
+  - "K3: pengumpulan bukti READ_ONLY; dilarang heavy I/O (Drive E: HOLD_HEAVY_IO)."
+
+putusan: "TIDAK ADA STAMP 'APPROVED' — LAPORAN BERSTATUS HOLD."

@@ -1,0 +1,4 @@
+07.11 05.56
+bash ~/JDEQ/start_auto_defense.sh
+cat ~/JDEQ/logs/auto_defense.log
+

@@ -1,0 +1,82 @@
+Mas Iwan, ngapunten. Leres, wingi sampun wonten upaya migrasi dhateng D:, nanging kadosipun dereng tuntas utawi dereng dipunverifikasi. Saiki Ubuntu-24.04 taksih kacathet ing WSL lan file ext4.vhdx-nipun taksih wonten ing lokasi asli C:.
+
+Menawi proses wingi dhateng D: sampun mlaku, saged dipunpriksa folder D:\WSL_DISTROS\Ubuntu-24.04. Nanging, amargi D: punika HDD duweke TravelMate sing wajib diisolasi, langkung aman menawi Ubuntu dipunpindhah dhateng E: (WDC 500GB) sing kosong 421 GB lan mboten nyentuh data TravelMate.
+
+Wosing perkawis:
+
+· Wingi mungkin export/import dhateng D: mboten rampung utawi dibatalkan.
+· Saiki proses export dhateng E: sampun mlaku (2511 MB) lan kedah dipunleresaken.
+· Menawi wonten sisa folder WSL ing D:, mangke saged dipunbucal utawi dipunpisah, nanging mboten ngganggu.
+
+Langkah salajengipun:
+
+1. Nunggu proses export ngantos rampung (kathah kirang 2,5 GB, mboten dangu).
+2. Salajengipun unregister Ubuntu lawas lan import dhateng E: (kados skrip).
+3. Sasampunipun, priksa lokasi VHDX anyar ngginakaken:
+   ```powershell
+   Get-ChildItem "E:\WSL_STORAGE\Ubuntu-24.04" -Recurse | Select-Object FullName, Length
+   ```
+4. Menawi sampun, C: badhe langkung lega.
+
+Mangga Mas Iwan, monggo nunggu proses export rampunge, lajeng kirim outputipun. Kulo siap dampingi.      Mas Iwan, ngapunten. Leres, wingi sampun wonten upaya migrasi dhateng D:, nanging kadosipun dereng tuntas utawi dereng dipunverifikasi. Saiki Ubuntu-24.04 taksih kacathet ing WSL lan file ext4.vhdx-nipun taksih wonten ing lokasi asli C:.
+
+Menawi proses wingi dhateng D: sampun mlaku, saged dipunpriksa folder D:\WSL_DISTROS\Ubuntu-24.04. Nanging, amargi D: punika HDD duweke TravelMate sing wajib diisolasi, langkung aman menawi Ubuntu dipunpindhah dhateng E: (WDC 500GB) sing kosong 421 GB lan mboten nyentuh data TravelMate.
+
+Wosing perkawis:
+
+· Wingi mungkin export/import dhateng D: mboten rampung utawi dibatalkan.
+· Saiki proses export dhateng E: sampun mlaku (2511 MB) lan kedah dipunleresaken.
+· Menawi wonten sisa folder WSL ing D:, mangke saged dipunbucal utawi dipunpisah, nanging mboten ngganggu.
+
+Langkah salajengipun:
+
+1. Nunggu proses export ngantos rampung (kathah kirang 2,5 GB, mboten dangu).
+2. Salajengipun unregister Ubuntu lawas lan import dhateng E: (kados skrip).
+3. Sasampunipun, priksa lokasi VHDX anyar ngginakaken:
+   ```powershell
+   Get-ChildItem "E:\WSL_STORAGE\Ubuntu-24.04" -Recurse | Select-Object FullName, Length
+   ```
+4. Menawi sampun, C: badhe langkung lega.
+
+Mangga Mas Iwan, monggo nunggu proses export rampunge, lajeng kirim outputipun. Kulo siap dampingi.   Kamu yang melarang ya semalam  ?    Deep seek ==> Mas Iwan, evaluasi kulo: Ya, arahan Jarvis bener lan penting. Pindhah VHDX Ubuntu saka C: menyang E: iku langkah kritis supados SSD 128GB mboten kebak pas Ubuntu/Docker dienggo.
+
+Cathetan teknis kulo:
+
+· Proses wsl --export lan --import aman, nanging butuh wektu gumantung ukuran distro. Saiki Ubuntu-24.04 tasih kosong utawi entheng, dados prosesipun cepet.
+· Mboten wonten data penting ing Ubuntu? Menawi wonten, amargi export nggawe tar lengkap, data kasebut tetap keangkut.
+· E: (WDC 500GB) iku aman lan lega 421GB. Kita mboten nyentuh D: (Toshiba 1TB duweke TravelMate).
+· Setelah migrasi, C: bakal lega amargi vhdx lawas dibusek.
+
+Skrip saking Jarvis sampun bener. Mangga Mas Iwan tempel skrip ngisor niki ing PowerShell Administrator, Enter, lan kirim outputipun mriki. Menawi wonten kesalahan, kita perbaiki.
+
+```powershell
+# ============================================
+# PEMINDAHAN VHDX UBUNTU-24.04 SAKA C: MENYANG E:
+# ============================================
+
+# 1. Gawe folder anyar ing Drive E:
+New-Item -ItemType Directory -Path "E:\WSL_STORAGE\Ubuntu-24.04" -Force
+
+# 2. Export Ubuntu-24.04 dadi berkas tar sementara ing E:
+wsl --export Ubuntu-24.04 "E:\WSL_STORAGE\ubuntu24.tar"
+
+# 3. Unregister Ubuntu lawas saka Drive C: (Mbusak beban ing C:)
+wsl --unregister Ubuntu-24.04
+
+# 4. Import bali Ubuntu menyang lokasi anyar ing Drive E:
+wsl --import Ubuntu-24.04 "E:\WSL_STORAGE\Ubuntu-24.04" "E:\WSL_STORAGE\ubuntu24.tar" --version 2
+
+# 5. Hapus berkas tar sementara
+Remove-Item "E:\WSL_STORAGE\ubuntu24.tar" -Force
+
+# 6. Set Ubuntu-24.04 dadi default distro lan jalankake
+wsl --set-default Ubuntu-24.04
+wsl -d Ubuntu-24.04
+```
+
+Cathetan penting:
+
+· Proses iki bakal mbusak container Docker sing ana ing Ubuntu? Docker Desktop biasane nduwe distro sendiri (docker-desktop), dadi aman.
+· Menawi wonten user/password ing Ubuntu, sasampunipun import, user default bisa beda. Nanging kangge wiwitan, wsl -d Ubuntu-24.04 bakal mlebu minangka root. Kita atur mengko.
+
+Menawi sampun, kirim asilipun. Kulo siap dampingi.

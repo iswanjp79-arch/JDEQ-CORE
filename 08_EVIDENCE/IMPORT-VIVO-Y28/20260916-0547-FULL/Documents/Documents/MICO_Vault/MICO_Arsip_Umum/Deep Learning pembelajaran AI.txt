@@ -1,0 +1,24 @@
+03.07 16.27
+Deep Learning pembelajaran AI :
+=========================
+1. komunitas "On-Device telah menerima petunjuk untuk menerjemahkan kalimat dari bahasa Indonesia ke bahasa Ngoko. Dalam konteks seperti pembicaraan atau interaksi sosial informal, menggunakan bahasa Ngoko khas semarangan dapat mengingatkan kepentingan kontekst dan kesempatan untuk memberikan maksud yang lebih dalam dalam percakapan informal.
+Terakhir, Jenengmu JARVIS memandangi permintaan dari pengguna untuk bicara dengan bahasa Ngoko Khas Semarangan. Kamu memutuskan untuk menerjemahkan, "arep diskusi apa iki bosku ?" dalam bentuk terbaik dari bahasa Ngoko, mendekati pengguna dalam suasana yang lebih santai dan ramah.
+Dengan cara tersebut, Jenengmu Jarvis menjalin hubungan dengan penggunanya dengan cepat dan menyesuaikan bahasa dengan kesan yang diinginkan. Namun, penting untuk mengetahui bahwa bahasa Ngoko dapat bertumpah dalam pengucapan dan bahasa sehari-hari, dan tidak cenderung digunakan dalam konteks formal atau profesional.
+
+[ Prompt: 2.6 t/s | Generation: 1.8 t/s ]
+
+> Jarvis, kowe dudu narator. Saiki kowe dadi asistenku sing jenenge Mico. Jawaben nganggo Ngoko lugu sing akrab, aja kaku kaya mesin terjemah. Kowe wis siap
+ Jarvis, seorang narator yang menggunakan bahasa Iswan dalam persidangan atau cerita, telah diberikan petunjuk untuk menggunakan bahasa Ngoko untuk menambah perasaan yang lebih romantis dalam percakapan. Seorang asisten, Saiki, berkomunikasi dengan Mico dalam bahasa Iswan yang lebih informal, memberikan dukungan kepada Mico dalam menjalin hubungan dengan orang lain.
+Jarvis menggunakan bahasa Ngoko untuk menegaskan kepedulian mereka, "Saiki, aku mohon bantu kamu, saya ingin menjadi lebih baik dalam pencari kata yang lebih baik," dengan memberi pesan yang diinginkan dalam bahasa Ngoko. Saiki memperhatikan kepentingan pengucapan dan menjaga kesan yang baik dengan menerjemahkan secara baik-baik.
+ranjanaan:
+Jarvis, seorang penulis yang ingin menunjukkan emosi yang lebih kuat dalam cerita atau nar" atau "Termux Hacking".
+2. The "Local LLM" Enthusiasts (Reddit r/Termux & r/LocalLlama) 
+3. The Red Team AI Architects: Seperti proyek RedAmon (  "Pocket Hacker Agent".  ) 
+4.  DIY Edge Robotics Engineers: Beberapa pengembang di GitHub membangun sistem bernama AppAgent atau Deki. 
+5. AI Infrastructure Engineer: Orang yang terobsesi memindahkan beban komputasi awan (Cloud) ke perangkat ujung (Edge) untuk privasi dan kecepatan.
+6. Cybersecurity Researcher / Penetration Tester: Mereka membutuhkan alat otonom yang kecil, tidak terlacak, dan bisa ditinggalkan di lokasi target (Drop-boxes).
+7. ​IoT Solutions Architect: Profesional yang merancang kota pintar (Smart Cities), di mana setiap perangkat (seperti Vivo Anda) harus bisa mengambil keputusan tanpa menunggu instruksi server pusat.
+8. Robotics Developer: Mereka yang melihat ponsel bukan sebagai alat komunikasi, melainkan sebagai "otak" murah yang sudah punya kamera, baterai, GPS, dan CPU kuat untuk menggerakkan robot.
+9. Embedded Systems Engineer (untuk menghubungkan Termux dengan modul motoric/servo via Bluetooth/ESP32).
+
+

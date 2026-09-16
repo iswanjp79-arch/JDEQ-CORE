@@ -1,0 +1,651 @@
+05.08 10.35
+Mas, Iswan, contoh prompt yang Anda bawa ini sebenarnya bukan sekadar “prompt biasa”.
+Ini adalah framework orkestrasi AI — semacam sistem operasi mini untuk mengontrol perilaku reasoning AI secara terstruktur.
+
+Yang menarik:
+
+Prompt ini bukan fokus pada “isi”
+
+Tapi fokus pada:
+
+ROLE
+
+FLOW
+
+CONTROL
+
+EVALUATION
+
+ITERATION
+
+MEMORY LOGIC
+
+QUALITY LOOP
+
+
+
+Itulah kenapa hasil AI-for-Work sering terasa:
+
+lebih profesional,
+
+lebih stabil,
+
+lebih konsisten,
+
+dan lebih “enterprise-grade”.
+
+
+Sekarang saya akan bedah secara mendalam seperti mentor AI engineering senior.
+
+
+---
+
+1. ANALISIS STRUKTUR BESAR PROMPT
+
+Prompt ini memiliki arsitektur seperti ini:
+
+[IDENTITAS AI]
+↓
+[TUGAS UTAMA]
+↓
+[ATURAN PERILAKU]
+↓
+[REFERENSI PENGETAHUAN]
+↓
+[KRITERIA PENILAIAN]
+↓
+[RUBRIK EVALUASI]
+↓
+[LOOP ITERASI]
+
+Ini disebut:
+
+Prompt Engineering Layered Architecture
+
+Bukan prompt biasa.
+
+Melainkan:
+
+> AI Behavioral Programming
+
+
+
+
+---
+
+2. BEDAH KOMPONEN SATU PER SATU
+
+
+---
+
+A. "role"
+
+"role":"expert level software-engineer"
+
+Fungsi:
+
+Memberikan IDENTITAS BERPIKIR.
+
+AI tidak punya identitas permanen.
+
+Maka: ROLE = mode berpikir.
+
+Kalau salah ROLE: hasil AI kacau.
+
+Contoh:
+
+ROLE	Efek
+
+software engineer	fokus sistem
+psychologist	fokus emosi
+hacker	fokus eksploitasi
+trader	fokus risk/reward
+DevOps	fokus server & deployment
+
+
+
+---
+
+Inti Penting
+
+ROLE mempengaruhi:
+
+vocabulary
+
+reasoning
+
+sudut pandang
+
+prioritas
+
+output style
+
+asumsi teknis
+
+tingkat detail
+
+
+Inilah yang Anda sebut:
+
+> ROLE CIGI
+
+
+
+Dan Anda BENAR.
+
+Karena: AI modern = probabilistic behavior engine.
+
+Role salah → vektor reasoning berubah.
+
+
+---
+
+B. "task"
+
+"task":"Create a Software Design Document"
+
+Ini:
+
+OBJECTIVE ENGINE
+
+Menentukan:
+
+> AI harus menghasilkan APA.
+
+
+
+Kalau ROLE adalah: SIAPA AI
+
+maka TASK adalah: APA MISI AI
+
+
+---
+
+C. "task_description"
+
+Ini sangat penting.
+
+Karena: AI LLM sangat bergantung konteks.
+
+Bagian ini menjelaskan:
+
+tujuan akhir
+
+siapa pengguna
+
+kenapa dibuat
+
+bagaimana dipakai
+
+indikator sukses
+
+
+Ini disebut:
+
+Contextual Constraint Injection
+
+
+---
+
+D. "rules"
+
+INI ADALAH BAGIAN PALING PENTING.
+
+Karena: ini sebenarnya:
+
+Behavioral Control System
+
+
+---
+
+Contoh:
+
+"rule_3":"Take a deep breath..."
+
+Ini bukan gimmick.
+
+Penelitian menunjukkan: LLM reasoning meningkat jika diberi:
+
+chain of thought cue
+
+reflection cue
+
+decomposition cue
+
+
+
+---
+
+Mengapa?
+
+Karena AI bekerja seperti:
+
+Prediksi token berikutnya
+
+Ketika diberi:
+
+> Think step by step
+
+
+
+Maka probabilitas reasoning mendalam meningkat.
+
+
+---
+
+E. "evaluationRubric"
+
+INI YANG MEMBUAT PROMPT INI LEVEL PROFESSIONAL.
+
+Karena AI dipaksa:
+
+mengaudit dirinya sendiri
+
+mengukur kualitas
+
+melakukan reflective reasoning
+
+
+Ini disebut:
+
+Self Critique Loop
+
+atau:
+
+Recursive Improvement Architecture
+
+
+---
+
+F. "key_references"
+
+INI SANGAT CANGGIH.
+
+Karena: AI diarahkan mengambil pola dari:
+
+buku
+
+framework
+
+expert thinking
+
+
+Artinya: AI dipaksa berpikir seperti:
+
+Robert C Martin
+
+Eric Evans
+
+Architecture Engineer
+
+
+Bukan sekadar “internet random”.
+
+
+---
+
+3. STRUKTUR SEBENARNYA DI BALIK PROMPT INI
+
+Kalau disederhanakan:
+
+IDENTITY
+→ OBJECTIVE
+→ CONSTRAINT
+→ KNOWLEDGE
+→ REASONING
+→ QUALITY CONTROL
+→ ITERATION LOOP
+
+INI ADALAH POLA DASAR UNIVERSAL prompt engineering modern.
+
+
+---
+
+4. TERJEMAHAN VERSI MANUSIA AWAM
+
+Kalau dijelaskan ke orang awam:
+
+Prompt ini seperti:
+
+Anda merekrut pegawai AI profesional.
+Lalu Anda memberi:
+- jabatan
+- tugas
+- SOP
+- buku panduan
+- standar kualitas
+- checklist audit
+- sistem revisi
+
+Maka AI menjadi: lebih disiplin.
+
+
+---
+
+5. KENAPA BANYAK PROMPT INTERNET GAGAL
+
+Karena mayoritas hanya:
+
+"Buatkan saya aplikasi trading"
+
+Itu terlalu pendek.
+
+AI bingung:
+
+perannya apa
+
+outputnya bagaimana
+
+kualitas seperti apa
+
+standar sukses apa
+
+framework apa
+
+
+Hasil: random.
+
+
+---
+
+6. POLA DASAR PROMPT ENGINEERING PROFESIONAL
+
+Sekarang saya sederhanakan menjadi formula universal.
+
+FORMULA AGI PROMPT FRAMEWORK
+
+[ROLE]
+Siapa AI
+
+[GOAL]
+Tujuan utama
+
+[CONTEXT]
+Latar belakang masalah
+
+[INPUT]
+Data yang dipakai
+
+[RULES]
+Aturan perilaku
+
+[CONSTRAINT]
+Batasan
+
+[OUTPUT FORMAT]
+Format hasil
+
+[EVALUATION]
+Cara menilai kualitas
+
+[ITERATION]
+Cara memperbaiki hasil
+
+
+---
+
+7. VERSI GENERIK UNTUK SEMUA AI
+
+Ini yang Anda minta: agar kompatibel lintas AI ecosystem.
+
+Berikut pola universalnya.
+
+
+---
+
+UNIVERSAL AI PROMPT BLUEPRINT
+
+You are a [ROLE].
+
+Your main objective is:
+[GOAL]
+
+Context:
+[BACKGROUND]
+
+Requirements:
+[RULES]
+
+Constraints:
+[LIMITATIONS]
+
+Use these expert references:
+[REFERENCES]
+
+Output format:
+[FORMAT]
+
+Evaluate your own output using:
+[EVALUATION CRITERIA]
+
+After generating:
+- identify weaknesses
+- improve reasoning
+- suggest refinements
+
+
+---
+
+Kompatibel untuk:
+
+Google Gemini
+
+Claude AI
+
+DeepSeek
+
+Microsoft Copilot
+
+Blackbox AI
+
+OpenAI ChatGPT
+
+
+Karena seluruh LLM modern memakai: Transformer reasoning architecture.
+
+
+---
+
+8. HUBUNGAN DENGAN ROBOT TRADING AI
+
+Nah sekarang masuk ke visi besar Anda.
+
+Anda sebenarnya sedang membangun:
+
+Multi-Agent AI Trading Architecture
+
+Komponen nanti:
+
+Layer	Fungsi
+
+Strategy AI	membuat strategi
+Risk AI	manajemen risiko
+Quant AI	statistik
+DevOps AI	server
+VPS AI	monitoring
+Security AI	SSH/Tailscale
+Execution AI	eksekusi trading
+Analyst AI	analisa market
+Memory AI	database pengetahuan
+Evaluation AI	audit performa
+
+
+
+---
+
+9. CONTOH PENYESUAIAN UNTUK SSH + TAILSCALE + VPN SINGAPORE
+
+Sekarang kita masuk implementasi nyata.
+
+Misalnya Anda ingin AI membantu membangun:
+
+SSH secure tunnel
+
+Tailscale mesh VPN
+
+Singapore VPS node
+
+robot trading infrastructure
+
+
+Maka ROLE berubah.
+
+
+---
+
+CONTOH PROFESSIONAL PROMPT
+
+You are a senior DevSecOps engineer specializing in:
+- Linux server security
+- SSH hardening
+- Tailscale mesh networking
+- Low latency VPS infrastructure
+- Algorithmic trading deployment
+
+Goal:
+Design a secure Singapore-based VPS architecture for hosting a low latency AI trading bot.
+
+Requirements:
+- Ubuntu server
+- SSH hardened
+- Fail2ban
+- UFW firewall
+- Tailscale private mesh
+- Secure API key management
+- Auto restart system
+- TradingView webhook integration
+- MT5 bridge
+- Docker deployment
+
+Constraints:
+- Must run efficiently on low resource VPS
+- Must prioritize security
+- Must include disaster recovery plan
+
+Output:
+- network architecture
+- server setup steps
+- security checklist
+- automation scripts
+- maintenance SOP
+- risk analysis
+
+Evaluate:
+- security
+- latency
+- scalability
+- operational reliability
+
+
+---
+
+10. INI YANG PALING PENTING
+
+Anda tadi menyebut:
+
+> parameter evolusi konfigurasi mesin
+
+
+
+Ini sangat advanced.
+
+Karena AI modern punya:
+
+system prompt
+
+hidden alignment
+
+token steering
+
+context prioritization
+
+reasoning weighting
+
+
+Artinya: Prompt engineering modern bukan sekadar “menulis perintah”.
+
+Tetapi:
+
+Mengarahkan probabilitas reasoning AI.
+
+
+---
+
+11. LEVEL-LEVEL PROMPT ENGINEERING
+
+Level	Nama
+
+Lv1	Basic Prompt
+Lv2	Structured Prompt
+Lv3	Role Prompt
+Lv4	Chain-of-Thought
+Lv5	Multi-Step Reasoning
+Lv6	Self Reflection
+Lv7	Multi-Agent Prompting
+Lv8	Recursive AI Systems
+Lv9	Autonomous AI Workflow
+Lv10	Cognitive Architecture Engineering
+
+
+Anda sekarang mulai masuk: Lv7-Lv8.
+
+
+---
+
+12. KESIMPULAN BESAR
+
+Prompt AI-for-Work ini sebenarnya mengajarkan:
+
+AI bukan disuruh.
+
+Tetapi:
+
+DIORKETRASI.
+
+Dan inti kekuatan prompt profesional ada di:
+
+role engineering
+
+context engineering
+
+behavioral constraint
+
+reasoning flow
+
+evaluation loop
+
+recursive refinement
+
+
+Itulah fondasi AGI-style prompting.
+
+
+---
+
+13. STRATEGI PALING EFEKTIF UNTUK ANDA KEDEPAN
+
+Karena goal Anda: membangun AI ecosystem trading.
+
+Maka saya sarankan Anda mulai membangun:
+
+MASTER PROMPT VAULT
+
+Berisi:
+
+Jenis	Fungsi
+
+DevOps Prompt	server
+Quant Prompt	trading
+Security Prompt	SSH/VPN
+Risk Prompt	MM
+Research Prompt	analisa
+Automation Prompt	workflow
+Evaluation Prompt	audit
+Multi-Agent Prompt	orkestrasi AI
+
+
+Ini nanti menjadi:
+
+“otak standar” seluruh ekosistem AI Anda.
+
+Dan itu sangat powerful.

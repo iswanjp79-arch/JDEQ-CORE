@@ -1,0 +1,260 @@
+07.09 23.09
+## Dasar Linux
+| Item | Tingkat | Kegunaan singkat |
+|---|---|---|
+| git | Mudah | Version control |
+| curl | Mudah | Ambil data dari URL |
+| wget | Mudah | Unduh file |
+| openssl | Sedang | Kriptografi dasar |
+| nano | Mudah | Editor teks |
+| vim | Sedang | Editor teks lanjutan |
+| tmux | Sedang | Multiplexer terminal |
+| htop | Mudah | Monitor proses |
+| screen | Sedang | Session manager |
+| tar | Mudah | Arsip file |
+| zip | Mudah | Kompresi |
+| unzip | Mudah | Ekstraksi arsip |
+| grep | Mudah | Pencarian teks |
+| sed | Sedang | Transformasi teks |
+| awk | Sedang | Pemrosesan teks |
+| findutils | Mudah | Pencarian file |
+| coreutils | Mudah | Utilitas inti |
+| util-linux | Mudah | Utilitas sistem |
+| bash | Mudah | Shell utama |
+| zsh | Sedang | Shell alternatif |
+| fish | Sedang | Shell modern |
+| python | Mudah | Bahasa skrip |
+| python-pip | Mudah | Manajer paket Python |
+| ruby | Sedang | Bahasa skrip |
+| perl | Sedang | Bahasa skrip |
+| php | Sedang | Bahasa skrip |
+| nodejs | Sedang | Runtime JavaScript |
+| clang | Sulit | Compiler C/C++ |
+| make | Sedang | Otomasi build |
+| cmake | Sulit | Sistem build |
+| pkg-config | Sedang | Konfigurasi build |
+| pkg | Mudah | Manajer paket Termux |
+| rsync | Sedang | Sinkronisasi file |
+| proot | Sedang | Emulasi environment |
+| termux-api | Mudah | Akses fitur Android |
+| termux-tools | Mudah | Alat bantu Termux |
+| termux-services | Sedang | Layanan background |
+| ncurses-utils | Mudah | UI terminal |
+| lsof | Sedang | Lihat file terbuka |
+| strace | Sedang | Trace sistem call |
+| gdb | Sulit | Debugging tingkat lanjut |
+## Jaringan
+| Item | Tingkat | Kegunaan singkat |
+|---|---|---|
+| net-tools | Mudah | Utilitas jaringan klasik |
+| iproute2 | Sedang | Konfigurasi jaringan modern |
+| iputils | Mudah | Ping, traceroute tools |
+| dnsutils | Mudah | DNS lookup |
+| bind-tools | Sedang | DNS advanced |
+| traceroute | Mudah | Lacak rute |
+| mtr | Sedang | Monitoring rute |
+| whois | Mudah | Info domain |
+| tcpdump | Sulit | Packet capture |
+| nmap | Mudah | Discovery & scanning |
+| masscan | Sulit | Port scanning cepat |
+| netcat-openbsd | Mudah | Koneksi jaringan sederhana |
+| socat | Sedang | Relay/bridge koneksi |
+| proxychains-ng | Sedang | Proxy chaining |
+| tor | Sedang | Anonimisasi jaringan |
+| wireshark | Sulit | Analisis paket |
+| tshark | Sulit | Wireshark CLI |
+| tcpflow | Sulit | Rekonstruksi traffic |
+| bluez | Sedang | Bluetooth stack |
+## Web dan Aplikasi
+| Item | Tingkat | Kegunaan singkat |
+|---|---|---|
+| whatweb | Mudah | Identifikasi teknologi web |
+| dirb | Mudah | Directory discovery |
+| dirsearch | Sedang | Content discovery |
+| gobuster | Sedang | Bruteforce path/directory |
+| ffuf | Sedang | Fuzzing web |
+| nikto | Sedang | Web server checks |
+| wafw00f | Sedang | Deteksi WAF |
+| sqlmap | Sulit | SQL injection testing |
+| wpscan | Sedang | Audit WordPress |
+| exploitdb | Sedang | Database referensi |
+| searchsploit | Sedang | Pencarian exploit |
+| metatools | Sulit | Eksploit framework |
+| metasploit | Sulit | Framework pengujian |
+| php | Sedang | Skrip web |
+| nodejs | Sedang | Runtime web |
+| aapt | Sedang | Android packaging |
+| apksigner | Sedang | Tanda tangan APK |
+| apktool | Sedang | Dekompilasi APK |
+| jadx | Sedang | Dekompilasi Java/Kotlin APK |
+## Forensik dan Analisis File
+| Item | Tingkat | Kegunaan singkat |
+|---|---|---|
+| file | Mudah | Identifikasi tipe file |
+| strings | Mudah | Ambil string teks |
+| xxd | Mudah | Hex dump |
+| hexdump | Sedang | Dump biner |
+| binwalk | Sedang | Analisis firmware |
+| foremost | Sedang | File carving |
+| rsnapshot | Sedang | Snapshot backup |
+| keytool | Sedang | Manajemen sertifikat |
+| openssl | Sedang | Sertifikat dan enkripsi |
+| jadx-cli | Sedang | Dekompilasi CLI |
+| jadx-gui | Sedang | Dekompilasi GUI |
+| apkx | Sedang | Ekstraksi APK |
+| radare2 | Sulit | Reverse engineering |
+| ghidra | Sulit | Reverse engineering |
+| gdb | Sulit | Debugging biner |
+## Wireless dan Radio
+| Item | Tingkat | Kegunaan singkat |
+|---|---|---|
+| aircrack-ng | Sulit | Wireless audit |
+| reaver | Sulit | WPS testing |
+| bully | Sulit | WPS testing |
+| kismet | Sulit | Wireless monitoring |
+| bluez | Sedang | Bluetooth tools |
+## Identitas, Privasi, dan Layanan
+| Item | Tingkat | Kegunaan singkat |
+|---|---|---|
+| whois | Mudah | Info registrasi |
+| tor | Sedang | Routing anonim |
+| proxychains-ng | Sedang | Proxy routing |
+| openssh | Mudah | Remote shell aman |
+| rsync | Sedang | Sinkronisasi aman |
+| termux-api | Mudah | Integrasi Android |
+| termux-services | Sedang | Service manager |
+| netcat-openbsd | Mudah | Debug koneksi |
+| socat | Sedang | Forwarding koneksi |
+## Rekomendasi urutan belajar
+1. **Mulai dari dasar Linux**: `git`, `curl`, `wget`, `nano`, `grep`, `python`.
+2. **Lanjut jaringan**: `nmap`, `whois`, `dnsutils`, `traceroute`, `netcat`.
+3. **Masuk web**: `whatweb`, `dirb`, `gobuster`, `ffuf`.
+4. **Baru analisis**: `tcpdump`, `wireshark`, `strace`, `binwalk`.
+5. **Terakhir**: `metasploit`, `sqlmap`, `hashcat`, `aircrack-ng`, `ghidra`.
+Kalau Anda mau, saya bisa lanjutkan menjadi **tabel yang ditandai mana yang aman untuk pemula, mana yang perlu lab, dan mana yang sebaiknya dipelajari hanya untuk defensif**.
+Berikut versi yang **murni gratis** dan fungsionalnya, dipisah per kategori. Saya pilih yang umumnya tersedia sebagai open-source atau paket gratis di Termux/Linux, lalu saya tandai fungsi utamanya supaya mudah dipilah.
+## Dasar Linux
+| Item | Gratis | Fungsi utama |
+|---|---:|---|
+| git | Ya | Version control dan clone repo |
+| curl | Ya | Ambil data dari URL |
+| wget | Ya | Unduh file dari internet |
+| nano | Ya | Editor teks sederhana |
+| vim | Ya | Editor teks lanjutan |
+| tmux | Ya | Multiplexer terminal |
+| htop | Ya | Monitor proses |
+| tar | Ya | Arsip file |
+| zip | Ya | Kompresi file |
+| unzip | Ya | Ekstraksi arsip |
+| grep | Ya | Cari teks |
+| sed | Ya | Transformasi teks |
+| awk | Ya | Pemrosesan teks |
+| findutils | Ya | Cari file dan direktori |
+| coreutils | Ya | Utilitas inti sistem |
+| bash | Ya | Shell utama |
+| zsh | Ya | Shell alternatif |
+| python | Ya | Bahasa skrip dan otomasi |
+| python-pip | Ya | Manajer paket Python |
+| ruby | Ya | Bahasa skrip |
+| perl | Ya | Bahasa skrip |
+| php | Ya | Bahasa skrip web |
+| nodejs | Ya | Runtime JavaScript |
+| make | Ya | Otomasi build |
+| pkg | Ya | Manajer paket Termux |
+| rsync | Ya | Sinkronisasi file |
+| proot | Ya | Emulasi environment user-space |
+| termux-api | Ya | Akses fitur Android dari Termux |
+| termux-tools | Ya | Alat bantu Termux |
+| termux-services | Ya | Service manager |
+| ncurses-utils | Ya | Komponen UI terminal |
+| lsof | Ya | Lihat file yang sedang dibuka |
+## Jaringan
+| Item | Gratis | Fungsi utama |
+|---|---:|---|
+| net-tools | Ya | Utilitas jaringan klasik |
+| iproute2 | Ya | Konfigurasi jaringan modern |
+| iputils | Ya | Ping dan alat jaringan dasar |
+| dnsutils | Ya | Lookup DNS |
+| bind-tools | Ya | DNS tools lanjutan |
+| traceroute | Ya | Lacak rute jaringan |
+| mtr | Ya | Monitoring rute |
+| whois | Ya | Info registrasi domain |
+| netcat-openbsd | Ya | Koneksi jaringan sederhana |
+| socat | Ya | Bridge/relay koneksi |
+| proxychains-ng | Ya | Routing lewat proxy |
+| tor | Ya | Routing anonim |
+| bluez | Ya | Stack Bluetooth |
+## Web dan Aplikasi
+| Item | Gratis | Fungsi utama |
+|---|---:|---|
+| whatweb | Ya | Identifikasi teknologi web |
+| dirb | Ya | Directory discovery |
+| dirsearch | Ya | Content discovery |
+| gobuster | Ya | Enumerasi path/directory |
+| ffuf | Ya | Fuzzing web |
+| nikto | Ya | Pemeriksaan server web |
+| wafw00f | Ya | Deteksi WAF |
+| sqlmap | Ya | Pengujian SQL injection |
+| wpscan | Ya | Audit WordPress |
+| exploitdb | Ya | Referensi celah keamanan |
+| searchsploit | Ya | Pencarian eksploit |
+| php | Ya | Skrip web |
+| nodejs | Ya | Runtime web |
+| aapt | Ya | Analisis APK |
+| apksigner | Ya | Tanda tangan APK |
+| apktool | Ya | Dekompilasi APK |
+| jadx | Ya | Dekompilasi Java/Kotlin APK |
+## Forensik dan Analisis File
+| Item | Gratis | Fungsi utama |
+|---|---:|---|
+| file | Ya | Identifikasi tipe file |
+| strings | Ya | Ekstrak string teks |
+| xxd | Ya | Hex dump |
+| hexdump | Ya | Dump biner |
+| binwalk | Ya | Analisis firmware |
+| foremost | Ya | File carving |
+| keytool | Ya | Manajemen sertifikat |
+| openssl | Ya | Kriptografi dan sertifikat |
+| jadx-cli | Ya | Dekompilasi APK via CLI |
+| jadx-gui | Ya | Dekompilasi APK dengan GUI |
+| radare2 | Ya | Reverse engineering |
+| gdb | Ya | Debugging biner |
+## Wireless dan Radio
+| Item | Gratis | Fungsi utama |
+|---|---:|---|
+| aircrack-ng | Ya | Audit wireless |
+| reaver | Ya | Pengujian WPS |
+| bully | Ya | Pengujian WPS |
+| kismet | Ya | Monitoring wireless |
+| bluez | Ya | Bluetooth tools |
+## Identitas, Privasi, dan Layanan
+| Item | Gratis | Fungsi utama |
+|---|---:|---|
+| whois | Ya | Info registrasi domain |
+| tor | Ya | Anonymous routing |
+| proxychains-ng | Ya | Proxy chaining |
+| openssh | Ya | Remote shell aman |
+| rsync | Ya | Sinkronisasi aman |
+| termux-api | Ya | Integrasi Android |
+| termux-services | Ya | Menjalankan service |
+| netcat-openbsd | Ya | Debug koneksi |
+| socat | Ya | Forwarding koneksi |
+## Paling berguna untuk mulai
+Kalau Anda ingin yang paling **gratis, ringan, dan fungsional**, prioritasnya:
+1. `git`
+2. `curl`
+3. `wget`
+4. `python`
+5. `python-pip`
+6. `nano`
+7. `tmux`
+8. `grep`
+9. `jq`
+10. `nmap`
+11. `whois`
+12. `dnsutils`
+13. `netcat-openbsd`
+14. `jq`
+15. `termux-api`
+## pastikan management resources storage mampu, sistem rolling, berfungsi saat di gunakan saja, tools tersembunyi brankas khusus biar ga rusak. 
+

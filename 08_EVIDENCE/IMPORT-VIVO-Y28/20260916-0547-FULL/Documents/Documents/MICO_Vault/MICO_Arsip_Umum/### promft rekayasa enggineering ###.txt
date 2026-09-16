@@ -1,0 +1,80 @@
+07.05 22.30
+### promft rekayasa enggineering ###
+================================
+Yang Anda bangun sebenarnya bukan sekadar prompt, melainkan sudah mendekati kerangka tata kelola (governance framework) untuk AI.
+Kalau disetarakan dengan dunia proyek konstruksi, dokumen Anda memiliki kemiripan dengan beberapa dokumen sekaligus, bukan hanya RKS.
+TOR / KAK
+Menjelaskan tujuan, ruang lingkup, dan target peran AI.
+RKS (Rencana Kerja dan Syarat)
+Menetapkan aturan kerja, kewenangan, batasan, standar mutu, dan metode kerja.
+SOP
+Menentukan urutan langkah yang wajib dilakukan.
+SPK / Surat Tugas
+Menetapkan siapa mengerjakan apa, kewenangan, dan output.
+QA/QC Plan
+Menentukan PASS/WARNING/FAIL/CRITICAL dan audit berbasis bukti.
+Project Governance
+Menetapkan hierarki, otoritas, dan alur persetujuan.
+Enterprise Architecture Guideline
+Menentukan Blueprint, SSOT, ADR, Registry, Namespace, Canonical Tree sebagai acuan utama.
+Jadi, bukan hanya RKS. Dokumen Anda merupakan gabungan beberapa artefak tata kelola.
+Mengapa respons saya bisa menjadi jauh lebih detail?
+Karena prompt Anda tidak hanya memberi instruksi, tetapi juga memberikan konteks operasional yang lengkap. Misalnya, Anda mendefinisikan:
+Peran (Chief System Architect).
+Otoritas dan batas kewenangan.
+Lingkup pekerjaan.
+Hal yang boleh dan tidak boleh dilakukan.
+Metode kerja.
+Format keluaran.
+Prinsip desain.
+Kriteria evaluasi.
+Dengan informasi itu, saya tidak perlu "menebak" format jawaban. Saya tinggal mengikuti kerangka yang sudah Anda tetapkan.
+Dalam rekayasa perangkat lunak, ini mirip dengan perbedaan antara:
+Prompt biasa → hanya memberi satu perintah.
+System Specification → menjelaskan aturan kerja sistem.
+Operational Doctrine → mendefinisikan bagaimana suatu peran harus beroperasi secara konsisten.
+Governance Specification → menetapkan hubungan antara peran, proses, dan keputusan.
+Menurut saya, yang paling tepat untuk dokumen Anda adalah menyebutnya:
+MICO–JDEQ AI Operational Doctrine & Governance Specification (AODGS)
+Karena isinya bukan sekadar prompt, melainkan mendefinisikan cara sebuah "organisasi AI" bekerja.
+Ada satu hal yang menurut saya paling menonjol dari pendekatan Anda: Anda membawa pola pikir manajemen proyek (Blueprint → Perencanaan → Pelaksanaan → Monitoring → Audit → Output) ke dalam orkestrasi AI. Itu berbeda dari prompt biasa yang hanya berfokus pada menghasilkan jawaban. Pendekatan ini membuat AI diarahkan untuk bekerja dalam proses yang dapat diaudit dan memiliki pembagian peran yang jelas.
+Dengan kata lain, dokumen tersebut lebih tepat dipandang sebagai dokumen tata kelola operasional AI (AI Governance & Operational Doctrine) daripada sekadar prompt engineering. Prompt hanyalah salah satu komponennya; yang Anda susun sudah mencakup struktur organisasi, prosedur kerja, standar mutu, dan mekanisme pengendalian.
+Ya, saya paham maksud Anda.
+Dan tidak perlu upload ulang 5 gambar sebelumnya. Kelima gambar itu saya gunakan sebagai konteks untuk memahami arah MICO–JDEQ, bukan sebagai sesuatu yang harus diulang setiap kali. Yang berubah sekarang bukan isi gambar, tetapi arsitektur dokumentasi yang menjadi lebih matang.
+Saya menangkap perubahan paradigma yang Anda inginkan sebagai berikut:
+Dulu
+Blueprint ↓ Prompt ChatGPT ↓ Prompt Claude ↓ Prompt DeepSeek ↓ Prompt Jarvis 
+Semua prompt berdiri sendiri sehingga banyak pengulangan.
+Sekarang
+INTI DIRI │ ▼ MICO Constitution │ ▼ AEOS (AI Engineering Operational Specification) │ ├──────────────┐ │ │ ▼ ▼ SSOT Decision Registry │ │ └──────┬───────┘ ▼ Surat Tugas (ST) │ ▼ Prompt Per Agen 
+Artinya:
+Constitution menjelaskan filosofi dan organisasi.
+AEOS menjelaskan aturan operasional umum semua agen.
+SSOT menjadi sumber kebenaran teknis.
+ADR + Registry menyimpan keputusan resmi.
+Surat Tugas memberi mandat pekerjaan.
+Prompt Agen hanya menjelaskan peran agen tersebut.
+Dengan model ini, prompt agen tidak perlu lagi mengulang seluruh Blueprint, AEOS, SSOT, maupun ADR. Cukup menyatakan bahwa agen bekerja sesuai dokumen induk.
+Saya juga memahami maksud Anda tentang efisiensi token
+Mulai sekarang saya akan memperlakukan dokumen-dokumen itu sebagai hirarki, bukan satu prompt raksasa.
+Contohnya:
+LEVEL-0 INTI DIRI LEVEL-1 MICO Constitution LEVEL-2 AEOS LEVEL-3 SSOT LEVEL-4 ADR LEVEL-5 Registry LEVEL-6 Surat Tugas LEVEL-7 Prompt Agen LEVEL-8 Workflow n8n LEVEL-9 Runtime 
+Sehingga ketika Anda berkata:
+"Aktifkan ChatGPT Chief System Architect."
+yang saya pahami bukan lagi sekadar teks prompt, tetapi:
+INTI DIRI ↓ Constitution ↓ AEOS ↓ SSOT ↓ ADR ↓ Registry ↓ ST ChatGPT ↓ Prompt ChatGPT ↓ Eksekusi 
+Jadi saya tidak perlu meminta Anda mengulang seluruh dokumen setiap kali.
+Satu penyempurnaan yang saya usulkan
+Saya melihat AEOS masih bisa dinaikkan satu tingkat lagi.
+Urutan dokumen yang menurut saya paling matang adalah:
+00_INTI_DIRI.md │ 01_MICO_CONSTITUTION.md │ 02_AEOS.md │ 03_SSOT.md │ 04_ADR_REGISTRY.md │ 05_SURAT_TUGAS/ │ 06_AGENT_PROFILE/ │ 07_WORKFLOW/ │ 08_RUNTIME/ │ 09_AUDIT/ 
+Ini membuat seluruh organisasi MICO–JDEQ mempunyai lapisan tata kelola yang jelas.
+Kesimpulan
+Saya memahami bahwa mulai sekarang:
+AEOS bukan prompt.
+AEOS adalah dokumen induk operasional organisasi.
+Prompt tiap agen hanya turunan dari AEOS sesuai jabatan masing-masing.
+Saya tidak perlu lagi menggabungkan seluruh aturan ke setiap prompt agen.
+Fokus saya adalah menjaga konsistensi terhadap Blueprint → Constitution → AEOS → SSOT → ADR → Registry → Surat Tugas → Prompt Agen → Workflow → Runtime.
+Menurut saya, ini adalah perubahan yang paling penting dalam evolusi MICO–JDEQ. Fokusnya bergeser dari mengelola prompt menjadi mengelola sistem operasi organisasi berbasis dokumen rekayasa. Pendekatan ini lebih mudah diaudit, lebih hemat pemeliharaan, dan lebih mudah dikembangkan tanpa harus terus-menerus mengubah setiap prompt agen.
+

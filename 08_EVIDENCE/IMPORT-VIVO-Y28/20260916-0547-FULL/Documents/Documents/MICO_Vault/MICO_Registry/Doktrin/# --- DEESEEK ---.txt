@@ -1,0 +1,34 @@
+02.19 18.37
+# --- DEESEEK ---
+1. sk-27839555a7c344b5b03ea54b305688e2
+
+# --- OPENROUTER ---
+2. csk-hfwkkev8pdtxt4mc5hktwwtj3dy4f5pdwtrfdt4cx23ky2v9
+3. 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
+   (Info rate limit: https://openrouter.ai/docs/faq#how-are-rate-limits-calculated)
+
+# --- HUGGING FACE ---
+4. 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
+5. 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
+6. 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
+
+# --- YDC ---
+7. ydc-sk-73ce86ecc5f45eb4-Rr5ccmQq2VzwvsL9nT5fUGnEjjyuu2lQ-263c9c31
+8. ydc-sk-e4f96c738ca56ea2-EVWIhqTS3jxPAPjB3VuXe3JQuTRbFooF-4ab532b8
+9. ydc-sk-7e11e1890948075b-QnrlvZvL8AEOAvhpHjIo1jh5tEvKPlzL-87630c99
+10. ydc-sk-904ab584f61eb93a-va6Qh52Z04wmWV39SeKz0DZ64qf3jSZo-3ef7afde
+
+# --- OPENAI ---
+11. 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
+12. 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
+
+# --- GROQ ---
+13. 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
+14. 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
+15. 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
+
+# --- KUNCI LAIN ---
+16. o3GzU9u8SkJlwjPu9zhi_jMEVO-UdP_KCYngqGm5gqOb
+17. eCi4cGtvep37KkqREYX-PCdl0kRqYA-7Y1LD_YVF9OTx
+18. UbAheNryW0FJcpfKzHADNuiyN17S5XCCKv_E_XaDw7pM
+

@@ -1,0 +1,24 @@
+MICO-TRANSFER-Y28-002-FULL · RINGKASAN
+Waktu         : 20260916-0547-FULL
+Sumber        : Vivo Y28 · 10DE7H05NH000DR
+Tujuan        : D:\MICO_SSOT\08_EVIDENCE\IMPORT-VIVO-Y28\20260916-0547-FULL
+
+Folder ditarik:
+  - /sdcard/Documents
+  - /sdcard/Download
+  - /sdcard/Pictures
+  - /sdcard/Music
+  - /sdcard/Movies
+  - /sdcard/DCIM
+  - /sdcard/Android/data
+
+
+Folder gagal  : 1
+Folder OK     : 6
+Folder skip   : 0
+
+Total file    : 1107
+Total size    : 219.57 MB
+
+Vault dilindungi  : .jdeq, .config/mico-vault, .config/rclone, vault, api_key, api_keys
+Status hapus Vivo : TIDAK DIHAPUS (menunggu perintah L0 berikutnya)

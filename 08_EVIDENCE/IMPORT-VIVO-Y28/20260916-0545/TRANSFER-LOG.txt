@@ -1,0 +1,20 @@
+=== MICO-TRANSFER-Y28-001 · 20260916-0545 ===
+Sumber : 100.127.153.2
+Metode : ADB
+Tujuan : D:\MICO_SSOT\08_EVIDENCE\IMPORT-VIVO-Y28\20260916-0545
+
+TARIK: /sdcard/Documents
+/sdcard/Documents/: 518 files pulled, 0 skipped. 4.4 MB/s (12300833 bytes in 2.693s)
+  STATUS: OK
+TARIK: /sdcard/Download
+/sdcard/Download/: 40 files pulled, 0 skipped. 15.2 MB/s (8146039 bytes in 0.512s)
+  STATUS: OK
+TARIK: /sdcard/Pictures
+/sdcard/Pictures/: 278 files pulled, 0 skipped. 21.9 MB/s (108191302 bytes in 4.721s)
+  STATUS: OK
+TARIK: /sdcard/Music
+/sdcard/Music/: 2 files pulled, 0 skipped. 0.0 MB/s (36 bytes in 0.017s)
+  STATUS: OK
+TARIK: /sdcard/Movies
+/sdcard/Movies/: 7 files pulled, 0 skipped. 2.3 MB/s (174180 bytes in 0.074s)
+  STATUS: OK

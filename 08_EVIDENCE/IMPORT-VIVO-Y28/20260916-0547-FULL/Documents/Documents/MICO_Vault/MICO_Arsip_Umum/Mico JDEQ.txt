@@ -1,0 +1,96 @@
+07.02 03.16
+Mico JDEQ
+==========
+agent-based development roadmap, berjalan di Termux + cloud + AI lokal, tanpa konflik environment dan tanpa duplikasi runtime.
+Saya susun sebagai urutan baku (SOP tunggal, tidak bercabang).
+🧭 JDEQ SYSTEM — SINGLE EXECUTION PIPELINE (NO OPTIONS)
+ FASE 0 — KUNCI DASAR (ROOT OF TRUTH)
+cd ~ 
+Lalu tetapkan:
+ROOT SYSTEM = ~/JDEQ 
+Aturan:
+Semua proses hanya boleh berawal dari sini
+Tidak ada “env aktif permanen”
+Tidak ada Python global dipakai langsung untuk proyek 
+️ FASE 1 — STRUKTUR PONDASI (INDEX BINARY POHON)
+Bentuk struktur wajib:
+~/JDEQ/ kernel_engine/ runtime/ agents/ queue/ memory/ state/ logs/ tools/ bridge/ 
+Aturan:
+Ini adalah struktur tunggal (single source index)
+Tidak boleh ada duplikasi folder dengan fungsi sama
+Tidak boleh ada “env/” di luar runtime sementara 
+⚙️ FASE 2 — KUNCI RUNTIME (ANTI DUPLICATE SYSTEM)
+Sistem harus menganggap:
+1 sistem = 1 runtime aktif 
+Logika kontrol:
+Scan semua environment Python
+Jika ditemukan lebih dari 1 venv → semua dinonaktifkan
+Hanya runtime yang dibuat dari /runtime yang valid 
+Aturan keras:
+pyenv, system python, manual build → tidak boleh aktif bersamaan
+hanya 1 jalur eksekusi Python 
+🧱 FASE 3 — PEMBANGUNAN RUNTIME RESMI
+Buat runtime tunggal:
+~/JDEQ/runtime/python_env 
+Isi:
+Python venv aktif
+dependency proyek saja
+tidak boleh global install 
+Urutan:
+buat runtime
+aktifkan runtime
+semua install hanya di runtime ini 
+🧠 FASE 4 — AGENT SYSTEM (12 HIRARKI)
+Struktur agen wajib:
+agents/ 01_intake_parser/ 02_structural_engine/ 03_civil_mapper/ 04_mechanical_mapper/ 05_electrical_mapper/ 06_cost_engine/ 07_schedule_engine/ 08_risk_engine/ 09_ai_orchestrator/ 10_cloud_bridge/ 11_memory_indexer/ 12_output_generator/ 
+Aturan:
+Data masuk selalu dari 01
+Output selalu dari 12
+Tidak ada lompat layer 
+️ FASE 5 — TRANSFORMASI SIPIL → DIGITAL SYSTEM
+Mapping wajib:
+Struktur proyek konstruksi → struktur software Gambar kerja → data schema RAB → cost model engine S-Curve → scheduling engine Site report → memory index QA/QC → validation engine 
+ FASE 6 — PIPELINE EKSEKUSI (WAJIB BERURUT)
+Setiap request harus lewat:
+01 intake → parsing data proyek → klasifikasi sipil/MEP/software → mapping struktur teknis → generate roadmap → validasi → output final 
+Tidak boleh:
+langsung eksekusi cloud
+langsung install package
+langsung buat venv baru 
+ FASE 7 — CLOUD BRIDGE (ON DEMAND ONLY)
+Aturan:
+cloud = hanya “ekstensi”
+bukan inti sistem 
+Flow:
+local AI (Phi-3 / Mico) ↓ decision ↓ jika berat → cloud compute ↓ return result ke local index 
+🧠 FASE 8 — AI ORCHESTRATOR (MICO CORE)
+Peran Mico:
+satu-satunya pengambil keputusan runtime
+tidak boleh ada agent lain override
+semua agent hanya executor 
+🛑 FASE 9 — ANTI DUPLICATE ENV RULE (KRITIS)
+Setiap startup:
+cek venv aktif
+cek python path
+cek runtime ganda
+jika konflik: STOP semua runtime
+reset ke ~/JDEQ
+rebuild runtime tunggal 
+ FASE 10 — OUTPUT RULE
+Output hanya 1:
+/queue/result.json 
+atau:
+/runtime/output/ 
+Tidak ada output tersebar.
+ INTI LOGIKA SISTEM
+Kalau disederhanakan:
+Sipil Engineer Knowledge ↓ Agent Mapping System ↓ Structured Engineering Data ↓ AI Orchestrator (Mico) ↓ Cloud Extension (optional compute) ↓ Single Output System 
+⚠️ PRINSIP FINAL (WAJIB DIPEGANG)
+Tidak ada multi environment hidup bersamaan
+Tidak ada eksperimen random install
+Tidak ada Python liar di luar runtime
+Semua harus lewat index pohon JDEQ
+AI hanya “alat hitung & penerjemah”, bukan pengendali sistem 
+Kalau kamu mau langkah berikutnya, urutan berikutnya yang benar adalah:
+“Bootstrap script otomatis yang memaksa sistem selalu kembali ke kondisi ini setiap buka Termux.”
+

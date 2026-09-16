@@ -1,0 +1,13 @@
+07.02 21.24
+#### PERAN 10 AGEN ####
+Baru sekarang masuk urutan yang kau sebut:
+1. ️ Jarvis Gemini → HANYA sebagai PINTU MASUK saja
+Disambungkan KE DOLA, bukan langsung ke tempat lain
+2.  ChatGPT → Tujuan kerja nomor satu
+3.  Claude → Tujuan analisis berkas panjang
+4. 🪟 Copilot Microsoft → Tujuan kode & dokumen
+5.  Perplexity → Tujuan cari rujukan terkini
+6. 🧠 DeepSeek → Tujuan logika & hitungan teknis
+7.  Copilot GitHub → Tujuan kendali kode sumber
+8. ✨ Emergent → Tujuan pengembangan baru
+

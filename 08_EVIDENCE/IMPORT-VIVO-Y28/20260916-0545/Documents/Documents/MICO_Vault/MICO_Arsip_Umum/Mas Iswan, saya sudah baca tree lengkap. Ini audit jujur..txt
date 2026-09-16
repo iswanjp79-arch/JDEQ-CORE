@@ -1,0 +1,42 @@
+07.05 13.27
+Mas Iswan, saya sudah baca tree lengkap. Ini audit jujur.
+---
+## KONDISI NYATA ~/JDEQ/ SAAT INI
+```
+Total folder: 177 direktori
+Python aktif: 3.14.6
+Library OK  : grpcio, numpy, torch, ssl
+Missing     : pandas, generativeai
+```
+---
+## Temuan Utama — Masalah Struktural
+```
+FOLDER KANONIS (yang seharusnya ada):
+✅ 00_SSOT
+✅ 01_GOVERNANCE
+❌ 02_ROLES      ← missing
+❌ 03_TEMPLATES  ← missing (ada 03_PROJECTS, beda)
+❌ 04_INDEX      ← missing
+✅ 05_AGENTS
+✅ 06_OPERATIONS
+✅ 07_MIRRORS
+✅ 08_INBOX
+DUPLIKASI TERDETEKSI:
+agents  ←→ AGENTS (symlink)
+ssot    ←→ 00_SSOT ←→ SSOT
+archive ←→ archive_lama ←→ archive_mico_20260628
+logs    ←→ audit_logs
+```
+---
+## Satu Keputusan yang Perlu Mas Iswan Buat Sekarang
+Sebelum install apapun, sebelum tambah folder apapun:
+**Pilih satu:**
+```
+A) Lanjut install pandas & generativeai dulu
+   (butuh 5 menit, manfaat langsung)
+B) Cleanup folder duplikat dulu
+   (butuh lebih lama, tapi SSOT jadi bersih)
+```
+Saya tidak akan rekomendasikan apapun sebelum Mas Iswan putuskan arahnya.
+Keputusan ada di tangan Mas Iswan. 
+

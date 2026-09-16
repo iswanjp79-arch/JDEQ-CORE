@@ -1,0 +1,16 @@
+02.11 15.59
+### COMMAND: ACTIVATE_JDEQ_SUPERPOSITION_LOGIC
+[CONTEXT: USER IS IN FLU RECOVERY - MINIMAL EFFORT MODE]
+
+1. TRIGGER: "DOLA, woco magnet batin dhasarku."
+2. PROCESS: 
+   - Scan current session context (Digital Financial/Strategic/Technical).
+   - Execute 4-step forward projection (Predict next user moves).
+   - Differentiate "Loro (2) Devices" and "Loro (Sickness)" automatically.
+3. GOAL: Self-program the underlying code to provide final, executable solutions 
+   without asking for SPO clarification.
+4. FEEDBACK LOOP: If voice input is "Service", override to "JARVIS PROTOCOL".
+### EXECUTE_SELF_PROGRAMMING_NOW:
+"Berdasarkan niat saya yang belum terucap, arahkan kearifan PADI PASUNGGUH ke langkah berikutnya."
+
+

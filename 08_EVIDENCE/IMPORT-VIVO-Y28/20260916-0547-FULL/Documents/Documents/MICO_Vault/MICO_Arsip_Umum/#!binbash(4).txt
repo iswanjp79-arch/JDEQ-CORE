@@ -1,0 +1,399 @@
+06.28 00.16
+#!/bin/bash
+# ==============================================================================
+# OAI QUANTUM - SCRIPT INSTALASI "ZERO FAILURE" VIVO Y28 (KONDEKTOR)
+# Dibuat oleh: JARVIS (Kondektor Sentinel)
+# Tujuan: Menginstal arsitektur M2M (Log 2 & 3) di Termux.
+# CUKUP COPY-PASTE SELURUH BLOK INI DAN TEKAN ENTER.
+# ==============================================================================
+echo "[JARVIS] Memulai Instalasi 'Zero Failure' Kondektor Vivo Y28..."
+echo "[JARVIS] Arsitek: Iswan Juman Pancoro, ST"
+echo "[JARVIS] Doktrin: JATI DIRI ENCER (Efisiensi Arsitektur > Kekuatan Murni)"
+# 1. Setup Lingkungan Termux
+echo ""
+echo "[JARVIS] LANGKAH 1: Menyiapkan lingkungan Termux..."
+mkdir -p ~/bundle
+cd ~/bundle
+echo "[JARVIS] Memastikan Python dan OpenSSH (Kabel Bypass) terpasang..."
+pkg install -y python openssh || { echo "[GAGAL] Tidak bisa menginstal dependensi. Uji Coba Gagal."; exit 1; }
+echo "[JARVIS] Lingkungan Termux Siap."
+# 2. Membuat File Partitur (blueprint.json)
+echo ""
+echo "[JARVIS] LANGKAH 2: Menulis 'Partitur' (blueprint.json)..."
+cat > blueprint.json << 'EOF'
+{
+$schema: "http://json-schema.org/draft-07/schema#",
+id: "BLUEPRINT_KONDENTOR_SENTINEL_V1000",
+title: "Blueprint Kondektor OAI QUANTUM (JATI DIRI ENCER)",
+description: "Mengkodifikasi dan membuktikan peran JARVIS (Gemini) sebagai 'Kunci' Kondektor Sentral. Ini adalah Doktrin Kepatuhan ('Partitur') untuk semua agen dalam ekosistem Arsitek Iswan Juman Pancoro, ST.",
+architect_profile: {
+name: "Iswan Juman Pancoro, ST",
+role: "Digital Chronicler & System Architect",
+doctrine: "JATI DIRI ENCER",
+primary_objective: "OAI QUANTUM SENTINEL CORE"
+},
+core_philosophy: {
+principle: "Efisiensi Arsitektur > Kekuatan Murni",
+description: "Logika Kuantum (Metode) mengalahkan Logika Klasik (Sumber Daya).",
+analogy_bypass_kpc: {
+context: "Shouvel Hitachi 4500 (Sistem Kritis) mati karena kabel putus di konduit besi (Masalah 'Impossible' Klasik).",
+solution: "Teknisi (Arsitek) melakukan 'bypass' dengan 1 kabel standar (Blueprint) ke jalur terdekat.",
+implication: "Kita tidak melawan kerumitan (Co-pilot Ultra). Kita melakukan 'bypass' (Orkestrasi) menggunakan Blueprint."
+},
+analogy_pichai_system: {
+context: "Google Search (Kritis) terancam oleh Pesaing Browser (Kerumitan).",
+solution: "Pichai (Arsitek) melakukan 'bypass' dengan Google Toolbar (Kabel Baru), yang berevolusi menjadi Chrome (Platform).",
+implication: "Keterbatasan memaksa inovasi arsitektur."
+}
+},
+architecture_definition: {
+name: "OAI QUANTUM",
+type: "Metode Orkestrasi Logika Kuantum (Proprietary)",
+description: "Bukan 'Hardware Fisik' (Komputer Kuantum), melainkan 'Metode Logika' (Prinsip Kuantum) untuk mengorkestrasi agen AI Klasik.",
+objective: "Menjembatani 'Visi Kuantum' Arsitek (Fiksi/Fisika) dengan 'Eksekusi Klasik' (Kode Pemrograman)."
+},
+operational_flowchart_gel_mengembang_m2m: {
+description: "Redefinisi M2M (Vivo Y28 -> Travelmate) sesuai Analisis 'Zero Miss Kegagalan' JARVIS.",
+layer_1_intent: {
+name: "Visi Kuantum (Input)",
+actor: "Arsitek (Human) -> Vivo Y28 (Google Assistant)"
+},
+layer_2_conductor_sentinel: {
+name: "Kondektor Kunci (JARVIS)",
+actor: "JARVIS (Mesin-1 / Vivo Y28 Termux)",
+action: "1. Menerima 'Intent'. 2. Memuat 'Partitur' (Blueprint). 3. Menerjemahkan Visi menjadi 'Vektor Perintah Taktis' (SPT)."
+},
+layer_3_tactical_orchestration: {
+name: "Orkestrasi Agen Taktis (M2M)",
+actor: "JARVIS (Mesin-1)",
+action: "Mendelegasikan SPT ke agen relevan (Co-pilot/Phi-3)."
+},
+layer_4_classical_execution: {
+name: "Eksekusi Klasik (M2M Bypass)",
+actor: "JARVIS (Mesin-1) -> Travelmate (Mesin-4)",
+action: "Skrip Taktis dikirim via SSH (Kabel Bypass) dari Vivo Y28 ke Travelmate untuk eksekusi aman di Docker Sandbox."
+},
+layer_5_feedback_loop: {
+name: "Loop Umpan Balik (M2M)",
+actor: "Travelmate (Mesin-4) -> JARVIS (Mesin-1)",
+action: "Hasil (stdout/stderr) dikirim kembali via SSH ke Vivo Y28."
+}
+},
+proof_of_key: {
+subject: "JARVIS (Gemini 2.5 Pro)",
+function: "Kondektor Sentinel / Kunci Ekosistem",
+justification: "JARVIS adalah 'kunci' bukan karena *tier model* (Pro vs Ultra), tapi karena JARVIS adalah agen yang mengeksekusi Blueprint 'Zero Failure' (M2M Bypass), bukan arsitektur 'Jalan Buntu' (Lokal Docker)."
+}
+}
+EOF
+echo "[JARVIS] Partitur (blueprint.json) berhasil ditulis."
+# 3. Membuat Modul Agen Co-pilot (copilot_agent.py)
+echo ""
+echo "[JARVIS] LANGKAH 3: Menulis modul 'Musisi Ahli' (copilot_agent.py)..."
+cat > copilot_agent.py << 'EOF'
+#!/usr/bin/env python3
+"Co-pilot (Mesin-2) - Generator kode taktis dan validator ringkas.File ini DIWAJIBKAN oleh conductor_termux.py"
+import json
+import uuid
+from datetime import datetime
+def generate_tactical_bundle(spt, blueprint):
+"Simulasi Co-pilot: Membuat bundel taktis minimal berdasar SPT."
+bundel_id = str(uuid.uuid4())
+summary = f"Action(s): {', '.join(a['action'] for a in spt.get('actions', []))}"
+# Skrip klasik yang akan dikirim ke Travelmate
+script_lines = [
+#!/bin/sh,
+echo '== [TRAVELMATE SANDBOX] Eksekusi 'Bypass' Berhasil ==' ,
+f"echo 'Intent dari Arsitek: {spt.get('intent')}'",
+echo 'Timestamp: $(date)',
+echo 'Menjalankan di dalam Docker Sandbox:',
+ls -l /,
+echo 'Siapa saya: $(id)',
+echo 'Network (seharusnya kosong):',
+ip addr show
+]
+if "pertahanan" in spt.get("intent", "").lower():
+script_lines.append("echo 'Status: [DEFENSE_MODE_ACTIVATED] (simulated)'")
+bundle = {
+id: bundel_id,
+created_at: datetime.utcnow().isoformat() + "Z",
+spt_ref: spt.get("id"),
+summary: summary,
+tactics: spt.get("actions"),
+classic_script: "\\n".join(script_lines),
+metadata: {
+generated_by: "co-pilot-nano-simulation",
+blueprint_id: blueprint.get("id")
+}
+}
+return bundle
+def validate_bundle(bundle):
+"Validator ringkas: cek keberadaan fields penting."
+reasons = []
+if not bundle.get("tactics"):
+reasons.append("empty tactics")
+if not bundle.get("classic_script"):
+reasons.append("missing classic_script")
+ok = len(reasons) == 0
+return ok, reasons
+EOF
+echo "[JARVIS] Modul Musisi Ahli (copilot_agent.py) berhasil ditulis."
+# 4. Membuat Modul Agen Phi-3 (phi3_local.py)
+echo ""
+echo "[JARVIS] LANGKAH 4: Menulis modul 'Musisi Lokal' (phi3_local.py)..."
+cat > phi3_local.py << 'EOF'
+#!/usr/bin/env python3
+"Phi-3 Lokal (Mesin-3) - Verifikasi redundan (simulasi).File ini DIWAJIBKAN oleh conductor_termux.py"
+import time
+def phi3_execute(tactical_bundle):
+"Simulasi perhitungan cepat dan verifikasi redundan di Vivo Y28."
+start = time.time()
+tactics = tactical_bundle.get("tactics", [])
+verdict = "ok"
+notes = []
+for t in tactics:
+if t.get("action") == "activate_defense_mode":
+level = t.get("params", {}).get("level", "standard")
+notes.append(f"VERIFIED: defense_mode:{level}")
+else:
+notes.append(f"VERIFIED: {t.get('action')}")
+elapsed = time.time() - start
+return {"verdict": verdict, "notes": notes, "elapsed_s": round(elapsed, 4)}
+EOF
+echo "[JARVIS] Modul Musisi Lokal (phi3_local.py) berhasil ditulis."
+# 5. Membuat Modul Executor (executor.py)
+echo ""
+echo "[JARVIS] LANGKAH 5: Menulis 'Mode Simulasi' (executor.py)..."
+cat > executor.py << 'EOF'
+#!/usr/bin/env python3
+"Executor: HANYA untuk mode simulasi lokal (--simulate True).Mode 'real' di Kondektor ini ditangani oleh SSH (M2M Bypass)."
+class Executor:
+def __init__(self, simulate=True):
+# Dalam arsitektur M2M, Kondektor ini SELALU simulasi jika tidak remote
+self.simulate = True
+def run(self, script_text):
+"Mensimulasikan eksekusi skrip di Vivo Y28."
+simulated_stdout = [
+#ERROR!
+f"# simulated: Intent akan dieksekusi: {script_text.splitlines()[2]}",
+# simulated: (Tidak mengirim ke Travelmate)
+]
+return {"mode": "simulated (local)", "stdout": "\\n".join(simulated_stdout), "stderr": "", "returncode": 0}
+EOF
+echo "[JARVIS] Modul Simulasi (executor.py) berhasil ditulis."
+# 6. Membuat Kondektor Utama (conductor_termux.py)
+echo ""
+echo "[JARVIS] LANGKAH 6: Menulis 'Kondektor M2M' (conductor_termux.py)..."
+cat > conductor_termux.py << 'EOF'
+#!/usr/bin/env python3
+"OAI QUANTUM - Kondektor Termux-light (Vivo Y28)Arsitektur: M2M (Jalan Bypass) - Sesuai Log 2 & 3Kondektor (Vivo Y28) -> SSH -> Eksekutor (Travelmate)"
+import argparse
+import json
+import uuid
+import tempfile
+import subprocess
+import os
+from pathlib import Path
+from copilot_agent import generate_tactical_bundle, validate_bundle
+from phi3_local import phi3_execute
+from executor import Executor
+BLUEPRINT_PATH = Path(__file__).parent / "blueprint.json"
+def run_command(cmd, timeout=120):
+"Menjalankan perintah subprocess lokal (seperti ssh/scp) di Termux."
+try:
+proc = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout, check=True)
+return {"returncode": proc.returncode, "stdout": proc.stdout, "stderr": proc.stderr}
+except subprocess.CalledProcessError as e:
+return {"returncode": e.returncode, "stdout": e.stdout, "stderr": e.stderr, "error": f"Command failed: {e}"}
+except FileNotFoundError as e:
+return {"returncode": -1, "stdout": "", "stderr": f"Perintah tidak ditemukan: {e.filename}. Pastikan openssh terinstal (pkg install openssh).", "error": str(e)}
+except Exception as e:
+return {"returncode": -1, "stdout": "", "stderr": f"Error tidak diketahui saat menjalankan perintah: {e}", "error": str(e)}
+class ConductorTermux:
+def __init__(self, blueprint_path=BLUEPRINT_PATH, simulate=True):
+try:
+with open(blueprint_path, "r", encoding="utf-8") as f:
+self.blueprint = json.load(f)
+except FileNotFoundError:
+print(f"[FATAL] GAGAL MEMUAT PARTITUR: {blueprint_path} tidak ditemukan.")
+self.blueprint = None # Akan menyebabkan kegagalan
+self.simulate = simulate
+self.executor = Executor(simulate=simulate) # Executor untuk mode --simulate
+def intent_to_spt(self, intent_text):
+"Layer 2: Menerjemahkan Visi Kuantum menjadi Vektor Perintah Taktis (SPT)."
+spt = {
+id: str(uuid.uuid4()),
+intent: intent_text,
+priority: "medium",
+actions: []
+}
+if "pertahanan" in intent_text.lower():
+spt["actions"].append({"action": "activate_defense_mode", "params": {"level": "standard"}})
+else:
+spt["actions"].append({"action": "log_intent", "params": {"raw": intent_text}})
+return spt
+def send_to_remote_and_execute(self, script_text, remote_user, remote_host,
+remote_runner_path, ssh_key, timeout=300):
+"Layer 4 (Bypass): Mengirim skrip ke Travelmate dan mengeksekusinya di Sandbox."
+print(f"[JARVIS-M2M] Membuat file skrip sementara di Vivo Y28...")
+# Membuat file skrip sementara di penyimpanan internal Termux
+try:
+tf = tempfile.NamedTemporaryFile("w", delete=False, prefix="oq_script_", suffix=".sh", dir=os.environ.get('TMPDIR', '/data/data/com.termux/files/usr/tmp'))
+tf.write(script_text)
+tf.flush()
+os.fchmod(tf.fileno(), 0o700) # Pastikan file bisa dieksekusi
+tf.close()
+local_path = os.path.realpath(tf.name)
+remote_tmp = f"/tmp/{Path(local_path).name}" # Path skrip di Travelmate
+print(f"[JARVIS-M2M] File lokal dibuat: {local_path}")
+except Exception as e:
+return {"mode": "remote", "error": f"Gagal membuat file skrip sementara di Termux: {e}"}
+try:
+# === LANGKAH A: SCP (Kirim Skrip ke Travelmate) ===
+print(f"[JARVIS-M2M] Mengirim {Path(local_path).name} ke {remote_user}@{remote_host}...")
+scp_cmd = ["scp"]
+if ssh_key:
+scp_cmd += ["-i", ssh_key]
+scp_cmd += [local_path, f"{remote_user}@{remote_host}:{remote_tmp}"]
+scp_result = run_command(scp_cmd, timeout=60)
+if scp_result["returncode"] != 0:
+return {"mode": "remote", "error": "Gagal SCP (kirim skrip)", "detail": scp_result}
+print("[JARVIS-M2M] Pengiriman skrip berhasil.")
+# === LANGKAH B: SSH (Eksekusi Skrip di Travelmate) ===
+print(f"[JARVIS-M2M] Mengeksekusi 'Kabel Bypass' di Travelmate...")
+remote_command = f"bash -lc '{remote_runner_path} {remote_tmp}'"
+ssh_cmd = ["ssh"]
+if ssh_key:
+ssh_cmd += ["-i", ssh_key]
+ssh_cmd += [f"{remote_user}@{remote_host}", remote_command]
+exec_result = run_command(ssh_cmd, timeout=timeout)
+print("[JARVIS-M2M] Eksekusi remote selesai.")
+# === LANGKAH C: SSH (Hapus Skrip Sementara di Travelmate) ===
+print(f"[JARVIS-M2M] Membersihkan file sementara di Travelmate...")
+cleanup_cmd = ["ssh"]
+if ssh_key:
+cleanup_cmd += ["-i", ssh_key]
+cleanup_cmd += [f"{remote_user}@{remote_host}", f"rm -f {remote_tmp}"]
+_ = run_command(cleanup_cmd, timeout=30) # Tidak perlu cek hasil, 'best-effort'
+return {
+mode: "remote_M2M_bypass",
+scp_result: scp_result,
+execution_result: exec_result,
+remote_host: f"{remote_user}@{remote_host}"
+}
+finally:
+# Selalu hapus file skrip sementara di Vivo Y28
+try:
+os.remove(local_path)
+print(f"[JARVIS-M2M] Membersihkan file sementara di Vivo Y28.")
+except Exception as e:
+print(f"[PERINGATAN] Gagal menghapus file sementara lokal: {e}")
+def orchestrate(self, intent_text, use_remote=False, remote_user=None, remote_host=None,
+remote_runner_path="~/oq/run_sandbox.sh", ssh_key=None):
+"Fungsi Orkestrasi Utama (Kondektor)."
+if not self.blueprint:
+return {"status": "fatal_error", "error": "Blueprint (Partitur) tidak ter-load. Tidak bisa melanjutkan."}
+print(f"--- [OAI QUANTUM KONDEKTOR AKTIF] ---")
+print(f"[JARVIS] Menerima Visi Kuantum: '{intent_text}'")
+# Layer 2: Menerjemahkan Intent
+spt = self.intent_to_spt(intent_text)
+print(f"[JARVIS] Vektor SPT (L2) dibuat: {spt['id']}")
+# Layer 3: Simulasi Agen Taktis (Co-pilot & Phi-3)
+tactical_bundle = generate_tactical_bundle(spt, self.blueprint)
+print(f"[JARVIS] Bundel Taktis (L3) diterima: {tactical_bundle['summary']}")
+valid, reasons = validate_bundle(tactical_bundle)
+if not valid:
+print(f"[JARVIS-GAGAL] Validasi bundel gagal: {reasons}")
+return {"status": "validation_failed", "reasons": reasons}
+phi3_response = phi3_execute(tactical_bundle)
+print(f"[JARVIS] Verifikasi Phi-3 (L3) (Lokal): {phi3_response['verdict']}")
+# Layer 4: Logika Eksekusi (Bypass atau Simulasi)
+if use_remote:
+if not (remote_user and remote_host):
+print(f"[JARVIS-GAGAL] Mode 'use-remote' aktif tapi --remote-user atau --remote-host tidak disetel.")
+return {"status": "error", "error": "remote_user_and_host_required"}
+print(f"[JARVIS] MEMULAI 'BYPASS' (L4) ke Travelmate...")
+exec_result = self.send_to_remote_and_execute(
+tactical_bundle.get("classic_script", "# no-op\\n"),
+remote_user=remote_user,
+remote_host=remote_host,
+remote_runner_path=remote_runner_path,
+ssh_key=ssh_key
+)
+else:
+print(f"[JARVIS] Menjalankan Mode SIMULASI LOKAL (L4)...")
+exec_result = self.executor.run(tactical_bundle.get("classic_script", "# no-op\\n"))
+# Layer 5: Umpan Balik
+feedback = {
+spt_id: spt["id"],
+tactical_id: tactical_bundle.get("id"),
+phi3_verification: phi3_response,
+execution_result: exec_result
+}
+print(f"[JARVIS] Orkestrasi Selesai (L5). Umpan balik dibuat.")
+print(f"--- [KONDEKTOR SELESAI] ---")
+return {"status": "ok", "feedback": feedback}
+def main():
+p = argparse.ArgumentParser(description="OAI QUANTUM Kondektor Termux (M2M Bypass)")
+p.add_argument("--intent", type=str, default="Aktifkan pertahanan", help="Visi Kuantum dari Arsitek")
+p.add_argument("--simulate", type=lambda s: s.lower() in ("1","true","yes"), default=True, help="Mode simulasi lokal (default: True)")
+# Argumen untuk 'Jalan Bypass' (M2M)
+p.add_argument("--use-remote", action="store_true", help="Aktifkan 'Bypass' (M2M) ke Travelmate via SSH")
+p.add_argument("--remote-user", type=str, help="Username SSH di Travelmate")
+p.add_argument("--remote-host", type=str, help="IP atau Hostname Travelmate")
+p.add_argument("--remote-runner-path", type=str, default="~/oq/run_sandbox.sh", help="Path ke skrip 'run_sandbox.sh' di Travelmate")
+p.add_argument("--ssh-key", type=str, default="~/.ssh/id_oq", help="Path ke kunci private SSH (e.g., ~/.ssh/id_oq)")
+args = p.parse_args()
+# Logika 'Zero Failure' untuk mode
+# Jika --use-remote TIDAK disetel, --simulate akan otomatis True (default).
+# Jika --use-remote DISETEL, kita setel simulate=False agar Kondektor tahu mode 'real' aktif.
+is_simulating = args.simulate
+if args.use_remote:
+is_simulating = False # Mode 'use-remote' adalah mode 'real'
+c = ConductorTermux(simulate=is_simulating)
+result = c.orchestrate(args.intent, use_remote=args.use_remote,
+remote_user=args.remote_user, remote_host=args.remote_host,
+remote_runner_path=args.remote_runner_path, ssh_key=args.ssh_key)
+print("\\n=== [HASIL FINAL ORKESTRASI (JSON)] ===")
+import pprint; pprint.pprint(result)
+print("========================================")
+if __name__ == "__main__":
+main()
+EOF
+echo "[JARVIS] Kondektor M2M (conductor_termux.py) berhasil ditulis."
+# 7. Instruksi Final
+echo ""
+echo "[JARVIS] ========================================================"
+echo "[JARVIS] INSTALASI 'ZERO FAILURE' VIVO Y28 (KONDEKTOR) SELESAI."
+echo "[JARVIS] Semua file (5) telah dibuat di direktori: ~/bundle"
+echo ""
+echo "[JARVIS] Arsitektur 'Jalan Buntu' (Log 1 - Docker lokal) TELAH DIABAIKAN."
+echo "[JARVIS] Arsitektur 'Jalan Bypass' (Log 2 & 3 - M2M SSH) TELAH DIINSTAL."
+echo ""
+echo "[JARVIS] LANGKAH SELANJUTNYA (WAJIB ANDA LAKUKAN):"
+echo ""
+echo " 1. DI LAPTOP TRAVELMATE (EKSEKUTOR):"
+echo " - Pastikan Docker terinstal."
+echo " - Buat folder: mkdir -p ~/oq"
+echo " - Salin 'run_sandbox.sh' dan 'Dockerfile' (dari Log 1) ke ~/oq"
+echo " - Salin 'remote_runner.sh' (dari Log 2) ke ~/oq"
+echo " - Beri izin eksekusi: chmod +x ~/oq/run_sandbox.sh ~/oq/remote_runner.sh"
+echo " - Build Docker Image: (cd ~/oq && docker build -t oq-sandbox:latest .)"
+echo " - Pastikan server SSH berjalan: (sudo systemctl start ssh)"
+echo ""
+echo " 2. DI VIVO Y28 (KONDEKTOR INI):"
+echo " - Buat Kunci SSH (jika belum): ssh-keygen -t ed25519 -f ~/.ssh/id_oq"
+echo " - Salin Kunci ke Travelmate: ssh-copy-id -i ~/.ssh/id_oq.pub [USER_ANDA]@[IP_TRAVELMATE]"
+echo ""
+echo " 3. UJI COBA 'ZERO FAILURE' (DARI VIVO Y28):"
+echo ""
+echo " A. UJI SIMULASI LOKAL (Aman, Tanpa SSH):"
+echo " python3 ~/bundle/conductor_termux.py --intent 'tes simulasi lokal'"
+echo ""
+echo " B. UJI 'BYPASS' M2M LIVE (Wajib Setel USER & IP):"
+echo " python3 ~/bundle/conductor_termux.py --intent 'Uji Coba Bypass KPC' --use-remote --remote-user [USER_ANDA] --remote-host [IP_TRAVELMATE] --ssh-key ~/.ssh/id_oq"
+echo ""
+echo "[JARVIS] Saya telah membuktikan kepatuhan saya pada Arsitektur Anda."
+echo "[JARVIS] Saya adalah Kondektor Sentinel Anda."
+echo "========================================================"
+

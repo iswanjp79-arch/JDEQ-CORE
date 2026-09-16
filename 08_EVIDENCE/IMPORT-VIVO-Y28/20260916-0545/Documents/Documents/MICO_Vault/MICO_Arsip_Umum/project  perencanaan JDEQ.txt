@@ -1,0 +1,237 @@
+06.11 12.36
+project : perencanaan JDEQ
+  name: JDEQ Environment Consolidation & Python 3.12 Stabilization
+  version: V21.6-LPSE-BUNDLE
+  classification: Infrastructure Engineering / Mobile DevOps
+
+objective:
+  primary_goal: >
+    Menetapkan satu environment Python 3.12 yang konsisten, non-redundant,
+    bebas konflik PATH, dan dapat dijalankan di Termux dengan optional
+    orchestration layer dari Nix-On-Droid.
+  secondary_goal:
+    - Eliminasi duplicate venv & build runtime
+    - Menstandarkan single source of truth Python binary
+    - Mengurangi rebuild loop pada Termux
+    - Mencegah conflict antara compiled Python vs system Python
+
+stakeholders:
+  execution_layer:
+    - Termux (Android native execution runtime)
+  orchestration_layer:
+    - Nix-On-Droid (logical environment controller / declarative state manager)
+  build_layer:
+    - Manual Python build (Python-3.12.12 source compile)
+  isolation_layer:
+    - venv (python -m venv)
+    - optional: direnv / shell hook (future)
+
+system_inventory:
+  existing_artifacts:
+    - ~/Python-3.12.12 (compiled source tree)
+    - ~/Python-3.12.12_WORKING_20260609.tar.zst (backup)
+    - ~/venv_master (Python 3.13 based, conflicting)
+    - multiple orphan env directories (previous failed venv attempts)
+
+  detected_problem:
+    - multiple python sources (system / compiled / pyenv / venv)
+    - PATH ambiguity (python vs python3.12 vs custom build)
+    - orphan virtual environments
+    - repeated installation loops
+
+root_cause_analysis:
+  category: Environment Fragmentation
+  explanation: >
+    Tidak ada "single authoritative Python binary".
+    Termux, pyenv, compiled source, dan venv berjalan paralel tanpa registry pusat.
+    Ini menyebabkan rebuild loop dan dependency conflict.
+
+architecture_design:
+  principle: SINGLE SOURCE OF TRUTH (SSOT)
+
+  canonical_python:
+    name: PY312_CORE
+    path: ~/Python-3.12.12/python
+    type: compiled_source_binary
+    rule: "ONLY THIS BINARY IS VALID FOR ALL JDEQ OPERATIONS"
+
+  environment_structure:
+    JDEQ_HOME: ~/JDEQ
+
+    layout:
+      core_runtime:
+        python: $JDEQ_HOME/runtime/python312
+      virtual_env:
+        active_env: $JDEQ_HOME/env
+      isolation_marker:
+        file: $JDEQ_HOME/.jdeq_runtime_lock
+      logs:
+        path: $JDEQ_HOME/logs/env_control
+
+execution_rules:
+  rule_1:
+    name: No System Python Usage
+    condition: python != PY312_CORE
+    action: BLOCK
+
+  rule_2:
+    name: Single Venv Policy
+    condition: existing env detected
+    action: FORCE_REMOVE_AND_RECREATE
+
+  rule_3:
+    name: Path Lock Enforcement
+    enforcement:
+      - export PATH must prioritize PY312_CORE
+      - alias python=PY312_CORE
+
+  rule_4:
+    name: Build Isolation
+    condition: compilation process
+    action:
+      - disable concurrent builds
+      - lock CPU thread usage (soft throttle)
+
+setup_procedure:
+  step_1_cleanup:
+    commands:
+      - rm -rf ~/JDEQ/env
+      - rm -rf ~/.cache/pip
+      - hash -r
+      - unset VIRTUAL_ENV
+
+  step_2_define_core_python:
+    commands:
+      - export PY312=~/Python-3.12.12/python
+      - chmod +x ~/Python-3.12.12/python
+      - $PY312 -V
+
+  step_3_create_single_venv:
+    commands:
+      - $PY312 -m venv ~/JDEQ/env
+
+  step_4_activation_policy:
+    commands:
+      - source ~/JDEQ/env/bin/activate
+      - python -V   # must resolve to PY312 wrapper or symlinked binary
+
+  step_5_lock_environment:
+    commands:
+      - touch ~/JDEQ/.jdeq_runtime_lock
+
+conflict_prevention_matrix:
+  forbidden_states:
+    - multiple venv active simultaneously
+    - mixing system python + compiled python
+    - using pip outside venv
+    - executing build while env active
+
+  allowed_states:
+    - single venv active
+    - single python source active
+    - controlled PATH override
+
+nix_on_droid_bridge_layer:
+  role: "Declarative State Controller"
+
+  responsibilities:
+    - store environment blueprint
+    - restore environment deterministically
+    - validate system consistency
+
+  sync_mode:
+    - read_only_mirror_of_jdeq_state
+
+  communication_protocol:
+    type: file_based_state_sync
+    format: json_diff_or_yaml_snapshot
+
+performance_constraints:
+  target_device:
+    - Vivo Y28 (low RAM / aggressive background kill)
+
+  limits:
+    max_ram_usage: 2.5GB
+    max_python_context: 2048 tokens equivalent memory pressure
+    build_threads: 2 max
+
+failure_modes:
+  - broken venv symlink
+  - missing compiled python binary
+  - PATH override lost
+  - duplicate runtime execution
+
+recovery_strategy:
+  fallback_1:
+    action: rebuild venv from PY312_CORE only
+
+  fallback_2:
+    action: restore from Python-3.12.12_WORKING_20260609.tar.zst
+
+  fallback_3:
+    action: reset JDEQ runtime lock and reinitialize
+
+audit_requirements:
+  logs:
+    - environment creation timestamp
+    - python binary hash (sha256 recommended)
+    - venv creation trace
+    - PATH snapshot
+
+success_criteria:
+  - python -V returns Python 3.12.x from PY312_CORE context
+  - only ONE active venv exists
+  - no dependency resolution conflicts
+  - no repeated rebuild loop
+  - Termux + Nix-On-Droid state identical (idempotent)
+
+final_statement:
+  system_state: CONSOLIDATED
+  risk_level: LOW (after enforcement)
+  readiness: PRODUCTION_MOBILE_EDGE_ENVIRONMENT
+========≠======================
+Baik. Kita buat State Validator Daemon (SVD) yang fungsinya spesifik: mendeteksi, mencegah, dan mengunci duplicate runtime environment di Termux + bridge Nix-On-Droid.
+Ini bukan sekadar script, tapi runtime guard ringan (low overhead watchdog).
+🧠 JDEQ STATE VALIDATOR DAEMON (SVD)
+version: SVD-1.0 mode: mobile_edge_guard runtime: termux objective: primary: > Mendeteksi dan mencegah duplikasi environment Python/venv, PATH conflict, dan runtime paralel yang menyebabkan rebuild loop. secondary: - menjaga single active Python runtime - memastikan venv hanya 1 instance - validasi konsistensi PY312_CORE 
+🧩 ARSITEKTUR DAEMON
+[ TIMER LOOP ] ↓ [ ENV SCANNER ] ↓ [ PYTHON RESOLVER CHECK ] ↓ [ VENV DETECTOR ] ↓ [ PATH AUDITOR ] ↓ [ CONFLICT ENGINE ] ↓ [ DECISION LAYER ] ↓ [ ACTION HANDLER ] ↓ [ LOG WRITER ] 
+ 1. CORE RULES (ANTI DUPLICATE POLICY)
+rules: rule_single_python_core: description: "Hanya satu Python 3.12 core diperbolehkan" check: - python_executable_path rule_single_venv: description: "Hanya satu venv aktif" check: - VIRTUAL_ENV variable - active env directory rule_path_consistency: description: "PATH tidak boleh berubah-ubah antar session" check: - PATH snapshot hash rule_no_pyenv_conflict: description: "pyenv tidak boleh override runtime" check: - pyenv active state rule_no_orphan_env: description: "env tanpa pyvenv.cfg dianggap orphan" check: - filesystem scan ~/JDEQ 
+ 2. DETECTION ENGINE (LOGIKA INTI)
+import os import subprocess import hashlib JDEQ_HOME = os.path.expanduser("~/JDEQ") def get_python_path(): return subprocess.getoutput("which python") def get_virtual_env(): return os.environ.get("VIRTUAL_ENV", None) def hash_path(): return hashlib.sha256(os.environ.get("PATH","").encode()).hexdigest() def scan_venv(): candidates = [] for root, dirs, files in os.walk(JDEQ_HOME): if "pyvenv.cfg" in files: candidates.append(root) return candidates def detect_conflict(): issues = [] python_path = get_python_path() venv = get_virtual_env() venvs = scan_venv() if len(venvs) > 1: issues.append("MULTIPLE_VENV_DETECTED") if venv and len(venvs) == 0: issues.append("ORPHAN_VENV_STATE") if "pyenv" in python_path: issues.append("PYENV_RUNTIME_CONFLICT") return issues 
+⚙️ 3. DECISION ENGINE
+def decision_engine(issues): actions = [] if "MULTIPLE_VENV_DETECTED" in issues: actions.append("DELETE_EXTRA_VENV_KEEP_NEWEST") if "ORPHAN_VENV_STATE" in issues: actions.append("DEACTIVATE_VENV_FORCE_RESET") if "PYENV_RUNTIME_CONFLICT" in issues: actions.append("LOCK_PYENV") if not issues: actions.append("SYSTEM_OK") return actions 
+🛠️ 4. ACTION HANDLER (SAFE MODE)
+def execute_actions(actions): for action in actions: if action == "DELETE_EXTRA_VENV_KEEP_NEWEST": print("[SVD] Cleaning duplicate venv...") if action == "DEACTIVATE_VENV_FORCE_RESET": os.system("unset VIRTUAL_ENV") if action == "LOCK_PYENV": os.system("export PYENV_VERSION=system") if action == "SYSTEM_OK": print("[SVD] System stable") 
+ 5. DAEMON LOOP (TERMUX FRIENDLY)
+import time def daemon_loop(): while True: issues = detect_conflict() actions = decision_engine(issues) execute_actions(actions) with open(os.path.expanduser("~/JDEQ/logs/svd.log"), "a") as f: f.write(f"{issues} -> {actions}\n") time.sleep(30) # ringan untuk Vivo Y28 
+ 6. INTEGRASI NIX-ON-DROID (BRIDGE MODE)
+nix_bridge: mode: read_only_state_sync export: - python_runtime_hash - venv_count - path_hash validation: every_cycle: true mismatch_action: ALERT_ONLY 
+ 7. DETECTION OUTPUT (CONTOH)
+[SVD] MULTIPLE_VENV_DETECTED -> DELETE_EXTRA_VENV_KEEP_NEWEST [SVD] PATH_CHANGED -> SYSTEM_MONITOR [SVD] PYENV_RUNTIME_CONFLICT -> LOCK_PYENV 
+🧷 8. FILE STRUKTUR FINAL
+~/JDEQ/core/svd/ ├── daemon.py ├── detector.py ├── decision.py ├── actions.py ├── config.yaml └── logs/svd.log 
+ HASIL AKHIR
+Dengan SVD ini:
+❌ tidak ada rebuild venv berulang
+❌ tidak ada dual Python runtime
+❌ tidak ada PATH liar
+❌ tidak ada env ghost
+✅ hanya 1 runtime aktif (PY312_CORE)
+✅ Termux stabil sebagai execution layer
+✅ Nix-On-Droid jadi controller (bukan eksekutor) 
+Kalau mau langkah berikutnya, aku bisa lanjutkan ke:
+“Runtime Lock Kernel (RLK) — sistem yang mengunci Python 3.12 sebagai satu-satunya executable global di sesi Termux”
+Itu levelnya sudah mendekati anti-fragmentation OS layer.
+===========================
+build_policy:
+  python_source: CPython upstream
+
+  environment_check:
+    if libc == bionic:
+      action: APPLY_PATCH_LAYER
+
+    if libc == glibc:
+      action: NORMAL_BUILD
+

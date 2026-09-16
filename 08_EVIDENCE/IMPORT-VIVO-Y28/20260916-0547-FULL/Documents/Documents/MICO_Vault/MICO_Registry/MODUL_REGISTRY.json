@@ -1,0 +1,35 @@
+{
+  "arsitektur": "Evidence-Centered Cognitive Architecture",
+  "versi": "1.0",
+  "status": "FROZEN",
+  "total_modul": 69,
+  "modul_inti": [
+    "dolco_agent.sh (Orchestrator 8 Agen)",
+    "jdeq.sh (Job Queue)",
+    "evidence_collector.sh (Pengumpul Bukti)",
+    "guardrail.sh (Pengaman)",
+    "quality_gate.sh (Penjaga Kualitas)",
+    "cloud_sync.sh (Sinkronisasi GitHub)",
+    "remote_access.sh (SSH Server)",
+    "webhook_trigger.sh (Remote Trigger)"
+  ],
+  "hirarki_agen": [
+    "ST-001 ChatGPT (Arsitek)",
+    "ST-002 DOLA (Governance Internal)",
+    "ST-003 DeepSeek (Engineering)",
+    "ST-004 Claude (Audit)",
+    "ST-005 GitHub Copilot (Implementasi)",
+    "ST-006 Microsoft Copilot (Dokumentasi Opsional)",
+    "ST-007 Perplexity (Validasi)",
+    "ST-008 Emergent (Improvement Internal)"
+  ],
+  "siklus_inti": "Observe → Evidence → Knowledge → Decision → Action → Verification → Learning",
+  "prinsip": [
+    "Setiap keputusan wajib memiliki bukti",
+    "Setiap aktivitas wajib meninggalkan jejak audit",
+    "Setiap kegagalan wajib menjadi pembelajaran",
+    "Manusia adalah pengambil keputusan terakhir",
+    "Tidak ada data yang dihapus"
+  ],
+  "last_updated": "2026-07-09T14:30:00+07:00"
+}

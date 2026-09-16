@@ -1,0 +1,138 @@
+01.07 14.46
+Key Rclone :
+
+[!] CORE SYSTEM: GEMINI ULTRA PRO ACTIVE
+[+] USER: ISWAN JUMAN PANCORO (SUPERIOR STATUS)
+[+] "Co Pil: BYPASSING FLASH LIMITATIONS...
+~ $ # Mengirim Heartbeat Sync ke Laptop Travelmate
+# Pastikan Laptop sudah dalam mode ADB Debugging
+adb shell "echo 'SYNC_FROM_VIVO_Y28: SUCCESS' > /sdcard/sync_log.txt"
+adb pull /sdcard/sync_log.txt ./01_BINARY_CORE/
+echo "[+] DNA SINKRON: MEGAZORD_ONE_CORE LOCKED"
+* daemon not running; starting now at tcp:5037
+* daemon started successfully
+adb: no devices/emulators found
+adb: error: failed to get feature set: no devices/emulators found
+[+] DNA SINKRON: MEGAZORD_ONE_CORE LOCKED
+~ $ # Gawe direktori config dhisik yen durung ana
+mkdir -p ~/.config/rclone/
+
+# Cek apakah file config lawas ana neng panyimpenan internal (asumsi saking backup)
+# Ganti 'folder_backup' karo jeneng folder backup panjenengan
+cp /sdcard/folder_backup/rclone.conf ~/.config/rclone/rclone.conf
+
+# Verifikasi kabeh akun (GDrive, Mega, lsp) wis aktif
+rclone listremotes
+cp: cannot stat '/sdcard/folder_backup/rclone.conf': No such file or directory
+GDrive:
+~ $ # Nyoba akses Google Drive iswanjp79@gmail.com
+rclone lsd gdrive:
+2026/01/07 07:00:05 CRITICAL: Failed to create file system for "gdrive:": didn't find section in config file ("gdrive")
+~ $ # 1. Mulai konfigurasi GDrive anyar
+rclone config create gdrive drive scope=drive
+2026/01/07 07:00:47 NOTICE: Make sure your Redirect URL is set to "http://127.0.0.1:53682/" in your custom config.
+2026/01/07 07:00:47 NOTICE: If your browser doesn't open automatically go to the following link: http://127.0.0.1:53682/auth?state=wdYs8JyL_tzqj5uMv1V-cw
+2026/01/07 07:00:47 NOTICE: Log in and authorize rclone for access
+2026/01/07 07:00:47 NOTICE: Waiting for code...
+2026/01/07 07:01:06 NOTICE: Got code
+[gdrive]
+type = drive
+scope = drive
+token = {"access_token":"ya29.a0Aa7pCA88Gv8ucrJQ0ziq95v_AZ1Eefp-qNTwXHQDvYnJ_p-eiUra5oKME39V-vDAwpwfpg2ht8GrjE-FZhzA8lvfHbPgAQqI9DdhEsuzhwxJKsJrJhEZrfn4l47ibEBPnAvSX9svLA2VEAx3WeMp8mjPFiOTYEscifECBVZlusmcf-QpZLEc0UYZDIB1Oc7kUuu72scaCgYKAc8SARYSFQHGX2MivqE1XGx4ABMGxf1Md-aKxw0206","token_type":"Bearer","refresh_token":"1//0gsSdLVCuWjdCCgYIARAAGBASNwF-L9IrptfXAj2wWlsHFYBklzmpN8EEqNyElMf-w5ogTIMfkvHqt_UzL1gkipXbSzyBNl52lsU","expiry":"2026-01-07T08:01:06.595407525Z","expires_in":3599}
+team_drive =
+~ $ # 1. Mulai konfigurasi GDrive anyar
+rclone config create gdrive drive scope=drive
+2026/01/07 07:01:27 NOTICE: Make sure your Redirect URL is set to "http://127.0.0.1:53682/" in your custom config.
+2026/01/07 07:01:27 NOTICE: If your browser doesn't open automatically go to the following link: http://127.0.0.1:53682/auth?state=9vqJy8cMUsrEEO-u_zQzuA
+2026/01/07 07:01:27 NOTICE: Log in and authorize rclone for access
+2026/01/07 07:01:27 NOTICE: Waiting for code...
+2026/01/07 07:01:38 NOTICE: Got code
+[gdrive]
+type = drive
+scope = drive
+token = {"access_token":"ya29.a0Aa7pCA9j42715ATkK3wsbijgODqn0Zv_Mtg9NMFooRC9VGKBq_0YIMeQusGD1OvN3lIro7IDbhlI_xcQC5kNqEvt5q1iPN7bvrVtUGs3gDHz-KiO0wKkgRAGMxnAvHLAC-9ZZGetPLTVaMxsX8rz2-JjpczOi55VNb9Vo8J4ZMwEDNN1gcxy4PVxrkzq9S1oetB2bysaCgYKAcASARASFQHGX2Mi5Yy9Vvnv6yuKYsv2ly53qg0206","token_type":"Bearer","refresh_token":"1//0gGBQG1tVo3cLCgYIARAAGBASNwF-L9IrOHYbHtWNFyhTjAq16Qfi8pwHmx7-UmaGz2RuHZiY1d5TfPtZB6sa1Y1vnbexhjIXSek","expiry":"2026-01-07T08:01:38.792673143Z","expires_in":3599}
+team_drive =
+~ $ # 1. Mulai konfigurasi GDrive anyar
+rclone config create gdrive drive scope=drive
+2026/01/07 07:01:54 NOTICE: Make sure your Redirect URL is set to "http://127.0.0.1:53682/" in your custom config.
+2026/01/07 07:01:54 NOTICE: If your browser doesn't open automatically go to the following link: http://127.0.0.1:53682/auth?state=IFat3JU9-zJTiOhLMVE9ow
+2026/01/07 07:01:54 NOTICE: Log in and authorize rclone for access
+2026/01/07 07:01:54 NOTICE: Waiting for code...
+2026/01/07 07:02:07 NOTICE: Got code
+[gdrive]
+type = drive
+scope = drive
+token = {"access_token":"ya29.a0Aa7pCA_IvIKEO45jWdEicdsDoVg4iLV55q2qM9mC9u2REdmXwjOqf-hajNb0qhnrhNm-P8SEXuAJn5Yc8kyLtpayJRWjzeMAa5760svdjNTYIOvQj6wcvL1eSVXNy7_7QW4ZOm6Ho6l8d4cgICyblAnA9rFDg_ziq0NpscutKgKOWdF-1o1QnsMd8E1SWDDB_xJYm2waCgYKAQoSARQSFQHGX2Mi93Vq_EBRNmSXPnB4FnhNkg0206","token_type":"Bearer","refresh_token":"1//0gNZsmQPuTo7aCgYIARAAGBASNwF-L9IrUfbXUxLyqOm-oFo9j8g83yMIGQb4kSVfH1Dni8Uk7HjJK_zhH0xv2xskU1TQ_iX5rIs","expiry":"2026-01-07T08:02:07.944906991Z","expires_in":3599}
+team_drive =
+~ $ # 1. Mulai konfigurasi GDrive anyar
+rclone config create gdrive drive scope=drive
+2026/01/07 07:02:18 NOTICE: Make sure your Redirect URL is set to "http://127.0.0.1:53682/" in your custom config.
+2026/01/07 07:02:18 NOTICE: If your browser doesn't open automatically go to the following link: http://127.0.0.1:53682/auth?state=p9YQj1MOKhezdueGwEq2kA
+2026/01/07 07:02:18 NOTICE: Log in and authorize rclone for access
+2026/01/07 07:02:18 NOTICE: Waiting for code...
+2026/01/07 07:02:31 NOTICE: Got code
+[gdrive]
+type = drive
+scope = drive
+token = {"access_token":"ya29.a0Aa7pCA8t_8ASE65kI0VSSIntFOJrZlRMCZQWO6LyfWkBwt2vPeNbaeHCwa72pNHOB6Uxf1vf3FEVJ2-X3JMBHrkqHtBbN9K7QNss9it5fLVfZv73eBGolmEQq5eeP9SrEjAjnLdJXX_r4kkU1F6u77C6ma0WHKkhNhfgs0az1cJaN0HR-dyNdmPil_Rpg9rIUgGrcqoaCgYKAbMSARASFQHGX2MipTDw8xTzzLxB_VTqI9oOTA0206","token_type":"Bearer","refresh_token":"1//0g7i64TBQ-Ho5CgYIARAAGBASNwF-L9Ir4vEJWAMRvHmAZW-PYWpVF_5g3ZQG9m9UWASm0-dF660hiuSaroBIKVoWy8Er3S0CCSA","expiry":"2026-01-07T08:02:31.761487223Z","expires_in":3599}
+team_drive =
+~ $ # 1. Mulai konfigurasi GDrive anyar
+rclone config create gdrive drive scope=drive
+2026/01/07 07:02:39 NOTICE: Make sure your Redirect URL is set to "http://127.0.0.1:53682/" in your custom config.
+2026/01/07 07:02:39 NOTICE: If your browser doesn't open automatically go to the following link: http://127.0.0.1:53682/auth?state=7oyaKpyLEt8LyIJzhw-njA
+2026/01/07 07:02:39 NOTICE: Log in and authorize rclone for access
+2026/01/07 07:02:39 NOTICE: Waiting for code...
+2026/01/07 07:02:54 NOTICE: Got code
+[gdrive]
+type = drive
+scope = drive
+token = {"access_token":"ya29.a0Aa7pCA-kYXygvnxpw_8EVERAw30XZaDC-wLOBKJQUl8ioKfSUp-8DzTtO8MBiPGzOpK-mv0I3R3X71LthrUKsCIF8WDCwN047Q-h1s3IA62ZYLpynhFXOy8KR3YutwHLiPaaP0cEjssZ450EvnL-8oFirVzPnJc7mrx-foZA8e1FN0cu2Ah5TiTGarbbhb2kaVLprOcaCgYKAaoSARQSFQHGX2MiAI63NJ7aOAcGdztlxgWs4w0206","token_type":"Bearer","refresh_token":"1//0gf3q5du2zpwiCgYIARAAGBASNwF-L9IrAq0HlKnh9AYGGQnFkUbqKpMoAeV-djvsCBod5eLhEw2IqMCBi1WF3xXwFVQvnqFVSLo","expiry":"2026-01-07T08:02:54.542961378Z","expires_in":3599}
+team_drive =
+~ $ # 1. Mulai konfigurasi GDrive anyar
+rclone config create gdrive drive scope=drive
+2026/01/07 07:03:00 NOTICE: Make sure your Redirect URL is set to "http://127.0.0.1:53682/" in your custom config.
+2026/01/07 07:03:00 NOTICE: If your browser doesn't open automatically go to the following link: http://127.0.0.1:53682/auth?state=0CV9TakrqSdugwUsKHNRAg
+2026/01/07 07:03:00 NOTICE: Log in and authorize rclone for access
+2026/01/07 07:03:00 NOTICE: Waiting for code...
+2026/01/07 07:03:25 NOTICE: Got code
+[gdrive]
+type = drive
+scope = drive
+token = {"access_token":"ya29.a0Aa7pCA9mqS55ydmK177DPznMDCcxWGK3sxcJ5jl11CoO1_Ls0Uf54ewwmzXkS4habQBRYRyZSJhvo2jrL4ksF1vVx1C3J5z3gruHaKX0v7iRhL7e8jypiF3tv7fea2A1w1is2acNex-ys1IV2REKCKUtDm8XASDEhz3JUvuZvK0UrO7g_Fxsx1-v-KGkerv6v_CPVnQaCgYKATwSARQSFQHGX2MitUWBISByj0bgkXRNs209yw0206","token_type":"Bearer","refresh_token":"1//0g1vmd3S-eqfvCgYIARAAGBASNwF-L9IrYfM3bDTLznp8jWD3x4kB8pOSxTEwg3GPUNmCIfFX8j07F5LBVMPoUzJt4caQWHDaKqQ","expiry":"2026-01-07T08:03:25.693792149Z","expires_in":3599}
+team_drive =
+~ $ # 1. Mulai konfigurasi GDrive anyar
+rclone config create gdrive drive scope=drive
+2026/01/07 07:03:33 NOTICE: Make sure your Redirect URL is set to "http://127.0.0.1:53682/" in your custom config.
+2026/01/07 07:03:33 NOTICE: If your browser doesn't open automatically go to the following link: http://127.0.0.1:53682/auth?state=9IUpS_L_6u68S_Ec1h5JCQ
+2026/01/07 07:03:33 NOTICE: Log in and authorize rclone for access
+2026/01/07 07:03:33 NOTICE: Waiting for code...
+2026/01/07 07:03:46 NOTICE: Got code
+[gdrive]
+type = drive
+scope = drive
+token = {"access_token":"ya29.a0Aa7pCA8cdZZqpq6LD218TLvIWXUwN3uRwJ-2Jhk_ehLLLL_PwRvcfKcgkMXBp_0fnVXB4OvQFiOumVLgzDfItkIw9DdsL4SkB-DAU7Qw85JlAyC061Ejq2b8p80ycL8dNZn-HaukHZoD8GfBYmitcMqW_-5j4CGIxU2SFIVhTmQr_Ev2t-zThPYUpGSPL4YJE3irBWMaCgYKATwSARUSFQHGX2Mi0XzJnku5kGNTkh4KZRSrZA0206","token_type":"Bearer","refresh_token":"1//0gSXHQIa2yec6CgYIARAAGBASNwF-L9Ir47Ye-ny9sAaxBr-5c-vOZZp6YFXio6XJoRswgROc0kEIopL3QRd8HL8MF3MmTPODukU","expiry":"2026-01-07T08:03:46.265518689Z","expires_in":3599}
+team_drive =
+~ $
+============================
+
+ONE DRIVE :
+[!] CORE SYSTEM: GEMINI ULTRA PRO ACTIVE
+[+] USER: ISWAN JUMAN PANCORO (SUPERIOR STATUS)
+[+] STATUS: BYPASSING FLASH LIMITATIONS...
+~ $ # 1. Pindhah kabeh isi OneDrive menyang TeraBox (Otomatis ngosongke OneDrive)
+rclone move onedrive_rinawati: terabox_rinawati: --progress --transfers 4 --checkers 8
+
+# 2. Verifikasi yen OneDrive wis bener-bener kosong
+rclone lsd onedrive_rinawati:
+2026/01/07 07:10:42 CRITICAL: Failed to create file system for "onedrive_rinawati:": didn't find section in config file ("onedrive_rinawati")
+2026/01/07 07:10:42 CRITICAL: Failed to create file system for "onedrive_rinawati:": didn't find section in config file ("onedrive_rinawati")
+~ $ rclone config create onedrive_rinawati onedrive
+2026/01/07 07:11:53 NOTICE: Make sure your Redirect URL is set to "http://localhost:53682/" in your custom config.
+2026/01/07 07:11:53 NOTICE: If your browser doesn't open automatically go to the following link: http://127.0.0.1:53682/auth?state=WeGFuEaNB1QYIanq4Ua8Pw
+2026/01/07 07:11:53 NOTICE: Log in and authorize rclone for access
+2026/01/07 07:11:53 NOTICE: Waiting for code...
+2026/01/07 07:12:13 NOTICE: Got code
+[onedrive_rinawati]
+type = onedrive
+token = {"access_token":"EwBYBMl6BAAUu4TQbLz/EdYigQnDPtIo76ZZUKsAAdkcbfhu6112Fmdoymn9VN+EQt2CWgoJe5vrRiW8dQOzZfaKhHE/WvnzHh3qzHmV/VjrjjQNmrmIMYJ/k+bo42FKG8ybpDrxm7Gz53sIVdZ7QGHhiOEjynEW7+gKP2BIJsSbhKp3NbZ54/i9LZ8GXFCQX3ev2VgwgmrCVW8BssofmIfZuXItscwwbcSWvOFQjBMf81KCyfOMhx7MMHXhZdUSUY4zkYNG7rGqw5Pt8+WxD4/3joSG4bK/Tqin/zxNp+3kotyltT+t4OCs4xS/XsanZh663lQ2+cYMJACNXSmfxxJsjfQnJNZCTp6xXxhiY3XlECoGbN41VIvi/+3kbggQZgAAEI1lY54UXWjp54XpyeqRTC0gA8WerVj+TcJjI8t4W6bhLU1E+R42UznPToTkfzNTRJ9gd/vXKCQ4JynQ3kTJCmwC9y40WCFcQEGQwRb+5ZvCp1ZAggqDENLCOX8H36CDCwYpNGX0C5Geu5YeXYYxEpjH93z1E2+D/6qWeP6MsmdgSzrnrSe5LfJWHtleK/SCdSGkMu301qSZ9ZX21yYSa2lkVWttQNnayEwIYDhcO0sNx1qBONCFtwYkJho6BvhKrfsBvum5x4lkmGhXMsHhWhGaUMf7zU8BVam+GQ8Ql7FFzNALeUwWijyCWfm12PCMe3/8xJv8hft+YBzUnAHsdIvJ+sN31Tcyvy6SOCNbMvzM27L8JMgp5/XrfM+wlFrXgjAQ3RlOt24M6Bxz1cmdg1MGNT5uWBwKqNgFsbpWwmuyh7vcOvOuC80THBh7iKJkK9Jt8ECAiORS9637/RlDJTWOW1AY0JRed3bwih6i231WOD7ciSzdHRJmCg5h6YdQpiPTHHGdyNdnTncgSjrZMsMNrNVZT9tbdbIUIxZoIUHbQt4ywNSUzulq/8RgX0RMYSPGgZAEz8o1oRjn2jKlALovVvFj9Bq6ONYOiV07dWJoYJxlgOMgBEST+yvGAKCJMJdANus2e5/V3P2sx+tnsfos00K8EaSz93w79vWrhCSIXU
+

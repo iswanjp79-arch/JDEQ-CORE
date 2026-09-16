@@ -1,0 +1,151 @@
+07.30 20.01
+## ATASI STORAGE PERANGKAT ##
+=============================
+Saya setuju dengan arah ini. Untuk Z83, prioritas pertama bukan menambah CPU atau RAM, tetapi membuat storage menjadi "virtual" dan selalu tersedia 24/7. Dengan begitu eMMC 55 GB hanya dipakai untuk sistem operasi dan cache kecil.
+Target Arsitektur
+Cloud Storage ┌──────────────────────────┐ │ Google Drive │ │ OneDrive │ │ (Opsional: Dropbox, dll) │ └───────────┬──────────────┘ │ Rclone Remote │ systemd (auto mount 24/7) │ /srv/jdeq/storage/cloud │ Ubuntu Z83 
+Z83 melihat direktori /srv/jdeq/storage/cloud seperti hard disk lokal, padahal datanya berada di cloud.
+Roadmap Module 07 — Storage Overlay
+Saya menyarankan tahapannya seperti ini.
+Stage 7.1 — Rclone Foundation
+Tujuan:
+Instal Rclone
+Membuat remote Google Drive
+Membuat remote OneDrive
+Menyimpan konfigurasi di lokasi yang aman
+Output:
+rclone.conf 
+Stage 7.2 — Standarisasi SSOT
+Buat struktur direktori tetap.
+/srv/jdeq/ ├── storage/ │ ├── local/ │ ├── cache/ │ ├── cloud/ │ ├── backup/ │ └── evidence/ 
+Dengan begitu semua layanan mengetahui lokasi penyimpanan.
+Stage 7.3 — Mount Permanen
+Gunakan systemd untuk menjalankan:
+rclone mount 
+saat boot.
+Karakteristik:
+otomatis saat Z83 hidup
+restart jika Rclone crash
+restart jika internet kembali
+berjalan di background
+tidak perlu login terminal
+Stage 7.4 — Cache Ringan
+Karena RAM hanya 4 GB:
+buffer kecil (misalnya 8–16 MB)
+VFS cache mode writes
+cache ditempatkan di /srv/jdeq/storage/cache
+Sehingga RAM tidak cepat habis.
+Stage 7.5 — Health Monitor
+Service kedua hanya untuk mengecek mount.
+Setiap 1 menit:
+Apakah mount aktif? Ya → diam Tidak → restart service 
+Ini membuat mount tetap hidup 24/7.
+Stage 7.6 — Logging
+Semua aktivitas Rclone dicatat.
+Misalnya:
+/var/log/jdeq/ rclone.log mount.log 
+Kalau mount gagal, penyebabnya mudah dilacak.
+Stage 7.7 — Backup Konfigurasi
+Yang dibackup bukan isi cloud, tetapi:
+konfigurasi Rclone
+service systemd
+skrip
+SSOT
+Sehingga jika Z83 rusak, sistem bisa dipulihkan dengan cepat.
+Hasil Akhir
+Setelah semua selesai:
+Z83 55 GB eMMC ↓ Ubuntu systemd Rclone Cache kecil ↓ Cloud Storage 500 GB 1 TB 2 TB atau lebih 
+Bagi aplikasi di Z83, folder cloud terlihat seperti folder lokal.
+Prioritas Implementasi
+Saya menyarankan urutan berikut:
+Module 07.1 — Instal dan konfigurasi Rclone.
+Module 07.2 — Susun struktur /srv/jdeq/storage.
+Module 07.3 — Buat jdeq-rclone.service agar mount otomatis saat boot.
+Module 07.4 — Tambahkan jdeq-rclone-health.service dan timer untuk memantau serta me-restart mount jika diperlukan.
+Module 07.5 — Integrasikan backup dan logging.
+Dengan urutan ini, Z83 akan memiliki storage virtual yang selalu terpasang (24/7) menggunakan layanan cloud yang sah, sementara penggunaan RAM dan eMMC tetap rendah dan seluruh proses dapat dikelola melalui systemd serta diaudit dengan mudah.
+Menurut saya, justru di sinilah perlu mengubah paradigma. Jangan berpikir 40 akun = 40 drive yang selalu aktif (mounted). Itu memang tidak akan efisien.
+Yang lebih tepat adalah menggunakan konsep Storage Orchestrator, bukan sekadar Rclone Mount.
+Analogi parkir mobil bertingkat
+Bayangkan Anda punya:
+40 garasi.
+Tetapi hanya ada 1 pintu masuk.
+Mobil tidak keluar semua.
+Yang aktif hanya garasi yang sedang dipakai.
+Begitu penuh,
+otomatis pindah ke garasi berikutnya.
+Persis seperti itu.
+Arsitektur yang saya sarankan
+Z83 Storage Orchestrator │ ┌──────────┼──────────┐ │ │ │ Mount A Mount B Mount C │ │ │ Google1 Google2 OneDrive1 Mount lain = OFFLINE 
+Jadi bukan
+40 Mount Aktif 
+melainkan
+1–2 Mount Aktif 38 Mount Tidur 
+Konsep Rotation Pool
+Saya menyebutnya
+Storage Rotation Pool
+Misalnya
+Pool 01 Google01 Google02 Google03 Google04 Pool 02 Google05 Google06 Google07 Google08 
+dst.
+Saat Google01 mencapai misalnya
+90% 
+Storage Orchestrator melakukan:
+Unmount Google01 ↓ Mount Google02 ↓ Semua aplikasi tetap menulis /srv/jdeq/storage/current 
+Aplikasi tidak tahu drive mana yang aktif.
+Konsep Jukebox CD
+Analogi Anda tentang CD Jukebox justru sangat tepat.
+Mesinnya punya:
+100 CD.
+Tetapi
+yang berputar
+hanya
+1 CD.
+Begitu selesai
+↓
+ganti CD.
+Rclone juga bisa dibuat seperti itu.
+Bahkan bisa lebih hemat
+Misalnya
+40 akun ↓ dibagi menjadi 8 kelompok ↓ masing-masing 5 akun. 
+Lalu
+Kelompok 1 aktif Kelompok lain tidur. 
+Scheduler
+Yang dibutuhkan sebenarnya bukan Rclone.
+Yang dibutuhkan adalah
+Storage Scheduler 
+yang memutuskan
+Drive mana aktif. Drive mana tidur. Drive mana hampir penuh. Drive mana sedang upload. Drive mana maintenance. 
+Bandwidth
+Kalau semua mount aktif
+40 akun ↓ metadata sync ↓ check quota ↓ directory cache ↓ token refresh ↓ upload checker 
+Bandwidth akan habis.
+Tetapi kalau hanya
+1 mount aktif 
+bandwidth hampir sama seperti memakai satu Google Drive biasa.
+Saya bahkan menyarankan 3 layer
+Layer 1 Storage Scheduler 
+↓
+Layer 2 Rclone Mount 
+↓
+Layer 3 Application 
+Jadi aplikasi tidak pernah mengenal akun Google.
+Aplikasi hanya mengenal
+/srv/jdeq/storage/current 
+Ini menurut saya jauh lebih "Enterprise"
+Daripada membuat:
+40 mount 
+lebih baik membuat:
+1 Storage Orchestrator ↓ 40 Storage Slot ↓ Mount sesuai kebutuhan ↓ Auto Rotate ↓ Auto Health Check ↓ Auto Resume ↓ Auto Switch 
+Mirip dengan tape library, optical jukebox, atau hierarchical storage management (HSM) yang memang digunakan di lingkungan enterprise untuk mengelola banyak media penyimpanan tanpa semuanya aktif bersamaan.
+Yang saya usulkan untuk MICO-JDEQ
+Daripada Modul 07 hanya bernama Storage Overlay (Rclone VFS), saya akan mengubahnya menjadi:
+Module 07 – Intelligent Storage Orchestrator (ISO)
+Submodulnya:
+07.1 Inventory akun cloud (40+ akun beserta kapasitas, status, dan token).
+07.2 Storage Pool Manager (mengelompokkan akun ke dalam pool).
+07.3 Mount Scheduler (hanya mengaktifkan mount yang diperlukan).
+07.4 Auto Rotation (berpindah otomatis berdasarkan kapasitas, kuota, atau kebijakan).
+07.5 Health Monitor (mendeteksi mount gagal dan melakukan pemulihan).
+07.6 Audit & Logging (mencatat setiap perpindahan mount dan aktivitas).
+Dengan desain seperti ini, Z83 tetap ringan karena hanya mengelola satu atau beberapa mount aktif pada satu waktu, sementara puluhan akun cloud menjadi kapasitas penyimpanan virtual yang dapat dipakai bergantian, bukan semuanya aktif bersamaan. Ini lebih sesuai dengan keterbatasan RAM 4 GB, eMMC 55 GB, dan bandwidth internet rumah.
+

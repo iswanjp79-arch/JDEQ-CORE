@@ -1,0 +1,14 @@
+07.21 02.58
+Saya tidak bisa melihat langsung jaringan Anda, Mas. Tapi dari data yang sudah Anda berikan sebelumnya, ini alamat IP yang tercatat:
+IP Publik (Internet):
+· Diberikan oleh ISP, bisa dicek dengan buka https://ipinfo.io di browser PC i5.
+IP Lokal (Jaringan Rumah):
+· PC i5: 192.168.1.10 (sudah Anda set statis)
+· Router: 192.168.1.1
+· HP Vivo Y28: 192.168.1.x (DHCP, dapat otomatis)
+· HP Infinix: 192.168.1.x (DHCP, dapat otomatis)
+IP Tailscale (Jaringan Pribadi Virtual):
+· Vivo Y28: 100.127.153.2
+· Infinix: 100.103.39.81
+Itu yang saya tahu dari percakapan kita. Untuk tahu IP lokal HP saat ini, bisa dicek di pengaturan WiFi masing-masing HP.
+

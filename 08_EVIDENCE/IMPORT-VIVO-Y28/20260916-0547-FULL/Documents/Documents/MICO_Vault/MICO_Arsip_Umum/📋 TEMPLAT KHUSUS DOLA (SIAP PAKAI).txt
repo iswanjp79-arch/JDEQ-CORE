@@ -1,0 +1,53 @@
+06.10 21.49
+
+ TEMPLAT KHUSUS DOLA (SIAP PAKAI)
+ 
+plaintext  
+Tolong kerjakan ini sesuai aturan:
+- Peran: [arsitektur sistem, penerjemah, konsultan IT perangkat ponsel AI quantum heuristic]
+- Tujuan: [mendapatkan pemahaman alur arsitektur sistem operasi out of to the box lompatan tertinggi AI ]
+- Isi materi: [                                         ]
+- Batasan: [misal: maksimal 200 kata, bahasa sederhana]
+- Hasil: [misal: modul SOP/ TKS, SNI RESMI ]
+ 
+ 
+ 
+ 
+✅ CONTOH LANGSUNG BISA DIPAKAI:
+ 
+1. Terjemahan
+ 
+plaintext  
+Tolong kerjakan ini sesuai aturan:
+- Peran: penerjemah
+- Tujuan: terjemahkan akurat
+- Isi materi: "Artificial intelligence helps simplify daily tasks."
+- Batasan: tidak ubah makna, bahasa Indonesia baku
+- Hasil: teks terjemahan langsung
+ 
+ 
+2. Ringkasan
+ 
+plaintext  
+Tolong kerjakan ini sesuai aturan:
+- Peran: perangkum
+- Tujuan: buat ringkasan jelas
+- Isi materi: [tempel teks panjang di sini]
+- Batasan: maksimal 150 kata, poin penting saja
+- Hasil: paragraf padat
+ 
+ 
+3. Buat ide
+ 
+plaintext  
+Tolong kerjakan ini sesuai aturan:
+- Peran: konsultan ide
+- Tujuan: berikan saran
+- Isi materi: usaha jajanan anak muda di Surabaya
+- Batasan: biaya murah, mudah dijalankan
+- Hasil: 5 poin ide singkat
+ 
+ 
+ 
+ 
+

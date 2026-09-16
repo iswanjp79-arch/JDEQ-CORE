@@ -1,0 +1,4 @@
+2026-07-19 16:47:16.039 8123-2/id.dana DEBUG/HuiYanBaseApi: call huiyan init
+2026-07-19 16:47:16.046 8123-2/id.dana DEBUG/TuringSdkHelper: real init turing: true, false, [turing version]: 3.0.1
+2026-07-19 16:47:16.046 8123-2/id.dana DEBUG/TuringSdkHelper: call turing interface init finish
+2026-07-19 16:47:16.046 8123-2/id.dana ERROR/TuringSdkHelper: 

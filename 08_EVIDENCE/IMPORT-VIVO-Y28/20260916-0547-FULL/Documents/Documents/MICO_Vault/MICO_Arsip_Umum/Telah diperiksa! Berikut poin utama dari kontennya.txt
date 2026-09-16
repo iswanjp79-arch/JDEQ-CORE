@@ -1,0 +1,16 @@
+06.11 23.55
+Telah diperiksa! Berikut poin utama dari kontennya:
+ 
+- Setup Platform Pengujian Windows:, android dan OS mendesign. 
+- Bertujuan untuk melengkapi sistem Kali Linux. Disarankan untuk mengubah nama host, menonaktifkan NetBIOS jika tidak diperlukan, dan memperkuat keamanan agar tidak diserang selama pengujian.
+- Alat yang biasanya diinstal:
+1. HxD (editor heksadesimal) – http://mh-nexus.de/en/hxd/
+2. Evade (untuk menghindari antivirus) – http://www.securepla.net/antivirus-now-you-see-me-now-you-dont/
+3. Hyperion (pemadatan dan enkripsi biner) – http://www.nullsecurity.net/tools/binary.html; perlu menginstal kompiler Windows (MinGW dari sourceforge.net/projects/mingw/) dan menjalankan perintah "make" untuk membuat file biner
+4. Metasploit (kerangka kerja eksploitasi) – http://www.Metasploit.com
+5. Nessus atau Nexpose (alat pemindaian kerentanan); Nessus lebih murah jika membeli perangkat lunak sendiri
+6. nmap (pemindaian jaringan) – http://nmap.org/download.html
+7. oclHashcat (alat pemecahan kata sandi) – http://hashcat.net/oclhashcat/#downloadlatest
+8. evil foca (untuk menyerang protokol IPv6 dan mDNS) – http://www.informatica64.com/evilfoca/
+ 
+Selain itu, ada juga alat seperti User Agent Switcher yang disebutkan sebelumnya. 

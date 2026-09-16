@@ -1,0 +1,4 @@
+07.25 04.33
+Masuk ke server Z83 :
+ssh iswan@192.168.1.4
+

@@ -1,0 +1,25 @@
+02.27 23.58
+# --- PLATFORM AI DEVELOPER ---
+1. Blackbox AI: https://www.blackbox.ai/developers
+2. Hugging Face Tokens: https://huggingface.co/settings/tokens
+3. GitHub Copilot: https://github.com/copilot/c/ed7fc904-5c14-4b99-93af-5234110b4d76
+4. Claude AI: https://claude.ai/chat/123f4757-1326-4145-9a67-ea07f0e82dec
+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
+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
+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
+
+
+# --- NODE & AUTOMATION ---
+5. Make.com Devices: https://us2.make.com/1824090/devices
+6. Make.com Dashboard: https://us2.make.com/organization/6426622/dashboard
+7. Zapier: https://zapier.com/app/home?context=25532371&conversationId=b7cf2253-f2eb-4928-aa2b-56b16b55a7d7
+
+# --- DEVELOPMENT & DESIGN ---
+8. Replit: https://replit.com/~
+9. Midjourney: https://www.midjourney.com/profile-settings
+10. Leonardo AI: https://app.leonardo.ai/
+11. Canva: https://www.canva.com/create-new
+
+# --- PRODUCTIVITY ---
+12. Genspark AI: https://www.genspark.ai/index_m
+

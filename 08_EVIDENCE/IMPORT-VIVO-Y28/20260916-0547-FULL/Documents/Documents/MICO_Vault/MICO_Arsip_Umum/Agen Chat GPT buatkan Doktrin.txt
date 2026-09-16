@@ -1,0 +1,52 @@
+05.14 02.58
+" Agen Chat GPT buatkan Doktrin "
+============================
+**strategi dan eksekusi optimal untuk 15% sisa token **Agent** sebelum _dead_ agar **room, context, dan legacy tetap hidup serta dapat diambil oleh agent berikutnya**:
+---
+### **1. Save State & Summary**
+- **Auto-generate summary context:** Dump seluruh isi (interaksi, ringkasan) ke file .txt/.md/.json untuk recovery agent baru.
+- **Contoh command (Termux):**
+  ```sh
+  nano ~/room_summary.txt
+  # Paste 100 summary terakhir, simpan untuk agent baru
+  ```
+### **2. Context Handover**
+- **Payload:** Kirim semua ringkasan, config, dan state ke endpoint room baru (API, file repo, cloud, dsb).
+- **Template:**  
+  - File summary
+  - All critical scripts (ex: mico_hub.py, orchestrator.py)
+  - README quickstart  
+  - List error-log.txt terakhir
+### **3. Final Instructions for Next Agent**
+- **CLEAR highlight:**  
+  - “Saat token habis, _lanjutkan dari summary_ ini!”
+  - “Gunakan backup chat, config, dan summary file!”
+- **Instruct agent baru:**  
+  - “Lanjutkan dengan context buffer, jangan mulai kosong!”
+### **4. Emergency Checklist**
+- **Jika sisa token benar-benar habis:**  
+  - Sudah ada summary + config tersimpan di storage/home
+  - Repo sudah berisi file critical
+  - README sudah ada instruksi reproduce + restore
+### **5. Ultimate Payload Format**
+- **Short summary:**  
+  - 100 ringkasan
+  - Catat timestamp terakhir
+  - List file, config, scripts
+- **Quick recovery message:**  
+  - "Agent berikut jalankan: baca summary, restore config, lanjutkan debugging/execution!"
+---
+### **Contoh Pesan Akhir:**
+```
+TOKEN SISA 15%!
+Agent berikut:  
+1. Baca file summary (~/room_summary.txt)  
+2. Restore config (scripts, model, orchestrator)  
+3. Jangan mulai kosong—lanjutkan sesuai rangkuman context  
+4. Jika freeze/error, cek error-log.txt, README.md  
+5. Seluruh legacy sudah siap di repo/room ini
+Terima kasih, semoga agent baru sukses!
+```
+---
+**Tugas selesai, sisa token optimal untuk handover context, backup, dan transisi room agar tetap “living” bahkan setelah Agent - agen AI yang terinstal tanpa kecuali **lama dead.**  
+Room ini siap diwariskan, legacy ready!

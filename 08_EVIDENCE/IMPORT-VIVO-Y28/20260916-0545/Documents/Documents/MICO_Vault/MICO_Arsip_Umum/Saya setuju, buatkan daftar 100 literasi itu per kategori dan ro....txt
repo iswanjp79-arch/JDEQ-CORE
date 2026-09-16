@@ -1,0 +1,133 @@
+07.03 02.46
+Saya setuju, buatkan daftar 100 literasi itu per kategori dan room
+Ya. Berikut saya susun **100 literasi inti** yang dibagi per **kategori** dan per **room**, supaya bisa jadi perpustakaan mini di ponsel Anda dan jadi dasar induksi agen MICO. Struktur ini mengikuti prinsip prompt engineering, orchestration, dan lingkungan eksekusi seperti Termux serta Nix-on-Droid. [1][2][3]
+## Struktur room
+- **Room 1 — SSOT & Governance**
+- **Room 2 — Prompt Engineering & Research**
+- **Room 3 — Agent Orchestration & Architecture**
+- **Room 4 — Termux, Nix-on-Droid & Linux Android**
+- **Room 5 — DOLA Audit & Safety**
+- **Room 6 — MICO Runtime & Operations**
+- **Room 7 — Integrasi Tools, API, dan Automasi**
+- **Room 8 — Eksekusi Lapangan & Troubleshooting** [2][4][5]
+## 1) Room SSOT & Governance
+1. Definisi SSOT.
+2. Hirarki dokumen pusat.
+3. Aturan versi dokumen.
+4. Skema approval manusia.
+5. Klasifikasi informasi sensitif.
+6. Batas kewenangan agen.
+7. Aturan konflik instruksi.
+8. Prioritas sumber kebenaran.
+9. Format catatan perubahan.
+10. Prosedur rollback keputusan.
+11. Aturan naming convention.
+12. Template keputusan final.
+13. Kapan instruksi dibekukan.
+14. Prosedur revisi terkontrol.
+15. Audit trail dasar. [1][3]
+## 2) Room Prompt Engineering & Research
+16. Prompt engineering dasar.
+17. Prompt optimization vs prompt engineering.
+18. Sistem prompt.
+19. Few-shot prompting.
+20. Zero-shot prompting.
+21. Chain-of-thought patterns.
+22. ReAct prompting.
+23. Prompt templating.
+24. Context packing.
+25. Output formatting constraints.
+26. Role prompting.
+27. Instruction hierarchy.
+28. Prompt evaluation metrics.
+29. Prompt iteration loop.
+30. Anti-hallucination framing.
+31. Domain-specific prompting.
+32. Prompt debugging.
+33. Prompt compaction.
+34. Prompt versioning.
+35. Research note synthesis. [3][1]
+## 3) Room Agent Orchestration & Architecture
+36. Definisi agent orchestration.
+37. Router agent.
+38. Supervisor agent.
+39. Worker agent.
+40. Planner-executor pattern.
+41. Fan-out/fan-in flow.
+42. Sequential chain.
+43. Parallel execution.
+44. Tool-use policy.
+45. Memory boundaries.
+46. State machine agent.
+47. Event-driven agent.
+48. Multi-agent handoff.
+49. Message schema antar agen.
+50. Failure isolation.
+51. Retry policy.
+52. Escalation path.
+53. Latency budgeting.
+54. Observability log.
+55. Orchestration diagram rules. [6][7][1]
+## 4) Room Termux, Nix-on-Droid & Linux Android
+56. Termux overview.
+57. Package manager dasar.
+58. Shell environment.
+59. Permission Android untuk Termux.
+60. File system Android vs Termux.
+61. Storage access setup.
+62. SSH di Termux.
+63. Python di Termux.
+64. Bash scripting.
+65. Service startup.
+66. Job scheduling.
+67. Nix-on-Droid konsep.
+68. Nix package manager.
+69. Reproducible environment.
+70. Flakes concept.
+71. Profile switching.
+72. Package pinning.
+73. Environment rollback.
+74. Toolchain stability.
+75. Integration Termux-Nix. [2][4][8][5]
+## 5) Room DOLA Audit & Safety
+76. Audit before execute.
+77. Risk classification.
+78. Unsafe command detection.
+79. Path validation.
+80. Package name validation.
+81. Intent validation.
+82. Data loss checks.
+83. Loop detection.
+84. Human confirmation triggers.
+85. Policy compliance.
+86. Scope enforcement.
+87. Red flag patterns.
+88. Code review checklist.
+89. Sanitization rules.
+90. Dependency trust checks.
+91. Output plausibility checks.
+92. Contradiction detection.
+93. Red-team questions.
+94. Safe default behavior.
+95. Block-and-report logic. [1][3]
+## 6) Room MICO Runtime & Operations
+96. MICO Core role.
+97. Runtime state.
+98. Orchestrator input queue.
+99. Task dispatch flow.
+100. Runtime recovery. [6][7]
+## Cara pakai di tiap room
+- **Room inti** menyimpan nomor 1–15.
+- **Room riset prompt** memakai 16–35.
+- **Room orkestrasi** memakai 36–55.
+- **Room eksekusi Android** memakai 56–75.
+- **Room audit DOLA** memakai 76–95.
+- **Room runtime MICO** memakai 96–100.  
+Pembagian ini sengaja dibuat agar setiap room punya fokus sempit, karena sistem agen yang stabil biasanya bergantung pada routing, batas konteks, dan prompt yang terstruktur. [6][1][3]
+## Rekomendasi lanjutan
+Langkah paling efisien sekarang adalah saya ubah daftar ini menjadi:
+1. **versi ringkas untuk ditempel ke Chat room**, dan
+2. **versi panjang untuk perpustakaan mini ponsel**.  
+Dengan begitu, Anda bisa langsung pakai sebagai induksi agen tanpa menulis ulang dari nol. [2][8][5]
+Kalau Anda setuju, saya lanjut buatkan **versi final yang sudah dipetakan per room lengkap dengan judul file, urutan baca, dan template induksi**.
+

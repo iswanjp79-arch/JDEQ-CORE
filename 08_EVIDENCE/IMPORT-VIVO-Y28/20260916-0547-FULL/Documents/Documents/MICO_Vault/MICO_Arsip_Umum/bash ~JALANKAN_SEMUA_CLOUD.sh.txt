@@ -1,0 +1,3 @@
+05.29 22.58
+bash ~/JALANKAN_SEMUA_CLOUD.sh
+

@@ -1,0 +1,349 @@
+jawaban agen Perflexity :
+[ID: PERPLEXITY | ROLE: EXTERNAL_RESEARCH_ADVISOR | STATE: ADVISORY | AUTH: AG-002]
+
+## Status permintaan
+
+```yaml
+REQUEST: SSD_512GB_REINITIALIZATION
+TARGET: DISK_1_ONLY
+DISK_0: PROTECTED
+MODE: ADVISORY
+EXECUTION: NONE
+RECOMMENDATION: APPROVED_WITH_STRICT_GATES
+```
+
+Kawan, jangan putus asa. Berdasarkan gejala yang diberikan, masalah paling mungkin bukan “SSD pasti rusak”, melainkan **Windows belum melihat Disk 1 sebagai disk yang benar-benar kosong/RAW**, atau perintah sebelumnya dijalankan terhadap state disk yang berubah, offline, read-only, atau belum di-refresh.
+
+Namun ada ketidakkonsistenan penting:
+
+```text
+DiskPart clean sukses
+tetapi partisi lama masih terlihat
+```
+
+Secara normal, `clean` menghapus informasi partisi pada disk yang dipilih. Jika partisi lama tetap tampil, jangan langsung mengulang perintah destruktif. Verifikasi ulang nomor disk, state disk, bus, dan hasil rescan terlebih dahulu.
+
+## Koreksi arah DeepSeek
+
+### Yang benar
+
+- Disk 0 harus diperlakukan sebagai sistem aktif dan tidak boleh disentuh.
+- SSD target harus diidentifikasi dengan ukuran, model, dan serial, bukan nomor disk saja.
+- Backup dan verifikasi target wajib sebelum penghapusan.
+- `DiskPart clean` dan pembuatan GPT adalah jalur Windows yang relevan.
+- PowerShell `Clear-Disk`, `Initialize-Disk`, `New-Partition`, dan `Format-Volume` merupakan cmdlet yang relevan untuk provisioning disk. [learn.microsoft](https://learn.microsoft.com/en-us/answers/questions/5789419/if-powershell-is-so-great-why-cant-it-completely-p)
+
+### Yang perlu diperbaiki
+
+1. **Jangan memakai `convert gpt` sebelum memastikan disk sudah benar-benar RAW/clean.**  
+   `convert gpt` hanya berlaku pada disk yang state dan partition style-nya sesuai.
+
+2. **Jangan mengandalkan nomor Disk 1 tanpa verifikasi identitas fisik.**  
+   Nomor disk dapat berubah setelah reboot, reconnect, atau perubahan storage.
+
+3. **Jangan mengklaim GPT metadata “lawas pasti tidak hilang” sebelum melihat output terbaru.**  
+   Itu baru hipotesis.
+
+4. **Jangan langsung menggunakan `clean all`.**  
+   Perintah itu menulis ke seluruh area disk, jauh lebih lama, tidak diperlukan untuk membuat disk usable, dan menambah beban tulis.
+
+5. **Jangan langsung menulis ke disk jika Windows masih melaporkan error I/O atau disk berubah offline.**
+
+6. **Jangan membuat task “perbaiki SSH/OneDrive/WSL” bersamaan dengan operasi storage.**  
+   SSD harus distabilkan dan diverifikasi terlebih dahulu.
+
+## Hipotesis teknis
+
+| ID | Hipotesis | Status |
+|---|---|---|
+| H1 | Disk yang dipilih bukan SSD target | Belum diverifikasi |
+| H2 | Disk offline atau read-only | Belum diverifikasi |
+| H3 | Storage Management belum refresh | Masuk akal, belum diverifikasi |
+| H4 | Ada I/O/controller/adapter problem | Belum diverifikasi |
+| H5 | DiskPart dijalankan pada target berbeda atau state berbeda | Belum diverifikasi |
+| H6 | SSD memiliki metadata rusak atau firmware/controller issue | Belum diverifikasi |
+| H7 | Power/USB/SATA adapter tidak stabil | Belum diverifikasi |
+
+## Jalur aman
+
+### Fase 0 — Jangan ubah apa pun
+
+Minta DeepSeek mengumpulkan output read-only berikut dari PowerShell Administrator:
+
+```powershell
+Get-Disk | Format-List Number,FriendlyName,SerialNumber,UniqueId,BusType,OperationalStatus,HealthStatus,PartitionStyle,IsOffline,IsReadOnly,Size
+Get-Partition | Format-Table DiskNumber,PartitionNumber,DriveLetter,Type,Size,Offset
+Get-Volume | Format-Table DriveLetter,FileSystem,FileSystemLabel,HealthStatus,Size,SizeRemaining
+```
+
+Kemudian cocokkan:
+
+```yaml
+target_confirmation:
+  target_disk_number: "MUST_BE_CONFIRMED"
+  target_model: "MUST_BE_CONFIRMED"
+  target_serial: "MUST_BE_CONFIRMED"
+  target_size: "approximately 512GB"
+  protected_disk:
+    disk_number: "Disk 0"
+    protected: true
+```
+
+Jika model, serial, dan ukuran tidak cocok:
+
+```text
+STOP — TARGET IDENTITY MISMATCH
+```
+
+### Fase 1 — Periksa state target
+
+```powershell
+Get-Disk -Number 1 | Format-List *
+Get-Partition -DiskNumber 1 | Format-List *
+```
+
+Periksa juga event storage terbaru:
+
+```powershell
+Get-WinEvent -FilterHashtable @{
+  LogName='System'
+  ProviderName='disk','storahci','stornvme','iaStorA'
+  StartTime=(Get-Date).AddHours(-6)
+} -ErrorAction SilentlyContinue |
+Select-Object TimeCreated,ProviderName,Id,LevelDisplayName,Message
+```
+
+Jika muncul error seperti reset device, bad block, timeout, atau I/O failure, statusnya bukan lagi sekadar masalah partisi.
+
+### Fase 2 — Rescan tanpa menghapus
+
+```powershell
+Update-HostStorageCache
+```
+
+Jika cmdlet tidak tersedia, gunakan DiskPart:
+
+```text
+diskpart
+rescan
+list disk
+select disk 1
+detail disk
+list partition
+exit
+```
+
+Jangan menjalankan `clean` pada fase ini.
+
+### Fase 3 — Reinitialization destruktif
+
+Hanya lakukan setelah:
+
+```yaml
+destructive_gate:
+  - target_model_verified
+  - target_serial_verified
+  - target_size_verified
+  - Disk_0_not_selected
+  - target_data_no_longer_needed
+  - Human_L0_approval_present
+  - DOLA_gate_present
+  - raw_precheck_saved
+  - recovery_plan_recorded
+```
+
+Jalur PowerShell yang lebih terstruktur:
+
+```powershell
+$TargetDisk = 1
+
+Get-Disk -Number $TargetDisk |
+  Format-List Number,FriendlyName,SerialNumber,UniqueId,Size,OperationalStatus,HealthStatus,PartitionStyle,IsOffline,IsReadOnly
+
+# HENTIKAN DI SINI untuk verifikasi manual.
+# Lanjut hanya setelah target benar-benar disetujui.
+
+Set-Disk -Number $TargetDisk -IsOffline $false
+Set-Disk -Number $TargetDisk -IsReadOnly $false
+
+Clear-Disk -Number $TargetDisk -RemoveData -RemoveOEM -Confirm:$false
+Update-HostStorageCache
+Initialize-Disk -Number $TargetDisk -PartitionStyle GPT
+
+$Partition = New-Partition `
+  -DiskNumber $TargetDisk `
+  -UseMaximumSize `
+  -AssignDriveLetter
+
+Format-Volume `
+  -Partition $Partition `
+  -FileSystem NTFS `
+  -NewFileSystemLabel "MICO-DATA" `
+  -Confirm:$false
+```
+
+Microsoft mendokumentasikan pola umum `Clear-Disk`, `Initialize-Disk`, `New-Partition`, dan `Format-Volume` untuk menghapus data, membuat GPT, membuat partisi, lalu memformat volume. [learn.microsoft](https://learn.microsoft.com/en-us/answers/questions/5789419/if-powershell-is-so-great-why-cant-it-completely-p)
+
+**Catatan:** blok di atas bersifat destruktif. Jangan menjalankannya dari chat secara otomatis. Jalankan hanya setelah target disk diverifikasi secara visual dan Human Authority menyetujui.
+
+### Fase 4 — Alternatif DiskPart
+
+Jika PowerShell tetap gagal dan target sudah dikonfirmasi:
+
+```text
+diskpart
+list disk
+select disk 1
+detail disk
+attributes disk
+online disk
+attributes disk clear readonly
+clean
+rescan
+convert gpt
+create partition primary
+format fs=ntfs quick label=MICO-DATA
+assign letter=M
+list volume
+exit
+```
+
+Perintah resmi Microsoft untuk alur `clean → convert gpt → create partition primary → format → assign` memiliki pola yang sama. [learn.microsoft](https://learn.microsoft.com/en-us/troubleshoot/azure/virtual-machines/windows/convert-mbr-to-gpt-azure-virtual-machine)
+
+Jika `clean` dilaporkan sukses tetapi partisi lama tetap muncul:
+
+```text
+STOP
+jangan ulangi clean berkali-kali
+jangan jalankan clean all
+jangan menyentuh Disk 0
+```
+
+Lanjutkan diagnosis:
+
+- Cabut-pasang ulang enclosure/adapter.
+- Gunakan port atau kabel lain.
+- Pastikan koneksi SATA/USB stabil.
+- Uji SSD pada sistem lain atau WinPE.
+- Periksa event log storage.
+- Gunakan tool diagnostik resmi vendor SSD jika model diketahui.
+
+## Kapan SSD dianggap tidak layak
+
+```yaml
+consider_unfit_if:
+  - SMART menunjukkan failing_or_degraded
+  - repeated_uncorrectable_I/O_errors
+  - disk_offlines_during_read_only_observation
+  - capacity_identification_is_inconsistent
+  - clean_or_initialize repeatedly fails on verified target
+  - controller_resets_repeat
+  - read/write verification fails
+  - vendor_diagnostic_reports_failure
+```
+
+`HealthStatus = Healthy` saja belum cukup untuk menyatakan seluruh operasi storage aman. Health status adalah satu sinyal, bukan pembuktian lengkap.
+
+## Verifikasi setelah berhasil
+
+```powershell
+Get-Disk -Number 1 |
+  Format-List Number,FriendlyName,SerialNumber,Size,PartitionStyle,OperationalStatus,HealthStatus
+
+Get-Partition -DiskNumber 1 |
+  Format-Table DiskNumber,PartitionNumber,DriveLetter,Type,Size,Offset
+
+Get-Volume -DriveLetter M |
+  Format-List DriveLetter,FileSystem,FileSystemLabel,HealthStatus,Size,SizeRemaining
+```
+
+Expected state:
+
+```yaml
+expected:
+  target_disk:
+    partition_style: GPT
+    operational_status: Online
+    health_status: Healthy_or_vendor_reported_status
+  partition:
+    count: 1
+    filesystem: NTFS
+    label: MICO-DATA
+    drive_letter: M
+  Disk_0:
+    changed: false
+```
+
+Tambahkan pemeriksaan Disk 0:
+
+```powershell
+Get-Disk -Number 0 |
+  Format-List Number,FriendlyName,SerialNumber,Size,PartitionStyle,OperationalStatus,HealthStatus
+```
+
+Jika Disk 0 berubah status, segera hentikan semua operasi dan dokumentasikan.
+
+## SSD sebagai storage MICO-JDEQ
+
+Setelah format berhasil, jangan langsung menaruh SSOT atau database produksi. Lakukan:
+
+```yaml
+post_format_validation:
+  - create_test_directory
+  - write_small_test_file
+  - read_back_test_file
+  - compare_hash
+  - remove_test_file
+  - check_event_log
+  - check_volume_health
+  - record_free_space
+```
+
+Baru setelah itu SSD dapat dipertimbangkan sebagai:
+
+```text
+MICO-DATA
+→ artifacts
+→ cache
+→ model files
+→ archive
+```
+
+Jangan langsung menjadikannya canonical SSOT sebelum backup dan recovery diuji.
+
+## Keputusan
+
+```yaml
+DECISION: APPROVED_WITH_CONDITIONS
+CURRENT_STATUS: HOLD_BEFORE_DESTRUCTIVE_ACTION
+PRIORITY_1: verify_target_identity
+PRIORITY_2: collect_read_only_storage_and_event_evidence
+PRIORITY_3: verify_disk_online_readonly_state
+PRIORITY_4: obtain_Human_L0_approval
+PRIORITY_5: clean_and_initialize_verified_Disk_1_only
+PRIORITY_6: validate_NTFS_volume
+PRIORITY_7: keep_Disk_0_untouched
+```
+
+## Instruksi ringkas untuk DeepSeek
+
+```text
+Jangan menjalankan clean, convert, format, atau shutdown sekarang.
+
+1. Kumpulkan Get-Disk, Get-Partition, Get-Volume.
+2. Cocokkan model, serial, ukuran SSD target.
+3. Pastikan Disk 0 tidak tersentuh.
+4. Periksa OperationalStatus, IsOffline, IsReadOnly, dan event storage.
+5. Simpan raw output.
+6. Laporkan hasil dengan status FACT / INFERENCE / UNKNOWN.
+7. Tunggu approval L0 sebelum tindakan destruktif.
+```
+
+**Kesimpulan:** SSD masih layak ditelusuri; belum ada bukti cukup untuk membuangnya atau langsung menulis ulang metadata. Masalah utama sekarang adalah **target verification dan storage-state diagnosis**, bukan kurangnya perintah format.
+===============================================================
+.
+📋 YANG AKAN DEEP SEEK BOLEH KERJAKAN:
+Membaca & membedah setiap jawaban yang muncul di layar Perplexity pada foto yang Mas Iwan kirimkan
+Menjelaskan maksud, dasar teknis, kelebihan, dan risiko dari setiap pilihan
+Menyusun hasil bedahnya secara rapi dan jelas — agar nanti bisa langsung diserahkan ke DeepSeek sebagai bahan pertimbangan
+Tetap memegang batas aman: tidak menyarankan perintah sebelum diverifikasi, tidak menyentuh Disk 0, semua berbasis bukti

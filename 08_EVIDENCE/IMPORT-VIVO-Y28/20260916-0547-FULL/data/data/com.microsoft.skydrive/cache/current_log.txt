@@ -1,0 +1,415 @@
+2026-09-15T09:12:19.042Z DATA SkyDriveBuildFlavor[main] Sweeping context does nothing in main build flavor 
+2026-09-15T09:12:21.795Z DATA RampManager Initialize ramps called with 367 ramps, 7 device level experiments, ecsConfigTags:  
+2026-09-15T09:12:24.905Z DATA com.microsoft.odsp.c0 Ramps updated from ECS with config Ids: P-X-1739917-2-13,P-X-1721673-2-9,P-X-1721686-1-15,P-X-1755518-2-13,P-X-1733176-2-19,P-X-1733285-2-21,P-X-1755517-1-11,P-X-1648312-2-15,P-X-1642189-2-17,P-X-1648310-1-9,P-X-1642188-1-11,P-X-1733286-1-11,P-X-1655899-1-9,P-X-1630726-1-17,P-X-1663977-2-17,P-X-1663958-2-13,P-X-1733177-2-11,P-X-1731594-2-8,P-X-1655136-2-15,P-X-1655134-1-9,P-X-1639829-1-17,P-X-1525914-2-9,P-X-1581884-2-15,P-X-1565046-2-19,P-X-1581888-1-15,P-X-1628474-2-9,P-X-1572207-1-21,P-X-1565047-3-23,P-X-1572204-2-21,P-X-1547459-1-17,P-X-1436762-2-21,P-X-1423885-2-13,P-X-117895-3-8,P-X-1451741-1-13,P-X-1468383-1-6,P-X-1460779-2-5,P-X-1238051-2-11,P-X-1259385-1-15,P-X-1259386-1-13,P-X-1222816-2-21,P-X-1231093-2-17,P-X-1233407-2-11,P-X-1206111-2-16,P-X-1223875-2-25,P-X-1169916-2-11,P-X-1125913-2-19,P-X-1045952-2-17,P-X-1146526-2-7,P-X-1134108-2-9,P-X-1119288-2-11,P-X-1130789-2-7,P-X-1053341-2-5,P-E-1925621-T2-8,P-E-1941378-T2-6,P-E-1906442-T2-8,P-E-1894855-2-8,P-E-1898569-T2-7,P-E-1894849-2-8,P-E-1829780-C1-9,P-E-1854661-2-11,P-E-1854659-2-10,P-E-1854937-C1-6,P-E-1858395-T2-7,P-E-1854934-C1-7,P-E-1858400-C1-6,P-E-1843995-2-10,P-E-1829896-C1-7,P-E-1843990-T2-9,P-E-1829768-2-13,P-E-1834580-C1-8,P-E-1834570-2-8,P-E-1830812-C1-8,P-E-1830867-T2-6,P-E-1834573-C1-7,P-E-1834557-2-7,P-E-1826486-2-10,P-E-1808379-2-10,P-E-1812967-2-10,P-E-1828889-2-12,P-E-1807613-2-10,P-E-1828883-T2-6,P-E-1812963-2-9,P-E-1825057-2-9,P-E-1824336-2-10,P-E-1813450-C1-6,P-E-1813459-T2-7,P-E-1794613-C1-8,P-E-1755882-C1-6,P-E-1089456-A1-3,P-E-1058744-T3-5,P-E-1055178-T2-4,P-E-1037212-A1-3,P-E-1036373-T2-6,P-E-1045064-A1-3,P-E-1036377-C1-6,P-E-1015527-3-10,P-E-1007363-3-6,P-E-81629-A1-4,P-E-88162-C1-8,P-E-70567-A1-4,P-E-81628-T3-4,P-E-73542-A1-11,P-E-78431-A2-3,P-E-73962-A3-3,P-E-63863-A1-6,P-E-39342-C1-9,P-E-61170-A2-4,P-E-60907-A1-13,P-E-60908-A2-8,P-E-54519-2-6,P-E-49225-C1-4,P-E-48510-C1-5,P-E-46988-C1-3,P-E-43242-C1-6,P-E-38638-2-3,P-E-37635-C1-4,P-E-26698-2-7,P-E-26646-2-5,P-E-25301-C1-6,P-E-24859-2-3,P-E-24979-C1-5,P-E-22703-C1-4,P-E-23106-C1-5,P-E-22553-2-5,P-E-20764-C1-4,P-R-2008570-2-2,P-R-2008569-2-2,P-R-2008544-2-2,P-R-2004639-1-8,P-R-1917204-1-8,P-R-1937742-1-6,P-R-1925139-1-9,P-R-1917181-1-9,P-R-1924955-1-7,P-R-1915852-1-6,P-R-1914044-1-6,P-R-1912395-2-2,P-R-1912373-2-2,P-R-1908366-1-7,P-R-1898590-1-10,P-R-1906619-1-7,P-R-1904628-1-6,P-R-1888298-1-8,P-R-1895496-1-8,P-R-1887598-1-10,P-R-1888297-1-9,P-R-1884917-1-6,P-R-1882066-1-8,P-R-1881122-1-7,P-R-1880912-1-6,P-R-1871470-1-6,P-R-1867142-1-8,P-R-1875027-2-2,P-R-1874962-1-7,P-R-1873155-1-7,P-R-1873149-2-2,P-R-1872130-2-1,P-R-1871344-1-9,P-R-1871073-1-6,P-R-1866431-1-7,P-R-1865161-2-2,P-R-1865039-1-8,P-R-1860422-1-9,P-R-1860085-2-2,P-R-1855571-1-8,P-R-1856064-1-6,P-R-1853129-1-8,P-R-1852343-1-5,P-R-1850346-1-6,P-R-1848281-1-9,P-R-1847155-1-7,P-R-1847153-1-7,P-R-1846537-1-7,P-R-1846023-1-7,P-R-1840805-1-9,P-R-1839813-1-8,P-R-1833942-1-8,P-R-1833937-1-8,P-R-1835043-1-7,P-R-1834181-1-7,P-R-1834183-1-10,P-R-1833621-1-7,P-R-1831163-1-7,P-R-1828693-1-8,P-R-1827562-1-8,P-R-1826860-1-7,P-R-1825873-1-6,P-R-1825878-1-7,P-R-1822163-1-6,P-R-1820318-1-2,P-R-1820419-1-2,P-R-1820416-1-2,P-R-1820409-1-2,P-R-1820404-1-2,P-R-1820397-1-2,P-R-1820395-1-2,P-R-1820390-1-2,P-R-1820373-1-2,P-R-1820330-1-2,P-R-1820329-1-2,P-R-1820327-2-1,P-R-1820319-1-2,P-R-1820317-1-2,P-R-1820316-1-2,P-R-1820312-1-2,P-R-1820310-1-2,P-R-1820308-1-2,P-R-1820294-2-2,P-R-1819441-1-1,P-R-1819437-1-2,P-R-1819029-1-6,P-R-1817988-1-7,P-R-1818917-1-6,P-R-1817818-1-6,P-R-1817560-1-7,P-R-1816422-1-7,P-R-1816326-1-7,P-R-1815761-1-9,P-R-1815581-1-6,P-R-1814606-1-5,P-R-1812805-1-7,P-R-1813663-1-5,P-R-1812503-1-5,P-R-1812497-1-5,P-R-1812495-1-10,P-R-1812287-1-5,P-R-1810125-1-6,P-R-1809881-1-8,P-R-1807836-1-9,P-R-1807330-1-6,P-R-1790625-1-6,P-R-1800335-1-6,P-R-1800693-1-6,P-R-1798685-1-7,P-R-1796502-1-7,P-R-1796364-1-6,P-R-1794554-1-8,P-R-1790391-1-6,P-R-1790526-1-6,P-R-1785185-1-7,P-R-1778554-1-5,P-R-1786722-1-6,P-R-1781276-1-8,P-R-1781467-1-7,P-R-1780874-1-6,P-R-1777972-1-6,P-R-1777479-1-7,P-R-1773920-1-8,P-R-1776729-1-9,P-R-1774729-1-8,P-R-1774579-1-6,P-R-1774655-1-6,P-R-1774580-1-6,P-R-1773051-1-5,P-R-1771764-1-6,P-R-1771128-1-6,P-R-1770470-1-8,P-R-1769554-1-7,P-R-1766240-1-7,P-R-1765789-1-7,P-R-1764042-1-5,P-R-1764039-1-5,P-R-1764606-1-8,P-R-1764415-1-5,P-R-1764314-1-6,P-R-1762588-1-6,P-R-1761940-1-6,P-R-1762374-2-17,P-R-1761888-1-7,P-R-1761926-1-7,P-R-1756705-1-5,P-R-1756699-1-5,P-R-1755565-1-6,P-R-1753296-1-8,P-R-1751825-1-6,P-R-1749334-1-4,P-R-1738388-1-6,P-R-1625060-1-8,P-R-1735188-1-9,P-R-1734447-1-6,P-R-1732820-1-6,P-R-1726750-1-7,P-R-1724655-1-9,P-R-1721825-1-12,P-R-1721242-1-5,P-R-1713396-1-8,P-R-1711519-1-8,P-R-1709204-1-7,P-R-1704307-1-9,P-R-1691266-1-8,P-R-1692747-1-5,P-R-1678948-1-8,P-R-1644699-1-7,P-R-1655395-1-9,P-R-1654520-1-6,P-R-1651024-1-6,P-R-1650850-1-8,P-R-1644153-1-5,P-R-1641351-1-6,P-R-1638620-1-6,P-R-1635589-1-5,P-R-1632082-1-6,P-R-1633248-1-7,P-R-1631210-1-6,P-R-1631165-1-3,P-R-1630748-1-10,P-R-1623018-1-3,P-R-1626234-1-7,P-R-1625959-1-7,P-R-1621559-1-7,P-R-1619105-1-7,P-R-1620265-1-8,P-R-1619750-1-7,P-R-1615580-1-5,P-R-1609419-1-9,P-R-1608964-1-11,P-R-1607159-1-7,P-R-1605050-1-9,P-R-1603346-1-9,P-R-1602907-1-6,P-R-1597243-1-8,P-R-1584258-1-6,P-R-1588048-1-5,P-R-1587268-1-7,P-R-1585709-1-11,P-R-1585482-1-6,P-R-1577526-1-7,P-R-1577006-1-6,P-R-1576454-1-7,P-R-1572590-1-7,P-R-1571618-1-7,P-R-1564199-1-9,P-R-1562100-1-6,P-R-1560597-1-5,P-R-1557234-1-5,P-R-1550628-1-7,P-R-1550017-1-7,P-R-1546288-1-9,P-R-1534803-1-5,P-R-1476305-1-3,P-R-1471347-1-11,P-R-1467124-1-7,P-R-1466814-1-10,P-R-1464052-1-8,P-R-1433526-1-8,P-R-1448276-1-5,P-R-1464233-1-6,P-R-1448282-1-7,P-R-1439399-1-12,P-R-1438684-1-7,P-R-1437414-1-7,P-R-1425826-1-6,P-R-1415791-1-6,P-R-1380514-1-7,P-R-1301308-1-12,P-R-1293722-1-9,P-R-1290782-1-11,P-R-1265983-1-12,P-R-1288714-1-7,P-R-1279499-1-4,P-R-1276762-1-3,P-R-1272534-1-8,P-R-1271671-1-8,P-R-1269005-1-8,P-R-1265489-2-8,P-R-1265490-2-10,P-R-1263795-1-5,P-R-1263833-1-3,P-R-1262774-1-1,P-R-1259198-1-6,P-R-1259154-1-10,P-R-1259062-1-5,P-R-1259064-1-10,P-R-1255521-1-2,P-R-1255308-1-7,P-R-1253045-1-5,P-R-1253047-1-6,P-R-1252688-1-9,P-R-1249459-1-5,P-R-1248984-2-8,P-R-1247034-1-3,P-R-1245594-2-4,P-R-1244044-1-5,P-R-1243744-1-9,P-R-1240900-2-7,P-R-1240173-1-6,P-R-1240174-1-5,P-R-1239486-1-6,P-R-1239405-1-3,P-R-1232716-2-7,P-R-1231815-2-5,P-R-1229590-1-6,P-R-1229585-1-6,P-R-1229767-1-2,P-R-1229555-1-4,P-R-1227719-1-7,P-R-1226347-1-6,P-R-1226190-1-7,P-R-1224351-1-4,P-R-1223240-1-1,P-R-1186993-1-3,P-R-1174335-1-7,P-R-1176093-2-3,P-R-1174180-1-5,P-R-1166445-1-6,P-R-1159554-1-7,P-R-1159558-1-7,P-R-1159555-1-7,P-R-1159557-1-7,P-R-1159551-1-7,P-R-1159553-1-7,P-R-1152144-1-3,P-R-1145365-1-7,P-R-1150175-1-7,P-R-1145367-1-5,P-R-1148458-1-6,P-R-1136526-1-5,P-R-1133453-1-7,P-R-1132368-1-6,P-R-1128449-1-11,P-R-1126285-1-6,P-R-1119315-1-5,P-R-1125790-1-3,P-R-1125133-1-8,P-R-1119534-2-8,P-R-1118042-1-4,P-R-1118041-1-5,P-R-1118096-1-7,P-R-1116003-1-5,P-R-1115996-1-7,P-R-1115799-1-5,P-R-1115798-1-6,P-R-1115796-1-6,P-R-1107926-1-7,P-R-89584-1-8,P-R-1098441-1-1,P-R-1096197-1-7,P-R-1094486-1-11,P-R-1091904-1-3,P-R-1084369-1-4,P-R-1084856-1-6,P-R-1082263-1-6,P-R-1081102-1-5,P-R-1080984-1-6,P-R-1081421-1-5,P-R-1081403-1-8,P-R-1078436-1-6,P-R-1076550-1-4,P-R-1074649-1-7,P-R-1073456-1-3,P-R-1067174-1-5,P-R-1069719-1-5,P-R-1069984-1-2,P-R-1067660-1-7,P-R-1066457-1-12,P-R-1064631-1-3,P-R-1064119-1-5,P-R-1064117-1-6,P-R-1063207-1-3,P-R-1062214-1-2,P-R-1061752-1-11,P-R-1059232-1-7,P-R-1058852-1-2,P-R-1055259-1-20,P-R-1056993-1-7,P-R-1056147-1-8,P-R-1056141-1-2,P-R-1055560-1-6,P-R-1053346-1-1,P-R-1050931-1-3,P-R-1048268-1-6,P-R-1047536-1-6,P-R-1046014-1-6,P-R-1045984-1-2,P-R-1037228-1-16,P-R-1040857-1-2,P-R-1040634-1-6,P-R-1038389-1-5,P-R-1028331-1-11,P-R-1035869-1-9,P-R-1034159-1-9,P-R-1030721-1-6,P-R-1027858-1-4,P-R-1026486-1-11,P-R-1026166-1-6,P-R-1024069-1-7,P-R-1021654-1-5,P-R-1021646-1-2,P-R-1019772-1-8,P-R-1019108-1-7,P-R-1017372-1-6,P-R-1017156-1-2,P-R-1015310-1-2,P-R-1015297-1-2,P-R-1015296-1-2,P-R-1013003-1-6,P-R-1011201-1-10,P-R-1007575-1-5,P-R-1006555-1-5,P-R-1005911-1-2,P-R-1005910-1-2,P-R-1004576-1-5,P-R-1002142-1-11,P-R-1003203-1-4,P-R-1003155-1-2,P-R-117800-1-6,P-R-111688-1-7,P-R-110407-1-7,P-R-108081-1-8,P-R-99838-1-2,P-R-98119-1-2,P-R-97668-1-4,P-R-97244-1-2,P-R-96384-1-3,P-R-94175-1-6,P-R-90947-1-5,P-R-90616-1-2,P-R-89741-1-3,P-R-89266-1-2,P-R-89245-1-11,P-R-88175-1-5,P-R-87109-1-2,P-R-84485-1-2,P-R-84111-1-6,P-R-83815-1-3,P-R-82703-1-6,P-R-60453-1-16,P-R-81842-1-2,P-R-79708-1-3,P-R-79041-1-19,P-R-78704-1-7,P-R-78708-1-2,P-R-78703-1-2,P-R-78410-1-3,P-R-78403-1-1,P-R-77649-1-3,P-R-73354-1-3,P-R-73353-1-2,P-R-72821-1-3,P-R-70129-1-4,P-R-65108-1-20,P-R-67117-2-17,P-R-65565-1-10,P-R-66972-1-2,P-R-66821-1-2,P-R-65561-1-4,P-R-65306-1-2,P-R-65248-1-4,P-R-64127-1-4,P-R-63344-1-4,P-R-63038-1-3,P-R-62092-1-6,P-R-61513-1-8,P-R-53554-1-8,P-R-52788-1-1,P-R-50238-1-2,P-R-49501-1-37,P-R-45578-1-2,P-R-42291-1-18,P-R-40260-1-2,P-R-28873-1-6,P-R-27968-1-5,P-R-27962-1-5,P-R-27511-1-12,P-D-1927653-1-3,P-D-1927655-1-3,P-D-1917842-1-3,P-D-1881814-1-3,P-D-1855641-1-2,P-D-1847649-1-2,P-D-1471208-1-1,P-D-118364-1-1,P-D-118363-1-1,P-D-18630-1-258,j50fg774:5030059,j1bij215:999069,0g32g101:998810,h6j6j131:993929,g1ef3317:992192,7g008568:983423,05715687:983215,eghbc535:982984,i80bf488:982330,g1id4146:980750,adb8i678:980749,5b00e661:979973,a4j4e335:978825,6538f124:978824,9ci76907:971802,b8g49361:971801,cdg30200:964100,55jfg469:944898,b50c2592:918305,3532f552:918286,04h53527:866446,974ic454:855130,j01f7183:854616,62jbg802:836025,8ia48829:836007,fhi0h128:834386,842d6170:830191,h75gd552:802914,40g6d467:800551,2f7dh312:724332,8bea5948:703952,gfgi3310:702203,catherinetreatment2:700745,fb0c3691:675354,0816j309:667398,j1je0902:663957,d3eaj597:649497,493hf392:594802,6a342747:577373,cgcig280:576562,g6g11131:575511,7e087607:569794,ah3ah445:556880,926c1810:535331,ia68f145:530001,gaaje184:516949,pdfextractmergeexperimenttreatment:455883,hce74261:455257,h9d5f734:452048,cc87c742:441372,bea58758:440257,d1jbf928:299322,pe19256212:1401330,pe19413782:1374079,pe19064422:1392887,pe18985692:1374230,pe1829780c1:1402922,pe1854937c1:1246090,pe18583952:1250198,pe1854934c1:1237447,pe1858400c1:1236946,pe1829896c1:1217658,pe18439902:1212326,pe1830812c1:1211057,pe18308672:1209610,pe18288832:1170349,pe1813450c1:1173700,pe18134592:1173686,pe1794613c1:1147795,pe1755882c1:1100241,pe18298942:1217850 
+2026-09-15T09:12:24.907Z DATA com.microsoft.odsp.c0 Removing cached ramps not found on the backend 
+2026-09-15T09:12:25.423Z DATA com.microsoft.skydrive.SkyDriveApplication initializeRampSettings complete with proof = 500 
+2026-09-15T09:12:25.424Z DATA OneDSUtils OneDS mitigation checks passed 
+2026-09-15T09:12:25.425Z DATA OneDSUtils PrivacyGuard is not enabled 
+2026-09-15T09:12:25.425Z DATA OneDSUtils Sanitizer enabled: true 
+2026-09-15T09:12:25.523Z DATA OneDSCacheClear OneDS cache clearance is not needed or disabled by ramp 
+2026-09-15T09:12:25.597Z DATA RampManager getAllRampsState took 1ms 
+2026-09-15T09:12:27.436Z DATA uo.e Oneauth AAD ramp state is set and locked to true for remainder of this session 
+2026-09-15T09:12:27.436Z DATA OneAuth Set configuration in SkyDriveApplication#attachBaseContext 
+2026-09-15T09:12:27.437Z DATA OneDSUtils OneDS mitigation checks passed 
+2026-09-15T09:12:29.116Z DATA OneDriveCore Found library lib/arm64-v8a/libMicrosoft.AugLoop.Client.Jni.so in APK 
+2026-09-15T09:12:29.116Z DATA OneDriveCore Found library lib/arm64-v8a/libOneAuth.so in APK 
+2026-09-15T09:12:29.116Z DATA OneDriveCore Found library lib/arm64-v8a/libPdfControl.so in APK 
+2026-09-15T09:12:29.116Z DATA OneDriveCore Found library lib/arm64-v8a/libQt.so in APK 
+2026-09-15T09:12:29.116Z DATA OneDriveCore Found library lib/arm64-v8a/libandroidx.graphics.path.so in APK 
+2026-09-15T09:12:29.116Z DATA OneDriveCore Found library lib/arm64-v8a/libc++_shared.so in APK 
+2026-09-15T09:12:29.116Z DATA OneDriveCore Found library lib/arm64-v8a/libcore.so in APK 
+2026-09-15T09:12:29.116Z DATA OneDriveCore Found library lib/arm64-v8a/libdatastore_shared_counter.so in APK 
+2026-09-15T09:12:29.116Z DATA OneDriveCore Found library lib/arm64-v8a/libfmt.so in APK 
+2026-09-15T09:12:29.116Z DATA OneDriveCore Found library lib/arm64-v8a/libgoogle_breakpad.so in APK 
+2026-09-15T09:12:29.116Z DATA OneDriveCore Found library lib/arm64-v8a/libimage_processing_util_jni.so in APK 
+2026-09-15T09:12:29.116Z DATA OneDriveCore Found library lib/arm64-v8a/libmaesdk.so in APK 
+2026-09-15T09:12:29.116Z DATA OneDriveCore Found library lib/arm64-v8a/libmip_unified.so in APK 
+2026-09-15T09:12:29.116Z DATA OneDriveCore Found library lib/arm64-v8a/libmlkitcommonpipeline.so in APK 
+2026-09-15T09:12:29.116Z DATA OneDriveCore Found library lib/arm64-v8a/libpcre2-8.so in APK 
+2026-09-15T09:12:29.116Z DATA OneDriveCore Found library lib/arm64-v8a/libpdf_mip.so in APK 
+2026-09-15T09:12:29.116Z DATA OneDriveCore Found library lib/arm64-v8a/libpixsdk.OfficeLensProductivity.so in APK 
+2026-09-15T09:12:29.116Z DATA OneDriveCore Found library lib/arm64-v8a/libpugixml.so in APK 
+2026-09-15T09:12:29.116Z DATA OneDriveCore Found library lib/arm64-v8a/librhash.so in APK 
+2026-09-15T09:12:29.116Z DATA OneDriveCore Found library lib/arm64-v8a/libsqlite3.so in APK 
+2026-09-15T09:12:29.116Z DATA OneDriveCore Found library lib/arm64-v8a/libsurface_util_jni.so in APK 
+2026-09-15T09:12:29.116Z DATA OneDriveCore Found library lib/arm64-v8a/libtensorflowlite_jni_gms_client.so in APK 
+2026-09-15T09:12:29.116Z DATA OneDriveCore Found library lib/arm64-v8a/libvroom.so in APK 
+2026-09-15T09:12:29.116Z DATA OneDriveCore Found library lib/arm64-v8a/libxml2.so in APK 
+2026-09-15T09:12:29.248Z W OneDriveCore Library libcrypto.so not found in APK 
+2026-09-15T09:12:29.248Z W OneDriveCore Library libssl.so not found in APK 
+2026-09-15T09:12:29.248Z W OneDriveCore Library libQt5Core.so not found in APK 
+2026-09-15T09:12:29.248Z W OneDriveCore Library libQt5AndroidExtras.so not found in APK 
+2026-09-15T09:12:29.248Z W OneDriveCore Library libQt5Network.so not found in APK 
+2026-09-15T09:12:29.248Z W OneDriveCore Library libQt5Sql.so not found in APK 
+2026-09-15T09:12:29.248Z W OneDriveCore Library libQt5Xml.so not found in APK 
+2026-09-15T09:12:29.248Z W OneDriveCore Library libQt5Concurrent.so not found in APK 
+2026-09-15T09:12:32.129Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface Creating XpApplication (uses asio) (/Users/runner/work/1/s/CrossPlatform/Qt/concurrency/xpapplicationmanager.cpp:17) 
+2026-09-15T09:12:32.150Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface IApplication has been started (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/onedrivelib.cpp:103) 
+2026-09-15T09:12:32.151Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface Performing time-extensive initialization (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/onedrivelib.cpp:100) 
+2026-09-15T09:12:32.152Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface Setting max thread count to 16 (/Users/runner/work/1/s/CrossPlatform/Qt/concurrency/xpconcurrent.cpp:26) 
+2026-09-15T09:12:32.152Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface Creating XpThreadPool with max thread count:  16 (/Users/runner/work/1/s/CrossPlatform/Qt/concurrency/xpconcurrent.cpp:28) 
+2026-09-15T09:12:32.152Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface Initializing XPCryptographicHash using rhash with fileHashBufferSizeInKB= 0 (/Users/runner/work/1/s/CrossPlatform/Qt/cryptographic/xpcryptographichash.cpp:17) 
+2026-09-15T09:12:32.399Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface Opening database  /data/user/0/com.microsoft.skydrive/files/QTMetadata.db (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/database/metadatadatabase.cpp:5221) 
+2026-09-15T09:12:32.509Z V WifiAvailableJob Scheduling a WifiAvailableJob job. 
+2026-09-15T09:12:32.564Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface Current DB version is  268 (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/database/metadatadatabase.cpp:5993) 
+2026-09-15T09:12:32.570Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface Log the database file info (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/dbhelpers/metadatadatabaseutils.cpp:169) 
+2026-09-15T09:12:32.574Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface File: /data/user/0/com.microsoft.skydrive/files/QTMetadata.db size: 107655168 bytes permission: 384 (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/dbhelpers/metadatadatabaseutils.cpp:174) 
+2026-09-15T09:12:32.575Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface File: /data/user/0/com.microsoft.skydrive/files/QTMetadata.db-wal size: 82432 bytes permission: 384 (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/dbhelpers/metadatadatabaseutils.cpp:174) 
+2026-09-15T09:12:32.575Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface File: /data/user/0/com.microsoft.skydrive/files/QTMetadata.db-shm size: 32768 bytes permission: 384 (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/dbhelpers/metadatadatabaseutils.cpp:174) 
+2026-09-15T09:12:32.729Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface onAppLaunch: updates records:  0 (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/telemetry/fullsynceventtracker.cpp:42) 
+2026-09-15T09:12:32.730Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface Opening offline database  /data/user/0/com.microsoft.skydrive/files/OfflineSelection.db (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/offline/offlinedatabase.cpp:81) 
+2026-09-15T09:12:32.753Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface OfflineSelectionDatabaseStorage loaded  3  offline selections from the database (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/offline/offlineselectiondatabasestorage.cpp:42) 
+2026-09-15T09:12:32.753Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface OfflineSelectionDatabaseStorage loading all explicit offline items from the metadata database (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/offline/offlineselectiondatabasestorage.cpp:51) 
+2026-09-15T09:12:32.755Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface OfflineSelectionDatabaseStorage to add selection:  rinawatimadina@gmail.com  |  07877409AD8E42BB  |  7877409AD8E42BB!s0cbaf2eb1dfe40408d1c6a1d662281fa (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/offline/offlineselectiondatabasestorage.cpp:93) 
+2026-09-15T09:12:32.755Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface OfflineSelectionDatabaseStorage to add selection:  rinawatimadina@gmail.com  |  07877409AD8E42BB  |  7877409AD8E42BB!s5f06ee378c3e41a3902ae872f3ea906e (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/offline/offlineselectiondatabasestorage.cpp:93) 
+2026-09-15T09:12:32.755Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface OfflineSelectionDatabaseStorage to add selection:  rinawatimadina@gmail.com  |  07877409AD8E42BB  |  7877409AD8E42BB!s43d840b4f35b4668a885821b8017d0ac (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/offline/offlineselectiondatabasestorage.cpp:93) 
+2026-09-15T09:12:32.762Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface Deleted  0  comments (cLocalStatus = cAddingToServer) on launch. (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/dbhelpers/commentdbhelper.cpp:168) 
+2026-09-15T09:12:32.762Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface Updated  0  comments (cLocalStatus = cDeletingFromServer or cFailedToDeleteFromServer) on launch. (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/dbhelpers/commentdbhelper.cpp:176) 
+2026-09-15T09:12:32.763Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface Reset SP Lists Comments on Launch (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/dbhelpers/listscommentsdbhelper.cpp:146) 
+2026-09-15T09:12:32.771Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface Deleted  0  comments (cLocalStatus = cAddingToServer) on launch. (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/dbhelpers/listscommentsdbhelper.cpp:152) 
+2026-09-15T09:12:32.772Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface Updated  0  comments (cLocalStatus = cDeletingFromServer or cFailedToDeleteFromServer) on launch. (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/dbhelpers/listscommentsdbhelper.cpp:162) 
+2026-09-15T09:12:32.773Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface cleanOrphanedCacheAsyncIfNecessary has the settings to run cleanup false (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/streamcache/streamcache.cpp:679) 
+2026-09-15T09:12:33.351Z DATA OneDrivePrivacyDelegate (Q) XPlat RequiredServiceData OneDriveAccount 07877409ad8e42bb true 
+2026-09-15T09:12:33.425Z DATA SingularEventTracker SingularEventTracker: stashed wasPersonalSignedIn=true 
+2026-09-15T09:12:35.139Z DATA com.microsoft.skydrive.SkyDriveApplication onCreate - startType: 1 Start Reason: 5 Process intent: Intent { act=android.vivo.JobService cmp=com.microsoft.skydrive/.jobs.LocalNotificationDailyJob } 
+2026-09-15T09:12:35.154Z DATA com.microsoft.skydrive.SkyDriveApplication onCreate - Importance: 400 [BACKGROUND INIT] 
+2026-09-15T09:12:35.189Z DATA OneAuth Init oneauth in SkyDriveApplication start - Skip adal secret key setup 
+2026-09-15T09:12:35.313Z I ConvergenceSyncHelper Start check the personal account migration status. 
+2026-09-15T09:12:35.314Z DATA RampManager getAllRampsState took 1ms 
+2026-09-15T09:12:35.316Z DATA RampManager getAllRampsState took 1ms 
+2026-09-15T09:12:35.327Z DATA XiaomiPreinstallUtils checkIsPreinstalled =  
+2026-09-15T09:12:35.327Z DATA PartnerAttributionProvider Not a Xiaomi preinstall device 
+2026-09-15T09:12:35.342Z I SharedDeviceModeGuard Shared device mode guard initialized 
+2026-09-15T09:12:35.344Z DATA InstallReferrerProcessor processGooglePlayInstallReferrer exited early: install referrer ramp or oneauth ramps disabled or referrer already processed. 
+2026-09-15T09:12:35.356Z DATA uo.e InitOneAuthPreReqs 
+2026-09-15T09:12:35.407Z DATA uo.e migrateADALCacheKey was skipped because it has already been performed 16661236474ms ago 
+2026-09-15T09:12:35.408Z DATA uo.e Oneauth MSA ramp state is set and locked to true for remainder of this session 
+2026-09-15T09:12:35.408Z DATA uo.e Initializing OneAuth TSL 
+2026-09-15T09:12:35.433Z DATA OneAuthMigration Starting first discoverAccounts call to find accounts and make them known to OneAuth's stack 
+2026-09-15T09:12:35.439Z DATA uo.e OneAuth telemetry audienceType: Production 
+2026-09-15T09:12:35.489Z DATA lv.f Build model matches: false 
+2026-09-15T09:12:35.489Z DATA RampManager getAllRampsState took 33ms 
+2026-09-15T09:12:35.490Z DATA uo.e Attempting to configure OneAuth with flight ANDROID_BROKER_FOR_MSA to enable broker 
+2026-09-15T09:12:35.490Z DATA uo.e Attempting to configure OneAuth with flight REFRESH_TOKEN_ALLOWED_WITH_BROKER to enable client as fallback from broker refreshes 
+2026-09-15T09:12:35.490Z DATA uo.e OneAuth configuration with MSA Broker ramp: true 
+2026-09-15T09:12:35.490Z DATA uo.e OneAuth redirectURI : msauth://com.microsoft.skydrive/gSoqzhbCjkyvI%2Fl7kC7IdG7KbPU%3D 
+2026-09-15T09:12:35.548Z DATA AppBootRecorder installedPackages: {com.microsoft.windowsintune.companyportal=NotInstalled, com.azure.authenticator=NotInstalled}  
+2026-09-15T09:12:35.548Z I AppBootRecorder startWaitingForActivity in foreground, started ColdActivity 
+2026-09-15T09:12:35.564Z DATA uo.e OneAuth setFlightValues succeeded 
+2026-09-15T09:12:35.939Z DATA OneDrivePrivacyDelegate (Q) QoS RequiredServiceData null null true 
+2026-09-15T09:12:36.107Z DATA UpdateMetadataForOfflineFilesJob StreamCache refresh called 
+2026-09-15T09:12:36.966Z DATA uo.e OneAuth configured without errors 
+2026-09-15T09:12:37.595Z DATA uo.e Configuration of OneAuth (not including migration, etc.) took 2159 ms 
+2026-09-15T09:12:37.743Z DATA MOJTitlePredictorSession isPremiumAccount set to false 
+2026-09-15T09:12:38.124Z DATA DeviceAndApplicationInfo Pre: false 
+2026-09-15T09:12:38.142Z DATA lv.f Galaxy Store: false 
+2026-09-15T09:12:38.142Z DATA DeviceAndApplicationInfo Pre: false 
+2026-09-15T09:12:38.142Z DATA DeviceAndApplicationInfo Pre: false 
+2026-09-15T09:12:38.143Z DATA DeviceAndApplicationInfo Pre: false 
+2026-09-15T09:12:38.167Z DATA DeviceAndApplicationInfo Network status is: WifiConnection 
+2026-09-15T09:12:38.599Z V [Auth]OneDriveAuthenticator getAuthToken - Cached valid token available for: service::onedrivemobile.live.com::MBI_SSL 
+2026-09-15T09:12:38.649Z DATA UpdateUserInfo All user facts already synced; skipping GetUserInfo round-trip. 
+2026-09-15T09:12:39.400Z DATA SdCardMountReceiver onReceive: android.intent.action.MEDIA_MOUNTED 
+2026-09-15T09:12:39.422Z DATA SamsungAuthUtils getSamsungMigrationStateFromAccount found no pending Samsung Migration state 
+2026-09-15T09:12:39.422Z DATA SamsungAuthUtils retrieved SA-MSA migration status =ODUninitialized 
+2026-09-15T09:12:39.561Z DATA SamsungAuthUtils getSamsungMigrationStateFromAccount found no pending Samsung Migration state 
+2026-09-15T09:12:39.561Z DATA SamsungAuthUtils retrieved SA-MSA migration status =ODUninitialized 
+2026-09-15T09:12:39.695Z DATA LocalMojSystemBroadcastsReceiver onReceive: android.intent.action.BOOT_COMPLETED 
+2026-09-15T09:12:39.730Z DATA SamsungMigrationUpsellJob checkIfJobIsValid called() 
+2026-09-15T09:12:39.734Z E SamsungAuthUtils Could not get MigrationState response - Unknown state java.lang.IllegalArgumentException: Unknown authority com.samsung.android.scloud.app.ui.datamigrator.linkcontext 
+2026-09-15T09:12:39.834Z DATA OneDrivePrivacyDelegate (Q) QoS RequiredServiceData null null true 
+2026-09-15T09:12:39.834Z I SamsungMigrationUpsellJob Samsung migration info doesn't exist or isn't supported 
+2026-09-15T09:12:39.834Z DATA SamsungMigrationUpsellJob Job is not scheduled, no need to cancel it 
+2026-09-15T09:12:40.423Z DATA SamsungAuthUtils getSamsungMigrationStateFromAccount found no pending Samsung Migration state 
+2026-09-15T09:12:40.423Z DATA SamsungAuthUtils retrieved SA-MSA migration status =ODUninitialized 
+2026-09-15T09:12:40.430Z DATA SamsungAuthUtils getSamsungMigrationStateFromAccount found no pending Samsung Migration state 
+2026-09-15T09:12:40.430Z DATA SamsungAuthUtils retrieved SA-MSA migration status =ODUninitialized 
+2026-09-15T09:12:40.431Z DATA ControlTowerExperimentEventHelper Exposing EnableLocalMonthlyMojAlarmManagerScheduling to NOT_ASSIGNED with c2ef6913. 
+2026-09-15T09:12:40.483Z DATA MOJCollection Previous work state: LastMonthMOJPeriodicCreationWorker was FINISHED,stuck=false 
+2026-09-15T09:12:40.484Z DATA OneDrivePrivacyDelegate (Q) QoS RequiredServiceData null null true 
+2026-09-15T09:12:40.488Z DATA MOJCollection Work lifecycle updated: LastMonthMOJPeriodicCreationWorker -> ENQUEUED 
+2026-09-15T09:12:40.606Z DATA MeridianActivity isMeridianEnabled: false, isSamsungDevice: false, mockSamsungPreInstalled: false 
+2026-09-15T09:12:40.606Z DATA MeridianUpsellJob isEnabled: false, timesShown: 0, allAppsSetUp: false, areNotificationsEnabled, false, isChannelEnabled: true 
+2026-09-15T09:12:40.606Z DATA MeridianActivity isMeridianEnabled: false, isSamsungDevice: false, mockSamsungPreInstalled: false 
+2026-09-15T09:12:40.608Z DATA MeridianUpsellJob Job is not scheduled, no need to cancel it 
+2026-09-15T09:12:40.909Z DATA ExperimentEventHelper Exposing LocalUpsellNotificationExperiment__2026_01_20 to CONTROL with h6j6j131. 
+2026-09-15T09:12:40.926Z DATA OneDrivePrivacyDelegate (Q) Experiment RequiredServiceData OneDriveAccount 07877409ad8e42bb true 
+2026-09-15T09:12:41.760Z DATA SamsungBonusNotificationWorker Job is queued 
+2026-09-15T09:12:41.767Z DATA SamsungAuthUtils getSamsungMigrationStateFromAccount found no pending Samsung Migration state 
+2026-09-15T09:12:41.767Z DATA SamsungAuthUtils retrieved SA-MSA migration status =ODUninitialized 
+2026-09-15T09:12:41.772Z DATA SamsungAuthUtils getSamsungMigrationStateFromAccount found no pending Samsung Migration state 
+2026-09-15T09:12:41.772Z DATA SamsungAuthUtils retrieved SA-MSA migration status =ODUninitialized 
+2026-09-15T09:12:41.927Z DATA com.microsoft.authorization.cloudaccounts.c Read ServiceConnections list from preferences: 0 
+2026-09-15T09:12:41.928Z DATA com.microsoft.authorization.cloudaccounts.c Read hidden cloud account IDs list from preferences: 0 
+2026-09-15T09:12:41.983Z DATA SamsungAuthUtils getSamsungMigrationStateFromAccount found no pending Samsung Migration state 
+2026-09-15T09:12:41.983Z DATA SamsungAuthUtils retrieved SA-MSA migration status =ODUninitialized 
+2026-09-15T09:12:41.984Z DATA MOJCollection Previous work state: LastMonthMOJPeriodicCreationWorker was ENQUEUED,stuck=true 
+2026-09-15T09:12:41.984Z DATA OneDrivePrivacyDelegate (Q) QoS RequiredServiceData null null true 
+2026-09-15T09:12:41.987Z DATA MOJCollection Work lifecycle updated: LastMonthMOJPeriodicCreationWorker -> ENQUEUED 
+2026-09-15T09:12:41.992Z DATA SamsungAuthUtils getSamsungMigrationStateFromAccount found no pending Samsung Migration state 
+2026-09-15T09:12:41.992Z DATA SamsungAuthUtils retrieved SA-MSA migration status =ODUninitialized 
+2026-09-15T09:12:41.993Z DATA SamsungAuthUtils getSamsungMigrationStateFromAccount found no pending Samsung Migration state 
+2026-09-15T09:12:41.993Z DATA SamsungAuthUtils retrieved SA-MSA migration status =ODUninitialized 
+2026-09-15T09:12:41.998Z DATA com.microsoft.skydrive.content.MetadataContentProvider delete NOT_CURRENT_USER: accountIds count=1 (from AccountManager) 
+2026-09-15T09:12:42.202Z DATA com.microsoft.skydrive.content.MetadataContentProvider delete NOT_CURRENT_USER: driveSelection is 'accountId NOT IN (?)' 
+2026-09-15T09:12:42.238Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface DrivesProvider::deleteContent deletes all drives (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/providers/drivesprovider.cpp:509) 
+2026-09-15T09:12:42.340Z DATA com.microsoft.skydrive.content.MetadataContentProvider delete NOT_CURRENT_USER: result=0 
+2026-09-15T09:12:42.353Z DATA AccountCleanupJob numRowsDeleted=0 
+2026-09-15T09:12:42.353Z I dp.j cleanUpAccountsCache 
+2026-09-15T09:12:42.900Z I SubscriptionRefreshWorker Push Notifications Scheduling refresh_subscription job in 0 seconds 
+2026-09-15T09:12:43.001Z DATA OnThisDayBackgroundProcessor Cancelling job 
+2026-09-15T09:12:43.001Z DATA OnThisDayBackgroundWorker cancelWork() 
+2026-09-15T09:12:43.002Z DATA OnThisDayBackgroundWorker cancelWork() 
+2026-09-15T09:12:43.002Z DATA OnThisDayBackgroundWorker cancelWork() 
+2026-09-15T09:12:43.002Z DATA OnThisDayAlarmBasedNotifier Canceling job 
+2026-09-15T09:12:43.028Z DATA ExperimentEventHelper Exposing ThemeBasedAIMoJPushNotificationExperiment__2026_06_16 to NOT_ASSIGNED with pe1864453c1. 
+2026-09-15T09:12:43.029Z DATA MojNotificationsAvailabilityHelper Cancelling MoJ notification worker 
+2026-09-15T09:12:43.035Z DATA AiMoJNotificationBackgroundWorker cancelWork() 
+2026-09-15T09:12:43.051Z DATA TopFacesNotificationAvailabilityHelper scheduleWorkIfNeeded() - cancelling worker 
+2026-09-15T09:12:43.052Z DATA TopFacesNotificationWorker cancelWork() 
+2026-09-15T09:12:43.072Z DATA InAppPurchaseUtils isValueNotEmpty = true and hasPaidPlan is true 
+2026-09-15T09:12:43.738Z DATA BootAtStartupReceiver onReceive: android.intent.action.BOOT_COMPLETED 
+2026-09-15T09:12:43.738Z I BootAtStartupReceiver onReceive android.intent.action.BOOT_COMPLETED, resuming sync workers 
+2026-09-15T09:12:43.739Z DATA SyncServiceManager onStartJob-resume sync workers 
+2026-09-15T09:12:44.057Z DATA BlurryPhotosDiscoveryAvailability Updated unseen count: 0 at baseMaxItemId=0 
+2026-09-15T09:12:44.068Z DATA InAppPurchaseUtils isValueNotEmpty = true and hasPaidPlan is true 
+2026-09-15T09:12:44.069Z DATA BlurryPhotosDiscoveryWorker scheduleWork() 
+2026-09-15T09:12:44.072Z DATA OneDrivePrivacyDelegate (Q) QoS RequiredServiceData OneDriveAccount 07877409ad8e42bb true 
+2026-09-15T09:12:44.088Z DATA SamsungAuthUtils getSamsungMigrationStateFromAccount found no pending Samsung Migration state 
+2026-09-15T09:12:44.088Z DATA SamsungAuthUtils retrieved SA-MSA migration status =ODUninitialized 
+2026-09-15T09:12:44.137Z DATA InAppPurchaseUtils isValueNotEmpty = true and hasPaidPlan is true 
+2026-09-15T09:12:44.171Z E SamsungAccountManagerUtils Package name not found 
+2026-09-15T09:12:44.230Z DATA SamsungAuthUtils getSamsungMigrationStateFromAccount found no pending Samsung Migration state 
+2026-09-15T09:12:44.230Z DATA SamsungAuthUtils retrieved SA-MSA migration status =ODUninitialized 
+2026-09-15T09:12:44.353Z E SamsungAccountManagerUtils Package name not found 
+2026-09-15T09:12:44.442Z DATA PIPLFREActivity setBroadcastReceiverEnabledSettingBasedOnPIPLStatus: 1, cls: com.microsoft.skydrive.localmoj.notifications.LocalMojSystemBroadcastsReceiver 
+2026-09-15T09:12:44.454Z DATA PIPLFREActivity setBroadcastReceiverEnabledSettingBasedOnPIPLStatus: 1, cls: com.microsoft.skydrive.receiver.BootAtStartupReceiver 
+2026-09-15T09:12:44.463Z DATA PIPLFREActivity setBroadcastReceiverEnabledSettingBasedOnPIPLStatus: 1, cls: com.microsoft.skydrive.upload.SdCardMountReceiver 
+2026-09-15T09:12:44.583Z I AppBootRecorder isAppInForeground for packageName: com.microsoft.skydrive 
+2026-09-15T09:12:44.598Z I AppBootRecorder isAppInForeground found processName: com.microsoft.skydrive 
+2026-09-15T09:12:44.598Z I AppBootRecorder importance: 400 
+2026-09-15T09:12:44.598Z I AppBootRecorder importanceReasonCode: 0 
+2026-09-15T09:12:44.598Z I AppBootRecorder importanceReasonPid: 0 
+2026-09-15T09:12:44.598Z I AppBootRecorder importanceReasonComponent: null 
+2026-09-15T09:12:44.598Z I AppBootRecorder AppBootDetectForeground found in background 
+2026-09-15T09:12:44.599Z I AppBootRecorder startWaitingForWarmActivity in background, waiting for WarmActivity 
+2026-09-15T09:12:45.014Z DATA MOJCollection Work lifecycle updated: LastMonthMOJPeriodicCreationWorker -> RUNNING 
+2026-09-15T09:12:45.043Z DATA MOJCollection Work lifecycle updated: LastMonthMOJPeriodicCreationWorker -> FINISHED 
+2026-09-15T09:12:45.123Z DATA SubscriptionRefreshJob Push Notifications Refreshing all subscriptions, isWorker : true 
+2026-09-15T09:12:45.151Z V g Google Api Availability return code: 0 
+2026-09-15T09:12:45.386Z DATA com.microsoft.skydrive.content.MetadataDatabase Upgrading database from version 67 to version 68 
+2026-09-15T09:12:45.424Z DATA InAppPurchaseUtils isValueNotEmpty = true and hasPaidPlan is true 
+2026-09-15T09:12:45.433Z DATA OneDrivePrivacyDelegate (Q) QoS RequiredServiceData null null true 
+2026-09-15T09:12:45.445Z DATA BlurryPhotosDiscoveryWorker Decision: Skip(reason=no permission) 
+2026-09-15T09:12:45.446Z DATA BlurryPhotosDiscoveryWorker Skipping: no permission 
+2026-09-15T09:12:45.479Z DATA OneDrivePrivacyDelegate (Q) QoS RequiredServiceData OneDriveAccount 07877409ad8e42bb true 
+2026-09-15T09:12:45.578Z DATA OneDrivePrivacyDelegate (Q) QoS RequiredServiceData null null true 
+2026-09-15T09:12:45.580Z DATA g FCM: RegistrationId changed: false 
+2026-09-15T09:12:45.601Z DATA g FCM: Saving registrationId 
+2026-09-15T09:12:45.671Z DATA ManualUploadWorker [Upload Worker action=com.microsoft.skydrive.fileloader.RESUME] Starting worker with action 
+2026-09-15T09:12:45.696Z DATA ManualUploadWorker [Upload Worker action=com.microsoft.skydrive.fileloader.RESUME] Starting worker with action 
+2026-09-15T09:12:45.725Z DATA AsyncMoveWorker [Move Worker action=com.microsoft.skydrive.fileloader.RESUME] Starting worker with action 
+2026-09-15T09:12:45.764Z DATA SamsungAuthUtils getSamsungMigrationStateFromAccount found no pending Samsung Migration state 
+2026-09-15T09:12:45.764Z DATA SamsungAuthUtils retrieved SA-MSA migration status =ODUninitialized 
+2026-09-15T09:12:45.765Z DATA OneDrivePrivacyDelegate (Q) QoS RequiredServiceData null null true 
+2026-09-15T09:12:45.792Z DATA SamsungAuthUtils getSamsungMigrationStateFromAccount found no pending Samsung Migration state 
+2026-09-15T09:12:45.792Z DATA SamsungAuthUtils retrieved SA-MSA migration status =ODUninitialized 
+2026-09-15T09:12:45.792Z DATA OneDrivePrivacyDelegate (Q) QoS RequiredServiceData null null true 
+2026-09-15T09:12:45.795Z DATA SamsungAuthUtils getSamsungMigrationStateFromAccount found no pending Samsung Migration state 
+2026-09-15T09:12:45.795Z DATA SamsungAuthUtils retrieved SA-MSA migration status =ODUninitialized 
+2026-09-15T09:12:45.796Z DATA OneDrivePrivacyDelegate (Q) QoS RequiredServiceData null null true 
+2026-09-15T09:12:45.910Z DATA ActivityFeedNotificationSubscriber Adding OnThisDayPhoto to supported scenarios 
+2026-09-15T09:12:45.915Z DATA ActivityFeedNotificationSubscriber Adding ThemeBasedRecapMOJ to supported scenarios 
+2026-09-15T09:12:45.915Z DATA NotificationSubscription requireRefresh: isRegistrationIdChanged = false 
+2026-09-15T09:12:46.094Z I SubscriptionRefreshWorker Push Notifications Scheduling refresh_subscription job in 1790733924 seconds 
+2026-09-15T09:12:47.098Z DATA UpdateMetadataForOfflineFilesJob StreamCache refresh called 
+2026-09-15T09:12:49.903Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface Creating refresh factory (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/transport/vroom/vroomgetchangesrefreshfactory.cpp:47) 
+2026-09-15T09:12:49.933Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface Moving vroom_getchanges_1 to state: Start (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/transport/universalrefreshtask.cpp:278) 
+2026-09-15T09:12:49.958Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface The request sync root points to  1 root (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/transport/vroom/vroomgetchangesfetcher.cpp:131) 
+2026-09-15T09:12:49.961Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface StreamCache::scheduleRefreshTasks refreshSyncRoots:  true , itemsRefreshed:  1 , cobOwnItemsSkipped:  0 (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/streamcache/streamcache.cpp:940) 
+2026-09-15T09:12:49.967Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface Using page size ( 1000 ) for page 0 for request root delta sync (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/transport/vroom/vroomgetchangesfetcher.cpp:373) 
+2026-09-15T09:12:49.969Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface GetChangesSorting: Continuing previous sorting mode: XpVariant(invalid) isSortingScenarioSupported: true (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/transport/vroom/vroomgetchangesfetcher.cpp:448) 
+2026-09-15T09:12:49.977Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface StreamCache::scheduleRefreshTasks refreshSyncRoots:  false , itemsRefreshed:  0 , cobOwnItemsSkipped:  0 (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/streamcache/streamcache.cpp:940) 
+2026-09-15T09:12:49.980Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface StreamCache::scheduleRefreshTasks refreshSyncRoots:  true , itemsRefreshed:  1 , cobOwnItemsSkipped:  0 (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/streamcache/streamcache.cpp:940) 
+2026-09-15T09:12:49.982Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface StreamCache::scheduleRefreshTasks refreshSyncRoots:  false , itemsRefreshed:  0 , cobOwnItemsSkipped:  0 (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/streamcache/streamcache.cpp:940) 
+2026-09-15T09:12:50.006Z DATA OneDrivePrivacyDelegate (Q) XPlat RequiredServiceData OneDriveAccount 07877409ad8e42bb true 
+2026-09-15T09:12:50.017Z DATA OneDrivePrivacyDelegate (Q) XPlat RequiredServiceData OneDriveAccount 07877409ad8e42bb true 
+2026-09-15T09:12:50.040Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface CPR::Sending network request for GET my.microsoftpersonalcontent.com [StreamCache-RegularMetadataRefresh-Unspecified]  | currentRequestCount:  1 (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/transport/dep/cpr/cprbasedhttpprovider.cpp:199) 
+2026-09-15T09:12:50.052Z V [Auth]OneDriveAuthenticator getAuthToken - Cached valid token available for: service::onedrivemobile.live.com::MBI_SSL 
+2026-09-15T09:12:50.313Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface No new state for item: 3302  streamType:  1 (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/streamcache/streamsyncstate.cpp:90) 
+2026-09-15T09:12:50.356Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface No new state for item: 3302  streamType:  1 (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/streamcache/streamsyncstate.cpp:90) 
+2026-09-15T09:12:50.361Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface No new state for item: 3307  streamType:  1 (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/streamcache/streamsyncstate.cpp:90) 
+2026-09-15T09:12:50.368Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface No new state for item: 61667  streamType:  1 (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/streamcache/streamsyncstate.cpp:90) 
+2026-09-15T09:12:50.379Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface removeAllDeletedItems removed 0 items (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/dbhelpers/streamsdbhelper.cpp:757) 
+2026-09-15T09:12:52.708Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface Network request completed in 2653 ms. with HTTP status 200 SPRequestGuid: 40683ba2-c074-f000-533d-7bf8a7e8f158 for GET my.microsoftpersonalcontent.com [StreamCache-RegularMetadataRefresh-Unspecified] (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/transport/basehttpprovider.cpp:478) 
+2026-09-15T09:12:52.716Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface HasConfigChanges:  false (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/transport/vroom/vroomgetchangesfetcher.cpp:260) 
+2026-09-15T09:12:52.716Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface Got valid response for item  root  with  0 Duration:  2653 (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/transport/vroom/vroomgetchangesfetcher.cpp:498) 
+2026-09-15T09:12:52.717Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface tagsItems found :  0 (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/content/itemtagfetchdata.cpp:18) 
+2026-09-15T09:12:52.720Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface Writing Metadata for syncRoot ResourceId root (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/transport/getchangesdatawriter.cpp:590) 
+2026-09-15T09:12:52.728Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface Metadata for syncRoot ResourceId root is written into db in 5 ms with 0 ms yield time. The network request takes 2653 ms. There are 0 items in total and 0 items are skipped. The sync is against the parentSyncRoot: true (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/transport/getchangesdatawriter.cpp:697) 
+2026-09-15T09:12:52.728Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface The app status. PowerSaveMode: false ForegroundMode: false (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/transport/getchangesdatawriter.cpp:712) 
+2026-09-15T09:12:52.745Z DATA OneDrivePrivacyDelegate (Q) XPlat RequiredServiceData OneDriveAccount 07877409ad8e42bb true 
+2026-09-15T09:12:52.750Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface Moving vroom_getchanges_1 to state: Finish (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/transport/universalrefreshtask.cpp:278) 
+2026-09-15T09:12:52.755Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface Schedule propagation of special folder classification. (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/database/specialfolderclassification/specialfolderclassifier.cpp:97) 
+2026-09-15T09:12:52.755Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface Executing propagate classification (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/database/specialfolderclassification/specialfolderclassifier.cpp:109) 
+2026-09-15T09:12:52.756Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface Queue is empty, there are no folders to propagate (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/database/specialfolderclassification/specialfolderclassifier.cpp:119) 
+2026-09-15T09:12:52.762Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface Total time to sync (ms):  2828 (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/transport/getchangesdatawriter.cpp:480) 
+2026-09-15T09:12:52.763Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface GetChanges completed with total sync time:  2828  and write time:  5  for items count:  0  with page count:  1 (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/transport/getchangesdatawriter.cpp:552) 
+2026-09-15T09:12:52.763Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface Moving vroom_getchanges_1 to state: NotifyFinished (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/transport/universalrefreshtask.cpp:278) 
+2026-09-15T09:12:52.763Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface Invoke completion callback for vroom_getchanges_1 (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/transport/universalrefreshtask.cpp:159) 
+2026-09-15T09:12:52.811Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface CostAttribution/Unexpected: Metadata/GetChanges StreamCache-RegularMetadataRefresh-Unspecified (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/telemetry/costattribution/costattributioncoverageutility.cpp:52) 
+2026-09-15T09:12:55.443Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface No new state for item: 3302  streamType:  1 (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/streamcache/streamsyncstate.cpp:90) 
+2026-09-15T09:12:55.657Z DATA SharedDeviceModeManager Device mode resolved as EXCLUSIVE 
+2026-09-15T09:12:55.728Z DATA OneDrivePrivacyDelegate (Q) QoS RequiredServiceData null null true 
+2026-09-15T09:13:10.966Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface Merge wal to database. before merge: 107152 after merge: 0 first db action on: 1789463552 now: 1789463590 time to merge: 230 (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/database/databaseidle.cpp:116) 
+2026-09-15T09:13:10.976Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface Syncing local favorites with cloud (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/commands/favoritessyncmanager.cpp:59) 
+2026-09-15T09:13:10.979Z DATA DailyJob com.microsoft.skydrive.jobs.LocalNotificationDailyJob.onStartJob() called  
+2026-09-15T09:13:10.979Z DATA DailyJob com.microsoft.skydrive.jobs.LocalNotificationDailyJob.onStartJob(): Scheduling thread 
+2026-09-15T09:13:10.983Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface Performing one-time sync with the service via GetChanges requests (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/transport/onetimesyncmanager.cpp:26) 
+2026-09-15T09:13:10.993Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface onetimeSyncTimestamp is 0 or greater than the one-time sync start date, no need to run one-time sync (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/transport/onetimesyncmanager.cpp:62) 
+2026-09-15T09:13:10.996Z DATA DailyJob com.microsoft.skydrive.jobs.LocalNotificationDailyJob.onStartJob(): requestingToRunJob: true 
+2026-09-15T09:13:10.999Z DATA DailyJob com.microsoft.skydrive.jobs.LocalNotificationDailyJob.onStartJob(): Thread scheduled 
+2026-09-15T09:13:10.999Z DATA LocalNotificationDailyJob Running Daily Job 
+2026-09-15T09:13:11.070Z DATA SamsungAuthUtils getSamsungMigrationStateFromAccount found no pending Samsung Migration state 
+2026-09-15T09:13:11.071Z DATA SamsungAuthUtils retrieved SA-MSA migration status =ODUninitialized 
+2026-09-15T09:13:11.158Z DATA SamsungAuthUtils getSamsungMigrationStateFromAccount found no pending Samsung Migration state 
+2026-09-15T09:13:11.158Z DATA SamsungAuthUtils retrieved SA-MSA migration status =ODUninitialized 
+2026-09-15T09:13:11.190Z DATA ExperimentEventHelper Exposing EnableLocalCrbNotification__2026_04_29 to A with pe1826486c1. 
+2026-09-15T21:15:00.310Z DATA SkyDriveBuildFlavor[main] Sweeping context does nothing in main build flavor 
+2026-09-15T21:15:00.725Z DATA RampManager Initialize ramps called with 367 ramps, 7 device level experiments, ecsConfigTags:  
+2026-09-15T21:15:01.079Z DATA com.microsoft.skydrive.SkyDriveApplication initializeRampSettings complete with proof = 500 
+2026-09-15T21:15:01.079Z DATA OneDSUtils OneDS mitigation checks passed 
+2026-09-15T21:15:01.080Z DATA OneDSUtils PrivacyGuard is not enabled 
+2026-09-15T21:15:01.080Z DATA OneDSUtils Sanitizer enabled: true 
+2026-09-15T21:15:01.084Z DATA OneDSCacheClear OneDS cache clearance is not needed or disabled by ramp 
+2026-09-15T21:15:01.086Z DATA RampManager getAllRampsState took 0ms 
+2026-09-15T21:15:01.297Z DATA uo.e Oneauth AAD ramp state is set and locked to true for remainder of this session 
+2026-09-15T21:15:01.298Z DATA OneAuth Set configuration in SkyDriveApplication#attachBaseContext 
+2026-09-15T21:15:01.299Z DATA OneDSUtils OneDS mitigation checks passed 
+2026-09-15T21:15:01.334Z DATA OneDriveCore Found library lib/arm64-v8a/libMicrosoft.AugLoop.Client.Jni.so in APK 
+2026-09-15T21:15:01.334Z DATA OneDriveCore Found library lib/arm64-v8a/libOneAuth.so in APK 
+2026-09-15T21:15:01.334Z DATA OneDriveCore Found library lib/arm64-v8a/libPdfControl.so in APK 
+2026-09-15T21:15:01.334Z DATA OneDriveCore Found library lib/arm64-v8a/libQt.so in APK 
+2026-09-15T21:15:01.334Z DATA OneDriveCore Found library lib/arm64-v8a/libandroidx.graphics.path.so in APK 
+2026-09-15T21:15:01.334Z DATA OneDriveCore Found library lib/arm64-v8a/libc++_shared.so in APK 
+2026-09-15T21:15:01.334Z DATA OneDriveCore Found library lib/arm64-v8a/libcore.so in APK 
+2026-09-15T21:15:01.334Z DATA OneDriveCore Found library lib/arm64-v8a/libdatastore_shared_counter.so in APK 
+2026-09-15T21:15:01.334Z DATA OneDriveCore Found library lib/arm64-v8a/libfmt.so in APK 
+2026-09-15T21:15:01.334Z DATA OneDriveCore Found library lib/arm64-v8a/libgoogle_breakpad.so in APK 
+2026-09-15T21:15:01.334Z DATA OneDriveCore Found library lib/arm64-v8a/libimage_processing_util_jni.so in APK 
+2026-09-15T21:15:01.334Z DATA OneDriveCore Found library lib/arm64-v8a/libmaesdk.so in APK 
+2026-09-15T21:15:01.334Z DATA OneDriveCore Found library lib/arm64-v8a/libmip_unified.so in APK 
+2026-09-15T21:15:01.334Z DATA OneDriveCore Found library lib/arm64-v8a/libmlkitcommonpipeline.so in APK 
+2026-09-15T21:15:01.334Z DATA OneDriveCore Found library lib/arm64-v8a/libpcre2-8.so in APK 
+2026-09-15T21:15:01.334Z DATA OneDriveCore Found library lib/arm64-v8a/libpdf_mip.so in APK 
+2026-09-15T21:15:01.334Z DATA OneDriveCore Found library lib/arm64-v8a/libpixsdk.OfficeLensProductivity.so in APK 
+2026-09-15T21:15:01.334Z DATA OneDriveCore Found library lib/arm64-v8a/libpugixml.so in APK 
+2026-09-15T21:15:01.334Z DATA OneDriveCore Found library lib/arm64-v8a/librhash.so in APK 
+2026-09-15T21:15:01.334Z DATA OneDriveCore Found library lib/arm64-v8a/libsqlite3.so in APK 
+2026-09-15T21:15:01.334Z DATA OneDriveCore Found library lib/arm64-v8a/libsurface_util_jni.so in APK 
+2026-09-15T21:15:01.334Z DATA OneDriveCore Found library lib/arm64-v8a/libtensorflowlite_jni_gms_client.so in APK 
+2026-09-15T21:15:01.334Z DATA OneDriveCore Found library lib/arm64-v8a/libvroom.so in APK 
+2026-09-15T21:15:01.334Z DATA OneDriveCore Found library lib/arm64-v8a/libxml2.so in APK 
+2026-09-15T21:15:01.355Z W OneDriveCore Library libcrypto.so not found in APK 
+2026-09-15T21:15:01.355Z W OneDriveCore Library libssl.so not found in APK 
+2026-09-15T21:15:01.355Z W OneDriveCore Library libQt5Core.so not found in APK 
+2026-09-15T21:15:01.355Z W OneDriveCore Library libQt5AndroidExtras.so not found in APK 
+2026-09-15T21:15:01.355Z W OneDriveCore Library libQt5Network.so not found in APK 
+2026-09-15T21:15:01.355Z W OneDriveCore Library libQt5Sql.so not found in APK 
+2026-09-15T21:15:01.355Z W OneDriveCore Library libQt5Xml.so not found in APK 
+2026-09-15T21:15:01.355Z W OneDriveCore Library libQt5Concurrent.so not found in APK 
+2026-09-15T21:15:01.828Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface Creating XpApplication (uses asio) (/Users/runner/work/1/s/CrossPlatform/Qt/concurrency/xpapplicationmanager.cpp:17) 
+2026-09-15T21:15:01.829Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface IApplication has been started (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/onedrivelib.cpp:103) 
+2026-09-15T21:15:01.829Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface Performing time-extensive initialization (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/onedrivelib.cpp:100) 
+2026-09-15T21:15:01.833Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface Setting max thread count to 16 (/Users/runner/work/1/s/CrossPlatform/Qt/concurrency/xpconcurrent.cpp:26) 
+2026-09-15T21:15:01.833Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface Creating XpThreadPool with max thread count:  16 (/Users/runner/work/1/s/CrossPlatform/Qt/concurrency/xpconcurrent.cpp:28) 
+2026-09-15T21:15:01.833Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface Initializing XPCryptographicHash using rhash with fileHashBufferSizeInKB= 0 (/Users/runner/work/1/s/CrossPlatform/Qt/cryptographic/xpcryptographichash.cpp:17) 
+2026-09-15T21:15:01.843Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface Opening database  /data/user/0/com.microsoft.skydrive/files/QTMetadata.db (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/database/metadatadatabase.cpp:5221) 
+2026-09-15T21:15:01.894Z V WifiAvailableJob Scheduling a WifiAvailableJob job. 
+2026-09-15T21:15:01.944Z DATA SingularEventTracker SingularEventTracker: stashed wasPersonalSignedIn=true 
+2026-09-15T21:15:01.982Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface Current DB version is  268 (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/database/metadatadatabase.cpp:5993) 
+2026-09-15T21:15:01.985Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface Log the database file info (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/dbhelpers/metadatadatabaseutils.cpp:169) 
+2026-09-15T21:15:01.995Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface File: /data/user/0/com.microsoft.skydrive/files/QTMetadata.db size: 107675648 bytes permission: 384 (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/dbhelpers/metadatadatabaseutils.cpp:174) 
+2026-09-15T21:15:01.996Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface File: /data/user/0/com.microsoft.skydrive/files/QTMetadata.db-wal size: 0 bytes permission: 384 (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/dbhelpers/metadatadatabaseutils.cpp:174) 
+2026-09-15T21:15:01.996Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface File: /data/user/0/com.microsoft.skydrive/files/QTMetadata.db-shm size: 32768 bytes permission: 384 (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/dbhelpers/metadatadatabaseutils.cpp:174) 
+2026-09-15T21:15:02.094Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface onAppLaunch: updates records:  0 (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/telemetry/fullsynceventtracker.cpp:42) 
+2026-09-15T21:15:02.094Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface Opening offline database  /data/user/0/com.microsoft.skydrive/files/OfflineSelection.db (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/offline/offlinedatabase.cpp:81) 
+2026-09-15T21:15:02.114Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface OfflineSelectionDatabaseStorage loaded  3  offline selections from the database (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/offline/offlineselectiondatabasestorage.cpp:42) 
+2026-09-15T21:15:02.114Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface OfflineSelectionDatabaseStorage loading all explicit offline items from the metadata database (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/offline/offlineselectiondatabasestorage.cpp:51) 
+2026-09-15T21:15:02.116Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface OfflineSelectionDatabaseStorage to add selection:  rinawatimadina@gmail.com  |  07877409AD8E42BB  |  7877409AD8E42BB!s0cbaf2eb1dfe40408d1c6a1d662281fa (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/offline/offlineselectiondatabasestorage.cpp:93) 
+2026-09-15T21:15:02.116Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface OfflineSelectionDatabaseStorage to add selection:  rinawatimadina@gmail.com  |  07877409AD8E42BB  |  7877409AD8E42BB!s5f06ee378c3e41a3902ae872f3ea906e (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/offline/offlineselectiondatabasestorage.cpp:93) 
+2026-09-15T21:15:02.117Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface OfflineSelectionDatabaseStorage to add selection:  rinawatimadina@gmail.com  |  07877409AD8E42BB  |  7877409AD8E42BB!s43d840b4f35b4668a885821b8017d0ac (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/offline/offlineselectiondatabasestorage.cpp:93) 
+2026-09-15T21:15:02.125Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface Deleted  0  comments (cLocalStatus = cAddingToServer) on launch. (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/dbhelpers/commentdbhelper.cpp:168) 
+2026-09-15T21:15:02.126Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface Updated  0  comments (cLocalStatus = cDeletingFromServer or cFailedToDeleteFromServer) on launch. (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/dbhelpers/commentdbhelper.cpp:176) 
+2026-09-15T21:15:02.126Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface Reset SP Lists Comments on Launch (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/dbhelpers/listscommentsdbhelper.cpp:146) 
+2026-09-15T21:15:02.132Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface Deleted  0  comments (cLocalStatus = cAddingToServer) on launch. (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/dbhelpers/listscommentsdbhelper.cpp:152) 
+2026-09-15T21:15:02.138Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface Updated  0  comments (cLocalStatus = cDeletingFromServer or cFailedToDeleteFromServer) on launch. (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/dbhelpers/listscommentsdbhelper.cpp:162) 
+2026-09-15T21:15:02.140Z I com.microsoft.odsp.crossplatform.core.LogWriterInterface cleanOrphanedCacheAsyncIfNecessary has the settings to run cleanup false (/Users/runner/work/1/s/CrossPlatform/OneDriveCore/streamcache/streamcache.cpp:679) 
+2026-09-15T21:15:02.169Z DATA OneDrivePrivacyDelegate (Q) XPlat RequiredServiceData OneDriveAccount 07877409ad8e42bb true 
+2026-09-15T21:15:02.329Z DATA com.microsoft.skydrive.SkyDriveApplication onCreate - startType: 1 Start Reason: 4 Process intent: null 
+2026-09-15T21:15:02.330Z DATA com.microsoft.skydrive.SkyDriveApplication onCreate - Importance: 400 [BACKGROUND INIT] 
+2026-09-15T21:15:02.335Z DATA OneAuth Init oneauth in SkyDriveApplication start - Skip adal secret key setup 
+2026-09-15T21:15:02.346Z I ConvergenceSyncHelper Start check the personal account migration status. 
+2026-09-15T21:15:02.358Z DATA RampManager getAllRampsState took 11ms 
+2026-09-15T21:15:02.362Z DATA RampManager getAllRampsState took 1ms 
+2026-09-15T21:15:02.364Z DATA XiaomiPreinstallUtils checkIsPreinstalled =  
+2026-09-15T21:15:02.364Z DATA PartnerAttributionProvider Not a Xiaomi preinstall device 
+2026-09-15T21:15:02.378Z DATA InstallReferrerProcessor processGooglePlayInstallReferrer exited early: install referrer ramp or oneauth ramps disabled or referrer already processed. 
+2026-09-15T21:15:02.382Z I SharedDeviceModeGuard Shared device mode guard initialized 
+2026-09-15T21:15:02.390Z DATA uo.e InitOneAuthPreReqs 
+2026-09-15T21:15:02.414Z DATA AppBootRecorder installedPackages: {com.microsoft.windowsintune.companyportal=NotInstalled, com.azure.authenticator=NotInstalled}  
+2026-09-15T21:15:02.414Z I AppBootRecorder startWaitingForActivity in foreground, started ColdActivity 
+2026-09-15T21:15:02.437Z DATA uo.e migrateADALCacheKey was skipped because it has already been performed 16704583504ms ago 
+2026-09-15T21:15:02.437Z DATA uo.e Oneauth MSA ramp state is set and locked to true for remainder of this session 
+2026-09-15T21:15:02.437Z DATA uo.e Initializing OneAuth TSL 
+2026-09-15T21:15:02.485Z DATA lv.f Build model matches: false 
+2026-09-15T21:15:02.514Z DATA OneAuthMigration Starting first discoverAccounts call to find accounts and make them known to OneAuth's stack 
+2026-09-15T21:15:02.516Z DATA OneDrivePrivacyDelegate (Q) QoS RequiredServiceData null null true 
+2026-09-15T21:15:02.520Z DATA uo.e OneAuth telemetry audienceType: Production 
+2026-09-15T21:15:02.633Z DATA RampManager getAllRampsState took 37ms 
+2026-09-15T21:15:02.634Z DATA uo.e Attempting to configure OneAuth with flight ANDROID_BROKER_FOR_MSA to enable broker 
+2026-09-15T21:15:02.634Z DATA uo.e Attempting to configure OneAuth with flight REFRESH_TOKEN_ALLOWED_WITH_BROKER to enable client as fallback from broker refreshes 
+2026-09-15T21:15:02.634Z DATA uo.e OneAuth configuration with MSA Broker ramp: true 
+2026-09-15T21:15:02.634Z DATA uo.e OneAuth redirectURI : msauth://com.microsoft.skydrive/gSoqzhbCjkyvI%2Fl7kC7IdG7KbPU%3D 
+2026-09-15T21:15:02.669Z DATA uo.e OneAuth setFlightValues succeeded 
+2026-09-15T21:15:02.959Z DATA uo.e OneAuth configured without errors 
+2026-09-15T21:15:02.967Z DATA uo.e Configuration of OneAuth (not including migration, etc.) took 449 ms 
+2026-09-15T21:15:02.984Z DATA MOJTitlePredictorSession isPremiumAccount set to false 
+2026-09-15T21:15:03.089Z DATA DeviceAndApplicationInfo Pre: false 
+2026-09-15T21:15:03.092Z DATA lv.f Galaxy Store: false 
+2026-09-15T21:15:03.092Z DATA DeviceAndApplicationInfo Pre: false 
+2026-09-15T21:15:03.092Z DATA DeviceAndApplicationInfo Pre: false 
+2026-09-15T21:15:03.093Z DATA DeviceAndApplicationInfo Pre: false 
+2026-09-15T21:15:03.096Z DATA DeviceAndApplicationInfo Network status is: WifiConnection 
+2026-09-15T21:15:03.143Z V [Auth]OneDriveAuthenticator getAuthToken - Could not get valid cached token for service::onedrivemobile.live.com::MBI_SSL 
+2026-09-15T21:15:03.143Z I [Auth]OneDriveAuthenticator CallingContext:  Method:getAuthToken/AccountType:com.microsoft.skydrive/CallingPackage:com.microsoft.skydrive 
+2026-09-15T21:15:03.200Z V [Auth]OneDriveAuthenticator getAuthTokenInternal - Getting token for: service::onedrivemobile.live.com::MBI_SSL 
+2026-09-15T21:15:03.202Z V [Auth]OneDriveAuthenticator getAuthTokenInternal - Cached token invalid, attempt to refresh token 
+2026-09-15T21:15:03.285Z DATA com.microsoft.odsp.c0 Ramps updated from ECS with config Ids: P-X-1739917-2-13,P-X-1721673-2-9,P-X-1721686-1-15,P-X-1755518-2-13,P-X-1733176-2-19,P-X-1733285-2-21,P-X-1755517-1-11,P-X-1648312-2-15,P-X-1642189-2-17,P-X-1648310-1-9,P-X-1642188-1-11,P-X-1733286-1-11,P-X-1655899-1-9,P-X-1630726-1-17,P-X-1663977-2-17,P-X-1663958-2-13,P-X-1733177-2-11,P-X-1731594-2-8,P-X-1655136-2-15,P-X-1655134-1-9,P-X-1639829-1-17,P-X-1525914-2-9,P-X-1581884-2-15,P-X-1565046-2-19,P-X-1581888-1-15,P-X-1628474-2-9,P-X-1572207-1-21,P-X-1565047-3-23,P-X-1572204-2-21,P-X-1547459-1-17,P-X-1436762-2-21,P-X-1423885-2-13,P-X-117895-3-8,P-X-1451741-1-13,P-X-1468383-1-6,P-X-1460779-2-5,P-X-1238051-2-11,P-X-1259385-1-15,P-X-1259386-1-13,P-X-1222816-2-21,P-X-1231093-2-17,P-X-1233407-2-11,P-X-1206111-2-16,P-X-1223875-2-25,P-X-1169916-2-11,P-X-1125913-2-19,P-X-1045952-2-17,P-X-1146526-2-7,P-X-1134108-2-9,P-X-1119288-2-11,P-X-1130789-2-7,P-X-1053341-2-5,P-E-1925621-T2-8,P-E-1941378-T2-6,P-E-1906442-T2-8,P-E-1894855-2-8,P-E-1898569-T2-7,P-E-1894849-2-8,P-E-1829780-C1-9,P-E-1854661-2-11,P-E-1854659-2-10,P-E-1854937-C1-6,P-E-1858395-T2-7,P-E-1854934-C1-7,P-E-1858400-C1-6,P-E-1843995-2-10,P-E-1829896-C1-7,P-E-1843990-T2-9,P-E-1829768-2-13,P-E-1834580-C1-8,P-E-1834570-2-8,P-E-1830812-C1-8,P-E-1830867-T2-6,P-E-1834573-C1-7,P-E-1834557-2-7,P-E-1826486-2-10,P-E-1808379-2-10,P-E-1812967-2-10,P-E-1828889-2-12,P-E-1807613-2-10,P-E-1828883-T2-6,P-E-1812963-2-9,P-E-1825057-2-9,P-E-1824336-2-10,P-E-1813450-C1-6,P-E-1813459-T2-7,P-E-1794613-C1-8,P-E-1755882-C1-6,P-E-1089456-A1-3,P-E-1058744-T3-5,P-E-1055178-T2-4,P-E-1037212-A1-3,P-E-1036373-T2-6,P-E-1045064-A1-3,P-E-1036377-C1-6,P-E-1015527-3-10,P-E-1007363-3-6,P-E-81629-A1-4,P-E-88162-C1-8,P-E-70567-A1-4,P-E-81628-T3-4,P-E-73542-A1-11,P-E-78431-A2-3,P-E-73962-A3-3,P-E-63863-A1-6,P-E-39342-C1-9,P-E-61170-A2-4,P-E-60907-A1-13,P-E-60908-A2-8,P-E-54519-2-6,P-E-49225-C1-4,P-E-48510-C1-5,P-E-46988-C1-3,P-E-43242-C1-6,P-E-38638-2-3,P-E-37635-C1-4,P-E-26698-2-7,P-E-26646-2-5,P-E-25301-C1-6,P-E-24859-2-3,P-E-24979-C1-5,P-E-22703-C1-4,P-E-23106-C1-5,P-E-22553-2-5,P-E-20764-C1-4,P-R-2008570-2-2,P-R-2008569-2-2,P-R-2008544-2-2,P-R-2004639-1-8,P-R-1917204-1-8,P-R-1937742-1-6,P-R-1925139-1-9,P-R-1917181-1-9,P-R-1924955-1-7,P-R-1915852-1-6,P-R-1914044-1-6,P-R-1912395-2-2,P-R-1912373-2-2,P-R-1908366-1-7,P-R-1898590-1-10,P-R-1906619-1-7,P-R-1904628-1-6,P-R-1888298-1-8,P-R-1895496-1-8,P-R-1887598-1-10,P-R-1888297-1-9,P-R-1884917-1-6,P-R-1882066-1-8,P-R-1881122-1-7,P-R-1880912-1-6,P-R-1871470-1-6,P-R-1867142-1-8,P-R-1875027-2-2,P-R-1874962-1-7,P-R-1873155-1-7,P-R-1873149-2-2,P-R-1872130-2-1,P-R-1871344-1-9,P-R-1871073-1-6,P-R-1866431-1-7,P-R-1865161-2-2,P-R-1865039-1-8,P-R-1860422-1-9,P-R-1860085-2-2,P-R-1855571-1-8,P-R-1856064-1-6,P-R-1853129-1-8,P-R-1852343-1-5,P-R-1850346-1-6,P-R-1848281-1-9,P-R-1847155-1-7,P-R-1847153-1-7,P-R-1846537-1-7,P-R-1846023-1-7,P-R-1840805-1-9,P-R-1839813-1-8,P-R-1833942-1-8,P-R-1833937-1-8,P-R-1835043-1-7,P-R-1834181-1-7,P-R-1834183-1-10,P-R-1833621-1-7,P-R-1831163-1-7,P-R-1828693-1-8,P-R-1827562-1-8,P-R-1826860-1-7,P-R-1825873-1-6,P-R-1825878-1-7,P-R-1822163-1-6,P-R-1820318-1-2,P-R-1820419-1-2,P-R-1820416-1-2,P-R-1820409-1-2,P-R-1820404-1-2,P-R-1820397-1-2,P-R-1820395-1-2,P-R-1820390-1-2,P-R-1820373-1-2,P-R-1820330-1-2,P-R-1820329-1-2,P-R-1820327-2-1,P-R-1820319-1-2,P-R-1820317-1-2,P-R-1820316-1-2,P-R-1820312-1-2,P-R-1820310-1-2,P-R-1820308-1-2,P-R-1820294-2-2,P-R-1819441-1-1,P-R-1819437-1-2,P-R-1819029-1-6,P-R-1817988-1-7,P-R-1818917-1-6,P-R-1817818-1-6,P-R-1817560-1-7,P-R-1816422-1-7,P-R-1816326-1-7,P-R-1815761-1-9,P-R-1815581-1-6,P-R-1814606-1-5,P-R-1812805-1-7,P-R-1813663-1-5,P-R-1812503-1-5,P-R-1812497-1-5,P-R-1812495-1-10,P-R-1812287-1-5,P-R-1810125-1-6,P-R-1809881-1-8,P-R-1807836-1-9,P-R-1807330-1-6,P-R-1790625-1-6,P-R-1800335-1-6,P-R-1800693-1-6,P-R-1798685-1-7,P-R-1796502-1-7,P-R-1796364-1-6,P-R-1794554-1-8,P-R-1790391-1-6,P-R-1790526-1-6,P-R-1785185-1-7,P-R-1778554-1-5,P-R-1786722-1-6,P-R-1781276-1-8,P-R-1781467-1-7,P-R-1780874-1-6,P-R-1777972-1-6,P-R-1777479-1-7,P-R-1773920-1-8,P-R-1776729-1-9,P-R-1774729-1-8,P-R-1774579-1-6,P-R-1774655-1-6,P-R-1774580-1-6,P-R-1773051-1-5,P-R-1771764-1-6,P-R-1771128-1-6,P-R-1770470-1-8,P-R-1769554-1-7,P-R-1766240-1-7,P-R-1765789-1-7,P-R-1764042-1-5,P-R-1764039-1-5,P-R-1764606-1-8,P-R-1764415-1-5,P-R-1764314-1-6,P-R-1762588-1-6,P-R-1761940-1-6,P-R-1762374-2-17,P-R-1761888-1-7,P-R-1761926-1-7,P-R-1756705-1-5,P-R-1756699-1-5,P-R-1755565-1-6,P-R-1753296-1-8,P-R-1751825-1-6,P-R-1749334-1-4,P-R-1738388-1-6,P-R-1625060-1-8,P-R-1735188-1-9,P-R-1734447-1-6,P-R-1732820-1-6,P-R-1726750-1-7,P-R-1724655-1-9,P-R-1721825-1-12,P-R-1721242-1-5,P-R-1713396-1-8,P-R-1711519-1-8,P-R-1709204-1-7,P-R-1704307-1-9,P-R-1691266-1-8,P-R-1692747-1-5,P-R-1678948-1-8,P-R-1644699-1-7,P-R-1655395-1-9,P-R-1654520-1-6,P-R-1651024-1-6,P-R-1650850-1-8,P-R-1644153-1-5,P-R-1641351-1-6,P-R-1638620-1-6,P-R-1635589-1-5,P-R-1632082-1-6,P-R-1633248-1-7,P-R-1631210-1-6,P-R-1631165-1-3,P-R-1630748-1-10,P-R-1623018-1-3,P-R-1626234-1-7,P-R-1625959-1-7,P-R-1621559-1-7,P-R-1619105-1-7,P-R-1620265-1-8,P-R-1619750-1-7,P-R-1615580-1-5,P-R-1609419-1-9,P-R-1608964-1-11,P-R-1607159-1-7,P-R-1605050-1-9,P-R-1603346-1-9,P-R-1602907-1-6,P-R-1597243-1-8,P-R-1584258-1-6,P-R-1588048-1-5,P-R-1587268-1-7,P-R-1585709-1-11,P-R-1585482-1-6,P-R-1577526-1-7,P-R-1577006-1-6,P-R-1576454-1-7,P-R-1572590-1-7,P-R-1571618-1-7,P-R-1564199-1-9,P-R-1562100-1-6,P-R-1560597-1-5,P-R-1557234-1-5,P-R-1550628-1-7,P-R-1550017-1-7,P-R-1546288-1-9,P-R-1534803-1-5,P-R-1476305-1-3,P-R-1471347-1-11,P-R-1467124-1-7,P-R-1466814-1-10,P-R-1464052-1-8,P-R-1433526-1-8,P-R-1448276-1-5,P-R-1464233-1-6,P-R-1448282-1-7,P-R-1439399-1-12,P-R-1438684-1-7,P-R-1437414-1-7,P-R-1425826-1-6,P-R-1415791-1-6,P-R-1380514-1-7,P-R-1301308-1-12,P-R-1293722-1-9,P-R-1290782-1-11,P-R-1265983-1-12,P-R-1288714-1-7,P-R-1279499-1-4,P-R-1276762-1-3,P-R-1272534-1-8,P-R-1271671-1-8,P-R-1269005-1-8,P-R-1265489-2-8,P-R-1265490-2-10,P-R-1263795-1-5,P-R-1263833-1-3,P-R-1262774-1-1,P-R-1259198-1-6,P-R-1259154-1-10,P-R-1259062-1-5,P-R-1259064-1-10,P-R-1255521-1-2,P-R-1255308-1-7,P-R-1253045-1-5,P-R-1253047-1-6,P-R-1252688-1-9,P-R-1249459-1-5,P-R-1248984-2-8,P-R-1247034-1-3,P-R-1245594-2-4,P-R-1244044-1-5,P-R-1243744-1-9,P-R-1240900-2-7,P-R-1240173-1-6,P-R-1240174-1-5,P-R-1239486-1-6,P-R-1239405-1-3,P-R-1232716-2-7,P-R-1231815-2-5,P-R-1229590-1-6,P-R-1229585-1-6,P-R-1229767-1-2,P-R-1229555-1-4,P-R-1227719-1-7,P-R-1226347-1-6,P-R-1226190-1-7,P-R-1224351-1-4,P-R-1223240-1-1,P-R-1186993-1-3,P-R-1174335-1-7,P-R-1176093-2-3,P-R-1174180-1-5,P-R-1166445-1-6,P-R-1159554-1-7,P-R-1159558-1-7,P-R-1159555-1-7,P-R-1159557-1-7,P-R-1159551-1-7,P-R-1159553-1-7,P-R-1152144-1-3,P-R-1145365-1-7,P-R-1150175-1-7,P-R-1145367-1-5,P-R-1148458-1-6,P-R-1136526-1-5,P-R-1133453-1-7,P-R-1132368-1-6,P-R-1128449-1-11,P-R-1126285-1-6,P-R-1119315-1-5,P-R-1125790-1-3,P-R-1125133-1-8,P-R-1119534-2-8,P-R-1118042-1-4,P-R-1118041-1-5,P-R-1118096-1-7,P-R-1116003-1-5,P-R-1115996-1-7,P-R-1115799-1-5,P-R-1115798-1-6,P-R-1115796-1-6,P-R-1107926-1-7,P-R-89584-1-8,P-R-1098441-1-1,P-R-1096197-1-7,P-R-1094486-1-11,P-R-1091904-1-3,P-R-1084369-1-4,P-R-1084856-1-6,P-R-1082263-1-6,P-R-1081102-1-5,P-R-1080984-1-6,P-R-1081421-1-5,P-R-1081403-1-8,P-R-1078436-1-6,P-R-1076550-1-4,P-R-1074649-1-7,P-R-1073456-1-3,P-R-1067174-1-5,P-R-1069719-1-5,P-R-1069984-1-2,P-R-1067660-1-7,P-R-1066457-1-12,P-R-1064631-1-3,P-R-1064119-1-5,P-R-1064117-1-6,P-R-1063207-1-3,P-R-1062214-1-2,P-R-1061752-1-11,P-R-1059232-1-7,P-R-1058852-1-2,P-R-1055259-1-20,P-R-1056993-1-7,P-R-1056147-1-8,P-R-1056141-1-2,P-R-1055560-1-6,P-R-1053346-1-1,P-R-1050931-1-3,P-R-1048268-1-6,P-R-1047536-1-6,P-R-1046014-1-6,P-R-1045984-1-2,P-R-1037228-1-16,P-R-1040857-1-2,P-R-1040634-1-6,P-R-1038389-1-5,P-R-1028331-1-11,P-R-1035869-1-9,P-R-1034159-1-9,P-R-1030721-1-6,P-R-1027858-1-4,P-R-1026486-1-11,P-R-1026166-1-6,P-R-1024069-1-7,P-R-1021654-1-5,P-R-1021646-1-2,P-R-1019772-1-8,P-R-1019108-1-7,P-R-1017372-1-6,P-R-1017156-1-2,P-R-1015310-1-2,P-R-1015297-1-2,P-R-1015296-1-2,P-R-1013003-1-6,P-R-1011201-1-10,P-R-1007575-1-5,P-R-1006555-1-5,P-R-1005911-1-2,P-R-1005910-1-2,P-R-1004576-1-5,P-R-1002142-1-11,P-R-1003203-1-4,P-R-1003155-1-2,P-R-117800-1-6,P-R-111688-1-7,P-R-110407-1-7,P-R-108081-1-8,P-R-99838-1-2,P-R-98119-1-2,P-R-97668-1-4,P-R-97244-1-2,P-R-96384-1-3,P-R-94175-1-6,P-R-90947-1-5,P-R-90616-1-2,P-R-89741-1-3,P-R-89266-1-2,P-R-89245-1-11,P-R-88175-1-5,P-R-87109-1-2,P-R-84485-1-2,P-R-84111-1-6,P-R-83815-1-3,P-R-82703-1-6,P-R-60453-1-16,P-R-81842-1-2,P-R-79708-1-3,P-R-79041-1-19,P-R-78704-1-7,P-R-78708-1-2,P-R-78703-1-2,P-R-78410-1-3,P-R-78403-1-1,P-R-77649-1-3,P-R-73354-1-3,P-R-73353-1-2,P-R-72821-1-3,P-R-70129-1-4,P-R-65108-1-20,P-R-67117-2-17,P-R-65565-1-10,P-R-66972-1-2,P-R-66821-1-2,P-R-65561-1-4,P-R-65306-1-2,P-R-65248-1-4,P-R-64127-1-4,P-R-63344-1-4,P-R-63038-1-3,P-R-62092-1-6,P-R-61513-1-8,P-R-53554-1-8,P-R-52788-1-1,P-R-50238-1-2,P-R-49501-1-37,P-R-45578-1-2,P-R-42291-1-18,P-R-40260-1-2,P-R-28873-1-6,P-R-27968-1-5,P-R-27962-1-5,P-R-27511-1-12,P-D-1927653-1-3,P-D-1927655-1-3,P-D-1917842-1-3,P-D-1881814-1-3,P-D-1855641-1-2,P-D-1847649-1-2,P-D-1471208-1-1,P-D-118364-1-1,P-D-118363-1-1,P-D-18630-1-258,j50fg774:5030059,j1bij215:999069,0g32g101:998810,h6j6j131:993929,g1ef3317:992192,7g008568:983423,05715687:983215,eghbc535:982984,i80bf488:982330,g1id4146:980750,adb8i678:980749,5b00e661:979973,a4j4e335:978825,6538f124:978824,9ci76907:971802,b8g49361:971801,cdg30200:964100,55jfg469:944898,b50c2592:918305,3532f552:918286,04h53527:866446,974ic454:855130,j01f7183:854616,62jbg802:836025,8ia48829:836007,fhi0h128:834386,842d6170:830191,h75gd552:802914,40g6d467:800551,2f7dh312:724332,8bea5948:703952,gfgi3310:702203,catherinetreatment2:700745,fb0c3691:675354,0816j309:667398,j1je0902:663957,d3eaj597:649497,493hf392:594802,6a342747:577373,cgcig280:576562,g6g11131:575511,7e087607:569794,ah3ah445:556880,926c1810:535331,ia68f145:530001,gaaje184:516949,pdfextractmergeexperimenttreatment:455883,hce74261:455257,h9d5f734:452048,cc87c742:441372,bea58758:440257,d1jbf928:299322,pe19256212:1401330,pe19413782:1405233,pe19064422:1392887,pe18985692:1374230,pe1829780c1:1402922,pe1854937c1:1246090,pe18583952:1250198,pe1854934c1:1237447,pe1858400c1:1236946,pe1829896c1:1217658,pe18439902:1212326,pe1830812c1:1211057,pe18308672:1209610,pe18288832:1170349,pe1813450c1:1173700,pe18134592:1173686,pe1794613c1:1147795,pe1755882c1:1100241,pe18298942:1217850 
+2026-09-15T21:15:03.366Z DATA com.microsoft.odsp.c0 Removing cached ramps not found on the backend 
+2026-09-15T21:15:04.549Z DATA OneAuthNetworkTasks OneAuthNetworkTasks: getAccessToken called 
+2026-09-15T21:15:04.658Z DATA SharedDeviceModeManager Device mode resolved as EXCLUSIVE 
+2026-09-15T21:15:04.660Z DATA OneDrivePrivacyDelegate (Q) QoS RequiredServiceData null null true 
+2026-09-15T21:15:07.453Z DATA OneAuthNetworkTasks DiscoverAccounts returned with result0 and with accountnull time (ms): 4486 
+2026-09-15T21:15:07.453Z DATA OneAuthNetworkTasks DiscoverAccounts completed 
+2026-09-15T21:15:07.482Z DATA OneAuthNetworkTasks Checking if MSA token import is needed for account: 07877409ad8e42bb 
+2026-09-15T21:15:07.482Z DATA OneAuthNetworkTasks importMSARefreshTokenIfNeeded was skipped because it has already been performed 724min ago 
+2026-09-15T21:15:11.216Z DATA OneAuthNetworkTasks getAccessToken: onObtainedCredential 
+2026-09-15T21:15:11.219Z DATA OneAuthNetworkTasks getAccessToken succeeded 
+2026-09-15T21:15:11.486Z DATA samsungSanityChecks Samsung altGuid and boundGuid are both empty 
+2026-09-15T21:15:11.794Z V [Auth]OneDriveAuthenticator Sending telemetry event for TokenRefresh 
+2026-09-15T21:15:11.816Z DATA DeviceAndApplicationInfo Pre: false 
+2026-09-15T21:15:11.819Z DATA lv.f Galaxy Store: false 
+2026-09-15T21:15:11.819Z DATA DeviceAndApplicationInfo Pre: false 
+2026-09-15T21:15:11.819Z DATA DeviceAndApplicationInfo Pre: false 
+2026-09-15T21:15:11.821Z DATA DeviceAndApplicationInfo Pre: false 
+2026-09-15T21:15:11.824Z DATA OneDrivePrivacyDelegate (I) Auth/TokenRefresh RequiredServiceData OneDriveAccount 07877409ad8e42bb true 
+2026-09-15T21:15:11.837Z DATA DeviceAndApplicationInfo Pre: false 
+2026-09-15T21:15:11.838Z DATA lv.f Galaxy Store: false 
+2026-09-15T21:15:11.838Z DATA DeviceAndApplicationInfo Pre: false 
+2026-09-15T21:15:11.838Z DATA DeviceAndApplicationInfo Pre: false 
+2026-09-15T21:15:11.838Z DATA DeviceAndApplicationInfo Pre: false 
+2026-09-15T21:15:11.852Z DATA so.e Use broker flow = false 
+2026-09-15T21:15:11.853Z DATA OneDrivePrivacyDelegate (Q) QoS RequiredServiceData OneDriveAccount 07877409ad8e42bb true 
+2026-09-15T21:15:11.864Z V [Auth]OneDriveAuthenticator Valid token available 
+2026-09-15T21:15:11.886Z DATA UpdateUserInfo All user facts already synced; skipping GetUserInfo round-trip. 

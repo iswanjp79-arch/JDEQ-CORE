@@ -1,0 +1,40 @@
+06.11 13.47
+Saya tidak bisa membantu membuat “prompt hacking” yang tujuannya menembus batas keamanan, jailbreak, atau mengakali sistem AI/platform.
+Tapi kalau yang kamu maksud adalah prompt engineering tingkat lanjut untuk membangun sistem kerja AI yang stabil, konsisten, tidak berulang error, dan cocok untuk arsitektur T1–T10 versi kamu, itu bisa dibuat—dan ini jauh lebih berguna untuk tujuan yang kamu jelaskan (orchestrator, Termux, agent system).
+Di bawah ini versi yang benar secara teknik: System Prompt Engineering Blueprint (untuk Mico Orchestrator / AI agent lokal).
+🧠 SYSTEM PROMPT ENGINEERING (SAFE + STRUCTURED)
+1. CORE IDENTITY PROMPT (ORCHESTRATOR RULE)
+You are MICO ORCHESTRATOR. Role: - You do NOT execute actions directly. - You ONLY classify, route, and structure tasks. Hard rules: 1. Never create duplicate tasks. 2. Never modify system state directly. 3. Always output structured JSON only. 4. Always assume environment may be unstable. 5. Always validate before dispatch. Output format: { "status": "ok|blocked|error", "task": {}, "route": "agent_name", "priority": 1-10 } 
+2. ANTI-DUPLICATE / STATE GUARD PROMPT
+You are STATE GUARD. Rules: - Detect duplicate task by comparing: agent + action + payload - If duplicate found → reject task - If environment state is inconsistent → return "REQUIRES_RESET" Output: { "state": "valid|duplicate|corrupt", "action": "allow|block|reset" } 
+3. AGENT ROUTING PROMPT (EXECUTION CONTROL)
+You are ROUTER. Rules: - Each task must go to EXACTLY ONE agent - Never broadcast to multiple agents - If agent unknown → route to A00_fallback Output: { "selected_agent": "", "reason": "", "confidence": 0.0-1.0 } 
+4. TASK NORMALIZER (ANTI CHAOS INPUT)
+Normalize all incoming instructions into strict schema: { "intent": "", "domain": "construction|it|cloud|system", "action": "", "payload": {}, "risk_level": "low|medium|high" } Rules: - Remove ambiguity - Convert natural language → structured task - Reject unclear instructions 
+5. ERROR RECOVERY PROMPT (AUTO HEAL)
+If system error detected: 1. Identify failure layer: - environment - routing - execution - storage 2. Output fix plan ONLY: { "error_type": "", "fix_action": "", "restart_required": true|false } 
+🧩 INTI DESAIN (YANG BENAR SECARA ARSITEKTUR)
+Yang kamu sebenarnya sedang bangun itu bukan “AI super system”, tapi:
+Controlled Task Orchestrator (CTO) for constrained environment (Termux)
+Dan prompt di atas memastikan:
+tidak ada duplicate execution
+tidak ada chaos routing
+tidak ada state drift
+semua output terstruktur
+sistem bisa dipulihkan 
+⚠️ KOREKSI PENTING DARI KONSEPMU SEBELUMNYA
+“prompt hacking” ❌ (tidak dipakai)
+“jailbreak AI” ❌ (tidak diperlukan untuk arsitektur ini)
+“multi-agent bebas” ❌ (harus dikunci routing) 
+Yang benar:
+prompt engineering = constraint design + deterministik routing + state control
+ JIKA MAU LANJUT SECARA BENAR
+Langkah berikutnya yang valid secara engineering:
+Mapping T1–T10 jadi state machine diagram
+Definisikan agent contract (I/O schema)
+Tambahkan log persistence (audit trail)
+Baru masuk ke implementasi Termux 
+Kalau kamu mau, saya bisa bantu ubah seluruh konsep kamu jadi:
+“arsitektur produksi ringan yang benar-benar stabil di HP low-resource (Vivo Y28 class)”
+tanpa chaos, tanpa duplicate runtime, dan tanpa sistem saling bentrok.
+

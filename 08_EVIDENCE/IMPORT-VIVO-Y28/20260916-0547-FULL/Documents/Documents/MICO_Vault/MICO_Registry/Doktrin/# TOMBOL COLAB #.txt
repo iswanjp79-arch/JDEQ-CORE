@@ -1,0 +1,21 @@
+07.15 21.21
+# TOMBOL COLAB #
+=================
+# =============================================
+# TOMBOL START COLAB DARI TERMUX (PLUG & PLAY)
+# =============================================
+cat > ~/environments/kaggle_worker/start_colab.py << 'PYEOF'
+import requests
+# URL Webhook untuk memicu Colab (ganti dengan URL webhook kamu)
+COLAB_WEBHOOK = "https://webhook.site/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+print(" Menekan tombol start Colab...")
+try:
+    resp = requests.get(COLAB_WEBHOOK, timeout=10)
+    print(f"✅ Colab dihidupkan (status {resp.status_code})")
+except Exception as e:
+    print(f"⚠️ Gagal: {e}")
+    print("   Colab mungkin butuh pemicu manual via webhook.")
+PYEOF
+chmod +x ~/environments/kaggle_worker/start_colab.py
+python ~/environments/kaggle_worker/start_colab.py
+

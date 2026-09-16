@@ -1,0 +1,8 @@
+07.15 11.46
+nohup mosquitto -c ~/environments/mqtt_broker/config/mosquitto.conf > /dev/null 2>&1 &
+nohup bash ~/environments/neuron_v2/launcher.sh > /dev/null 2>&1 &
+echo "✅ MICO-JDEQ dihidupkan kembali"
+sleep 20
+pgrep -f neuron.py > /dev/null && echo "🟢 Neuron aktif" || echo " Neuron gagal"
+pgrep mosquitto > /dev/null && echo "🟢 MQTT aktif" || echo " MQTT gagal"
+

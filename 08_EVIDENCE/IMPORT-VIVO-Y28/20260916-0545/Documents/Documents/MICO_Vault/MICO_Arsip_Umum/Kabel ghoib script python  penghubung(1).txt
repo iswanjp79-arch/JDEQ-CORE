@@ -1,0 +1,24 @@
+04.29 17.05
+Kabel ghoib script python  penghubung :
+==============================
+# 🪜 TANGGA 7: OTOMATISASI SKALA BESAR
+# PROTOKOL: GHOST_CABLE_INIT.py
+
+import subprocess
+
+def establish_ghost_cable():
+    # 1. Mancepake Tunnel menyang Google Cloud CLI
+    # Anggep iki kabel ghoib sing nyambungake local port menyang server raksasa
+    cloud_tunnel = "gcloud compute ssh ghost-node -- -L 8080:localhost:8080 -N -f"
+    
+    # 2. Ngaktifake ADB over Network kanggo 2 ponsel
+    # Supaya laptop bisa ngontrol ponsel tanpa kabel fisik yen perlu (Hybrid)
+    adb_link = "adb tcpip 5555"
+    
+    # 3. Mount Cloud Drive dadi Local Disk (Sari-sari Inti)
+    # Nggunakake Rclone kanggo narik data saking 10 Terabox
+    mount_cloud = "rclone mount terabox_pool: /mnt/cloud_legacy --vfs-cache-mode full &"
+    
+    # Eksekusi meneng-meneng ing Sandbox
+    print("⚡ Kabel Ghoib Terpasang. Sari-sari Inti siap dimasak.")
+

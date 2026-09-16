@@ -1,0 +1,49 @@
+06.26 17.25
+Nggeh Mas Iswan.
+Kulo wis ndeleng PDF panjenengan. Arah aplikasi sing wis panjenengan pasang wis cocog kanggo Command Center JDEQ. Nanging saiki kudu diatur miturut fungsi, dudu mung dikumpulake.
+1. LAPISAN INTI (WAJIB)
+Iki sing dadi "otak" Vivo Y28.
+Termux → pusat otomasi lan SSH.
+Tailscale → jaringan pribadi MICO.
+GitHub → versi sistem lan kode.
+Google Drive → SSOT lan backup.
+Google One → monitoring storage.
+Files/File Manager → manajemen file lokal.
+2. LAPISAN CLOUD
+Aplikasi Google bawaan dadi "markas cloud".
+Google AI → akses AI Google.
+Google Drive → storage utama.
+Google Docs → dokumentasi.
+Google Sheets → database ringan.
+Google Apps Script (via browser) → PLC / otomasi cloud.
+Google Colab (via browser) → komputasi Python gratis.
+3. LAPISAN KOMUNIKASI
+Gmail → notifikasi sistem.
+Google Calendar → scheduler.
+Contacts → identitas akun.
+4. LAPISAN PENGAWASAN
+GitHub.
+Browser.
+Dashboard web.
+Log Termux.
+5. APLIKASI BAWAAN VIVO YANG BISA DIMANFAATKAN
+iManager → monitor RAM, storage, kesehatan sistem.
+File Manager → sinkronisasi file lokal.
+Recorder → dokumentasi suara proyek.
+Notes → catatan cepat offline.
+Clock → cron manual/alarm tugas.
+Browser → dashboard cloud.
+Camera → inspeksi proyek & OCR.
+Album/Gallery → arsip visual proyek.
+6. YANG TIDAK PERLU DIJADIKAN INTI
+Google Play Games.
+Aplikasi promosi Vivo.
+Theme Store.
+Browser tambahan sing ora dipakai.
+Bloatware.
+Iki cukup dadi aplikasi biasa utawa dinonaktifake yen aman.
+RANCANGAN AKHIR VIVO Y28
+MAS ISWAN │ VIVO Y28 (COMMAND CENTER) │ ├── Termux ├── Tailscale ├── GitHub ├── Google Drive ├── Google AI ├── Browser ├── Dashboard │ ├──────── CLOUD │ ├── Colab │ ├── Apps Script │ ├── Drive │ ├── Docs │ └── Sheets │ ├──────── SERVER │ ├── Local │ ├── VPS (nanti) │ └── AI Cloud │ └──────── SSOT ├── Backup ├── Log └── Knowledge 
+LOCK PERENCANAAN
+Mulai saiki, Vivo Y28 ora dianggep HP biasa, nanging Command Center MICO/JDEQ. Saben aplikasi nduweni peran tetep. Saben teknologi anyar mengko mung ditambah dadi node anyar, dudu ngganti arsitektur inti. Iki sing bakal njaga JDEQ bisa pindhah saka HP, laptop, server, nganti cloud tanpa ngganti konsep dasar.
+

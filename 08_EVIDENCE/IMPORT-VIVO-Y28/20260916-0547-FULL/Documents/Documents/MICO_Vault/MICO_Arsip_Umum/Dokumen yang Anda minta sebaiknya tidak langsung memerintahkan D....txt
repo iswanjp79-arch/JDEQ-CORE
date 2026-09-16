@@ -1,0 +1,201 @@
+07.07 23.59
+Dokumen yang Anda minta sebaiknya tidak langsung memerintahkan DeepSeek untuk mengeksekusi atau menghasilkan satu bundle Bash, karena itu akan mencampur ST-001 (arsitektur) dengan ST-003 (implementasi). Jika ST-001 mulai menulis implementasi, maka pemisahan tanggung jawab dalam BASELINE-ORG-001 menjadi kabur.
+Yang tepat adalah ST-001 mengeluarkan Engineering Work Order (EWO) yang menjadi kontrak teknis bagi DeepSeek. DeepSeek kemudian mengubah kontrak itu menjadi kode.
+Berikut adalah dokumen resminya.
+ENGINEERING WORK ORDER
+EWO-001/MICO-JDEQ/ST-003
+Status
+READY FOR ST-003 IMPLEMENTATION
+Issued By
+ST-001
+Chief System Architect
+ChatGPT
+Destination
+ST-003
+Chief Engineering & Runtime
+DeepSeek
+Priority
+CRITICAL
+Authority Chain
+INTI DIRI
+↓
+MICO Architecture Board
+↓
+JARVIS Gateway & Project Control Center
+↓
+ST-001 Architecture Audit ✅
+↓
+ST-002 Governance Validation
+↓
+ST-003 Engineering Runtime ← EXECUTE
+MISSION
+Melaksanakan implementasi runtime berdasarkan artefak yang telah diaudit tanpa melakukan perubahan terhadap keputusan arsitektur.
+DeepSeek bertindak sebagai Runtime Engineering Authority.
+Tidak boleh mengubah:
+Canonical Tree
+Governance
+Authority
+Registry
+ADR
+SSOT
+Tanpa Change Request.
+INPUT ARTIFACT
+DeepSeek WAJIB menggunakan artefak berikut sebagai SSOT:
+EWO-001
+Architecture Report
+Canonical Tree
+Registry
+ADR
+Governance Approval ST-002
+Decision Specification
+Runtime Specification
+State Machine Specification
+Rollback Specification
+Hardware Constraint
+Evidence Requirement
+OUTPUT ARTIFACT
+DeepSeek WAJIB menghasilkan:
+01 Runtime Bash Package
+02 Runtime Library
+03 Runtime Validator
+04 Runtime Health Check
+05 Runtime Recovery Engine
+06 Runtime IPC Layer
+07 Shizuku Integration Layer
+08 SBTI Runtime Module
+09 Evidence Writer
+10 Event Dispatcher
+11 Recovery Dispatcher
+12 Decision Runtime
+13 Runtime Installer
+14 Runtime Uninstaller
+15 Runtime Verification Report
+IMPLEMENTATION CONSTRAINT
+Runtime harus memenuhi:
+RAM tambahan <10 MB
+Flash write minimal
+Human-readable log
+Tidak ada infinite loop
+Retry wajib bounded
+Rollback wajib deterministic
+Thermal handler wajib exit condition
+ADB timeout wajib rollback
+Shizuku disconnect wajib recovery
+Cloud transfer wajib tercatat
+Semua hash wajib deterministic
+IPC REQUIREMENT
+Implementasikan komunikasi:
+Termux
+↓
+rish
+↓
+Shell UID 2000
+↓
+cmd
+↓
+Android Framework
+↓
+Power Manager
+↓
+DeviceIdle
+↓
+Battery Service
+↓
+Thermal Service
+Tidak boleh:
+root
+SELinux patch
+boot image patch
+Magisk dependency
+REQUIRED MODULE
+DeepSeek wajib membangun:
+runtime/ runtime/core/ runtime/ipc/ runtime/evidence/ runtime/recovery/ runtime/thermal/ runtime/power/ runtime/shizuku/ runtime/sbti/ runtime/event/ runtime/validator/ runtime/install/ runtime/uninstall/ 
+SBTI REQUIREMENT
+Bangun deterministic state machine:
+Idle ↓ Monitor ↓ Evaluate ↓ Decision ↓ Power Injection ↓ Verify ↓ Recovery ↓ Idle 
+Tidak boleh ada state tambahan tanpa persetujuan Architecture Board.
+RUNTIME SAFETY
+Seluruh retry:
+bounded
+Seluruh timeout:
+rollback
+Seluruh recovery:
+exit condition
+Seluruh exception:
+logged
+Seluruh failure:
+evidence
+LOG FORMAT
+Semua log:
+ISO8601
+Human Readable
+SHA256
+State
+Status
+Timestamp
+Evidence ID
+TEST REQUIREMENT
+DeepSeek wajib membuat:
+Runtime Self Test
+IPC Test
+Shizuku Test
+Power Test
+Thermal Test
+Recovery Test
+Rollback Test
+Evidence Test
+Stress Test
+Memory Test
+PROHIBITED
+Tidak boleh:
+mengubah Registry
+mengubah Governance
+mengubah Authority
+mengubah Architecture
+mengubah Canonical Tree
+mengubah SSOT
+mengubah ADR
+DELIVERABLE
+DeepSeek menyerahkan:
+Runtime Package
+Source Code
+Runtime Documentation
+Runtime Test Report
+Runtime Dependency Report
+Runtime Risk Report
+Runtime Memory Report
+Runtime Verification Report
+HANDOFF
+Setelah seluruh implementasi selesai:
+ST-003
+↓
+ST-004 Claude
+Documentation & Traceability
+↓
+ST-005 GitHub Copilot
+Code Review & Refinement
+↓
+ST-006 Microsoft Copilot
+Operational Assets
+↓
+ST-007 Perplexity
+External Knowledge Validation
+↓
+ST-008 Emergent
+Architecture Improvement Review
+↓
+JARVIS
+Final Runtime Validation
+CATATAN ARSITEKTUR
+Saya tidak menyarankan ST-001 mengirim "1 bundle kode Termux" kepada DeepSeek. Itu akan mencampur peran arsitek dengan implementer.
+Model yang lebih kuat adalah:
+ST-001 (ChatGPT): spesifikasi teknis dan kontrak implementasi.
+ST-002 (DOLA): validasi governance.
+ST-003 (DeepSeek): implementasi Bash/Termux sesuai kontrak.
+ST-004 (Claude): audit dokumentasi dan traceability.
+ST-005 (GitHub Copilot): refactoring, kualitas kode, dan review implementasi.
+ST-006 (Microsoft Copilot): aset operasional (installer, dokumentasi pengguna, template, integrasi Office jika diperlukan).
+ST-007 (Perplexity): validasi terhadap referensi eksternal dan praktik terbaik yang relevan.
+ST-008 (Emergent): telaah peningkatan arsitektur sebelum baseline berikutnya.
+Dengan pembagian ini, setiap agen memiliki tanggung jawab yang jelas dan artefak yang dapat diaudit, tanpa tumpang tindih fungsi.
+

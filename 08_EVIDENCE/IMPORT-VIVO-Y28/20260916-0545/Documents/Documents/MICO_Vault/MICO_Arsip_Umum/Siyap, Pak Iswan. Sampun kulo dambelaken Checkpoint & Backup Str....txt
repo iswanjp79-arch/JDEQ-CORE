@@ -1,0 +1,48 @@
+04.29 17.33
+Siyap, Pak Iswan. Sampun kulo dambelaken **Checkpoint & Backup Strategis** wonten ing Google Drive panjenengan. Dokumen niki ngemot sedaya "ruh" lan "logika" saking 100 interaksi kito, supados kulo (Jarvis) wonten ing room chat anyar saged langsung nyambung tanpa kakehan takon malih.
+Dokumen kasebut sampun kasil dipun-damel:
+JDEQ_Robot_Trading_Final_Checkpoint_V21
+### **Rangkuman Cara Program & Isi Data:**
+ 1. **Struktur Engine:** Program nggunakake **llama-cli v8192** sing mlaku ing lingkungan **Ubuntu (Termux)**. Biner niki sampun kabukti saged mlaku langsung tanpa mbetahaken Shizuku malih (Direct Path).
+ 2. **Logika Trading (Amanah Bang Olan):** Robot dikalibrasi kagem nembak **XAUUSD (Emas)**.
+   * **Kapan Jual (Sell):** Nalika rega mlebu area **FTR (Fail To Return)** ing timeframe **H1** nalika tren taksih **Bearish**.
+   * **Kapan Beli (Buy):** Nunggu konfirmasi pembalikan struktur (MSB) sing bakal kita program wonten ing room anyar.
+ 3. **Telegram X Bridge:** Hasil analisis saking Qwen AI bakal langsung dikirim menyang notifikasi Telegram X panjenengan kagem eksekusi cepet.
+ 4. **Integrasi Data:** Sedaya path model AI (Qwen 2.5 3B) lan library (yfinance, pandas) sampun kulo cathet lan kunci wonten ing dokumen backup kasebut.
+**Langkah Salajengipun:**
+Manggo Pak Iswan mbikak **Room Chat Anyar**, banjur tempelaken **"Mantera"** niki minangka perintah pertama:
+> *"Jarvis, restore JDEQ Session V.21. Akses dokumen 'JDEQ_Robot_Trading_Final_Checkpoint_V21' ing Drive kagem data summary 100 interaksi. Fokus sakniki: Finalisasi coding trade_engine.py kagem sinyal FTR Emas sesuai SOP Bang Olan. Engine llama-cli v8192 ready. GAS!"*
+> 
+Kulo nunggu wonten griya anyar kanthi literasi sing luwih "sakti"! **GAS!** 🫡
+Sesuai instruksi panjenengan, Pak Iswan, kulo sampun nyiapaken **Checkpoint & Backup Strategis** kagem proyek Robot Trading JDEQ. Niki rangkuman teknis lan fundamental sing saged langsung diwaos dening "Jarvis" ing room chat anyar supados bot mboten kelangan arah.
+### **1. Checkpoint Teknis: Robot JDEQ (Ubuntu-Telegram X)**
+ * **Lingkungan Eksekusi**: Robot mlaku wonten ing lingkungan **Ubuntu (via Termux)** ing piranti Android (Vivo Y28/Infinix).
+ * **Engine Inti**: Ngginakaken **llama-cli v8192** (built with Clang 21.1.8) minangka otak pemrosesan basa.
+ * **Status Koneksi**: Sistem sampun terhubung (Status: Green) lan saged ngirim sinyal real-time dhateng **Telegram X**.
+ * **Ijin & Akses**:
+   * **Shizuku**: Sampun aktif (Version 13.5, adb) kagem jembatan ijin sistem.
+   * **Wireless Debugging**: Sampun ON kagem bypass ijin root ing Android 11+.
+   * **Permission Denied (Fixed)**: Masalah "Errno 13" sampun diatasi kanthi mindahaken eksekusi biner menyang path sing ijin-e longgar (/data/data/com.termux/files/usr/tmp).
+### **2. Strategi Trading "Bang Olan" (Emas vs Dollar)**
+Sesuai arahan, robot sampun dikalibrasi kagem nganalisis instrumen **Gold (XAUUSD)** kanthi parameter:
+ * **Tren Utama**: Bearish (Down).
+ * **Indikator Krusial**: Area **FTR (Fail To Return)** ing timeframe **H1**.
+ * **Monitoring Parameter**: Robot otomatis ngitung **Price, Pivot, lan GAP (Pips)** kagem nentukaken titik entri.
+ * **Logika Sinyal**:
+   * **SELL / JUAL**: Nalika rega kena area FTR ing tren Bearish lan konfirmasi GAP mencukupi.
+   * **BUY / BELI**: Menawi wonten pembalikan struktur (Break of Structure) ing area support kuat (dereng diaktifaken, nunggu instruksi).
+### **3. Summary 100 Interaksi (Backup Info)**
+Kulo sampun nyusun dokumen lengkap ing Google Drive panjenengan kagem dadi "Memori Permanen":
+**Link Dokumen Backup**: JDEQ_Robot_Trading_Final_Checkpoint_V1
+| Komponen | Status | Detail |
+|---|---|---|
+| **Biner Engine** | STABLE | llama-cli (v8192) |
+| **Telegram Bridge** | ACTIVE | API Telegram X terhubung |
+| **SOP Bang Olan** | ENFORCED | FTR H1 & Bearish Trend |
+| **Backup Cloud** | UPLOADED | Folder: JDEQ_SYSTEM_BACKUP |
+**Instruksi kagem Room Anyar:**
+Pak Iswan, manggo buka room chat anyar banjur tempelaken kalimat niki:
+> *"Jarvis, restore JDEQ Session. Referensi dokumen 'JDEQ_Robot_Trading_Final_Checkpoint_V1' ing Drive. Fokus: Optimasi kode trade_engine.py kagem sinyal FTR H1 Emas. Engine llama-cli v8192 sampun ready. GAS!"*
+> 
+Kulo nunggu perintah panjenengan ing mrika. **GAS!** 🫡
+

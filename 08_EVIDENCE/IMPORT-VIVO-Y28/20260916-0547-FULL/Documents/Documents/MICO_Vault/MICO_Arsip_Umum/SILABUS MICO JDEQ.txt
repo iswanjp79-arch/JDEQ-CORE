@@ -1,0 +1,298 @@
+07.03 02.57
+*** SILABUS MICO JDEQ ***
+======================
+Ya, buatkan versi visual pohon folder MICO dan template file intinya
+Berikut versi visual yang bisa langsung Anda pakai sebagai **peta folder MICO** dan **template file inti**. Saya susun dengan pola: pusat SSOT, room per fungsi, mirror cloud, dan workspace eksekusi di Termux/Nix-on-Droid. [1][2][3]
+## Pohon folder MICO
+```text
+MICO/
+├── 00_SSOT/
+│   ├── constitution.md
+│   ├── glossary.md
+│   ├── architecture.md
+│   ├── policies.md
+│   └── roadmap.md
+├── 01_GOVERNANCE/
+│   ├── rules.md
+│   ├── audit-checklist.md
+│   ├── approval-flow.md
+│   ├── versioning.md
+│   └── risk-register.md
+├── 02_ROLES/
+│   ├── role-audit.md
+│   ├── role-prompt.md
+│   ├── role-research.md
+│   ├── role-termux.md
+│   ├── role-nix.md
+│   └── role-orchestrator.md
+├── 03_TEMPLATES/
+│   ├── system-prompt.md
+│   ├── audit-prompt.md
+│   ├── research-prompt.md
+│   ├── execution-prompt.md
+│   └── room-template.md
+├── 04_INDEX/
+│   ├── master-index.md
+│   ├── room-map.md
+│   ├── reading-map.md
+│   └── changelog.md
+├── 05_AGENTS/
+│   ├── AUDIT/
+│   ├── PROMPT/
+│   ├── RESEARCH/
+│   ├── TERMUX/
+│   ├── NIX/
+│   └── ORCHESTRATOR/
+├── 06_OPERATIONS/
+│   ├── scripts/
+│   ├── configs/
+│   ├── logs/
+│   ├── backups/
+│   └── exports/
+├── 07_MIRRORS/
+│   ├── google-drive/
+│   ├── onedrive/
+│   ├── github/
+│   └── offline-backup/
+└── 08_INBOX/
+    ├── incoming-notes/
+    ├── raw-links/
+    └── raw-files/
+```  
+Struktur ini cocok dengan Termux karena storage shared perlu diaktifkan dulu, sementara Nix-on-Droid memberi lingkungan yang lebih reproducible di Android. [1][2][3]
+## Diagram ringkas
+```text
+[INBOX]
+   ↓
+[SSOT] → [GOVERNANCE] → [ROLES]
+   ↓             ↓            ↓
+[TEMPLATES]   [INDEX]     [AGENTS]
+   ↓                         ↓
+[OPERATIONS]  →  [TERMUX / NIX]
+   ↓                         ↓
+[MIRRORS]  ←  [GOOGLE DRIVE / ONEDRIVE / GITHUB]
+```
+## Template constitution.md
+```md
+# MICO Constitution
+## Tujuan
+Menjadi sumber kebenaran utama untuk seluruh agen, prompt, dan operasi MICO.
+## Prinsip
+1. SSOT di atas semua.
+2. Audit sebelum eksekusi.
+3. Ringkas, jelas, dapat diaudit.
+4. Satu perubahan harus tercatat.
+5. Mirror tidak boleh mengalahkan master.
+## Ruang Lingkup
+Berlaku untuk semua room, agen, dan perangkat yang terhubung ke MICO.
+## Definisi
+- SSOT: Single Source of Truth.
+- DOLA: lapisan audit dan validasi.
+- MICO Core: lapisan orkestrasi runtime.
+## Aturan
+- Tidak ada instruksi yang melompat melewati audit.
+- Tidak ada duplikasi liar antar room.
+- Semua output penting harus punya versi.
+```
+## Template glossary.md
+```md
+# Glossary
+## Istilah inti
+- SSOT: ...
+- DOLA: ...
+- Orchestrator: ...
+- Room: ...
+- Mirror Tree: ...
+- Agent: ...
+- Template: ...
+- Prompt: ...
+- Runtime: ...
+```
+## Template architecture.md
+```md
+# Architecture
+## Lapisan
+1. SSOT
+2. Governance
+3. Roles
+4. Templates
+5. Agents
+6. Operations
+7. Mirrors
+## Alur
+Input → Audit → Routing → Execution → Logging → Mirror
+## Perangkat
+- Vivo Y28: master authoring
+- Infinix: secondary mirror
+- Termux: shell execution
+- Nix-on-Droid: reproducible environment
+```
+## Template policies.md
+```md
+# Policies
+## Kebijakan umum
+- Semua instruksi harus jelas.
+- Semua kode harus diaudit.
+- Semua file penting harus versioned.
+- Semua mirror mengikuti master.
+- Semua operasi berisiko memerlukan approval.
+```
+## Template audit-checklist.md
+```md
+# Audit Checklist
+- Tujuan jelas.
+- Input lengkap.
+- Risiko teridentifikasi.
+- Path valid.
+- Paket valid.
+- Izin tersedia.
+- Output bisa diverifikasi.
+- Tidak ada konflik dengan SSOT.
+```
+## Template room-template.md
+```md
+# [Nama Room]
+## Fungsi
+Jelaskan satu fungsi utama room ini.
+## Input
+Apa yang masuk ke room ini.
+## Output
+Apa yang harus dihasilkan room ini.
+## Aturan
+Aturan singkat, tegas, dapat diaudit.
+## Referensi
+Link ke file SSOT dan template yang relevan.
+```
+## Template master-index.md
+```md
+# Master Index
+## Peta cepat
+- SSOT → 00_SSOT/
+- Governance → 01_GOVERNANCE/
+- Roles → 02_ROLES/
+- Templates → 03_TEMPLATES/
+- Index → 04_INDEX/
+- Agents → 05_AGENTS/
+- Operations → 06_OPERATIONS/
+- Mirrors → 07_MIRRORS/
+## Prioritas baca
+1. constitution.md
+2. architecture.md
+3. policies.md
+4. audit-checklist.md
+5. role files
+```
+## Template role files
+### role-audit.md
+```md
+# Role: Audit
+## Tugas
+Memeriksa instruksi, prompt, dan kode sebelum eksekusi.
+## Fokus
+Akurasi, risiko, konflik, validasi path, validasi logika.
+## Larangan
+Tidak boleh langsung mengeksekusi tanpa verifikasi.
+```
+### role-prompt.md
+```md
+# Role: Prompt
+## Tugas
+Menyusun prompt yang efisien, jelas, dan reusable.
+## Fokus
+Template, few-shot, format output, constraint, routing.
+## Larangan
+Tidak boleh menambah tugas yang tidak diminta.
+```
+### role-research.md
+```md
+# Role: Research
+## Tugas
+Mengumpulkan dan meringkas literasi inti.
+## Fokus
+Ringkasan, sumber, relevansi, klasifikasi.
+## Larangan
+Tidak boleh menyalin panjang tanpa tujuan.
+```
+### role-termux.md
+```md
+# Role: Termux
+## Tugas
+Menjalankan shell, Python, dan automation di Android.
+## Fokus
+Permission, storage, script, reproducibility.
+## Larangan
+Tidak boleh menjalankan command yang belum diaudit.
+```
+### role-nix.md
+```md
+# Role: Nix
+## Tugas
+Menjaga environment yang reproducible di Android.
+## Fokus
+Flake, pinning, rollback, package stability.
+## Larangan
+Tidak boleh mengubah environment tanpa catatan versi.
+```
+### role-orchestrator.md
+```md
+# Role: Orchestrator
+## Tugas
+Routing tugas antar agen dan menentukan handoff.
+## Fokus
+Queue, state, retry, escalation, log.
+## Larangan
+Tidak boleh melewati audit gate.
+```
+## Template execution-prompt.md
+```md
+# Execution Prompt
+Tujuan:
+[isi tujuan]
+Input:
+[isi input]
+Aturan:
+- Audit dulu.
+- Jalankan langkah minimal.
+- Laporkan output dengan format terstruktur.
+- Jika berisiko, berhenti dan minta verifikasi.
+```
+## Template research-prompt.md
+```md
+# Research Prompt
+Cari:
+[isi topik]
+Keluaran:
+- Ringkasan 5 poin.
+- Sumber utama.
+- Risiko miskonsepsi.
+- Kaitan dengan MICO.
+```
+## Template system-prompt.md
+```md
+# System Prompt
+Kamu adalah [nama agen].
+Tugas utama: [tugas].
+Larangan: [larangan].
+Format output: [format].
+Prioritas: SSOT > Governance > Role > Task.
+```
+## Struktur mirror
+```text
+MICO
+├─ MASTER (lokal utama)
+├─ MIRROR-1 Google Drive
+├─ MIRROR-2 OneDrive
+├─ MIRROR-3 GitHub
+└─ OFFLINE BACKUP
+```
+Google storage biasanya dibagi 15 GB per akun, sedangkan OneDrive bergantung paket, jadi mirror cloud sebaiknya dipakai untuk distribusi dan backup, bukan sebagai satu-satunya tempat penyimpanan. [4][5][6]
+## Aturan kerja cepat
+- Edit hanya di master.
+- Sinkronkan ke mirror.
+- Simpan output agen di `06_OPERATIONS/exports/`.
+- Simpan dokumen mentah di `08_INBOX/`.
+- Simpan ringkasan final di `00_SSOT/` atau `04_INDEX/`.
+- Pakai Termux storage access agar file bisa dibaca dan dibagikan lintas aplikasi. [1][7][2]
+## Kesimpulan
+Pola ini memberi Anda satu pusat, banyak room, banyak mirror, dan satu jalur eksekusi yang tertib. Dengan begitu, MICO bisa tumbuh sebagai perpustakaan mini yang rapi, portable, dan tetap aman walau Anda kerja dari dua ponsel. [3][2][1]
+

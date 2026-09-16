@@ -1,0 +1,31 @@
+06.29 20.44
+# Buat konektor MICO ↔ Groq
+cat > ~/JDEQ/bridge/groq_connector.py << 'GROQEOF'
+import sys, json, urllib.request, os
+from datetime import datetime
+API_KEY = "3FlqbZT5rsxQ01QyLZRacR2yAA0_2dDELUTxoczSYU2BVokBP"  # Ganti dengan key asli
+GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
+LOG_FILE = os.path.expanduser("~/JDEQ/logs/groq_chat.log")
+prompt = " ".join(sys.argv[1:]) if len(sys.argv) > 1 else input("Anda: ")
+data = json.dumps({
+    "model": "llama3-8b-8192",
+    "messages": [{"role": "user", "content": prompt}],
+    "max_tokens": 200
+}).encode()
+req = urllib.request.Request(GROQ_URL, data=data, headers={
+    "Authorization": f"Bearer {API_KEY}",
+    "Content-Type": "application/json"
+})
+try:
+    resp = urllib.request.urlopen(req, timeout=30)
+    result = json.loads(resp.read())
+    reply = result["choices"][0]["message"]["content"]
+    print(reply)
+    with open(LOG_FILE, "a") as f:
+        f.write(json.dumps({"time": str(datetime.now()), "user": prompt, "groq": reply}) + "\n")
+except Exception as e:
+    print(f"Error: {e}")
+GROQEOF
+chmod +x ~/JDEQ/bridge/groq_connector.py
+echo "✅ Konektor Groq siap. Edit key di ~/JDEQ/bridge/groq_connector.py"
+

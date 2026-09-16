@@ -1,0 +1,17 @@
+06.27 22.40
+LLM|607358788850350|nx9.....LJY
+cd ~/JDEQ
+python3 -c "
+import json
+from pathlib import Path
+vault_file = Path.home() / 'JDEQ' / 'vault' / 'api_keys.json'
+vault = json.loads(vault_file.read_text())
+vault['llama_api'] = {
+    'api_key': 'LLM|607358788850350|nx9.....LJY',
+    'provider': 'Meta',
+    'endpoint': 'https://api.llama.meta.com'
+}
+vault_file.write_text(json.dumps(vault, indent=2))
+print('[OK] Llama API key tersimpan di Vault.')
+"
+

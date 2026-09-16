@@ -1,0 +1,52 @@
+07.03 18.52
+*** SAFETY GUARDRAIL SECURITY ***
+===========================≠==
+ tambahan. 
+## Diagram blok
+```text
+[1] INPUT GATE
+    ↓
+[2] SSOT PROMPT GATE
+    ↓
+[3] TOOL / PERMISSION GATE
+    ↓
+[4] EXECUTION GATE
+    ↓
+[5] AUDIT / LOG GATE
+```
+## Bentuk arsitektur di n8n
+```text
+Trigger Node
+   ↓
+Guardrail 1: Validate Input
+   ↓
+Guardrail 2: Load SSOT Prompt
+   ↓
+AI Agent Node
+   ↓
+Guardrail 3: Restrict Tools
+   ↓
+Guardrail 4: Confirm / Simulate / Execute
+   ↓
+Guardrail 5: Log / Review / Mirror
+```
+## Fungsi tiap lapisan
+### 1. Input Gate
+Lapisan ini memeriksa apakah input layak diproses, misalnya apakah ada prompt injection, konflik instruksi, atau payload yang terlalu liar. Tujuannya supaya data mentah tidak langsung masuk ke agen. [4][5][1]
+### 2. SSOT Prompt Gate
+Di sini n8n mengambil prompt inti dari SSOT, bukan dari teks acak di node. Ini menjaga role, batas, format output, dan prioritas instruksi tetap stabil. [6][7][8]
+### 3. Tool / Permission Gate
+Lapisan ini menentukan tool mana yang boleh dipakai agen. Pada n8n, best practice-nya memang mengelola tool dan sub-workflow secara jelas supaya agent tidak punya akses berlebihan. [9][10][2]
+### 4. Execution Gate
+Sebelum tindakan nyata, workflow memutuskan apakah hasil cukup aman untuk dieksekusi atau perlu simulasi/konfirmasi manusia. Ini penting untuk operasi file, web, sistem Android, dan API sensitif. [2][11][12]
+### 5. Audit / Log Gate
+Semua hasil dicatat, dipantau, dan jika perlu dimirror ke SSOT atau storage lain. Lapisan ini membuat workflow bisa di-review dan di-rollback bila ada anomali. [13][14][1]
+## Contoh node n8n
+- **Webhook / Chat Trigger**: menerima input.
+- **IF / Switch Node**: input aman atau tidak.
+- **Read File / HTTP Request**: ambil SSOT prompt.
+- **AI Agent Node**: proses tugas dengan prompt dan tool.
+- **Execute Workflow / Sub-workflow**: tool terpisah untuk tugas tertentu.
+- **Code Node / Write Node**: validasi dan simpan hasil.
+- **Google Drive / GitHub / DB Node**: mirror dan arsip. 
+

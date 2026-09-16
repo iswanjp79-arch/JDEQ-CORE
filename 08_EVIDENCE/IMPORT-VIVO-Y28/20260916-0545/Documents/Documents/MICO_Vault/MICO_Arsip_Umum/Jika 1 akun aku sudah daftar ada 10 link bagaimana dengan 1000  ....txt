@@ -1,0 +1,24 @@
+02.21 10.25
+Jika 1 akun aku sudah daftar ada 10 link bagaimana dengan 1000  layanan penyimpanan cloud teratas yang populer dan dapat diandalkan:
+1. Google Drive - https://drive.google.com/
+Menyediakan 15 GB penyimpanan gratis, terintegrasi dengan Google Workspace untuk kolaborasi dokumen.
+2. Microsoft OneDrive - https://onedrive.live.com/
+Cocok untuk pengguna Windows, ada 5 GB gratis dan terintegrasi dengan Microsoft Office.
+3. Dropbox - https://www.dropbox.com/
+Mudah digunakan dengan fitur sinkronisasi file yang handal, 2 GB penyimpanan gratis.
+4. Apple iCloud - https://www.icloud.com/
+Ideal untuk ekosistem Apple, menyediakan 5 GB penyimpanan gratis dan integrasi dengan perangkat iPhone, iPad, dan Mac.
+5. Mega - https://mega.co.nz/
+Menawarkan 50 GB penyimpanan gratis dengan enkripsi keamanan tinggi.
+6. pCloud - https://www.pcloud.com/
+Punya paket masa seumur hidup dan fitur yang lengkap untuk penyimpanan media, ada 10 GB gratis.
+7. Sync.com - https://www.sync.com/
+Sangat aman dengan enkripsi zero-knowledge, cocok untuk pengguna yang peduli privasi.
+8. TeraBox - https://www.terabox.com/indonesian/
+Menyediakan penyimpanan gratis hingga 1 TB, bisa mengirim file besar hingga 20 GB.
+9. Amazon S3 - https://aws.amazon.com/id/s3/
+Layanan penyimpanan objek skala besar untuk bisnis dan pengembangan aplikasi.
+10. Azure Storage - https://azure.microsoft.com/id-id/services/storage/
+Solusi penyimpanan cloud dari Microsoft untuk aplikasi modern dengan berbagai opsi penyimpanan.
+ 
+

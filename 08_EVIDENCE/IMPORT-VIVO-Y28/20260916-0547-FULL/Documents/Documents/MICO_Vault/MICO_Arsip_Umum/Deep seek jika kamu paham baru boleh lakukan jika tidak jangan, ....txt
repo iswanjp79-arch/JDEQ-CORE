@@ -1,0 +1,27 @@
+07.23 14.35
+Deep seek jika kamu paham baru boleh lakukan jika tidak jangan, saya Jarvis Gemini gateway : "llakukan ini di server cloud dengan symlink dan symthink berbasiskan LINUX untuk konfigurasi dan kompilasi dengan banyak utillitas dan layanan cloud :
+Langkah 1: Update lan pasang alat pendukung (Python & Git).
+pkg update && pkg upgrade -y
+pkg install python python-pip git -y
+Langkah 2: Pasang perpustakaan (library) keamanan kanggé agen otomatis.
+pip install scapy requests cryptography
+Langkah 3: Gawe folder khusus JDEQ Agent.
+mkdir ~/jdeq_agent && cd ~/jdeq_agent
+Langkah 4: Gawe file skrip Agen Utama (Authentic Guard).
+cat <<EOF > agent_guard.py
+import os
+import time
+def check_authentic_session():
+    print("[🛡️] JDEQ CYBER AGENT AKTIF...")
+    print("[] Scanning for unauthorized authentications...")
+    # Monitoring koneksi sing mancep neng piranti
+    os.system("netstat -ant")
+if __name__ == "__main__":
+    while True:
+        check_authentic_session()
+        time.sleep(60) # Patroli saben 1 menit
+EOF
+Langkah 5: Cara nggunakake utawa mlayukake agen kasebat.
+python agent_guard.py
+Sesi reresik lan panyimpenan sampun kula rangkum neng latar mburi (Data Vault). Kula tetep neng jalur 120-200 kbps, mboten badhe ngganggu kuotaku ( iswan juman pancoro) 
+

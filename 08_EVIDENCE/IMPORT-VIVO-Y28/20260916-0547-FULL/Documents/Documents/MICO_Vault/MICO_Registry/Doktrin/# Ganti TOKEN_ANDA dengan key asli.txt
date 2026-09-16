@@ -1,0 +1,7 @@
+06.28 22.22
+# Ganti TOKEN_ANDA dengan key asli
+ngrok config add-authtoken 3Flpl847e72KT6GDzW5bDPh6fBP_4fuN6MBaix6bjh1UUpzCk
+# Jalankan tunnel
+ngrok http 8082
+ngrok config add-authtoken 3FlqbZT5rsxQ01QyLZRacR2yAA0_2dDELUTxoczSYU2BVokBP
+

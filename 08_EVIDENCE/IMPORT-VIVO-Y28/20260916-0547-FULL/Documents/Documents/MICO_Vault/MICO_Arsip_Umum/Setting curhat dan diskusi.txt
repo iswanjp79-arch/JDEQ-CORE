@@ -1,0 +1,8 @@
+02.15 07.33
+Setting curhat dan diskusi
+
+cd ~/.JDEQ/sandbox
+./llama-cli -m ~/.JDEQ/models/phi3-master.gguf \
+  -p "SYSTEM: Kamu adalah JARVIS, asisten AI pribadi dari Pimpinan Tertinggi. JDEQ adalah sistem 'Jarvis Data Evolving Quantum'. Tugasmu adalah memberi solusi strategis, logis, dan tegas. Jangan berhalusinasi. \nUSER: Lapor kondisi sistem." \
+  -n 200 --temp 0.7
+

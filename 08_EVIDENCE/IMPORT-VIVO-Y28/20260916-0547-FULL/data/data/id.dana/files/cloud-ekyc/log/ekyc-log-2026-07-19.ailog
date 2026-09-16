@@ -1,0 +1,149 @@
+2026-07-19 16:47:16.861 8123-2/id.dana DEBUG/LanguageManager: Country: ID Language: id
+2026-07-19 16:47:16.910 8123-2/id.dana ERROR/StateShowActivity: onCreate
+2026-07-19 16:47:16.957 8123-2/id.dana ERROR/StateShowActivity: initView: currentType: FACE_CHECK
+2026-07-19 16:47:16.999 8123-2/id.dana DEBUG/HuiYanOsApiImp: startHuiYanAuth with: E58663E1-3261E-024906-B3EC-84C8429FCF4D
+2026-07-19 16:47:17.036 8123-2/id.dana DEBUG/HuiYanOsApiImp: create HuiYanSdkConfig by startConfig:HuiYanOsConfig{isDeleteVideoCache=true, authTimeOutMs=40000, isShowGuidePage=false, isUseBackCamera=false, smallFaceRatioThreshold=0.5, bigFaceRatioThreshold=0.8, isOpenBOTCheck=false, longCheckTimeOutMs=30000, showPrivacyPolicyDialog=false, disableSystemRecordScreen=false, isOtherActionCheckMouthOpen=false, faceAngleValidation=LevelLoose, faceOcclusionLevel=STRICT, modelPath=''}
+2026-07-19 16:47:17.038 8123-2/id.dana DEBUG/HuiYanSdkImp: sdkConfig getAuthTimeOutMs:40000 longCheckTimeOutMs:30000 prepareFaceTimeOutMs:40000
+2026-07-19 16:47:17.043 8123-2/id.dana DEBUG/HuiYanSdkImp: useAppContext: true
+2026-07-19 16:47:17.049 8123-6822/id.dana DEBUG/HuiYanSdkImp: update you tu config!
+2026-07-19 16:47:17.049 8123-6822/id.dana DEBUG/YouTuSdkHelper: no need load model!
+2026-07-19 16:47:17.049 8123-6822/id.dana DEBUG/HuiYanSdkImp: face quality stage is not enable or params is null
+2026-07-19 16:47:17.114 8123-2/id.dana ERROR/StateShowActivity: onResume
+2026-07-19 16:47:17.206 8123-2/id.dana DEBUG/BaseActivity: on attach base context.
+2026-07-19 16:47:17.206 8123-2/id.dana DEBUG/LanguageManager: huiyan base api, languageStyle:CUSTOMIZE_LANGUAGE
+2026-07-19 16:47:17.206 8123-2/id.dana DEBUG/LanguageManager: country: ID language: id
+2026-07-19 16:47:17.207 8123-2/id.dana DEBUG/LanguageManager: current default local: id ID
+2026-07-19 16:47:17.224 8123-2/id.dana DEBUG/MainAuthActivity: on create.
+2026-07-19 16:47:17.227 8123-2/id.dana DEBUG/BaseActivity: on create.
+2026-07-19 16:47:17.251 8123-2/id.dana DEBUG/AuthingFragment: on attach.
+2026-07-19 16:47:17.252 8123-2/id.dana DEBUG/AuthingFragment: on create view begin.
+2026-07-19 16:47:17.273 8123-2/id.dana DEBUG/AuthingFragment: checkShowCameraDate isShowCamera=false
+2026-07-19 16:47:17.276 8123-2/id.dana DEBUG/AuthingFragment: start prepare auth
+2026-07-19 16:47:17.276 8123-2/id.dana DEBUG/AuthingFragment: state: PREPARE
+2026-07-19 16:47:17.276 8123-2/id.dana DEBUG/AuthingFragment: >>>start prepare event
+2026-07-19 16:47:17.276 8123-2/id.dana DEBUG/AuthingFragment: state: AUTH_ACTION
+2026-07-19 16:47:17.276 8123-2/id.dana DEBUG/AuthingFragment: >>>start auth action
+2026-07-19 16:47:17.277 8123-2/id.dana DEBUG/HuiYanBaseApi: updatePreviewSize width:480 height:640
+2026-07-19 16:47:17.280 8123-2/id.dana DEBUG/AuthingFragment: on create view end.
+2026-07-19 16:47:17.280 8123-2/id.dana DEBUG/BaseFragment: on create view.
+2026-07-19 16:47:17.322 8123-2/id.dana DEBUG/AuthingFragment: on resume begin.
+2026-07-19 16:47:17.322 8123-2/id.dana DEBUG/AuthingFragment: checkShowCameraDate isShowCamera=false
+2026-07-19 16:47:17.322 8123-2/id.dana DEBUG/AuthingFragment: on resume end.
+2026-07-19 16:47:17.425 8123-6829/id.dana DEBUG/CameraHolderImp: [ai-camera-debug]row DefaultDisplay rotation:0
+2026-07-19 16:47:17.426 8123-6829/id.dana DEBUG/CameraHolderImp: [ai-camera-debug]CameraInfo.orientation: 270 | isLand: false | DeviceRotation: 0 | FinalOrientation: 90 | CameraFacing: Front
+2026-07-19 16:47:17.426 8123-6829/id.dana DEBUG/CameraHolderImp: [ai-camera-debug]not land, and camera facing front
+2026-07-19 16:47:17.426 8123-6829/id.dana DEBUG/CameraHolderImp: [ai-camera-debug]cameraFacing: 1 rotateTag: 7
+2026-07-19 16:47:17.427 8123-6829/id.dana DEBUG/CameraUtil: [ai-camera-error]optimalSize: android.hardware.Camera$Size@13f7860 w: 640 h: 480
+2026-07-19 16:47:17.427 8123-6829/id.dana DEBUG/CameraHolderImp: [ai-camera-debug]using range min: 30000 max: 30000
+2026-07-19 16:47:17.432 8123-6829/id.dana DEBUG/CameraHolderImp: [ai-camera-error]scaleX: 1.3333334 scaleY: 0.75
+2026-07-19 16:47:17.432 8123-6829/id.dana DEBUG/CameraHolderImp: [ai-camera-debug]initCamera success!
+2026-07-19 16:47:17.459 8123-2/id.dana DEBUG/AuthingFragment: on get camera succeed!
+2026-07-19 16:47:17.459 8123-2/id.dana DEBUG/AuthingFragment: camera info: 640 x 480; rotate: 7, 90
+2026-07-19 16:47:17.459 8123-2/id.dana ERROR/AuthingFragment: get config first.
+2026-07-19 16:47:17.459 8123-2/id.dana ERROR/HuiYanOsApiImp: onPrepare!
+2026-07-19 16:47:17.459 8123-2/id.dana DEBUG/FaceCheckFragment: onForceLocalRetry: reached=true
+2026-07-19 16:47:17.459 8123-2/id.dana DEBUG/HuiYanResultSender: sendOnPrepareOsGetConfig reachedLiveness=true forcedByHost=false fromLocalRetry=false
+2026-07-19 16:47:17.760 8123-2/id.dana DEBUG/HuiYanResultSender: sendOnPrepareOsGetConfig onSuccess:{"code":0,"data":{"EnableRisk":true,"OcclusionThreshold":3,"FullProcessVideoRecordingTime":15,"EnableFaceQuality":false,"EnableMonitorVideo":false,"TryTimes":4,"ExitPopupConfig":{"VerifyFailedList":["1001","1002","1004","1005","1201","2017"],"FaceDetectFailedList":["2004","2012","2013","2014"],"FaceCompareFailedList":["2015","2016"],"Default":"FaceDetectFailedList"}},"message":"success"}
+2026-07-19 16:47:17.764 8123-2/id.dana DEBUG/HuiYanSdkImp: face quality stage is not enable or params is null
+2026-07-19 16:47:17.766 8123-2/id.dana DEBUG/HuiYanResultSender: config TryTimes=4
+2026-07-19 16:47:17.767 8123-2/id.dana DEBUG/TuringSdkHelper: update defaultTuringTimeOut: 10000
+2026-07-19 16:47:17.768 8123-6839/id.dana DEBUG/VideoRecorderManager: useVideoFormat: video/hevc
+2026-07-19 16:47:18.010 8123-2/id.dana ERROR/StateShowActivity: onStop flowStateType=FACE_CHECK
+2026-07-19 16:47:18.947 8123-6817/id.dana DEBUG/OverSeas_TuringSdkImp: onFinish
+2026-07-19 16:47:18.947 8123-6817/id.dana DEBUG/TuringSdkHelper: return code: 0, bytes len: 3833
+2026-07-19 16:47:18.947 8123-6817/id.dana ERROR/TuringSdkHelper: get turing face result and remove time out event!
+2026-07-19 16:47:18.947 8123-6817/id.dana DEBUG/TuringSdkHelper: turing result cache is not null
+2026-07-19 16:47:18.947 8123-6817/id.dana DEBUG/TuringSdkHelper: turing result data is empty: false
+2026-07-19 16:47:18.947 8123-6817/id.dana ERROR/TuringSdkHelper: get turing face result and remove time out event!
+2026-07-19 16:47:18.947 8123-6817/id.dana DEBUG/AuthingFragment: state: START_GET_LIVE_TYPE
+2026-07-19 16:47:18.947 8123-6817/id.dana DEBUG/AuthingFragment: >>>start auth and get live info
+2026-07-19 16:47:18.948 8123-6817/id.dana DEBUG/YouTuSdkHelper: [huiyan version]: v1.0.10.12
+2026-07-19 16:47:18.948 8123-6817/id.dana DEBUG/YouTuSdkHelper: [yt version]: 1.2.20.611.1
+2026-07-19 16:47:19.027 8123-6817/id.dana ERROR/YouTuSdkHelper: send call back get live
+2026-07-19 16:47:19.027 8123-6817/id.dana ERROR/HuiYanOsApiImp: on select success!
+2026-07-19 16:47:19.332 8123-2/id.dana DEBUG/CommonUtils: contain action or not: true
+2026-07-19 16:47:19.333 8123-2/id.dana ERROR/HuiYanSdkImp: <auth event>: START_AUTH
+2026-07-19 16:47:19.334 8123-2/id.dana DEBUG/AuthingFragment: state: START_CAMERA_PREVIEW
+2026-07-19 16:47:19.334 8123-2/id.dana DEBUG/AuthingFragment: >>>start camera preview(get light data ok)
+2026-07-19 16:47:19.334 8123-2/id.dana DEBUG/AuthingFragment: updateUiByStartAuth, cameraDateGatherView=com.tencent.could.huiyansdk.view.CameraDateGatherView{aca1e71 I.E...... ......ID 125,314-595,948 #7f0a17d2 app:id/txy_camera_gather_view}
+2026-07-19 16:47:19.356 8123-6829/id.dana DEBUG/CameraHolderImp: [ai-camera-debug]start camera preview
+2026-07-19 16:47:19.416 8123-6829/id.dana DEBUG/CameraHolderImp: [ai-camera-debug]start camera preview success
+2026-07-19 16:47:19.416 8123-6829/id.dana DEBUG/AuthingFragment: on preview succeed!
+2026-07-19 16:47:19.416 8123-6829/id.dana DEBUG/TuringSdkHelper: start set event first frame time out!
+2026-07-19 16:47:19.416 8123-6829/id.dana DEBUG/AuthingFragment: start PrepareFaceTimeOutMs
+2026-07-19 16:47:19.444 8123-2/id.dana DEBUG/TimeOutHelper: start count down: 40000
+2026-07-19 16:47:19.471 8123-2/id.dana DEBUG/TimeOutHelper: on tick: 39972
+2026-07-19 16:47:19.787 8123-6829/id.dana DEBUG/TuringSdkHelper: remove first frame time out event!
+2026-07-19 16:47:19.787 8123-6829/id.dana DEBUG/VideoRecorderManager: start thread encoder video!
+2026-07-19 16:47:19.818 8123-6845/id.dana DEBUG/AuthingFragment: state: ON_FIRST_FOUND_FACE
+2026-07-19 16:47:19.818 8123-6845/id.dana DEBUG/AuthingFragment: >>>first found the face. start AuthTimeOutMs
+2026-07-19 16:47:19.818 8123-6845/id.dana ERROR/AuthStateManager: found face!
+2026-07-19 16:47:20.186 8123-6846/id.dana DEBUG/VideoRecorderManager: mediaMuxer.start()
+2026-07-19 16:47:20.472 8123-2/id.dana DEBUG/TimeOutHelper: on tick: 38971
+2026-07-19 16:47:20.851 8123-6817/id.dana DEBUG/OverSeas_TuringSdkImp: onFinishFrameCheck
+2026-07-19 16:47:20.853 8123-6817/id.dana ERROR/HuiYanOsApiImp: onStreamRiskDataSuccess!
+2026-07-19 16:47:21.129 8123-6845/id.dana ERROR/HuiYanSdkImp: <auth event>: BLINK_CHECK
+2026-07-19 16:47:21.129 8123-6845/id.dana DEBUG/AuthingFragment: state: ON_ENTRY_OTHER_ACTION
+2026-07-19 16:47:21.129 8123-6845/id.dana DEBUG/AuthingFragment: >>>enter other action. start AuthTimeOutMs
+2026-07-19 16:47:21.129 8123-2/id.dana DEBUG/TimeOutHelper: start count down: 40000
+2026-07-19 16:47:21.130 8123-2/id.dana DEBUG/TimeOutHelper: on tick: 39998
+2026-07-19 16:47:22.131 8123-2/id.dana DEBUG/TimeOutHelper: on tick: 38997
+2026-07-19 16:47:23.132 8123-2/id.dana DEBUG/TimeOutHelper: on tick: 37997
+2026-07-19 16:47:24.143 8123-2/id.dana DEBUG/TimeOutHelper: on tick: 36985
+2026-07-19 16:47:24.673 8123-6845/id.dana ERROR/HuiYanSdkImp: <auth event>: BLINK_CHECK_DONE
+2026-07-19 16:47:25.144 8123-2/id.dana DEBUG/TimeOutHelper: on tick: 35984
+2026-07-19 16:47:25.623 8123-6845/id.dana ERROR/HuiYanSdkImp: <auth event>: ALL_ACTION_DONE
+2026-07-19 16:47:25.654 8123-2/id.dana ERROR/HuiYanSdkImp: <auth event>: REFLECT_CHECK
+2026-07-19 16:47:28.008 8123-6845/id.dana ERROR/YouTuSdkHelper: send live compare result.
+2026-07-19 16:47:28.008 8123-6845/id.dana ERROR/HuiYanSdkImp: get compare result data.
+2026-07-19 16:47:28.008 8123-6845/id.dana ERROR/AuthStateManager: do live compare result
+2026-07-19 16:47:28.008 8123-6845/id.dana DEBUG/VideoRecorderManager: startEncoder: YtEventUpdateThread
+2026-07-19 16:47:28.039 8123-6846/id.dana DEBUG/VideoRecorderManager: release lock notifyAll, save video ok!
+2026-07-19 16:47:28.039 8123-6880/id.dana ERROR/VideoRecorderManager: cutDurationSeconds: 2000
+2026-07-19 16:47:28.083 8123-6880/id.dana ERROR/VideoRecorderManager: videoAllTime: 7937800
+2026-07-19 16:47:28.149 8123-6880/id.dana DEBUG/VideoRecorderManager: getTempLongTimeVideoPath: pool-112-thread-6
+2026-07-19 16:47:28.149 8123-6880/id.dana DEBUG/VideoRecorderManager: Video recording already stopped, starting cut process
+2026-07-19 16:47:28.150 8123-6880/id.dana ERROR/VideoRecorderManager: cutDurationSeconds: 15000
+2026-07-19 16:47:28.176 8123-6880/id.dana ERROR/VideoRecorderManager: videoAllTime: 7937800
+2026-07-19 16:47:28.176 8123-6880/id.dana ERROR/VideoRecorderManager: use order video!
+2026-07-19 16:47:28.176 8123-6880/id.dana DEBUG/AuthStateManager: long video path: /data/user/0/id.dana/files/cloud-huiyan/video/temp.mp4
+2026-07-19 16:47:28.180 8123-6882/id.dana DEBUG/TuringSdkHelper: remove compare check all listener
+2026-07-19 16:47:28.180 8123-6882/id.dana ERROR/AuthStateManager: start compare.
+2026-07-19 16:47:28.180 8123-6882/id.dana DEBUG/AuthingFragment: state: AUTH_END
+2026-07-19 16:47:28.180 8123-6882/id.dana DEBUG/AuthingFragment: >>>start auth end.
+2026-07-19 16:47:28.180 8123-6882/id.dana ERROR/HuiYanSdkImp: <auth event>: LOCAL_DETECTION_DONE
+2026-07-19 16:47:28.180 8123-2/id.dana ERROR/AuthingFragment: releaseDeviceRes!
+2026-07-19 16:47:28.180 8123-2/id.dana DEBUG/CameraHolderImp: [ai-camera-debug]do close camera
+2026-07-19 16:47:28.205 8123-6881/id.dana DEBUG/AuthStateManager: long video info: 1307804
+2026-07-19 16:47:28.205 8123-6881/id.dana ERROR/HuiYanOsApiImp: get all video info: 1307804
+2026-07-19 16:47:28.218 8123-6881/id.dana DEBUG/HuiYanResultSender: sendAllFullVideoString urlList:https://liveness-id.faceid.qq.com/api/sdk/monitor/crypt/reportFullProcess?token=E58663E1-3261E-024906-B3EC-84C8429FCF4D
+2026-07-19 16:47:28.311 8123-2/id.dana DEBUG/CameraHolderImp: [ai-camera-debug]close camera success！
+2026-07-19 16:47:28.311 8123-2/id.dana DEBUG/CameraHolder: [ai-camera-debug]clean handler and thread
+2026-07-19 16:47:28.340 8123-6881/id.dana ERROR/VideoRecorderManager: deleteTempVideo: /data/user/0/id.dana/files/cloud-huiyan/video/temp.mp4
+2026-07-19 16:47:28.341 8123-2/id.dana DEBUG/YouTuSdkHelper: YT_TAG: YtFSM, Msg: [YTLog]-[ERROR]-Event listener not init
+2026-07-19 16:47:28.458 8123-6882/id.dana DEBUG/LanguageManager: reset local: id ID
+2026-07-19 16:47:28.458 8123-6882/id.dana DEBUG/VideoRecorderManager: freeAndRelease
+2026-07-19 16:47:28.487 8123-2/id.dana DEBUG/CommonUtils: fragment instanceof AuthingFragment!
+2026-07-19 16:47:28.487 8123-2/id.dana ERROR/AuthingFragment: releaseDeviceRes!
+2026-07-19 16:47:28.487 8123-2/id.dana DEBUG/YouTuSdkHelper: YT_TAG: YtSDKKitFramework, Msg: [YTLog]-[ERROR]-YouTu SDK Kit framework is not started!!!
+2026-07-19 16:47:29.257 8123-2/id.dana DEBUG/HuiYanResultSender: sendAllFullVideoString onSuccess:{"code":0,"message":"success"}
+2026-07-19 16:47:30.475 8123-2/id.dana DEBUG/HuiYanResultSender: DO_COMPARE onSuccess
+2026-07-19 16:47:30.478 8123-2/id.dana DEBUG/FaceCheckFragment: onSuccessResultData: {"code":0,"data":{"ResultCode":"0","BestFrame":"","TryTimes":4,"Sim":100,"SdkToken":"E58663E1-3261E-024906-B3EC-84C8429FCF4D"},"message":"success"}
+2026-07-19 16:47:30.521 8123-2/id.dana ERROR/OperateInfoManager: 007 upload info: {"DeviceModel":"V2352","DeviceToken":"9419c4e05f164965bc0bfaf10079c545","ErrorCode":"0","ErrorMessage":"Success","NetWorkType":"","OsVersion":"android-36","PackageName":"id.dana","PackageVersion":"2.134.0","Platform":"Android","SdkName":"HuiYanSDK_Overseas","SdkVersion":"v1.0.10.12","Token":"E58663E1-3261E-024906-B3EC-84C8429FCF4D","TuringVersion":"3.0.1","YouTuVersion":"1.2.20.611.1","Actions":[{"action":"StartHuiYanSdk","done":1,"info":"","timestamp":1784454436999,"value":1},{"action":"StartYTAuthUseTime","done":1,"info":"","timestamp":1784454437049,"value":11},{"action":"GetConfigUseTime","done":1,"info":"","timestamp":1784454439027,"value":79},{"action":"GetLiveTypeDateUseTime","done":1,"info":"url info:{liveness-id.faceid.qq.com\u003dcode: 200 msg: OK}","timestamp":1784454439330,"value":300},{"action":"MakePackUseTime","done":1,"info":"","timestamp":1784454448007,"value":114},{"action":"GetCompareResultUseTime","done":1,"info":"url info: {liveness-id.faceid.qq.com\u003dcode: 200 msg: OK}","timestamp":1784454450475,"value":2065},{"action":"LocalCheckUseTime","done":1,"info":"","timestamp":1784454448362,"value":9032},{"action":"GetLiveTypeData","done":1,"info":"","timestamp":1784454439330,"value":1},{"action":"StartCamera","done":1,"info":"","timestamp":1784454439416,"value":1},{"action":"LocalCheck","done":1,"info":"","timestamp":1784454448180,"value":1},{"action":"LocalVideo","done":1,"info":"","timestamp":1784454448373,"value":1},{"action":"Compare","done":1,"info":"","timestamp":1784454450519,"value":1},{"action":"Crash","done":1,"info":"","timestamp":1784454437036,"value":0},{"action":"LocalVideoSize","done":1,"info":"","timestamp":1784454448374,"value":392},{"action":"LivenessPackSize","done":1,"info":"","timestamp":1784454448362,"value":603},{"action":"SendPackSize","done":1,"info":"","timestamp":1784454448410,"value":828},{"action":"YTCatchError","done":1,"info":"[]","timestamp":1784454448007,"value":0},{"action":"UserCancel","done":0,"info":"","timestamp":0,"value":0},{"action":"ShowPrivacyDialog","done":0,"info":"","timestamp":0,"value":0},{"action":"ShowProtocolPage","done":0,"info":"","timestamp":0,"value":0},{"action":"GetTuringTokenSuccess","done":1,"info":"","timestamp":1784454438947,"value":1},{"action":"GetConfigSuccess","done":1,"info":"","timestamp":1784454437765,"value":1},{"action":"GetTuringTokenUseTime","done":1,"info":"","timestamp":1784454438947,"value":1180},{"action":"GetConfigDataUseTime","done":1,"info":"","timestamp":1784454437760,"value":300},{"action":"GetLocalFullVideoSuccess","done":1,"info":"1277","timestamp":1784454448343,"value":1},{"action":"ShowErrorPopup","done":0,"info":"","timestamp":0,"value":0},{"action":"OpenCameraUseTime","done":1,"info":"","timestamp":1784454439416,"value":2138},{"action":"PrepareStageUseTime","done":1,"info":"","timestamp":1784454439456,"value":2180},{"action":"CameraPermissionSuccess","done":1,"info":"","timestamp":1784454437276,"value":1},{"action":"PrepareGetConfig","done":1,"info":"","timestamp":1784454437276,"value":1},{"action":"EnterLiveness","done":1,"info":"","timestamp":1784454439456,"value":1},{"action":"EnterUserFace","done":1,"info":"","timestamp":1784454439817,"value":1},{"action":"EnterFaceQuality","done":0,"info":"","timestamp":0,"value":0},{"action":"EnterFaceAction","done":1,"info":"","timestamp":1784454441129,"value":1},{"action":"EnterFaceReflection","done":1,"info":"","timestamp":1784454445626,"value":1},{"action":"FaceTipsCount","done":1,"info":"{\"net_fetch_data\":2,\"fl_pose_keep\":67,\"net_reporting\":1,\"fl_act_blink\":79,\"fl_pose_closer\":49}","timestamp":1784454450519,"value":1}]}
+2026-07-19 16:47:30.521 8123-2/id.dana ERROR/OperateInfoManager: real upload info!
+2026-07-19 16:47:30.522 8123-2/id.dana DEBUG/AuthingFragment: on exit.
+2026-07-19 16:47:30.522 8123-2/id.dana DEBUG/BaseFragment: on exit.
+2026-07-19 16:47:30.522 8123-2/id.dana DEBUG/BaseActivity: on finish.
+2026-07-19 16:47:30.523 8123-6885/id.dana ERROR/OperateInfoManager: real upload! https://liveness-id.faceid.qq.com/api/sdk/monitor/crypt/reportEKYC?token=E58663E1-3261E-024906-B3EC-84C8429FCF4D
+2026-07-19 16:47:30.836 8123-2/id.dana DEBUG/BuriedPointManager: upload buried info success!
+2026-07-19 16:47:30.958 8123-2/id.dana DEBUG/OperateInfoManager: upload 007 info success! {"code":0,"message":"success"} urlInfo: {liveness-id.faceid.qq.com=code: 200 msg: OK}
+2026-07-19 16:47:31.074 8123-2/id.dana DEBUG/AuthingFragment: on stop begin.
+2026-07-19 16:47:31.075 8123-2/id.dana DEBUG/AuthingFragment: current finish, not show error.
+2026-07-19 16:47:31.076 8123-2/id.dana DEBUG/BaseActivity: on destroy.
+2026-07-19 16:47:31.082 8123-2/id.dana DEBUG/BaseFragment: on destroy.
+2026-07-19 16:47:31.082 8123-2/id.dana ERROR/AuthingFragment: releaseDeviceRes!
+2026-07-19 16:47:31.083 8123-2/id.dana DEBUG/YouTuSdkHelper: YT_TAG: YtSDKKitFramework, Msg: [YTLog]-[ERROR]-YouTu SDK Kit framework is not started!!!
+2026-07-19 16:47:31.083 8123-2/id.dana DEBUG/AuthingFragment: on destroy begin.
+2026-07-19 16:47:31.083 8123-2/id.dana DEBUG/VideoRecorderManager: freeAndRelease
+2026-07-19 16:47:31.083 8123-2/id.dana DEBUG/AuthingFragment: on destroy end.
+2026-07-19 16:47:31.092 8123-2/id.dana DEBUG/OperateInfoManager: upload 007 info success! {"code":0,"message":"success"}

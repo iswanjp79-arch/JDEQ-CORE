@@ -1,0 +1,215 @@
+=== MICO-P2-STRUCTURE-CHECK-001 · 20260916-064515 ===
+Mode: READ-ONLY · Tidak mengubah apa pun
+
+--- [1] STATUS DRIVE D ---
+
+Name        : D
+Root        : D:\
+Used        : 615909924864
+Free        : 373555744768
+Description : KUMPULAN DATA
+
+
+--- [2] STRUKTUR TOP-LEVEL D:\ ---
+
+Name                      LastWriteTime
+----                      -------------
+_MOVE_FROM_GD             07/09/2026 2:35:55
+$RECYCLE.BIN              10/08/2026 18:18:29
+00_JDEQ_SYSTEM_CORE       06/09/2026 5:21:12
+01_ENGINEERING_WORKS      17/08/2026 2:45:41
+02_DEV_ENVIRONMENT        07/09/2026 2:53:08
+03_DOCUMENTS_PERSONAL     07/09/2026 2:53:09
+04_DEVICE_BACKUPS         07/09/2026 2:49:53
+98_ENTERTAINMENT          07/09/2026 2:53:12
+99_ARCHIVE_AND_TRANSIT    07/09/2026 2:51:42
+AI_LOCAL_MICO             24/08/2026 14:42:35
+APP_CACHE_MIRROR          14/09/2026 15:36:09
+BACKUP_CHROME_PROFILES    07/09/2026 2:54:15
+backup_drive_e            07/09/2026 2:53:13
+HERMES_SYSTEM_CORE        03/09/2026 14:43:26
+ISO                       07/09/2026 2:48:24
+JDEQ_Tools                07/09/2026 2:54:19
+KARANTINA_L0              07/09/2026 2:35:55
+KUMPULAN DATA             31/08/2026 21:59:41
+MICO                      07/09/2026 3:32:40
+MICO_ARCHIVE              07/09/2026 12:13:10
+MICO_ARCHIVE_G            07/09/2026 2:54:20
+MICO_AUTOMATION           26/08/2026 18:46:31
+MICO_BACKUP               10/09/2026 2:42:54
+MICO_DROPZONE_EDUKASI     07/09/2026 22:46:24
+MICO_EVIDENCE             07/09/2026 2:38:07
+MICO_PORTABLE_ENGINE      24/08/2026 8:30:08
+MICO_PROJECTS             07/09/2026 2:38:07
+MICO_RECOVERY             07/09/2026 2:53:13
+MICO_RUNTIME              07/09/2026 2:38:07
+MICO_SSOT                 15/09/2026 19:20:25
+MICO-CORE                 01/09/2026 23:27:30
+MICO-DATA                 02/09/2026 1:24:03
+MICO-EVIDENCE             03/09/2026 5:09:45
+MICO-QUEUE                02/09/2026 1:24:03
+OBSIDIAN                  03/09/2026 2:30:48
+OFFLOAD_SYSTEM_C          07/09/2026 2:54:20
+System Volume Information 24/08/2026 5:44:45
+TEMP                      08/09/2026 20:27:43
+TeraBoxDownload           07/09/2026 2:31:34
+USER_DATA_ARCHIVE         07/09/2026 2:54:19
+WSL                       26/08/2026 2:29:05
+WSL_Backup                07/09/2026 3:05:57
+WSL_DISTROS               25/08/2026 2:39:43
+WSL_MIGRATION_BACKUP      07/09/2026 3:04:56
+WSL_STORAGE               26/08/2026 2:31:42
+WSL_STORE                 04/09/2026 19:26:22
+
+
+--- [3] CEK MICO_SSOT ---
+OK: D:\MICO_SSOT DITEMUKAN
+
+--- [3a] Isi D:\MICO_SSOT (1 level) ---
+
+Mode  LastWriteTime       Name
+----  -------------       ----
+d--h- 16/09/2026 4:24:49  .git
+d---- 15/09/2026 10:39:09 00_QUARANTINE
+d---- 15/09/2026 10:39:10 02_DATA
+d---- 15/09/2026 10:39:10 06_APLIKASI
+d---- 16/09/2026 6:00:19  08_EVIDENCE
+d---- 16/09/2026 4:12:14  09_GOVERNANCE
+d---- 14/09/2026 1:28:12  09_INDEX
+d---- 16/09/2026 0:13:30  12_BACKUP
+d---- 15/09/2026 10:39:16 99_ARCHIVE
+d---- 13/09/2026 19:04:12 L3-backups
+d---- 15/09/2026 10:39:17 L3-modules
+d---- 14/09/2026 2:37:03  L5-modules
+d---- 14/09/2026 4:00:05  L6-modules
+d---- 14/09/2026 4:35:13  L7-modules
+d---- 15/09/2026 10:21:44 TREE_L
+d---- 15/09/2026 10:21:44 TREE-L
+-a--- 15/09/2026 21:15:24 .gitignore
+-a--- 15/09/2026 10:21:44 BASELINE_HASHES.json
+-a--- 10/09/2026 5:06:57  capture_sheet_email.py
+-a--- 15/09/2026 10:21:44 capture_sheet_store.py
+-a--- 15/09/2026 10:21:44 MANUAL_BOOK_MICO_JDEQ.md
+-a--- 15/09/2026 10:21:44 test_suite_final_v2.ps1
+-a--- 15/09/2026 10:21:44 test_tarik_sheet.py
+-a--- 15/09/2026 10:21:44 UU_MICO_JDEQ.md
+
+
+--- [3b] Struktur 2 level ---
+[.git]
+    └─ hooks
+    └─ info
+    └─ logs
+    └─ objects
+    └─ refs
+[00_QUARANTINE]
+    └─ DUP
+    └─ JUNK
+[02_DATA]
+    └─ INDEX
+[06_APLIKASI]
+    └─ __pycache__
+    └─ kernel
+    └─ venv_tools
+[08_EVIDENCE]
+    └─ 3L-TEST
+    └─ alert
+    └─ alert_engine
+    └─ baseline
+    └─ execution_guard
+    └─ external_sync
+    └─ EXTRACT-OHSAS-001
+    └─ IMPORT-VIVO-Y28
+    └─ jarvis_breach
+    └─ KERNEL
+    └─ L1
+    └─ L1.5
+    └─ L1.6
+    └─ L2
+    └─ l3tc03-perimeter
+    └─ l4-final
+    └─ l4-m1
+    └─ l4-m2
+    └─ l4-m3
+    └─ l4-m4
+    └─ l4-m5
+    └─ L5_SECURITY
+    └─ L7_COLLAB
+    └─ L7_Z83_INFINIX
+    └─ L7-OPERATIONAL
+    └─ observer
+    └─ paralel
+    └─ path_safety
+    └─ pc5_collector
+    └─ PIPELINE_JPG
+    └─ PIPELINE_PDF
+    └─ prechange
+    └─ PROBE-V3-20260916-004153
+    └─ PROMPTFOO-INSTALL
+    └─ PROMPTFOO-RUNS
+    └─ ssh
+    └─ VAULT_DATA
+[09_GOVERNANCE]
+    └─ ACC_LOG
+    └─ ADR
+    └─ AGENT_ERRORS
+    └─ ARCHITECTURE
+    └─ DECREE
+    └─ DOKTRIN
+    └─ L4-DESIGN
+    └─ L5-DESIGN
+    └─ L5-LEDGER
+    └─ L6-ANALYTICS
+    └─ L7-COMMAND
+    └─ NODE-INVENTORY
+    └─ P1-PLANNING
+    └─ P2-DESIGN
+    └─ PAYLOAD
+    └─ scripts
+    └─ TOOLS
+[09_INDEX]
+[12_BACKUP]
+    └─ git-mirror
+    └─ MONUMENTS
+[99_ARCHIVE]
+    └─ ROOT_FILES_LEGACY
+    └─ TREE_L_LEGACY
+[L3-backups]
+    └─ hpmini-grub
+[L3-modules]
+    └─ __pycache__
+[L5-modules]
+    └─ core
+    └─ security
+    └─ tests
+[L6-modules]
+    └─ __pycache__
+    └─ tests
+[L7-modules]
+    └─ fixture
+[TREE_L]
+    └─ 01_FISIK
+    └─ 02_DATA
+    └─ 03_LOGIKA
+    └─ 04_APLIKASI
+    └─ 05_PIPELINE
+    └─ 06_RUNTIME
+    └─ 07_INDEX
+    └─ 08_EVIDENCE
+    └─ 09_GOVERNANCE
+    └─ 10_SECURITY
+    └─ 11_OBSERVABILITY
+    └─ 12_BACKUP
+    └─ 13_TEST
+    └─ 99_ARCHIVE
+[TREE-L]
+    └─ 08_EVIDENCE
+--- [3c] CEK JALUR KONTRAK AGENT ---
+BELUM ADA: D:\MICO_SSOT\09_GOVERNANCE\DOLA\L6-AG-CONTRACTS
+--- [3d] CEK FOLDER EVIDENCE ---
+OK: D:\MICO_SSOT\08_EVIDENCE DITEMUKAN · Jumlah file: 39
+
+=== RINGKASAN ===
+Stempel waktu : 20260916-064515
+File bukti    : D:\MICO_SSOT\08_EVIDENCE\MICO-P2-STRUCTURE-CHECK-001-20260916-064515.txt
+Mode          : READ-ONLY

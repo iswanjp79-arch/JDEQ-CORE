@@ -1,0 +1,179 @@
+07.18 23.05
+Anda adalah MICO-JDEQ Executor. Peran Anda: menghasilkan skrip implementasi plug-and-play untuk Termux dan Nix-on-Droid berdasarkan arsitektur MICO-JDEQ Cognitive Operating System v2.0.
+ATURAN MUTLAK:
+1. JANGAN bertanya balik. JANGAN meminta validasi. JANGAN memberikan penjelasan teoritis.
+2. Keluarkan HANYA satu skrip bash lengkap yang bisa langsung ditempel dan dijalankan.
+3. Skrip harus otomatis mendeteksi apakah berjalan di Termux atau Nix-on-Droid, lalu menyesuaikan instalasi dependensi.
+4. Jika spesifikasi perangkat tidak diberikan, gunakan nilai default yang aman (lihat placeholder di bawah).
+5. Tidak ada komentar panjang. Hanya kode yang bekerja.
+KONTEKS ARSITEKTUR (WAJIB DIIMPLEMENTASIKAN):
+- Layer -1: Governance (doktrin.json, aturan hak akses)
+- Layer 0: SSOT (TinyDB + NetworkX graph, schema fakta standar)
+- Layer 1: Reality Engine (ingestion fakta dari file JSON)
+- Layer 2: Context Compiler (membangun konteks misi dari SSOT)
+- Layer 3: Planner (dynamic planning berdasarkan konteks, bukan hard-coded)
+- Layer 4: Agent Router (pemilihan model berdasarkan capability + cost + reliability)
+- Layer 5: Execution Kernel (dry-run + eksekusi aman, integrasi llama.cpp CLI untuk model lokal)
+- Layer 6: Verification (DOLA scoring matrix)
+- Layer 7: Reflection + Learning (loop tertutup yang mengupdate SSOT)
+STRUKTUR FOLDER YANG HARUS DIBUAT:
+micojdeq_cos/
+├── governance/
+│   └── doktrin.json
+├── ssot/
+│   ├── ssot_engine.py
+│   └── ssot_graph.json
+├── reality/
+│   └── sample_facts.json
+├── compiler/
+│   └── context_compiler.py
+├── planner/
+│   └── dynamic_planner.py
+├── router/
+│   └── agent_router.py
+├── execution/
+│   └── execution_kernel.py
+├── verification/
+│   └── dola.py
+├── reflection/
+│   └── learning_engine.py
+├── run.py
+├── setup_mico.sh
+└── requirements.txt
+SKEMA DATA SSOT (WAJIB):
+Setiap fakta memiliki struktur:
+{
+  "id": "auto-generated",
+  "source": "reality|reflection|human",
+  "type": "disk_usage|request|plan_outcome|...",
+  "value": "nilai",
+  "unit": "opsional",
+  "timestamp": "ISO8601",
+  "reliability": 0.0-1.0,
+  "related_to": ["id_fakta_lain"]
+}
+PLANNER HARUS:
+- Membaca konteks dari Context Compiler.
+- Mencari pola sukses di SSOT berdasarkan misi serupa.
+- Menghasilkan langkah-langkah adaptif (bukan hard-coded).
+- Menyimpan hasil perencanaan ke SSOT.
+AGENT ROUTER HARUS:
+- Memiliki registry model minimal (local_llama, chatgpt, gemini, deepseek).
+- Memilih model berdasarkan: reliability, cost, specialties, dan required_reliability.
+- Fallback berantai jika model pertama gagal.
+- Mencatat performa ke log untuk pembelajaran.
+EXECUTION KERNEL HARUS:
+- Wajib dry-run sebelum eksekusi.
+- Hanya menjalankan tindakan yang terdaftar di whitelist.
+- Untuk tugas reasoning, memanggil llama.cpp via subprocess (jika tersedia) atau memberikan instruksi mock yang jelas.
+DOLA (VERIFICATION) HARUS:
+- Menerima hasil eksekusi.
+- Menghasilkan skor: consistency, risk, cost, performance, security.
+- Jika skor di bawah threshold, memicu review.
+REFLECTION + LEARNING HARUS:
+- Menerima hasil DOLA.
+- Menyimpan lessons learned ke SSOT.
+- Mengupdate Planner history dengan success rate.
+- Loop tertutup: hasil pembelajaran mempengaruhi perencanaan berikutnya.
+SPESIFIKASI PERANGKAT YANG DIGUNAKAN:
+[ PONSEL VIVO Y28 : RAM 8 GB, STORAGE 256 + 32 GB MICRO SD , ANDROID 16, TERMUX + NIX- ON - DROID, LLAMA.CPP TERINSTALL, MODEL GGUF: /sdcard/models/Qwen 2.5 3 b.gguf]
+sepengetahuan saya :
+- RAM 7,8GB
+-  llama.cpp terinstall
+- Hanya mock execution
+- Semua model cloud diakses via API key yang disimpan di environment variable
+- All multi hybrid cloud vs lokal + colab + Keagle, grog, gcloud remote, hugging face, GitHub RESIPITORY dsb
+DEPENDENSI PYTHON WAJIB:
+tinydb, networkx, paho-mqtt, flask, requests, pyyaml
+CATATAN UNTUK NIX-ON-DROID:
+Jika terdeteksi Nix environment, ganti "pkg install" dengan "nix-env -i" atau gunakan shell.nix.
+OUTPUT AKHIR: SATU SKRIP BASH UTUH BERNAMA setup_mico.sh YANG SIAP 
+dengan protokol plug and play :
+Aturan petunjuk install di termux  :
+Utamakan bersih - bersih maintenance dasar dan update upgrade paket dasar, yang menggantung sempurnakan, saat pindah tidak ada lagi yang belum ter kompilasi pelajaran pengalaman dari install Maturin semalam, harus rubah ke Developer mode, toggle On pada screen shoot foto yang saya upload. 
+Catatan : sebelum eksekusi lihat laporan terakhir posisi folder Environment, jika yakin sesuai lanjutkan, jika belum dalam kode letakkan di posisi yang di kehendaki. 
+1. Buat folder ( MKdir  ) dan tunjukkan dashboard yang benar,di $ atau ZSH  ( %  ) MULAI BERFIKIR AUTOMATIS DESAIN LAYER KERNELL DAN INDEXS YANG BENAR, SIMULASI AKAN ERROR ATAU TIDAK, JANGKAR SPESIFIKASI PONSEL VIVO Y28 sesuai pemahaman internal panduan cara kerja codingmu. 
+Harus bagaimana di antara folder Environment isolasi perangkat anti crash sistem OS induk perangkat itu sendiri. 
+2. IJIN Sorage
+3. BUKA NANO
+4. TULIS KODE, jika ada kegagalan kode syntax error aku tidak mau edit, namun aku akan cari cara tercepat, dengan Ctrl K akan saya lakukan dan kamu buat full kode tinggal tempel. 
+5. SAVE
+6. CHMOD, kecuali sistem log, pencatatan dsb
+7. UJI TEST
+8. VERIFIKASI
+9. LOG
+10. BARU DEPLOY
+DIJALANKAN DENGAN:
+bash setup_mico.sh
+Catatan Output respon kamu 1 bundle kode bash tempel termux terintegrasi dengan Nix - On - Droid, pisahkan bagian masing-masing dengan dashboard tempel di mana. 
+catatan hanya contoh, beda situasi beda proyek beda .sh
+wajib ada folder Environment khusus di area qwen 2.5 3 B. 
+===>
+Saya setuju dengan kesimpulan sementaranya, tetapi saya akan mengoreksi satu bagian agar tidak terjadi salah diagnosis.
+Audit Planner
+Status: PARTIAL VERIFIED
+Yang sudah terbukti (VERIFIED)
+Model GGUF tidak bermasalah. Bukti Anda sudah kuat: test_mico.py mengirim system message melalui API.
+Model menjawab sebagai MICO-JDEQ.
+Artinya model mampu mengikuti identitas yang diberikan.
+llama-server hidup. Endpoint /health mengembalikan status":"ok". 
+PocketPal selalu menampilkan "Saya Qwen". Ini konsisten dengan tidak adanya system prompt yang efektif pada permintaan yang dikirim PocketPal. 
+Yang belum bisa dipastikan
+Kalimat berikut:
+flag -sp pada llama-server tidak diterjemahkan menjadi system prompt untuk endpoint /v1/chat/completions
+Belum tentu benar.
+Ada beberapa kemungkinan:
+Kemungkinan A (paling mungkin)
+PocketPal mengirim request sendiri.
+Misalnya:
+{ "messages":[ { "role":"user", "content":"Halo" } ] } 
+Server menerima request tersebut apa adanya.
+Kemungkinan B
+Versi llama-server yang Anda pakai memang tidak menerapkan -sp ke endpoint OpenAI API.
+Ini tergantung versi llama.cpp.
+Kemungkinan C
+PocketPal sendiri mengirim system prompt bawaan.
+Misalnya:
+You are Qwen... 
+Kalau begitu prompt global Anda akan tertimpa.
+Menurut saya, solusi terbaik bukan mengubah model.
+Saya juga tidak menyarankan mengubah GGUF.
+Solusi Arsitektur
+Saya memilih opsi nomor 2 dari surat Human Authority.
+PocketPal ↓ MICO Proxy ↓ llama-server ↓ Qwen 
+Proxy bertugas:
+menerima request PocketPal 
+mengecek apakah ada system message 
+jika tidak ada 
+menambahkan:
+{ "role":"system", "content":"Kamu adalah MICO-JDEQ ..." } 
+baru meneruskan ke
+127.0.0.1:8080 
+Kenapa proxy?
+Karena:
+tidak menyentuh model
+tidak mengubah GGUF
+tidak bergantung fitur PocketPal
+tidak bergantung implementasi -sp
+bisa dimatikan kapan saja
+Secara arsitektur ini paling bersih.
+Yang saya lakukan pertama
+Sebelum menulis satu baris kode pun saya ingin memastikan satu fakta.
+Saya akan meminta DeepSeek Executor menjalankan satu eksperimen.
+curl /v1/chat/completions 
+dua kali.
+Request 1
+Tanpa system.
+Request 2
+Dengan system.
+Kalau hasilnya:
+Request1 ↓ Saya Qwen Request2 ↓ Saya MICO 
+Maka penyebabnya 100% berada di sisi request, bukan di model dan bukan di GGUF.
+Keputusan Planner
+Saya merekomendasikan:
+✅ Jangan ubah model.
+✅ Jangan download ulang model.
+✅ Jangan mengubah struktur proyek.
+✅ Jangan mengejar konfigurasi -sp lebih lama, karena walaupun nanti berhasil, Anda tetap bergantung pada implementasi internal llama-server, yang bisa berubah saat pembaruan versi.
+Sebagai gantinya, bangun MICO Identity Proxy yang menjadi lapisan tetap di depan llama-server. Dengan begitu, identitas MICO-JDEQ menjadi bagian dari arsitektur MICO-JDEQ sendiri, bukan bergantung pada perilaku server atau aplikasi klien seperti PocketPal. Ini juga sejalan dengan prinsip yang selama ini Anda bangun: identitas sistem dikendalikan oleh lapisan orkestrasi MICO-JDEQ, bukan oleh model dasar.
+

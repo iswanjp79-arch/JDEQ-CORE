@@ -1,0 +1,7 @@
+05.16 21.07
+# =============== PENGATURAN WAJIB DIISI ===============
+# >> GANTI BAGIAN INI DENGAN ID FILE BAPAK SENDIRI! <<
+FILE_ID_DRIVE = "<<https://docs.google.com/document/d/1IpUoQK-5gFyFg3L4_6qppcHXtm6F-jUwODh6UeGU86Y/edit?usp=drivesdk >>" 
+# Contoh: FILE_ID_DRIVE = "123ABCxyz456_AbcDefGhi"
+# ======================================================
+

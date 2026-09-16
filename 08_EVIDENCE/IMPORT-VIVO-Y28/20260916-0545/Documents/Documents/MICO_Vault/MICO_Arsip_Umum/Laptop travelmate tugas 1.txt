@@ -1,0 +1,189 @@
+01.14 09.28
+Laptop travelmate tugas 1
+=====================
+# Perintah menghidupkan AI Lokal di Travelmate
+sudo systemctl enable --now mosquitto && ollama run llama3
+
+=========================
+# Simpan file di Laptop dulu
+cat << 'EOF' > jarvis_legacy_v13.json
+{
+  "SYSTEM_IDENTITY": "JARVIS_ZERO_TOUCH_v1.0",
+  "PHASE_12": {
+    "STATUS": "LEGACY_READY",
+    "HOST": "PythonAnywhere",
+    "SERVER": "Gunicorn/Uvicorn",
+    "DEPLOY": "python3 witness_log.py write_evidence 'legacy_deploy' '{\"target\":\"pythonanywhere\"}'"
+  },
+  "PHASE_13": {
+    "STATUS": "WIRELESS_SCRCPY",
+    "DEVICES": {
+      "VIVO_Y28": "192.168.1.100",
+      "INFINIX": "192.168.1.101",
+      "VIVO_Y1807": "192.168.1.102"
+    },
+    "CLI_COMMAND": "bash start-scrcpy-zero-touch.sh"
+  },
+  "AUTO_PILOT": "Enabled"
+}
+EOF
+
+# Kirim ke semua HP yang terdeteksi ADB
+for dev in $(adb devices | awk 'NR>1 && $2=="device" {print $1}'); do
+  echo " Mengirim ke perangkat: $dev"
+  adb -s $dev push jarvis_legacy_v13.json /sdcard/Download/
+done
+,==========================
+masing-masing ponsel dengan mengetik:
+ls /sdcard/Download/jarvis_legacy_v13.json
+=======================
+cat << 'EOF' > /usr/local/bin/update-semua-hp
+#!/bin/bash
+# Shortcut untuk deploy konfigurasi ke 3 HP sekaligus
+FILE="jarvis_legacy_v13.json"
+for dev in $(adb devices | awk 'NR>1 && $2=="device" {print $1}'); do
+  echo " Deploying $FILE to $dev..."
+  adb -s $dev push $FILE /sdcard/Download/
+done
+echo "✅ Sinkronisasi Selesai, Tuan."
+EOF
+
+sudo chmod +x /usr/local/bin/update-semua-hp
+==============================
+cat << 'EOF' > quantum-start-zero-touch.sh
+#!/bin/bash
+# =============================================================
+# ENCER-AI QUANTUM OVERCLOCK - SCRCPY AUTO-HEALING
+# =============================================================
+
+VIVO_Y28="192.168.1.100"
+INFINIX="192.168.1.101"
+VIVO_Y1807="192.168.1.102"
+
+monitor_device() {
+    local ip=$1; local title=$2; local x_pos=$3
+    while true; do
+        if ! adb devices | grep -q "$ip"; then
+            adb connect $ip:5555 >/dev/null 2>&1
+        fi
+        if ! pkill -0 -f "$title"; then
+            nohup scrcpy --serial=$ip:5555 --window-title="$title" \
+                --window-x=$x_pos --window-y=0 --window-size=600x1000 \
+                --bit-rate=1M --max-size=480 --max-fps=20 --always-on-top \
+                > /dev/null 2>&1 &
+        fi
+        sleep 5
+    done
+}
+
+monitor_device $VIVO_Y28 "VIVO_Y28_JARVIS" 0 &
+monitor_device $INFINIX "INFINIX_CHATGPT" 610 &
+monitor_device $VIVO_Y1807 "VIVO_Y1807_BACKUP" 1220 &
+echo " SILENT GUARDIAN ACTIVE: Monitoring 3 devices."
+EOF
+chmod +x quantum-start-zero-touch.sh
+=================================
+cat << 'EOF' > /home/user/EncerAI-Scrcpy/markas_notifier.sh
+#!/bin/bash
+# =============================================================
+# ENCER-AI MARKAS NOTIFIER - VIVO Y28 GATEWAY
+# =============================================================
+
+send_notif() {
+    local msg=$1
+    # Kirim ke Termux Vivo Y28 via Termux-API (jika terhubung)
+    adb -s 192.168.1.100:5555 shell "termux-toast -c yellow -b black '$msg'"
+    # Catat ke log Witness Grid
+    echo "$(date '+%Y-%m-%d %H:%M:%S') - $msg" >> /home/user/EncerAI-Scrcpy/logs/markas_event.log
+}
+
+# Fungsi ini akan dipanggil oleh quantum-start-zero-touch.sh
+export -f send_notif
+EOF
+
+chmod +x /home/user/EncerAI-Scrcpy/markas_notifier.sh
+===========================
+# Tambahkan baris pemanggil notifikasi ke dalam loop monitoring
+sed -i '/echo "⚠️/a \            send_notif \"⚠️ $title Terputus! Mencoba Re-Quantum...\"' quantum-start-zero-touch.sh
+sed -i '/nohup scrcpy/i \            send_notif \"✅ $title Terhubung Kembali!\"' quantum-start-zero-touch.sh
+===============================
+# Buat Folder Markas SSH
+mkdir -p /home/user/EncerAI-SSH/{config,scripts,keys,logs}
+
+# Buat Kunci Utama (Jika belum ada)
+if [ ! -f ~/.ssh/id_ed25519 ]; then
+    ssh-keygen -t ed25519 -N "" -f ~/.ssh/id_ed25519 -C "EncerAI-Master-Key"
+fi
+
+# Buat Konfigurasi SSH Terpusat
+cat << 'EOF' > /home/user/EncerAI-SSH/config/ssh_config
+Host *
+    IdentityFile ~/.ssh/id_ed25519
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+    Port 8022
+
+Host vivo-y28
+    HostName 192.168.43.100
+    User u0_a123
+
+Host infinix
+    HostName 192.168.43.101
+    User u0_a456
+
+Host vivo-y1807
+    HostName 192.168.43.102
+    User u0_a789
+EOF
+
+# Link ke sistem utama
+ln -sf /home/user/EncerAI-SSH/config/ssh_config ~/.ssh/config
+=========================
+import streamlit as st
+import pandas as pd
+import time
+
+# KONFIGURASI IDENTITAS (ISO-OHSAS STANDARD)
+st.set_page_config(page_title="JDEQ - DASHBOARD CDX", layout="wide")
+
+# HEADER - IDENTITAS TUAN
+st.markdown(f"### 🛡️ JDEQ COMMAND CENTER | USER: ISWAN JUMAN PANCORO, ST")
+st.write(f"Status: **FULL SYNC** | Node Active: 3 Phones + 1 Laptop")
+
+# COLUMNS UNTUK MONITORING 3 NODE (HP)
+col1, col2, col3 = st.columns(3)
+
+with col1:
+    st.info(" NODE-01: VIVO Y28")
+    st.metric(label="Role", value="AI ENGINE")
+    st.progress(85, text="Ollama Llama 3 Load")
+    st.write("Temp: 42°C | Status: Running")
+
+with col2:
+    st.success(" NODE-02: INFINIX")
+    st.metric(label="Role", value="CONTROLLER")
+    st.write("Uptime: 24/7 Active")
+    st.write("Gateway: Secured (SSH Active)")
+
+with col3:
+    st.warning(" NODE-03: VIVO Y1807")
+    st.metric(label="Role", value="DATA VAULT")
+    st.write("Sync Status: 100% (Rsync)")
+    st.write("Memory: 128GB (Storage)")
+
+st.divider()
+
+# AREA VISUAL LOG (GHOST SYNC)
+st.subheader("️ Witness Grid - Real Time Logs")
+log_data = {
+    "Timestamp": [time.strftime("%H:%M:%S")],
+    "Activity": ["Ghost Synchronization Detected"],
+    "Origin": ["Travelmate Laptop"],
+    "Status": ["Injected to all Nodes"]
+}
+st.table(pd.DataFrame(log_data))
+
+# TOMBOL DARURAT (STEALTH)
+if st.button(" ACTIVATE STEALTH MODE"):
+    st.error("Stealth Mode Active. All visual mirrors hidden.")
+

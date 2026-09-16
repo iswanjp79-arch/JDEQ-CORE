@@ -1,0 +1,8 @@
+03.08 08.35
+Anda upload:
+ 
+1. Prompt pertama: Akting jadi senior recruiter. Bandingin CV gue sama deskripsi kerjaan ini. Kasih gue skor kecocokan dari 100 dan sebutin 5 keyword penting yang belum ada di CV gue.
+​
+2. Prompt kedua: Pas AI-nya udah kasih keyword-nya, tetep di chat yang sama dan bilang: 'Tulis ulang bagian pengalaman kerja gue biar keyword-keyword itu masuk secara natural. Pake formula X-Y-Z Google: Berhasil mencapai X, yang diukur dengan Y, dengan cara ngelakuin Z.
+​
+3. Prompt ketiga: Ini penting banget: Sekarang akting jadi filter sistem ATS. Scan CV gue yang udah di-update dan kasih tau gue bagian mana yang kira-kira susah dibaca sama robot.

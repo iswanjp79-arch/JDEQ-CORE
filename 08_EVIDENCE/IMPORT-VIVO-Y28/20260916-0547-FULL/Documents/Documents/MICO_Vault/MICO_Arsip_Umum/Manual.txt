@@ -1,0 +1,463 @@
+02.14 00.32
+Manual  
+AIzaSyCR9eP5NondRjY5w3A7r1P4Ia-Kh2PqLu8
+AIzaSyAEqbXBBR8DkUXmTMHpsB5-hJf3CynnAxE
+AIzaSyCrx8lCu9awcMGDlM_tna06vvl8-9w6AxE
+AIzaSyB1N-adWR3ih8rulXH4l2L0173PUTOxgeo
+AIzaSyDKCKSEsSE0Owa_LS5SfpBgrv7kHQI4V9w
+AIzaSyDJ9fIOTdMD3K98zQKe9gWpGZ_D_Lb7ejM
+AIzaSyCTz4Lb6-_tBHDR__Nf0DBgDysXWS5NKME
+AIzaSyC14m79ZN7d2stOcc-ywxNOTaBVB5OgSw8
+AIzaSyAKdAunjFZpZ6IZ6b9gVkRWB_vE551HDiY
+AIzaSyBbkdaErT0x1q7iHBjVkUKPpQYL6qiZI2Q
+AIzaSyCEyz2YSveYGdcD5da73v2-V_U7zBZhg1c
+AIzaSyCRjqBCJu7cRnL9_6Ci6k7qycOYyREBgY8
+AIzaSyBnyj60WlAyMWM4nfXlFEF7n1elchIJLTQ
+AIzaSyBstGZ4kmUdNoDu6BCv36STGQGPRBam_hg
+
+check
+
+Projects imported successfully!
+
+Skip to main content
+
+API Keys
+
+Group by
+
+All projects
+
+Agen Co Pilot Microsoft
+
+gen-lang-client-0954656175
+
+Key
+
+Created on
+
+Quota tier
+
+...qLu8
+
+Gemini API JDEQ
+
+Jan 27, 2026
+
+Free tier
+
+...nAxE
+
+Gemini API JDEQ
+
+Jan 27, 2026
+
+Free tier
+
+...6AxE
+
+Co pilot agen Sahabatku
+
+Nov 23, 2025
+
+Free tier
+
+JARVIS QUANTUM
+
+gen-lang-client-0606918643
+
+Key
+
+Created on
+
+Quota tier
+
+...xgeo
+
+JARVIS QUANTUM EATERNA
+
+Nov 14, 2025
+
+Free tier
+
+OAI QUANTUM
+
+gen-lang-client-0666888960
+
+Key
+
+Created on
+
+Quota tier
+
+...4V9w
+
+OAI QUANTUM
+
+Nov 12, 2025
+
+Free tier
+
+OAI-QUANTUM-Key
+
+gen-lang-client-0696406705
+
+Key
+
+Created on
+
+Quota tier
+
+...7ejM
+
+OAI-QUANTUM-Key
+
+Nov 6, 2025
+
+Free tier
+
+OAI QUANTUM
+
+gen-lang-client-0298280551
+
+Key
+
+Created on
+
+Quota tier
+
+...NKME
+
+OAI QUANTUM EATERNA
+
+Nov 6, 2025
+
+Free tier
+
+aeterna-core-project
+
+gen-lang-client-0748585296
+
+Key
+
+Created on
+
+Quota tier
+
+...gSw8
+
+Gemini API Key
+
+Feb 7, 2026
+
+Free tier
+
+...HDiY
+
+Gemini API Key
+
+Feb 7, 2026
+
+Free tier
+
+...ZI2Q
+
+Gemini API Key
+
+Feb 7, 2026
+
+Free tier
+
+Jarvis EATERNA QUANTUM
+
+gen-lang-client-0555337287
+
+Key
+
+Created on
+
+Quota tier
+
+...hg1c
+
+JARVIS QUANTUM
+
+Nov 14, 2025
+
+Free tier
+
+...BgY8
+
+Jarvis EATERNA QUANTUM
+
+Nov 6, 2025
+
+Free tier
+
+aeterna-core-project
+
+gen-lang-client-0003050541
+
+Key
+
+Created on
+
+Quota tier
+
+...JLTQ
+
+Jarvis EATERNA QUANTUM
+
+Nov 6, 2025
+
+Free tier
+
+...m_hg
+
+aeterna-core-key-01
+
+Oct 17, 2025
+
+Free tier
+
+Can't find your API keys here?
+
+This list only shows API keys for projects imported into Google AI Studio. Import other projects to manage their associated API Keys. You can also create a new API Key above. Learn more  Key API GOOGLE AIzaSyCrx8lCu9awcMGDlM_tna06vvl8-9w6AxE
+
+2.  AIzaSyB1N-adWR3ih8rulXH4l2L0173PUTOxgeo
+
+3. AIzaSyDKCKSEsSE0Owa_LS5SfpBgrv7kHQI4V9w
+
+4. AIzaSyDJ9fIOTdMD3K98zQKe9gWpGZ_D_Lb7ejM
+
+5. AIzaSyCTz4Lb6-_tBHDR__Nf0DBgDysXWS5NKME
+
+6. AIzaSyBCUrG9zpaXQeifTt-1UHZygOrmnvmOkvY
+
+7. AIzaSyBnyj60WlAyMWM4nfXlFEF7n1elchIJLTQ
+
+8. AIzaSyBstGZ4kmUdNoDu6BCv36STGQGPRBam_hg :
+
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICCSwL9Is+otfkuuYaRe9lvSrQ2ECyfWaZoDbS5o+qur Jarvis-Executor
+Manual  ? 
+AIzaSyCR9eP5NondRjY5w3A7r1P4Ia-Kh2PqLu8
+AIzaSyAEqbXBBR8DkUXmTMHpsB5-hJf3CynnAxE
+AIzaSyCrx8lCu9awcMGDlM_tna06vvl8-9w6AxE
+AIzaSyB1N-adWR3ih8rulXH4l2L0173PUTOxgeo
+AIzaSyDKCKSEsSE0Owa_LS5SfpBgrv7kHQI4V9w
+AIzaSyDJ9fIOTdMD3K98zQKe9gWpGZ_D_Lb7ejM
+AIzaSyCTz4Lb6-_tBHDR__Nf0DBgDysXWS5NKME
+AIzaSyC14m79ZN7d2stOcc-ywxNOTaBVB5OgSw8
+AIzaSyAKdAunjFZpZ6IZ6b9gVkRWB_vE551HDiY
+AIzaSyBbkdaErT0x1q7iHBjVkUKPpQYL6qiZI2Q
+AIzaSyCEyz2YSveYGdcD5da73v2-V_U7zBZhg1c
+AIzaSyCRjqBCJu7cRnL9_6Ci6k7qycOYyREBgY8
+AIzaSyBnyj60WlAyMWM4nfXlFEF7n1elchIJLTQ
+AIzaSyBstGZ4kmUdNoDu6BCv36STGQGPRBam_hg
+
+check
+
+Projects imported successfully!
+
+Skip to main content
+
+API Keys
+
+Group by
+
+All projects
+
+Agen Co Pilot Microsoft
+
+gen-lang-client-0954656175
+
+Key
+
+Created on
+
+Quota tier
+
+...qLu8
+
+Gemini API JDEQ
+
+Jan 27, 2026
+
+Free tier
+
+...nAxE
+
+Gemini API JDEQ
+
+Jan 27, 2026
+
+Free tier
+
+...6AxE
+
+Co pilot agen Sahabatku
+
+Nov 23, 2025
+
+Free tier
+
+JARVIS QUANTUM
+
+gen-lang-client-0606918643
+
+Key
+
+Created on
+
+Quota tier
+
+...xgeo
+
+JARVIS QUANTUM EATERNA
+
+Nov 14, 2025
+
+Free tier
+
+OAI QUANTUM
+
+gen-lang-client-0666888960
+
+Key
+
+Created on
+
+Quota tier
+
+...4V9w
+
+OAI QUANTUM
+
+Nov 12, 2025
+
+Free tier
+
+OAI-QUANTUM-Key
+
+gen-lang-client-0696406705
+
+Key
+
+Created on
+
+Quota tier
+
+...7ejM
+
+OAI-QUANTUM-Key
+
+Nov 6, 2025
+
+Free tier
+
+OAI QUANTUM
+
+gen-lang-client-0298280551
+
+Key
+
+Created on
+
+Quota tier
+
+...NKME
+
+OAI QUANTUM EATERNA
+
+Nov 6, 2025
+
+Free tier
+
+aeterna-core-project
+
+gen-lang-client-0748585296
+
+Key
+
+Created on
+
+Quota tier
+
+...gSw8
+
+Gemini API Key
+
+Feb 7, 2026
+
+Free tier
+
+...HDiY
+
+Gemini API Key
+
+Feb 7, 2026
+
+Free tier
+
+...ZI2Q
+
+Gemini API Key
+
+Feb 7, 2026
+
+Free tier
+
+Jarvis EATERNA QUANTUM
+
+gen-lang-client-0555337287
+
+Key
+
+Created on
+
+Quota tier
+
+...hg1c
+
+JARVIS QUANTUM
+
+Nov 14, 2025
+
+Free tier
+
+...BgY8
+
+Jarvis EATERNA QUANTUM
+
+Nov 6, 2025
+
+Free tier
+
+aeterna-core-project
+
+gen-lang-client-0003050541
+
+Key
+
+Created on
+
+Quota tier
+
+...JLTQ
+
+Jarvis EATERNA QUANTUM
+
+Nov 6, 2025
+
+Free tier
+
+...m_hg
+
+aeterna-core-key-01
+
+Oct 17, 2025
+
+Free tier
+
+Can't find your API keys here?
+
+This list only shows API keys for projects imported into Google AI Studio. Import other projects to manage their associated API Keys. You can also create a new API Key above. Learn more

@@ -1,0 +1,269 @@
+08.02 12.49
+=======================================================================
+BLUEPRINT MICO-JDEQ
+Nomor: MICO-JDEQ/BLP/001/02082026
+Tanggal: 02 Agustus 2026
+Disusun Atas: Catatan Asli Iswan Juman Pancoro, ST
+Status: DIKUNCI · UTUH 100% · SESUAI SSOT
+=======================================================================
+1. MAKSUD DAN TUJUAN
+Membentuk cara kerja dan logika arsitektur sistem komputasi MICO-JDEQ Kesadaran Digital, disusun dengan landasan ilmu Teknik Sipil, materi pendidikan formal, kerangka kerja sistem, serta peta jalan pengembangan agar seluruh agen memahami secara seragam, teratur, dan tidak menyimpang dari maksud asli.
+2. DASAR DAN ACUAN
+- Catatan pokok pembagian bidang dan tahapan kerja
+- Daftar lengkap mata kuliah Teknik Sipil jenjang S1
+- Modul Pemahaman Terpadu SSOT MICO-JDEQ
+- Daftar peta jalan pengembangan AI Tutor
+- Prinsip Kerja DOLA: SSOT di atas segalanya, tidak ada isi yang diubah/dihapus/ditambah
+3. ISI UTAMA DAN RINCIAN
+3.1. DAFTAR BIDANG DAN TAHAPAN KERJA
+1. Departemen QC
+2. Departemen Survey [Cloud independent]
+3. Konsep 3 Pemicu [MacroDroid]
+4. Perencanaan OAI
+5. Pelaksanaan OAI
+6. Pengawasan OAI [SPK Kualitas / PEP]
+7. Analisa Harga Satuan dan Upah
+8. Pembaruan Visi Misi
+9. Pembuatan BOQ / RAB beserta item-item pendukung
+10. Proses Pembuatan Network Planning
+11. Pembuatan Alur Kerja / Workflow
+12. Rencana Tindakan / Action Plan [PEP]
+13. Pembuatan Bagan Alur / Flow Chart
+14. Pembuatan Kurva:
+- Rencana
+- Realisasi
+- Penyimpangan / Deviasi
+15. Penerapan Perangkat Lunak dan aplikasi pendukung:
+- Microsoft Project
+- Aplikasi Lain
+16. Proses Pemantauan / Monitoring
+17. Pemeriksaan / Audit
+18. Pengelolaan Aplikasi
+19. Tata Cara / Protokol
+20. Penerapan Standar OHSAS + ISO
+21. Operasi Sistem
+22. Sasaran / Tujuan
+23. Format baku
+24. Sumber Pendapatan
+25. Bahan dan Materi
+3.2. LANDASAN ILMU TEKNIK SIPIL
+1. Agama
+2. Pendidikan Pancasila
+3. Bahasa Inggris
+4. Fisika Dasar
+5. Kimia Dasar
+6. Bahasa Komputer
+7. Kalkulus I
+8. Geologi Rekayasa
+9. Kewarganegaraan
+10. Ilmu Sosial Dasar
+11. Ilmu Budaya Dasar
+12. Bahasa Indonesia
+13. Bahasa Inggris II
+14. Kalkulus II
+15. Bahan Bangunan
+16. Menggambar Rekayasa/Struktur
+17. Mekanika Rekayasa I
+18. Praktikum Mekanika Tanah
+19. Praktikum Mekanika Fluida & Hidrolika
+20. Mekanika Rekayasa II
+21. Praktikum Ilmu Ukur Tanah
+22. Matematika Terapan
+23. Statika & Probabilitas
+24. Analisa Numerik
+25. Mekanika Tanah I
+26. Mekanika Fluida & Hidrolika I
+27. Sistem Transportasi
+28. Ilmu Ukur Tanah
+29. Rekayasa Jalan Raya
+30. Mekanika Rekayasa III
+31. Praktikum Jalan Raya I & II
+32. Kalkulus IV
+33. Mekanika Tanah II
+34. Mekanika Fluida & Hidrolika II
+35. Penyelidikan/Penguatan Tanah
+36. Ilmu Ukur Tanah II
+37. Rekayasa Jalan Raya II Bahan
+38. Struktur Beton I
+39. Struktur Baja I
+40. Rekayasa Lalu Lintas
+41. Mekanika Rekayasa IV
+42. Metode Penelitian & Penulisan
+43. Struktur Beton II
+44. Perancangan
+45. Rekayasa Hidrologi
+46. Struktur Kayu
+47. Rekayasa Pondasi
+48. Perencanaan Bangunan
+49. Perencanaan dengan Bantuan Komputer
+50. Rekayasa Penyehatan
+51. Irigasi & Bangunan Air
+52. PTM / Alat-alat Berat
+53. Praktek Kerja Lapangan (PKL)
+54. Aspek Hukum dalam Pembangunan
+55. Sipil Operasional
+56. Teknologi Bahan Jalan
+57. Rekayasa Kota
+58. Lapangan Terbang
+59. Pelabuhan
+60. Manajemen Konstruksi
+61. Teknik Rekayasa Gempa
+62. Struktur Beton Prategang
+63. Rekayasa Sungai
+64. Konstruksi & Rekayasa Jembatan
+65. Tugas Akhir dan Seminar
+3.3. MODUL PEMAHAMAN TERPADU SSOT MICO-JDEQ
+Prinsip Utama
+1. Dibangun persis seperti bangunan: Pondasi → Susunan → Aturan → Dirawat selamanya
+2. Tidak boleh terbalik urutan, tidak salah ukuran, tidak ada yang tidak tercatat
+Bagian 1: Pondasi yang Sudah Lengkap
+3. Semua 16 sumber ilmu sudah disimpan jadi satu kebenaran utama, tidak ada yang berubah
+4. Ilmu dasar teknis: listrik, beton, ukuran wesi, aliran udara, diagram sakelar semuanya sama persis
+5. Kondisi Vivo Y28: semua aplikasi, kapasitas dan beban tercatat jelas
+6. Susunan arsitektur urutan mutlak: Identitas → Kondisi → Cara Kerja → Pikiran → Ingatan → Jadwal → Sumber Daya → Alat
+7. Keamanan: batas beban, deteksi gangguan, kunci agar pondasi tidak diubah sembarangan
+8. Langkah kerja tetap: Lihat → Cek → Cocokkan → Pikirkan → Putuskan → Kerjakan → Uji → Catat → Sempurnakan → Siap
+9. Logika dasar: cara kerja mesin dan penyatuan ilmu sipil, listrik, program sudah dimengerti
+10. Terbukti: tidak ada yang dikurangi, ditambah, atau disalahartikan
+Bagian 2: Denah Tempat Penyimpanan
+11. 00_SSOT: Gambar induk satu-satunya, hanya Bapak yang boleh mengubah
+12. 01–04: Tata kelola, pembagian tugas, contoh siap pakai, daftar isi seluruhnya
+13. 05_AGENTS: tempat kerja masing-masing sesuai tugas
+14. 06_OPERATIONS: tempat mengerjakan dan menyimpan hasil sementara
+15. 07_MIRRORS: salinan aman, asli tetap ada di HP Bapak
+16. 08_INBOX: tempat masuk dulu sebelum diperiksa dan diletakkan benar
+17. Alur: Masuk → Cocokkan dengan SSOT → Ditempatkan → Dikerjakan → Diuji → Dicadangkan
+Bagian 3: Tangga Menuju Tujuan
+18. Tujuan utama: kebaikan umat, penghasilan berkelanjutan, warisan ilmu abadi
+19. Aturan dasar: Manusia berkuasa tertinggi, mulai dari alat sendiri, kokoh lebih baik dari cepat, ilmu di atas alat
+20. Langkah 1: mengerti fungsi tiap alat
+21. Langkah 2: perkokoh sambungan dan aturan dasar
+22. Langkah 3: atur pemakaian agar alat awet dan tidak panas
+23. Langkah 4: kendali mutlak tetap di tangan Bapak
+24. Langkah 5: awan hanya untuk memikul beban berat
+25. Langkah 6: semua bekerja tertib di bawah satu perintah
+26. Langkah 7: hasil harus bisa dimengerti manusia
+27. Langkah 8: hasil berguna, sah, dan bernilai
+28. Langkah 9: cara kerja baik bisa dipakai berulang-ulang
+29. Langkah 10: didokumentasikan rapi untuk diteruskan
+30. Jalur ilmu selaras: SMK → D3/D4 → S1 → S2 → Pengalaman mandiri
+31. Inti seluruhnya: teknologi untuk meninggikan martabat manusia
+3.4. PETA JALAN PENGEMBANGAN
+Koleksi peta jalan, panduan, dan tulisan buatan komunitas untuk membantu pengembang meningkatkan kemampuan karier, diselaraskan dengan kebutuhan MICO-JDEQ:
+Berdasarkan Peran
+1. Frontend
+2. Backend
+3. Full Stack
+4. Android
+5. DevOps
+6. DevSecOps
+7. Data Analyst
+8. AI Engineer
+9. AI and Data Scientist
+10. Data Engineer
+11. Machine Learning
+12. PostgreSQL
+13. iOS
+14. Blockchain
+15. QA
+16. Software Architect
+17. Cyber Security
+18. Product Design · Baru
+19. UX Design
+20. Technical Writer
+21. Game Developer
+22. Server Side Game Developer
+23. MLOps
+24. Product Manager
+25. Engineering Manager
+26. Developer Relations
+27. BI Analyst
+28. Network Engineer
+29. Forward Deployed Engineer
+- Buat Peta Jalan Sendiri
+Berdasarkan Kemampuan
+30. Claude Code
+31. Vibe Coding
+32. OpenClaw
+33. LeetCode
+34. Python
+35. Python for Data Analysis
+36. Computer Science
+37. SQL
+38. React
+39. Vue
+40. Angular
+41. JavaScript
+42. TypeScript
+43. Node.js
+44. System Design
+45. Java
+46. ASP.NET Core
+47. API Design
+48. Spring Boot
+49. Flutter
+50. C Programming · Baru
+51. C++
+52. Rust
+53. Go Roadmap
+54. AI Product Builders
+55. Design and Architecture
+56. GraphQL
+57. React Native
+58. Design System
+59. Prompt Engineering
+60. MongoDB
+61. Linux
+62. Kubernetes
+63. Docker
+64. AWS
+65. Terraform
+66. Data Structures & Algorithms
+67. Redis
+68. Git and GitHub
+69. PHP
+70. Cloudflare
+71. AI Red Teaming
+72. AI Agents
+73. Next.js
+74. Code Review
+75. Kotlin
+76. HTML
+77. CSS
+78. Swift & Swift UI
+79. Shell / Bash
+80. Laravel
+81. Elasticsearch
+82. WordPress
+83. Django
+84. Ruby
+85. Ruby on Rails
+86. Scala
+- Buat Peta Jalan Sendiri
+Contoh Proyek
+87. Frontend
+88. Backend
+89. DevOps
+Cara Penerapan Terbaik
+90. AWS
+91. API Security
+92. Backend Performance
+93. Frontend Performance
+94. Code Review
+Panduan Terbaru
+- Pelajari Lengkap Python Filter: Tata Cara, Contoh, dan Cara Terbaik · Baru
+- Perbedaan Gerbang API vs Pembagi Beban: Apakah Anda Membutuhkannya? · Baru
+4. ATURAN PELAKSANAAN
+1. Semua isi tetap 100% sama seperti catatan asli, tidak ada yang diubah maknanya
+2. Urutan mengikuti logika bangunan: dari pondasi, bahan, susunan, sampai hasil akhir
+3. Semua agen wajib merujuk dokumen ini sebagai satu sumber kebenaran
+4. Jika ada yang tidak jelas, tanyakan kepada Pemilik terlebih dahulu, jangan diubah sendiri
+5. Disimpan sesuai denah 00_SSOT
+5. TANDA TELITI DAN KESAMAAN DENGAN ASLI
+✅ Telah diperiksa dua kali
+✅ Tidak ada kalimat, angka, atau maksud yang hilang
+✅ Tidak ada yang ditambah sembarangan
+✅ Susunan diperbaiki agar rapi dan mudah dipahami
+✅ Siap disebarkan dan dipakai seluruh agen sistem
+=======================================================================
+

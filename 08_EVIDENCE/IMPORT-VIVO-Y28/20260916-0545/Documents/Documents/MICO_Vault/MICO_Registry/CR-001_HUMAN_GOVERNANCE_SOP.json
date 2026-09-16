@@ -1,0 +1,15 @@
+{
+  "id": "CR-001",
+  "title": "Human Governance SOP",
+  "status": "ACTIVE",
+  "priority": "CRITICAL",
+  "definition": "Menetapkan prosedur pengambilan keputusan akhir oleh manusia jika INTI DIRI tidak tersedia.",
+  "rules": {
+    "1": "Jika INTI DIRI tidak merespon dalam 60 detik, sistem masuk mode HOLD",
+    "2": "Mode HOLD menunda semua keputusan non-darurat",
+    "3": "Keputusan darurat (thermal shutdown, storage full) tetap dijalankan dengan log eskalasi",
+    "4": "Delegasi dapat diberikan ke agen ST-002 (DOLA) untuk keputusan operasional",
+    "5": "Semua keputusan dalam mode HOLD dicatat sebagai EVIDENCE_ESCALATION"
+  },
+  "enforcement": "Kernel wajib memeriksa status INTI DIRI sebelum eksekusi keputusan final."
+}

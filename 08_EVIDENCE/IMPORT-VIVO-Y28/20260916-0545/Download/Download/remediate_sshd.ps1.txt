@@ -1,0 +1,178 @@
+<#
+.SYNOPSIS
+    Remediasi SSHD di PC-i5: perbaiki V-001 (exit 1067) dan V-002 (konflik port 22).
+
+.DESCRIPTION
+    Idempotent -- aman dijalankan berulang kali. Mem-backup config SEBELUM
+    mengubah apa pun. Default-nya DRY-RUN: tidak mengubah apa pun kecuali
+    dijalankan dengan -Apply.
+
+    KENAPA DRY-RUN DEFAULT:
+    Skrip ini menyentuh SSH -- kanal remote-access utama ke mesin ini
+    menurut seluruh histori sesi MICO-JDEQ. Kalau port/firewall/dependency
+    salah, risikonya kehilangan akses remote sampai ada akses fisik ke
+    mesin. Sesuai Doktrin 003 (Rollback Mandatory) dari modul audit AG-004
+    sendiri: backup dan verifikasi wajib ADA dan TERUJI, bukan "tersedia".
+
+.PARAMETER Apply
+    Jalankan perubahan sungguhan. Tanpa flag ini, skrip hanya menampilkan
+    apa yang AKAN dilakukan -- tidak ada satu pun perubahan nyata.
+
+.PARAMETER NewPort
+    Port baru untuk sshd. Default 2222 sesuai spesifikasi.
+
+.EXAMPLE
+    .\remediate_sshd.ps1              # dry-run, aman, tidak mengubah apa pun
+    .\remediate_sshd.ps1 -Apply       # eksekusi sungguhan, wajib Administrator
+#>
+
+param(
+    [switch]$Apply,
+    [int]$NewPort = 2222
+)
+
+$ErrorActionPreference = "Stop"
+$sshdConfigPath = "$env:ProgramData\ssh\sshd_config"
+$backupDir      = "$env:ProgramData\ssh\backup_remediasi"
+$timestamp      = Get-Date -Format "yyyyMMdd_HHmmss"
+$logPath        = "$env:ProgramData\ssh\remediasi_log_$timestamp.json"
+
+function Write-Step {
+    param([string]$Msg, [string]$Level = "INFO")
+    $prefix = if ($Apply) { "[APPLY]" } else { "[DRY-RUN]" }
+    Write-Host "$prefix [$Level] $Msg"
+}
+
+# --- 0. Wajib Administrator ---
+$isAdmin = ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator)
+if (-not $isAdmin) {
+    Write-Host "[ERROR] Wajib dijalankan sebagai Administrator. Batal." -ForegroundColor Red
+    exit 1
+}
+
+if (-not $Apply) {
+    Write-Host "=== MODE DRY-RUN -- tidak ada perubahan nyata. Tambahkan -Apply untuk eksekusi. ===" -ForegroundColor Yellow
+}
+
+$report = [ordered]@{
+    timestamp_start = (Get-Date -Format o)
+    mode            = if ($Apply) { "APPLY" } else { "DRY_RUN" }
+    before_state    = [ordered]@{}
+    actions         = @()
+    after_state     = [ordered]@{}
+    success         = $false
+}
+
+# --- 1. BEFORE-state dulu, sebelum ubah apa pun (evidence-first) ---
+Write-Step "Menangkap before-state..."
+$svcBefore = Get-Service -Name sshd -ErrorAction SilentlyContinue
+$report.before_state.service_status     = if ($svcBefore) { $svcBefore.Status.ToString() } else { "TIDAK_DITEMUKAN" }
+$report.before_state.sshd_config_exists = Test-Path $sshdConfigPath
+if ($report.before_state.sshd_config_exists) {
+    $report.before_state.sshd_config_content = Get-Content $sshdConfigPath -Raw
+}
+try {
+    $report.before_state.service_dependencies = (sc.exe qc sshd 2>&1 | Out-String)
+} catch {
+    $report.before_state.service_dependencies = "GAGAL_BACA: $_"
+}
+
+$port22Listener = Get-NetTCPConnection -LocalPort 22 -State Listen -ErrorAction SilentlyContinue
+$report.before_state.port_22_listener = if ($port22Listener) {
+    ($port22Listener | ForEach-Object { (Get-Process -Id $_.OwningProcess -ErrorAction SilentlyContinue).ProcessName }) -join ", "
+} else { "TIDAK_ADA" }
+
+Write-Step "  service sshd saat ini : $($report.before_state.service_status)"
+Write-Step "  port 22 dipakai oleh  : $($report.before_state.port_22_listener)"
+
+# --- 2. BACKUP sebelum mengubah apa pun ---
+Write-Step "Menyiapkan backup ke $backupDir..."
+if ($Apply) {
+    New-Item -ItemType Directory -Force -Path $backupDir | Out-Null
+    if ($report.before_state.sshd_config_exists) {
+        Copy-Item $sshdConfigPath "$backupDir\sshd_config_$timestamp.bak" -Force
+        $report.actions += "Backup sshd_config -> $backupDir\sshd_config_$timestamp.bak"
+    }
+    Get-NetFirewallRule -DisplayName "*OpenSSH*" -ErrorAction SilentlyContinue |
+        Export-Clixml "$backupDir\firewall_rules_$timestamp.xml"
+    $report.actions += "Backup firewall rules OpenSSH -> $backupDir\firewall_rules_$timestamp.xml"
+} else {
+    Write-Step "  akan backup sshd_config dan firewall rules ke $backupDir"
+}
+
+# --- 3. Port di sshd_config -- idempotent: cek dulu sebelum ubah ---
+Write-Step "Memeriksa/mengubah Port di sshd_config -> $NewPort"
+if ($report.before_state.sshd_config_exists) {
+    $content = Get-Content $sshdConfigPath
+    $portLineExists = $content | Where-Object { $_ -match '^\s*Port\s+\d+' }
+    if ($portLineExists -and ($portLineExists -match "Port\s+$NewPort\s*$")) {
+        Write-Step "  Port $NewPort sudah aktif di config -- tidak ada perubahan (idempotent)."
+    } elseif ($Apply) {
+        $newContent = if ($portLineExists) {
+            $content -replace '^\s*Port\s+\d+', "Port $NewPort"
+        } else {
+            @("Port $NewPort") + $content
+        }
+        Set-Content -Path $sshdConfigPath -Value $newContent -Encoding UTF8
+        $report.actions += "sshd_config: Port diubah menjadi $NewPort"
+    } else {
+        Write-Step "  akan mengubah/menambah baris 'Port $NewPort' di sshd_config"
+    }
+} else {
+    Write-Step "  [PERINGATAN] sshd_config tidak ditemukan di $sshdConfigPath -- lewati, cek instalasi OpenSSH." -Level "WARN"
+}
+
+# --- 4. Lepaskan dependency iphlpsvc (penyebab umum exit 1067) -- idempotent ---
+Write-Step "Memeriksa/melepas dependency iphlpsvc dari service sshd..."
+$currentDepends = (sc.exe qc sshd 2>&1 | Select-String "DEPENDENCIES").ToString()
+if ($currentDepends -match "iphlpsvc") {
+    if ($Apply) {
+        sc.exe config sshd depend= "" | Out-Null
+        $report.actions += 'Dependency sshd->iphlpsvc dilepas (sc.exe config sshd depend= "")'
+    } else {
+        Write-Step '  akan menjalankan: sc.exe config sshd depend= ""'
+    }
+} else {
+    Write-Step "  dependency iphlpsvc sudah tidak terpasang -- tidak ada perubahan (idempotent)."
+}
+
+# --- 5. Firewall: tambah rule baru, JANGAN hapus rule lama sembarangan ---
+Write-Step "Memeriksa/menambah firewall rule untuk TCP $NewPort..."
+$existingRule = Get-NetFirewallRule -DisplayName "OpenSSH-Remediasi-$NewPort" -ErrorAction SilentlyContinue
+if ($existingRule) {
+    Write-Step "  rule firewall untuk port $NewPort sudah ada -- tidak ada perubahan (idempotent)."
+} elseif ($Apply) {
+    New-NetFirewallRule -DisplayName "OpenSSH-Remediasi-$NewPort" -Direction Inbound `
+        -Protocol TCP -LocalPort $NewPort -Action Allow | Out-Null
+    $report.actions += "Firewall rule baru: TCP $NewPort inbound allow"
+} else {
+    Write-Step "  akan membuat rule firewall baru untuk TCP $NewPort inbound"
+}
+Write-Step "  Rule lama utk port 22 SENGAJA TIDAK dihapus otomatis -- port itu mungkin dipakai proses lain (lihat before_state.port_22_listener). Nonaktifkan manual setelah dikonfirmasi aman."
+
+# --- 6. Restart bersih + VERIFIKASI end-state (bukan cuma "command sukses") ---
+if ($Apply) {
+    Write-Step "Restart service sshd..."
+    Stop-Service sshd -Force -ErrorAction SilentlyContinue
+    Start-Sleep -Seconds 2
+    Start-Service sshd
+    Start-Sleep -Seconds 2
+
+    $svcAfter = Get-Service -Name sshd
+    $report.after_state.service_status = $svcAfter.Status.ToString()
+    $listeningNow = Get-NetTCPConnection -LocalPort $NewPort -State Listen -ErrorAction SilentlyContinue
+    $report.after_state.listening_on_new_port = [bool]$listeningNow
+    $report.success = ($svcAfter.Status -eq "Running") -and $report.after_state.listening_on_new_port
+
+    if ($report.success) {
+        Write-Host "[BERHASIL] sshd Running dan terkonfirmasi listen di port $NewPort." -ForegroundColor Green
+    } else {
+        Write-Host "[GAGAL] sshd status=$($svcAfter.Status), listen-di-port-baru=$($report.after_state.listening_on_new_port). PERIKSA MANUAL sebelum menutup akses lama." -ForegroundColor Red
+    }
+} else {
+    Write-Step "(dry-run) tidak melakukan restart atau verifikasi -- tinjau rencana di atas, lalu jalankan ulang dengan -Apply."
+}
+
+$report.timestamp_end = (Get-Date -Format o)
+$report | ConvertTo-Json -Depth 6 | Set-Content -Path $logPath -Encoding UTF8
+Write-Host "`nLaporan lengkap (before/actions/after) tersimpan di: $logPath"

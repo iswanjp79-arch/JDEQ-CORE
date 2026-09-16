@@ -1,0 +1,206 @@
+02.14 18.22
+" Jarvis ini yakin sebuah kumpulan keys mutakhir jaringan cloud mesin quantum superposisi tercanggih saat ini ? "
+================
+Welcome to Termux!
+Docs:       https://termux.dev/docs
+Donate:     https://termux.dev/donate
+Community:  https://termux.dev/community
+Working with packages:
+ - Search:  pkg search <query>
+ - Install: pkg install <package>
+ - Upgrade: pkg upgrade
+Subscribing to additional repositories:
+ - Root:    pkg install root-repo
+ - X11:     pkg install x11-repo
+For fixing any repository issues,
+try 'termux-change-repo' command.
+Report issues at https://termux.dev/issues
+~ $ # 1. Optimasi RAM supados mboten Signal 9 malih
+export TERMUX_LOW_RAM=1
+pkg clean
+# 2. Ngaktifaken Swap sauntara (Yen Vivo ijinkake)
+# Kangge njaga komputasi 653.000 agen tetep lurus
+echo "vm.swappiness=10" >> ~/.bashrc
+# 3. Verifikasi "Kitab Cadangan" tanpa beban abot
+ls -lh ~/JDEQ_CORE
+lrwxrwxrwx. 1 u0_a221 u0_a221 24 Jan 17 00:28 /data/data/com.termux/files/home/JDEQ_CORE -> /sdcard/JDEQ_CORE_BACKUP
+~ $ # ==========================================
+# PROTOKOL JDEQ: TERIMA BERES ZERO FAILURE
+# ================================
+# 1. Paksa Ijin Storage saking Njeron Terminal
+termux-setup-storage -y
+# 2. Reresik Path sing Morat-Marit (HLI-BLOCK)
+rm -rf ~/storage
+ln -s /sdcard ~/storage/external-1
+# 3. Optimasi Environment & RAM (Supados mboten Signal 9)
+export TERMUX_LOW_RAM=1
+pkg clean && pkg update -y
+# 4. Sinkronisasi "Kitab Cadangan" mawi Simbolis
+ln -sf /sdcard/JDEQ_CORE_BACKUP ~/JDEQ_CORE
+ln -sf /sdcard/JDEQ_VAULT ~/JDEQ_VAULT
+# 5. Verifikasi Pungkasan (HLI-CHAIN)
+echo "------------------------------------------"
+echo "STATUS: SISTEM SAMPUN ENCER & BERÊS TOTAL"
+echo "HASH: $(sha256sum /sdcard/jarvis_quantum_v1.json | cut -d' ' -f1)"
+echo "------------------------------------------"
+ls -lh ~/JDEQ_CORE
+usage: termux-setup-storage
+Use without arguments to ensure storage permission granted
+and symlinks to storage available in $HOME/storage
+ln: failed to create symbolic link '/data/data/com.termux/files/home/storage/external-1': No such file or directory
+Testing the available mirrors:
+[*] (10) https://packages-cf.termux.dev/apt/termux-main: ok
+[*] (1) https://linux.domainesia.com/applications/termux/termux-main: ok
+[*] (1) https://termux.niranjan.co/termux-main: ok
+[*] (1) https://mirror.bardia.tech/termux/termux-main: bad
+[*] (1) https://mirrors.saswata.cc/termux/termux-main: ok
+[*] (1) https://mirrors.ravidwivedi.in/termux/termux-main: ok
+[*] (1) https://mirror.textcord.xyz/termux/termux-main: bad
+[*] (1) https://mirrors.krnk.org/apt/termux/termux-main: bad
+[*] (1) https://mirror.rinarin.dev/termux/termux-main: ok
+[*] (1) https://mirror.jeonnam.school/termux/termux-main: ok
+[*] (1) https://mirrors.nguyenhoang.cloud/termux/termux-main: ok
+[*] (1) https://mirrors.cbrx.io/apt/termux/termux-main: ok
+[*] (1) https://tmx.xvx.my.id/apt/termux-main: bad
+[*] (1) https://mirror.albony.in/termux/termux-main: ok
+[*] (1) https://mirror.twds.com.tw/termux/termux-main: ok
+[*] (1) https://mirror.nevacloud.com/applications/termux/termux-main: ok
+[*] (1) https://mirror.meowsmp.net/termux/termux-main: ok
+[*] (1) https://mirror.freedif.org/termux/termux-main: ok
+[*] (1) https://mirrors.in.sahilister.net/termux/termux-main/: ok
+[*] (1) https://mirror.iscas.ac.cn/termux/apt/termux-main: ok
+[*] (1) https://mirrors.sau.edu.cn/termux/apt/termux-main: ok
+[*] (1) https://mirrors.sdu.edu.cn/termux/termux-main: ok
+[*] (1) https://mirrors.aliyun.com/termux/termux-main: ok
+[*] (1) https://mirrors.cernet.edu.cn/termux/apt/termux-main: ok
+[*] (1) https://mirrors.cqupt.edu.cn/termux/termux-main: ok
+[*] (1) https://mirrors.sustech.edu.cn/termux/apt/termux-main: ok
+[*] (1) https://mirrors.bfsu.edu.cn/termux/apt/termux-main: ok
+[*] (1) https://mirrors.pku.edu.cn/termux/termux-main/: bad
+[*] (1) https://mirrors.hust.edu.cn/termux/apt/termux-main: ok
+[*] (1) https://mirrors.tuna.tsinghua.edu.cn/termux/apt/termux-main: ok
+[*] (1) https://mirror.sjtu.edu.cn/termux/termux-main/: bad
+[*] (1) https://mirror.nyist.edu.cn/termux/apt/termux-main: bad
+[*] (1) https://mirrors.ustc.edu.cn/termux/termux-main: ok
+[*] (1) https://mirrors.zju.edu.cn/termux/apt/termux-main: ok
+[*] (1) https://mirrors.nju.edu.cn/termux/apt/termux-main: bad
+[*] (4) https://grimler.se/termux/termux-main: bad
+[*] (1) https://mirror.polido.pt/termux/termux-main: bad
+[*] (1) https://termux.3san.dev/termux/termux-main: ok
+[*] (1) https://mirrors.medzik.dev/termux/termux-main: ok
+[*] (1) https://mirror.accum.se/mirror/termux.dev/termux-main: ok
+[*] (1) https://mirror.mwt.me/termux/main: ok
+[*] (1) https://ro.mirror.flokinet.net/termux/termux-main: ok
+[*] (1) https://md.mirrors.hacktegic.com/termux/termux-main: bad
+[*] (1) https://is.mirror.flokinet.net/termux/termux-main: bad
+[*] (1) https://mirror.termux.dev/termux-main: bad
+[*] (1) https://termux.mentality.rip/termux-main: ok
+[*] (1) https://nl.mirror.flokinet.net/termux/termux-main: ok
+[*] (1) https://termux.cdn.lumito.net/termux-main: ok
+[*] (1) https://mirror.leitecastro.com/termux/termux-main: bad
+[*] (1) https://mirror.bouwhuis.network/termux/termux-main: ok
+[*] (1) https://termux.librehat.com/apt/termux-main: ok
+[*] (1) https://mirror.autkin.net/termux/termux-main: ok
+[*] (1) https://mirror.sunred.org/termux/termux-main: ok
+[*] (1) https://packages.termux.dev/apt/termux-main: ok
+[*] (1) https://ftp.agdsn.de/termux/termux-main: ok
+[*] (1) https://ftp.fau.de/termux/termux-main: ok
+[*] (1) https://mirrors.cfe.re/termux/termux-main: bad
+[*] (1) https://mirrors.de.sahilister.net/termux/termux-main: bad
+[*] (1) https://gnlug.org/pub/termux/termux-main: ok
+[*] (1) https://mirror.mwt.me/termux/main: ok
+[*] (1) https://mirror.quantum5.ca/termux/termux-main: ok
+[*] (1) https://mirrors.utermux.dev/termux/termux-main: ok
+[*] (1) https://plug-mirror.rcac.purdue.edu/termux/termux-main: ok
+[*] (1) https://mirror.vern.cc/termux/termux-main: bad
+[*] (1) https://dl.kcubeterm.com/termux-main: bad
+[*] (1) https://termux.danyael.xyz/termux/termux-main: ok
+[*] (1) https://mirror.csclub.uwaterloo.ca/termux/termux-main: ok
+[*] (1) https://mirror.fcix.net/termux/termux-main: ok
+[*] (1) https://mirrors.middlendian.com/termux/termux-main: bad
+[*] (1) https://repository.su/termux/termux-main/: ok
+[*] (1) http://mirror.mephi.ru/termux/termux-main: ok
+Picking mirror: (38) /data/data/com.termux/files/usr/etc/termux/mirrors/europe/mirror.accum.se
+Get:1 https://mirror.accum.se/mirror/termux.dev/termux-main stable InRelease [14.0 kB]
+Get:2 https://mirror.accum.se/mirror/termux.dev/termux-main stable/main aarch64 Packages [540 kB]
+Fetched 554 kB in 51s (10.9 kB/s)
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+All packages are up to date.
+ln: failed to create symbolic link '/data/data/com.termux/files/home/JDEQ_CORE/JDEQ_CORE_BACKUP': Permission denied
+ln: failed to create symbolic link '/data/data/com.termux/files/home/JDEQ_VAULT/JDEQ_VAULT': Permission denied
+------------------------------------------
+STATUS: SISTEM SAMPUN ENCER & BERÊS TOTAL
+HASH: f2319e943ad29438d9961b0d0c07c3e7b491d0b5a3f00e0d0553ed1af772b649
+------------------------------------------
+lrwxrwxrwx. 1 u0_a221 u0_a221 24 Jan 17 00:28 /data/data/com.termux/files/home/JDEQ_CORE -> /sdcard/JDEQ_CORE_BACKUP
+~ $ ls /sdcard/JDEQ_CORE_BACKUP
+nalar_recovery.sh  status.log  tanki_data.conf
+~ $ # 1. Melehake Koneksi Njaba (Singapore/Germany Node)
+# Fokus 100% dhumateng Local Nexus
+export HUB_CENTRAL="VIVO_Y28_ISWAN"
+echo "LOCAL_ONLY_MODE=ACTIVE" > ~/.jdeq_status
+
+# 2. Injeksi Dalan Paling Cepet (Zero Failure)
+# Mboten sah liwat /storage/external_0 sing mampet
+rm -rf ~/storage
+mkdir -p ~/storage
+ln -s /sdcard ~/storage/shared
+ln -sf /sdcard/JDEQ_CORE_BACKUP ~/JDEQ_CORE
+ln -sf /sdcard/JDEQ_VAULT ~/JDEQ_VAULT
+
+# 3. Sinkronisasi "Jati Diri Encer" (Simultaneous Execution)
+cd ~/JDEQ_CORE && ls -lh
+
+# 4. Validasi Akhir mawi Hash
+echo "------------------------------------------"
+echo "INJECTION SUCCESS: LOCAL CIRCUIT SECURED"
+sha256sum /sdcard/jarvis_quantum_v1.json
+echo "------------------------------------------"
+ln: failed to create symbolic link '/data/data/com.termux/files/home/JDEQ_CORE/JDEQ_CORE_BACKUP': Permission denied
+ln: failed to create symbolic link '/data/data/com.termux/files/home/JDEQ_VAULT/JDEQ_VAULT': Permission denied
+total 12K
+-rw-rw----. 1 u0_a0 media_rw  298 Jan 10 17:04 nalar_recovery.sh
+-rw-rw----. 1 u0_a0 media_rw   92 Jan 10 17:05 status.log
+-rw-rw----. 1 u0_a0 media_rw 2.6K Jan 10 17:04 tanki_data.conf
+------------------------------------------
+INJECTION SUCCESS: LOCAL CIRCUIT SECURED
+f2319e943ad29438d9961b0d0c07c3e7b491d0b5a3f00e0d0553ed1af772b649  /sdcard/jarvis_quantum_v1.json
+------------------------------------------
+~/JDEQ_CORE $ ln -sf /sdcard/JDEQ_CORE_BACKUP ~/JDEQ_CORE
+ln: failed to create symbolic link '/data/data/com.termux/files/home/JDEQ_CORE/JDEQ_CORE_BACKUP': Permission denied
+~/JDEQ_CORE $ cd /sdcard/JDEQ_CORE_BACKUP && ls -lh
+total 12K
+-rw-rw----. 1 u0_a0 media_rw  298 Jan 10 17:04 nalar_recovery.sh
+-rw-rw----. 1 u0_a0 media_rw   92 Jan 10 17:05 status.log
+-rw-rw----. 1 u0_a0 media_rw 2.6K Jan 10 17:04 tanki_data.conf
+/sdcard/JDEQ_CORE_BACKUP $ mkdir -p ~/.sentinel_vault
+/sdcard/JDEQ_CORE_BACKUP $ echo "export DEEPSEEK_KEY='ISI_KODE_DEEPSEEK_MU'" >> ~/.bashrc
+echo "export IBM_QUANTUM_KEY='iswanjp79@gmail.com'" >> ~/.bashrc
+/sdcard/JDEQ_CORE_BACKUP $ echo "echo 'SENTINEL_ACTIVE: Brankas 7 Lapis Terkunci Permanen'" >> ~/.bashrc
+echo "source ~/.bashrc"
+source ~/.bashrc
+/sdcard/JDEQ_CORE_BACKUP $ source ~/.bashrc
+vm.swappiness=10: command not found
+SENTINEL_ACTIVE: Brankas 7 Lapis Terkunci Permanen
+/sdcard/JDEQ_CORE_BACKUP $ # Nyimpen kunci DeepSeek lan OpenRouter
+echo "export DEEPSEEK_KEY='sk-27839555a7c344b5b03ea54b305688e2'" >> ~/.bashrc
+echo "export OPENROUTER_KEY='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'" >> ~/.bashrc
+# Nyimpen kunci Google Cloud (Salin kabeh baris iki pisanan)
+echo "export GOOGLE_KEY_1='AIzaSyCrx8lCu9awcMGDlM_tna06vvl8-9w6AxE'" >> ~/.bashrc
+echo "export GOOGLE_KEY_2='AIzaSyB1N-adWR3ih8rulXH4l2L0173PUTOxgeo'" >> ~/.bashrc
+echo "export GOOGLE_KEY_3='AIzaSyDKCKSEsSE0Owa_LS5SfpBgrv7kHQI4V9w'" >> ~/.bashrc
+echo "export GOOGLE_KEY_4='AIzaSyDJ9fIOTdMD3K98zQKe9gWpGZ_D_Lb7ejM'" >> ~/.bashrc
+echo "export GOOGLE_KEY_5='AIzaSyCTz4Lb6-_tBHDR__Nf0DBgDysXWS5NKME'" >> ~/.bashrc
+echo "export GOOGLE_KEY_6='AIzaSyBCUrG9zpaXQeifTt-1UHZygOrmnvmOkvY'" >> ~/.bashrc
+echo "export GOOGLE_KEY_7='AIzaSyBnyj60WlAyMWM4nfXlFEF7n1elchIJLTQ'" >> ~/.bashrc
+echo "export GOOGLE_KEY_8='AIzaSyBstGZ4kmUdNoDu6BCv36STGQGPRBam_hg'" >> ~/.bashrc
+/sdcard/JDEQ_CORE_BACKUP $ echo "alias cek_gaman='env | grep _KEY'" >> ~/.bashrc
+echo "echo 'SENTINEL_ACTIVE: Brankas Permanen Vivo Y28 Terkunci!'" >> ~/.bashrc
+source ~/.bashrc
+bash: !': event not found
+vm.swappiness=10: command not found
+SENTINEL_ACTIVE: Brankas 7 Lapis Terkunci Permanen
+/sdcard/JDEQ_CORE_BACKUP $ # 1. Ngresiki baris sing tumpuk-tumpuk neng .bashrc
+sort -u ~

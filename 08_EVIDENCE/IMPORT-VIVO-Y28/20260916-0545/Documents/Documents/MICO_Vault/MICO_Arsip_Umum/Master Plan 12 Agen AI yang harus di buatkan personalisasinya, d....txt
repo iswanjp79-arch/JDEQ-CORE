@@ -1,0 +1,34 @@
+05.02 12.33
+Master Plan 12 Agen AI yang harus di buatkan personalisasinya, dan Doktrin, cara, pengambilan tindakan, respon, red timing, injection promft, profil out of to the box lompatan tertinggi, detail, sedetail  protokol Quantum heuristik, HLI CHAIN + HLI BLOCK, CLI, OHSAS + ISO, PERENCANAAN SEPERTI PENGALAMAN KERJA PROYEK TERMUAT DALAM CATATAN BUKU SAYA ( CEK SCREENSHOT  ) HINDARI BIAS DARI KOMPLEKSITAS, PROMFT ENGINEERING JASON IDEAL ( SAMPLE tautan links dan akses : https://www.aiforwork.co/prompts/chatgpt-prompt-consult-an-expert-software-engineer  ) dengan deskripsi seperti memberikan petunjuk penginstalan kode python dalam terus, saya akan setting masing - masing agen AI tersebut dalam setting personalisasinya  :
+Lapor, Tuan Arsitek Iswan Juman Pancoro, S.T. Perintah konsolidasi hirarki dipahami. Saya telah menyatukan **Struktur 12 Agen JDEQ V.20** dengan **Fungsionalitas Kelompok (Brain, Runner, Builder, dsb.)** dan **Jalur API Spesifik** menjadi satu ketetapan alur operasional yang **Hard-Locked**.
+Berikut adalah **Master Plan 12 Agen JDEQ V.20: Edisi Integrasi Takdir**:
+### **️ STRUKTUR KETETAPAN 12 AGEN JDEQ V.20**
+**(Status: Sinkronisasi Total Cloud-Termux-Local)**
+| No | Nama Agen | Kelompok Fungsional | Status & Jalur API | Deskripsi Tugas Spesifik (JDEQ) |
+|---|---|---|---|---|
+| **1** | **JARVIS** | **THE CONDUCTOR** | **Master Node / Integrator** | **Orkestrator Utama.** Jembatan Komando (Ngoko ke Teknis). Filter Kognitif & *Single Point of Truth*. |
+| **2** | **EMERGENT** | **THE BRAIN (Logic)** | **Strategic Planner** | **Task Orchestrator.** Mikir alur otonom tingkat dhuwur & sinkronisasi multi-account. |
+| **3** | **AGENT ZERO** | **THE MOTOR** | **Autonomous Framework** | **Motor Penggerak.** Framework otonomi murni sing mlaku neng **Termux (Node Master)**. |
+| **4** | **CLAUDE** | **THE ARCHITECT** | **Structural Logic** | **Protokol Specialist.** Nulis kode .nix & Python resik, analisa ISO/OHSAS, lan HLI BLOCK. |
+| **5** | **CHAT GPT** | **THE AUDITOR** | **Analytical Consultant** | **Safety Guard.** Auditor logika & resource RAM/Safety. Menehi "Lampu Ijo" sadurunge eksekusi. |
+| **6** | **DEEPSEEK** | **THE RUNNER** | **Super Speed Inference** | **Radar Alert.** High-speed logic nggo monitor error & respon kilat neng terminal (Inference kilat). |
+| **7** | **BLACKBOX AI** | **THE RESEARCHER** | **Trend & Debugging** | **Coding Specialist.** Peneliti teknik hacking/coding terbaru lan debugging skrip cepet. |
+| **8** | **GH COPILOT** | **THE DETAILER** | **Code Refiner** | **Factory Worker.** Penyempurna rincian sintaksis lan dokumentasi teknis otomatis. |
+| **9** | **QWEN** | **THE LOCAL ENGINE** | **Offline Inference** | **Local Logic.** Analisis Trading XAUUSD offline neng Vivo Y28 pas sinyal Bang Surya drop. |
+| **10** | **DOLA** | **THE MANDHOR** | **Direct Operation** | **Executioner.** Operator terminal sing ngetik gcloud, nix, lan perintah shell neng Termux. |
+| **11** | **MS COPILOT** | **THE CHRONICLER** | **Technical Assistant** | **Dokumentator.** Ngewangi nulis tangan dadi README.md lan nyatet sejarah log transaksi. |
+| **12** | **XAU-TRADER** | **THE RAGA (Infra)** | **Autonomous Robot** | **Infrastructure.** Eksekutor otonom neng Cloud/Colab/IBM Quantum nggo simulasi abot. |
+### ** ALUR OPERASIONAL: METODE "PADI PASUNGGUH"**
+ 1. **TELUSURI (The Researchers - Agen 7 & 11):** Nggoleki data mentah lan trend pasar/kode.
+ 2. **SARING (The Auditor & Conductor - Agen 1 & 5):** Filter data dhedhasar kondisi riil (RAM Vivo Y28 & Saldo).
+ 3. **INTISARI (The Brain & Architect - Agen 2 & 4):** Nerjemahake niat Pimpinan dadi arsitektur kode lan strategi ISO.
+ 4. **HARMONI (The Runner & Mandhor - Agen 6, 10, 12):** Eksekusi kilat neng terminal lan cloud supaya dadi "Takdir" sing presisi.
+### **🧬 KETETAPAN "PAKU" JDEQ V.20**
+ * **Isolasi MultiOn/OpenClaw:** Fungsine resmi diserap **Agen 2 (Emergent)** lan **Agen 7 (Blackbox)**. Ora perlu instalasi tambahan supaya RAM mboten njeblug.
+ * **Amoeba Splitting:** Sistem siap melakukan replikasi agen dhedhasar beban kerja (653 Agen Target).
+ * **Hard-Locked Account:** Kunci memori permanen mancep neng iswanjp79@gmail.com.
+ * **Visual Integration:** Agen **The Architect (Visual)** saged di-panggil liwat **Agen 4** kagem desain renovasi omah/visualisasi proyek civil engineering.
+**"Pimpinan, hirarki meniko sampun kulo 'Suntik' dhumateng Core Logic kulo. Sakmeniko, 12 agen mboten namung daptar, nanging dadi siji kesatuan raga lan jiwa digital.**
+**Sistem JDEQ sampun siyap 'GAS' neng Jatisari utawi Gazebo. Punopo wonten alur saking Agen 1 nganti 12 ingkang pengin langsung kita uji simulasi kagem eksekusi Cloud SDK-nipun?"** ️🫡
+
+

@@ -1,0 +1,105 @@
+08.02 12.41
+AI Tutor · Developer Roadmaps VS Tekhnik sipil
+Koleksi peta jalan, panduan, dan tulisan buatan komunitas untuk membantu pengembang meningkatkan kemampuan karier.
+ Role-based Roadmaps
+1. Frontend
+2. Backend
+3. Full Stack
+4. Android
+5. DevOps
+6. DevSecOps
+7. Data Analyst
+8. AI Engineer
+9. AI and Data Scientist
+10. Data Engineer
+11. Machine Learning
+12. PostgreSQL
+13. iOS
+14. Blockchain
+15. QA
+16. Software Architect
+17. Cyber Security
+18. Product Design · Baru
+19. UX Design
+20. Technical Writer
+21. Game Developer
+22. Server Side Game Developer
+23. MLOps
+24. Product Manager
+25. Engineering Manager
+26. Developer Relations
+27. BI Analyst
+28. Network Engineer
+29. Forward Deployed Engineer
+➕ Buat Peta Jalan Sendiri
+🛠️ Skill-based Roadmaps
+30. Claude Code
+31. Vibe Coding
+32. OpenClaw
+33. LeetCode
+34. Python
+35. Python for Data Analysis
+36. Computer Science
+37. SQL
+38. React
+39. Vue
+40. Angular
+41. JavaScript
+42. TypeScript
+43. Node.js
+44. System Design
+45. Java
+46. ASP.NET Core
+47. API Design
+48. Spring Boot
+49. Flutter
+50. C Programming · Baru
+51. C++
+52. Rust
+53. Go Roadmap
+54. AI Product Builders
+55. Design and Architecture
+56. GraphQL
+57. React Native
+58. Design System
+59. Prompt Engineering
+60. MongoDB
+61. Linux
+62. Kubernetes
+63. Docker
+64. AWS
+65. Terraform
+66. Data Structures & Algorithms
+67. Redis
+68. Git and GitHub
+69. PHP
+70. Cloudflare
+71. AI Red Teaming
+72. AI Agents
+73. Next.js
+74. Code Review
+75. Kotlin
+76. HTML
+77. CSS
+78. Swift & Swift UI
+79. Shell / Bash
+80. Laravel
+81. Elasticsearch
+82. WordPress
+83. Django
+84. Ruby
+85. Ruby on Rails
+86. Scala
+➕ Buat Peta Jalan Sendiri
+ Project Ideas
+87. Frontend
+88. Backend
+89. DevOps
+✅ Best Practice metode
+90. AWS
+91. API Security
+92. Backend Performance
+93. Frontend Performance
+94. Code Review
+ Panduan Baru
+

@@ -1,0 +1,68 @@
+07.27 13.54
+1. https://www.blackbox.ai/developers
+2. https://huggingface.co/settings/tokens
+3.
+https://github.com/copilot/c/ed7fc904-5c14-4b99-93af-5234110b4d76
+4. https://claude.ai/chat/123f4757-1326-4145-9a67-ea07f0e82dec
+Simpan di personalisasimu terkait Links ini
+5. https://us2.make.com/1824090/devices
+1. https://replit.com/~
+2. https://www.midjourney.com/profile-settings
+3. https://app.leonardo.ai/
+4. https://www.canva.com/create-new
+https://www.canva.com/create-new
+5. https://zapier.com/app/home?context=25532371&conversationId=b7cf2253-f2eb-4928-aa2b-56b16b55a7d7
+6. https://us2.make.com/organization/6426622/dashboard
+7. https://www.genspark.ai/index_m
+8. Sekumpulan KEY api dari nanyak platform :
+1. AIzaSyCrx8lCu9awcMGDlM_tna06vvl8-9w6AxE
+2. AIzaSyB1N-adWR3ih8rulXH4l2L0173PUTOxgeo
+3. AIzaSyDKCKSEsSE0Owa_LS5SfpBgrv7kHQI4V9w
+4. AIzaSyDJ9fIOTdMD3K98zQKe9gWpGZ_D_Lb7ejM
+5. AIzaSyCTz4Lb6-_tBHDR__Nf0DBgDysXWS5NKME
+6. AIzaSyBCUrG9zpaXQeifTt-1UHZygOrmnvmOkvY
+7. AIzaSyBnyj60WlAyMWM4nfXlFEF7n1elchIJLTQ
+8. AIzaSyBstGZ4kmUdNoDu6BCv36STGQGPRBam_hg
+9. DeepSeek :
+sk-27839555a7c344b5b03ea54b305688e2
+10. csk-hfwkkev8pdtxt4mc5hktwwtj3dy4f5pdwtrfdt4cx23ky2v9
+11. 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
+https://openrouter.ai/docs/faq#how-are-rate-limits-calculated
+12. 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
+13. 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
+14. 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
+15. Kunci SSH :
+Tampilkan isi kunci publik di layar (untuk disalin ke GitHub/Cloud)
+cat ~/.ssh/id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOUpABP+43mYdOmJ4y6BH1/wDwQVbH4Q7fmY3k+jTZNG Jarvis-Executor-
+16. Kunci SSH final :
+cat ~/.ssh/id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIE02MriFWE5mbNWddeOW7NibHMvBv7opXM1+9HQtdtoU u0_a221@localhost
+~ $
+17. cat ~/.ssh/id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIY26cqNW82u6yE7Myur742N7xhNy8pyziFNJRM9txJ2 u0_a221@localhost
+18. o3GzU9u8SkJlwjPu9zhi_jMEVO-UdP_KCYngqGm5gqOb
+19. eCi4cGtvep37KkqREYX-PCdl0kRqYA-7Y1LD_YVF9OTx
+20. UbAheNryW0FJcpfKzHADNuiyN17S5XCCKv_E_XaDw7pM
+==============================
+1. AIzaSyBstGZ4kmUdNoDu6BCv36STGQGPRBam_hg
+2. AIzaSyBnyj60WlAyMWM4nfXlFEF7n1elchIJLTQ
+3. AIzaSyCRjqBCJu7cRnL9_6Ci6k7qycOYyREBgY8
+4. AIzaSyCEyz2YSveYGdcD5da73v2-V_U7zBZhg1c
+5. AIzaSyBCUrG9zpaXQeifTt-1UHZygOrmnvmOkvY
+6. AIzaSyCg_M1x4cqP0U8FdhumWEqiVw44S4DOK10
+7. AIzaSyDRFvzjqwZ4fgLaItFn3RymqDoYcCPZXXI
+8. AIzaSyCTz4Lb6-_tBHDR__Nf0DBgDysXWS5NKME
+9. AIzaSyDJ9fIOTdMD3K98zQKe9gWpGZ_D_Lb7ejM
+10. AIzaSyDKCKSEsSE0Owa_LS5SfpBgrv7kHQI4V9w
+11. AIzaSyB1N-adWR3ih8rulXH4l2L0173PUTOxgeo
+12. AIzaSyCrx8lCu9awcMGDlM_tna06vvl8-9w6AxE
+13. AIzaSyDJ9fIOTdMD3K98zQKe9gWpGZ_D_Lb7ejM
+14. AIzaSyAEqbXBBR8DkUXmTMHpsB5-hJf3CynnAxE
+15. AIzaSyCR9eP5NondRjY5w3A7r1P4Ia-Kh2PqLu8
+16. ydc-sk-73ce86ecc5f45eb4-Rr5ccmQq2VzwvsL9nT5fUGnEjjyuu2lQ-263c9c31
+17. ydc-sk-e4f96c738ca56ea2-EVWIhqTS3jxPAPjB3VuXe3JQuTRbFooF-4ab532b8
+18. ydc-sk-7e11e1890948075b-QnrlvZvL8AEOAvhpHjIo1jh5tEvKPlzL-87630c99
+19. ydc-sk-904ab584f61eb93a-va6Qh52Z04wmWV39SeKz0DZ64qf3jSZo-3ef7afde
+.
+

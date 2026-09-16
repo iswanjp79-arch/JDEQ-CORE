@@ -1,0 +1,20 @@
+=== MICO-P2-LEGACY-RECON-002-SCAN · 20260916-060019 ===
+Pola: HSE.?Officer|WBS|Work.?Breakdown|Job.?Safety|JSA|HIRAC|HIRARC|OHSAS|K3|Safety.?Officer|Ahli.?K3|Sertifikat.?K3|Sample.?WBS|WBS.?Sample
+
+
+=== D:\00_JDEQ_SYSTEM_CORE ===
+PJ-HSE-F-14==Log Book Komunikasi K3LL.xls                                 263,5 KB  2012-12-21
+PJ-IK-QHSE-031 ID & Informasi K3LL.doc                                      338 KB  2012-12-21
+PJ-MR-F-04==Daftar Catatan Mutu, K3 Dan Lingkungan.xlsx                   251,8 KB  2012-12-19
+PJ-TEK-F-02==Rencana K3LL Proyek.xls                                        515 KB  2011-02-26
+Pengenalan OHSAS 18001.ppt                                                308,5 KB  2012-12-05
+FM.OHS.010.00 Checklist Internal Audit (mutu dan K3) 2012.XLS             181,5 KB  2012-12-16
+(Lampiran 1) P2K3.xls                                                      78,5 KB  2012-11-23
+(Lampiran 4) HIRARC Bangunan.xls                                          170,5 KB  2012-11-24
+RK3P Gedung Olahraga Gulat.doc                                              398 KB  2012-11-24
+doclink3.txt                                                                0,2 KB  2025-11-06
+link3.txt                                                                   0,2 KB  2025-11-06
+doclink3.txt                                                                0,2 KB  2025-11-06
+link3.txt                                                                   0,2 KB  2025-11-06
+
+TOTAL HITS: 13

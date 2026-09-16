@@ -1,0 +1,167 @@
+07.14 01.02
+#!/bin/bash
+# ============================================================
+# MICO-JDEQ AKUN MAKER v1.0 (LEGAL, MANUAL, PRIBADI)
+# Target: Vivo Y28 (Termux)
+# Fungsi: Membuka halaman pendaftaran akun cloud
+# ============================================================
+echo "╔══════════════════════════════════════════════════════════╗"
+echo "║     MICO-JDEQ AKUN MAKER v1.0                          ║"
+echo "║     Pilih penyedia cloud untuk mendaftar:              ║"
+echo "╠══════════════════════════════════════════════════════════╣"
+echo "║  1) Google Drive (15 GB gratis)                        ║"
+echo "║  2) Microsoft OneDrive (5 GB gratis)                   ║"
+echo "║  3) Mega.nz (20 GB gratis)                             ║"
+echo "║  4) Proton Drive (5 GB gratis)                         ║"
+echo "║  5) Dropbox (2 GB gratis)                              ║"
+echo "╚══════════════════════════════════════════════════════════╝"
+read -p "Pilih nomor (1-5): " pilihan
+case $pilihan in
+  1) termux-open-url "https://accounts.google.com/signup" && echo "✅ Google: Halaman pendaftaran dibuka di browser." ;;
+  2) termux-open-url "https://signup.live.com" && echo "✅ Microsoft: Halaman pendaftaran dibuka di browser." ;;
+  3) termux-open-url "https://mega.nz/register" && echo "✅ Mega: Halaman pendaftaran dibuka di browser." ;;
+  4) termux-open-url "https://account.proton.me/signup" && echo "✅ Proton: Halaman pendaftaran dibuka di browser." ;;
+  5) termux-open-url "https://www.dropbox.com/register" && echo "✅ Dropbox: Halaman pendaftaran dibuka di browser." ;;
+  *) echo "❌ Pilihan tidak valid." ;;
+esac
+echo ""
+echo "========================================"
+echo "  Setelah akun berhasil dibuat:"
+echo "  1. Catat email & password di tempat aman."
+echo "  2. Jalankan 'rclone config' untuk menambahkan remote baru."
+echo "  3. Upload data JDEQ ke cloud baru."
+echo "========================================"
+# ============================================================
+# MICO-JDEQ PROXY TEST — VIVO Y28 (TERMUX)
+# Mode: UJI COBA TORSOCKS
+# ============================================================
+echo "╔══════════════════════════════════════════════════════════╗"
+echo "║     MICO-JDEQ PROXY TEST — TORSOCKS                    ║"
+echo "╚══════════════════════════════════════════════════════════╝"
+echo ""
+# 1. Nyalakan Tor di background
+echo " Menyalakan Tor..."
+tor &
+sleep 5
+echo "   ✅ Tor menyala di background."
+echo ""
+# 2. Uji koneksi via Tor
+echo " Menguji koneksi via Tor..."
+IP_TOR=$(torsocks curl -s --connect-timeout 10 ifconfig.me 2>/dev/null)
+if [ -n "$IP_TOR" ]; then
+    echo "   ✅ Proxy BERHASIL."
+    echo "    IP via Tor: $IP_TOR"
+else
+    echo "   ⚠️ Proxy GAGAL. Mungkin Tor belum siap atau jaringan lambat."
+fi
+echo ""
+# 3. Uji upload kecil ke ONERINA via Tor
+echo " Uji upload ke ONERINA via Tor..."
+echo "   Mengirim file uji..."
+echo "test" > ~/test_tor.txt
+torsocks rclone copy ~/test_tor.txt ONERINA:Backup_Platform_AI/ --timeout 30s 2>/dev/null
+if [ $? -eq 0 ]; then
+    echo "   ✅ Upload via Tor BERHASIL."
+    rm ~/test_tor.txt
+else
+    echo "   ⚠️ Upload GAGAL. Coba lagi nanti."
+fi
+echo ""
+echo "========================================"
+echo "  UJI COBA SELESAI"
+echo "========================================"
+#!/bin/bash
+# ============================================================
+# MICO-JDEQ AUTO BUNDLE v1.0 — VIVO Y28 (TERMUX)
+# Target: Vivo Y28 (Komandan Merah)
+# Mode: PLUG AND PLAY MENU UTAMA
+# Prinsip: Satu skrip, semua alat, anti lupa.
+# ============================================================
+echo "╔══════════════════════════════════════════════════════════╗"
+echo "║     MICO-JDEQ AUTO BUNDLE v1.0                         ║"
+echo "║     Menu Utama — Pilih Tindakan:                      ║"
+echo "╠══════════════════════════════════════════════════════════╣"
+echo "║  1) Multitester (Ukur kondisi sistem)                  ║"
+echo "║  2) Recovery (Perbaiki struktur & SSOT)                ║"
+echo "║  3) Cloud Backup (Upload JDEQ ke ONERINA)              ║"
+echo "║  4) Proxy Test (Uji & aktifkan Tor)                    ║"
+echo "║  5) Akun Maker (Buka halaman daftar cloud baru)        ║"
+echo "║  6) Keluar                                             ║"
+echo "╚══════════════════════════════════════════════════════════╝"
+read -p "Pilih nomor (1-6): " pilihan
+case $pilihan in
+  1)
+    # MULTITESTER
+    echo " Menjalankan Multitester..."
+    bash ~/mico_multitester.sh 2>/dev/null || echo "⚠️ File multitester tidak ditemukan. Jalankan manual."
+    ;;
+  2)
+    # RECOVERY
+    echo " Menjalankan Recovery..."
+    bash ~/mico_recovery.sh 2>/dev/null || echo "⚠️ File recovery tidak ditemukan. Jalankan manual."
+    ;;
+  3)
+    # CLOUD BACKUP
+    echo " Menjalankan Cloud Backup ke ONERINA..."
+    tor &
+    sleep 5
+    echo "    Menguji Tor..."
+    torsocks curl -s --connect-timeout 10 ifconfig.me >/dev/null 2>&1 && echo "   ✅ Tor aktif." || echo "   ⚠️ Tor gagal, upload langsung."
+    for folder in JDEQ JDEQ_VAULT JDEQ_CORE JDEQ_BACKUP JDEQ_BRIDGE JDEQ_LOGS JDEQ_MASTER_CORE JDEQ_SYSTEM_LOCK; do
+        if [ -d ~/$folder ]; then
+            echo "    Upload $folder..."
+            torsocks rclone copy ~/$folder "ONERINA:Backup_Platform_AI/$folder" --transfers 2 --timeout 60s --create-empty-src-dirs 2>/dev/null
+            [ $? -eq 0 ] && echo "   ✅ $folder: Berhasil" || echo "   ⚠️ $folder: Gagal"
+        fi
+    done
+    echo "✅ Cloud Backup selesai."
+    ;;
+  4)
+    # PROXY TEST
+    echo " Menyalakan Tor dan uji proxy..."
+    tor &
+    sleep 5
+    IP_TOR=$(torsocks curl -s --connect-timeout 10 ifconfig.me 2>/dev/null)
+    if [ -n "$IP_TOR" ]; then
+        echo "   ✅ Proxy BERHASIL. IP via Tor: $IP_TOR"
+    else
+        echo "   ⚠️ Proxy GAGAL. Mungkin Tor belum siap."
+    fi
+    ;;
+  5)
+    # AKUN MAKER
+    echo "╔══════════════════════════════════════════════════════════╗"
+    echo "║     MICO-JDEQ AKUN MAKER v1.0                          ║"
+    echo "║     Pilih penyedia cloud untuk mendaftar:              ║"
+    echo "╠══════════════════════════════════════════════════════════╣"
+    echo "║  1) Google Drive (15 GB gratis)                        ║"
+    echo "║  2) Microsoft OneDrive (5 GB gratis)                   ║"
+    echo "║  3) Mega.nz (20 GB gratis)                             ║"
+    echo "║  4) Proton Drive (5 GB gratis)                         ║"
+    echo "║  5) Dropbox (2 GB gratis)                              ║"
+    echo "╚══════════════════════════════════════════════════════════╝"
+    read -p "Pilih nomor (1-5): " pil_cloud
+    case $pil_cloud in
+      1) termux-open-url "https://accounts.google.com/signup" && echo "✅ Google: Halaman pendaftaran dibuka di browser." ;;
+      2) termux-open-url "https://signup.live.com" && echo "✅ Microsoft: Halaman pendaftaran dibuka di browser." ;;
+      3) termux-open-url "https://mega.nz/register" && echo "✅ Mega: Halaman pendaftaran dibuka di browser." ;;
+      4) termux-open-url "https://account.proton.me/signup" && echo "✅ Proton: Halaman pendaftaran dibuka di browser." ;;
+      5) termux-open-url "https://www.dropbox.com/register" && echo "✅ Dropbox: Halaman pendaftaran dibuka di browser." ;;
+      *) echo "❌ Pilihan tidak valid." ;;
+    esac
+    echo "========================================"
+    echo "  Setelah akun berhasil dibuat:"
+    echo "  1. Catat email & password di tempat aman."
+    echo "  2. Jalankan 'rclone config' untuk menambahkan remote baru."
+    echo "  3. Upload data JDEQ ke cloud baru."
+    echo "========================================"
+    ;;
+  6)
+    echo " Sampai jumpa, Bos."
+    exit 0
+    ;;
+  *)
+    echo "❌ Pilihan tidak valid."
+    ;;
+esac
+
