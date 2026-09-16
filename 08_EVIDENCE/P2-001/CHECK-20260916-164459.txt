@@ -28,3 +28,5 @@ Local Area Connection   169.254.223.158
 
 === [3] ADB USB — PC-i5 → Vivo Y28 ===
 adb path : C:\ProgramData\chocolatey\bin\adb.exe
+* daemon not running; starting now at tcp:5037
+* daemon started successfully

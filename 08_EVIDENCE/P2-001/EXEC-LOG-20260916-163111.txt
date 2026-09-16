@@ -41,3 +41,14 @@ cannot connect to 100.127.153.2:5555: No connection could be made because the ta
 === LANGKAH 4: SIDIK JARI INTEGRITAS ===
 
 === LANGKAH 5: KOMIT (commit saja, push manual) ===
+[MIRROR] Local bundle: D:/MICO_SSOT/12_BACKUP/git-mirror/jdeq-mirror-20260916-164502.bundle
+[master c5187de] MICO-P2-001: ADR Pembukaan + Pemindaian Fisik - 20260916-163111
+ 4 files changed, 92 insertions(+)
+ create mode 100644 08_EVIDENCE/P2-001/CHECK-20260916-164459.txt
+ create mode 100644 08_EVIDENCE/P2-001/EXEC-LOG-20260916-163111.txt
+ create mode 100644 08_EVIDENCE/P2-001/MANIFEST-20260916-163111.sha256
+ create mode 100644 08_EVIDENCE/P2-001/SSOT-INVENTORY-20260916-163111.txt
+
+=== SELESAI ===
+Manifest : 08_EVIDENCE\P2-001\MANIFEST-20260916-163111.sha256
+Log      : 08_EVIDENCE\P2-001\EXEC-LOG-20260916-163111.txt
