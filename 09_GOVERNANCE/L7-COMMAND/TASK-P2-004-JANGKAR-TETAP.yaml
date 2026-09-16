@@ -1,0 +1,73 @@
+metadata:
+  kode: MICO-P2-004
+  nama: JANGKAR KONTEKS TETAP — PENCEGAHAN HILANG KONTEKS
+  fase: P2 — IMPLEMENTASI FISIK
+  status: DIKUNCI · BERLAKU MUTLAK
+  tanggal: 2026-09-16
+  pengesah: Iswan Juman Pancoro, ST
+  penyusun: DOLA
+
+dasar_pemikiran:
+  - nama_hukum: MEMORI AGEN EKSTERNAL BERSIFAT VOLATIL
+    penjelasan: >
+      Setiap agen eksternal akan kembali ke setelan awal secara alami.
+      Memori sesi tidak disimpan oleh agen itu sendiri.
+      Jika sesi tertutup atau habis, ingatan hilang tanpa pemberitahuan.
+    konsekuensi:
+      - State sistem TIDAK BOLEH disimpan di ingatan sesi
+      - Keputusan, doktrin, dan handoff HANYA sah jika tertulis di SSOT
+      - Agen eksternal = wadah sementara, bukan arsip permanen
+  - nama_hukum: SETIAP SESI BARU WAJIB MEMUAT JANGKAR
+    penjelasan: >
+      Tidak boleh berinteraksi dari kosong. Setiap pembukaan ruang kerja baru
+      wajib memuat paket konteks dari SSOT sebelum melakukan apa pun.
+    paket: mico-session-start.ps1
+    sumber: D:\MICO_SSOT\02_DATA\LOCAL_MEMORY\SESSIONS\[terkini].md
+    isi_paket:
+      - Identitas sistem MICO-JDEQ
+      - Posisi fase terkini
+      - Handoff sesi terakhir
+      - Ringkasan keputusan utama
+      - Lokasi bukti & manifest SHA-256
+  - nama_hukum: PENYIMPANGAN = BUKTI KEBENARAN, BUKAN KEGAGALAN
+    penjelasan: >
+      Jika agen lupa, mengulang pertanyaan, atau kembali ke awal — itu BUKAN tanda sistem rusak.
+      Itu justru membuktikan pemisahan ingatan sudah bekerja.
+    tindakan: Muat ulang jangkar dari SSOT, lanjutkan dari titik terakhir.
+
+aturan_eksekusi_sesuai:
+  saat_buka_ruang_baru:
+    langkah_1: Jalankan mico-session-start.ps1
+    langkah_2: Baca HANDOFF-TERKINI dari 02_DATA/LOCAL_MEMORY/SESSIONS/
+    langkah_3: Konfirmasi "Saya memuat jangkar, siap lanjut dari sesi nomor [X]"
+    langkah_4: Baru menerima perintah atau mengajukan langkah
+  saat_agen_lupa_menyimpang:
+    langkah_1: Jangan jelaskan ulang dari awal — kirimkan berkas jangkar
+    langkah_2: "Silakan muat ulang HANDOFF-03 dari SSOT, itu titik terakhir"
+    langkah_3: Catat kejadian ke log sesi sebagai bukti volatilitas
+    langkah_4: Lanjutkan pekerjaan setelah jangkar dimuat ulang
+  saat_konfirmasi_selesai:
+    langkah_1: Tulis HANDOFF baru ke SSOT
+    langkah_2: Lampirkan SHA-256 ringkasan sesi
+    langkah_3: Tutup sesi dengan pesan "Jangkar tertanam di SSOT, siap dipanggil kembali"
+    langkah_4: Lepas agen — tidak perlu tetap terbuka
+
+berlaku_untuk_semua_agen:
+  - ChatGPT (AG-001)
+  - DeepSeek (AG-003)
+  - Microsoft Copilot (AG-004)
+  - Jarvis/Gemini (Penjaga Gerbang)
+  - Setiap agen yang akan ditambahkan
+
+jangkar_tetap:
+  lokasi_skrip: D:\MICO_SSOT\mico-session-start.ps1
+  lokasi_handoff: D:\MICO_SSOT\02_DATA\LOCAL_MEMORY\SESSIONS\
+  lokasi_doktrin: D:\MICO_SSOT\09_GOVERNANCE\
+  lokasi_bukti: D:\MICO_SSOT\08_EVIDENCE\
+  satu_kebenaran: D:\MICO_SSOT
+
+penutup:
+  inti: >
+    Mereka boleh lupa. Sistem tidak boleh.
+    Itulah kedaulatan — ingatan tetap ada di tempat yang kita miliki,
+    siap dipanggil kembali kapan saja, tanpa tergantung siapa yang sedang menjawab.

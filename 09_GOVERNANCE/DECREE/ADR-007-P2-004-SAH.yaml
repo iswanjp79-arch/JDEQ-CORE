@@ -1,0 +1,18 @@
+# ADR-007 — PENGESAHAN TASK CARD P2-004 JANGKAR KONTEKS TETAP
+## Status
+DITERIMA · DIKUNCI · TIDAK DIUBAH
+## Tanggal
+16 September 2026
+## Konteks
+Agen eksternal memiliki memori volatil — kembali ke setelan default setiap sesi baru. State sistem tidak boleh bergantung pada ingatan agen.
+## Keputusan
+Task Card MICO-P2-004 (Jangkar Konteks Tetap) disahkan sebagai standar arsitektur.
+Setiap sesi baru wajib memuat jangkar dari SSOT (mico-session-start.ps1) sebelum berinteraksi.
+Penyimpangan agen = bukti pemisahan ingatan bekerja, bukan kegagalan sistem.
+## Konsekuensi
+- Handoff dan keputusan hanya sah jika tertulis di SSOT
+- Agen eksternal = wadah sementara, bukan arsip
+- Muat ulang jangkar = prosedur baku saat agen lupa
+## Tanda Pengesahan
+L0 — Iswan Juman Pancoro, ST
+Semarang, 16 September 2026
