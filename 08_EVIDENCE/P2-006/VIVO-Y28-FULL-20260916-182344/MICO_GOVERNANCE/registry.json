@@ -1,0 +1,38 @@
+{
+  "registry_version": "2.0",
+  "project": "MICO-JDEQ Dual-Domain Architecture",
+  "root": "$HOME/JDEQ",
+  "last_updated": "2026-07-04",
+  "departments": {
+    "01_ENGINEERING": {
+      "role": "Perencanaan & Eksekusi",
+      "components": {
+        "planner": ["knowledge/bridge.sh", "engine/intention_engine.sh"],
+        "builder": ["pelaksana/AGENTS/agent_router.sh"],
+        "executor": ["triggers/trigger_manager.sh", "STATE.json"]
+      }
+    },
+    "02_GOVERNANCE": {
+      "role": "Audit, Verifikasi, & Keputusan",
+      "components": {
+        "registry": ["LOCK_ESTAFET.json", "INTEGRITY_MANIFEST.sha256"],
+        "audit": ["DECISION_REGISTRY/", "AUDIT/"],
+        "verifier": ["tools/verify_priority_1.sh"],
+        "evidence": ["tools/pos_pengamanan_v2.sh", "tools/security_check.sh"]
+      }
+    },
+    "03_OPERATIONS": {
+      "role": "Otomasi & Infrastruktur",
+      "components": {
+        "mqtt": ["mqtt/"],
+        "n8n": ["n8n/"],
+        "automation": ["service/"],
+        "scheduler": ["scheduler/"],
+        "android": ["APPLICATION/android_runtime/"],
+        "cloud": []
+      }
+    }
+  },
+  "workflow": "Engineering → Governance → Execution",
+  "principle": "Registry adalah OTAK. n8n adalah SISTEM SARAF. AI adalah ALAT."
+}

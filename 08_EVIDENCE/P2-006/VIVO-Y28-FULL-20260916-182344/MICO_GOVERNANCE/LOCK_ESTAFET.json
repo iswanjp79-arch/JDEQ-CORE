@@ -1,0 +1,26 @@
+{
+  "lock_version": "2.0",
+  "created": "2026-07-04",
+  "owner": "ISWAN. Jp",
+  "priority_1": {
+    "status": "FINAL",
+    "files": [
+      "registry.json", "CONSTITUTION.md", "META_CONSTITUTION.md",
+      "DEFINITION_OF_DONE.md", "HEALTH_SCORE.md", "AGENTS.txt",
+      "DEPARTMENT_02_GOVERNANCE/audit/ADR-0009-security-failure-definition.md",
+      "DEPARTMENT_02_GOVERNANCE/audit/ADR-0010-universal-ai-connection-protocol.md",
+      "DEPARTMENT_01_ENGINEERING/planner/knowledge/bridge.sh",
+      "DEPARTMENT_01_ENGINEERING/builder/agent_router.sh",
+      "DEPARTMENT_01_ENGINEERING/executor/trigger_manager.sh",
+      "STATE.json",
+      "DEPARTMENT_02_GOVERNANCE/evidence/pos_pengamanan_v2.sh",
+      "DEPARTMENT_02_GOVERNANCE/evidence/security_check.sh",
+      "LOCK_ESTAFET.json"
+    ]
+  },
+  "estafet_rule": {
+    "description": "Setiap perubahan di Priority 2 wajib memicu audit ulang Priority 1",
+    "trigger": "DEPARTMENT_02_GOVERNANCE/verifier/verify_priority_1.sh",
+    "violation_action": "Tunda Priority 2, laporkan ke Owner"
+  }
+}

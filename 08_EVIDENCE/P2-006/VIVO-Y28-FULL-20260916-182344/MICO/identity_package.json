@@ -1,0 +1,89 @@
+{
+  "identity": "MICO-JDEQ",
+  "state": "PROOF_OF_LIFE",
+  "timestamp": "2026-07-16T13:33:13+07:00",
+  "environment": "Termux",
+  "device": "Vivo Y28",
+  "policy": {
+    "rules": [
+      {
+        "name": "battery_low",
+        "condition": "battery < 20",
+        "action": "reduce_heartbeat",
+        "target": "survival.sh",
+        "new_interval": 300
+      },
+      {
+        "name": "internet_down",
+        "condition": "mqtt_public_dead AND neuron_alive",
+        "action": "log_warning",
+        "message": "Internet down, menunggu pemulihan"
+      },
+      {
+        "name": "state_lost",
+        "condition": "state_file_missing",
+        "action": "restore_from_backup",
+        "backup_path": "/sdcard/MICO/state.backup.json"
+      }
+    ]
+  },
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "id": "identity",
+        "label": "Identity",
+        "value": "MICO-JDEQ",
+        "timestamp": "2026-07-16T05:23:14+07:00",
+        "environment": "Nix-on-Droid"
+      },
+      {
+        "id": "state",
+        "label": "State",
+        "value": "PROOF_OF_LIFE"
+      },
+      {
+        "id": "resource",
+        "label": "Resource Layer",
+        "mqtt": "MATI",
+        "neuron": "MATI"
+      },
+      {
+        "id": "policy",
+        "label": "Policy Engine",
+        "rules_count": 3
+      },
+      {
+        "id": "knowledge",
+        "label": "Knowledge Base",
+        "status": "Belum tersimpan di /sdcard/MICO"
+      }
+    ],
+    "edges": [
+      {
+        "from": "identity",
+        "to": "state",
+        "relation": "has_state"
+      },
+      {
+        "from": "identity",
+        "to": "resource",
+        "relation": "runs_on"
+      },
+      {
+        "from": "identity",
+        "to": "policy",
+        "relation": "governed_by"
+      },
+      {
+        "from": "identity",
+        "to": "knowledge",
+        "relation": "knows"
+      },
+      {
+        "from": "resource",
+        "to": "state",
+        "relation": "maintains"
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "rules": [
+    {
+      "name": "battery_low",
+      "condition": "battery < 20",
+      "action": "reduce_heartbeat",
+      "target": "survival.sh",
+      "new_interval": 300
+    },
+    {
+      "name": "internet_down",
+      "condition": "mqtt_public_dead AND neuron_alive",
+      "action": "log_warning",
+      "message": "Internet down, menunggu pemulihan"
+    },
+    {
+      "name": "state_lost",
+      "condition": "state_file_missing",
+      "action": "restore_from_backup",
+      "backup_path": "/sdcard/MICO/state.backup.json"
+    }
+  ]
+}

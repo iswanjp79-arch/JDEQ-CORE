@@ -1,0 +1,12 @@
+[
+  {"nama": "Hukum Ohm", "rumus": "V = I × R", "satuan": "Volt"},
+  {"nama": "Daya Aktif 1 Fasa", "rumus": "P = V × I × cosφ", "satuan": "Watt"},
+  {"nama": "Daya Aktif 3 Fasa", "rumus": "P = √3 × V × I × cosφ", "satuan": "Watt"},
+  {"nama": "Daya Semu", "rumus": "S = V × I", "satuan": "VA"},
+  {"nama": "Impedansi", "rumus": "Z = √(R² + X²)", "satuan": "Ohm"},
+  {"nama": "Reaktansi Induktif", "rumus": "Xl = 2πfL", "satuan": "Ohm"},
+  {"nama": "Reaktansi Kapasitif", "rumus": "Xc = 1/(2πfC)", "satuan": "Ohm"},
+  {"nama": "Hubungan Bintang (Y)", "rumus": "Vf = Vl/√3, If = Il", "satuan": ""},
+  {"nama": "Hubungan Segitiga (Δ)", "rumus": "Vf = Vl, Il = √3 × If", "satuan": ""},
+  {"nama": "Arus Hubung Pendek", "rumus": "Isc = V / Z", "satuan": "Ampere"}
+]

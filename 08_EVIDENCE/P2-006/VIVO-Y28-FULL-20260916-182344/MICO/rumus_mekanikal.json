@@ -1,0 +1,6 @@
+[
+  {"nama": "Hazen-Williams", "rumus": "hf = 10.67 × L × Q^1.852 / (C^1.852 × d^4.87)", "satuan": "meter"},
+  {"nama": "Kecepatan Aliran", "rumus": "v = Q / A", "satuan": "m/s"},
+  {"nama": "Bilangan Reynolds", "rumus": "Re = (v × D) / ν", "satuan": ""},
+  {"nama": "Kehilangan Tekanan", "rumus": "ΔP = f × (L/D) × (ρ × v² / 2)", "satuan": "Pa"}
+]
