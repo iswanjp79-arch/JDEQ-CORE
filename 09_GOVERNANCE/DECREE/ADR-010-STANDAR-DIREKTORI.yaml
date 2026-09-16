@@ -21,3 +21,10 @@ Governance-guard memblokir commit ke 09_GOVERNANCE tanpa ADR pendamping.
 ## Tanda Pengesahan
 L0 — Iswan Juman Pancoro, ST
 Semarang, 16 September 2026
+
+## Addendum — 16 September 2026
+1. ADR-001..010 & Task Card lama: TIDAK dimigrasi (historical record)
+2. Skema MJD-* berlaku sejak 16 Sep 2026 ke depan
+3. Batas 3 digit (-001..-999), tinjau ulang jika tembus
+4. Nama file statis (tanpa -v2). Versi hanya di header dokumen
+5. Direktori paralel: PROSEDUR · INSTRUKSI_KERJA · FORMULIR
