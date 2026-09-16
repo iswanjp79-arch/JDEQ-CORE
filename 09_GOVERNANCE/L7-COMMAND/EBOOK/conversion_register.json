@@ -1,0 +1,54 @@
+{
+  "conversion_register": {
+    "version": "1.0",
+    "status": "DRAFT",
+    "date": "2026-09-16",
+    "source_context": "PT. Paula Jaya 16 folder implementasi (2011)",
+    "note": "Semua nama baru = USULAN. BELUM_DIVERIFIKASI. Dilarang eksekusi tanpa ADR L0.",
+    "mappings": [
+      { "old": "01. Awareness", "new_proposed": "MICO-L3-TRN-01_Training_Awareness" },
+      { "old": "02. Cover", "new_proposed": "MICO-L0-FRT-01_Front_Matter" },
+      { "old": "03. (tidak terlihat)", "new_proposed": "MICO-L2-GOV-01_Policy_Statement" },
+      { "old": "04. Tender", "new_proposed": "MICO-L7-COM-01_Tender_Management" },
+      { "old": "05. (tidak terlihat)", "new_proposed": "MICO-L2-GOV-02_Organizational_Structure" },
+      { "old": "06. Pemantauan Dan Pengukuran", "new_proposed": "MICO-L4-OBS-01_Monitoring_Measurement" },
+      { "old": "07. Cross Reference", "new_proposed": "MICO-L5-TRC-01_Cross_Reference" },
+      { "old": "08. Sosialisasi Form Dan Finding", "new_proposed": "MICO-L7-COM-02_Form_Socialization" },
+      { "old": "09. Review Struktur", "new_proposed": "MICO-L7-GOV-01_Structure_Review" },
+      { "old": "10. Audit", "new_proposed": "MICO-L7-AUD-01_Internal_Audit" },
+      { "old": "11. Tinjauan Manajemen", "new_proposed": "MICO-L7-MGT-01_Management_Review" },
+      { "old": "12. Corrective Action", "new_proposed": "MICO-L7-RCV-01_Corrective_Action" },
+      { "old": "13. Emergency Response", "new_proposed": "MICO-L7-EMR-01_Emergency_Response" },
+      { "old": "14. (tidak terlihat)", "new_proposed": "MICO-L7-PRV-01_Preventive_Action" },
+      { "old": "15. Standar Penomoran", "new_proposed": "MICO-L5-NMG-01_Naming_Standard" },
+      { "old": "16. Bantex", "new_proposed": "MICO-L4-ARC-01_Physical_Archive" }
+    ],
+    "department_codes": [
+      { "code": "PJ", "name": "PT. Paula Jaya" },
+      { "code": "TEK", "name": "Teknik / Operasional" },
+      { "code": "HRGA", "name": "HR & GA" },
+      { "code": "MKT", "name": "Marketing" },
+      { "code": "HSE", "name": "HSE" },
+      { "code": "F&A", "name": "Finance & Acct" },
+      { "code": "MR", "name": "Management Representative" }
+    ],
+    "document_type_codes": [
+      { "code": "P", "meaning": "Prosedur" },
+      { "code": "IK", "meaning": "Instruksi Kerja" },
+      { "code": "S", "meaning": "Standar" },
+      { "code": "F", "meaning": "Form" }
+    ],
+    "rules": {
+      "forbidden": [
+        "Ganti nama file berdasarkan foto tanpa verifikasi",
+        "Buat folder di SSOT berdasarkan usulan",
+        "Ubah kebijakan berdasarkan foto"
+      ],
+      "allowed": [
+        "Catat, inventarisasi",
+        "Usulkan pemetaan",
+        "Minta verifikasi L0/DOLA"
+      ]
+    }
+  }
+}

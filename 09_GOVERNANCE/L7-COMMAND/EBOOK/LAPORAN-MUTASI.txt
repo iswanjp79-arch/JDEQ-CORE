@@ -1,0 +1,17 @@
+# LAPORAN MUTASI - MICO-EBOOK-001 v1.0
+
+Tanggal      : 2026-09-16T15:59:16+07:00
+Pelaksana    : AG-003 (DeepSeek)
+Sifat        : APPEND-ONLY
+Jalur        : D:\MICO_SSOT\09_GOVERNANCE\L7-COMMAND\EBOOK
+Ditulis      : 11 file
+Dilewati     : 0 file
+Manifest     : D:\MICO_SSOT\09_GOVERNANCE\L7-COMMAND\EBOOK\MANIFEST-SHA256.txt
+Manifest hash: 6509BF61E54C5133F7DB9ABDBAC6E77CC418D9011076826BE070FC26F53ECD5F
+Status Git   : TIDAK COMMIT - menunggu ADR-P1 dari L0
+
+## CATATAN
+- File existing tidak ditimpa
+- Struktur L1-L7 tidak disentuh
+- Riwayat/bukti lama utuh
+- Butuh ADR-P1-EBOOK-MANUAL untuk commit
