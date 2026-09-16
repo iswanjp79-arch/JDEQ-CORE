@@ -1,0 +1,30 @@
+============================================================
+MICO-P2-001 · CEK KONEKSI MULTI-JALUR
+Waktu: 20260916-164459
+============================================================
+
+=== [1] PC-i5 (SELF) ===
+Hostname : KAPAL-INDUK
+User     : USER
+
+InterfaceAlias          IPAddress
+--------------          ---------
+Npcap Loopback Adapter  169.254.100.213
+vEthernet (WSL)         172.28.80.1
+Ethernet 2              192.168.1.5
+Tailscale               100.124.50.70
+Local Area Connection 3 169.254.94.204
+Local Area Connection 2 169.254.247.96
+Local Area Connection   169.254.223.158
+
+
+=== [2] TAILSCALE STATUS ===
+100.124.50.70   kapal-induk   rinawatimadina@  windows  -                          
+100.123.139.63  antix1-1      rinawatimadina@  linux    -                          
+100.92.105.35   hp-mini       rinawatimadina@  linux    offline, last seen 3d ago  
+100.79.91.60    madina        rinawatimadina@  android  -                          
+100.67.36.31    markas-utama  tagged-devices   linux    -                          
+100.127.153.2   v2352         rinawatimadina@  android  -                          
+
+=== [3] ADB USB — PC-i5 → Vivo Y28 ===
+adb path : C:\ProgramData\chocolatey\bin\adb.exe

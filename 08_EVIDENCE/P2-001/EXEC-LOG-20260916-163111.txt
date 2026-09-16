@@ -1,0 +1,43 @@
+============================================================
+MICO-P2-001 · EKSEKUSI FISIK ANTAR PERANGKAT
+Waktu    : 20260916-163111
+Otoritas : L0 (Veto sah)
+Dasar    : ADR-P2-OPENING.md
+Status   : DIMULAI
+============================================================
+
+--- PRE-CHECK TOOLING ---
+✅ adb ditemukan
+C:\ProgramData\chocolatey\bin\adb.exe
+
+--- DAFTAR PERANGKAT ---
+• Z83-markas-utama → 100.67.36.31:22
+• Vivo-Y28 → 100.127.153.2:5555
+
+=== LANGKAH 1: PEMINDAIAN KONEKSI ===
+
+=== CEK: Z83-markas-utama (100.67.36.31) ===
+ICMP: OK
+TCP : True
+✅ Z83-markas-utama TERHUBUNG
+
+=== CEK: Vivo-Y28 (100.127.153.2) ===
+ICMP: OK
+TCP : False
+⚠️ Vivo-Y28 SEBAGIAN/TIDAK TERHUBUNG
+
+⚠️ ADA KENDALA KONEKSI — lanjut terbatas (sesuai prinsip baca-saja)
+
+=== LANGKAH 2: INVENTARIS SSOT LOKAL ===
+Catatan: ini INVENTARIS, bukan sinkron ke Z83
+Daftar direktori tersimpan
+
+=== LANGKAH 3: TARIK DATA DARI VIVO Y28 ===
+* daemon not running; starting now at tcp:5037
+* daemon started successfully
+cannot connect to 100.127.153.2:5555: No connection could be made because the target machine actively refused it. (10061)
+⚠️ ADB tidak terhubung — Langkah 3 dilewati
+
+=== LANGKAH 4: SIDIK JARI INTEGRITAS ===
+
+=== LANGKAH 5: KOMIT (commit saja, push manual) ===
