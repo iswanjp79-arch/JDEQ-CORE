@@ -1,0 +1,28 @@
+# ADR-018 — FIX REGRESI REGEX MJD-DOLA-*
+## Status
+DITERIMA · DIKUNCI · TIDAK DIUBAH
+## Tanggal
+17 September 2026
+## Konteks
+Commit 313df891 (whitelist rename DOLA→AG-GOV-DOLA) mengalami regresi
+regex: pattern (?<!AG-GOV-)\bDOLA\b menangkap DOLA di dalam kode dokumen
+MJD-DOLA-* sehingga merusak skema penomoran ADR-010.
+File terdampak:
+- MJD-DOLA-S-001/002/003.yaml
+- MANIFEST_STANDAR.txt
+- MJD-DOLA-IK-002.yaml
+- MANIFEST_IK.txt
+## Keputusan
+1. 6 file tersebut direvert dari backup ZONA-AKTIF-WHITELIST-20260917-150550.
+2. Kode dokumen MJD-DOLA-* tetap sesuai skema ADR-010.
+3. Pattern regex di masa depan wajib exclude prefix MJD- dan suffix -.
+4. Dua file tetap berlaku perubahan:
+   - TASK-P2-004-JANGKAR-TETAP.yaml : penyusun: AG-GOV-DOLA
+   - DEFINISI-NAMA-DOLA.md : judul baru
+## Pelajaran
+- Regex rename tidak boleh blanket, harus kontekstual.
+- Verifikasi preview SEBELUM commit adalah wajib.
+- Manifest harus diverifikasi konsisten dengan nama file fisik.
+## Tanda Pengesahan
+L0 — Iswan Juman Pancoro, ST
+Semarang, 17 September 2026

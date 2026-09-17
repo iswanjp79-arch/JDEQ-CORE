@@ -1,0 +1,31 @@
+# ADR-016 — DUAL-ZONE ARCHITECTURE & CONTROLLER LOCK
+## Status
+DITERIMA · DIKUNCI · TIDAK DIUBAH
+## Tanggal
+17 September 2026
+## Konteks
+- Name collision DOLA (internal vs eksternal) perlu isolasi.
+- Arsip historis (08_EVIDENCE) immutable — tidak boleh disentuh.
+- Zona aktif (09_GOVERNANCE, 02_DATA, root scripts) perlu baseline bersih.
+- Enam perangkat perlu pembagian peran tegas.
+## Keputusan
+### A. Dual-Zone
+1. ZONA HISTORIS  : 08_EVIDENCE/ — read-only, immutable, tidak diubah.
+2. ZONA AKTIF     : 09_GOVERNANCE/, 02_DATA/, root scripts — read-write terkendali.
+3. Cross-reference antar zona = read-only.
+### B. Replace Pattern
+1. Pola : (?<!AG-GOV-)\bDOLA\b
+2. Ganti: AG-GOV-DOLA
+3. Berlaku hanya di zona aktif.
+4. PROMPT_BAKU, glossary, ADR-016 — DILINDUNGI.
+### C. Controller Lock
+1. Full write: PC-i5, Z83, Vivo Y28
+2. Read-only / execution-restricted: HP Mini, Infinix, Aspire One
+3. Dokumen induk hanya boleh dibuat dari 3 controller.
+### D. Baseline Baru
+1. Setelah replace, hash ulang semua file yang berubah.
+2. Changelog + manifest dicatat append-only.
+3. Baseline v2.0 berlaku sejak commit.
+## Tanda Pengesahan
+L0 — Iswan Juman Pancoro, ST
+Semarang, 17 September 2026
