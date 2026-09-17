@@ -43,3 +43,8 @@ L6-modules/**/__pycache__/
 # Backup & archive lokal (jangan commit)
 12_BACKUP/
 99_ARCHIVE/
+# Exception: housekeeping logs yang harus di-track
+!08_EVIDENCE/MOVE-TO-D-*/
+!08_EVIDENCE/MOVE-TO-D-*/*
+!08_EVIDENCE/CLEANUP-C-*/
+!08_EVIDENCE/CLEANUP-C-*/*
