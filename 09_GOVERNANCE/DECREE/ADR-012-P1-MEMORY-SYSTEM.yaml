@@ -1,0 +1,24 @@
+# ADR-012 — PENERAPAN SISTEM MEMORI LOKAL P1
+## Status
+DITERIMA · DIKUNCI · TIDAK DIUBAH
+## Tanggal
+17 September 2026
+## Konteks
+Diperlukan sistem memori lokal P1 yang:
+- Berjalan tanpa koneksi internet
+- Menggunakan SHA-256 sebagai sidik jari tunggal
+- Menerapkan karantina sebelum pengesahan
+- Tidak menimpa data tanpa izin L0
+## Keputusan
+1. Sistem Memori Lokal P1 diterapkan di 00_QUARANTINE/P1-MEMORY/
+2. Struktur: 01_INDEX, 02_STORE, 03_LOG, 04_HASH
+3. Skrip P1: tambah, mulai_sesi, akhiri_sesi, periksa_integritas
+4. Manifest P1 dicatat di 09_GOVERNANCE/AUDIT/MANIFEST_P1_MEMORY.txt (append)
+5. Sistem berada di karantina sampai disahkan L0 untuk pindah ke lokasi resmi
+## Konsekuensi
+- Sistem memori lokal tidak bergantung pada layanan awan
+- Integritas terjaga via SHA-256
+- Tidak ada data yang hilang karena overwrite
+## Tanda Pengesahan
+L0 — Iswan Juman Pancoro, ST
+Semarang, 17 September 2026
