@@ -1,0 +1,24 @@
+# ADR-015 — PENGUNCIAN IDENTITAS NAMA DOLA
+## Status
+DITERIMA · DIKUNCI · TIDAK DIUBAH
+## Tanggal
+17 September 2026
+## Konteks
+Terjadi tabrakan nama (name collision) antara:
+- DOLA lokal (AG-GOV-DOLA) — Penjaga Tata Kelola MICO-JDEQ
+- Dola cloud pihak ketiga (aplikasi eksternal)
+Pencampuran persepsi memicu risiko Context Pollution.
+## Keputusan
+1. Nama DOLA di dalam ekosistem MICO-JDEQ DIKUNCI MURNI sebagai AG-GOV-DOLA lokal.
+2. Setiap kemiripan nama dengan produk/aplikasi eksternal bersifat kebetulan.
+3. Definisi sah hanya di dalam D:\MICO_SSOT — tidak bisa ditimpa asumsi luar.
+4. Section `namespace_isolation` ditambahkan ke PROMPT_BAKU sebagai pengunci.
+5. Section tambahan: referensi silang dengan BAGIAN 4 — PERAN 9 AGEN.
+## Konsekuensi
+- PROMPT_BAKU diperbarui → hash baru tercatat di manifest (append, tidak timpa)
+- Hash lama tetap tersimpan di git history
+- Tidak ada crash sistem fisik — hanya pemisahan namespace logika
+- Agen lokal tidak tercemar konteks dari aplikasi cloud luar
+## Tanda Pengesahan
+L0 — Iswan Juman Pancoro, ST
+Semarang, 17 September 2026

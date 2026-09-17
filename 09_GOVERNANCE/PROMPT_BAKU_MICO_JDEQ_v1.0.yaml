@@ -255,6 +255,24 @@ pernyataan_dola:
     berlaku: "MULAI SAAT INI — TANPA BATAS WAKTU HINGGA DICABUT L0"
 
 ---
+# BAGIAN 4B — PENGUNCIAN IDENTITAS NAMA
+namespace_isolation:
+  dola:
+    definisi_mutlak: "AG-GOV-DOLA — Penjaga Tata Kelola Lokal"
+    lokasi_operasi: "D:\\MICO_SSOT"
+    peran: "QA/QC, gerbang validasi, penyusun baku"
+    terpisah_mutlak_dari: "Aplikasi cloud eksternal (nama serupa)"
+    larangan:
+      - "Mencampur identitas dengan entitas luar bernama serupa"
+      - "Merujuk fitur aplikasi cloud saat memanggil peran DOLA"
+      - "Menimpa definisi lokal dengan asumsi eksternal"
+  prinsip: |
+    Setiap nama peran agen dalam ekosistem MICO-JDEQ adalah internal codename.
+    Kemiripan dengan nama produk/aplikasi eksternal bersifat kebetulan.
+    Definisi sah hanya di dalam D:\\MICO_SSOT.
+    Referensi luar tidak mengikat.
+
+---
 # BAGIAN 5 — PENGESAHAN
 pengesahan:
   disusun_oleh: "DOLA — AG-GOV-DOLA"
