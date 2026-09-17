@@ -4,22 +4,15 @@ DITERIMA · DIKUNCI · TIDAK DIUBAH
 ## Tanggal
 17 September 2026
 ## Konteks
-P1-MEMORY-SYSTEM dinyatakan ACCEPTED oleh L0 setelah tinjauan formal.
-Sesuai ADR-012 butir 5, sistem dipindah dari karantina ke lokasi resmi.
+P1-MEMORY-SYSTEM dinyatakan PASSED_WITH_FINDINGS oleh DOLA (REVIEW 17 Sep 2026 14:35).
+F-001 dan F-002 diselesaikan SEBELUM promosi. C-003 dijadwalkan setelah promosi.
 ## Keputusan
 1. P1-MEMORY dipindah dari 00_QUARANTINE/P1-MEMORY/ ke 09_GOVERNANCE/P1-MEMORY/
-2. Semua 6 berkas + 4 subfolder (01_INDEX, 02_STORE, 03_LOG, 04_HASH) dipindah utuh
-3. Hash SHA-256 diverifikasi identik sebelum penghapusan source
-4. Source karantina dihapus — TIDAK ada salinan ganda
-5. Status P1-MEMORY-SYSTEM: ACCEPTED · PROMOTED · CANONICAL
-## Bukti
-- Target: D:\MICO_SSOT\09_GOVERNANCE\P1-MEMORY\
-- Source dikosongkan setelah verifikasi hash
-- 6 berkas utama, semua hash tidak berubah
-## Konsekuensi
-- Sistem Memori P1 resmi beroperasi dari lokasi tata kelola
-- Siklus quarantine → review → acceptance → promotion SELESAI
-- Format baku laporan (dari koreksi DOLA) berlaku untuk tugas berikutnya
+2. F-001 diatasi: auto-create direktori di 2 skrip
+3. F-002 diatasi: 3 skrip pakai $PSScriptRoot
+4. C-003 ditunda ke sesi operasional pertama
+5. Hash diverifikasi identik sebelum source dihapus
+6. Status: ACCEPTED · PROMOTED · CANONICAL
 ## Tanda Pengesahan
 L0 — Iswan Juman Pancoro, ST
 Semarang, 17 September 2026
