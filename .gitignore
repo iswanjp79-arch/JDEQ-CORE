@@ -48,3 +48,12 @@ L6-modules/**/__pycache__/
 !08_EVIDENCE/MOVE-TO-D-*/*
 !08_EVIDENCE/CLEANUP-C-*/
 !08_EVIDENCE/CLEANUP-C-*/*
+
+# ============================================================
+# Exception: housekeeping logs yang harus di-track
+# (ditambahkan 17 September 2026)
+# ============================================================
+!08_EVIDENCE/MOVE-TO-D-*/
+!08_EVIDENCE/MOVE-TO-D-*/**
+!08_EVIDENCE/CLEANUP-C-*/
+!08_EVIDENCE/CLEANUP-C-/**
