@@ -1,0 +1,23 @@
+# ADR-013 — PENGESAHAN LAPORAN LAYER 3
+## Status
+DITERIMA · DIKUNCI · TIDAK DIUBAH
+## Tanggal
+17 September 2026
+## Konteks
+MICO-DEPLOY-PROMPT-BAKU-001 + P1-MEMORY-SYSTEM selesai dieksekusi.
+Diperlukan laporan Layer 3 sebagai bukti penutup sesuai instruksi DOLA.
+## Keputusan
+1. Laporan Layer 3 tersimpan di 08_EVIDENCE/MICO-DEPLOY-PROMPT-BAKU-001/LAPORAN-LAYER-3.md
+2. Manifest P1_MEMORY ter-append hash laporan
+3. Tiga deviasi teknis dari skrip literal DOLA dicatat & disetujui L0:
+   - Fix bug escape \$ (single-quote here-string)
+   - Manifest -Append (aturan MJD-DOLA-IK-002)
+   - Blok tulis PROMPT_BAKU otomatis (opsi b)
+4. ADR-012 sebagai pendamping wajib governance-guard
+## Konsekuensi
+- Semua bukti Layer 3 terekam di sistem
+- Tidak ada berkas ditimpa
+- Ruang lingkup & jalur penyimpanan tetap sesuai instruksi asli
+## Tanda Pengesahan
+L0 — Iswan Juman Pancoro, ST
+Semarang, 17 September 2026
