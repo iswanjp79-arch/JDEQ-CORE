@@ -1,0 +1,24 @@
+=== MOVE TO D: (junction) — 20260917-160709 ===
+
+[1] Pre-flight checks...
+  OK: tidak ada python/freecad yang aktif
+  OK: target D: siap
+
+[2] Pindah Python314...
+  Size: 3.18 GB
+  Moving files...
+  Creating junction C:\Python314 → D:\Python314
+  OK: python masih jalan — Python 3.14.7
+
+[3] Pindah FreeCAD...
+  Size: 2.06 GB
+  Moving files...
+  Creating junction...
+  OK: FreeCAD.exe ditemukan via junction — C:\Users\USER\AppData\Local\Programs\FreeCAD 1.1\freecad.exe
+
+[4] Status C: setelah move...
+  Free: 34.78 GB (29.3%)
+  WARN: target 30% belum tercapai — kurang 0.8 GB
+
+=== SELESAI ===
+Log: D:\MICO_SSOT\08_EVIDENCE\MOVE-TO-D-20260917\20260917-160709-move.log

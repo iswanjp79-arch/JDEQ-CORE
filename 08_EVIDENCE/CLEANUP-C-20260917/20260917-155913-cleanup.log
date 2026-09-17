@@ -1,0 +1,19 @@
+=== BERSIH-BERSIH C: — 20260917-155913 ===
+
+[1] Hapus Chrome OptGuideOnDeviceModel...
+  HAPUS: 3.98 GB — C:\Users\USER\AppData\Local\Google\Chrome\User Data\OptGuideOnDeviceModel
+
+[2] Bersihkan Temp user...
+  TEMP: 1.57 GB dibebaskan
+
+[3] Hapus lm-studio-updater installer...
+  HAPUS: 0.59 GB
+
+[4] Bersihkan npm cache...
+  HAPUS: 1.26 GB
+
+[5] Status C: setelah cleanup...
+  Free: 31.58 GB (26.6%)
+
+=== SELESAI ===
+Log: D:\MICO_SSOT\08_EVIDENCE\CLEANUP-C-20260917\20260917-155913-cleanup.log

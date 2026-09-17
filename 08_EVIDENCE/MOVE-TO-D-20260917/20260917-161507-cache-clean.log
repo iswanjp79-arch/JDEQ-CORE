@@ -1,0 +1,26 @@
+=== CLEAN CACHE FINAL — 20260917-161507 ===
+  C: free before: 34.78 GB
+
+[1] Chrome cache...
+  Chrome: 276.6 MB — Cache
+  Chrome: 423.1 MB — Code Cache
+  Chrome: 5.6 MB — GPUCache
+  Chrome: 904.8 MB — CacheStorage
+  Chrome: 30.7 MB — ScriptCache
+  Chrome: 0.5 MB — DawnGraphiteCache
+  Chrome: 5.6 MB — DawnWebGPUCache
+
+[2] Edge cache...
+
+[3] Opera cache...
+
+[4] Windows Update cache...
+
+[5] Prefetch...
+  Prefetch: 4.7 MB
+
+=== HASIL ===
+  C: free after: 36.32 GB (30.6%)
+  Bebas: 1.54 GB
+  ✅ TARGET 30% TERCAPAI
+Log: D:\MICO_SSOT\08_EVIDENCE\MOVE-TO-D-20260917\20260917-161507-cache-clean.log
