@@ -1,0 +1,28 @@
+
+FullName
+--------                                                                                                                                                               
+D:\MICO_SSOT\08_EVIDENCE\MICO-P2-C02-SESSION-IDENTITY-HASH.txt                                                                                                         
+D:\MICO_SSOT\08_EVIDENCE\FORENSIC-DOLA-TRAIL-20260917\E-kandidat-kail.txt                                                                                              
+D:\MICO_SSOT\08_EVIDENCE\IMPORT-VIVO-Y28\20260916-0545\Documents\Documents\MICO_Vault\MICO_Arsip_Umum\Audit objektif respon DOLA ini sudah jauh lebih konsisten diband…
+D:\MICO_SSOT\08_EVIDENCE\IMPORT-VIVO-Y28\20260916-0547-FULL\Documents\Documents\MICO_Vault\MICO_Arsip_Umum\Audit objektif respon DOLA ini sudah jauh lebih konsisten d…
+D:\MICO_SSOT\08_EVIDENCE\L1\PC5\L1-00_identity_20260910_141410.txt                                                                                                     
+D:\MICO_SSOT\08_EVIDENCE\L1\Z83\L1-00_identity_z83_20260910_201853.txt                                                                                                 
+D:\MICO_SSOT\08_EVIDENCE\P2-006\VIVO-Y28-FULL-20260916-182344\SSOT-MICO-IDENTITY-20260625-V1.0.json                                                                    
+D:\MICO_SSOT\08_EVIDENCE\P2-006\VIVO-Y28-FULL-20260916-182344\JDEQ\agents\04_AGENT_ZERO\src\knowledge\main\about\identity.md                                           
+D:\MICO_SSOT\08_EVIDENCE\P2-006\VIVO-Y28-FULL-20260916-182344\JDEQ\agents\04_AGENT_ZERO\src\tests\test_socketio_unknown_namespace.py                                   
+D:\MICO_SSOT\08_EVIDENCE\P2-006\VIVO-Y28-FULL-20260916-182344\JDEQ\backup\SSOT-MICO-IDENTITY-20260625-V1.0.json                                                        
+D:\MICO_SSOT\08_EVIDENCE\P2-006\VIVO-Y28-FULL-20260916-182344\MICO\identity_package.json                                                                               
+D:\MICO_SSOT\09_GOVERNANCE\DECREE\ADR-0004-SESSION-IDENTITY.md                                                                                                         
+D:\MICO_SSOT\09_GOVERNANCE\DECREE\ADR-013-LAPORAN-LAYER-3.yaml                                                                                                         
+D:\MICO_SSOT\09_GOVERNANCE\DECREE\ADR-014-PROMOSI-P1-MEMORY.yaml                                                                                                       
+D:\MICO_SSOT\09_GOVERNANCE\DECREE\ADR-015-IDENTITY-LOCK-DOLA.yaml                                                                                                      
+D:\MICO_SSOT\09_GOVERNANCE\L5-DESIGN\L5-AUDIT-REPORT-DOLA.json                                                                                                         
+D:\MICO_SSOT\09_GOVERNANCE\L5-DESIGN\L5-AUDIT-REPORT-DOLA.yaml                                                                                                         
+D:\MICO_SSOT\09_GOVERNANCE\P2-DESIGN\MICO-P2-C02-SESSION-IDENTITY\SESSION-IDENTITY.md                                                                                  
+D:\MICO_SSOT\99_ARCHIVE\TREE_L_LEGACY\99_ARCHIVE\Z83_3YEARS_BACKUP\iswanjp\mico\02_CAPABILITY\identity\__pycache__\identity_engine.cpython-314.pyc                     
+D:\MICO_SSOT\99_ARCHIVE\TREE_L_LEGACY\99_ARCHIVE\Z83_3YEARS_BACKUP\iswanjp\mico\JDEQ-CORE-repo\p4-d1\identity_check.sh                                                 
+D:\MICO_SSOT\99_ARCHIVE\TREE_L_LEGACY\99_ARCHIVE\Z83_3YEARS_BACKUP\iswanjp\mico\JDEQ-CORE-repo\scripts\auto_github_identity.sh                                         
+D:\MICO_SSOT\99_ARCHIVE\TREE_L_LEGACY\99_ARCHIVE\Z83_3YEARS_BACKUP\iswanjp\mico\JDEQ-CORE-repo\scripts\deploy_identity.sh                                              
+D:\MICO_SSOT\TREE_L\03_LOGIKA\VIVO_MASTER\identity_package.json                                                                                                        
+D:\MICO_SSOT\TREE_L\08_EVIDENCE\node_identity.json                                                                                                                     
+

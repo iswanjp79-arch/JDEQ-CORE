@@ -1,0 +1,7 @@
+FORENSIK NAMA DOLA
+Tanggal: 2026-09-17 14:51:41
+
+TOTAL TEMUAN              : 1664
+Tegas INTERNAL (AG-GOV)   : 6
+Tegas EKSTERNAL (ByteDance/Cici/cloud) : 37
+AMBIGU (DOLA tanpa penanda)             : 1506

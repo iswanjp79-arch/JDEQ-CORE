@@ -57,3 +57,6 @@ L6-modules/**/__pycache__/
 !08_EVIDENCE/MOVE-TO-D-*/**
 !08_EVIDENCE/CLEANUP-C-*/
 !08_EVIDENCE/CLEANUP-C-/**
+
+# Runtime state (noise, jangan di-track)
+TREE_L/06_RUNTIME/trip_state.json

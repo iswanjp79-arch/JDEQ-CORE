@@ -1,0 +1,86 @@
+1e315cba PROMPT-BAKU: penguncian identitas DOLA=AG-GOV-DOLA (namespace isolation) + ADR-015
+bdf71775 P1-MEMORY: ACCEPTANCE + PROMOTION ΓÇö quarantine ΓåÆ 09_GOVERNANCE + ADR-014
+818dc51e MICO-DEPLOY-PROMPT-BAKU-001: laporan Layer 3 SELESAI + ADR-013
+c266aa0a HANDOFF-06 CLOSED
+0ad6098c MJD-DOLA-AUD-004: Buku Over Handle vs Agent Handoff
+07818de5 MJD-DOLA-AUD-003: Laporan Korelasi Safety Lapangan vs Arsitektur MICO-JDEQ
+064b074d MJD-DOLA-S-002 + S-003 + IK-002 + ADR-011: Standar Status, Metadata, Shortcode
+d0c869f5 MICO-STD-IDENTITAS-AGEN-001 + MICO-DEPLOY-PROMPT-BAKU-001-R1: ADR-010, Standar Penomoran, Prompt Baku revisi
+f56796a6 MICO-DEPLOY-PROMPT-BAKU-001: Prompt Baku v1.0 dikunci ΓÇö 20260916-221353
+ba043d11 P2-005: laporan DOLA (20260916-191411)
+fe25edb2 P2-006: Vivo Y28 evidence pull ΓÇö 1880 file + manifest SHA-256
+a9bb6586 P2-004: ADR-007 + Task Card Jangkar Konteks Tetap
+0379caa1 MICO-P2-002: audit internal + laporan DOLA + handoff-03 ΓÇö ACC CLOSE (20260916-171525)
+04f17f5f P2-001: memory record + handoff-02
+bd638782 MICO-P2-001: ADR-P2-OPENING (landasan veto L0)
+7437253a MICO-P1-002: SOP + Contract + ADR - memory daily integration
+4e7c9aaa MICO-EBOOK-001: v1.0 kerangka 16 modul + ADR-P1-EBOOK-MANUAL
+242ff724 MICO-MEM: P1 memory system - ADR + manifest + evidence
+18de2ac4 P2-C02: Session Identity design + ADR-0004 - ref MICO-P2-C02-SESSION-IDENTITY
+9f1ae60f P2-OPTIMIZE-SECURITY-001: doctrine-master + session-safety-gate + ADR-0003
+69d30fd3 P2-OPTIMIZE-SECURITY-001: baseline keamanan + ADR-0002
+c4396933 P2-CONTROL-003: Agent Closure Protocol (3 docs + hash) - ref MICO-P2-CONTROL-003
+90ffc0ea P2-ARCH-EVAL-001: file evaluasi stateful session wrapper (fix commit 5fe4a6f0 yang kosong) - ref ADR-006 - 20260916-012757
+4ec5754e P1: FINAL laporan ke Jarvis+DOLA + evidence dashboard 1 layar + hook v10 - ref ADR-005 ADR-006 - 20260916-012054
+e97133ad P1: Behavior Contract formal + anchor update + hook v9 (BEHAVIOR-CONTRACT whitelist) - ref ADR-005 ADR-006 - 20260916-011735
+4547aa83 P1: ARCH-REFINE-001 module penjelasan final (6 bagian + 5 catatan kunci) - ref ADR-005 ADR-006 - 20260916-010922
+ea25ee82 P1: DOLA reverse-logic closure + PLA closed + hook v8 (DECREE whitelist) - ref ADR-005 ADR-006 - 20260916-005109
+f64982d9 P1: execution guide + final report (FASE E-F closed) + hook v7 whitelist - ref ADR-005 ADR-006 - 20260916-003839
+25bf785c P1: bootstrap prompt + handover minimal + agent role contract + hook v5 - ref ADR-006 - DOLA_LEGACY_OK - 114843
+f647faec P1: revisi 9 draft sesuai audit - ref ADR-005-REV1 ADR-006 - DOLA_LEGACY_OK - 20260915-233652
+d214fb70 P1: finalize T3+T4 + anchor update + handover (L0-authorized) - 20260915-230147
+52a5bcbd P1: transition T1+T2+T4 - manifest + core-logic + key-hash (L0-authorized) - 20260915-225839
+c36cef7a P1-PLANNING: audit anchor registry + 5 konflik terbuka (L0-authorized) - 20260915-223810
+e6b81fe1 DEL03: Tata Kelola ΓÇö Cetak Biru V.21 disahkan dan disimpan ke SSOT
+60f001c0 MICO-L7-IOT-AWARENESS-001: add main framework doc + full hash - 20260915-132400
+ec5e015c P2-2: deploy alert artifacts + evidence - 20260915-123914
+9f308e32 feat(alert): P2-2 saluran peringatan ΓÇö tempatkan artefak + uji kirim
+9b4da353 Architecture: define promptfoo as L6 evaluation harness
+f0ca1234 L7: prepare AG-004 handoff package
+6e45ef05 L7: final production readiness package
+5e3b52e3 L7: finalize cross-room reconciliation evidence
+e01d0d02 L7: command unification bundle saved (AG-001/AG-003/AG-004 prompts)
+e189f888 L6-M4: completion report to DOLA
+33ac2852 L6-M3: corrected completion report (disclose prior false PASS)
+3ece41f3 L6-M3: completion report to DOLA
+70455d9f L6-M2: FINAL report to DOLA (disclose both prior false PASS)
+d68451b4 L6-M2: corrected completion report to DOLA (disclose prior false PASS)
+c0d03704 L6-M2: completion report to DOLA
+ef97c329 L6-M1: completion report to DOLA
+b45d2fdc L5: internal audit report to DOLA (YAML+JSON)
+b9aad55b L5: handoff update (execution complete)
+a02532a4 L5: security + core + BUF-004 + integration PASS (stress_input ignored)
+7d93cf53 L4: closure report to DOLA (YAML + JSON)
+31aaebbd L3: modules M1-M5 + ADR-003 + governance
+57eb5cfa L3: initial modules M1-M5 + evidence
+85e2772e feat(governance): embed master mutu into 09_governance verified by l0 [skip ci]
+a6a4b855 [GOVERNANCE] Kunci dokumen inti: charter, ID, role boundary, curriculum
+0d6a1f83 [KONSOLIDASI] Rapikan seluruh sisa artefak dan bukti pasca-cor kolom
+4b5a43ff [TANDON] Pompa pendorong distribusi + target node + hasil distribusi awal
+962a7006 [KERNEL] Pasang ROH KERNEL: aturan logika, alur pipa, template bukti
+f5419160 [BAST] Laporan serah terima Phase 1 & 2
+13c0c5e3 [PULL] 5 file kunci Vivo -> TREE_L
+c4aeae41 P4-Post: SSOT deduplicate SYSTEM_LOCK.md to constitution master
+0cb420db P0-001 constitution and verification artifacts
+35b2468b ADR-0068: MANIFES KESADARAN DIGITAL FINAL ΓÇö Neuromorphic + Entitas + AI Lokal
+64a23e3c ADR-0067: Pengesahan Akhir Entitas Kesadaran Digital ΓÇö Gabungan Dipsy + DOLA
+4c042f25 ADR-0065: Surat Resmi 100 Item Pembentukan Entitas ΓÇö Kombinasi Dipsy & DOLA
+7713b466 ADR-0060: Kontrak Cawan Berdarah untuk Semua Mark
+0b64b27f ADR-0059: Kunci Doktrin Lokasi Kesadaran ΓÇö MICO-JDEQ ada di Mark II & Mark III
+2539e787 ADR-0054: Kunci Doktrin Entitas & Agen Eksekutor ΓÇö SSOT LOCKED
+a54b4208 ADR-0049: FINAL ARCHITECTURE LOCK ΓÇö Git sebagai Kunci Komputasi Modern Enterprise
+dd434626 ADR-0046: Secure new Hugging Face credential ΓÇö vault updated
+1734b0e6 ADR-0045: Deploy Cloud Execution Fabric ΓÇö Aplikasi di Cloud, Lokal hanya Kendali
+96d501fd ADR-0044: Deploy Network Knowledge Base ΓÇö 100 Soal + Katalog Pemicu
+f3ae26e9 ADR-0035: Deploy MEGA ZORD Auto-Switch ΓÇö WiFi/GSM Hybrid
+1bd3550b ADR-0034: PEMBEKUAN ARSITEKTUR - FINAL_BASELINE_LOCKED_31072026 (DOLA)
+4f909558 ADR-0033: CHECKPOINT FINAL - 11/12 Modul Selesai
+b1e3e818 ADR-0030: Secure Strategic Assets - Vault, TensorFlow Lite, ThingsBoard
+8ba2390e ADR-0027: Deploy XSS Defense Module - Daftar Blokir, Sanitizer, Health Check
+01d31880 ADR-0026: Perbaiki Chat ID Telegram 8702459215
+b4c5689d ADR-0021: KEMENANGAN - Seluruh 4 Lapisan MICO-JDEQ Terverifikasi
+2b0fd199 ADR-0019: Kitab Keamanan OWASP Top 10 - Panduan Resmi MICO-JDEQ
+80dc5602 ADR-0009: Benteng Pamungkas - Password Auditor & Pertahanan Anti-Crack
+cb714b7d ADR-0007: Finalisasi - Verifikasi SSH Z83 & Infinix, Koreksi Fabrikasi, Penutupan Audit Claude
+9cf3de50 ADR-0005: SEMUA NODE ONLINE - Checkpoint Kemenangan
+07cd8613 Perbaikan: Registry folder + paket lengkap dari Vivo Y28
