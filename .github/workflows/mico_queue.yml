@@ -14,13 +14,37 @@ on:
       text:
         description: 'Text to process'
         required: true
+  push:
+    branches: [main]
+    paths:
+      - '01_INBOX/**.json'
+      - 'inbox/**.json'
+  schedule:
+    # Watchdog: cek tiap 10 menit, cari job baru
+    - cron: '*/10 * * * *'
 
 concurrency:
-  group: mico-queue-${{ inputs.job_type }}-${{ inputs.target_lang }}-${{ inputs.text }}
+  group: mico-queue-${{ github.event_name }}-${{ github.run_id }}
   cancel-in-progress: false
 
 jobs:
+  health:
+    if: github.event_name == 'schedule' || github.event_name == 'push'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: Health check
+        run: |
+          echo "Event: ${{ github.event_name }}"
+          echo "Time:  $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          echo "Commit: ${{ github.sha }}"
+          ls -la .github/workflows/ || true
+          echo "HEALTH OK"
+
   process:
+    if: github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     permissions:
       contents: read
