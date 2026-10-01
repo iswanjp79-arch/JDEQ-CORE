@@ -1,0 +1,1 @@
+{"task_id":"T-20261001-C001","parent_task_id":null,"state":"QUEUED","owner":"orchestrator","authority":"L3","goal":"hitung 2+2 di cloud","capability_required":["cloud_compute"],"constraints":{"timeout_s":60},"evidence_required":["result"],"completion_condition":"status == OK","dependency":[],"created_at":"2026-10-01T15:05:00+00:00","attempt":1,"fencing_token":0}
