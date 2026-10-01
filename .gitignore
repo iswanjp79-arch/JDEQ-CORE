@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+*.pyo
+.devcontainer/__pycache__/
