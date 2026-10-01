@@ -1,13 +1,6 @@
 #!/usr/bin/env python3
-"""
-cloud_agent.py - Worker cloud MICO-JDEQ
-Cara kerja:
-  1. Loop tiap 30 detik
-  2. Pull repo (git pull)
-  3. Baca memory/tasks.jsonl, cari state=QUEUED capability=cloud_compute
-  4. Eksekusi (worker HTTP ke llama.cpp via Tailscale ATAU shell terbatas)
-  5. Update state ke EXECUTED_UNVERIFIED + tulis evidence
-  6. Commit + push
+"""cloud_agent.py - Worker cloud MICO-JDEQ (v2)
+Eksekusi kode dari field 'code' task.
 """
 import json, os, subprocess, time, hashlib, sys
 from pathlib import Path
@@ -16,7 +9,6 @@ from datetime import datetime, timezone
 REPO = Path("/workspaces/JDEQ-CORE")
 TASKS = REPO / "memory" / "tasks.jsonl"
 EVID  = REPO / "08_EVIDENCE"
-ALERT = EVID / "alerts"
 LOG   = Path("/tmp/cloud_agent.log")
 INTERVAL = 30
 
@@ -44,30 +36,48 @@ def save_tasks(tasks):
                      encoding="utf-8")
 
 def run_task(task):
-    """Cloud hanya boleh eksekusi capability yang aman & non-destruktif."""
     caps = set(task.get("capability_required", []))
     if "cloud_compute" not in caps:
         return None, "not cloud capability"
-    goal = task.get("goal", "")
-    # Placeholder: eksekusi sederhana — catat goal sebagai evidence
-    # Nanti diganti dengan worker nyata (HTTP ke API, python komputasi, dll)
+
+    code = task.get("code", "").strip()
+    if not code:
+        code = f'print("goal: {task.get("goal","")}")'
+
     ts = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S")
     ev_path = EVID / f"cloud_result_{task['task_id']}_{ts}.json"
     EVID.mkdir(parents=True, exist_ok=True)
+
+    t0 = datetime.now(timezone.utc)
+    try:
+        r = subprocess.run([sys.executable, "-c", code],
+                           capture_output=True, text=True, timeout=60)
+        rc, out, err = r.returncode, r.stdout, r.stderr
+        status = "OK" if rc == 0 else "FAIL"
+    except subprocess.TimeoutExpired:
+        rc, out, err, status = -1, "", "TIMEOUT", "TIMEOUT"
+    except Exception as e:
+        rc, out, err, status = -1, "", str(e), "ERROR"
+    t1 = datetime.now(timezone.utc)
+
     payload = {
         "task_id": task["task_id"],
         "worker": "cloud_agent_v1",
-        "executed_at": datetime.now(timezone.utc).isoformat(),
-        "goal": goal,
-        "status": "PLACEHOLDER",
-        "note": "Cloud worker terpasang. Ganti run_task() dengan logika nyata."
+        "executed_at": t1.isoformat(),
+        "goal": task.get("goal", ""),
+        "code": code,
+        "return_code": rc,
+        "stdout": out,
+        "stderr": err,
+        "elapsed_ms": (t1-t0).total_seconds() * 1000,
+        "status": status,
     }
-    ev_path.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+    ev_path.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
     h = hashlib.sha256(ev_path.read_bytes()).hexdigest()
     return str(ev_path), h
 
 def loop():
-    log("cloud_agent start")
+    log("cloud_agent v2 start")
     while True:
         try:
             sh("git pull --rebase --autostash", cwd=REPO)
