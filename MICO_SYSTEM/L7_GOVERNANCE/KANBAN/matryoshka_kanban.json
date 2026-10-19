@@ -1,0 +1,31 @@
+{
+  "board_id": "MICO_MASTER_BOARD",
+  "layers": {
+    "L1_MASTER": {
+      "task": "Konsolidasi Z83 Autopilot",
+      "status": "IN_PROGRESS",
+      "sub_tasks": {
+        "L2_ENGINE": {
+          "task": "Trigger Rules Z83",
+          "status": "DONE",
+          "sub_tasks": {
+            "L3_LOGIC": {
+              "task": "Validasi RAM > 85% & Service NATS",
+              "status": "DONE"
+            }
+          }
+        },
+        "L2_AUDIT": {
+          "task": "Self-Auditor PDCA",
+          "status": "IN_PROGRESS",
+          "sub_tasks": {
+            "L3_CHECK": {
+              "task": "Verifikasi Hash Evidence",
+              "status": "PENDING"
+            }
+          }
+        }
+      }
+    }
+  }
+}
