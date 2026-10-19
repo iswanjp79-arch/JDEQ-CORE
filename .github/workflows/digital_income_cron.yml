@@ -1,0 +1,42 @@
+name: Mikro-Pendapatan Trigger
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Jalan otomatis tiap hari jam 00:00 UTC (07:00 WIB)
+  workflow_dispatch: # Bisa dipicu manual
+
+jobs:
+  run_worker:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Execute Cloud Worker
+        run: |
+          echo "[TRIGGER] Menjalankan Worker di Awan..."
+          python3 MICO_SYSTEM/L2_WORKER/worker.py > MICO_SYSTEM/08_EVIDENCE/execution.log 2>&1
+          echo "[TRIGGER] Worker Selesai. Log tersimpan."
+
+      - name: Generate SHA-256 Evidence
+        run: |
+          cd MICO_SYSTEM/08_EVIDENCE
+          sha256sum execution.log proof_screenshot.png > evidence_hash.sha256
+          echo "[EVIDENCE] Hash berhasil dibuat:"
+          cat evidence_hash.sha256
+
+      - name: Push Evidence to SSOT
+        run: |
+          git config --global user.name "MICO-Bot"
+          git config --global user.email "bot@mico.jdeq"
+          git add MICO_SYSTEM/08_EVIDENCE/
+          git commit -m "AUTO-EVIDENCE: Daily Task Executed & Hashed" || echo "No changes"
+          git push
