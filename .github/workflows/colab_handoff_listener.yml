@@ -1,0 +1,44 @@
+name: Colab Handoff Auto-Receiver
+
+on:
+  push:
+    paths:
+      - 'MICO_SYSTEM/L6_EVIDENCE_AUDIT/colab_handoff.zip'
+  workflow_dispatch:
+
+jobs:
+  receive_handoff:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Unzip Evidence
+        run: |
+          echo "[ROBOT] Menerima Paket Estafet dari Colab..."
+          mkdir -p MICO_SYSTEM/L6_EVIDENCE_AUDIT/COLAB_EXTRACTED
+          unzip -o MICO_SYSTEM/L6_EVIDENCE_AUDIT/colab_handoff.zip -d MICO_SYSTEM/L6_EVIDENCE_AUDIT/COLAB_EXTRACTED/
+          
+      - name: Update Matryoshka Kanban
+        run: |
+          python3 -c "
+import json, os
+file = 'MICO_SYSTEM/L7_GOVERNANCE/KANBAN/matryoshka_kanban.json'
+if os.path.exists(file):
+    with open(file, 'r') as f: data = json.load(f)
+    data['layers']['L1_MASTER']['sub_tasks']['L2_AUDIT']['status'] = 'HANDOFF_COMPLETED'
+    data['layers']['L1_MASTER']['sub_tasks']['L2_AUDIT']['handoff_time'] = 'Auto-Detected by CI/CD'
+    with open(file, 'w') as f: json.dump(data, f, indent=2)
+"
+
+      - name: Commit and Push Updates
+        run: |
+          git config --global user.name "MICO-Handoff-Bot"
+          git config --global user.email "bot@mico.jdeq"
+          git add MICO_SYSTEM/L6_EVIDENCE_AUDIT/COLAB_EXTRACTED/
+          git add MICO_SYSTEM/L7_GOVERNANCE/KANBAN/matryoshka_kanban.json
+          git commit -m "HANDOFF: Evidence dari Colab diterima & Kanban diperbarui otomatis"
+          git push
