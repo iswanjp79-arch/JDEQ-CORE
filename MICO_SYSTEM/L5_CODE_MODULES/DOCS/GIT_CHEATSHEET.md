@@ -1,0 +1,12 @@
+# GIT & GITHUB SHORTCUTS
+- `git init` : Initialize new repository
+- `git clone <url>` : Clone a repository
+- `git status` : Check status of files
+- `git add .` : Add all changes
+- `git commit -m "msg"` : Commit changes
+- `git push` : Push changes to remote
+- `git pull` : Pull latest changes
+- `git branch` : List all branches
+- `git checkout -b <name>` : Create and switch to new branch
+- `git merge <branch>` : Merge a branch
+- `git log --oneline` : View commit history (short)
