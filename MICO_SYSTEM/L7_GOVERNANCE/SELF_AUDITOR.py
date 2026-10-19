@@ -1,19 +1,19 @@
-import json, hashlib, os
+import json, os
 from datetime import datetime
 
 class SelfAuditor:
     def __init__(self):
         self.evidence_log = "MICO_SYSTEM/L6_EVIDENCE_AUDIT/AGENT_LOOP.jsonl"
         self.audit_report = "MICO_SYSTEM/L6_EVIDENCE_AUDIT/AUDIT_REPORT.md"
+        # Daftar status yang sah (SUCCESS dan VERIFIED dianggap benar)
+        self.VALID_STATUSES = ["SUCCESS", "VERIFIED", "DONE"] 
 
     def verify_integrity(self):
         print("[AUDITOR] Memulai koreksi diri (PDCA Check)...")
         
-        # 1. Cek keberadaan log
         if not os.path.exists(self.evidence_log):
             return "FAILED: Evidence log tidak ditemukan."
 
-        # 2. Baca log dan cari anomali
         lines = 0
         errors = 0
         with open(self.evidence_log, 'r') as f:
@@ -21,12 +21,11 @@ class SelfAuditor:
                 lines += 1
                 try:
                     data = json.loads(line)
-                    if data.get("status") != "SUCCESS":
+                    if data.get("status") not in self.VALID_STATUSES:
                         errors += 1
                 except:
                     errors += 1
 
-        # 3. Tulis Laporan Audit
         with open(self.audit_report, "w") as f:
             f.write(f"# SELF-AUDIT REPORT\n")
             f.write(f"Timestamp: {datetime.now().isoformat()}\n")

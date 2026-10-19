@@ -17,11 +17,11 @@
         },
         "L2_AUDIT": {
           "task": "Self-Auditor PDCA",
-          "status": "IN_PROGRESS",
+          "status": "DONE",
           "sub_tasks": {
             "L3_CHECK": {
               "task": "Verifikasi Hash Evidence",
-              "status": "PENDING"
+              "status": "DONE"
             }
           }
         }

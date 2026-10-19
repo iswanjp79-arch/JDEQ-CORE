@@ -50,7 +50,7 @@ class MicoASI:
         time.sleep(1)
         
         # [ASI OVERSIGHT] Verifikasi sebelum dianggap selesai
-        self.log_evidence("GPTAgent", "Execution", "VERIFIED", current_task['task'])
+        self.log_evidence("GPTAgent", "Execution", "SUCCESS", current_task['task'])
         return True
 
 if __name__ == "__main__":
