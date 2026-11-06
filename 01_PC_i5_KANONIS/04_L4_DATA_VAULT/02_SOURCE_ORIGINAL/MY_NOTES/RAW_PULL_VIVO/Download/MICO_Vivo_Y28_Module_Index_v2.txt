@@ -1,0 +1,462 @@
+MICO-JDEQ — VIVO Y28 COMPLETE MODULE INDEX
+Document ID : MJD-INDEX-VIVO-Y28-MODULES-002
+Version     : 2.0.0
+State       : DESIGN / NOT_EXECUTED
+Purpose     : Full L1-L7 local module index for Vivo Y28 Android
+
+ARCHITECTURE DECISION
+- Vivo Y28 is designed as Edge Controller & Primary Operational Orchestrator per the Vivo-Y28 SPK.
+- The index includes local L1-L7 working layers on Vivo Y28. This corrects the prior index that omitted local L4/L6/L7.
+- A local layer directory is not, by itself, proof that the layer is canonical SSOT. The control-plane owner and synchronization authority must be recorded in ROOT_INDEX.yaml.
+- The older MICO asymmetric doctrine says PC-i5 owns canonical L1-L7 and edges hold only L1/L2/L3/L5. That conflicts with a full transfer of SSOT authority to Vivo. Until L0 explicitly resolves that authority conflict, use authority_mode: LOCAL_OPERATIONAL_COPY for Vivo L4/L6/L7 and record the canonical_source reference; do not silently declare an SSOT transfer.
+- Total local nodes remains five: PC-i5, Z83, HP-Mini, Vivo Y28, Infinix X653C. No sixth node.
+- This document describes structure only. No directory, file, API access, cloud connection, app installation, or device setting has been created or verified.
+
+ROOT: /storage/emulated/0/MICO_VIVO_Y28/
+
+MICO_VIVO_Y28/
+|-- README.md
+|-- 00_INDEX/
+|   |-- ROOT_INDEX.yaml
+|   |-- LAYER_REGISTRY.yaml
+|   |-- MODULE_REGISTRY.yaml
+|   |-- MODULE_DEPENDENCY_MAP.yaml
+|   |-- NODE_ALLOCATION.yaml
+|   |-- AUTHORITY_AND_SSOT_MAP.yaml
+|   |-- LOCAL_TO_CANONICAL_SYNC_MAP.yaml
+|   |-- PATH_BOUNDARY_POLICY.md
+|   |-- ANDROID_STORAGE_EXCLUSIONS.md
+|   |-- TEMPLATE_STATUS_REGISTRY.csv
+|   |-- MIGRATION_MAP_TEMPLATE.csv
+|   |-- CONFLICT_REGISTER.yaml
+|   `-- CHANGELOG.md
+|
+|-- 01_L1_PHYSICAL/
+|   |-- README.md
+|   |-- DEVICE_PROFILE.md
+|   |-- HARDWARE_INVENTORY.yaml
+|   |-- RESOURCE_CAPACITY.yaml
+|   |-- OS_ENVIRONMENT.yaml
+|   |-- DEVICE_IDENTITY_REDACTED.md
+|   |-- POWER_THERMAL_HEALTH.yaml
+|   |-- DEVICE_HEALTH_SCHEMA.json
+|   |-- INVENTORY_COLLECTION_POLICY.md
+|   |-- COLLECTION_METHODS.yaml
+|   |-- CHANGELOG.md
+|   |-- FOTO/
+|   |   |-- EKSTERIOR/
+|   |   |-- INTERIOR/
+|   |   |-- LABEL_TERBATAS/
+|   |   `-- FOTO_INDEX.csv
+|   |-- ANDROID_ENVIRONMENT/
+|   |   |-- ANDROID_VERSION.md
+|   |   |-- DEVICE_ABILITIES.yaml
+|   |   |-- STORAGE_ACCESS_PROFILE.md
+|   |   |-- TERMUX_ENVIRONMENT_REFERENCE.md
+|   |   |-- SHIZUKU_ENVIRONMENT_REFERENCE.md
+|   |   `-- NIX_ON_DROID_ENVIRONMENT_REFERENCE.md
+|   |-- LOG_KESEHATAN/
+|   |   |-- RAW/
+|   |   |   |-- DEVICE_OBSERVATIONS/
+|   |   |   |-- BATTERY/
+|   |   |   |-- THERMAL/
+|   |   |   `-- STORAGE/
+|   |   |-- NORMALIZED/
+|   |   |   |-- BATTERY/
+|   |   |   |-- THERMAL/
+|   |   |   |-- STORAGE/
+|   |   |   `-- CONNECTIVITY/
+|   |   |-- REPORTS/
+|   |   `-- SCHEMAS/
+|   |       |-- DEVICE_HEALTH.schema.json
+|   |       `-- STORAGE_USAGE.schema.json
+|   `-- STORAGE_PROFILE/
+|       |-- STORAGE_USAGE_REPORTS/
+|       |-- STORAGE_VOLUME_MAP.yaml
+|       `-- DATA_RETENTION_POLICY.md
+|
+|-- 02_L2_HOST_CONNECTIVITY/
+|   |-- README.md
+|   |-- NODE_REGISTRY.yaml
+|   |-- NETWORK_TOPOLOGY.md
+|   |-- NODE_ADDRESSING.yaml
+|   |-- CONNECTION_MATRIX.csv
+|   |-- ACCESS_POLICY.md
+|   |-- SERVICE_PORTS.yaml
+|   |-- SSH_HOSTS.example.conf
+|   |-- CONNECTIVITY_CONTRACT.yaml
+|   |-- HEALTHCHECK_SPEC.yaml
+|   |-- RECONNECT_FAILOVER.md
+|   |-- FIREWALL_POLICY.md
+|   |-- ENDPOINT_PROFILES/
+|   |   |-- README.md
+|   |   |-- PC_I5.yaml
+|   |   |-- Z83.yaml
+|   |   |-- HP_MINI.yaml
+|   |   |-- VIVO_Y28.yaml
+|   |   `-- INFINIX_X653C.yaml
+|   |-- TOPOLOGY_DIAGRAMS/
+|   |   |-- README.md
+|   |   `-- FIVE_NODE_TOPOLOGY.mmd
+|   |-- TEST_CASES/
+|   |   |-- README.md
+|   |   |-- DNS_TESTS.yaml
+|   |   |-- AUTHENTICATION_TESTS.yaml
+|   |   `-- SERVICE_REACHABILITY_TESTS.yaml
+|   |-- ANDROID_EDGE/
+|   |   |-- TERMUX_CONNECTIVITY.md
+|   |   |-- SHIZUKU_API_CONTRACT.md
+|   |   |-- NIX_ON_DROID_CONNECTIVITY.md
+|   |   `-- ANDROID_PERMISSION_MATRIX.yaml
+|   |-- SSH_METADATA/
+|   |   |-- SSH_HOST_ALIAS_REGISTRY.csv
+|   |   `-- SSH_KEY_REFERENCE.yaml
+|   |-- TAILSCALE_NET/
+|   |   |-- TAILSCALE_ENDPOINT_PROFILE.yaml
+|   |   `-- TAILSCALE_HEALTHCHECK.yaml
+|   |-- MQTT_GATEWAY/
+|   |   |-- MQTT_ENDPOINT_PROFILE.yaml
+|   |   `-- MQTT_TOPIC_CONTRACT.yaml
+|   |-- NODE_MATRIX/
+|   |   `-- NODE_CONNECTIVITY_SNAPSHOT_TEMPLATE.csv
+|   `-- CHANGELOG.md
+|
+|-- 03_L3_KERNEL_RUNTIME/
+|   |-- README.md
+|   |-- RUNTIME_PROFILE.yaml
+|   |-- PROCESS_REGISTRY.yaml
+|   |-- PROCESS_LIFECYCLE.md
+|   |-- TASK_STATE_MACHINE.yaml
+|   |-- QUEUE_SCHEDULER.yaml
+|   |-- RESOURCE_LIMITS.yaml
+|   |-- EXECUTION_POLICY.md
+|   |-- RUNTIME_HEALTHCHECK.yaml
+|   |-- RECOVERY_POLICY.md
+|   |-- IDEMPOTENCY_POLICY.md
+|   |-- RUNTIME_STATE_SCHEMA.json
+|   |-- ORCHESTRATION/
+|   |   |-- EDGE_CONTROLLER_CONTRACT.yaml
+|   |   |-- TASK_ROUTING_POLICY.yaml
+|   |   |-- HUMAN_APPROVAL_GATE.md
+|   |   `-- ORCHESTRATION_HEALTHCHECK.yaml
+|   |-- TASK_ENGINE/
+|   |   |-- TASK_QUEUE_SCHEMA.json
+|   |   |-- TASK_RECORD_SCHEMA.json
+|   |   |-- TASK_STATE_TRANSITIONS.yaml
+|   |   |-- RETRY_BACKOFF_POLICY.yaml
+|   |   `-- DEAD_LETTER_POLICY.md
+|   |-- PROCESS_SUPERVISION/
+|   |   |-- ALLOWED_PROCESS_POLICY.yaml
+|   |   |-- LIFECYCLE_EVENTS.yaml
+|   |   `-- SHUTDOWN_RECOVERY.md
+|   |-- RESOURCE_GUARD/
+|   |   |-- RAM_BUDGET_POLICY.yaml
+|   |   |-- STORAGE_BUDGET_POLICY.yaml
+|   |   |-- BATTERY_THERMAL_GUARD.yaml
+|   |   `-- BACKGROUND_EXECUTION_LIMITS.md
+|   |-- ANDROID_ADAPTERS/
+|   |   |-- TERMUX/
+|   |   |   |-- TERMUX_RUNTIME_PROFILE.yaml
+|   |   |   `-- TERMUX_COMMAND_CONTRACT.md
+|   |   |-- SHIZUKU/
+|   |   |   |-- SHIZUKU_RUNTIME_PROFILE.yaml
+|   |   |   |-- SHIZUKU_PERMISSION_MATRIX.yaml
+|   |   |   |-- SHIZUKU_API_CONTRACT.md
+|   |   |   `-- SHIZUKU_STATUS_TEMPLATE.yaml
+|   |   |-- NIX_ON_DROID/
+|   |   |   |-- NIX_RUNTIME_PROFILE.yaml
+|   |   |   |-- NIX_CONFIG_REFERENCE.md
+|   |   |   `-- NIX_DEPENDENCY_CONTRACT.yaml
+|   |   `-- ANDROID_API/
+|   |       |-- ANDROID_API_PERMISSION_POLICY.yaml
+|   |       `-- API_CAPABILITY_STATUS.yaml
+|   |-- STATE_MODEL/
+|   |   |-- STATE_SCHEMA.json
+|   |   |-- STATE_TRANSITIONS.yaml
+|   |   `-- CHECKPOINT_POLICY.md
+|   |-- LOCAL_WORK_QUEUE/
+|   |   |-- QUEUE_POLICY.yaml
+|   |   `-- OUTBOX_PENDING_SCHEMA.json
+|   |-- RECOVERY/
+|   |   |-- CIRCUIT_BREAKER_POLICY.yaml
+|   |   |-- CHECKPOINT_RECOVERY.md
+|   |   `-- SAFE_STOP_POLICY.md
+|   |-- LOCAL_RUNTIME_LOGS/
+|   |   `-- LOG_SCHEMA.json
+|   `-- CHANGELOG.md
+|
+|-- 04_L4_DATA_VAULT/
+|   |-- README.md
+|   |-- DATA_CATALOG.yaml
+|   |-- DATA_CLASSIFICATION.yaml
+|   |-- ACCESS_POLICY.md
+|   |-- RETENTION_POLICY.md
+|   |-- BACKUP_RECOVERY_POLICY.md
+|   |-- VAULT_AUTHORITY_MODE.yaml
+|   |-- 01_MASTER_MUTU/
+|   |   |-- README.md
+|   |   `-- MASTER_MUTU_REGISTRY.yaml
+|   |-- 02_SOURCE_ORIGINAL/
+|   |   |-- README.md
+|   |   `-- SOURCE_REGISTRY.yaml
+|   |-- 03_VAULT_KEYS/
+|   |   |-- README.md
+|   |   |-- KEY_METADATA.yaml
+|   |   |-- SECRET_REFERENCE_REGISTRY.yaml
+|   |   |-- KEY_ROTATION_REGISTER.csv
+|   |   `-- ENCRYPTED_BUNDLE_INBOX/
+|   |-- 04_DUPLIKAT/
+|   |   |-- README.md
+|   |   `-- DUPLICATE_REGISTER.csv
+|   |-- 05_SAMPAH/
+|   |   |-- README.md
+|   |   `-- QUARANTINE_REGISTER.csv
+|   |-- 06_STAGING/
+|   |   |-- README.md
+|   |   `-- STAGING_REGISTER.csv
+|   |-- 07_CLOUD_PROFILES/
+|   |   |-- README.md
+|   |   |-- CLOUD_PROVIDER_REGISTRY.yaml
+|   |   |-- API_SERVICE_REGISTRY.yaml
+|   |   |-- CLOUD_DATASET_MAP.yaml
+|   |   `-- DRIVE_SYNC_POLICY.md
+|   |-- 08_BACKUP_ARCHIVE/
+|   |   |-- README.md
+|   |   `-- BACKUP_CATALOG.yaml
+|   |-- 09_LOCAL_CACHE/
+|   |   |-- README.md
+|   |   `-- CACHE_RETENTION_POLICY.md
+|   `-- CHANGELOG.md
+|
+|-- 05_L5_CODE_MODULES/
+|   |-- README.md
+|   |-- MODULE_REGISTRY.yaml
+|   |-- MODULE_DEPENDENCY_MAP.yaml
+|   |-- CODE_STANDARDS.md
+|   |-- MODULE_LIFECYCLE.md
+|   |-- SOURCE_LAYOUT.md
+|   |-- SECURITY_REVIEW.md
+|   |-- API_CONTRACTS/
+|   |   |-- API_REGISTRY.yaml
+|   |   `-- API_SCHEMA/
+|   |       |-- TASK_REQUEST.schema.json
+|   |       |-- TASK_RESULT.schema.json
+|   |       `-- NODE_STATUS.schema.json
+|   |-- CORE_MODULES/
+|   |   |-- 01_BABY_AGI/
+|   |   |   |-- TASK_DECOMPOSER/
+|   |   |   |-- TASK_QUEUE/
+|   |   |   |-- TASK_MEMORY_INTERFACE/
+|   |   |   |-- TOOL_REGISTRY/
+|   |   |   `-- TASK_EVALUATOR/
+|   |   |-- 02_AGENT_ROUTER/
+|   |   |   |-- AGENT_REGISTRY_ADAPTER/
+|   |   |   |-- ROUTING_POLICY/
+|   |   |   |-- CAPABILITY_MATCHER/
+|   |   |   `-- HANDOFF_CONTRACTS/
+|   |   |-- 03_AETERNA_CORE_NEXUS/
+|   |   |   |-- CORE_CONTRACTS/
+|   |   |   |-- ORCHESTRATION_ADAPTER/
+|   |   |   |-- CONTEXT_MANAGER/
+|   |   |   |-- STATE_COORDINATOR/
+|   |   |   |-- POLICY_GATE_INTERFACE/
+|   |   |   |-- CHECKPOINT_MANAGER/
+|   |   |   `-- RESULT_VERIFIER/
+|   |   |-- 04_PROMPT_GENERATOR/
+|   |   |   |-- PROMPT_TEMPLATE_REGISTRY.yaml
+|   |   |   |-- PROMPT_SCHEMA.json
+|   |   |   |-- INTENT_NORMALIZER/
+|   |   |   |-- CONTEXT_BINDER/
+|   |   |   |-- PROMPT_COMPOSER/
+|   |   |   |-- MODEL_ADAPTERS/
+|   |   |   |-- OUTPUT_VALIDATOR/
+|   |   |   |-- VERSIONING/
+|   |   |   `-- TEST_CASES/
+|   |   |-- 05_EVENT_DRIVEN_AGENTIC/
+|   |   |   |-- EVENT_SCHEMA/
+|   |   |   |-- EVENT_ROUTER/
+|   |   |   |-- EVENT_SUBSCRIBERS/
+|   |   |   |-- DEDUPLICATION/
+|   |   |   |-- RETRY_POLICY/
+|   |   |   `-- DEAD_LETTER_QUEUE/
+|   |   |-- 06_BOUNDED_AUTONOMY/
+|   |   |   |-- GOAL_MANAGER/
+|   |   |   |-- PLAN_EXECUTE_VERIFY/
+|   |   |   |-- PERMISSION_GATE/
+|   |   |   |-- HUMAN_APPROVAL_GATE/
+|   |   |   `-- RECOVERY_ENGINE/
+|   |   `-- 07_HYBRID_COMPUTE/
+|   |       |-- CAPABILITY_REGISTRY/
+|   |       |-- WORKLOAD_SCHEDULER/
+|   |       |-- LOCAL_WORKERS/
+|   |       |-- REMOTE_COMPUTE_ADAPTER/
+|   |       |-- COST_BUDGET_GUARD/
+|   |       |-- DATA_EGRESS_POLICY/
+|   |       `-- RESULT_VERIFIER/
+|   |-- CONNECTOR_MODULES/
+|   |   |-- NODE_CONNECTOR/
+|   |   |-- STORAGE_CONNECTOR_INTERFACE/
+|   |   |-- MODEL_CONNECTOR/
+|   |   |-- EVENT_CONNECTOR/
+|   |   |-- TERMUX_BRIDGE/
+|   |   |-- SHIZUKU_BRIDGE/
+|   |   `-- NIX_ON_DROID_BRIDGE/
+|   |-- SHARED_LIBRARIES/
+|   |   |-- COMMON_UTILITIES/
+|   |   |-- SCHEMA_VALIDATORS/
+|   |   `-- SECURITY_UTILITIES/
+|   |-- CONFIG_TEMPLATES/
+|   |   |-- MODULE_CONFIG.example.yaml
+|   |   `-- ENDPOINT_CONFIG.example.yaml
+|   |-- TESTS/
+|   |   |-- UNIT_TESTS/
+|   |   |-- INTEGRATION_TESTS/
+|   |   |-- REGRESSION_TESTS/
+|   |   `-- SECURITY_TESTS/
+|   |-- RELEASES/
+|   |   `-- RELEASE_MANIFEST.yaml
+|   `-- CHANGELOG.md
+|
+|-- 06_L6_EVIDENCE_AUDIT/
+|   |-- README.md
+|   |-- EVIDENCE_INDEX.yaml
+|   |-- EVIDENCE_POLICY.md
+|   |-- AUDIT_TRAIL_SCHEMA.json
+|   |-- EXECUTION_RECORDS/
+|   |   |-- README.md
+|   |   `-- EXECUTION_RECORD_SCHEMA.json
+|   |-- HASH_MANIFESTS/
+|   |   |-- README.md
+|   |   `-- SHA256_MANIFEST_SCHEMA.json
+|   |-- INTEGRITY_VERIFICATION/
+|   |   |-- README.md
+|   |   |-- VERIFICATION_POLICY.md
+|   |   `-- VERIFICATION_RESULTS/
+|   |-- PROVENANCE/
+|   |   |-- README.md
+|   |   `-- PROVENANCE_SCHEMA.json
+|   |-- INCIDENT_REPORTS/
+|   |   |-- README.md
+|   |   `-- INCIDENT_SCHEMA.json
+|   |-- RECONCILIATION/
+|   |   |-- README.md
+|   |   `-- RECONCILIATION_POLICY.md
+|   |-- LOCAL_PENDING_EVIDENCE/
+|   |   |-- README.md
+|   |   `-- PENDING_EVIDENCE_REGISTER.csv
+|   |-- CANONICAL_SYNC/
+|   |   |-- EVIDENCE_SYNC_CONTRACT.yaml
+|   |   `-- SYNC_RECEIPT_SCHEMA.json
+|   |-- RETENTION_POLICY.md
+|   |-- ACCESS_CONTROL.md
+|   `-- CHANGELOG.md
+|
+|-- 07_L7_GOVERNANCE/
+|   |-- README.md
+|   |-- GOVERNANCE_CHARTER.md
+|   |-- AUTHORITY_MATRIX.yaml
+|   |-- AGENT_REGISTRY.yaml
+|   |-- ROLE_PERMISSION_MATRIX.yaml
+|   |-- POLICY_REGISTRY.yaml
+|   |-- MASTER_PROMPT_REGISTRY.yaml
+|   |-- TASK_CARD_SCHEMA.yaml
+|   |-- APPROVAL_WORKFLOW.md
+|   |-- DECISION_REGISTER.yaml
+|   |-- CHANGE_CONTROL.md
+|   |-- RISK_REGISTER.yaml
+|   |-- INCIDENT_RESPONSE.md
+|   |-- CONFLICT_ESCALATION.md
+|   |-- AGENT_HANDOFF_PROTOCOL.md
+|   |-- ACCEPTANCE_CRITERIA.yaml
+|   |-- AGENTIC_ROADMAP/
+|   |   |-- README.md
+|   |   |-- STAGE_REGISTRY.yaml
+|   |   |-- DEPENDENCY_GRAPH.md
+|   |   |-- ACCEPTANCE_GATES.yaml
+|   |   |-- RISK_REGISTER.yaml
+|   |   `-- SECURITY_GATES.md
+|   |-- LOCAL_POLICY_CACHE/
+|   |   |-- README.md
+|   |   `-- POLICY_SYNC_STATUS.yaml
+|   |-- PROMPT_LIBRARY/
+|   |   |-- README.md
+|   |   |-- CHATGPT/
+|   |   |-- DEEPSEEK/
+|   |   |-- GEMINI/
+|   |   `-- SHARED_TEMPLATES/
+|   `-- CHANGELOG.md
+|
+`-- 90_SYNC_REFERENCE/
+    |-- README.md
+    |-- AUTHORITY_AND_SSOT_MAP.yaml
+    |-- SSOT_SYNC_CONTRACT.yaml
+    |-- L4_VAULT_REFERENCE.yaml
+    |-- L6_EVIDENCE_SUBMISSION_CONTRACT.yaml
+    |-- L7_GOVERNANCE_REFERENCE.yaml
+    |-- SYNC_STATUS_TEMPLATE.yaml
+    `-- CONFLICT_RESOLUTION_REGISTER.yaml
+
+PRIVATE EXECUTION ENVIRONMENTS (NOT UNDER /storage/emulated/0)
+
+Termux default home (actual installation must be verified):
+/data/data/com.termux/files/home/
+|-- .termux/
+|   `-- termux.properties
+|-- .ssh/
+|   |-- config
+|   |-- known_hosts
+|   `-- keys/                         [private material; never copy to shared storage]
+|-- .config/
+|   `-- mico/
+|       |-- secret-references.yaml    [references only; no secret values]
+|       `-- private-runtime-policy.md
+|-- MICO_VIVO_WORKSPACE/
+|   |-- 03_L3_KERNEL_RUNTIME/
+|   |   |-- state/
+|   |   |-- queue/
+|   |   |-- checkpoints/
+|   |   |-- tmp/
+|   |   `-- local_logs/
+|   `-- 05_L5_CODE_MODULES/
+|       |-- CORE_MODULES/
+|       |-- CONNECTOR_MODULES/
+|       |-- SHARED_LIBRARIES/
+|       |-- TESTS/
+|       `-- RELEASES/
+
+Nix-on-Droid (only if installed and initialized; paths must be verified):
+$HOME/.config/nixpkgs/nix-on-droid.nix
+~/nix/                              [optional workspace, not a universal config path]
+
+ANDROID SHARED-STORAGE EXCLUSIONS — KEEP AT THEIR ORIGINAL LOCATIONS
+/storage/emulated/0/
+|-- Android/                        [EXCLUDED: Android/application data convention]
+|-- DCIM/                           [EXCLUDED: camera media]
+|-- Pictures/                       [EXCLUDED: user media]
+|-- Movies/                         [EXCLUDED: user media]
+|-- Music/                          [EXCLUDED: user media]
+|-- Alarms/                         [EXCLUDED: media/alarm convention]
+|-- Ringtones/                      [EXCLUDED: media convention]
+|-- Notifications/                  [EXCLUDED: media convention]
+|-- Podcasts/                       [EXCLUDED: media convention]
+|-- Download/                       [EXCLUDED: user downloads]
+|-- .vivoCamera/                    [EXCLUDED IF PRESENT: vendor/application folder]
+`-- MICO_VIVO_Y28/                  [THIS BLUEPRINT ROOT]
+
+SECURITY AND PLACEMENT CONTRACT
+1. /storage/emulated/0/MICO_VIVO_Y28/ is shared storage for documents, source indexes, templates, and non-secret data. Do not store raw API keys, passwords, tokens, private SSH keys, cookies, or session material there.
+2. 04_L4_DATA_VAULT/03_VAULT_KEYS/ is a metadata/reference and encrypted-bundle intake directory only. It is not, by itself, a secure vault. Secret values stay in a private app-specific environment or a properly protected secret store; use references such as [SECRET_ID] and [API_KEY_REFERENCE] in templates and manifests.
+3. Do not put actual secret values in L2 config, L6 evidence, shell history, logs, screenshots, shared storage, or ordinary backups.
+4. L6 hash manifests establish byte-level integrity only; they do not prove truth, authority, or that the evidence is immutable.
+5. L4/L6/L7 are included locally for Vivo as requested by the Vivo-Y28 SPK. Whether those local layers are the canonical source of truth remains a governance decision and must be explicit in 00_INDEX/AUTHORITY_AND_SSOT_MAP.yaml.
+6. If the older PC-i5 SSOT doctrine remains active, Vivo's L4/L6/L7 must be marked as operational local copies/pending evidence and governed by the sync contract. If L0 intends Vivo to become the new SSOT, the authority map and migration plan must explicitly transfer ownership; directory creation alone does not transfer authority.
+7. Never move Android system/application directories or active app-private paths as part of reorganizing the visible shared-storage tree.
+8. Unknown actual paths, installed apps, permissions, API access, cloud access, device model details, and current runtime status must be marked UNKNOWN until observed.
+
+STATUS SUMMARY
+Architecture: DESIGN
+Filesystem creation: NOT_EXECUTED
+Android app/runtime inspection: UNKNOWN
+Cloud/API connectivity: UNKNOWN
+Secret store implementation: NOT_CONFIGURED
+Authority transfer from PC-i5 to Vivo: CONFLICT / REQUIRES_EXPLICIT_L0_DECISION
