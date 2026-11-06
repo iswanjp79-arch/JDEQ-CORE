@@ -1,0 +1,28 @@
+
+=== MJD-AUDIT-PC-I5 · 2026-09-26 16:09 ===
+
+--- 1. INSTALLED APPS (Registry Uninstall) ---
+--- 2. WINGET LIST ---
+--- 3. STARTUP ITEMS ---
+--- 4. RUNNING SERVICES (auto-start) ---
+--- 5. TOP 15 RAM CONSUMERS ---
+--- 6. DISK ---
+--- 7. TOOLS KUNCI (Rectifier-Stafol scope) ---
+[OK]  rclone       C:\ProgramData\chocolatey\bin\rclone.exe
+[OK]  tailscale    C:\Program Files\Tailscale\tailscale.exe
+[OK]  wsl          C:\Windows\system32\wsl.exe
+[OK]  docker       C:\Program Files\Docker\Docker\resources\bin\docker.exe
+[OK]  code         C:\Users\USER\AppData\Local\Programs\Microsoft VS Code\bin\code.cmd
+[OK]  git          C:\Program Files\Git\cmd\git.exe
+[OK]  python       C:\Python314\python.exe
+[OK]  node         C:\Program Files\nodejs\node.exe
+[N/A] 7z
+[N/A] Notepad++
+[N/A] Everything
+--- 8. WSL DISTROS (kalau ada) ---
+--- 9. TAILSCALE STATUS ---
+--- 10. RCLONE REMOTES ---
+
+=== END ===
+
+Log: C:\Users\USER\Desktop\MJD-AUDIT-PC-I5-20260926.txt
