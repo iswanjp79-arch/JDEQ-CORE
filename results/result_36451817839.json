@@ -1,0 +1,10 @@
+{
+  "status": "OK",
+  "model_used": "openai/gpt-oss-120b",
+  "job_type": "translate",
+  "run_id": "36451817839",
+  "processed_at": "2026-09-28T16:33:02.269778+00:00",
+  "source_sha256": "4a258ce7d0305495e5554224c027567f3047f038e44195518947bc9bb1a0c024",
+  "input": "test T06 T07 v2",
+  "result": "test T06 T07 v2"
+}

@@ -1,0 +1,33 @@
+name: ASI Autonomous Rotation (Headless)
+
+on:
+  schedule:
+    - cron: '0 */2 * * *' # Berjalan otomatis setiap 2 jam
+  workflow_dispatch: # Bisa juga dipicu manual dari tab Actions
+
+jobs:
+  rotate_logic:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Tailscale (Agar bisa akses 5 Node)
+        uses: tailscale/github-action@v2
+        with:
+          oauth-client-id: ${{ secrets.TS_OAUTH_CLIENT_ID }}
+          oauth-secret: ${{ secrets.TS_OAUTH_SECRET }}
+          tags: tag:ci
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Run Rotation Engine
+        run: python MICO_SYSTEM/L3_KERNEL_RUNTIME/ASI_CORE/rotation_engine.py

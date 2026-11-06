@@ -1,0 +1,19 @@
+{
+  "name": "MICO Cloud Worker",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/devcontainers/features/common-utils:2": {}
+  },
+  "postCreateCommand": "bash .devcontainer/setup.sh",
+  "postStartCommand": "nohup python3 .devcontainer/cloud_agent.py > /tmp/cloud_agent.log 2>&1 &",
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-python.python"]
+    }
+  },
+  "hostRequirements": {
+    "cpus": 2,
+    "memory": "4gb"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "status": "OK",
+  "model_used": "openai/gpt-oss-120b",
+  "job_type": "translate",
+  "run_id": "36481015717",
+  "processed_at": "2026-09-28T20:41:58.566381+00:00",
+  "source_sha256": "5915a7bbcd0a6a49a7c1155a587a6f1ef8b354475058a19e750ad5b344ba7f48",
+  "input": "Test token classic fix",
+  "result": "Tes token klasik perbaikan"
+}

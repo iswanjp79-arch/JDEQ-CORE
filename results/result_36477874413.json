@@ -1,0 +1,10 @@
+{
+  "status": "OK",
+  "model_used": "openai/gpt-oss-120b",
+  "job_type": "translate",
+  "run_id": "36477874413",
+  "processed_at": "2026-09-28T20:15:24.449699+00:00",
+  "source_sha256": "2f9399fd4f2a4732190006ff15a9679c0b72e2c835e996755fb7f288d6e04974",
+  "input": "Ventoy Cloud test run",
+  "result": "Uji coba Ventoy Cloud"
+}

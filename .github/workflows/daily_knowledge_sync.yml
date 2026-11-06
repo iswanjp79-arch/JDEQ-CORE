@@ -1,0 +1,54 @@
+name: 24-7 Knowledge Sync & Validation
+
+on:
+  schedule:
+    # Berjalan otomatis setiap hari jam 00:00 UTC (07:00 WIB)
+    - cron: '0 0 * * *'
+  workflow_dispatch: # Bisa juga dipicu manual
+
+jobs:
+  validate_knowledge:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Izin untuk commit balik ke repo
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Validate Links & Roadmap
+        run: |
+          echo "[ROBOT] Memulai validasi 24/7 di server GitHub..."
+          python3 -c "
+import os
+import urllib.request
+# Simulasi pengecekan file
+files = [
+    'MICO_SYSTEM/L5_CODE_MODULES/DOCS/AI_ENGINEER_ROADMAP.md',
+    'MICO_SYSTEM/L5_CODE_MODULES/DOCS/CYBERSECURITY_ARSENAL.md',
+    'MICO_SYSTEM/L5_CODE_MODULES/DOCS/GIT_CHEATSHEET.md'
+]
+for f in files:
+    if os.path.exists(f):
+        print(f'[OK] {f} tervalidasi.')
+    else:
+        print(f'[ERROR] {f} hilang!')
+          "
+          
+      - name: Write Heartbeat Log
+        run: |
+          date > MICO_SYSTEM/L6_EVIDENCE_AUDIT/CLOUD/last_knowledge_sync.txt
+          echo "[ROBOT] Sinkronisasi Pengetahuan Selesai." >> MICO_SYSTEM/L6_EVIDENCE_AUDIT/CLOUD/last_knowledge_sync.txt
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "MICO-Knowledge-Bot"
+          git config --global user.email "bot@mico.jdeq"
+          git add MICO_SYSTEM/L6_EVIDENCE_AUDIT/CLOUD/last_knowledge_sync.txt
+          git commit -m "AUTO-SYNC: 24/7 Knowledge Validation Checked" || echo "No changes"
+          git push

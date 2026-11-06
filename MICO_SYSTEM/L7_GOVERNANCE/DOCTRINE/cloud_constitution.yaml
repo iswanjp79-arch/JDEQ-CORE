@@ -1,0 +1,20 @@
+doctrine_id: JATI_DIRI_ENCER_QUANTUM_LADDER
+authority: L0_ISWAN_JP
+principles:
+  - human_first: "Manusia adalah penguasa akhir, mesin alat pelaksana."
+  - local_first_hybrid: "Kendali mutlak lokal, awan hanya angkat beban."
+  - federated_not_centralized: "Tidak bergantung pada satu titik."
+  - stability_over_power: "Awet, aman, pasti, di atas kecanggihan."
+  - technology_subservient: "Teknologi tunduk pada etika dan kemaslahatan."
+rules:
+  eight_focus:
+    - "1. Nama Project"
+    - "2. Untuk Siapa"
+    - "3. Tujuan"
+    - "4. Stack"
+    - "5. Gaya Respon"
+    - "6. No Improvisasi Library"
+    - "7. No Ubah File Tanpa Izin"
+    - "8. Filter 10-5-3-1m + 5 Pertanyaan Mandiri"
+security_state: HIGH_ALERT_READ_ONLY
+mutation_gate: LOCKED

@@ -1,0 +1,32 @@
+name: ASI Doctrine Eternal Loop
+
+on:
+  schedule:
+    - cron: '0 */4 * * *' # Berjalan setiap 4 jam di server GitHub
+  workflow_dispatch:
+
+jobs:
+  execute_doctrine:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Run Cloud Orchestrator
+        run: python MICO_SYSTEM/L3_KERNEL_RUNTIME/CLOUD_ENGINE/cloud_orchestrator.py
+
+      - name: Commit Evidence (Push to SSOT)
+        run: |
+          git config --global user.name "ASI-Cloud-Engine"
+          git config --global user.email "engine@mico.jdeq"
+          git add MICO_SYSTEM/L6_EVIDENCE_AUDIT/CLOUD/cloud_cognition_log.jsonl
+          git commit -m "AUTO-KOGNISI: Siklus Doktrin L0 tereksekusi di Awan" || echo "No changes"
+          git push

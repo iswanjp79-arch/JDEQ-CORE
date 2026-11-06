@@ -1,0 +1,5 @@
+# MICO-JDEQ: jangan pernah ubah line endings file evidence
+08_EVIDENCE/** -text
+memory/**     -text
+*.jsonl       -text
+*.json        -text
