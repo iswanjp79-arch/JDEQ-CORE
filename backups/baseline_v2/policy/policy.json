@@ -1,0 +1,1 @@
+{"default":"deny","rules":[{"action":"sync_storage","decision":"allow"},{"action":"checkpoint","decision":"allow"},{"action":"health_check","decision":"allow"},{"action":"destroy","decision":"deny"},{"action":"delete_ssot","decision":"deny"}]}

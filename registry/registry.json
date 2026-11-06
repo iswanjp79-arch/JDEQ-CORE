@@ -1,0 +1,95 @@
+{
+  "registry_version": "3.0",
+  "project": "MICO-JDEQ",
+  "root_ssot": "$HOME/JDEQ",
+  "last_updated": "2026-07-04",
+  "guardrail": {
+    "lapis_1": "INPUT_GATE",
+    "lapis_2": "SSOT_GATE",
+    "lapis_3": "TOOL_GATE",
+    "lapis_4": "EXECUTION_GATE",
+    "lapis_5": "AUDIT_GATE"
+  },
+  "agents": [
+    {
+      "id": "AG-001",
+      "name": "Gemini",
+      "role": "Gateway / Intake"
+    },
+    {
+      "id": "AG-002",
+      "name": "DOLA",
+      "role": "Governance Validator"
+    },
+    {
+      "id": "AG-003",
+      "name": "ChatGPT",
+      "role": "Architecture Auditor"
+    },
+    {
+      "id": "AG-004",
+      "name": "DeepSeek",
+      "role": "Engineering Auditor"
+    },
+    {
+      "id": "AG-005",
+      "name": "Claude",
+      "role": "Documentation"
+    },
+    {
+      "id": "AG-006",
+      "name": "Perplexity",
+      "role": "External Research"
+    },
+    {
+      "id": "AG-007",
+      "name": "Blackbox",
+      "role": "Unified Gateway"
+    },
+    {
+      "id": "AG-008",
+      "name": "MQTT",
+      "role": "Event Bus"
+    },
+    {
+      "id": "AG-009",
+      "name": "n8n",
+      "role": "Workflow Orchestrator"
+    },
+    {
+      "id": "AG-010",
+      "name": "PosPengamanan",
+      "role": "Security Patrol"
+    },
+    {
+      "id": "AG-011",
+      "name": "Blackbox CLI",
+      "role": "Engineering Worker",
+      "managed_by": "DeepSeek",
+      "permission": [
+        "audit",
+        "review",
+        "debug",
+        "refactor",
+        "compile-assist"
+      ]
+    }
+  ],
+  "adr_index": [
+    {
+      "id": "ADR-0001",
+      "title": "Root Produksi Tunggal",
+      "status": "Accepted"
+    },
+    {
+      "id": "ADR-0008",
+      "title": "Bias Mitigation & Audit Integrity",
+      "status": "Accepted"
+    },
+    {
+      "id": "ADR-0011",
+      "title": "Multi-Agent Registry-First Architecture",
+      "status": "Accepted"
+    }
+  ]
+}

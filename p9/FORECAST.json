@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-08-17T23:24:48+0700",
+  "cpu_load": "0.27",
+  "mem_free_gb": "2",
+  "disk_free_gb": "36",
+  "task_contract_count": "183",
+  "evidence_chain_length": "183",
+  "prediction": "TASK_CONTRACT_HIGH_VOLUME",
+  "alerts": "",
+  "status": "FORECAST_ENGINE_V1"
+}

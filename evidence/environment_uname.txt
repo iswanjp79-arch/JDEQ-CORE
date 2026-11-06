@@ -1,0 +1,1 @@
+Linux localhost 5.10.246-android12-9-g48b23253fe8b #1 SMP PREEMPT Tue Feb 10 05:39:11 UTC 2026 aarch64 Android

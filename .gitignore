@@ -1,0 +1,10 @@
+# RAHASIA
+.env
+*.key
+config_secrets.json
+# Python
+__pycache__/
+*.pyc
+# Sistem
+.DS_Store
+Thumbs.db

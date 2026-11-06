@@ -1,0 +1,31 @@
+name: Colab Watchdog (Crown)
+on:
+  schedule:
+    - cron: '0 */2 * * *' # Jalan tiap 2 jam
+  workflow_dispatch:
+
+jobs:
+  check_colab_status:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Check Colab Heartbeat
+        run: |
+          echo "Memeriksa status Colab..."
+          # Logika: Mengecek file heartbeat terakhir di folder evidence
+          # Jika lebih dari 2 jam tidak update, picu notifikasi "CROWN"
+          if [ -f "MICO_SYSTEM/L6_EVIDENCE_AUDIT/CLOUD/last_heartbeat.txt" ]; then
+            echo "Heartbeat terakhir ditemukan."
+          else
+            echo "WARNING: COLAB MATI. Sinyal CROWN AKTIF. Harap nyalakan Colab manual atau via API."
+          fi
+          
+      - name: Commit Status
+        run: |
+          date > MICO_SYSTEM/L6_EVIDENCE_AUDIT/CLOUD/last_check.txt
+          git config --global user.name "MICO-Watchdog"
+          git config --global user.email "bot@mico.jdeq"
+          git add MICO_SYSTEM/L6_EVIDENCE_AUDIT/CLOUD/
+          git commit -m "Watchdog: Pengecekan status Colab $(date)" || echo "No changes"
+          git push

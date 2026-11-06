@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-08-17T15:11:17+0700",
+  "hostname": "markas-utama",
+  "cpu": {"model": "Intel(R) Atom(TM) x5-Z8350  CPU @ 1.44GHz", "cores": "4"},
+  "memory": {"total": "3.2Gi"},
+  "disk": {"root_total": "56G", "root_free": "36G"},
+  "network": {"tailscale_ip": "100.67.36.31", "tailscale_backend_state": "Running"},
+  "python": {"version": "3.14.4", "pip": "25.1.1"},
+  "status": "CAPABILITY_REGISTRY_V1"
+}

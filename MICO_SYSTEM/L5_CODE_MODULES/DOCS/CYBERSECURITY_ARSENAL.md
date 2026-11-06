@@ -1,0 +1,16 @@
+# TOP CYBERSECURITY GITHUB PROJECTS
+- trimstray/the-book-of-secret-knowledge
+- Hack-with-Github/Awesome-Hacking
+- sherlock-project/sherlock
+- swisskyrepo/PayloadsAllTheThings
+- Z4nzu/hackingtool
+- NationalSecurityAgency/ghidra
+- danielmiessler/SecLists
+- 2dust/v2rayNG
+- pi-hole/pi-hole
+- WerWolv/ImHex
+- x64dbg/x64dbg
+- mitmproxy/mitmproxy
+- XTLS/Xray-core
+- rapid7/metasploit-framework
+- sqlmapproject/sqlmap

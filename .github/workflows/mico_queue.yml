@@ -1,0 +1,91 @@
+name: MICO Queue Worker
+
+on:
+  workflow_dispatch:
+    inputs:
+      job_type:
+        description: 'Job type'
+        required: true
+        default: 'translate'
+      target_lang:
+        description: 'Target language'
+        required: false
+        default: 'id'
+      text:
+        description: 'Text to process'
+        required: true
+  push:
+    branches: [main]
+    paths:
+      - '01_INBOX/**.json'
+      - 'inbox/**.json'
+  schedule:
+    # Watchdog: cek tiap 10 menit, cari job baru
+    - cron: '*/10 * * * *'
+
+concurrency:
+  group: mico-queue-${{ github.event_name }}-${{ github.run_id }}
+  cancel-in-progress: false
+
+jobs:
+  health:
+    if: github.event_name == 'schedule' || github.event_name == 'push'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: Health check
+        run: |
+          echo "Event: ${{ github.event_name }}"
+          echo "Time:  $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          echo "Commit: ${{ github.sha }}"
+          ls -la .github/workflows/ || true
+          echo "HEALTH OK"
+
+  process:
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install deps
+        run: pip install requests
+      - name: Process job
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          JOB_TYPE: ${{ inputs.job_type }}
+          TARGET_LANG: ${{ inputs.target_lang }}
+          JOB_TEXT: ${{ inputs.text }}
+          GITHUB_RUN_ID: ${{ github.run_id }}
+        run: python .github/scripts/worker.py
+      - name: Upload staged result
+        uses: actions/upload-artifact@v4
+        with:
+          name: staged-result
+          path: results/
+          if-no-files-found: error
+
+  commit:
+    needs: process
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download staged result
+        uses: actions/download-artifact@v4
+        with:
+          name: staged-result
+          path: results/
+      - name: Commit result
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add results/
+          git commit -m "result: ${{ github.run_id }}" || echo "no changes"
+          git push

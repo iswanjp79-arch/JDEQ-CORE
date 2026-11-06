@@ -1,0 +1,7 @@
+{
+  "timestamp": "2026-08-17T15:55:21+0700",
+  "node": "markas-utama",
+  "actions": "ssh:ok;tailscaled:ok;systemd-networkd:ok; listener8080:ok;",
+  "status": "HEALTHY",
+  "model": "RECOVERY_MODEL_V1"
+}

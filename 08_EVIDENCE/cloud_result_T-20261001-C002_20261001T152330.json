@@ -1,0 +1,12 @@
+{
+  "task_id": "T-20261001-C002",
+  "worker": "cloud_agent_v1",
+  "executed_at": "2026-10-01T15:23:30.803822+00:00",
+  "goal": "hitung faktorial 10",
+  "code": "import math; print(math.factorial(10))",
+  "return_code": 0,
+  "stdout": "3628800\n",
+  "stderr": "",
+  "elapsed_ms": 13.611,
+  "status": "OK"
+}

@@ -1,0 +1,19 @@
+{
+  "task": "P8-001",
+  "engine": "SECURITY_COMPLIANCE_ENGINE_V1",
+  "checks": [
+    "firewall_ufw",
+    "ssh_password_auth",
+    "ssh_permit_root",
+    "listener_8080_local",
+    "fail2ban_status",
+    "failed_ssh_login_24h",
+    "verifier_sah",
+    "evidence_chain_tail"
+  ],
+  "thresholds": {
+    "failed_ssh_login_max": 5,
+    "listener_8080_required": "127.0.0.1"
+  },
+  "alert_on_fail": true
+}

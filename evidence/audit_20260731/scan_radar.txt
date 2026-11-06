@@ -1,0 +1,10 @@
+# Nmap 7.99 scan initiated Fri Jul 31 19:09:55 2026 as: nmap -sT -p 22,4222,8222 -T4 -oN /data/data/com.termux/files/usr/tmp/mico_audit_23356/scan_radar.txt z83-server.tail2a1291.ts.net
+Nmap scan report for z83-server.tail2a1291.ts.net (100.125.176.126)
+Host is up (0.071s latency).
+
+PORT     STATE  SERVICE
+22/tcp   open   ssh
+4222/tcp closed vrml-multi-use
+8222/tcp closed unknown
+
+# Nmap done at Fri Jul 31 19:09:56 2026 -- 1 IP address (1 host up) scanned in 1.27 seconds

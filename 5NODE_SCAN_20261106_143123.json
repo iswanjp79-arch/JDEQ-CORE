@@ -1,0 +1,20 @@
+=== [START] MICO-JDEQ 5-NODE ORCHESTRATION (FROM Z83) ===
+{
+  "node_z83": {
+    "hostname": "markas-utama",
+    "cpu": "Intel(R) Atom(TM) x5-Z8350 CPU @ 1.44GHz",
+    "ram_kb": 3399728,
+    "storage": "56G total, 28G free"
+  },
+  "node_hp_mini": {
+    "hostname": "hp-mini",
+    "cpu": "Intel(R) Atom(TM) CPU N475 @ 1.83GHz",
+    "ram_kb": 2009356
+  },
+  "node_pc_i5": {
+    "hostname": "KAPAL-INDUK"
+  },
+  "android_nodes": [
+    {"serial": "0512****", "model": "Infinix X653C", "ram_kb": 1900068}
+  ]
+}

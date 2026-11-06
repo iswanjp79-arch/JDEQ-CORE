@@ -1,0 +1,17 @@
+=== QUADNODE REACH 2026-08-18T22:41:47+07:00 ===
+[VIVO_TAILSCALE_IP=100.127.153.2]
+PING 100.127.153.2 (100.127.153.2) 56(84) bytes of data.
+64 bytes from 100.127.153.2: icmp_seq=1 ttl=64 time=142 ms
+64 bytes from 100.127.153.2: icmp_seq=2 ttl=64 time=157 ms
+
+--- 100.127.153.2 ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1002ms
+rtt min/avg/max/mdev = 142.059/149.526/156.994/7.467 ms
+[INFINIX_TAILSCALE_IP=100.116.64.69]
+PING 100.116.64.69 (100.116.64.69) 56(84) bytes of data.
+64 bytes from 100.116.64.69: icmp_seq=1 ttl=64 time=106 ms
+64 bytes from 100.116.64.69: icmp_seq=2 ttl=64 time=4.86 ms
+
+--- 100.116.64.69 ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1002ms
+rtt min/avg/max/mdev = 4.859/55.356/105.853/50.497 ms

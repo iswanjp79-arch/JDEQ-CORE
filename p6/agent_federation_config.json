@@ -1,0 +1,19 @@
+{
+  "task": "P6-001",
+  "engine": "AGENT_FEDERATION_V1",
+  "broker": "Z83",
+  "agents": [
+    {"name": "jarvis_gemini", "role": "monitoring", "permission": "read"},
+    {"name": "chatgpt", "role": "planner", "permission": "propose"},
+    {"name": "dola", "role": "governance", "permission": "approve"},
+    {"name": "perplexity", "role": "research", "permission": "read"},
+    {"name": "copilot", "role": "documentation", "permission": "write_docs"},
+    {"name": "claude", "role": "auditor", "permission": "audit"},
+    {"name": "deepseek", "role": "executor", "permission": "execute"}
+  ],
+  "message_bus": {
+    "log_file": "/var/log/mico-jdeq/MESSAGE_BUS.jsonl",
+    "hash_file": "/var/log/mico-jdeq/MESSAGE_BUS.sha256",
+    "heartbeat_minutes": 10
+  }
+}

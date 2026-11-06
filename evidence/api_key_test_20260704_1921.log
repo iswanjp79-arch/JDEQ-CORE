@@ -1,0 +1,5 @@
+🤖 Blackbox CLI — MICO/JDEQ
+📤 Model: blackboxai/x-ai/grok-4.3
+
+❌ Error: {'message': 'blackbox.Error: Invalid API key', 'type': 'auth_error', 'param': None, 'code': '401'}
+❌ Gagal memanggil API. Periksa API key atau koneksi.

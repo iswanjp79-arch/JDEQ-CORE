@@ -1,0 +1,7 @@
+{
+  "task": "P13-001",
+  "engine": "DISASTER_RECOVERY_DRILL_V1",
+  "backup_parent_dir": "/var/mico-backup",
+  "required_services": ["ssh", "tailscaled", "systemd-networkd"],
+  "required_hash_file": "INTEGRITAS.sha256"
+}

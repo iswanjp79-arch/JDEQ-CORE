@@ -1,0 +1,7 @@
+- CPU Load: 0.14
+- Mem Free: 2 GB
+- Disk Free: 36 GB
+- Verifier: SAH
+- Task Contracts: 231
+- Evidence Chain: 231
+- Alerts: none

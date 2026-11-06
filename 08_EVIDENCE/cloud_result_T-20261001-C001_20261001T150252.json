@@ -1,0 +1,8 @@
+{
+  "task_id": "T-20261001-C001",
+  "worker": "cloud_agent_v1",
+  "executed_at": "2026-10-01T15:02:52.505760+00:00",
+  "goal": "hitung 2+2 di cloud",
+  "status": "PLACEHOLDER",
+  "note": "Cloud worker terpasang. Ganti run_task() dengan logika nyata."
+}

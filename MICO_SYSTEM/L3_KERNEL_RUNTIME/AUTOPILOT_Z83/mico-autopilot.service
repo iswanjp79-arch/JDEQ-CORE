@@ -1,0 +1,13 @@
+[Unit]
+Description=MICO JDEQ Z83 Autopilot (Event-Driven)
+After=network.target
+
+[Service]
+Type=simple
+User=iswanjp
+ExecStart=/usr/bin/python3 /home/iswanjp/mico/self_heal_autopilot.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

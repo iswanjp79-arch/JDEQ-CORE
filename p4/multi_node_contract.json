@@ -1,0 +1,14 @@
+{
+  "task": "P4-001",
+  "nodes": {
+    "Z83": {"role": "control_plane", "auth": "ssh-key"},
+    "PC-I5": {"role": "heavy_worker", "auth": "ssh-key", "ip": "192.168.1.100"},
+    "VIVO": {"role": "human_interface", "auth": "tailscale"},
+    "INFINIX": {"role": "edge_recovery", "auth": "tailscale"}
+  },
+  "orchestration_policy": {
+    "local_if": "cpu_load <= 1.5 AND mem_free_gb >= 1",
+    "remote_if": "cpu_load > 1.5 OR mem_free_gb < 1",
+    "heartbeat_interval_minutes": 5
+  }
+}

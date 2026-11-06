@@ -1,0 +1,10 @@
+[Unit]
+Description=MICO JDEQ Heartbeat Timer
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=5min
+Unit=mico-heartbeat.service
+
+[Install]
+WantedBy=timers.target
