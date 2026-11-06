@@ -1,0 +1,15 @@
+{
+  "audit_timestamp_utc": "2026-11-06T09:21:29Z",
+  "standard": "OHSAS/ISO_TRACEABILITY",
+  "repository": "JDEQ-CORE",
+  "state": {
+    "latest_commit_hash": "6a046215e1cc80a1cbffc57b5c2756463b1b6428",
+    "latest_commit_message": [
+      "MICO-JDEQ: Salvage agen-zero & Siapkan Repo Mirror",
+      ""
+    ],
+    "working_tree_status": "CLEAN",
+    "mirror_sync_hash": "6a046215e1cc80a1cbffc57b5c2756463b1b6428",
+    "is_mirror_synced": true
+  }
+}
